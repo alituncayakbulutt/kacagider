@@ -1707,6 +1707,51 @@ try{
 }
 </style>
 
+
+<style id="kg-background-unify-final">
+/* Onaylanan tasarım: tüm ana sayfa arka plan tonları eşit */
+html, body,
+#viewHome:not(.category-selected){
+  background:#f8fafc !important;
+}
+
+.kg-approved-topbar{
+  background:#ffffff !important;
+}
+
+/* Beş kategori kartı tamamen aynı görünüm */
+#viewHome:not(.category-selected) .kg-approved-card,
+#viewHome:not(.category-selected) .kg-approved-card.active,
+#viewHome:not(.category-selected) .kg-approved-card[data-category="phone"],
+#viewHome:not(.category-selected) .kg-approved-card[data-category="tablet"],
+#viewHome:not(.category-selected) .kg-approved-card[data-category="computer"],
+#viewHome:not(.category-selected) .kg-approved-card[data-category="watch"],
+#viewHome:not(.category-selected) .kg-approved-card[data-category="console"]{
+  background:#ffffff !important;
+  background-image:none !important;
+  border-color:#e5e7eb !important;
+}
+
+/* Görsellerin bulunduğu alanların tamamı aynı saf beyaz */
+#viewHome:not(.category-selected) .kg-product-art,
+#viewHome:not(.category-selected) .kg-approved-card .kg-product-art{
+  background:#ffffff !important;
+  background-image:none !important;
+}
+
+#viewHome:not(.category-selected) .kg-product-art img{
+  background:#ffffff !important;
+  mix-blend-mode:normal !important;
+  filter:none !important;
+}
+
+/* CTA ve alt bilgi çubuğunda da farklı ton oluşmasın */
+#viewHome:not(.category-selected) .kg-card-cta,
+#viewHome:not(.category-selected) .trustbar{
+  background:#ffffff !important;
+}
+</style>
+
 </head>
 <body class="fresh-start">
 

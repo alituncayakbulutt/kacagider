@@ -1,0 +1,4 @@
+Ana sayfadaki beş kategori kartının arka plan tonları eşitlendi.
+Telefon görselindeki yeşilimsi ton ve diğer görsellerdeki açık gri/krem tonlar temizlendi.
+Kartların ve görsel alanlarının tamamı aynı beyaz zemine sabitlendi.
+Fiyat motoru, Supabase bağlantısı ve hesaplama mantığı değiştirilmedi.
