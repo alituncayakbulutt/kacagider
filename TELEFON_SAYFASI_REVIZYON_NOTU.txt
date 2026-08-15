@@ -1,0 +1,3 @@
+Telefon hesaplama ekranı ana sayfanın yeni görsel diliyle uyumlu hale getirildi.
+Fiyat motoru, Supabase bağlantısı, kondisyon hesapları ve satış bildirimi işlevlerine dokunulmadı.
+Sadece görünüm, boşluklar, kartlar, form alanları ve responsive düzen yenilendi.

@@ -1,0 +1,4 @@
+Üst menü onaylanan beyaz tasarıma çevrildi.
+Ana sayfa kartları kısaltıldı ve 5 kartın tamamı aynı beyaz arka plana getirildi.
+Telefon dahil hiçbir kart seçili yeşil arka planla başlamaz.
+Fiyat motoru, Supabase ve kondisyon hesaplama kodlarına dokunulmadı.

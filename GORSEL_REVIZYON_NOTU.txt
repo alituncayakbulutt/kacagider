@@ -1,0 +1,6 @@
+Ana sayfa kullanıcının gönderdiği referans görsele göre düzenlendi.
+- Kartlardaki küçük yuvarlak kategori ikonları kaldırıldı.
+- 5 kart eşit ve dengeli hale getirildi.
+- Hero başlık ve açıklama ölçüleri referansa yaklaştırıldı.
+- Alt avantaj şeridi büyütüldü.
+- Telefon/tablet vb kategori seçildikten sonra ana sayfa kartları gizlenir ve hesaplama alanı görünür.

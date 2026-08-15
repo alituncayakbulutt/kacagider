@@ -1,0 +1,6 @@
+Düzeltmeler:
+- Telefon kartındaki yeşilimsi görsel zemini beyaza zorlandı.
+- Telefon, Tablet, Bilgisayar, Akıllı Saat, Oyun Konsolu menüleri kategori seçim fonksiyonuna bağlandı.
+- Ana Sayfa güvenli reset/home fonksiyonuna bağlandı.
+- SSS ve İletişim ilgili id alanlarına kaydırma fonksiyonuna bağlandı.
+- Fiyatını Hesapla butonu Telefon hesaplama akışına bağlandı.

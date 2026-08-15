@@ -1,0 +1,3059 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+
+<script>
+(function () {
+  try {
+    var entries = performance.getEntriesByType ? performance.getEntriesByType("navigation") : [];
+    var reload = entries.length && entries[0].type === "reload";
+    if (!reload && performance.navigation) reload = performance.navigation.type === 1;
+
+    if (reload) {
+      window.location.replace("/?fresh=" + Date.now());
+      return;
+    }
+
+    // Clean the temporary URL without another navigation.
+    if (window.location.pathname === "/" && new URL(window.location.href).searchParams.has("fresh")) {
+      history.replaceState(null, "", "/");
+    }
+  } catch (e) {}
+})();
+</script>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>KaçaGider.com.tr – İkinci El Telefon Fiyatı Hesaplama</title>
+<meta name="description" content="Telefonunun ve ikinci el elektronik ürünlerinin güncel piyasa değerini KaçaGider ile hesapla. iPhone, Samsung ve diğer modeller için kondisyon ve gerçek satış verilerine göre tahmini fiyatını öğren.">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+<link rel="canonical" href="https://kacagider.com.tr/">
+
+<meta property="og:type" content="website">
+<meta property="og:locale" content="tr_TR">
+<meta property="og:site_name" content="KaçaGider">
+<meta property="og:title" content="KaçaGider.com.tr – İkinci El Telefon Fiyatı Hesaplama">
+<meta property="og:description" content="Telefonunun ve ikinci el elektronik ürünlerinin güncel piyasa değerini saniyeler içinde öğren.">
+<meta property="og:url" content="https://kacagider.com.tr/">
+
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="KaçaGider.com.tr – İkinci El Telefon Fiyatı Hesaplama">
+<meta name="twitter:description" content="Telefonunun güncel ikinci el piyasa değerini kondisyon ve satış verilerine göre hesapla.">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "KaçaGider",
+  "alternateName": "KaçaGider.com.tr",
+  "url": "https://kacagider.com.tr/",
+  "inLanguage": "tr-TR",
+  "description": "İkinci el telefon ve elektronik ürünler için tahmini piyasa değeri hesaplama platformu."
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "KaçaGider",
+  "url": "https://kacagider.com.tr/",
+  "applicationCategory": "UtilitiesApplication",
+  "operatingSystem": "Web",
+  "inLanguage": "tr-TR",
+  "description": "Kullanıcının ürün, model, hafıza ve kondisyon bilgilerine göre ikinci el piyasa değeri tahmini sunan web uygulaması."
+}
+</script>
+<style>
+:root {
+  --navy:#0b1628; --navy2:#101d33; --green:#10b956; --green2:#08a84d;
+  --bg:#f4f7fb; --card:#fff; --text:#111827; --muted:#657087; --line:#e3e8ef;
+  --blue:#2878ff; --red:#ef4444; --orange:#f59e0b;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif;background:linear-gradient(180deg,#f7f9fc,#f3f6fa);color:var(--text)}
+button,input,select{font:inherit}
+.topbar{background:linear-gradient(110deg,#0b1628,#0a1425);color:#fff;box-shadow:0 1px 10px rgba(15,23,42,.12)}
+.nav{max-width:1480px;margin:auto;height:82px;padding:0 30px;display:flex;align-items:center;gap:34px}
+.brand{min-width:300px;cursor:pointer;user-select:none}
+.brand-logo{font-size:30px;font-weight:950;letter-spacing:-1px}.brand:hover .brand-logo{opacity:.92} .brand-logo span{color:var(--green)}
+.tagline{font-size:12px;color:#cbd5e1;margin-top:2px}
+.navlinks{display:flex;gap:8px;align-items:center;flex:1}
+.navlink{display:flex;gap:9px;align-items:center;padding:12px 16px;border-radius:28px;color:#fff;font-weight:750;font-size:14px}
+.navlink.active{background:#14243a;box-shadow:inset 0 -2px 0 var(--green)}
+.navpill{margin-left:auto;border:1px solid #2b3c57;border-radius:20px;padding:10px 15px;color:#e5e7eb;font-size:13px;white-space:nowrap}
+
+.page{max-width:1480px;margin:auto;padding:22px 30px 44px}
+.hero{text-align:center;padding:0 0 12px}
+.hero h1{font-size:40px;margin:0;letter-spacing:-1.3px} .hero h1 span{color:var(--green)}
+.hero p{color:var(--muted);margin:10px 0 0;font-size:15px}
+
+.layout{display:grid;grid-template-columns:minmax(720px,1.9fr) minmax(390px,.95fr);gap:28px;align-items:start;margin-top:8px}
+.panel{background:#fff;border:1px solid var(--line);border-radius:16px;box-shadow:0 8px 28px rgba(15,23,42,.06)}
+.form-panel{overflow:hidden}
+.section{padding:20px;border-bottom:1px solid var(--line)} .section:last-child{border-bottom:0}
+.section-title{font-weight:900;font-size:20px;display:flex;align-items:center;gap:10px;margin-bottom:15px}
+.step{width:21px;height:21px;border-radius:5px;background:var(--green);color:#fff;display:inline-flex;align-items:center;justify-content:center;font-size:12px;font-weight:900}
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.phone-basic-grid{grid-template-columns:repeat(4,1fr)}
+.field label{display:block;font-size:13px;font-weight:850;margin-bottom:7px}
+select,input[type=number],input[type=text]{width:100%;height:38px;border:1px solid #cfd7e4;border-radius:6px;padding:0 11px;background:#fff;color:#101828;outline:none}
+select:focus,input:focus{border-color:#5ccf8c;box-shadow:0 0 0 3px rgba(16,185,86,.10)}
+
+.option-row{display:grid;gap:0;grid-auto-flow:column;grid-auto-columns:1fr}
+.option{border:1px solid #d8dee8;border-right:0;background:#fff;padding:9px 10px;text-align:center;cursor:pointer;font-size:13px;color:#253047;transition:.15s}
+.option:first-child{border-radius:6px 0 0 6px} .option:last-child{border-right:1px solid #d8dee8;border-radius:0 6px 6px 0}
+.option.active{background:#f1fcf5;color:#087a37;border-color:#16b95a;box-shadow:inset 0 0 0 1px #16b95a;position:relative;z-index:2}
+.option.disabled{opacity:.45;cursor:not-allowed}
+.info-strip{margin-top:10px;padding:8px 11px;background:#eef6ff;color:#2864b8;border:1px solid #d5e8ff;border-radius:6px;font-size:12px}
+.subgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;align-items:end}
+.factor-inline{font-size:11px;color:#7a8699;margin-top:5px}
+.calc-wrap{padding:0 20px 18px}
+.calc-btn{width:100%;height:48px;background:linear-gradient(90deg,#0ab74f,#0ab64e);border:0;border-radius:7px;color:#fff;font-weight:900;font-size:17px;cursor:pointer;box-shadow:0 5px 12px rgba(16,185,86,.22)}
+.calc-btn:hover{background:var(--green2)}
+.calc-help{text-align:center;color:#697586;font-size:12px;margin-top:7px}
+
+.side{display:flex;flex-direction:column;gap:14px;position:sticky;top:14px}
+.price-card{background:linear-gradient(145deg,#0d182b,#091526);color:#fff;border-radius:16px;padding:22px;text-align:center;box-shadow:0 10px 26px rgba(2,6,23,.15)}
+.price-label{font-size:15px} .big-price{font-size:43px;color:#12c95a;font-weight:950;margin:5px 0;letter-spacing:-1px}
+.price-sub{font-size:13px;color:#cbd5e1}
+.prices{padding:6px 18px}
+.price-line{display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid var(--line);padding:14px 0;font-size:14px}
+.price-line:last-child{border-bottom:0} .price-line strong{font-size:16px}
+.factors{padding:17px 18px}
+.factors h3{font-size:15px;margin:0 0 10px}
+.factor{display:grid;grid-template-columns:20px 1fr auto;gap:6px;align-items:center;font-size:13px;padding:5px 0}
+.plus{color:#079447;font-weight:850} .minus{color:#e11d48;font-weight:850}
+.factor-empty{color:#7c8798;font-size:13px;padding:8px 0}
+.trust{padding:15px 18px;border-color:#bad8ff;background:#fbfdff}
+.trust p{font-size:12px;color:#375d91;margin:0 0 10px;line-height:1.45}
+.score{font-size:13px;font-weight:850} .bar{height:9px;background:#edf1f6;border-radius:20px;margin-top:8px;overflow:hidden}
+.bar span{display:block;height:100%;width:78%;background:linear-gradient(90deg,#08ae4c,#0ebc56);border-radius:20px}
+.sell-card{padding:16px;background:linear-gradient(135deg,#f1fff6,#f8fffa);border-color:#c9edd7}
+.sell-card h3{font-size:15px;margin:0 0 8px;color:#176b38} .sell-card p{font-size:12px;color:#677384;margin:0 0 12px}
+.sell-btn{background:#08ad4a;border:0;color:#fff;font-weight:850;border-radius:7px;padding:10px 15px;cursor:pointer}
+
+.sales-form{display:none;margin-top:12px;border-top:1px solid #d7eadf;padding-top:12px}
+.sales-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.sales-form button{width:100%;margin-top:10px;background:#0bad4c;border:0;color:#fff;border-radius:7px;padding:11px;font-weight:850;cursor:pointer}
+.sale-result{display:none;margin-top:10px;border-radius:8px;padding:12px;font-size:13px;text-align:center;line-height:1.5}
+.sale-result.good{background:#eafbf1;color:#176b38} .sale-result.bad{background:#fff3ed;color:#a23b18} .sale-result.same{background:#eef6ff;color:#2359a1}
+
+.bottom-features{max-width:980px;margin:14px auto 0;background:#fff;border:1px solid var(--line);border-radius:34px;padding:11px 18px;display:grid;grid-template-columns:repeat(5,1fr);gap:0}
+.feature{text-align:center;padding:3px 10px;border-right:1px solid var(--line);font-size:12px;font-weight:800;color:#39465b}
+.feature:last-child{border-right:0} .feature small{display:block;color:#7b8798;font-weight:500;margin-top:2px}
+
+.hidden{display:none!important}
+@media(max-width:1050px){.layout{grid-template-columns:1fr}.side{position:static}.navlinks{display:none}.navpill{display:none}.brand{min-width:0}}
+@media(max-width:720px){.page{padding:18px 12px 35px}.nav{height:68px;padding:0 16px}.brand-logo{font-size:25px}.hero h1{font-size:31px}.grid3,.phone-basic-grid,.subgrid{grid-template-columns:1fr}.layout{gap:16px}.section{padding:17px 14px}.option{padding:10px 5px;font-size:12px}.bottom-features{grid-template-columns:1fr 1fr;border-radius:16px}.feature{border:0;padding:8px}.big-price{font-size:36px}}
+
+.home-intro{max-width:1180px;margin:0 auto 22px}
+.home-title{text-align:center;margin-bottom:18px}
+.home-title h2{font-size:24px;margin:0 0 6px}
+.home-title p{margin:0;color:#6b7280;font-size:14px}
+.category-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:12px}
+.category-card{
+  appearance:none;width:100%;border:1px solid #dfe5ee;background:#fff;border-radius:14px;
+  padding:17px 10px;text-align:center;cursor:pointer;box-shadow:0 5px 16px rgba(15,23,42,.04);
+  color:#182230;transition:.18s transform,.18s border,.18s box-shadow,.18s background;
+}
+.category-card:hover{transform:translateY(-2px);border-color:#92d9ad;box-shadow:0 8px 22px rgba(15,23,42,.08)}
+.category-card.active{border-color:#12b957;background:#f1fcf5;box-shadow:inset 0 0 0 1px #12b957}
+.category-icon{font-size:30px;display:block;margin-bottom:7px}
+.category-name{font-size:14px;font-weight:900;display:block}
+.category-sub{font-size:11px;color:#7b8798;display:block;margin-top:3px}
+.selected-category-bar{
+  display:none;max-width:1480px;margin:0 auto 12px;background:#fff;border:1px solid #e3e8ef;
+  border-radius:10px;padding:11px 16px;font-size:13px;color:#48556a;
+}
+.selected-category-bar strong{color:#0a9d47}
+.generic-panel{display:none}
+.generic-condition-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.generic-note{margin-top:12px;padding:10px 12px;border-radius:7px;background:#fff8e8;color:#875c00;border:1px solid #f5d68b;font-size:12px}
+@media(max-width:900px){.category-grid{grid-template-columns:repeat(3,1fr)}}
+@media(max-width:620px){.category-grid{grid-template-columns:1fr 1fr}.generic-condition-grid{grid-template-columns:1fr}}
+
+
+.navlink{
+  border:0;background:transparent;cursor:pointer;width:auto;margin:0;
+}
+.navlink:hover{background:#14243a;transform:none}
+.content-section{
+  max-width:1180px;margin:28px auto 0;background:#fff;border:1px solid var(--line);
+  border-radius:16px;box-shadow:0 7px 22px rgba(15,23,42,.05);padding:24px;
+}
+.content-section h2{margin:0 0 8px;font-size:24px}
+.content-section > p{margin:0;color:#6b7280;font-size:14px;line-height:1.55}
+.how-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:18px}
+.how-card{border:1px solid #e2e8f0;border-radius:13px;padding:18px;background:#fbfdff}
+.how-no{width:30px;height:30px;border-radius:8px;background:#eafbf1;color:#087a37;display:flex;align-items:center;justify-content:center;font-weight:900;margin-bottom:10px}
+.how-card h3{font-size:15px;margin:0 0 6px}
+.how-card p{font-size:12px;color:#697586;line-height:1.5;margin:0}
+.history-toolbar{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-top:15px;flex-wrap:wrap}
+.history-status{font-size:13px;color:#657087}
+.history-table-wrap{overflow:auto;margin-top:13px;border:1px solid #e4e9f0;border-radius:10px}
+.history-table{width:100%;border-collapse:collapse;font-size:13px}
+.history-table th,.history-table td{padding:11px 12px;border-bottom:1px solid #edf0f4;text-align:left;white-space:nowrap}
+.history-table th{background:#f8fafc;color:#536074;font-size:12px}
+.history-table tr:last-child td{border-bottom:0}
+.history-empty{text-align:center;color:#7b8798;padding:22px}
+.history-refresh{border:0;border-radius:7px;background:#0bad4c;color:#fff;font-weight:800;padding:9px 13px;cursor:pointer}
+@media(max-width:760px){.how-grid{grid-template-columns:1fr}}
+
+
+.app-view{display:none}
+.app-view.active{display:block}
+.view-shell{max-width:1480px;margin:0 auto;padding:28px 30px 48px}
+.view-header{text-align:center;margin-bottom:24px}
+.view-header h1{font-size:36px;margin:0 0 8px;letter-spacing:-1px}
+.view-header p{color:#667085;margin:0 auto;max-width:720px;line-height:1.55}
+.standalone-card{max-width:1000px;margin:0 auto;background:#fff;border:1px solid var(--line);border-radius:17px;padding:26px;box-shadow:0 8px 26px rgba(15,23,42,.06)}
+.standalone-sell{max-width:720px}
+.back-home-btn{border:0;background:#eefbf3;color:#087a37;border-radius:8px;padding:10px 14px;font-weight:850;cursor:pointer;width:auto}
+.navlink.active{background:#14243a!important;box-shadow:inset 0 -2px 0 var(--green)}
+@media(max-width:720px){.view-shell{padding:20px 12px 38px}.view-header h1{font-size:29px}}
+
+
+.catalog-summary{margin-top:7px;font-size:11px;color:#087a37;font-weight:750}
+
+
+/* Kasa Durumu hizalama düzeltmesi */
+.kasa-grid{
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:18px;
+  align-items:start;
+}
+.kasa-grid > div{
+  min-width:0;
+  width:100%;
+}
+.kasa-grid .field{
+  min-height:31px;
+  display:flex;
+  align-items:flex-end;
+}
+.kasa-grid .field label{
+  width:100%;
+  margin-bottom:7px;
+  line-height:1.25;
+  min-height:18px;
+}
+.kasa-grid .option-row{
+  width:100%;
+  display:grid;
+  grid-auto-flow:unset;
+  grid-auto-columns:unset;
+  gap:0;
+}
+.kasa-grid [data-group="dent"],
+.kasa-grid [data-group="surface"]{
+  grid-template-columns:repeat(4,minmax(0,1fr));
+}
+.kasa-grid [data-group="corners"]{
+  grid-template-columns:repeat(3,minmax(0,1fr));
+}
+.kasa-grid .option{
+  width:100%;
+  min-width:0;
+  min-height:54px;
+  padding:8px 6px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  line-height:1.15;
+  white-space:normal;
+  word-break:normal;
+  text-wrap:balance;
+}
+@media(max-width:1150px){
+  .kasa-grid{
+    grid-template-columns:1fr;
+    gap:15px;
+  }
+  .kasa-grid .field{
+    min-height:auto;
+  }
+}
+
+
+/* V21 - Sondan ikinci hedef görsele uyarlama */
+.price-card{
+  padding:20px 18px 12px;
+  border-radius:18px;
+  overflow:hidden;
+}
+.price-label{
+  font-size:16px;
+  font-weight:850;
+}
+.price-kicker{
+  color:#aeb8c8;
+  font-size:13px;
+  margin-top:9px;
+}
+.big-price{
+  margin:4px 0 5px;
+  font-size:44px;
+}
+.price-trust-inline{
+  margin:0 auto 11px;
+  font-size:13px;
+  font-weight:850;
+  color:#f8fafc;
+}
+.price-trust-inline .trust-word{
+  color:#8ee9ae;
+}
+.price-card .bar{
+  margin:0 2px 15px;
+  height:8px;
+  background:#26364d;
+}
+.price-card .bar span{
+  background:linear-gradient(90deg,#08b74e,#71d72e);
+}
+.price-sale-cta{
+  width:100%;
+  border:1px solid #20dc70;
+  border-radius:10px;
+  background:linear-gradient(110deg,#087a39,#0aa54a);
+  color:#fff;
+  padding:13px 15px;
+  display:grid;
+  grid-template-columns:38px 1fr 22px;
+  align-items:center;
+  gap:10px;
+  cursor:pointer;
+  text-align:left;
+  box-shadow:0 5px 15px rgba(10,180,78,.18);
+}
+.price-sale-cta:hover{
+  transform:translateY(-1px);
+  filter:brightness(1.04);
+}
+.price-sale-icon{
+  font-size:27px;
+  line-height:1;
+}
+.price-sale-copy strong{
+  display:block;
+  font-size:17px;
+  letter-spacing:.1px;
+}
+.price-sale-copy small{
+  display:block;
+  margin-top:2px;
+  font-size:11px;
+  color:#e9fff1;
+  font-weight:650;
+}
+.price-sale-arrow{
+  font-size:26px;
+  text-align:right;
+}
+.prices{
+  padding:5px 16px;
+}
+.price-line{
+  position:relative;
+  padding-left:12px;
+}
+.price-line::before{
+  content:"";
+  position:absolute;
+  left:0;
+  width:3px;
+  height:18px;
+  border-radius:8px;
+  background:#2784ff;
+}
+.price-line:nth-child(2)::before{background:#f59e0b}
+.price-line:nth-child(3)::before{background:#10b956}
+.price-line:nth-child(1) strong{color:#2878ff}
+.price-line:nth-child(2) strong{color:#f59e0b}
+.price-line:nth-child(3) strong{color:#0aa64b}
+.trust{
+  background:#eef7ff;
+  border-color:#cfe3ff;
+}
+.trust .score,.trust .bar{display:none}
+.trust p{
+  color:#2264bd;
+  font-weight:700;
+  margin:0;
+}
+.sell-card{
+  display:none!important;
+}
+@media(max-width:720px){
+  .price-sale-cta{grid-template-columns:34px 1fr 18px;padding:12px}
+  .price-sale-copy strong{font-size:15px}
+  .big-price{font-size:38px}
+}
+
+
+/* KaçaGider kesin yenileme sıfırlaması */
+body.fresh-start #valuationArea,
+body.fresh-start #selectedCategoryBar{
+  display:none !important;
+}
+
+
+/* Çoklu değişen parça revizyonu */
+.parts-config-field{grid-column:span 2}
+.parts-selector{display:flex;flex-direction:column;gap:8px}
+.parts-row{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr) 34px;gap:10px;align-items:center}
+.parts-row select{width:100%;height:48px!important;font-size:14px!important}
+.parts-remove{height:38px;width:34px;border:0;background:transparent;color:#98a2b3;font-size:20px;font-weight:800;cursor:pointer;border-radius:8px}
+.parts-remove:hover{background:#f2f4f7;color:#d92d20}
+.parts-remove.hidden{visibility:hidden}
+.add-part-btn{margin-top:4px;display:inline-flex;align-items:center;gap:7px;width:max-content;border:1px dashed #12b76a;background:#ecfdf3;color:#087443;border-radius:9px;padding:9px 12px;font-weight:850;cursor:pointer}
+.add-part-btn:hover{background:#dff9ea}
+@media(max-width:900px){.parts-config-field{grid-column:1/-1}}
+@media(max-width:620px){.parts-row{grid-template-columns:1fr 1fr 30px;gap:6px}.parts-row select{font-size:12px!important}.add-part-btn{width:100%;justify-content:center}}
+
+</style>
+
+<style>
+.ks-purpose{
+  max-width:1180px;
+  margin:34px auto 54px;
+  padding:0 20px;
+}
+.ks-purpose-inner{
+  position:relative;
+  overflow:hidden;
+  padding:34px 38px;
+  border:1px solid #dfe7f1;
+  border-radius:22px;
+  background:linear-gradient(135deg,#ffffff 0%,#f5fff8 100%);
+  box-shadow:0 12px 34px rgba(15,23,42,.06);
+}
+.ks-purpose-inner:after{
+  content:"";
+  position:absolute;
+  width:190px;height:190px;
+  right:-70px;top:-85px;
+  border-radius:50%;
+  background:rgba(18,185,84,.08);
+}
+.ks-purpose-eyebrow{
+  display:inline-block;
+  margin-bottom:10px;
+  color:#0bb653;
+  font-size:12px;
+  font-weight:900;
+  letter-spacing:1.3px;
+}
+.ks-purpose h2{
+  max-width:760px;
+  margin:0 0 14px;
+  color:#0d1728;
+  font-size:28px;
+  line-height:1.18;
+}
+.ks-purpose p{
+  max-width:920px;
+  margin:8px 0;
+  color:#667085;
+  font-size:15px;
+  line-height:1.75;
+}
+.ks-purpose-motto{
+  margin-top:20px;
+  color:#0d1728;
+  font-size:18px;
+  font-weight:850;
+}
+.ks-purpose-motto strong{color:#0bb653}
+.hero .sub{
+  font-weight:750;
+  letter-spacing:.1px;
+}
+@media(max-width:700px){
+  .ks-purpose{margin:24px auto 36px;padding:0 12px}
+  .ks-purpose-inner{padding:25px 21px}
+  .ks-purpose h2{font-size:23px}
+}
+</style>
+
+
+<style id="v22-premium-refresh">
+:root{
+  --premium-bg:#f5f7fb;
+  --premium-card:#fff;
+  --premium-ink:#0d1726;
+  --premium-muted:#697586;
+  --premium-line:#e3e8ef;
+  --premium-green:#12b76a;
+  --premium-green-dark:#079455;
+  --premium-navy:#071725;
+}
+body{
+  background:
+    radial-gradient(circle at 18% 0%,rgba(18,183,106,.065),transparent 24%),
+    linear-gradient(#fbfcfe,var(--premium-bg)) !important;
+  color:var(--premium-ink)!important;
+}
+.site-header{
+  background:rgba(7,23,37,.97)!important;
+  backdrop-filter:blur(14px);
+  box-shadow:0 10px 28px rgba(2,8,23,.12)!important;
+}
+.brand{font-size:24px!important;letter-spacing:-.7px!important}
+.tagline{color:#9fb0bf!important;font-size:10px!important}
+.navlink{
+  border-radius:11px!important;
+  padding:11px 14px!important;
+  color:#c1ccd7!important;
+  font-size:12px!important;
+}
+.navlink.active{background:rgba(255,255,255,.08)!important;color:#fff!important}
+#navSell{background:var(--premium-green)!important;color:#fff!important}
+.navpill{
+  border-color:rgba(255,255,255,.12)!important;
+  color:#cbd5e1!important;
+  background:rgba(255,255,255,.03)!important;
+}
+.page{max-width:1380px!important}
+.hero{padding:54px 0 34px!important;text-align:left!important}
+.hero h1{
+  font-size:52px!important;
+  line-height:1.04!important;
+  max-width:860px!important;
+  letter-spacing:-2px!important;
+  margin:0 0 14px!important;
+}
+.hero h1 span{color:var(--premium-green)!important}
+.hero p{
+  font-size:16px!important;
+  color:var(--premium-muted)!important;
+  max-width:680px!important;
+  line-height:1.6!important;
+}
+.home-intro{
+  background:#fff!important;
+  border:1px solid var(--premium-line)!important;
+  border-radius:20px!important;
+  padding:18px!important;
+  box-shadow:0 12px 34px rgba(15,23,42,.04)!important;
+}
+.home-title h2{font-size:22px!important;letter-spacing:-.4px!important}
+.home-title p{color:var(--premium-muted)!important}
+.category-grid{gap:10px!important}
+.category-card{
+  border-radius:15px!important;
+  border:1px solid transparent!important;
+  background:#f8fafc!important;
+  min-height:112px!important;
+  transition:.16s ease!important;
+}
+.category-card:hover{
+  transform:translateY(-2px)!important;
+  border-color:#bfead2!important;
+  background:#f4fcf7!important;
+}
+.category-card.active{
+  border-color:#8bdcaf!important;
+  background:#eefbf4!important;
+  color:#087a48!important;
+  box-shadow:inset 0 0 0 1px rgba(18,183,106,.08)!important;
+}
+.category-icon{font-size:29px!important}
+.selected-category-bar{
+  margin:16px 0!important;
+  border-radius:13px!important;
+  border:1px solid var(--premium-line)!important;
+  background:#fff!important;
+  box-shadow:0 7px 18px rgba(15,23,42,.03)!important;
+}
+.layout{
+  grid-template-columns:minmax(0,1fr) 390px!important;
+  gap:22px!important;
+  align-items:start!important;
+}
+.panel,.form-panel{
+  border:1px solid var(--premium-line)!important;
+  border-radius:20px!important;
+  background:#fff!important;
+  box-shadow:0 12px 38px rgba(15,23,42,.045)!important;
+}
+.form-panel{padding:0!important;overflow:hidden!important}
+.section{
+  padding:20px!important;
+  border-bottom:1px solid #edf0f3!important;
+}
+.section:last-of-type{border-bottom:0!important}
+.section-title{
+  font-size:19px!important;
+  font-weight:950!important;
+  letter-spacing:-.3px!important;
+  margin-bottom:16px!important;
+}
+.step{
+  background:var(--premium-green)!important;
+  border-radius:8px!important;
+  width:28px!important;
+  height:28px!important;
+}
+.field label{
+  font-size:11px!important;
+  color:#475467!important;
+  font-weight:850!important;
+}
+.field select,.field input{
+  height:46px!important;
+  border:1px solid #d5dde6!important;
+  border-radius:11px!important;
+  background:#fff!important;
+  font-size:13px!important;
+  color:#101828!important;
+}
+.field select:focus,.field input:focus{
+  border-color:var(--premium-green)!important;
+  box-shadow:0 0 0 3px rgba(18,183,106,.09)!important;
+}
+.phone-basic-grid{gap:12px!important}
+.option-row{gap:8px!important}
+.option{
+  min-height:64px!important;
+  border:1px solid #d7dfe8!important;
+  border-radius:12px!important;
+  background:#fff!important;
+  font-weight:800!important;
+  transition:.15s ease!important;
+}
+.option:hover{
+  border-color:#9eddbb!important;
+  transform:translateY(-1px)!important;
+}
+.option.active{
+  border-color:var(--premium-green)!important;
+  background:#f0fdf4!important;
+  color:#087a48!important;
+  box-shadow:0 0 0 2px rgba(18,183,106,.07)!important;
+}
+.info-strip{
+  background:#eff8ff!important;
+  border-color:#d1e9ff!important;
+  color:#175cd3!important;
+  border-radius:10px!important;
+  font-size:10px!important;
+}
+.calc-wrap{
+  padding:18px!important;
+  background:#fff!important;
+  border-top:1px solid #edf0f3!important;
+}
+.calc-btn{
+  height:58px!important;
+  border-radius:12px!important;
+  background:linear-gradient(90deg,#0a7a49,var(--premium-green))!important;
+  box-shadow:0 10px 22px rgba(18,183,106,.18)!important;
+  font-size:15px!important;
+}
+.calc-help{font-size:9px!important;color:var(--premium-muted)!important}
+.side{
+  position:sticky!important;
+  top:92px!important;
+  align-self:start!important;
+}
+.price-card{
+  border-radius:20px!important;
+  padding:22px!important;
+  background:linear-gradient(135deg,#071725,#0e283b)!important;
+  box-shadow:0 18px 42px rgba(7,23,37,.17)!important;
+}
+.price-label{font-size:13px!important;color:#fff!important}
+.price-kicker{font-size:10px!important;color:#aab7c4!important}
+.big-price{
+  color:#4be18c!important;
+  font-size:44px!important;
+  font-weight:950!important;
+  letter-spacing:-1.4px!important;
+}
+.price-trust-inline{font-size:10px!important;color:#d5dee7!important}
+.bar{background:rgba(255,255,255,.12)!important;height:6px!important}
+.bar span{background:linear-gradient(90deg,#20c875,#85e8af)!important}
+.price-sale-cta{
+  margin-top:15px!important;
+  border-radius:11px!important;
+  border:1px solid rgba(75,225,140,.6)!important;
+  background:rgba(18,183,106,.13)!important;
+  min-height:58px!important;
+}
+.price-sale-copy strong{font-size:13px!important}
+.price-sale-copy small{font-size:9px!important;color:#cdebd9!important}
+.prices,.factors,.trust,.sell-card{
+  border-radius:18px!important;
+  box-shadow:0 8px 24px rgba(15,23,42,.04)!important;
+}
+.price-line{padding:13px 0!important;font-size:11px!important}
+.price-line strong{font-size:12px!important}
+.factors h3{font-size:14px!important}
+.factor{font-size:11px!important;padding:8px 0!important}
+.trust p{font-size:10px!important;line-height:1.5!important}
+.sell-card h3{font-size:15px!important}
+.sell-card p{font-size:10px!important;color:var(--premium-muted)!important}
+.sell-btn{
+  border-radius:10px!important;
+  background:#eefbf4!important;
+  color:#087a48!important;
+  border:1px solid #b9e9cf!important;
+  min-height:46px!important;
+  font-weight:900!important;
+}
+.bottom-features{
+  margin-top:24px!important;
+  border:1px solid var(--premium-line)!important;
+  border-radius:17px!important;
+  background:#fff!important;
+  box-shadow:0 8px 22px rgba(15,23,42,.03)!important;
+}
+.feature{font-size:10px!important}
+.feature small{font-size:8px!important;color:var(--premium-muted)!important}
+@media(max-width:1000px){
+  .layout{grid-template-columns:1fr!important}
+  .side{position:static!important}
+}
+@media(max-width:700px){
+  .hero h1{font-size:37px!important}
+  .category-grid{grid-template-columns:1fr 1fr!important}
+}
+</style>
+
+
+<style id="price-card-readability-fix">
+/* Fiyat satırlarında renkli sütun ile yazı arasında net boşluk */
+.prices .price-line{
+  position:relative !important;
+  padding:18px 18px 18px 26px !important;
+  min-height:62px !important;
+  font-size:16px !important;
+  font-weight:800 !important;
+  line-height:1.25 !important;
+  color:#111827 !important;
+  display:flex !important;
+  align-items:center !important;
+  justify-content:space-between !important;
+  gap:20px !important;
+}
+
+/* Eski border-left kullanımı yazının altına giriyordu; onu kaldırıp ayrı renk çubuğu yap */
+.prices .price-line{
+  border-left:0 !important;
+}
+.prices .price-line::before{
+  content:"";
+  position:absolute;
+  left:10px;
+  top:16px;
+  bottom:16px;
+  width:5px;
+  border-radius:999px;
+}
+.prices .price-line:nth-child(1)::before{background:#2e90fa;}
+.prices .price-line:nth-child(2)::before{background:#f59e0b;}
+.prices .price-line:nth-child(3)::before{background:#16a34a;}
+
+.prices .price-line span,
+.prices .price-line > :first-child{
+  position:relative !important;
+  z-index:1 !important;
+  margin-left:0 !important;
+  padding-left:0 !important;
+  font-size:16px !important;
+  font-weight:800 !important;
+}
+
+.prices .price-line strong{
+  font-size:18px !important;
+  font-weight:950 !important;
+  letter-spacing:-.2px !important;
+  white-space:nowrap !important;
+}
+
+/* Fiyatı etkileyen faktörler kartını da daha okunaklı yap */
+.factors h3{
+  font-size:19px !important;
+  font-weight:950 !important;
+}
+.factor-empty{
+  font-size:15px !important;
+  line-height:1.45 !important;
+  font-weight:650 !important;
+  color:#667085 !important;
+}
+.factor{
+  font-size:14px !important;
+  line-height:1.35 !important;
+}
+
+/* Alt bilgi notunu da biraz büyüt */
+.trust p{
+  font-size:13px !important;
+  line-height:1.5 !important;
+  font-weight:700 !important;
+}
+</style>
+
+
+<style id="bottom-proofbar-proportion-fix">
+/* Alt güven/özellik şeridini ana içerikle orantıla */
+.proofbar{
+  max-width:none !important;
+  width:100% !important;
+  margin:22px 0 0 !important;
+  padding:18px 24px !important;
+  border-radius:20px !important;
+  box-sizing:border-box !important;
+  display:grid !important;
+  grid-template-columns:repeat(5,minmax(0,1fr)) !important;
+  align-items:center !important;
+  gap:0 !important;
+}
+
+/* Her sütun daha dengeli ve ortalı */
+.proofbar > div{
+  min-width:0 !important;
+  padding:0 22px !important;
+  display:flex !important;
+  flex-direction:column !important;
+  justify-content:center !important;
+  align-items:center !important;
+  text-align:center !important;
+}
+
+/* Ortalama Piyasa Fiyatı satırına yakın boyut ve ağırlık */
+.proofbar b,
+.proofbar strong{
+  font-size:16px !important;
+  line-height:1.25 !important;
+  font-weight:850 !important;
+  letter-spacing:-.15px !important;
+  white-space:nowrap !important;
+}
+
+.proofbar span,
+.proofbar small{
+  font-size:14px !important;
+  line-height:1.35 !important;
+  font-weight:600 !important;
+  margin-top:3px !important;
+}
+
+/* Ayraçların yüksekliği ve konumu */
+.proofbar > div + div{
+  border-left:1px solid #d9e1ea !important;
+}
+
+@media (max-width:900px){
+  .proofbar{
+    grid-template-columns:1fr 1fr !important;
+    gap:16px !important;
+  }
+  .proofbar > div + div{border-left:0 !important;}
+}
+</style>
+
+
+<style id="about-page-style">
+.about-page{
+  max-width:1100px;
+  margin:38px auto 60px;
+}
+.about-hero{
+  background:linear-gradient(135deg,#071725,#0d2a3e);
+  color:#fff;
+  border-radius:24px;
+  padding:42px 44px;
+  position:relative;
+  overflow:hidden;
+  box-shadow:0 20px 55px rgba(7,23,37,.16);
+}
+.about-hero:after{
+  content:"";
+  position:absolute;
+  width:260px;height:260px;border-radius:50%;
+  right:-80px;top:-90px;
+  background:radial-gradient(circle,rgba(18,183,106,.28),transparent 68%);
+}
+.about-eyebrow{
+  display:inline-block;
+  color:#55df95;
+  font-size:11px;
+  font-weight:900;
+  letter-spacing:1.2px;
+  margin-bottom:12px;
+}
+.about-hero h1{
+  margin:0 0 14px;
+  max-width:760px;
+  font-size:38px;
+  line-height:1.12;
+  letter-spacing:-1.2px;
+}
+.about-hero p{
+  margin:0;
+  max-width:780px;
+  color:#c5d0da;
+  font-size:15px;
+  line-height:1.7;
+}
+.about-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:14px;
+  margin-top:16px;
+}
+.about-card{
+  background:#fff;
+  border:1px solid #e3e8ef;
+  border-radius:18px;
+  padding:22px;
+  box-shadow:0 10px 28px rgba(15,23,42,.04);
+}
+.about-card .icon{font-size:26px;margin-bottom:10px}
+.about-card small{
+  display:block;
+  color:#667085;
+  font-size:10px;
+  font-weight:800;
+  margin-bottom:5px;
+  text-transform:uppercase;
+  letter-spacing:.5px;
+}
+.about-card strong{
+  display:block;
+  color:#101828;
+  font-size:18px;
+  margin-bottom:7px;
+}
+.about-card p{
+  margin:0;
+  color:#667085;
+  font-size:12px;
+  line-height:1.55;
+}
+.about-story{
+  margin-top:16px;
+  background:#fff;
+  border:1px solid #e3e8ef;
+  border-radius:20px;
+  padding:30px;
+  box-shadow:0 10px 28px rgba(15,23,42,.04);
+}
+.about-story h2{
+  margin:0 0 14px;
+  font-size:24px;
+  letter-spacing:-.5px;
+}
+.about-story p{
+  color:#596579;
+  font-size:14px;
+  line-height:1.75;
+  margin:0 0 14px;
+}
+.about-motto{
+  margin-top:20px;
+  padding-top:18px;
+  border-top:1px solid #e8ecf1;
+  font-size:19px;
+  font-weight:900;
+  color:#101828;
+}
+.about-motto span{color:#12b76a}
+@media(max-width:760px){
+  .about-page{margin:20px auto 40px}
+  .about-hero{padding:28px 22px}
+  .about-hero h1{font-size:29px}
+  .about-grid{grid-template-columns:1fr}
+}
+</style>
+
+
+
+
+
+<script>
+try{
+  if("scrollRestoration" in history) history.scrollRestoration="manual";
+}catch(e){}
+</script>
+
+
+<style id="kg-approved-category-design">
+.kg-approved-hero{
+  text-align:center!important;
+  max-width:920px!important;
+  margin:42px auto 32px!important;
+  padding:0 20px!important;
+}
+.kg-approved-hero h1{
+  font-size:52px!important;
+  line-height:1.06!important;
+  letter-spacing:-2.2px!important;
+  margin:0 0 14px!important;
+}
+.kg-approved-hero p{
+  max-width:760px!important;
+  margin:0 auto!important;
+  font-size:18px!important;
+  line-height:1.55!important;
+}
+.kg-category-section{
+  max-width:1380px!important;
+  margin:0 auto 26px!important;
+  padding:0 18px!important;
+  background:transparent!important;
+  border:0!important;
+  box-shadow:none!important;
+}
+.kg-approved-category-grid{
+  display:grid!important;
+  grid-template-columns:repeat(5,minmax(0,1fr))!important;
+  gap:18px!important;
+  align-items:stretch!important;
+}
+.kg-approved-card{
+  appearance:none!important;
+  -webkit-appearance:none!important;
+  width:100%!important;
+  min-width:0!important;
+  height:520px!important;
+  display:flex!important;
+  flex-direction:column!important;
+  align-items:center!important;
+  justify-content:flex-start!important;
+  padding:18px 14px 16px!important;
+  margin:0!important;
+  background:#fff!important;
+  border:1px solid #e2e8ee!important;
+  border-radius:22px!important;
+  box-shadow:0 10px 28px rgba(16,24,40,.075)!important;
+  overflow:hidden!important;
+  color:#101828!important;
+  text-align:center!important;
+  cursor:pointer!important;
+  position:relative!important;
+  transition:.18s ease!important;
+}
+.kg-approved-card:hover{
+  transform:translateY(-3px)!important;
+  border-color:#8fe0ad!important;
+  box-shadow:0 15px 34px rgba(16,24,40,.10)!important;
+}
+.kg-approved-card.active{
+  background:linear-gradient(180deg,#fbfffc,#f4fff7)!important;
+  border:1.5px solid #53cb7e!important;
+}
+.kg-product-art{
+  width:100%!important;
+  height:245px!important;
+  display:flex!important;
+  align-items:center!important;
+  justify-content:center!important;
+  margin:0 0 8px!important;
+}
+.kg-product-art img{
+  display:block!important;
+  width:100%!important;
+  height:100%!important;
+  object-fit:contain!important;
+  mix-blend-mode:multiply!important;
+}
+.kg-round-icon{
+  width:58px!important;
+  height:58px!important;
+  flex:0 0 58px!important;
+  display:flex!important;
+  align-items:center!important;
+  justify-content:center!important;
+  border-radius:50%!important;
+  background:#effbf3!important;
+  color:#159947!important;
+  font-size:28px!important;
+  font-weight:900!important;
+  margin:0 0 10px!important;
+  border:0!important;
+}
+.kg-tablet-icon{
+  font-size:32px!important;
+  transform:scaleX(1.18)!important;
+}
+.kg-approved-card .category-name{
+  display:block!important;
+  font-size:21px!important;
+  line-height:1.2!important;
+  font-weight:900!important;
+  margin:0 0 9px!important;
+}
+.kg-approved-card .category-sub{
+  display:block!important;
+  min-height:49px!important;
+  font-size:13px!important;
+  line-height:1.55!important;
+  font-weight:600!important;
+  color:#667085!important;
+  margin:0 0 16px!important;
+}
+.kg-card-cta{
+  width:100%!important;
+  min-height:44px!important;
+  display:flex!important;
+  align-items:center!important;
+  justify-content:center!important;
+  gap:12px!important;
+  margin-top:auto!important;
+  border:1px solid #a9e7be!important;
+  border-radius:999px!important;
+  color:#159947!important;
+  font-size:13px!important;
+  font-weight:900!important;
+  background:#fbfffc!important;
+}
+.kg-card-cta b{font-size:18px!important;line-height:1!important}
+@media(max-width:1180px){
+  .kg-approved-category-grid{grid-template-columns:repeat(3,1fr)!important}
+  .kg-approved-card{height:500px!important}
+}
+@media(max-width:760px){
+  .kg-approved-hero{margin-top:26px!important}
+  .kg-approved-hero h1{font-size:38px!important;letter-spacing:-1.4px!important}
+  .kg-approved-hero p{font-size:15px!important}
+  .kg-approved-category-grid{grid-template-columns:1fr!important;gap:14px!important}
+  .kg-approved-card{height:auto!important;min-height:470px!important}
+  .kg-product-art{height:230px!important}
+}
+</style>
+
+
+<style id="kg-exact-final-visual">
+/* Final ana sayfa görünümü: kullanıcının gönderdiği referansa göre */
+#viewHome{
+  background:#f8fafc !important;
+}
+#viewHome .kg-approved-hero{
+  max-width:980px!important;
+  margin:42px auto 28px!important;
+  padding:0 20px!important;
+  text-align:center!important;
+}
+#viewHome .kg-approved-hero h1{
+  margin:0 0 14px!important;
+  font-size:58px!important;
+  line-height:1.05!important;
+  letter-spacing:-2.8px!important;
+  font-weight:950!important;
+  color:#0f1728!important;
+}
+#viewHome .kg-approved-hero h1 span{
+  color:#16a34a!important;
+}
+#viewHome .kg-approved-hero p{
+  max-width:820px!important;
+  margin:0 auto!important;
+  font-size:20px!important;
+  line-height:1.55!important;
+  color:#667085!important;
+  font-weight:600!important;
+}
+
+#viewHome .kg-category-section{
+  max-width:1460px!important;
+  margin:0 auto 28px!important;
+  padding:0 38px!important;
+  background:transparent!important;
+  border:0!important;
+  box-shadow:none!important;
+}
+#viewHome .kg-approved-category-grid{
+  display:grid!important;
+  grid-template-columns:repeat(5,minmax(0,1fr))!important;
+  gap:18px!important;
+  align-items:stretch!important;
+}
+#viewHome .kg-approved-card{
+  height:515px!important;
+  min-width:0!important;
+  display:flex!important;
+  flex-direction:column!important;
+  align-items:center!important;
+  padding:20px 16px 16px!important;
+  border-radius:22px!important;
+  border:1px solid #e5e7eb!important;
+  background:#fff!important;
+  box-shadow:0 12px 28px rgba(15,23,42,.07)!important;
+  overflow:hidden!important;
+}
+#viewHome .kg-approved-card.active{
+  border-color:#39c56b!important;
+  background:linear-gradient(180deg,#ffffff 0%,#f4fff6 100%)!important;
+}
+#viewHome .kg-product-art{
+  width:100%!important;
+  height:285px!important;
+  margin:0 0 18px!important;
+  display:flex!important;
+  align-items:center!important;
+  justify-content:center!important;
+}
+#viewHome .kg-product-art img{
+  width:100%!important;
+  height:100%!important;
+  object-fit:contain!important;
+  display:block!important;
+  mix-blend-mode:multiply!important;
+}
+#viewHome .kg-approved-card .category-name{
+  display:block!important;
+  margin:0 0 12px!important;
+  font-size:22px!important;
+  line-height:1.15!important;
+  font-weight:950!important;
+  color:#111827!important;
+}
+#viewHome .kg-approved-card .category-sub{
+  display:block!important;
+  min-height:58px!important;
+  margin:0 0 18px!important;
+  font-size:14px!important;
+  line-height:1.55!important;
+  font-weight:650!important;
+  color:#475467!important;
+}
+#viewHome .kg-card-cta{
+  width:100%!important;
+  min-height:48px!important;
+  margin-top:auto!important;
+  padding:0 18px!important;
+  display:flex!important;
+  align-items:center!important;
+  justify-content:space-between!important;
+  border:1px solid #9ce3b4!important;
+  border-radius:17px!important;
+  background:#fff!important;
+  color:#0b9a3c!important;
+  font-size:14px!important;
+  font-weight:900!important;
+}
+#viewHome .kg-card-cta b{
+  font-size:21px!important;
+  line-height:1!important;
+}
+
+/* Alt avantaj şeridi referans görsele yaklaştırıldı */
+#viewHome .trustbar{
+  max-width:1408px!important;
+  margin:0 auto 34px!important;
+  padding:22px 26px!important;
+  border:1px solid #e5e7eb!important;
+  border-radius:22px!important;
+  background:#fff!important;
+  box-shadow:0 10px 25px rgba(15,23,42,.05)!important;
+}
+#viewHome .trustbar > *{
+  min-height:60px!important;
+}
+#viewHome .trustbar .trust-item{
+  padding:0 24px!important;
+}
+#viewHome .trustbar .trust-item strong{
+  font-size:15px!important;
+}
+#viewHome .trustbar .trust-item small{
+  font-size:12px!important;
+}
+
+/* Kullanıcı bir kategori seçtikten sonra kategori kartları görünmesin */
+#viewHome.category-selected .kg-approved-hero,
+#viewHome.category-selected .kg-category-section,
+#viewHome.category-selected .trustbar.home-only{
+  display:none!important;
+}
+
+@media(max-width:1200px){
+  #viewHome .kg-approved-category-grid{grid-template-columns:repeat(3,1fr)!important}
+  #viewHome .kg-approved-card{height:500px!important}
+}
+@media(max-width:760px){
+  #viewHome .kg-approved-hero h1{font-size:40px!important;letter-spacing:-1.5px!important}
+  #viewHome .kg-approved-hero p{font-size:16px!important}
+  #viewHome .kg-category-section{padding:0 14px!important}
+  #viewHome .kg-approved-category-grid{grid-template-columns:1fr!important}
+  #viewHome .kg-approved-card{height:auto!important;min-height:470px!important}
+}
+</style>
+
+
+<style id="kg-phone-page-redesign">
+/* Telefon hesaplama alanı — ana sayfa tasarım diliyle uyumlu */
+#viewHome.category-selected{
+  background:#f8fafc!important;
+}
+#viewHome.category-selected .selected-category-bar{
+  max-width:1320px!important;
+  margin:24px auto 14px!important;
+  padding:14px 18px!important;
+  border:1px solid #e5e7eb!important;
+  border-radius:16px!important;
+  background:#fff!important;
+  box-shadow:0 8px 20px rgba(15,23,42,.04)!important;
+  font-size:14px!important;
+  color:#667085!important;
+}
+#viewHome.category-selected .selected-category-bar b,
+#viewHome.category-selected .selected-category-bar strong{
+  color:#16a34a!important;
+}
+#viewHome.category-selected .valuation-layout{
+  max-width:1320px!important;
+  margin:0 auto 36px!important;
+  display:grid!important;
+  grid-template-columns:minmax(0,1fr) 360px!important;
+  gap:24px!important;
+  align-items:start!important;
+  padding:0 10px!important;
+}
+#viewHome.category-selected .valuation-main{
+  border-radius:22px!important;
+  overflow:hidden!important;
+  background:#fff!important;
+  border:1px solid #e5e7eb!important;
+  box-shadow:0 12px 30px rgba(15,23,42,.06)!important;
+}
+#viewHome.category-selected .section{
+  padding:26px 24px!important;
+  border-bottom:1px solid #eef2f6!important;
+}
+#viewHome.category-selected .section:last-child{
+  border-bottom:0!important;
+}
+#viewHome.category-selected .section-title{
+  display:flex!important;
+  align-items:center!important;
+  gap:10px!important;
+  margin-bottom:20px!important;
+  font-size:22px!important;
+  font-weight:950!important;
+  color:#111827!important;
+}
+#viewHome.category-selected .step-badge{
+  width:32px!important;
+  height:32px!important;
+  min-width:32px!important;
+  display:inline-flex!important;
+  align-items:center!important;
+  justify-content:center!important;
+  border-radius:10px!important;
+  background:#16a34a!important;
+  color:#fff!important;
+  font-size:15px!important;
+  font-weight:900!important;
+}
+#viewHome.category-selected .fields-grid{
+  gap:16px!important;
+}
+#viewHome.category-selected .field label{
+  font-size:13px!important;
+  font-weight:800!important;
+  color:#475467!important;
+  margin-bottom:7px!important;
+}
+#viewHome.category-selected select,
+#viewHome.category-selected input[type="text"],
+#viewHome.category-selected input[type="number"]{
+  min-height:48px!important;
+  border:1px solid #d9e1e8!important;
+  border-radius:12px!important;
+  background:#fff!important;
+  padding:0 13px!important;
+  font-size:14px!important;
+  color:#101828!important;
+  box-shadow:none!important;
+}
+#viewHome.category-selected select:focus,
+#viewHome.category-selected input:focus{
+  border-color:#22c55e!important;
+  box-shadow:0 0 0 3px rgba(34,197,94,.10)!important;
+  outline:none!important;
+}
+#viewHome.category-selected .option-grid,
+#viewHome.category-selected .choice-grid{
+  gap:10px!important;
+}
+#viewHome.category-selected .option-btn,
+#viewHome.category-selected .choice-btn{
+  min-height:54px!important;
+  border:1px solid #dbe3ea!important;
+  border-radius:14px!important;
+  background:#fff!important;
+  font-size:13px!important;
+  font-weight:850!important;
+  color:#344054!important;
+}
+#viewHome.category-selected .option-btn.active,
+#viewHome.category-selected .choice-btn.active{
+  background:#f0fdf4!important;
+  border-color:#22c55e!important;
+  color:#15803d!important;
+}
+#viewHome.category-selected .factor-inline{
+  margin-top:10px!important;
+  padding:10px 12px!important;
+  border-radius:10px!important;
+  background:#eff6ff!important;
+  color:#2563eb!important;
+  font-size:12px!important;
+  border:1px solid #dbeafe!important;
+}
+#viewHome.category-selected .calc-button,
+#viewHome.category-selected #calculateBtn{
+  min-height:58px!important;
+  border-radius:14px!important;
+  border:0!important;
+  background:#16a34a!important;
+  color:#fff!important;
+  font-size:16px!important;
+  font-weight:950!important;
+  box-shadow:0 10px 20px rgba(22,163,74,.18)!important;
+}
+#viewHome.category-selected .calc-button:hover,
+#viewHome.category-selected #calculateBtn:hover{
+  background:#15803d!important;
+}
+
+/* Sağ fiyat paneli */
+#viewHome.category-selected .valuation-sidebar{
+  position:sticky!important;
+  top:98px!important;
+  display:flex!important;
+  flex-direction:column!important;
+  gap:16px!important;
+}
+#viewHome.category-selected .price-card{
+  border-radius:22px!important;
+  background:#071b2b!important;
+  color:#fff!important;
+  padding:26px!important;
+  box-shadow:0 16px 32px rgba(2,18,31,.16)!important;
+}
+#viewHome.category-selected .price-card .price-value{
+  color:#4ade80!important;
+  font-size:44px!important;
+  font-weight:950!important;
+}
+#viewHome.category-selected .side-card{
+  border:1px solid #e5e7eb!important;
+  border-radius:18px!important;
+  background:#fff!important;
+  padding:20px!important;
+  box-shadow:0 8px 20px rgba(15,23,42,.045)!important;
+}
+#viewHome.category-selected .side-card h3{
+  font-size:18px!important;
+  font-weight:900!important;
+  color:#111827!important;
+}
+#viewHome.category-selected .price-row{
+  padding:15px 0!important;
+  border-bottom:1px solid #eef2f6!important;
+}
+#viewHome.category-selected .price-row:last-child{border-bottom:0!important}
+
+/* Değişen parça satırları */
+#viewHome.category-selected .parts-config-field{
+  grid-column:1/-1!important;
+}
+#viewHome.category-selected .changed-parts-list,
+#viewHome.category-selected .parts-list{
+  display:flex!important;
+  flex-direction:column!important;
+  gap:10px!important;
+}
+#viewHome.category-selected .changed-part-row,
+#viewHome.category-selected .part-row{
+  display:grid!important;
+  grid-template-columns:minmax(0,1fr) minmax(0,1fr) 42px!important;
+  gap:10px!important;
+  align-items:center!important;
+}
+#viewHome.category-selected .add-part-btn{
+  width:max-content!important;
+  margin-top:10px!important;
+  min-height:42px!important;
+  padding:0 16px!important;
+  border:1px solid #9ee6b8!important;
+  border-radius:12px!important;
+  background:#f0fdf4!important;
+  color:#15803d!important;
+  font-weight:850!important;
+}
+@media(max-width:980px){
+  #viewHome.category-selected .valuation-layout{
+    grid-template-columns:1fr!important;
+  }
+  #viewHome.category-selected .valuation-sidebar{
+    position:static!important;
+  }
+}
+@media(max-width:680px){
+  #viewHome.category-selected .section{padding:20px 16px!important}
+  #viewHome.category-selected .fields-grid{grid-template-columns:1fr!important}
+  #viewHome.category-selected .changed-part-row,
+  #viewHome.category-selected .part-row{
+    grid-template-columns:1fr!important;
+  }
+}
+</style>
+
+
+<style id="kg-approved-topbar-final">
+.kg-approved-topbar{
+  position:sticky;
+  top:0;
+  z-index:1000;
+  width:100%;
+  background:#fff;
+  border-bottom:1px solid #e7ebef;
+  box-shadow:0 2px 10px rgba(15,23,42,.03);
+}
+.kg-topbar-inner{
+  max-width:1480px;
+  margin:0 auto;
+  min-height:84px;
+  display:grid;
+  grid-template-columns:190px 1fr auto;
+  align-items:center;
+  gap:24px;
+  padding:0 28px;
+}
+.kg-brand{
+  text-decoration:none;
+  color:#111827;
+  display:flex;
+  flex-direction:column;
+  line-height:.85;
+  width:max-content;
+}
+.kg-brand-main{
+  font-size:31px;
+  font-weight:950;
+  letter-spacing:-1.6px;
+  color:#111827;
+}
+.kg-brand-main span{color:#16a34a}
+.kg-brand small{
+  align-self:flex-end;
+  margin-top:3px;
+  font-size:15px;
+  font-weight:900;
+  color:#111827;
+}
+.kg-main-nav{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:31px;
+  white-space:nowrap;
+}
+.kg-main-nav a{
+  position:relative;
+  color:#111827;
+  text-decoration:none;
+  font-size:14px;
+  font-weight:850;
+  padding:30px 0 27px;
+}
+.kg-main-nav a.active{color:#15803d}
+.kg-main-nav a.active::after{
+  content:"";
+  position:absolute;
+  left:0;right:0;bottom:15px;
+  height:2px;
+  border-radius:99px;
+  background:#16a34a;
+}
+.kg-topbar-actions{
+  display:flex;
+  align-items:center;
+  gap:14px;
+}
+.kg-theme-btn{
+  width:48px;
+  height:48px;
+  border-radius:11px;
+  border:1px solid #dbe3ea;
+  background:#fff;
+  color:#111827;
+  font-size:25px;
+  cursor:pointer;
+}
+.kg-calc-btn{
+  min-height:48px;
+  padding:0 19px;
+  border:0;
+  border-radius:10px;
+  background:#0b9a3c;
+  color:#fff;
+  font-size:14px;
+  font-weight:900;
+  display:flex;
+  align-items:center;
+  gap:9px;
+  cursor:pointer;
+}
+.kg-calc-btn:hover{background:#087c31}
+
+/* Ana sayfa kartlarını referans görseldeki daha kısa/dengeli ölçülere getir */
+#viewHome:not(.category-selected) .kg-approved-hero{
+  margin:44px auto 26px!important;
+}
+#viewHome:not(.category-selected) .kg-approved-hero h1{
+  font-size:56px!important;
+}
+#viewHome:not(.category-selected) .kg-category-section{
+  max-width:1500px!important;
+  padding:0 38px!important;
+}
+#viewHome:not(.category-selected) .kg-approved-category-grid{
+  gap:18px!important;
+}
+#viewHome:not(.category-selected) .kg-approved-card{
+  height:515px!important;
+  padding:18px 16px 16px!important;
+  background:#fff!important;
+  border:1px solid #e5e7eb!important;
+  box-shadow:0 10px 24px rgba(15,23,42,.06)!important;
+}
+#viewHome:not(.category-selected) .kg-approved-card.active{
+  background:#fff!important;
+  border-color:#e5e7eb!important;
+}
+#viewHome:not(.category-selected) .kg-product-art{
+  height:272px!important;
+  margin-bottom:18px!important;
+}
+#viewHome:not(.category-selected) .kg-approved-card .category-name{
+  font-size:22px!important;
+  margin-bottom:12px!important;
+}
+#viewHome:not(.category-selected) .kg-approved-card .category-sub{
+  min-height:54px!important;
+  font-size:14px!important;
+  margin-bottom:16px!important;
+}
+#viewHome:not(.category-selected) .kg-card-cta{
+  min-height:48px!important;
+  border-radius:15px!important;
+  font-size:14px!important;
+}
+
+/* Alt özellik şeridi */
+#viewHome:not(.category-selected) .trustbar{
+  max-width:1408px!important;
+  margin:0 auto 32px!important;
+  padding:20px 24px!important;
+  border-radius:20px!important;
+  background:#fff!important;
+}
+
+/* kategori seçildikten sonra kartlar görünmez, hesaplama ekranına geçer */
+#viewHome.category-selected .kg-approved-hero,
+#viewHome.category-selected .kg-category-section,
+#viewHome.category-selected .trustbar.home-only{
+  display:none!important;
+}
+
+@media(max-width:1280px){
+  .kg-main-nav{gap:18px}
+  .kg-main-nav a{font-size:13px}
+  .kg-topbar-inner{grid-template-columns:175px 1fr auto;gap:16px;padding:0 18px}
+}
+@media(max-width:980px){
+  .kg-topbar-inner{
+    grid-template-columns:1fr auto;
+    min-height:72px;
+  }
+  .kg-main-nav{display:none}
+  .kg-brand-main{font-size:27px}
+}
+@media(max-width:640px){
+  .kg-topbar-inner{padding:0 12px}
+  .kg-calc-btn span{display:none}
+  .kg-calc-btn{width:48px;padding:0;justify-content:center}
+  #viewHome:not(.category-selected) .kg-approved-hero h1{font-size:39px!important}
+}
+</style>
+
+
+<style id="kg-final-card-nav-fix">
+/* Telefon kartı dahil tüm ürün görselleri aynı beyaz zeminde */
+#viewHome .kg-approved-card,
+#viewHome .kg-approved-card.active{
+  background:#fff !important;
+}
+#viewHome .kg-product-art,
+#viewHome .kg-product-art img{
+  background:#fff !important;
+}
+#viewHome .kg-approved-card[data-category="phone"] .kg-product-art{
+  background:#fff !important;
+}
+#viewHome .kg-approved-card[data-category="phone"] .kg-product-art img{
+  background:#fff !important;
+  filter:none !important;
+  mix-blend-mode:normal !important;
+}
+</style>
+
+</head>
+<body class="fresh-start">
+
+<header class="kg-approved-topbar">
+  <div class="kg-topbar-inner">
+    <a class="kg-brand" href="/" aria-label="KaçaGider ana sayfa">
+      <span class="kg-brand-main">kaca<span>gider</span></span>
+      <small>.com.tr</small>
+    </a>
+
+    <nav class="kg-main-nav" aria-label="Ana menü">
+      <a href="#" class="active" onclick="kgGoHome(); return false;">Ana Sayfa</a>
+      <a href="#" onclick="kgGoCategory(\'phone\'); return false;">Telefon</a>
+      <a href="#" onclick="kgGoCategory(\'tablet\'); return false;">Tablet</a>
+      <a href="#" onclick="kgGoCategory(\'computer\'); return false;">Bilgisayar</a>
+      <a href="#" onclick="kgGoCategory(\'watch\'); return false;">Akıllı Saat</a>
+      <a href="#" onclick="kgGoCategory(\'console\'); return false;">Oyun Konsolu</a>
+      <a href="#" onclick="showView && showView('about'); return false;">Hakkımızda</a>
+      <a href="#" onclick="kgGoSection('sss'); return false;">SSS</a>
+      <a href="#" onclick="kgGoSection('iletisim'); return false;">İletişim</a>
+    </nav>
+
+    <div class="kg-topbar-actions">
+      <button class="kg-theme-btn" type="button" aria-label="Tema">☼</button>
+      <button class="kg-calc-btn" type="button" onclick="kgGoCategory(\'phone\')">
+        ▣ <span>Fiyatını Hesapla</span>
+      </button>
+    </div>
+  </div>
+</header>
+
+
+<main class="page app-view active" id="viewHome">
+  <div class="hero kg-approved-hero">
+    <h1>Cihazının <span>Gerçek Değerini</span> Öğren</h1>
+    <p>Telefon, tablet, bilgisayar, akıllı saat ve oyun konsolları için güncel piyasa verileriyle anında fiyat tahmini al.</p>
+  </div>
+
+
+  <section class="home-intro kg-category-section">
+    <div class="category-grid kg-approved-category-grid">
+      <button class="category-card kg-approved-card" data-category="phone" onclick="selectCategory('phone',this)">
+        <div class="kg-product-art"><img src="assets/categories/telefon.jpg" alt="Telefon"></div>
+        <span class="category-name">Telefon</span>
+        <span class="category-sub">iPhone, Samsung, Xiaomi<br>ve daha fazlası</span>
+        <span class="kg-card-cta">Hemen Değerini Öğren <b>→</b></span>
+      </button>
+
+      <button class="category-card kg-approved-card" data-category="tablet" onclick="selectCategory('tablet',this)">
+        <div class="kg-product-art"><img src="assets/categories/tablet.jpg" alt="Tablet"></div>
+        <span class="category-name">Tablet</span>
+        <span class="category-sub">iPad, Samsung Galaxy Tab<br>ve daha fazlası</span>
+        <span class="kg-card-cta">Hemen Değerini Öğren <b>→</b></span>
+      </button>
+
+      <button class="category-card kg-approved-card" data-category="computer" onclick="selectCategory('computer',this)">
+        <div class="kg-product-art"><img src="assets/categories/bilgisayar.jpg" alt="Bilgisayar"></div>
+        <span class="category-name">Bilgisayar</span>
+        <span class="category-sub">MacBook, Windows Laptop<br>ve daha fazlası</span>
+        <span class="kg-card-cta">Hemen Değerini Öğren <b>→</b></span>
+      </button>
+
+      <button class="category-card kg-approved-card" data-category="watch" onclick="selectCategory('watch',this)">
+        <div class="kg-product-art"><img src="assets/categories/akilli-saat.jpg" alt="Akıllı Saat"></div>
+        <span class="category-name">Akıllı Saat</span>
+        <span class="category-sub">Apple Watch<br>ve diğerleri</span>
+        <span class="kg-card-cta">Hemen Değerini Öğren <b>→</b></span>
+      </button>
+
+      <button class="category-card kg-approved-card" data-category="console" onclick="selectCategory('console',this)">
+        <div class="kg-product-art"><img src="assets/categories/oyun-konsolu.jpg" alt="Oyun Konsolu"></div>
+        <span class="category-name">Oyun Konsolu</span>
+        <span class="category-sub">PlayStation, Xbox<br>ve diğerleri</span>
+        <span class="kg-card-cta">Hemen Değerini Öğren <b>→</b></span>
+      </button>
+    </div>
+  </section>
+  <div class="selected-category-bar" id="selectedCategoryBar">
+    Seçilen kategori: <strong id="selectedCategoryName">—</strong>
+  </div>
+
+  <div id="valuationArea" style="display:none">
+  <div class="layout">
+    <div class="panel form-panel" id="phonePanel">
+      <section class="section">
+        <div class="section-title"><span class="step">1</span> 📱 Cihaz Bilgilerini Gir</div>
+        <div class="grid3 phone-basic-grid">
+          <div class="field"><label>Marka</label>
+            <select id="phoneBrand" onchange="populatePhoneModels()"></select>
+          </div>
+          <div class="field"><label>Model</label>
+            <select id="model" onchange="updatePhoneStorageOptions()">
+            </select>
+          </div>
+          <div class="field"><label>Hafıza</label>
+            <select id="storage"><option>64</option><option selected>128</option><option>256</option><option>512</option><option value="1024">1024</option></select>
+          </div>
+          <div class="field"><label>Pil Sağlığı</label>
+<select id="battery"><option value="" selected disabled>Seçiniz</option><option value="100">%100</option><option value="99">%99</option><option value="98">%98</option><option value="97">%97</option><option value="96">%96</option><option value="95">%95</option><option value="94">%94</option><option value="93">%93</option><option value="92">%92</option><option value="91">%91</option><option value="90">%90</option><option value="89">%89</option><option value="88">%88</option><option value="87">%87</option><option value="86">%86</option><option value="85">%85</option><option value="84">%84</option><option value="83">%83</option><option value="82">%82</option><option value="81">%81</option><option value="80">%80</option><option value="service">Servis (%79 ve altı)</option></select>
+</div>
+          <div class="field"><label>Ekran Durumu</label>
+            <select id="screen"><option value="" selected disabled>Seçiniz</option><option value="original">Orijinal – Temiz</option><option value="scratch">Orijinal – Çizikli</option><option value="aftermarket">Yan Sanayi</option><option value="broken">Kırık</option></select>
+          </div>
+          <div class="field"><label>Face ID</label><select id="faceid"><option value="" selected disabled>Seçiniz</option><option value="working">Çalışıyor</option><option value="notworking">Çalışmıyor</option></select></div>
+          <div class="field parts-config-field">
+  <label>Değişen Parça / İşlem Geçmişi</label>
+  <div class="parts-selector" id="partsSelector"></div>
+  <button type="button" class="add-part-btn" id="addPartBtn">＋ Başka değişen parça ekle</button>
+</div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-title"><span class="step">2</span> 📱 Ekran Durumu</div>
+        <div class="subgrid">
+          <div><div class="field"><label>Çizik Sayısı ⓘ</label></div><div class="option-row" data-group="scratchCount"><button class="option active" data-value="none">Yok</button><button class="option" data-value="1-5">1-5</button><button class="option" data-value="6-15">6-15</button><button class="option" data-value="16+">16+</button></div></div>
+          <div><div class="field"><label>Çizik Derinliği ⓘ</label></div><div class="option-row" data-group="scratchDepth"><button class="option active" data-value="none">Seçiniz</button><button class="option" data-value="hairline">Kılcal</button><button class="option" data-value="medium">Orta</button><button class="option" data-value="deep">Derin</button></div></div>
+          <div><div class="field"><label>Piksel Atması ⓘ</label></div><div class="option-row" data-group="protector"><button class="option active" data-value="no">Yok</button><button class="option" data-value="yes">Var</button></div></div>
+        </div>
+        <div class="info-strip">ⓘ Kılcal çizikler yüzeysel ve tırnakla hissedilmeyen çiziklerdir.</div>
+      </section>
+
+      <section class="section">
+        <div class="section-title"><span class="step">3</span> 📱 Kasa Durumu</div>
+        <div class="subgrid kasa-grid">
+          <div><div class="field"><label>Kasa Ezik / Darbe ⓘ</label></div><div class="option-row" data-group="dent"><button class="option active" data-value="none">Yok</button><button class="option" data-value="light">Hafif</button><button class="option" data-value="medium">Orta</button><button class="option" data-value="serious">Ciddi</button></div></div>
+          <div><div class="field"><label>Kasa Yüzeyi ⓘ</label></div><div class="option-row" data-group="surface"><button class="option active" data-value="clean">Temiz</button><button class="option" data-value="caseMark">Kılıf İzi</button><button class="option" data-value="lightScratch">Hafif Çizik</button><button class="option" data-value="manyScratch">Çok Çizik</button></div></div>
+          <div><div class="field"><label>Köşeler ⓘ</label></div><div class="option-row" data-group="corners"><button class="option active" data-value="clean">Temiz</button><button class="option" data-value="light">Hafif Ezik</button><button class="option" data-value="clear">Belirgin Ezik</button></div></div>
+        </div>
+        <div class="info-strip">ⓘ Kılıf izi: ışıkta belli olan fakat tırnakla hissedilmeyen izlerdir. Ezik/darbe olmadığı sürece etkisi sınırlıdır.</div>
+      </section>
+
+      <section class="section">
+        <div class="section-title"><span class="step">4</span> 📱 Arka Cam Durumu</div>
+        <div class="option-row" data-group="backGlass">
+          <button class="option active" data-value="clean">Temiz</button>
+          <button class="option" data-value="hairline">Kılcal Çizik</button>
+          <button class="option" data-value="crack">Çatlak</button>
+          <button class="option" data-value="broken">Kırık</button>
+        </div>
+      </section>
+
+      <div class="calc-wrap">
+        <button class="calc-btn" id="calcBtn" onclick="calculatePrice()">🧮 Fiyatımı Hesapla</button>
+        <div class="calc-help">🔒 Girdiğin bilgilere göre anlık piyasa değeri hesaplanır.</div>
+      </div>
+    </div>
+
+
+    <div class="panel form-panel generic-panel" id="genericPanel">
+      <section class="section">
+        <div class="section-title"><span class="step">1</span> <span id="genericTitle">Ürün Bilgilerini Gir</span></div>
+        <div class="grid3">
+          <div class="field"><label>Marka</label><select id="genericBrand" onchange="populateGenericModels()"></select></div>
+          <div class="field"><label>Model</label><select id="genericModel" onchange="populateGenericStorage()"></select></div>
+          <div class="field"><label id="genericStorageLabel">Hafıza / Kapasite</label><select id="genericStorage"></select></div>
+        </div>
+      </section>
+      <section class="section">
+        <div class="section-title"><span class="step">2</span> Ürün Durumu</div>
+        <div class="generic-condition-grid">
+          <div class="field"><label>Genel Kozmetik Durum</label>
+            <select id="genericCondition">
+              <option value="excellent">Çok temiz</option>
+              <option value="good" selected>Temiz</option>
+              <option value="average">Orta</option>
+              <option value="worn">Yıpranmış</option>
+            </select>
+          </div>
+          <div class="field"><label>Çalışma Durumu</label>
+            <select id="genericWorking"><option value="full">Tüm özellikler çalışıyor</option><option value="minor">Küçük sorun var</option><option value="major">Önemli sorun var</option></select>
+          </div>
+          <div class="field"><label>Kutu / Aksesuar</label>
+            <select id="genericAccessories"><option value="complete">Tam</option><option value="partial">Eksik</option><option value="none">Yok</option></select>
+          </div>
+        </div>
+        <div class="generic-note" id="genericNote">Bu kategoride fiyat hesabı, Supabase'te bulunan ürün ve piyasa kayıtlarına göre yapılır.</div>
+      </section>
+      <div class="calc-wrap">
+        <button class="calc-btn" onclick="calculateGenericPrice()">🧮 Fiyatımı Hesapla</button>
+        <div class="calc-help">Kategoriye ait yeterli fiyat verisi varsa sonuç sağ tarafta gösterilir.</div>
+      </div>
+    </div>
+
+    <aside class="side">
+      <div class="price-card">
+        <div class="price-label">Tahmini Satış Fiyatınız</div>
+        <div class="price-kicker">Piyasa değeri</div>
+        <div class="big-price" id="mainPrice">— TL</div>
+        <div class="price-trust-inline">🛡 Güven Skoru: <span class="trust-word"><span id="trustScore">—</span>/100</span></div>
+        <div class="bar"><span id="trustBar" style="width:0%"></span></div>
+        <button class="price-sale-cta" onclick="showView('sell')">
+          <span class="price-sale-icon">➤</span>
+          <span class="price-sale-copy">
+            <strong>SATTIYSAN FİYATINI GİR</strong>
+            <small>Gerçek satış fiyatını paylaş, piyasa verisini güçlendir.</small>
+          </span>
+          <span class="price-sale-arrow">›</span>
+        </button>
+      </div>
+
+      <div class="panel prices">
+        <div class="price-line"><span>Hızlı Satış Fiyatı</span><strong id="quickPrice">— TL</strong></div>
+        <div class="price-line"><span>İlan Fiyatı</span><strong id="listingPrice">— TL</strong></div>
+        <div class="price-line"><span>Ortalama Piyasa Fiyatı</span><strong id="normalPrice">— TL</strong></div>
+      </div>
+
+      <div class="panel factors">
+        <h3>📌 Fiyatı Etkileyen Faktörler</h3>
+        <div id="factorList"><div class="factor-empty">Fiyatı hesapladığında etkileyen faktörler burada görünecek.</div></div>
+      </div>
+
+      <div class="panel trust">
+        <p>ⓘ Bu fiyat mevcut piyasa kayıtları ve doğrulanmış kullanıcı satış sinyallerine göre hesaplanır.</p>
+      </div>
+
+      <div class="panel sell-card" id="sellSection">
+        <h3>Bu cihazı sattın mı?</h3>
+        <p>Sattığın gerçek fiyatı gir; gelecekte daha doğru fiyat tahminleri üretelim.</p>
+        <button class="sell-btn" onclick="showView('sell')">₺ Sattığın Fiyatı Gir</button>
+        <div class="sales-form" id="saleForm">
+          <div class="sales-grid">
+            <div class="field"><label>Kaça sattın? (TL)</label><input id="salePriceInput" type="text" inputmode="numeric" placeholder="Örn. 39.500"></div>
+            <div class="field"><label>Şehir</label><input id="saleCityInput" type="text" placeholder="İstanbul"></div>
+          </div>
+          <button onclick="submitActualSale()">Satışımı Kaydet ve Karşılaştır</button>
+          <div id="saleCompareResult" class="sale-result">
+            <div id="saleHeadline"></div><strong id="saleBigText"></strong><div id="saleSubText"></div>
+          </div>
+        </div>
+      </div>
+    </aside>
+  </div>
+
+  </div>
+
+  <div class="bottom-features">
+    <div class="feature">📊 3+ piyasa kaynağı<small>Güncel fiyat sinyali</small></div>
+    <div class="feature">✅ Doğrulanmış satışlar<small>Gerçek kullanıcı verisi</small></div>
+    <div class="feature">🧠 Akıllı fiyat motoru<small>Hibrit ve güvenli sistem</small></div>
+    <div class="feature">🛡 Gizli & Güvenli<small>Ham satış verisi kapalı</small></div>
+    <div class="feature">🎁 %100 ücretsiz<small>Kayıt olmadan kullan</small></div>
+  </div>
+</main>
+
+<section class="app-view" id="viewHow">
+  <div class="view-shell">
+    <div class="view-header">
+      <h1>KaçaGider.com.tr nasıl çalışır?</h1>
+      <p>Ürününün özelliklerini ve kondisyonunu gir; KaçaGider.com.tr mevcut piyasa kayıtlarını ve güvenilir kullanıcı satış sinyallerini değerlendirerek tahmini piyasa değerini hesaplasın.</p>
+    </div>
+    <div class="standalone-card">
+      <div class="how-grid">
+        <div class="how-card"><div class="how-no">1</div><h3>Kategoriyi seç</h3><p>Telefon, tablet, bilgisayar, akıllı saat veya oyun konsolu kategorilerinden ürününü seç.</p></div>
+        <div class="how-card"><div class="how-no">2</div><h3>Ürün bilgilerini gir</h3><p>Model, hafıza, pil ve kategoriye özel teknik özellikleri belirt.</p></div>
+        <div class="how-card"><div class="how-no">3</div><h3>Kondisyonu detaylandır</h3><p>Çizik, darbe, kasa, ekran ve değişen parçalar gibi fiyatı etkileyen ayrıntıları seç.</p></div>
+        <div class="how-card"><div class="how-no">4</div><h3>Fiyatını öğren</h3><p>Hızlı satış, normal satış ve ilan fiyatını aynı ekranda gör.</p></div>
+        <div class="how-card"><div class="how-no">5</div><h3>Gerçek satışını bildir</h3><p>Ürünü sattığında fiyatını anonim biçimde bildirerek fiyat motorunun gelişmesine katkı sağla.</p></div>
+        <div class="how-card"><div class="how-no">6</div><h3>Veri kalite kontrolü</h3><p>Uç veya şüpheli satışlar güven puanı sistemiyle fiyat motorundan ayrılır.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<section class="app-view" id="viewAbout">
+  <div class="about-page">
+    <div class="about-hero">
+      <span class="about-eyebrow">HAKKIMIZDA</span>
+      <h1>İkinci elde gerçek değeri herkes için daha ulaşılabilir hale getiriyoruz.</h1>
+      <p>KaçaGider.com.tr, ikinci el ürününü satmak isteyen insanların uzun uzun ilan araştırmadan, ürününün piyasa karşılığını daha hızlı ve daha anlaşılır biçimde öğrenebilmesi için kuruldu.</p>
+    </div>
+
+    <div class="about-grid">
+      <div class="about-card">
+        <div class="icon">📅</div>
+        <small>Kuruluş</small>
+        <strong>2026</strong>
+        <p>KaçaGider.com.tr projesi, ikinci el piyasasında daha şeffaf ve veri odaklı fiyat bilgisi sunma amacıyla 2026 yılında hayata geçirildi.</p>
+      </div>
+      <div class="about-card">
+        <div class="icon">🎯</div>
+        <small>Amacımız</small>
+        <strong>Gerçek değeri göstermek</strong>
+        <p>Kullanıcıların ürünlerini değerinin altında satmasını önlemek ve karar verirken güvenilir bir piyasa referansı sunmak.</p>
+      </div>
+      <div class="about-card">
+        <div class="icon">📊</div>
+        <small>Yaklaşımımız</small>
+        <strong>Gerçek satış verileri</strong>
+        <p>Piyasa kayıtlarını ve doğrulanmış kullanıcı satışlarını bir araya getirerek fiyat tahminlerini zaman içinde daha güçlü hale getirmek.</p>
+      </div>
+    </div>
+
+    <div class="about-story">
+      <h2>Neden KaçaGider.com.tr?</h2>
+      <p>İkinci el bir ürün satılırken en zor sorulardan biri “Gerçekten kaça satar?” sorusudur. İlan fiyatları çoğu zaman gerçekleşen satış fiyatını yansıtmaz ve aynı ürün için çok farklı rakamlarla karşılaşılabilir.</p>
+      <p>KaçaGider.com.tr’ın amacı yalnızca ekranda bir rakam göstermek değil; gerçek piyasa verilerini, ürünün kondisyonunu ve kullanıcıların gerçekleşmiş satışlarını bir araya getirerek daha şeffaf, daha güvenilir ve herkes için daha adil bir ikinci el piyasasına katkı sağlamaktır.</p>
+      <p>Çünkü kimse ürününü değerinin altında satmamalı ve gerçek piyasa değerini öğrenmek için saatlerce ilan araştırmak zorunda kalmamalı.</p>
+      <div class="about-motto">Gerçek satışlar. <span>Gerçek değer.</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="app-view" id="viewHistory">
+  <div class="view-shell">
+    <div class="view-header">
+      <h1>Fiyat Geçmişi</h1>
+      <p>Son hesapladığın ürünün Supabase üzerindeki piyasa fiyat kayıtlarını burada inceleyebilirsin.</p>
+    </div>
+    <div class="standalone-card">
+      <div class="history-toolbar">
+        <div class="history-status" id="historyStatus">Henüz bir ürün seçilmedi.</div>
+        <button class="history-refresh" onclick="loadPriceHistory()">Geçmişi Yenile</button>
+      </div>
+      <div class="history-table-wrap">
+        <table class="history-table">
+          <thead><tr><th>Fiyat</th><th>Kaynak</th><th>Kondisyon</th><th>Tarih</th></tr></thead>
+          <tbody id="historyBody"><tr><td colspan="4" class="history-empty">Önce Ana Sayfa'dan bir ürünün fiyatını hesapla.</td></tr></tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="app-view" id="viewSell">
+  <div class="view-shell">
+    <div class="view-header">
+      <h1>Satışını Bildir</h1>
+      <p>Ürününü sattıysan gerçekleşen satış fiyatını paylaş. Bildirimin kalite kontrolünden geçtikten sonra fiyat motoruna katkı sağlayabilir.</p>
+    </div>
+    <div class="standalone-card standalone-sell">
+      <div id="sellNoProduct">
+        <h2 style="margin-top:0">Önce ürününün fiyatını hesapla</h2>
+        <p style="color:#667085;line-height:1.55">Satış bildiriminin doğru ürünle eşleşebilmesi için önce Ana Sayfa'dan kategori ve ürününü seçip fiyat hesaplaman gerekiyor.</p>
+        <button class="back-home-btn" onclick="showView('home')">Ana Sayfaya Git</button>
+      </div>
+      <div id="sellReady" style="display:none">
+        <h2 style="margin-top:0">Gerçek satış fiyatını paylaş</h2>
+        <p style="color:#667085">İsim, telefon veya IMEI istemiyoruz. Bildirimin anonim olarak kalite kontrolünden geçirilir.</p>
+        <div id="sellDeviceSummary" style="margin:12px 0 16px;padding:12px 14px;border:1px solid #dfe7ef;border-radius:11px;background:#f8fafc;font-size:13px;font-weight:800;color:#344054"></div>
+        <div class="sales-grid">
+          <div class="field"><label>Kaça sattın? (TL)</label><input id="standaloneSalePrice" type="text" inputmode="numeric" placeholder="Örn. 39.500"></div>
+          <div class="field"><label>Şehir</label><input id="standaloneSaleCity" type="text" placeholder="İstanbul"></div>
+        </div>
+        <button class="calc-btn" id="standaloneSaleBtn" style="margin-top:15px" onclick="submitStandaloneSale()">Satışımı Kaydet ve Karşılaştır</button>
+        <div id="standaloneSaleResult" class="sale-result">
+          <div id="standaloneSaleHeadline"></div>
+          <strong id="standaloneSaleBigText"></strong>
+          <div id="standaloneSaleSubText"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<script>
+const SUPABASE_URL='https://mjtruagocsmdtnjajxlb.supabase.co';
+const SUPABASE_KEY='sb_publishable_TFx135cYy6EmGb4WBAc7vA_1EaDXBSo';
+const PHONE_CATALOG={"Apple":["iPhone 11","iPhone 11 Pro","iPhone 11 Pro Max","iPhone SE (2. nesil)","iPhone 12 mini","iPhone 12","iPhone 12 Pro","iPhone 12 Pro Max","iPhone 13 mini","iPhone 13","iPhone 13 Pro","iPhone 13 Pro Max","iPhone SE (3. nesil)","iPhone 14","iPhone 14 Plus","iPhone 14 Pro","iPhone 14 Pro Max","iPhone 15","iPhone 15 Plus","iPhone 15 Pro","iPhone 15 Pro Max","iPhone 16","iPhone 16 Plus","iPhone 16 Pro","iPhone 16 Pro Max","iPhone 16e","iPhone 17","iPhone 17 Pro","iPhone 17 Pro Max","iPhone Air","iPhone 17e"],"Samsung":["Galaxy S20","Galaxy S20+","Galaxy S20 Ultra","Galaxy S20 FE","Galaxy S21","Galaxy S21+","Galaxy S21 Ultra","Galaxy S21 FE","Galaxy S22","Galaxy S22+","Galaxy S22 Ultra","Galaxy S23","Galaxy S23+","Galaxy S23 Ultra","Galaxy S23 FE","Galaxy S24","Galaxy S24+","Galaxy S24 Ultra","Galaxy S24 FE","Galaxy S25","Galaxy S25+","Galaxy S25 Ultra","Galaxy S25 Edge","Galaxy S25 FE","Galaxy S26","Galaxy S26+","Galaxy S26 Ultra","Galaxy Z Fold3","Galaxy Z Fold4","Galaxy Z Fold5","Galaxy Z Fold6","Galaxy Z Fold7","Galaxy Z Fold8","Galaxy Z Fold8 Ultra","Galaxy Z Flip3","Galaxy Z Flip4","Galaxy Z Flip5","Galaxy Z Flip6","Galaxy Z Flip7","Galaxy Z Flip8","Galaxy A12","Galaxy A13","Galaxy A14","Galaxy A15","Galaxy A16","Galaxy A17","Galaxy A22","Galaxy A23","Galaxy A24","Galaxy A25","Galaxy A26","Galaxy A32","Galaxy A33 5G","Galaxy A34 5G","Galaxy A35 5G","Galaxy A36 5G","Galaxy A52","Galaxy A52s 5G","Galaxy A53 5G","Galaxy A54 5G","Galaxy A55 5G","Galaxy A56 5G","Galaxy A57 5G","Galaxy A72","Galaxy A73 5G","Galaxy M12","Galaxy M13","Galaxy M14 5G","Galaxy M15 5G","Galaxy M23 5G","Galaxy M33 5G","Galaxy M34 5G","Galaxy M35 5G","Galaxy M52 5G","Galaxy M53 5G","Galaxy M54 5G","Galaxy M55 5G"],"Xiaomi":["Xiaomi 11 Lite 5G NE","Xiaomi 11T","Xiaomi 11T Pro","Xiaomi 12","Xiaomi 12 Pro","Xiaomi 12 Lite","Xiaomi 12T","Xiaomi 12T Pro","Xiaomi 13","Xiaomi 13 Pro","Xiaomi 13 Lite","Xiaomi 13T","Xiaomi 13T Pro","Xiaomi 14","Xiaomi 14 Ultra","Xiaomi 14T","Xiaomi 14T Pro","Xiaomi 15","Xiaomi 15 Ultra","Xiaomi 15T","Xiaomi 15T Pro","Xiaomi 17","Xiaomi 17 Ultra","Xiaomi 17T","Xiaomi 17T Pro","Redmi Note 10","Redmi Note 10 Pro","Redmi Note 11","Redmi Note 11 Pro","Redmi Note 11 Pro+ 5G","Redmi Note 12","Redmi Note 12 5G","Redmi Note 12 Pro","Redmi Note 12 Pro 5G","Redmi Note 12S","Redmi Note 13","Redmi Note 13 5G","Redmi Note 13 Pro","Redmi Note 13 Pro 5G","Redmi Note 13 Pro+ 5G","Redmi Note 14","Redmi Note 14 5G","Redmi Note 14 Pro","Redmi Note 14 Pro 5G","Redmi Note 14 Pro+ 5G","Redmi Note 15","Redmi Note 15 Pro","Redmi Note 15 Pro 5G","Redmi Note 15 Pro+ 5G","Redmi 10","Redmi 10C","Redmi 12","Redmi 12C","Redmi 13","Redmi 13C","Redmi 15","Redmi 15 5G","Redmi 15C","Redmi 15C 5G","POCO X5","POCO X5 Pro","POCO X6","POCO X6 Pro","POCO X7","POCO X7 Pro","POCO X8 Pro","POCO X8 Pro Max","POCO F5","POCO F5 Pro","POCO F6","POCO F6 Pro","POCO F7","POCO F7 Pro","POCO F7 Ultra","POCO F8 Pro","POCO F8 Ultra","POCO M5","POCO M6 Pro","POCO M7 Pro","POCO M8 5G","POCO M8 Pro 5G"],"Oppo":["Reno6","Reno6 Pro","Reno7","Reno7 Pro","Reno8","Reno8 Pro","Reno10","Reno10 Pro","Reno11","Reno11 F","Reno12","Reno12 F","Reno13","Reno13 F","Find X3 Pro","Find X5","Find X5 Pro","Find X6 Pro","Find X7 Ultra","Find X8","Find X8 Pro","A16","A17","A18","A38","A54","A55","A57","A58","A60","A74","A76","A77","A78","A79","A96","A98"],"Vivo":["V21","V23","V25","V27","V29","V29 Lite","V30","V30 Lite","V40","V40 Lite","V50","V50 Lite","Y16","Y17s","Y21","Y22s","Y27","Y33s","Y35","Y36","Y55","Y76 5G","Y100","Y200","X80 Pro","X90 Pro","X100 Pro","X200 Pro"],"Huawei":["P30","P30 Pro","P40","P40 Pro","P50 Pro","P60 Pro","Pura 70","Pura 70 Pro","Pura 70 Ultra","Pura 80","Pura 80 Pro","Pura 80 Ultra","Mate 40 Pro","Mate 50 Pro","Mate 60 Pro","Mate 70 Pro","Nova 9","Nova 10","Nova 10 Pro","Nova 11","Nova 11 Pro","Nova 12","Nova 12 SE","Nova 13","Nova 13 Pro","Nova Y70","Nova Y90","Nova Y91"],"Honor":["Honor 50","Honor 70","Honor 90","Honor 90 Lite","Honor 200","Honor 200 Lite","Honor 200 Pro","Honor 400","Honor 400 Lite","Honor 400 Pro","Magic4 Pro","Magic5 Pro","Magic6 Pro","Magic7 Pro","Magic V2","Magic V3","X7","X7a","X7b","X8","X8a","X8b","X9","X9a","X9b","X9c"],"Realme":["Realme 8","Realme 8 Pro","Realme 9","Realme 9 Pro","Realme 10","Realme 10 Pro","Realme 11","Realme 11 Pro","Realme 11 Pro+","Realme 12","Realme 12 Pro","Realme 12 Pro+","Realme 13","Realme 13 Pro","Realme 14 Pro","Realme GT 2","Realme GT 2 Pro","Realme GT 5","Realme GT 6","Realme GT 6T","Realme GT 7","Realme GT 7 Pro","Realme C33","Realme C53","Realme C55","Realme C61","Realme C65","Realme C67","Realme C75"],"OnePlus":["OnePlus 8","OnePlus 8 Pro","OnePlus 9","OnePlus 9 Pro","OnePlus 10 Pro","OnePlus 10T","OnePlus 11","OnePlus 11R","OnePlus 12","OnePlus 12R","OnePlus 13","OnePlus 13R","OnePlus 15","OnePlus Nord","OnePlus Nord 2","OnePlus Nord 2T","OnePlus Nord 3","OnePlus Nord 4","OnePlus Nord 5","OnePlus Nord CE 2","OnePlus Nord CE 3 Lite","OnePlus Nord CE 4","OnePlus Nord CE 4 Lite"],"Google":["Pixel 6","Pixel 6 Pro","Pixel 6a","Pixel 7","Pixel 7 Pro","Pixel 7a","Pixel 8","Pixel 8 Pro","Pixel 8a","Pixel 9","Pixel 9 Pro","Pixel 9 Pro XL","Pixel 9 Pro Fold","Pixel 9a","Pixel 10","Pixel 10 Pro","Pixel 10 Pro XL","Pixel 10 Pro Fold"]};
+function phoneModelKey(name){return name.toLowerCase().replace(/[^a-z0-9]/g,"")}
+const MODEL_NAMES={};
+Object.values(PHONE_CATALOG).flat().forEach(name=>MODEL_NAMES[phoneModelKey(name)]=name);
+const APPLE_STORAGE_OPTIONS={"iPhone 11": [64, 128, 256], "iPhone 11 Pro": [64, 256, 512], "iPhone 11 Pro Max": [64, 256, 512], "iPhone SE (2. nesil)": [64, 128, 256], "iPhone 12 mini": [64, 128, 256], "iPhone 12": [64, 128, 256], "iPhone 12 Pro": [128, 256, 512], "iPhone 12 Pro Max": [128, 256, 512], "iPhone 13 mini": [128, 256, 512], "iPhone 13": [128, 256, 512], "iPhone 13 Pro": [128, 256, 512, 1024], "iPhone 13 Pro Max": [128, 256, 512, 1024], "iPhone SE (3. nesil)": [64, 128, 256], "iPhone 14": [128, 256, 512], "iPhone 14 Plus": [128, 256, 512], "iPhone 14 Pro": [128, 256, 512, 1024], "iPhone 14 Pro Max": [128, 256, 512, 1024], "iPhone 15": [128, 256, 512], "iPhone 15 Plus": [128, 256, 512], "iPhone 15 Pro": [128, 256, 512, 1024], "iPhone 15 Pro Max": [256, 512, 1024], "iPhone 16": [128, 256, 512], "iPhone 16 Plus": [128, 256, 512], "iPhone 16 Pro": [128, 256, 512, 1024], "iPhone 16 Pro Max": [256, 512, 1024], "iPhone 16e": [128, 256, 512], "iPhone 17": [256, 512], "iPhone 17 Pro": [256, 512, 1024], "iPhone 17 Pro Max": [256, 512, 1024, 2048], "iPhone Air": [256, 512, 1024], "iPhone 17e": [128, 256, 512]};
+
+function populatePhoneBrands(){
+  const el=document.getElementById("phoneBrand");
+  el.innerHTML='<option value="" selected disabled>Marka seçiniz</option>'+Object.keys(PHONE_CATALOG).map(b=>`<option value="${b}">${b}</option>`).join("");
+  document.getElementById("model").innerHTML='<option value="" selected disabled>Önce marka seçiniz</option>';
+  document.getElementById("storage").innerHTML='<option value="" selected disabled>Önce model seçiniz</option>';
+}
+function populatePhoneModels(preferred){
+  const brand=document.getElementById("phoneBrand").value;
+  const el=document.getElementById("model");
+  if(!brand){
+    el.innerHTML='<option value="" selected disabled>Önce marka seçiniz</option>';
+    document.getElementById("storage").innerHTML='<option value="" selected disabled>Önce model seçiniz</option>';
+    return;
+  }
+  el.innerHTML='<option value="" selected disabled>Model seçiniz</option>'+(PHONE_CATALOG[brand]||[]).map(name=>`<option value="${phoneModelKey(name)}">${name}</option>`).join("");
+  if(preferred && (PHONE_CATALOG[brand]||[]).includes(preferred)) el.value=phoneModelKey(preferred);
+  updatePhoneStorageOptions();
+}
+
+function updatePhoneStorageOptions(){
+  const brand=document.getElementById("phoneBrand").value;
+  const modelEl=document.getElementById("model");
+  const model=modelEl ? MODEL_NAMES[modelEl.value] : null;
+  const storage=document.getElementById("storage");
+  if(!storage) return;
+  if(!brand || !model){
+    storage.innerHTML='<option value="" selected disabled>Önce model seçiniz</option>';
+    return;
+  }
+  let options=(brand==="Apple" && APPLE_STORAGE_OPTIONS[model]) ? APPLE_STORAGE_OPTIONS[model] : [64,128,256,512,1024];
+  storage.innerHTML='<option value="" selected disabled>Hafıza seçiniz</option>'+options.map(v=>`<option value="${v}">${v===1024?"1 TB":v===2048?"2 TB":v+" GB"}</option>`).join("");
+}
+
+const STATIC_CATALOG={
+  tablet:{"Apple":["iPad (7. nesil)","iPad (8. nesil)","iPad (9. nesil)","iPad (10. nesil)","iPad (A16)","iPad mini (5. nesil)","iPad mini (6. nesil)","iPad mini (A17 Pro)","iPad Air (3. nesil)","iPad Air (4. nesil)","iPad Air (5. nesil)","iPad Air 11 inç (M2)","iPad Air 13 inç (M2)","iPad Air 11 inç (M3)","iPad Air 13 inç (M3)","iPad Air 11 inç (M4)","iPad Air 13 inç (M4)","iPad Pro 11 inç (1. nesil)","iPad Pro 11 inç (2. nesil)","iPad Pro 11 inç (3. nesil)","iPad Pro 11 inç (4. nesil)","iPad Pro 11 inç (M4)","iPad Pro 11 inç (M5)","iPad Pro 12.9 inç (3. nesil)","iPad Pro 12.9 inç (4. nesil)","iPad Pro 12.9 inç (5. nesil)","iPad Pro 12.9 inç (6. nesil)","iPad Pro 13 inç (M4)","iPad Pro 13 inç (M5)"],"Samsung":["Galaxy Tab A7","Galaxy Tab A7 Lite","Galaxy Tab A8","Galaxy Tab A9","Galaxy Tab A9+","Galaxy Tab S6 Lite","Galaxy Tab S7","Galaxy Tab S7+","Galaxy Tab S7 FE","Galaxy Tab S8","Galaxy Tab S8+","Galaxy Tab S8 Ultra","Galaxy Tab S9","Galaxy Tab S9+","Galaxy Tab S9 Ultra","Galaxy Tab S9 FE","Galaxy Tab S9 FE+","Galaxy Tab S10+","Galaxy Tab S10 Ultra","Galaxy Tab S10 FE","Galaxy Tab S10 FE+","Galaxy Tab S11","Galaxy Tab S11 Ultra"],"Xiaomi":["Xiaomi Pad 5","Xiaomi Pad 6","Xiaomi Pad 6S Pro 12.4","Xiaomi Pad 7","Xiaomi Pad 7 Pro","Xiaomi Pad 8","Xiaomi Pad 8 Pro","Xiaomi Pad mini","Redmi Pad","Redmi Pad SE","Redmi Pad Pro","REDMI Pad 2","REDMI Pad 2 Pro","REDMI Pad 2 9.7","POCO Pad","POCO Pad X1","POCO Pad M1"],"Huawei":["MatePad 10.4","MatePad 11","MatePad 11.5","MatePad 11.5 S","MatePad 12 X","MatePad Pro 10.8","MatePad Pro 11","MatePad Pro 12.2","MatePad Pro 13.2","MatePad SE 10.4","MatePad SE 11"],"Lenovo":["Lenovo Tab M8","Lenovo Tab M9","Lenovo Tab M10","Lenovo Tab M10 Plus","Lenovo Tab M11","Lenovo Tab P11","Lenovo Tab P11 Plus","Lenovo Tab P11 Pro","Lenovo Tab P12","Lenovo Tab P12 Pro","Lenovo Tab Plus","Lenovo Tab","Lenovo Yoga Tab 11","Lenovo Yoga Tab 13","Lenovo Legion Tab"],"Honor":["Honor Pad 8","Honor Pad 9","Honor Pad 10","Honor Pad X8","Honor Pad X8a","Honor Pad X9","Honor MagicPad 2"]},
+  console:{"PlayStation":["PlayStation 5 Pro","PlayStation 5 Slim Diskli","PlayStation 5 Slim Digital","PlayStation 5 Diskli","PlayStation 5 Digital","PlayStation 4 Pro","PlayStation 4 Slim","PlayStation 4"],"Xbox":["Xbox Series X 2 TB","Xbox Series X 1 TB","Xbox Series X 1 TB Digital","Xbox Series S 1 TB","Xbox Series S 512 GB","Xbox One X","Xbox One S","Xbox One"]}
+};
+const DEFAULT_STORAGE_OPTIONS={
+  tablet:["32","64","128","256","512","1024","2048"],
+  console:["500","512","825","1000","2000"]
+};
+
+const state={scratchCount:"none",scratchDepth:"none",protector:"no",dent:"none",surface:"clean",corners:"clean",backGlass:"clean"};
+let CURRENT_PRODUCT_ID=null, CURRENT_MARKET_PRICE=null, CURRENT_CATEGORY=null, CURRENT_BRAND=null, CURRENT_MODEL=null, CURRENT_STORAGE=null;
+
+document.querySelectorAll(".option-row").forEach(row=>{
+  row.querySelectorAll(".option").forEach(btn=>btn.addEventListener("click",e=>{
+    e.preventDefault();
+    row.querySelectorAll(".option").forEach(x=>x.classList.remove("active"));
+    btn.classList.add("active");
+    state[row.dataset.group]=btn.dataset.value;
+    syncScratchControls();
+  }));
+});
+function syncScratchControls(){
+  const has = state.scratchCount!=="none";
+  const depthRow=document.querySelector('[data-group="scratchDepth"]');
+  if(!has){
+    state.scratchDepth="none";
+    depthRow.querySelectorAll(".option").forEach(x=>x.classList.remove("active"));
+    depthRow.querySelector('[data-value="none"]').classList.add("active");
+  }
+}
+function tl(v){return Math.round(v).toLocaleString("tr-TR")+" TL"}
+function median(a){a=[...a].sort((x,y)=>x-y);let m=Math.floor(a.length/2);return a.length%2?a[m]:(a[m-1]+a[m])/2}
+async function dbGet(path){
+  const r=await fetch(SUPABASE_URL+"/rest/v1/"+path,{headers:{apikey:SUPABASE_KEY,Accept:"application/json"}});
+  if(!r.ok) throw Error(await r.text()); return r.json();
+}
+function addFactor(list,label,amount){
+  if(!amount) return;
+  list.push({label,amount});
+}
+
+const PART_PRICE_IMPACTS={
+  battery:{
+    original:{label:"Batarya değişmiş – Orijinal",amount:-500},
+    aftermarket:{label:"Batarya değişmiş – Yan sanayi",amount:-1500}
+  },
+  screen:{
+    original:{label:"Ekran değişmiş – Orijinal",amount:-2000},
+    aftermarket:{label:"Ekran değişmiş – Yan sanayi",amount:-4500}
+  },
+  camera:{
+    original:{label:"Kamera değişmiş / işlem görmüş – Orijinal",amount:-2500},
+    aftermarket:{label:"Kamera değişmiş / işlem görmüş – Yan sanayi",amount:-4000}
+  },
+  motherboard:{
+    quality_service:{label:"Anakart işlem görmüş – Yetkili / kaliteli işlem",amount:-5000},
+    private_service:{label:"Anakart işlem görmüş – Özel servis işlemi",amount:-8000}
+  },
+  backglass:{
+    original:{label:"Arka cam değişmiş – Orijinal",amount:-1000},
+    aftermarket:{label:"Arka cam değişmiş – Yan sanayi",amount:-2500}
+  },
+  body:{
+    original:{label:"Kasa değişmiş – Orijinal",amount:-1500},
+    aftermarket:{label:"Kasa değişmiş – Yan sanayi",amount:-3000}
+  },
+  faceid:{
+    quality_service:{label:"Face ID tamir görmüş – Yetkili / kaliteli işlem",amount:-2500},
+    private_service:{label:"Face ID tamir görmüş – Özel servis işlemi",amount:-4500}
+  }
+};
+
+const PART_OPTIONS=[
+  ["none","Değişen parça yok"],["battery","Batarya değişmiş"],["screen","Ekran değişmiş"],
+  ["camera","Kamera değişmiş / işlem görmüş"],["motherboard","Anakart işlem görmüş"],
+  ["backglass","Arka cam değişmiş"],["body","Kasa değişmiş"],["faceid","Face ID tamir görmüş"]
+];
+function qualityOptions(part){
+  if(part==="motherboard"||part==="faceid") return [["","İşlem türünü seçiniz"],["quality_service","Yetkili / kaliteli işlem"],["private_service","Özel servis işlemi"]];
+  return [["","Kalite seçiniz"],["original","Orijinal"],["aftermarket","Yan sanayi"]];
+}
+function makePartRow(first=false){
+  const row=document.createElement("div"); row.className="parts-row";
+  const part=document.createElement("select"); part.className="part-select";
+  PART_OPTIONS.forEach(([v,t])=>part.add(new Option(t,v)));
+  part.value=""; part.options[0].text="Değişen parça seçiniz"; part.options[0].value="";
+  const quality=document.createElement("select"); quality.className="part-quality"; quality.disabled=true; quality.add(new Option("Önce parça seçiniz",""));
+  const remove=document.createElement("button"); remove.type="button"; remove.className="parts-remove"+(first?" hidden":""); remove.textContent="×"; remove.title="Bu satırı kaldır";
+  row.append(part,quality,remove);
+  part.addEventListener("change",()=>{ syncDynamicPartRows(); refreshQuality(row); });
+  remove.addEventListener("click",()=>{row.remove();syncDynamicPartRows();});
+  return row;
+}
+function refreshQuality(row){
+  const part=row.querySelector(".part-select"), quality=row.querySelector(".part-quality");
+  const old=quality.value; quality.innerHTML="";
+  if(!part.value||part.value==="none"){ quality.add(new Option(part.value==="none"?"Uygulanmaz":"Önce parça seçiniz","")); quality.disabled=true; }
+  else { qualityOptions(part.value).forEach(([v,t])=>quality.add(new Option(t,v))); quality.disabled=false; if([...quality.options].some(o=>o.value===old)) quality.value=old; }
+}
+function syncDynamicPartRows(){
+  const rows=[...document.querySelectorAll("#partsSelector .parts-row")];
+  const selected=rows.map(r=>r.querySelector(".part-select").value).filter(Boolean);
+  rows.forEach(r=>{
+    const sel=r.querySelector(".part-select"), current=sel.value;
+    [...sel.options].forEach(o=>{o.disabled=o.value && o.value!==current && selected.includes(o.value);});
+    if(selected.includes("none") && current!=="none") { sel.value=""; refreshQuality(r); }
+  });
+  const btn=document.getElementById("addPartBtn"); if(btn) btn.disabled=selected.includes("none") || rows.length>=7;
+}
+function getChangedPartsSelections(){
+  return [...document.querySelectorAll("#partsSelector .parts-row")].map(r=>({part:r.querySelector(".part-select").value,quality:r.querySelector(".part-quality").value})).filter(x=>x.part&&x.part!=="none");
+}
+function getChangedPartsSummary(){
+  const rows=[...document.querySelectorAll("#partsSelector .part-select")];
+  if(rows.some(s=>s.value==="none")) return "Değişen parça yok";
+  return getChangedPartsSelections().map(x=>{const cfg=PART_PRICE_IMPACTS[x.part]&&PART_PRICE_IMPACTS[x.part][x.quality];return cfg?cfg.label:(x.part+":"+x.quality);}).join(" | ");
+}
+function validateChangedParts(){
+  const rows=[...document.querySelectorAll("#partsSelector .parts-row")];
+  const parts=rows.map(r=>r.querySelector(".part-select").value).filter(Boolean);
+  if(!parts.length){alert("Lütfen Değişen Parça / İşlem Geçmişi bölümünde seçim yap.");return false;}
+  if(parts.includes("none")) return true;
+  for(const r of rows){const p=r.querySelector(".part-select").value;if(p&&p!=="none"&&!r.querySelector(".part-quality").value){alert("Seçtiğin her değişen parça için kalite / işlem türünü seç.");return false;}}
+  return true;
+}
+function resetChangedParts(){
+  const box=document.getElementById("partsSelector"); if(!box)return; box.innerHTML=""; box.appendChild(makePartRow(true)); syncDynamicPartRows();
+}
+
+function conditionAdjustments(){
+  const factors=[];
+  const batteryRaw=document.getElementById("battery").value;
+  const battery=batteryRaw==="service" ? "service" : +batteryRaw;
+  const screen=document.getElementById("screen").value;
+  const changedParts=getChangedPartsSelections();
+  const changedScreen=changedParts.some(x=>x.part==="screen");
+  let adj=0;
+
+  if(battery==="service" || battery<80){
+    adj-=3000; addFactor(factors,"Pil: Servis / %80 altı",-3000);
+  } else if(battery>=95){
+    adj+=1500; addFactor(factors,"Pil sağlığı: %"+battery,1500);
+  } else if(battery>=90){
+    adj+=1000; addFactor(factors,"Pil sağlığı: %"+battery,1000);
+  } else if(battery>=85){
+    adj+=500; addFactor(factors,"Pil sağlığı: %"+battery,500);
+  }
+
+  /* Ekran değişimi ayrıca seçildiyse aynı durumu iki kez düşürmemek için
+     "yan sanayi ekran" genel düşüşünü ayrıca uygulamıyoruz. */
+  if(screen==="aftermarket" && !changedScreen){
+    adj-=3000; addFactor(factors,"Ekran: yan sanayi",-3000);
+  }
+  if(screen==="broken"){
+    adj-=6000; addFactor(factors,"Ekran: kırık",-6000);
+  }
+
+  const countImpact={none:0,"1-5":-250,"6-15":-650,"16+":-1200}[state.scratchCount]||0;
+  const depthImpact={none:0,hairline:-150,medium:-500,deep:-1200}[state.scratchDepth]||0;
+  adj+=countImpact+depthImpact;
+  if(state.scratchCount!=="none"){
+    addFactor(factors,"Ekran: "+state.scratchCount+" çizik"+
+      (state.scratchDepth!=="none"?" ("+{hairline:"kılcal",medium:"orta",deep:"derin"}[state.scratchDepth]+")":""),
+      countImpact+depthImpact);
+  }
+
+  if(state.protector==="yes"){adj+=150;addFactor(factors,"Ekran koruyucu var",150)}
+
+  const dent={none:0,light:-500,medium:-1400,serious:-3000}[state.dent]||0;
+  if(dent){adj+=dent;addFactor(factors,"Kasa: "+{light:"hafif ezik/darbe",medium:"orta ezik/darbe",serious:"ciddi ezik/darbe"}[state.dent],dent)}
+
+  const surface={clean:250,caseMark:-150,lightScratch:-450,manyScratch:-1000}[state.surface]||0;
+  adj+=surface;
+  if(surface) addFactor(factors,"Kasa: "+{clean:"temiz",caseMark:"kılıf izi",lightScratch:"hafif çizik",manyScratch:"çok çizik"}[state.surface],surface);
+
+  const corners={clean:150,light:-400,clear:-1000}[state.corners]||0;
+  adj+=corners;
+  if(corners) addFactor(factors,"Köşeler: "+{clean:"temiz",light:"hafif ezik",clear:"belirgin ezik"}[state.corners],corners);
+
+  const back={clean:150,hairline:-350,crack:-2500,broken:-5000}[state.backGlass]||0;
+  adj+=back;
+  if(back) addFactor(factors,"Arka cam: "+{clean:"temiz",hairline:"kılcal çizik",crack:"çatlak",broken:"kırık"}[state.backGlass],back);
+
+  // Kullanıcının onayladığı parça + kalite fiyat etkileri.
+  for(const item of changedParts){
+    const cfg=PART_PRICE_IMPACTS[item.part]&&PART_PRICE_IMPACTS[item.part][item.quality];
+    if(cfg){
+      adj+=cfg.amount;
+      addFactor(factors,cfg.label,cfg.amount);
+    }
+  }
+
+  return {adj,factors};
+}
+
+function renderFactors(factors){
+  const box=document.getElementById("factorList");
+  if(!factors.length){box.innerHTML='<div class="factor-empty">Belirgin fiyat etkisi yok.</div>';return}
+  box.innerHTML=factors.map(f=>`<div class="factor"><span>${f.amount>0?"↗":"↘"}</span><span>${f.label}</span><span class="${f.amount>0?"plus":"minus"}">${f.amount>0?"+":""}${f.amount.toLocaleString("tr-TR")} TL</span></div>`).join("");
+}
+async function getActualSignal(productId){
+  try{
+    const r=await fetch(SUPABASE_URL+"/rest/v1/rpc/get_actual_sales_signal",{method:"POST",headers:{apikey:SUPABASE_KEY,"Content-Type":"application/json"},body:JSON.stringify({p_product_id:productId})});
+    if(!r.ok)return null; return r.json();
+  }catch{return null}
+}
+async function calculatePrice(){
+  const batteryValue=document.getElementById("battery").value;
+  const screenValue=document.getElementById("screen").value;
+  const faceidValue=document.getElementById("faceid").value;
+  if(!batteryValue || !screenValue || !faceidValue){
+    alert("Lütfen Pil Sağlığı, Ekran Durumu ve Face ID alanlarını seçiniz.");
+    return;
+  }
+  const btn=document.getElementById("calcBtn"), old=btn.textContent;
+  btn.disabled=true; btn.textContent="Kondisyon ve piyasa verisi hesaplanıyor...";
+  try{
+    const brand=document.getElementById("phoneBrand").value;
+    const model=MODEL_NAMES[document.getElementById("model").value];
+    const storage=+document.getElementById("storage").value;
+    if(!validateChangedParts()) return;
+
+    CURRENT_CATEGORY="Telefon";
+    CURRENT_BRAND=brand;
+    CURRENT_MODEL=model;
+    CURRENT_STORAGE=storage;
+
+    const rpc=await fetch(SUPABASE_URL+"/rest/v1/rpc/get_public_price_estimate",{
+      method:"POST",
+      headers:{apikey:SUPABASE_KEY,"Content-Type":"application/json",Accept:"application/json"},
+      body:JSON.stringify({
+        p_category:"Telefon",
+        p_brand:brand,
+        p_model:model,
+        p_storage_gb:storage
+      })
+    });
+
+    if(!rpc.ok) throw Error(await rpc.text());
+
+    let base=await rpc.json();
+    if(Array.isArray(base)) base=base[0]||null;
+    if(typeof base==="string"){try{base=JSON.parse(base)}catch{}}
+
+    if(!base || base.estimated_price==null){
+      alert(model+" "+storage+" GB için henüz yeterli piyasa verisi yok.");
+      return;
+    }
+
+    const cond=conditionAdjustments();
+    const basePrice=Number(base.estimated_price);
+    const price=Math.max(3000,Math.round(basePrice + Number(cond.adj||0)));
+    CURRENT_MARKET_PRICE=price;
+
+    const quickBase=Number(base.quick_sale_price || basePrice*.94);
+    const listingBase=Number(base.listing_price || basePrice*1.075);
+    const quickRatio=basePrice>0 ? quickBase/basePrice : .94;
+    const listingRatio=basePrice>0 ? listingBase/basePrice : 1.075;
+
+    document.getElementById("mainPrice").textContent=tl(price);
+    document.getElementById("normalPrice").textContent=tl(price);
+    document.getElementById("quickPrice").textContent=tl(price*quickRatio);
+    document.getElementById("listingPrice").textContent=tl(price*listingRatio);
+
+    renderFactors(cond.factors||[]);
+
+    const score=Math.max(0,Math.min(100,Number(base.confidence_score??60)));
+    document.getElementById("trustScore").textContent=Math.round(score);
+    document.getElementById("trustBar").style.width=score+"%";
+
+    const trustNote=document.querySelector(".trust p");
+    if(trustNote){
+      const n=Number(base.observation_count||0);
+      trustNote.textContent="ⓘ KaçaGider kondisyon motoru • "+n+" piyasa gözlemi • baz fiyat Supabase verisinden, kondisyon etkileri cihaz bilgilerinden hesaplandı.";
+    }
+
+    try{
+      const products=await dbGet("products?select=id&brand=eq."+encodeURIComponent(brand)+"&model=eq."+encodeURIComponent(model)+"&storage_gb=eq."+storage+"&limit=1");
+      CURRENT_PRODUCT_ID=products.length?products[0].id:null;
+    }catch{
+      CURRENT_PRODUCT_ID=null;
+    }
+
+    document.getElementById("historyStatus").textContent="Ürün seçildi. Fiyat geçmişini görmek için üst menüden Fiyat Geçmişi’ne tıkla.";
+  }catch(e){
+    console.error(e);
+    alert("KaçaGider fiyat verisine bağlanırken hata oluştu. Lütfen tekrar dene.");
+  }finally{
+    btn.disabled=false;
+    btn.textContent=old;
+  }
+}
+
+function toggleSaleForm(){const e=document.getElementById("saleForm");e.style.display=e.style.display==="block"?"none":"block"}
+async function submitActualSale(){
+  if(!CURRENT_MARKET_PRICE || !CURRENT_BRAND || !CURRENT_MODEL || !CURRENT_STORAGE){
+    alert("Önce fiyatı hesapla.");
+    return {ok:false};
+  }
+
+  const raw=document.getElementById("salePriceInput").value
+    .trim().replace(/\s/g,"").replace(/\./g,"").replace(",",".");
+  const salePrice=Number(raw);
+
+  if(!Number.isFinite(salePrice) || salePrice<1000){
+    alert("Geçerli bir satış fiyatı gir.");
+    return {ok:false};
+  }
+
+  // Basit istemci tarafı uç değer koruması. Asıl doğrulama Supabase RPC içinde yapılır.
+  if(salePrice>1000000){
+    alert("Satış fiyatı çok yüksek görünüyor. Lütfen kontrol et.");
+    return {ok:false};
+  }
+
+  const city=document.getElementById("saleCityInput").value.trim();
+  const screen=document.getElementById("screen").value;
+  const coarseScreen =
+    screen==="aftermarket" ? "aftermarket" :
+    screen==="broken" ? "broken" :
+    state.scratchCount!=="none" ? "scratch" : "original";
+
+  const dentScore={none:9,light:8,medium:7,serious:6}[state.dent]||9;
+  const batteryRaw=document.getElementById("battery").value;
+  const batteryPercent=batteryRaw==="service" ? 79 : Number(batteryRaw);
+
+  try{
+    const r=await fetch(SUPABASE_URL+"/rest/v1/rpc/submit_sale_report",{
+      method:"POST",
+      headers:{
+        apikey:SUPABASE_KEY,
+        "Content-Type":"application/json",
+        Accept:"application/json"
+      },
+      body:JSON.stringify({
+        p_category:CURRENT_CATEGORY || "Telefon",
+        p_brand:CURRENT_BRAND,
+        p_model:CURRENT_MODEL,
+        p_storage_gb:Number(CURRENT_STORAGE),
+        p_expected_price:Number(CURRENT_MARKET_PRICE),
+        p_sale_price:salePrice,
+        p_city:city||null,
+        p_battery_percent:batteryPercent,
+        p_screen_condition:coarseScreen,
+        p_case_condition:String(dentScore),
+        p_changed_parts:getChangedPartsSummary()
+      })
+    });
+
+    if(!r.ok) throw Error(await r.text());
+
+    let data=await r.json();
+    if(Array.isArray(data)) data=data[0]||{};
+    if(typeof data==="string"){try{data=JSON.parse(data)}catch{}}
+
+    const diff=Math.round(salePrice-CURRENT_MARKET_PRICE);
+    const pct=Math.abs(diff/CURRENT_MARKET_PRICE*100);
+    const box=document.getElementById("saleCompareResult");
+    box.className="sale-result";
+
+    document.getElementById("saleHeadline").textContent=
+      "Sen "+salePrice.toLocaleString("tr-TR")+" TL'ye sattın.";
+
+    document.getElementById("saleBigText").textContent=
+      " KaçaGider.com.tr piyasa değeri: "+tl(CURRENT_MARKET_PRICE);
+
+    if(data.verification_status==="rejected"){
+      box.classList.add("bad");
+      document.getElementById("saleSubText").textContent=
+        "⚠️ Satış kaydedildi ancak fiyat motoruna dahil edilmeyecek. Güven puanı: "+
+        (data.trust_score??0)+"/100";
+    }else if(data.verification_status==="review"){
+      box.classList.add("same");
+      document.getElementById("saleSubText").textContent=
+        "🟡 Satış kaydedildi ve incelemeye alındı. Güven puanı: "+
+        (data.trust_score??0)+"/100";
+    }else if(diff>100){
+      box.classList.add("good");
+      document.getElementById("saleSubText").textContent=
+        "✅ Satış kaydedildi. Piyasanın "+Math.abs(diff).toLocaleString("tr-TR")+
+        " TL üzerinde sattın. (%"+pct.toFixed(1).replace(".",",")+" daha iyi)";
+    }else if(diff<-100){
+      box.classList.add("bad");
+      document.getElementById("saleSubText").textContent=
+        "✅ Satış kaydedildi. Piyasanın "+Math.abs(diff).toLocaleString("tr-TR")+
+        " TL altında sattın.";
+    }else{
+      box.classList.add("same");
+      document.getElementById("saleSubText").textContent=
+        "✅ Satış kaydedildi. Piyasa değerine çok yakın sattın.";
+    }
+
+    box.style.display="block";
+    return {ok:true,data};
+  }catch(e){
+    console.error(e);
+    alert("Satış kaydı gönderilemedi. Supabase submit_sale_report fonksiyonunu kontrol et.");
+    return {ok:false,error:e};
+  }
+}
+
+
+
+function setActiveNav(btn){
+  document.querySelectorAll(".navlink").forEach(x=>x.classList.remove("active"));
+  if(btn) btn.classList.add("active");
+}
+function showView(name, btn){
+  const map={
+    home:"viewHome",
+    how:"viewHow",
+    about:"viewAbout",
+    history:"viewHistory",
+    sell:"viewSell"
+  };
+
+  document.querySelectorAll(".app-view").forEach(v=>v.classList.remove("active"));
+  const target=document.getElementById(map[name]);
+  if(target) target.classList.add("active");
+
+  const navMap={
+    home:document.getElementById("navHome"),
+    how:document.getElementById("navHow"),
+    about:document.getElementById("navAbout"),
+    history:document.getElementById("navHistory"),
+    sell:document.getElementById("navSell")
+  };
+  setActiveNav(btn || navMap[name]);
+
+  // Ana Sayfa gerçek başlangıç ekranına dönsün.
+  if(name==="home"){
+    document.body.classList.add("fresh-start");
+    selectedCategory=null;
+
+    document.querySelectorAll(".category-card").forEach(x=>{
+      x.classList.remove("active");
+    });
+
+    const valuationArea=document.getElementById("valuationArea");
+    const selectedBar=document.getElementById("selectedCategoryBar");
+    const phonePanel=document.getElementById("phonePanel");
+    const genericPanel=document.getElementById("genericPanel");
+
+    if(valuationArea) valuationArea.style.display="none";
+    if(selectedBar) selectedBar.style.display="none";
+    if(phonePanel) phonePanel.style.display="block";
+    if(genericPanel) genericPanel.style.display="none";
+
+    clearRightPanel();
+
+    const historyStatus=document.getElementById("historyStatus");
+    const historyBody=document.getElementById("historyBody");
+
+    if(historyStatus) historyStatus.textContent="Henüz bir ürün seçilmedi.";
+    if(historyBody){
+      historyBody.innerHTML='<tr><td colspan="4" class="history-empty">Önce Ana Sayfa’dan bir ürünün fiyatını hesapla.</td></tr>';
+    }
+  }
+
+  if(name==="history" && CURRENT_PRODUCT_ID){
+    loadPriceHistory();
+  }
+
+  if(name==="sell"){
+    refreshStandaloneSell();
+  }
+
+  window.scrollTo({top:0,behavior:"smooth"});
+}
+
+function refreshStandaloneSell(){
+  const noProduct=document.getElementById("sellNoProduct");
+  const ready=document.getElementById("sellReady");
+  const summary=document.getElementById("sellDeviceSummary");
+
+  if(CURRENT_MARKET_PRICE && CURRENT_BRAND && CURRENT_MODEL && CURRENT_STORAGE){
+    noProduct.style.display="none";
+    ready.style.display="block";
+
+    if(summary){
+      summary.innerHTML=
+        "📱 "+CURRENT_BRAND+" "+CURRENT_MODEL+" • "+
+        CURRENT_STORAGE+" GB"+
+        " &nbsp;•&nbsp; KaçaGider tahmini: <strong>"+
+        tl(CURRENT_MARKET_PRICE)+"</strong>";
+    }
+  }else{
+    noProduct.style.display="block";
+    ready.style.display="none";
+    if(summary) summary.textContent="";
+  }
+}
+
+async function submitStandaloneSale(){
+  const priceEl=document.getElementById("standaloneSalePrice");
+  const cityEl=document.getElementById("standaloneSaleCity");
+  const originalPrice=document.getElementById("salePriceInput");
+  const originalCity=document.getElementById("saleCityInput");
+  const btn=document.getElementById("standaloneSaleBtn");
+  const old=btn ? btn.textContent : "";
+
+  originalPrice.value=priceEl.value;
+  originalCity.value=cityEl.value;
+
+  if(btn){
+    btn.disabled=true;
+    btn.textContent="Satış kaydediliyor...";
+  }
+
+  try{
+    const result=await submitActualSale();
+    if(!result || !result.ok) return;
+
+    const originalResult=document.getElementById("saleCompareResult");
+    const box=document.getElementById("standaloneSaleResult");
+    box.className=originalResult.className;
+    box.style.display=originalResult.style.display || "block";
+
+    document.getElementById("standaloneSaleHeadline").textContent=
+      document.getElementById("saleHeadline").textContent;
+    document.getElementById("standaloneSaleBigText").textContent=
+      document.getElementById("saleBigText").textContent;
+    document.getElementById("standaloneSaleSubText").textContent=
+      document.getElementById("saleSubText").textContent;
+
+    priceEl.value="";
+  }finally{
+    if(btn){
+      btn.disabled=false;
+      btn.textContent=old;
+    }
+  }
+}
+
+async function loadPriceHistory(){
+  const body=document.getElementById("historyBody");
+  const status=document.getElementById("historyStatus");
+
+  if(!CURRENT_PRODUCT_ID){
+    status.textContent="Henüz bir ürün seçilmedi.";
+    body.innerHTML='<tr><td colspan="4" class="history-empty">Önce Ana Sayfa’dan bir ürünün fiyatını hesapla.</td></tr>';
+    return;
+  }
+
+  status.textContent="Piyasa kayıtları yükleniyor...";
+  body.innerHTML='<tr><td colspan="4" class="history-empty">Yükleniyor...</td></tr>';
+
+  try{
+    const rows=await dbGet(
+      "market_prices?select=price,source,condition,recorded_at&product_id=eq."+
+      CURRENT_PRODUCT_ID+"&order=recorded_at.desc&limit=25"
+    );
+
+    if(!rows.length){
+      status.textContent="Bu ürün için fiyat geçmişi bulunamadı.";
+      body.innerHTML='<tr><td colspan="4" class="history-empty">Kayıt bulunamadı.</td></tr>';
+      return;
+    }
+
+    status.textContent=rows.length+" piyasa kaydı gösteriliyor.";
+    body.innerHTML=rows.map(r=>`<tr>
+      <td><strong>${Number(r.price).toLocaleString("tr-TR")} TL</strong></td>
+      <td>${r.source||"-"}</td>
+      <td>${r.condition||"-"}</td>
+      <td>${r.recorded_at?new Date(r.recorded_at).toLocaleString("tr-TR"):"-"}</td>
+    </tr>`).join("");
+  }catch(e){
+    console.error(e);
+    status.textContent="Fiyat geçmişi yüklenemedi.";
+    body.innerHTML='<tr><td colspan="4" class="history-empty">Veri alınırken hata oluştu.</td></tr>';
+  }
+}
+
+let selectedCategory = null;
+let genericProducts = [];
+
+const CATEGORY_META = {
+  phone:{name:"Telefon", dbCategories:["iPhone","Samsung","Xiaomi","Telefon"]},
+  tablet:{name:"Tablet", dbCategories:["iPad","Tablet","Samsung","Xiaomi","Huawei","Lenovo","Honor"]},
+  computer:{name:"Bilgisayar", dbCategories:["MacBook","Bilgisayar","Laptop"]},
+  watch:{name:"Akıllı Saat", dbCategories:["Apple Watch","Akıllı Saat","Watch"]},
+  console:{name:"Oyun Konsolu", dbCategories:["Oyun Konsolu","PlayStation","Xbox"]}
+};
+
+async function selectCategory(category, btn){
+  document.getElementById('viewHome')?.classList.add('category-selected');
+  document.body.classList.remove("fresh-start");
+  selectedCategory = category;
+  document.querySelectorAll(".category-card").forEach(x=>x.classList.remove("active"));
+  btn.classList.add("active");
+
+  document.getElementById("valuationArea").style.display="block";
+  document.getElementById("selectedCategoryBar").style.display="block";
+  document.getElementById("selectedCategoryName").textContent=CATEGORY_META[category].name;
+
+  const phone = category==="phone";
+  document.getElementById("phonePanel").style.display=phone?"block":"none";
+  document.getElementById("genericPanel").style.display=phone?"none":"block";
+
+  clearRightPanel();
+
+  if(phone){
+    document.getElementById("selectedCategoryName").textContent="Telefon";
+  }else{
+    document.getElementById("genericTitle").textContent=CATEGORY_META[category].name+" Bilgilerini Gir";
+    const storageLabel=document.getElementById("genericStorageLabel");
+    storageLabel.textContent = category==="console" ? "Depolama" : "Hafıza / Kapasite";
+    await loadGenericProducts(category);
+  }
+  document.getElementById("valuationArea").scrollIntoView({behavior:"smooth",block:"start"});
+}
+
+function clearRightPanel(){
+  ["mainPrice","quickPrice","normalPrice","listingPrice"].forEach(id=>document.getElementById(id).textContent="— TL");
+  document.getElementById("factorList").innerHTML='<div class="factor-empty">Fiyatı hesapladığında etkileyen faktörler burada görünecek.</div>';
+  document.getElementById("trustScore").textContent="—";
+  document.getElementById("trustBar").style.width="0%";
+  CURRENT_PRODUCT_ID=null; CURRENT_MARKET_PRICE=null; CURRENT_CATEGORY=null; CURRENT_BRAND=null; CURRENT_MODEL=null; CURRENT_STORAGE=null;
+}
+
+
+async function loadGenericProducts(category){
+  genericProducts=[];
+  const cats=CATEGORY_META[category].dbCategories;
+
+  try{
+    for(const cat of cats){
+      const rows=await dbGet("products?select=id,brand,model,storage_gb,category,active&category=eq."+encodeURIComponent(cat)+"&active=eq.true&order=brand,model,storage_gb");
+      genericProducts.push(...rows);
+    }
+  }catch(e){
+    console.warn("Supabase ürünleri alınamadı:",e);
+  }
+
+  const uniqueById=new Map(genericProducts.map(x=>[x.id,x]));
+  genericProducts=[...uniqueById.values()];
+
+  populateGenericBrands();
+
+  const note=document.getElementById("genericNote");
+  const staticCount = STATIC_CATALOG[category]
+    ? Object.values(STATIC_CATALOG[category]).reduce((a,b)=>a+b.length,0)
+    : 0;
+
+  if(STATIC_CATALOG[category]){
+    note.textContent =
+      CATEGORY_META[category].name+" kataloğunda "+staticCount+
+      " model listeleniyor. Supabase'te fiyat kaydı bulunan modeller doğrudan hesaplanabilir.";
+  }else{
+    note.textContent = genericProducts.length
+      ? "Bu kategoride "+genericProducts.length+" veri tabanı ürünü bulundu."
+      : "Bu kategori için ürün kaydı henüz yok.";
+  }
+}
+
+function uniq(arr){
+  return [...new Set(arr.filter(v=>v!==null&&v!==undefined&&v!==""))];
+}
+
+function fillGeneric(id, values){
+  const el=document.getElementById(id);
+  el.innerHTML=values.map(v=>
+    '<option value="'+String(v).replace(/"/g,'&quot;')+'">'+v+'</option>'
+  ).join("");
+}
+
+function populateGenericBrands(){
+  let brands=[];
+
+  if(STATIC_CATALOG[selectedCategory]){
+    brands=Object.keys(STATIC_CATALOG[selectedCategory]);
+  }else{
+    brands=uniq(genericProducts.map(x=>x.brand));
+  }
+
+  fillGeneric("genericBrand",brands);
+  populateGenericModels();
+}
+
+function populateGenericModels(){
+  const brand=document.getElementById("genericBrand").value;
+  let models=[];
+
+  if(STATIC_CATALOG[selectedCategory] && STATIC_CATALOG[selectedCategory][brand]){
+    models=STATIC_CATALOG[selectedCategory][brand];
+  }else{
+    models=uniq(genericProducts.filter(x=>x.brand===brand).map(x=>x.model));
+  }
+
+  fillGeneric("genericModel",models);
+  populateGenericStorage();
+}
+
+function populateGenericStorage(){
+  const brand=document.getElementById("genericBrand").value;
+  const model=document.getElementById("genericModel").value;
+
+  const dbStorages=uniq(
+    genericProducts
+      .filter(x=>x.brand===brand && x.model===model)
+      .map(x=>x.storage_gb)
+  ).sort((a,b)=>a-b);
+
+  let storages=dbStorages;
+
+  if(!storages.length && DEFAULT_STORAGE_OPTIONS[selectedCategory]){
+    storages=DEFAULT_STORAGE_OPTIONS[selectedCategory];
+  }
+
+  if(!storages.length){
+    storages=["64","128","256","512"];
+  }
+
+  fillGeneric("genericStorage",storages);
+}
+
+async function calculateGenericPrice(){
+  const brand=document.getElementById("genericBrand").value;
+  const model=document.getElementById("genericModel").value;
+  const storage=Number(document.getElementById("genericStorage").value);
+  CURRENT_CATEGORY=(CATEGORY_META[selectedCategory]&&CATEGORY_META[selectedCategory].name)||selectedCategory||"Ürün";
+  CURRENT_BRAND=brand;
+  CURRENT_MODEL=model;
+  CURRENT_STORAGE=storage;
+
+  const product=genericProducts.find(
+    x=>x.brand===brand && x.model===model && Number(x.storage_gb)===storage
+  );
+
+  if(!product){
+    alert(brand+" "+model+" "+storage+" GB kataloğumuzda var; ancak henüz Supabase'te fiyat kaydı oluşturulmamış.");
+    return;
+  }
+  try{
+    CURRENT_PRODUCT_ID=product.id;
+    const rows=await dbGet("market_prices?select=price&product_id=eq."+product.id);
+    if(!rows.length){alert(model+" için henüz yeterli piyasa fiyatı yok.");return}
+    const vals=rows.map(x=>Number(x.price)).filter(x=>Number.isFinite(x)&&x>0);
+    let price=median(vals), factors=[];
+
+    const cond=document.getElementById("genericCondition").value;
+    const working=document.getElementById("genericWorking").value;
+    const accessories=document.getElementById("genericAccessories").value;
+
+    if(cond==="excellent"){price+=500;addFactor(factors,"Kozmetik durum: çok temiz",500)}
+    if(cond==="average"){price-=700;addFactor(factors,"Kozmetik durum: orta",-700)}
+    if(cond==="worn"){price-=1800;addFactor(factors,"Kozmetik durum: yıpranmış",-1800)}
+    if(working==="minor"){price-=1200;addFactor(factors,"Küçük çalışma sorunu",-1200)}
+    if(working==="major"){price-=3500;addFactor(factors,"Önemli çalışma sorunu",-3500)}
+    if(accessories==="complete"){price+=250;addFactor(factors,"Kutu / aksesuar tam",250)}
+    if(accessories==="partial"){price-=250;addFactor(factors,"Kutu / aksesuar eksik",-250)}
+    if(accessories==="none"){price-=600;addFactor(factors,"Kutu / aksesuar yok",-600)}
+
+    price=Math.max(1000,price);
+    CURRENT_MARKET_PRICE=price;
+    document.getElementById("mainPrice").textContent=tl(price);
+    document.getElementById("normalPrice").textContent=tl(price);
+    document.getElementById("quickPrice").textContent=tl(price*.94);
+    document.getElementById("listingPrice").textContent=tl(price*1.075);
+    renderFactors(factors);
+    const score=Math.min(94,60+Math.min(vals.length,10)*3);
+    document.getElementById("trustScore").textContent=score;
+    document.getElementById("trustBar").style.width=score+"%";
+    document.getElementById("historyStatus").textContent="Ürün seçildi. Fiyat geçmişini görmek için üst menüden Fiyat Geçmişi’ne tıkla.";
+  }catch(e){console.error(e);alert("Piyasa verisi alınırken hata oluştu.")}
+}
+
+
+function resetValuationState(){
+  document.getElementById('viewHome')?.classList.remove('category-selected');
+  document.body.classList.add("fresh-start");
+  selectedCategory=null;
+
+  document.querySelectorAll(".category-card").forEach(x=>x.classList.remove("active"));
+
+  const valuation=document.getElementById("valuationArea");
+  const selectedBar=document.getElementById("selectedCategoryBar");
+  if(valuation) valuation.style.display="none";
+  if(selectedBar) selectedBar.style.display="none";
+
+  const selectedName=document.getElementById("selectedCategoryName");
+  if(selectedName) selectedName.textContent="—";
+
+  // Gerçek sıfırlama: Safari'nin son form değerlerini geri yüklemesine izin verme.
+  populatePhoneBrands();
+
+  const battery=document.getElementById("battery");
+  if(battery) battery.value="";
+
+  const screen=document.getElementById("screen");
+  if(screen) screen.value="";
+
+  const faceid=document.getElementById("faceid");
+  if(faceid) faceid.value="";
+
+  const part=document.getElementById("part");
+  if(part) part.selectedIndex=0;
+
+  document.querySelectorAll(".option-row").forEach(row=>{
+    const buttons=[...row.querySelectorAll(".option")];
+    buttons.forEach(b=>b.classList.remove("active"));
+    if(buttons[0]) buttons[0].classList.add("active");
+  });
+
+  ["genericCondition","genericWorking","genericAccessories"].forEach(id=>{
+    const el=document.getElementById(id);
+    if(el) el.selectedIndex=0;
+  });
+
+  resetChangedParts();
+  clearRightPanel();
+}
+
+function goHomeAndReset(){
+  resetValuationState();
+  if(window.location.pathname!=="/"){
+    window.location.href="/";
+    return;
+  }
+  showView("home",document.getElementById("navHome"));
+  window.scrollTo({top:0,behavior:"smooth"});
+  if(window.history && window.history.replaceState){
+    window.history.replaceState(null,"","/");
+  }
+}
+
+populatePhoneBrands();
+resetValuationState();
+
+function forceFreshHomeState(){
+  resetValuationState();
+  showView("home",document.getElementById("navHome"));
+
+  // Safari bazı alanları sayfa yüklendikten hemen sonra geri yükleyebiliyor.
+  // Birkaç kısa gecikmeyle tekrar sıfırla.
+  [0,50,200,600].forEach(function(ms){
+    setTimeout(function(){
+      resetValuationState();
+      showView("home",document.getElementById("navHome"));
+    },ms);
+  });
+
+  try{
+    var u=new URL(window.location.href);
+    if(u.searchParams.has("__kgfresh")){
+      u.searchParams.delete("__kgfresh");
+      var clean=u.pathname + (u.search ? u.search : "") + (u.hash ? u.hash : "");
+      window.history.replaceState(null,"",clean);
+    }
+  }catch(e){}
+}
+
+window.addEventListener("pageshow",forceFreshHomeState);
+window.addEventListener("DOMContentLoaded",forceFreshHomeState);
+window.addEventListener("load",forceFreshHomeState);
+window.addEventListener("load",function(){ window.scrollTo(0,0); });
+
+// Ana sayfa kategori seçimiyle başlar; otomatik hesap yapılmaz.
+
+
+</script>
+
+
+<script>
+window.addEventListener("pageshow", function () {
+  try {
+    if (window.location.pathname === "/") {
+      document.body.classList.add("fresh-start");
+      window.scrollTo(0, 0);
+    }
+  } catch (e) {}
+});
+</script>
+
+
+
+
+
+<script>
+document.addEventListener("DOMContentLoaded",function(){
+  resetChangedParts();
+  const btn=document.getElementById("addPartBtn");
+  if(btn) btn.addEventListener("click",function(){
+    const box=document.getElementById("partsSelector");
+    if(!box || box.children.length>=7) return;
+    box.appendChild(makePartRow(false)); syncDynamicPartRows();
+  });
+});
+</script>
+
+
+<script id="kg-topbar-nav-state">
+document.addEventListener("DOMContentLoaded", function(){
+  const brand=document.querySelector(".kg-brand");
+  if(brand){
+    brand.addEventListener("click", function(){
+      try{
+        document.getElementById("viewHome")?.classList.remove("category-selected");
+        window.scrollTo(0,0);
+      }catch(e){}
+    });
+  }
+});
+</script>
+
+
+<script id="kg-final-nav-fix">
+(function(){
+  function clickCategory(cat){
+    const card = document.querySelector('[data-category="'+cat+'"]');
+    if (typeof window.selectCategory === "function" && card){
+      window.selectCategory(cat, card);
+      setTimeout(function(){
+        const target = document.querySelector(".valuation-layout") || document.querySelector(".selected-category-bar");
+        if(target) target.scrollIntoView({behavior:"smooth", block:"start"});
+      }, 80);
+    }
+  }
+
+  window.kgGoCategory = clickCategory;
+
+  window.kgGoHome = function(){
+    try{
+      if(typeof window.resetValuationState === "function") window.resetValuationState();
+    }catch(e){}
+    document.getElementById("viewHome")?.classList.remove("category-selected");
+    window.scrollTo({top:0, behavior:"smooth"});
+  };
+
+  window.kgGoAbout = function(){
+    try{
+      if(typeof window.showView === "function"){
+        window.showView("about");
+        return;
+      }
+    }catch(e){}
+    const about = document.getElementById("about") || document.querySelector('[data-view="about"]');
+    if(about) about.scrollIntoView({behavior:"smooth", block:"start"});
+  };
+
+  window.kgGoSection = function(id){
+    const el = document.getElementById(id);
+    if(el) el.scrollIntoView({behavior:"smooth", block:"start"});
+  };
+})();
+</script>
+
+</body>
+</html>

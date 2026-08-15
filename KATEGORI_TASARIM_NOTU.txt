@@ -1,0 +1,4 @@
+Ana sayfa kategori alanı onaylanan tasarıma göre statik olarak yeniden kuruldu.
+5 eşit kart: Telefon, Tablet, Bilgisayar, Akıllı Saat, Oyun Konsolu.
+Ürün görselleri onaylanan mockup'tan ayrıştırılarak local assets/categories altında tutulur.
+Mevcut selectCategory fonksiyonları ve fiyat hesaplama mantığı korunmuştur.
