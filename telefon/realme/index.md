@@ -1,0 +1,13 @@
+---
+layout: "seo"
+seo_title: "Realme Telefon İkinci El Fiyatları 2026 | KaçaGider"
+seo_description: "Realme Telefon modellerinin ikinci el değerini Türkiye ikinci el piyasası ve cihaz kondisyonuna göre KaçaGider ile inceleyin."
+seo_h1: "Realme Telefon İkinci El Fiyatları"
+seo_intro: "Realme Telefon modellerinin ikinci el değerini Türkiye ikinci el piyasası ve cihaz kondisyonuna göre KaçaGider ile inceleyin."
+seo_context_heading: "Realme Telefon için ikinci el değerleme"
+seo_context: "Realme Telefon modellerinin ikinci el değerini Türkiye ikinci el piyasası ve cihaz kondisyonuna göre KaçaGider ile inceleyin."
+seo_breadcrumbs: [{"label":"Ana Sayfa","url":"/"},{"label":"Telefon","url":"/telefon/"},{"label":"Realme","url":"/telefon/realme/"}]
+seo_links: [{"label":"Realme 8","url":"/telefon/realme/realme-8/"},{"label":"Realme 8 Pro","url":"/telefon/realme/realme-8-pro/"},{"label":"Realme 9","url":"/telefon/realme/realme-9/"},{"label":"Realme 9 Pro","url":"/telefon/realme/realme-9-pro/"},{"label":"Realme 10","url":"/telefon/realme/realme-10/"},{"label":"Realme 10 Pro","url":"/telefon/realme/realme-10-pro/"},{"label":"Realme 11","url":"/telefon/realme/realme-11/"},{"label":"Realme 11 Pro","url":"/telefon/realme/realme-11-pro/"},{"label":"Realme 11 Pro+","url":"/telefon/realme/realme-11-pro-plus/"},{"label":"Realme 12","url":"/telefon/realme/realme-12/"},{"label":"Realme 12 Pro","url":"/telefon/realme/realme-12-pro/"},{"label":"Realme 12 Pro+","url":"/telefon/realme/realme-12-pro-plus/"},{"label":"Realme 13","url":"/telefon/realme/realme-13/"},{"label":"Realme 13 Pro","url":"/telefon/realme/realme-13-pro/"},{"label":"Realme 14 Pro","url":"/telefon/realme/realme-14-pro/"},{"label":"Realme GT 2","url":"/telefon/realme/realme-gt-2/"},{"label":"Realme GT 2 Pro","url":"/telefon/realme/realme-gt-2-pro/"},{"label":"Realme GT 5","url":"/telefon/realme/realme-gt-5/"},{"label":"Realme GT 6","url":"/telefon/realme/realme-gt-6/"},{"label":"Realme GT 6T","url":"/telefon/realme/realme-gt-6t/"},{"label":"Realme GT 7","url":"/telefon/realme/realme-gt-7/"},{"label":"Realme GT 7 Pro","url":"/telefon/realme/realme-gt-7-pro/"},{"label":"Realme C33","url":"/telefon/realme/realme-c33/"},{"label":"Realme C53","url":"/telefon/realme/realme-c53/"},{"label":"Realme C55","url":"/telefon/realme/realme-c55/"},{"label":"Realme C61","url":"/telefon/realme/realme-c61/"},{"label":"Realme C65","url":"/telefon/realme/realme-c65/"},{"label":"Realme C67","url":"/telefon/realme/realme-c67/"},{"label":"Realme C75","url":"/telefon/realme/realme-c75/"}]
+seo_links_heading: "Realme modelleri"
+seo_canonical: "https://kacagider.com.tr/telefon/realme/"
+---

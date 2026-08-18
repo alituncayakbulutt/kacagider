@@ -1,0 +1,13 @@
+---
+layout: "seo"
+seo_title: "Reno6 İkinci El Fiyatı 2026 | KaçaGider"
+seo_description: "Oppo Reno6 ikinci el fiyatını Türkiye ikinci el piyasasına göre hafıza, kondisyon ve cihaz kayıt durumu bilgileriyle KaçaGider üzerinden değerlendirin."
+seo_h1: "Reno6 İkinci El Fiyatı"
+seo_intro: "Oppo Reno6 ikinci el fiyatını Türkiye ikinci el piyasasına göre hafıza, kondisyon ve cihaz kayıt durumu bilgileriyle KaçaGider üzerinden değerlendirin."
+seo_context_heading: "Reno6 için ikinci el değerleme"
+seo_context: "Oppo Reno6 ikinci el fiyatını Türkiye ikinci el piyasasına göre hafıza, kondisyon ve cihaz kayıt durumu bilgileriyle KaçaGider üzerinden değerlendirin."
+seo_breadcrumbs: [{"label":"Ana Sayfa","url":"/"},{"label":"Telefon","url":"/telefon/"},{"label":"Oppo","url":"/telefon/oppo/"},{"label":"Reno6","url":"/telefon/oppo/reno6/"}]
+seo_links: [{"label":"128 GB","url":"/telefon/oppo/reno6/128gb/"}]
+seo_links_heading: "Reno6 seçenekleri"
+seo_canonical: "https://kacagider.com.tr/telefon/oppo/reno6/"
+---

@@ -1,0 +1,13 @@
+---
+layout: "seo"
+seo_title: "P50 Pro İkinci El Fiyatı 2026 | KaçaGider"
+seo_description: "Huawei P50 Pro ikinci el fiyatını Türkiye ikinci el piyasasına göre hafıza, kondisyon ve cihaz kayıt durumu bilgileriyle KaçaGider üzerinden değerlendirin."
+seo_h1: "P50 Pro İkinci El Fiyatı"
+seo_intro: "Huawei P50 Pro ikinci el fiyatını Türkiye ikinci el piyasasına göre hafıza, kondisyon ve cihaz kayıt durumu bilgileriyle KaçaGider üzerinden değerlendirin."
+seo_context_heading: "P50 Pro için ikinci el değerleme"
+seo_context: "Huawei P50 Pro ikinci el fiyatını Türkiye ikinci el piyasasına göre hafıza, kondisyon ve cihaz kayıt durumu bilgileriyle KaçaGider üzerinden değerlendirin."
+seo_breadcrumbs: [{"label":"Ana Sayfa","url":"/"},{"label":"Telefon","url":"/telefon/"},{"label":"Huawei","url":"/telefon/huawei/"},{"label":"P50 Pro","url":"/telefon/huawei/p50-pro/"}]
+seo_links: [{"label":"256 GB","url":"/telefon/huawei/p50-pro/256gb/"}]
+seo_links_heading: "P50 Pro seçenekleri"
+seo_canonical: "https://kacagider.com.tr/telefon/huawei/p50-pro/"
+---

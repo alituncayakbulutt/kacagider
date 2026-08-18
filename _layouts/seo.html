@@ -34,21 +34,21 @@ try{
 
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>KaçaGider.com.tr – İkinci El Telefon Fiyatı Hesaplama</title>
-<meta name="description" content="Telefonunun ve ikinci el elektronik ürünlerinin güncel piyasa değerini KaçaGider ile hesapla. iPhone, Samsung ve diğer modeller için kondisyon ve gerçek satış verilerine göre tahmini fiyatını öğren.">
+<title>{{ page.seo_title }}</title>
+<meta name="description" content="{{ page.seo_description }}">
 <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
-<link rel="canonical" href="https://kacagider.com.tr{{ page.url }}">
+<link rel="canonical" href="{{ page.seo_canonical }}">
 
 <meta property="og:type" content="website">
 <meta property="og:locale" content="tr_TR">
 <meta property="og:site_name" content="KaçaGider">
-<meta property="og:title" content="KaçaGider.com.tr – İkinci El Telefon Fiyatı Hesaplama">
-<meta property="og:description" content="Telefonunun ve ikinci el elektronik ürünlerinin güncel piyasa değerini saniyeler içinde öğren.">
-<meta property="og:url" content="https://kacagider.com.tr{{ page.url }}">
+<meta property="og:title" content="{{ page.seo_title }}">
+<meta property="og:description" content="{{ page.seo_description }}">
+<meta property="og:url" content="{{ page.seo_canonical }}">
 
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="KaçaGider.com.tr – İkinci El Telefon Fiyatı Hesaplama">
-<meta name="twitter:description" content="Telefonunun güncel ikinci el piyasa değerini kondisyon ve satış verilerine göre hesapla.">
+<meta name="twitter:title" content="{{ page.seo_title }}">
+<meta name="twitter:description" content="{{ page.seo_description }}">
 
 <script type="application/ld+json">
 {
@@ -412,6 +412,10 @@ body.fresh-start #selectedCategoryBar{
 .add-part-btn:hover{background:#dff9ea}
 @media(max-width:900px){.parts-config-field{grid-column:1/-1}}
 @media(max-width:620px){.parts-row{grid-template-columns:1fr 1fr 30px;gap:6px}.parts-row select{font-size:12px!important}.add-part-btn{width:100%;justify-content:center}}
+
+
+/* Yalnızca SEO sayfalarının breadcrumb ve bağlamsal içeriği. */
+.kg-seo-breadcrumb{max-width:1180px;margin:18px auto 0;padding:0 20px;color:#667085;font-size:13px;line-height:1.5}.kg-seo-breadcrumb a{color:#087a37;text-decoration:none;font-weight:700}.kg-seo-breadcrumb a:hover{text-decoration:underline}.kg-seo-breadcrumb span{margin:0 7px;color:#98a2b3}.kg-seo-context{max-width:1180px;margin:20px auto 0;padding:18px 20px;border:1px solid #dfe7ef;border-radius:14px;background:#fff}.kg-seo-context h2{margin:0 0 8px;font-size:20px;color:#111827}.kg-seo-context p{margin:0;color:#667085;line-height:1.65}.kg-seo-links{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}.kg-seo-links a{border:1px solid #cfe7d8;border-radius:999px;padding:7px 10px;color:#087a37;background:#f4fcf7;text-decoration:none;font-size:13px;font-weight:700}.kg-seo-links a:hover{background:#e7f8ec}@media(max-width:720px){.kg-seo-breadcrumb{padding:0 12px}.kg-seo-context{margin:16px 12px 0;padding:16px}.kg-seo-context h2{font-size:18px}}
 
 </style>
 
@@ -1864,6 +1868,8 @@ html[data-theme="dark"] .kg-main-nav a:not(.active):hover{color:#d9fbe6!importan
 @media(max-width:720px){.kg-info-section{margin:0 12px 22px;padding:24px 16px}.kg-info-heading h2{font-size:25px}.kg-contact-layout{grid-template-columns:1fr;gap:16px}.kg-contact-form{grid-template-columns:1fr}.kg-contact-field.full{grid-column:auto}.kg-contact-submit,.kg-contact-message{grid-column:auto}.kg-faq-question{padding:16px}.kg-faq-item.is-open .kg-faq-answer{padding:0 16px 16px}}
 </style>
 
+
+{% if page.seo_breadcrumbs %}<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{% for crumb in page.seo_breadcrumbs %}{"@type":"ListItem","position":{{ forloop.index }},"name":{{ crumb.label | jsonify }},"item":"https://kacagider.com.tr{{ crumb.url }}"}{% unless forloop.last %},{% endunless %}{% endfor %}]}</script>{% endif %}
 </head>
 <body class="fresh-start">
 
@@ -1896,9 +1902,11 @@ html[data-theme="dark"] .kg-main-nav a:not(.active):hover{color:#d9fbe6!importan
 
 
 <main class="page app-view active" id="viewHome">
+{% if page.seo_breadcrumbs %}<nav class="kg-seo-breadcrumb" aria-label="Breadcrumb">{% for crumb in page.seo_breadcrumbs %}{% unless forloop.first %}<span aria-hidden="true">›</span>{% endunless %}<a href="{{ crumb.url }}">{{ crumb.label }}</a>{% endfor %}</nav>{% endif %}
+
   <div class="hero kg-approved-hero">
-    <h1>Cihazının <span>Gerçek Değerini</span> Öğren</h1>
-    <p>Telefon, tablet, bilgisayar, akıllı saat ve oyun konsolları için güncel piyasa verileriyle anında fiyat tahmini al.</p>
+    <h1>{{ page.seo_h1 }}</h1>
+    <p>{{ page.seo_intro }}</p>
   </div>
 
 
@@ -2112,6 +2120,8 @@ html[data-theme="dark"] .kg-main-nav a:not(.active):hover{color:#d9fbe6!importan
     <div class="feature">🛡 Gizli & Güvenli<small>Ham satış verisi kapalı</small></div>
     <div class="feature">🎁 %100 ücretsiz<small>Kayıt olmadan kullan</small></div>
   </div>
+
+{% if page.seo_context %}<section class="kg-seo-context" aria-label="Sayfa bilgisi"><h2>{{ page.seo_context_heading }}</h2><p>{{ page.seo_context }}</p>{% if page.seo_links %}<div class="kg-seo-links" aria-label="İlgili sayfalar">{% for link in page.seo_links %}<a href="{{ link.url }}">{{ link.label }}</a>{% endfor %}</div>{% endif %}</section>{% endif %}
 </main>
 
 <section class="app-view kg-info-section" id="viewFaq" aria-labelledby="faqTitle">
@@ -3477,7 +3487,7 @@ function kgSeoSlug(value){
 }
 
 function kgSeoStorage(value){
-  const match=String(value||"").match(/^(\d+)(gb|tb)$/);
+  const match=String(value||"").match(/^(\d+)(gb|tb|mm)$/);
   if(!match) return null;
   const amount=Number(match[1]);
   return match[2]==="tb" ? amount*1024 : amount;
@@ -3506,8 +3516,12 @@ function kgResolveSeoPath(pathname){
     : category==="computer" ? COMPUTER_STORAGE_OPTIONS?.[brand]?.[model]
     : category==="tablet" ? TABLET_STORAGE_OPTIONS?.[brand]?.[model]
     : CONSOLE_STORAGE_OPTIONS?.[model];
-  if(!Array.isArray(storageMap) || !storageMap.map(Number).includes(storage)) return null;
-  return {category,brand,model,storage};
+  if(!Array.isArray(storageMap)) return null;
+  const matchedStorage=storageMap.map(Number).find(value=>
+    value===storage || (storage===1024 && value===1000) || (storage===2048 && value===2000)
+  );
+  if(!Number.isFinite(matchedStorage)) return null;
+  return {category,brand,model,storage:matchedStorage};
 }
 
 function kgUpdateSeoCanonical(){

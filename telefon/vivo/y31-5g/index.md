@@ -1,0 +1,13 @@
+---
+layout: "seo"
+seo_title: "Y31 5G İkinci El Fiyatı 2026 | KaçaGider"
+seo_description: "Vivo Y31 5G ikinci el fiyatını Türkiye ikinci el piyasasına göre hafıza, kondisyon ve cihaz kayıt durumu bilgileriyle KaçaGider üzerinden değerlendirin."
+seo_h1: "Y31 5G İkinci El Fiyatı"
+seo_intro: "Vivo Y31 5G ikinci el fiyatını Türkiye ikinci el piyasasına göre hafıza, kondisyon ve cihaz kayıt durumu bilgileriyle KaçaGider üzerinden değerlendirin."
+seo_context_heading: "Y31 5G için ikinci el değerleme"
+seo_context: "Vivo Y31 5G ikinci el fiyatını Türkiye ikinci el piyasasına göre hafıza, kondisyon ve cihaz kayıt durumu bilgileriyle KaçaGider üzerinden değerlendirin."
+seo_breadcrumbs: [{"label":"Ana Sayfa","url":"/"},{"label":"Telefon","url":"/telefon/"},{"label":"Vivo","url":"/telefon/vivo/"},{"label":"Y31 5G","url":"/telefon/vivo/y31-5g/"}]
+seo_links: [{"label":"256 GB","url":"/telefon/vivo/y31-5g/256gb/"}]
+seo_links_heading: "Y31 5G seçenekleri"
+seo_canonical: "https://kacagider.com.tr/telefon/vivo/y31-5g/"
+---

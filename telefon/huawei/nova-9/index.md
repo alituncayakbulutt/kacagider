@@ -1,0 +1,13 @@
+---
+layout: "seo"
+seo_title: "Nova 9 İkinci El Fiyatı 2026 | KaçaGider"
+seo_description: "Huawei Nova 9 ikinci el fiyatını Türkiye ikinci el piyasasına göre hafıza, kondisyon ve cihaz kayıt durumu bilgileriyle KaçaGider üzerinden değerlendirin."
+seo_h1: "Nova 9 İkinci El Fiyatı"
+seo_intro: "Huawei Nova 9 ikinci el fiyatını Türkiye ikinci el piyasasına göre hafıza, kondisyon ve cihaz kayıt durumu bilgileriyle KaçaGider üzerinden değerlendirin."
+seo_context_heading: "Nova 9 için ikinci el değerleme"
+seo_context: "Huawei Nova 9 ikinci el fiyatını Türkiye ikinci el piyasasına göre hafıza, kondisyon ve cihaz kayıt durumu bilgileriyle KaçaGider üzerinden değerlendirin."
+seo_breadcrumbs: [{"label":"Ana Sayfa","url":"/"},{"label":"Telefon","url":"/telefon/"},{"label":"Huawei","url":"/telefon/huawei/"},{"label":"Nova 9","url":"/telefon/huawei/nova-9/"}]
+seo_links: [{"label":"128 GB","url":"/telefon/huawei/nova-9/128gb/"}]
+seo_links_heading: "Nova 9 seçenekleri"
+seo_canonical: "https://kacagider.com.tr/telefon/huawei/nova-9/"
+---

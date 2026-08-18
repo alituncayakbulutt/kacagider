@@ -3475,7 +3475,7 @@ function kgSeoSlug(value){
 }
 
 function kgSeoStorage(value){
-  const match=String(value||"").match(/^(\d+)(gb|tb)$/);
+  const match=String(value||"").match(/^(\d+)(gb|tb|mm)$/);
   if(!match) return null;
   const amount=Number(match[1]);
   return match[2]==="tb" ? amount*1024 : amount;
@@ -3504,8 +3504,12 @@ function kgResolveSeoPath(pathname){
     : category==="computer" ? COMPUTER_STORAGE_OPTIONS?.[brand]?.[model]
     : category==="tablet" ? TABLET_STORAGE_OPTIONS?.[brand]?.[model]
     : CONSOLE_STORAGE_OPTIONS?.[model];
-  if(!Array.isArray(storageMap) || !storageMap.map(Number).includes(storage)) return null;
-  return {category,brand,model,storage};
+  if(!Array.isArray(storageMap)) return null;
+  const matchedStorage=storageMap.map(Number).find(value=>
+    value===storage || (storage===1024 && value===1000) || (storage===2048 && value===2000)
+  );
+  if(!Number.isFinite(matchedStorage)) return null;
+  return {category,brand,model,storage:matchedStorage};
 }
 
 function kgUpdateSeoCanonical(){

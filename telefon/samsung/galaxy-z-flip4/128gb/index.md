@@ -1,0 +1,13 @@
+---
+layout: "seo"
+seo_title: "Galaxy Z Flip4 128 GB İkinci El Fiyatı 2026 | KaçaGider"
+seo_description: "Samsung Galaxy Z Flip4 128 GB ikinci el değerini Türkiye ikinci el piyasasına göre hafıza, kondisyon ve cihaz kayıt durumu bilgileriyle KaçaGider üzerinden değerlendirin."
+seo_h1: "Galaxy Z Flip4 128 GB İkinci El Fiyatı"
+seo_intro: "Samsung Galaxy Z Flip4 128 GB ikinci el değerini Türkiye ikinci el piyasasına göre hafıza, kondisyon ve cihaz kayıt durumu bilgileriyle KaçaGider üzerinden değerlendirin."
+seo_context_heading: "Galaxy Z Flip4 128 GB için ikinci el değerleme"
+seo_context: "Samsung Galaxy Z Flip4 128 GB ikinci el değerini Türkiye ikinci el piyasasına göre hafıza, kondisyon ve cihaz kayıt durumu bilgileriyle KaçaGider üzerinden değerlendirin."
+seo_breadcrumbs: [{"label":"Ana Sayfa","url":"/"},{"label":"Telefon","url":"/telefon/"},{"label":"Samsung","url":"/telefon/samsung/"},{"label":"Galaxy Z Flip4","url":"/telefon/samsung/galaxy-z-flip4/"},{"label":"128 GB","url":"/telefon/samsung/galaxy-z-flip4/128gb/"}]
+seo_links: [{"label":"Galaxy Z Flip4 ana sayfası","url":"/telefon/samsung/galaxy-z-flip4/"},{"label":"256 GB","url":"/telefon/samsung/galaxy-z-flip4/256gb/"},{"label":"512 GB","url":"/telefon/samsung/galaxy-z-flip4/512gb/"}]
+seo_links_heading: "Galaxy Z Flip4 diğer seçenekleri"
+seo_canonical: "https://kacagider.com.tr/telefon/samsung/galaxy-z-flip4/128gb/"
+---

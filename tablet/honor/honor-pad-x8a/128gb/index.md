@@ -1,0 +1,13 @@
+---
+layout: "seo"
+seo_title: "Honor Pad X8a 128 GB İkinci El Fiyatı 2026 | KaçaGider"
+seo_description: "Honor Pad X8a 128 GB ikinci el değerini Türkiye ikinci el piyasasına göre kapasite ve kondisyon bilgileriyle KaçaGider üzerinden değerlendirin."
+seo_h1: "Honor Pad X8a 128 GB İkinci El Fiyatı"
+seo_intro: "Honor Pad X8a 128 GB ikinci el değerini Türkiye ikinci el piyasasına göre kapasite ve kondisyon bilgileriyle KaçaGider üzerinden değerlendirin."
+seo_context_heading: "Honor Pad X8a 128 GB için ikinci el değerleme"
+seo_context: "Honor Pad X8a 128 GB ikinci el değerini Türkiye ikinci el piyasasına göre kapasite ve kondisyon bilgileriyle KaçaGider üzerinden değerlendirin."
+seo_breadcrumbs: [{"label":"Ana Sayfa","url":"/"},{"label":"Tablet","url":"/tablet/"},{"label":"Honor","url":"/tablet/honor/"},{"label":"Honor Pad X8a","url":"/tablet/honor/honor-pad-x8a/"},{"label":"128 GB","url":"/tablet/honor/honor-pad-x8a/128gb/"}]
+seo_links: [{"label":"Honor Pad X8a ana sayfası","url":"/tablet/honor/honor-pad-x8a/"},{"label":"64 GB","url":"/tablet/honor/honor-pad-x8a/64gb/"}]
+seo_links_heading: "Honor Pad X8a diğer seçenekleri"
+seo_canonical: "https://kacagider.com.tr/tablet/honor/honor-pad-x8a/128gb/"
+---

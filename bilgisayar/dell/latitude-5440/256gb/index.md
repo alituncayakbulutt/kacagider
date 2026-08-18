@@ -1,0 +1,13 @@
+---
+layout: "seo"
+seo_title: "Latitude 5440 256 GB İkinci El Fiyatı 2026 | KaçaGider"
+seo_description: "Dell Latitude 5440 256 GB ikinci el değerini Türkiye ikinci el piyasasına göre kapasite ve kondisyon bilgileriyle KaçaGider üzerinden değerlendirin."
+seo_h1: "Latitude 5440 256 GB İkinci El Fiyatı"
+seo_intro: "Dell Latitude 5440 256 GB ikinci el değerini Türkiye ikinci el piyasasına göre kapasite ve kondisyon bilgileriyle KaçaGider üzerinden değerlendirin."
+seo_context_heading: "Latitude 5440 256 GB için ikinci el değerleme"
+seo_context: "Dell Latitude 5440 256 GB ikinci el değerini Türkiye ikinci el piyasasına göre kapasite ve kondisyon bilgileriyle KaçaGider üzerinden değerlendirin."
+seo_breadcrumbs: [{"label":"Ana Sayfa","url":"/"},{"label":"Bilgisayar","url":"/bilgisayar/"},{"label":"Dell","url":"/bilgisayar/dell/"},{"label":"Latitude 5440","url":"/bilgisayar/dell/latitude-5440/"},{"label":"256 GB","url":"/bilgisayar/dell/latitude-5440/256gb/"}]
+seo_links: [{"label":"Latitude 5440 ana sayfası","url":"/bilgisayar/dell/latitude-5440/"},{"label":"512 GB","url":"/bilgisayar/dell/latitude-5440/512gb/"}]
+seo_links_heading: "Latitude 5440 diğer seçenekleri"
+seo_canonical: "https://kacagider.com.tr/bilgisayar/dell/latitude-5440/256gb/"
+---
