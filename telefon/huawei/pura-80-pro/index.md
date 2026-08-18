@@ -10,4 +10,6 @@ seo_breadcrumbs: [{"label":"Ana Sayfa","url":"/"},{"label":"Telefon","url":"/tel
 seo_links: [{"label":"512 GB","url":"/telefon/huawei/pura-80-pro/512gb/"}]
 seo_links_heading: "Pura 80 Pro seçenekleri"
 seo_canonical: "https://kacagider.com.tr/telefon/huawei/pura-80-pro/"
+seo_guides_heading: "Pura 80 Pro ile ilgili sık arananlar"
+seo_guides: [{"label":"Pura 80 Pro nasıl sıfırlanır?","url":"/rehber/android/android-telefon-nasil-sifirlanir/"},{"label":"Pura 80 Pro ekran görüntüsü nasıl alınır?","url":"/rehber/android/android-ekran-goruntusu-nasil-alinir/"},{"label":"Pura 80 Pro IMEI nasıl öğrenilir?","url":"/rehber/android/android-imei-nasil-ogrenilir/"}]
 ---

@@ -10,4 +10,6 @@ seo_breadcrumbs: [{"label":"Ana Sayfa","url":"/"},{"label":"Telefon","url":"/tel
 seo_links: [{"label":"256 GB","url":"/telefon/xiaomi/xiaomi-14t/256gb/"},{"label":"512 GB","url":"/telefon/xiaomi/xiaomi-14t/512gb/"}]
 seo_links_heading: "Xiaomi 14T seçenekleri"
 seo_canonical: "https://kacagider.com.tr/telefon/xiaomi/xiaomi-14t/"
+seo_guides_heading: "Xiaomi 14T ile ilgili sık arananlar"
+seo_guides: [{"label":"Xiaomi 14T nasıl sıfırlanır?","url":"/rehber/android/android-telefon-nasil-sifirlanir/"},{"label":"Xiaomi 14T ekran görüntüsü nasıl alınır?","url":"/rehber/android/android-ekran-goruntusu-nasil-alinir/"},{"label":"Xiaomi 14T IMEI nasıl öğrenilir?","url":"/rehber/android/android-imei-nasil-ogrenilir/"}]
 ---

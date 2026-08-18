@@ -10,4 +10,6 @@ seo_breadcrumbs: [{"label":"Ana Sayfa","url":"/"},{"label":"Telefon","url":"/tel
 seo_links: [{"label":"512 GB","url":"/telefon/vivo/x300-ultra/512gb/"}]
 seo_links_heading: "X300 Ultra seçenekleri"
 seo_canonical: "https://kacagider.com.tr/telefon/vivo/x300-ultra/"
+seo_guides_heading: "X300 Ultra ile ilgili sık arananlar"
+seo_guides: [{"label":"X300 Ultra nasıl sıfırlanır?","url":"/rehber/android/android-telefon-nasil-sifirlanir/"},{"label":"X300 Ultra ekran görüntüsü nasıl alınır?","url":"/rehber/android/android-ekran-goruntusu-nasil-alinir/"},{"label":"X300 Ultra IMEI nasıl öğrenilir?","url":"/rehber/android/android-imei-nasil-ogrenilir/"}]
 ---

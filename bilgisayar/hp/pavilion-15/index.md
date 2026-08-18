@@ -10,4 +10,6 @@ seo_breadcrumbs: [{"label":"Ana Sayfa","url":"/"},{"label":"Bilgisayar","url":"/
 seo_links: [{"label":"256 GB","url":"/bilgisayar/hp/pavilion-15/256gb/"},{"label":"512 GB","url":"/bilgisayar/hp/pavilion-15/512gb/"}]
 seo_links_heading: "Pavilion 15 seçenekleri"
 seo_canonical: "https://kacagider.com.tr/bilgisayar/hp/pavilion-15/"
+seo_guides_heading: "Pavilion 15 ile ilgili sık arananlar"
+seo_guides: [{"label":"Pavilion 15 nasıl sıfırlanır?","url":"/rehber/windows/windows-nasil-sifirlanir/"},{"label":"Pavilion 15 nasıl yedeklenir?","url":"/rehber/windows/windows-bilgisayar-yedekleme/"}]
 ---

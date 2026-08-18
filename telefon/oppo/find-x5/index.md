@@ -10,4 +10,6 @@ seo_breadcrumbs: [{"label":"Ana Sayfa","url":"/"},{"label":"Telefon","url":"/tel
 seo_links: [{"label":"128 GB","url":"/telefon/oppo/find-x5/128gb/"},{"label":"256 GB","url":"/telefon/oppo/find-x5/256gb/"}]
 seo_links_heading: "Find X5 seçenekleri"
 seo_canonical: "https://kacagider.com.tr/telefon/oppo/find-x5/"
+seo_guides_heading: "Find X5 ile ilgili sık arananlar"
+seo_guides: [{"label":"Find X5 nasıl sıfırlanır?","url":"/rehber/android/android-telefon-nasil-sifirlanir/"},{"label":"Find X5 ekran görüntüsü nasıl alınır?","url":"/rehber/android/android-ekran-goruntusu-nasil-alinir/"},{"label":"Find X5 IMEI nasıl öğrenilir?","url":"/rehber/android/android-imei-nasil-ogrenilir/"}]
 ---

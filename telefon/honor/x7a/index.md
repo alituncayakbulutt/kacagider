@@ -10,4 +10,6 @@ seo_breadcrumbs: [{"label":"Ana Sayfa","url":"/"},{"label":"Telefon","url":"/tel
 seo_links: [{"label":"128 GB","url":"/telefon/honor/x7a/128gb/"}]
 seo_links_heading: "X7a seçenekleri"
 seo_canonical: "https://kacagider.com.tr/telefon/honor/x7a/"
+seo_guides_heading: "X7a ile ilgili sık arananlar"
+seo_guides: [{"label":"X7a nasıl sıfırlanır?","url":"/rehber/android/android-telefon-nasil-sifirlanir/"},{"label":"X7a ekran görüntüsü nasıl alınır?","url":"/rehber/android/android-ekran-goruntusu-nasil-alinir/"},{"label":"X7a IMEI nasıl öğrenilir?","url":"/rehber/android/android-imei-nasil-ogrenilir/"}]
 ---

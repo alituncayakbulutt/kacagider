@@ -10,4 +10,6 @@ seo_breadcrumbs: [{"label":"Ana Sayfa","url":"/"},{"label":"Telefon","url":"/tel
 seo_links: [{"label":"512 GB","url":"/telefon/honor/magic-v2/512gb/"}]
 seo_links_heading: "Magic V2 seçenekleri"
 seo_canonical: "https://kacagider.com.tr/telefon/honor/magic-v2/"
+seo_guides_heading: "Magic V2 ile ilgili sık arananlar"
+seo_guides: [{"label":"Magic V2 nasıl sıfırlanır?","url":"/rehber/android/android-telefon-nasil-sifirlanir/"},{"label":"Magic V2 ekran görüntüsü nasıl alınır?","url":"/rehber/android/android-ekran-goruntusu-nasil-alinir/"},{"label":"Magic V2 IMEI nasıl öğrenilir?","url":"/rehber/android/android-imei-nasil-ogrenilir/"}]
 ---

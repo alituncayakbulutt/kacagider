@@ -10,4 +10,6 @@ seo_breadcrumbs: [{"label":"Ana Sayfa","url":"/"},{"label":"Telefon","url":"/tel
 seo_links: [{"label":"128 GB","url":"/telefon/vivo/v21/128gb/"}]
 seo_links_heading: "V21 seçenekleri"
 seo_canonical: "https://kacagider.com.tr/telefon/vivo/v21/"
+seo_guides_heading: "V21 ile ilgili sık arananlar"
+seo_guides: [{"label":"V21 nasıl sıfırlanır?","url":"/rehber/android/android-telefon-nasil-sifirlanir/"},{"label":"V21 ekran görüntüsü nasıl alınır?","url":"/rehber/android/android-ekran-goruntusu-nasil-alinir/"},{"label":"V21 IMEI nasıl öğrenilir?","url":"/rehber/android/android-imei-nasil-ogrenilir/"}]
 ---

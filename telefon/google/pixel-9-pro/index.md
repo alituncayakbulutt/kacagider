@@ -10,4 +10,6 @@ seo_breadcrumbs: [{"label":"Ana Sayfa","url":"/"},{"label":"Telefon","url":"/tel
 seo_links: [{"label":"128 GB","url":"/telefon/google/pixel-9-pro/128gb/"},{"label":"256 GB","url":"/telefon/google/pixel-9-pro/256gb/"},{"label":"512 GB","url":"/telefon/google/pixel-9-pro/512gb/"},{"label":"1 TB","url":"/telefon/google/pixel-9-pro/1tb/"}]
 seo_links_heading: "Pixel 9 Pro seçenekleri"
 seo_canonical: "https://kacagider.com.tr/telefon/google/pixel-9-pro/"
+seo_guides_heading: "Pixel 9 Pro ile ilgili sık arananlar"
+seo_guides: [{"label":"Pixel 9 Pro nasıl sıfırlanır?","url":"/rehber/android/android-telefon-nasil-sifirlanir/"},{"label":"Pixel 9 Pro ekran görüntüsü nasıl alınır?","url":"/rehber/android/android-ekran-goruntusu-nasil-alinir/"},{"label":"Pixel 9 Pro IMEI nasıl öğrenilir?","url":"/rehber/android/android-imei-nasil-ogrenilir/"}]
 ---

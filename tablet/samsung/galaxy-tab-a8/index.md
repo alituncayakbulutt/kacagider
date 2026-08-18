@@ -10,4 +10,6 @@ seo_breadcrumbs: [{"label":"Ana Sayfa","url":"/"},{"label":"Tablet","url":"/tabl
 seo_links: [{"label":"32 GB","url":"/tablet/samsung/galaxy-tab-a8/32gb/"},{"label":"64 GB","url":"/tablet/samsung/galaxy-tab-a8/64gb/"},{"label":"128 GB","url":"/tablet/samsung/galaxy-tab-a8/128gb/"}]
 seo_links_heading: "Galaxy Tab A8 seçenekleri"
 seo_canonical: "https://kacagider.com.tr/tablet/samsung/galaxy-tab-a8/"
+seo_guides_heading: "Galaxy Tab A8 ile ilgili sık arananlar"
+seo_guides: [{"label":"Galaxy Tab A8 nasıl sıfırlanır?","url":"/rehber/android/android-tablet-nasil-sifirlanir/"},{"label":"Galaxy Tab A8 ekran görüntüsü nasıl alınır?","url":"/rehber/android/android-tablet-ekran-goruntusu/"}]
 ---

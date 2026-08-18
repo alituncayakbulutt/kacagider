@@ -10,4 +10,6 @@ seo_breadcrumbs: [{"label":"Ana Sayfa","url":"/"},{"label":"Bilgisayar","url":"/
 seo_links: [{"label":"256 GB","url":"/bilgisayar/msi/modern-15/256gb/"},{"label":"512 GB","url":"/bilgisayar/msi/modern-15/512gb/"}]
 seo_links_heading: "Modern 15 seçenekleri"
 seo_canonical: "https://kacagider.com.tr/bilgisayar/msi/modern-15/"
+seo_guides_heading: "Modern 15 ile ilgili sık arananlar"
+seo_guides: [{"label":"Modern 15 nasıl sıfırlanır?","url":"/rehber/windows/windows-nasil-sifirlanir/"},{"label":"Modern 15 nasıl yedeklenir?","url":"/rehber/windows/windows-bilgisayar-yedekleme/"}]
 ---

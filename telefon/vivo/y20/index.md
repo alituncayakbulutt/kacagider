@@ -10,4 +10,6 @@ seo_breadcrumbs: [{"label":"Ana Sayfa","url":"/"},{"label":"Telefon","url":"/tel
 seo_links: [{"label":"64 GB","url":"/telefon/vivo/y20/64gb/"}]
 seo_links_heading: "Y20 seçenekleri"
 seo_canonical: "https://kacagider.com.tr/telefon/vivo/y20/"
+seo_guides_heading: "Y20 ile ilgili sık arananlar"
+seo_guides: [{"label":"Y20 nasıl sıfırlanır?","url":"/rehber/android/android-telefon-nasil-sifirlanir/"},{"label":"Y20 ekran görüntüsü nasıl alınır?","url":"/rehber/android/android-ekran-goruntusu-nasil-alinir/"},{"label":"Y20 IMEI nasıl öğrenilir?","url":"/rehber/android/android-imei-nasil-ogrenilir/"}]
 ---

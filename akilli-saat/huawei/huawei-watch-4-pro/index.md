@@ -10,4 +10,6 @@ seo_breadcrumbs: [{"label":"Ana Sayfa","url":"/"},{"label":"Akıllı Saat","url"
 seo_links: [{"label":"48 mm","url":"/akilli-saat/huawei/huawei-watch-4-pro/48mm/"}]
 seo_links_heading: "Huawei Watch 4 Pro seçenekleri"
 seo_canonical: "https://kacagider.com.tr/akilli-saat/huawei/huawei-watch-4-pro/"
+seo_guides_heading: "Huawei Watch 4 Pro ile ilgili sık arananlar"
+seo_guides: [{"label":"Huawei Watch 4 Pro nasıl sıfırlanır?","url":"/rehber/wear-os/galaxy-watch-nasil-sifirlanir/"}]
 ---

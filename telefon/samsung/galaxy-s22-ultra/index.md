@@ -10,4 +10,6 @@ seo_breadcrumbs: [{"label":"Ana Sayfa","url":"/"},{"label":"Telefon","url":"/tel
 seo_links: [{"label":"128 GB","url":"/telefon/samsung/galaxy-s22-ultra/128gb/"},{"label":"256 GB","url":"/telefon/samsung/galaxy-s22-ultra/256gb/"},{"label":"512 GB","url":"/telefon/samsung/galaxy-s22-ultra/512gb/"},{"label":"1 TB","url":"/telefon/samsung/galaxy-s22-ultra/1tb/"}]
 seo_links_heading: "Galaxy S22 Ultra seçenekleri"
 seo_canonical: "https://kacagider.com.tr/telefon/samsung/galaxy-s22-ultra/"
+seo_guides_heading: "Galaxy S22 Ultra ile ilgili sık arananlar"
+seo_guides: [{"label":"Galaxy S22 Ultra nasıl sıfırlanır?","url":"/rehber/android/android-telefon-nasil-sifirlanir/"},{"label":"Galaxy S22 Ultra ekran görüntüsü nasıl alınır?","url":"/rehber/android/android-ekran-goruntusu-nasil-alinir/"},{"label":"Galaxy S22 Ultra IMEI nasıl öğrenilir?","url":"/rehber/android/android-imei-nasil-ogrenilir/"}]
 ---

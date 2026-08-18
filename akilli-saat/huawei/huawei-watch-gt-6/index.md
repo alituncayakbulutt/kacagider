@@ -10,4 +10,6 @@ seo_breadcrumbs: [{"label":"Ana Sayfa","url":"/"},{"label":"Akıllı Saat","url"
 seo_links: [{"label":"41 mm","url":"/akilli-saat/huawei/huawei-watch-gt-6/41mm/"},{"label":"46 mm","url":"/akilli-saat/huawei/huawei-watch-gt-6/46mm/"}]
 seo_links_heading: "Huawei Watch GT 6 seçenekleri"
 seo_canonical: "https://kacagider.com.tr/akilli-saat/huawei/huawei-watch-gt-6/"
+seo_guides_heading: "Huawei Watch GT 6 ile ilgili sık arananlar"
+seo_guides: [{"label":"Huawei Watch GT 6 nasıl sıfırlanır?","url":"/rehber/wear-os/galaxy-watch-nasil-sifirlanir/"}]
 ---

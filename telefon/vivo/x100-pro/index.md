@@ -10,4 +10,6 @@ seo_breadcrumbs: [{"label":"Ana Sayfa","url":"/"},{"label":"Telefon","url":"/tel
 seo_links: [{"label":"512 GB","url":"/telefon/vivo/x100-pro/512gb/"}]
 seo_links_heading: "X100 Pro seçenekleri"
 seo_canonical: "https://kacagider.com.tr/telefon/vivo/x100-pro/"
+seo_guides_heading: "X100 Pro ile ilgili sık arananlar"
+seo_guides: [{"label":"X100 Pro nasıl sıfırlanır?","url":"/rehber/android/android-telefon-nasil-sifirlanir/"},{"label":"X100 Pro ekran görüntüsü nasıl alınır?","url":"/rehber/android/android-ekran-goruntusu-nasil-alinir/"},{"label":"X100 Pro IMEI nasıl öğrenilir?","url":"/rehber/android/android-imei-nasil-ogrenilir/"}]
 ---

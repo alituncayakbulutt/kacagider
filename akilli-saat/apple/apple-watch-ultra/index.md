@@ -10,4 +10,6 @@ seo_breadcrumbs: [{"label":"Ana Sayfa","url":"/"},{"label":"Akıllı Saat","url"
 seo_links: [{"label":"49 mm","url":"/akilli-saat/apple/apple-watch-ultra/49mm/"}]
 seo_links_heading: "Apple Watch Ultra seçenekleri"
 seo_canonical: "https://kacagider.com.tr/akilli-saat/apple/apple-watch-ultra/"
+seo_guides_heading: "Apple Watch Ultra ile ilgili sık arananlar"
+seo_guides: [{"label":"Apple Watch Ultra nasıl sıfırlanır?","url":"/rehber/watchos/apple-watch-nasil-sifirlanir/"}]
 ---

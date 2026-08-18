@@ -10,4 +10,6 @@ seo_breadcrumbs: [{"label":"Ana Sayfa","url":"/"},{"label":"Tablet","url":"/tabl
 seo_links: [{"label":"128 GB","url":"/tablet/honor/honor-pad-8/128gb/"},{"label":"256 GB","url":"/tablet/honor/honor-pad-8/256gb/"}]
 seo_links_heading: "Honor Pad 8 seçenekleri"
 seo_canonical: "https://kacagider.com.tr/tablet/honor/honor-pad-8/"
+seo_guides_heading: "Honor Pad 8 ile ilgili sık arananlar"
+seo_guides: [{"label":"Honor Pad 8 nasıl sıfırlanır?","url":"/rehber/android/android-tablet-nasil-sifirlanir/"},{"label":"Honor Pad 8 ekran görüntüsü nasıl alınır?","url":"/rehber/android/android-tablet-ekran-goruntusu/"}]
 ---

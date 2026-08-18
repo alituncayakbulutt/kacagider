@@ -10,4 +10,6 @@ seo_breadcrumbs: [{"label":"Ana Sayfa","url":"/"},{"label":"Tablet","url":"/tabl
 seo_links: [{"label":"128 GB","url":"/tablet/huawei/matepad-pro-12-6/128gb/"},{"label":"256 GB","url":"/tablet/huawei/matepad-pro-12-6/256gb/"},{"label":"512 GB","url":"/tablet/huawei/matepad-pro-12-6/512gb/"}]
 seo_links_heading: "MatePad Pro 12.6 seçenekleri"
 seo_canonical: "https://kacagider.com.tr/tablet/huawei/matepad-pro-12-6/"
+seo_guides_heading: "MatePad Pro 12.6 ile ilgili sık arananlar"
+seo_guides: [{"label":"MatePad Pro 12.6 nasıl sıfırlanır?","url":"/rehber/android/android-tablet-nasil-sifirlanir/"},{"label":"MatePad Pro 12.6 ekran görüntüsü nasıl alınır?","url":"/rehber/android/android-tablet-ekran-goruntusu/"}]
 ---

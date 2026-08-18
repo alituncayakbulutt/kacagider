@@ -10,4 +10,6 @@ seo_breadcrumbs: [{"label":"Ana Sayfa","url":"/"},{"label":"Telefon","url":"/tel
 seo_links: [{"label":"32 GB","url":"/telefon/vivo/y15s/32gb/"}]
 seo_links_heading: "Y15s seçenekleri"
 seo_canonical: "https://kacagider.com.tr/telefon/vivo/y15s/"
+seo_guides_heading: "Y15s ile ilgili sık arananlar"
+seo_guides: [{"label":"Y15s nasıl sıfırlanır?","url":"/rehber/android/android-telefon-nasil-sifirlanir/"},{"label":"Y15s ekran görüntüsü nasıl alınır?","url":"/rehber/android/android-ekran-goruntusu-nasil-alinir/"},{"label":"Y15s IMEI nasıl öğrenilir?","url":"/rehber/android/android-imei-nasil-ogrenilir/"}]
 ---

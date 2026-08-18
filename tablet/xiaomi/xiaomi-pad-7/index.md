@@ -10,4 +10,6 @@ seo_breadcrumbs: [{"label":"Ana Sayfa","url":"/"},{"label":"Tablet","url":"/tabl
 seo_links: [{"label":"128 GB","url":"/tablet/xiaomi/xiaomi-pad-7/128gb/"},{"label":"256 GB","url":"/tablet/xiaomi/xiaomi-pad-7/256gb/"}]
 seo_links_heading: "Xiaomi Pad 7 seçenekleri"
 seo_canonical: "https://kacagider.com.tr/tablet/xiaomi/xiaomi-pad-7/"
+seo_guides_heading: "Xiaomi Pad 7 ile ilgili sık arananlar"
+seo_guides: [{"label":"Xiaomi Pad 7 nasıl sıfırlanır?","url":"/rehber/android/android-tablet-nasil-sifirlanir/"},{"label":"Xiaomi Pad 7 ekran görüntüsü nasıl alınır?","url":"/rehber/android/android-tablet-ekran-goruntusu/"}]
 ---

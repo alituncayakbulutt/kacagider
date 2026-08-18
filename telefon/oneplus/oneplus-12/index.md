@@ -10,4 +10,6 @@ seo_breadcrumbs: [{"label":"Ana Sayfa","url":"/"},{"label":"Telefon","url":"/tel
 seo_links: [{"label":"256 GB","url":"/telefon/oneplus/oneplus-12/256gb/"},{"label":"512 GB","url":"/telefon/oneplus/oneplus-12/512gb/"}]
 seo_links_heading: "OnePlus 12 seçenekleri"
 seo_canonical: "https://kacagider.com.tr/telefon/oneplus/oneplus-12/"
+seo_guides_heading: "OnePlus 12 ile ilgili sık arananlar"
+seo_guides: [{"label":"OnePlus 12 nasıl sıfırlanır?","url":"/rehber/android/android-telefon-nasil-sifirlanir/"},{"label":"OnePlus 12 ekran görüntüsü nasıl alınır?","url":"/rehber/android/android-ekran-goruntusu-nasil-alinir/"},{"label":"OnePlus 12 IMEI nasıl öğrenilir?","url":"/rehber/android/android-imei-nasil-ogrenilir/"}]
 ---

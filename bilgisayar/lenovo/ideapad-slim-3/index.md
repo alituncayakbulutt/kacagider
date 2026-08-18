@@ -10,4 +10,6 @@ seo_breadcrumbs: [{"label":"Ana Sayfa","url":"/"},{"label":"Bilgisayar","url":"/
 seo_links: [{"label":"256 GB","url":"/bilgisayar/lenovo/ideapad-slim-3/256gb/"},{"label":"512 GB","url":"/bilgisayar/lenovo/ideapad-slim-3/512gb/"}]
 seo_links_heading: "IdeaPad Slim 3 seçenekleri"
 seo_canonical: "https://kacagider.com.tr/bilgisayar/lenovo/ideapad-slim-3/"
+seo_guides_heading: "IdeaPad Slim 3 ile ilgili sık arananlar"
+seo_guides: [{"label":"IdeaPad Slim 3 nasıl sıfırlanır?","url":"/rehber/windows/windows-nasil-sifirlanir/"},{"label":"IdeaPad Slim 3 nasıl yedeklenir?","url":"/rehber/windows/windows-bilgisayar-yedekleme/"}]
 ---

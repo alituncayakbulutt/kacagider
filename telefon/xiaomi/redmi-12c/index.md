@@ -10,4 +10,6 @@ seo_breadcrumbs: [{"label":"Ana Sayfa","url":"/"},{"label":"Telefon","url":"/tel
 seo_links: [{"label":"64 GB","url":"/telefon/xiaomi/redmi-12c/64gb/"},{"label":"128 GB","url":"/telefon/xiaomi/redmi-12c/128gb/"}]
 seo_links_heading: "Redmi 12C seçenekleri"
 seo_canonical: "https://kacagider.com.tr/telefon/xiaomi/redmi-12c/"
+seo_guides_heading: "Redmi 12C ile ilgili sık arananlar"
+seo_guides: [{"label":"Redmi 12C nasıl sıfırlanır?","url":"/rehber/android/android-telefon-nasil-sifirlanir/"},{"label":"Redmi 12C ekran görüntüsü nasıl alınır?","url":"/rehber/android/android-ekran-goruntusu-nasil-alinir/"},{"label":"Redmi 12C IMEI nasıl öğrenilir?","url":"/rehber/android/android-imei-nasil-ogrenilir/"}]
 ---

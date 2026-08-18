@@ -10,4 +10,6 @@ seo_breadcrumbs: [{"label":"Ana Sayfa","url":"/"},{"label":"Bilgisayar","url":"/
 seo_links: [{"label":"256 GB","url":"/bilgisayar/dell/vostro-3520/256gb/"},{"label":"512 GB","url":"/bilgisayar/dell/vostro-3520/512gb/"}]
 seo_links_heading: "Vostro 3520 seçenekleri"
 seo_canonical: "https://kacagider.com.tr/bilgisayar/dell/vostro-3520/"
+seo_guides_heading: "Vostro 3520 ile ilgili sık arananlar"
+seo_guides: [{"label":"Vostro 3520 nasıl sıfırlanır?","url":"/rehber/windows/windows-nasil-sifirlanir/"},{"label":"Vostro 3520 nasıl yedeklenir?","url":"/rehber/windows/windows-bilgisayar-yedekleme/"}]
 ---

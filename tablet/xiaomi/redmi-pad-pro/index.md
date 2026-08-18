@@ -10,4 +10,6 @@ seo_breadcrumbs: [{"label":"Ana Sayfa","url":"/"},{"label":"Tablet","url":"/tabl
 seo_links: [{"label":"128 GB","url":"/tablet/xiaomi/redmi-pad-pro/128gb/"},{"label":"256 GB","url":"/tablet/xiaomi/redmi-pad-pro/256gb/"}]
 seo_links_heading: "Redmi Pad Pro seçenekleri"
 seo_canonical: "https://kacagider.com.tr/tablet/xiaomi/redmi-pad-pro/"
+seo_guides_heading: "Redmi Pad Pro ile ilgili sık arananlar"
+seo_guides: [{"label":"Redmi Pad Pro nasıl sıfırlanır?","url":"/rehber/android/android-tablet-nasil-sifirlanir/"},{"label":"Redmi Pad Pro ekran görüntüsü nasıl alınır?","url":"/rehber/android/android-tablet-ekran-goruntusu/"}]
 ---

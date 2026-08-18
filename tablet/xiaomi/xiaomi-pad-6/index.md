@@ -10,4 +10,6 @@ seo_breadcrumbs: [{"label":"Ana Sayfa","url":"/"},{"label":"Tablet","url":"/tabl
 seo_links: [{"label":"128 GB","url":"/tablet/xiaomi/xiaomi-pad-6/128gb/"},{"label":"256 GB","url":"/tablet/xiaomi/xiaomi-pad-6/256gb/"}]
 seo_links_heading: "Xiaomi Pad 6 seçenekleri"
 seo_canonical: "https://kacagider.com.tr/tablet/xiaomi/xiaomi-pad-6/"
+seo_guides_heading: "Xiaomi Pad 6 ile ilgili sık arananlar"
+seo_guides: [{"label":"Xiaomi Pad 6 nasıl sıfırlanır?","url":"/rehber/android/android-tablet-nasil-sifirlanir/"},{"label":"Xiaomi Pad 6 ekran görüntüsü nasıl alınır?","url":"/rehber/android/android-tablet-ekran-goruntusu/"}]
 ---

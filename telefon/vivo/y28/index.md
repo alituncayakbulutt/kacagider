@@ -10,4 +10,6 @@ seo_breadcrumbs: [{"label":"Ana Sayfa","url":"/"},{"label":"Telefon","url":"/tel
 seo_links: [{"label":"256 GB","url":"/telefon/vivo/y28/256gb/"}]
 seo_links_heading: "Y28 seçenekleri"
 seo_canonical: "https://kacagider.com.tr/telefon/vivo/y28/"
+seo_guides_heading: "Y28 ile ilgili sık arananlar"
+seo_guides: [{"label":"Y28 nasıl sıfırlanır?","url":"/rehber/android/android-telefon-nasil-sifirlanir/"},{"label":"Y28 ekran görüntüsü nasıl alınır?","url":"/rehber/android/android-ekran-goruntusu-nasil-alinir/"},{"label":"Y28 IMEI nasıl öğrenilir?","url":"/rehber/android/android-imei-nasil-ogrenilir/"}]
 ---

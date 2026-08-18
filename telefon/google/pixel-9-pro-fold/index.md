@@ -10,4 +10,6 @@ seo_breadcrumbs: [{"label":"Ana Sayfa","url":"/"},{"label":"Telefon","url":"/tel
 seo_links: [{"label":"256 GB","url":"/telefon/google/pixel-9-pro-fold/256gb/"},{"label":"512 GB","url":"/telefon/google/pixel-9-pro-fold/512gb/"}]
 seo_links_heading: "Pixel 9 Pro Fold seçenekleri"
 seo_canonical: "https://kacagider.com.tr/telefon/google/pixel-9-pro-fold/"
+seo_guides_heading: "Pixel 9 Pro Fold ile ilgili sık arananlar"
+seo_guides: [{"label":"Pixel 9 Pro Fold nasıl sıfırlanır?","url":"/rehber/android/android-telefon-nasil-sifirlanir/"},{"label":"Pixel 9 Pro Fold ekran görüntüsü nasıl alınır?","url":"/rehber/android/android-ekran-goruntusu-nasil-alinir/"},{"label":"Pixel 9 Pro Fold IMEI nasıl öğrenilir?","url":"/rehber/android/android-imei-nasil-ogrenilir/"}]
 ---

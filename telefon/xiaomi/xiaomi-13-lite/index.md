@@ -10,4 +10,6 @@ seo_breadcrumbs: [{"label":"Ana Sayfa","url":"/"},{"label":"Telefon","url":"/tel
 seo_links: [{"label":"128 GB","url":"/telefon/xiaomi/xiaomi-13-lite/128gb/"},{"label":"256 GB","url":"/telefon/xiaomi/xiaomi-13-lite/256gb/"}]
 seo_links_heading: "Xiaomi 13 Lite seçenekleri"
 seo_canonical: "https://kacagider.com.tr/telefon/xiaomi/xiaomi-13-lite/"
+seo_guides_heading: "Xiaomi 13 Lite ile ilgili sık arananlar"
+seo_guides: [{"label":"Xiaomi 13 Lite nasıl sıfırlanır?","url":"/rehber/android/android-telefon-nasil-sifirlanir/"},{"label":"Xiaomi 13 Lite ekran görüntüsü nasıl alınır?","url":"/rehber/android/android-ekran-goruntusu-nasil-alinir/"},{"label":"Xiaomi 13 Lite IMEI nasıl öğrenilir?","url":"/rehber/android/android-imei-nasil-ogrenilir/"}]
 ---

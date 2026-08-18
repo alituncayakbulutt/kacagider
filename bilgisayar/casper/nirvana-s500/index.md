@@ -10,4 +10,6 @@ seo_breadcrumbs: [{"label":"Ana Sayfa","url":"/"},{"label":"Bilgisayar","url":"/
 seo_links: [{"label":"256 GB","url":"/bilgisayar/casper/nirvana-s500/256gb/"},{"label":"512 GB","url":"/bilgisayar/casper/nirvana-s500/512gb/"}]
 seo_links_heading: "Nirvana S500 seçenekleri"
 seo_canonical: "https://kacagider.com.tr/bilgisayar/casper/nirvana-s500/"
+seo_guides_heading: "Nirvana S500 ile ilgili sık arananlar"
+seo_guides: [{"label":"Nirvana S500 nasıl sıfırlanır?","url":"/rehber/windows/windows-nasil-sifirlanir/"},{"label":"Nirvana S500 nasıl yedeklenir?","url":"/rehber/windows/windows-bilgisayar-yedekleme/"}]
 ---

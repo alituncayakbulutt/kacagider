@@ -10,4 +10,6 @@ seo_breadcrumbs: [{"label":"Ana Sayfa","url":"/"},{"label":"Telefon","url":"/tel
 seo_links: [{"label":"128 GB","url":"/telefon/huawei/p40/128gb/"}]
 seo_links_heading: "P40 seçenekleri"
 seo_canonical: "https://kacagider.com.tr/telefon/huawei/p40/"
+seo_guides_heading: "P40 ile ilgili sık arananlar"
+seo_guides: [{"label":"P40 nasıl sıfırlanır?","url":"/rehber/android/android-telefon-nasil-sifirlanir/"},{"label":"P40 ekran görüntüsü nasıl alınır?","url":"/rehber/android/android-ekran-goruntusu-nasil-alinir/"},{"label":"P40 IMEI nasıl öğrenilir?","url":"/rehber/android/android-imei-nasil-ogrenilir/"}]
 ---

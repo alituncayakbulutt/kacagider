@@ -10,4 +10,6 @@ seo_breadcrumbs: [{"label":"Ana Sayfa","url":"/"},{"label":"Telefon","url":"/tel
 seo_links: [{"label":"64 GB","url":"/telefon/samsung/galaxy-m12/64gb/"},{"label":"128 GB","url":"/telefon/samsung/galaxy-m12/128gb/"}]
 seo_links_heading: "Galaxy M12 seçenekleri"
 seo_canonical: "https://kacagider.com.tr/telefon/samsung/galaxy-m12/"
+seo_guides_heading: "Galaxy M12 ile ilgili sık arananlar"
+seo_guides: [{"label":"Galaxy M12 nasıl sıfırlanır?","url":"/rehber/android/android-telefon-nasil-sifirlanir/"},{"label":"Galaxy M12 ekran görüntüsü nasıl alınır?","url":"/rehber/android/android-ekran-goruntusu-nasil-alinir/"},{"label":"Galaxy M12 IMEI nasıl öğrenilir?","url":"/rehber/android/android-imei-nasil-ogrenilir/"}]
 ---

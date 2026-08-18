@@ -10,4 +10,6 @@ seo_breadcrumbs: [{"label":"Ana Sayfa","url":"/"},{"label":"Telefon","url":"/tel
 seo_links: [{"label":"256 GB","url":"/telefon/vivo/v30-lite/256gb/"}]
 seo_links_heading: "V30 Lite seçenekleri"
 seo_canonical: "https://kacagider.com.tr/telefon/vivo/v30-lite/"
+seo_guides_heading: "V30 Lite ile ilgili sık arananlar"
+seo_guides: [{"label":"V30 Lite nasıl sıfırlanır?","url":"/rehber/android/android-telefon-nasil-sifirlanir/"},{"label":"V30 Lite ekran görüntüsü nasıl alınır?","url":"/rehber/android/android-ekran-goruntusu-nasil-alinir/"},{"label":"V30 Lite IMEI nasıl öğrenilir?","url":"/rehber/android/android-imei-nasil-ogrenilir/"}]
 ---

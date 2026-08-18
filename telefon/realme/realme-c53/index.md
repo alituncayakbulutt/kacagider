@@ -10,4 +10,6 @@ seo_breadcrumbs: [{"label":"Ana Sayfa","url":"/"},{"label":"Telefon","url":"/tel
 seo_links: [{"label":"128 GB","url":"/telefon/realme/realme-c53/128gb/"},{"label":"256 GB","url":"/telefon/realme/realme-c53/256gb/"}]
 seo_links_heading: "Realme C53 seçenekleri"
 seo_canonical: "https://kacagider.com.tr/telefon/realme/realme-c53/"
+seo_guides_heading: "Realme C53 ile ilgili sık arananlar"
+seo_guides: [{"label":"Realme C53 nasıl sıfırlanır?","url":"/rehber/android/android-telefon-nasil-sifirlanir/"},{"label":"Realme C53 ekran görüntüsü nasıl alınır?","url":"/rehber/android/android-ekran-goruntusu-nasil-alinir/"},{"label":"Realme C53 IMEI nasıl öğrenilir?","url":"/rehber/android/android-imei-nasil-ogrenilir/"}]
 ---

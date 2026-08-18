@@ -10,4 +10,6 @@ seo_breadcrumbs: [{"label":"Ana Sayfa","url":"/"},{"label":"Tablet","url":"/tabl
 seo_links: [{"label":"64 GB","url":"/tablet/samsung/galaxy-tab-s6-lite/64gb/"},{"label":"128 GB","url":"/tablet/samsung/galaxy-tab-s6-lite/128gb/"}]
 seo_links_heading: "Galaxy Tab S6 Lite seçenekleri"
 seo_canonical: "https://kacagider.com.tr/tablet/samsung/galaxy-tab-s6-lite/"
+seo_guides_heading: "Galaxy Tab S6 Lite ile ilgili sık arananlar"
+seo_guides: [{"label":"Galaxy Tab S6 Lite nasıl sıfırlanır?","url":"/rehber/android/android-tablet-nasil-sifirlanir/"},{"label":"Galaxy Tab S6 Lite ekran görüntüsü nasıl alınır?","url":"/rehber/android/android-tablet-ekran-goruntusu/"}]
 ---

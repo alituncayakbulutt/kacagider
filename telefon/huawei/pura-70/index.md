@@ -10,4 +10,6 @@ seo_breadcrumbs: [{"label":"Ana Sayfa","url":"/"},{"label":"Telefon","url":"/tel
 seo_links: [{"label":"256 GB","url":"/telefon/huawei/pura-70/256gb/"}]
 seo_links_heading: "Pura 70 seçenekleri"
 seo_canonical: "https://kacagider.com.tr/telefon/huawei/pura-70/"
+seo_guides_heading: "Pura 70 ile ilgili sık arananlar"
+seo_guides: [{"label":"Pura 70 nasıl sıfırlanır?","url":"/rehber/android/android-telefon-nasil-sifirlanir/"},{"label":"Pura 70 ekran görüntüsü nasıl alınır?","url":"/rehber/android/android-ekran-goruntusu-nasil-alinir/"},{"label":"Pura 70 IMEI nasıl öğrenilir?","url":"/rehber/android/android-imei-nasil-ogrenilir/"}]
 ---

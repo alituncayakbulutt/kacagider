@@ -10,4 +10,6 @@ seo_breadcrumbs: [{"label":"Ana Sayfa","url":"/"},{"label":"Tablet","url":"/tabl
 seo_links: [{"label":"64 GB","url":"/tablet/huawei/matepad-se-11/64gb/"},{"label":"128 GB","url":"/tablet/huawei/matepad-se-11/128gb/"}]
 seo_links_heading: "MatePad SE 11 seçenekleri"
 seo_canonical: "https://kacagider.com.tr/tablet/huawei/matepad-se-11/"
+seo_guides_heading: "MatePad SE 11 ile ilgili sık arananlar"
+seo_guides: [{"label":"MatePad SE 11 nasıl sıfırlanır?","url":"/rehber/android/android-tablet-nasil-sifirlanir/"},{"label":"MatePad SE 11 ekran görüntüsü nasıl alınır?","url":"/rehber/android/android-tablet-ekran-goruntusu/"}]
 ---

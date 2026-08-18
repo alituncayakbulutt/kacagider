@@ -10,4 +10,6 @@ seo_breadcrumbs: [{"label":"Ana Sayfa","url":"/"},{"label":"Telefon","url":"/tel
 seo_links: [{"label":"128 GB","url":"/telefon/vivo/y17s/128gb/"}]
 seo_links_heading: "Y17s seçenekleri"
 seo_canonical: "https://kacagider.com.tr/telefon/vivo/y17s/"
+seo_guides_heading: "Y17s ile ilgili sık arananlar"
+seo_guides: [{"label":"Y17s nasıl sıfırlanır?","url":"/rehber/android/android-telefon-nasil-sifirlanir/"},{"label":"Y17s ekran görüntüsü nasıl alınır?","url":"/rehber/android/android-ekran-goruntusu-nasil-alinir/"},{"label":"Y17s IMEI nasıl öğrenilir?","url":"/rehber/android/android-imei-nasil-ogrenilir/"}]
 ---

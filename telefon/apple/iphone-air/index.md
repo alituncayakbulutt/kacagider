@@ -10,4 +10,6 @@ seo_breadcrumbs: [{"label":"Ana Sayfa","url":"/"},{"label":"Telefon","url":"/tel
 seo_links: [{"label":"256 GB","url":"/telefon/apple/iphone-air/256gb/"},{"label":"512 GB","url":"/telefon/apple/iphone-air/512gb/"},{"label":"1 TB","url":"/telefon/apple/iphone-air/1tb/"}]
 seo_links_heading: "iPhone Air seçenekleri"
 seo_canonical: "https://kacagider.com.tr/telefon/apple/iphone-air/"
+seo_guides_heading: "iPhone Air ile ilgili sık arananlar"
+seo_guides: [{"label":"iPhone Air nasıl sıfırlanır?","url":"/rehber/ios/iphone-nasil-sifirlanir/"},{"label":"iPhone Air ekran görüntüsü nasıl alınır?","url":"/rehber/ios/iphone-ekran-goruntusu-nasil-alinir/"},{"label":"iPhone Air pil sağlığı nasıl kontrol edilir?","url":"/rehber/ios/iphone-pil-sagligi/"}]
 ---

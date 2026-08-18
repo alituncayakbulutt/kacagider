@@ -10,4 +10,6 @@ seo_breadcrumbs: [{"label":"Ana Sayfa","url":"/"},{"label":"Akıllı Saat","url"
 seo_links: [{"label":"45 mm","url":"/akilli-saat/samsung/galaxy-watch5-pro/45mm/"}]
 seo_links_heading: "Galaxy Watch5 Pro seçenekleri"
 seo_canonical: "https://kacagider.com.tr/akilli-saat/samsung/galaxy-watch5-pro/"
+seo_guides_heading: "Galaxy Watch5 Pro ile ilgili sık arananlar"
+seo_guides: [{"label":"Galaxy Watch5 Pro nasıl sıfırlanır?","url":"/rehber/wear-os/galaxy-watch-nasil-sifirlanir/"}]
 ---

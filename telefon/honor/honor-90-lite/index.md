@@ -10,4 +10,6 @@ seo_breadcrumbs: [{"label":"Ana Sayfa","url":"/"},{"label":"Telefon","url":"/tel
 seo_links: [{"label":"256 GB","url":"/telefon/honor/honor-90-lite/256gb/"}]
 seo_links_heading: "Honor 90 Lite seçenekleri"
 seo_canonical: "https://kacagider.com.tr/telefon/honor/honor-90-lite/"
+seo_guides_heading: "Honor 90 Lite ile ilgili sık arananlar"
+seo_guides: [{"label":"Honor 90 Lite nasıl sıfırlanır?","url":"/rehber/android/android-telefon-nasil-sifirlanir/"},{"label":"Honor 90 Lite ekran görüntüsü nasıl alınır?","url":"/rehber/android/android-ekran-goruntusu-nasil-alinir/"},{"label":"Honor 90 Lite IMEI nasıl öğrenilir?","url":"/rehber/android/android-imei-nasil-ogrenilir/"}]
 ---

@@ -10,4 +10,6 @@ seo_breadcrumbs: [{"label":"Ana Sayfa","url":"/"},{"label":"Bilgisayar","url":"/
 seo_links: [{"label":"1 TB","url":"/bilgisayar/apple/macbook-pro-m4-max/1tb/"},{"label":"2 TB","url":"/bilgisayar/apple/macbook-pro-m4-max/2tb/"},{"label":"4 TB","url":"/bilgisayar/apple/macbook-pro-m4-max/4tb/"}]
 seo_links_heading: "MacBook Pro M4 Max seçenekleri"
 seo_canonical: "https://kacagider.com.tr/bilgisayar/apple/macbook-pro-m4-max/"
+seo_guides_heading: "MacBook Pro M4 Max ile ilgili sık arananlar"
+seo_guides: [{"label":"MacBook Pro M4 Max nasıl sıfırlanır?","url":"/rehber/macos/mac-nasil-sifirlanir/"},{"label":"MacBook Pro M4 Max nasıl yedeklenir?","url":"/rehber/macos/mac-yedekleme/"}]
 ---

@@ -10,4 +10,6 @@ seo_breadcrumbs: [{"label":"Ana Sayfa","url":"/"},{"label":"Telefon","url":"/tel
 seo_links: []
 seo_links_heading: "Find X8 Pro seçenekleri"
 seo_canonical: "https://kacagider.com.tr/telefon/oppo/find-x8-pro/"
+seo_guides_heading: "Find X8 Pro ile ilgili sık arananlar"
+seo_guides: [{"label":"Find X8 Pro nasıl sıfırlanır?","url":"/rehber/android/android-telefon-nasil-sifirlanir/"},{"label":"Find X8 Pro ekran görüntüsü nasıl alınır?","url":"/rehber/android/android-ekran-goruntusu-nasil-alinir/"},{"label":"Find X8 Pro IMEI nasıl öğrenilir?","url":"/rehber/android/android-imei-nasil-ogrenilir/"}]
 ---

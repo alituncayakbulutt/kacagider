@@ -10,4 +10,6 @@ seo_breadcrumbs: [{"label":"Ana Sayfa","url":"/"},{"label":"Akıllı Saat","url"
 seo_links: [{"label":"42 mm","url":"/akilli-saat/samsung/galaxy-watch4-classic/42mm/"},{"label":"46 mm","url":"/akilli-saat/samsung/galaxy-watch4-classic/46mm/"}]
 seo_links_heading: "Galaxy Watch4 Classic seçenekleri"
 seo_canonical: "https://kacagider.com.tr/akilli-saat/samsung/galaxy-watch4-classic/"
+seo_guides_heading: "Galaxy Watch4 Classic ile ilgili sık arananlar"
+seo_guides: [{"label":"Galaxy Watch4 Classic nasıl sıfırlanır?","url":"/rehber/wear-os/galaxy-watch-nasil-sifirlanir/"}]
 ---

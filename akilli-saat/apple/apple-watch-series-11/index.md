@@ -10,4 +10,6 @@ seo_breadcrumbs: [{"label":"Ana Sayfa","url":"/"},{"label":"Akıllı Saat","url"
 seo_links: [{"label":"42 mm","url":"/akilli-saat/apple/apple-watch-series-11/42mm/"},{"label":"46 mm","url":"/akilli-saat/apple/apple-watch-series-11/46mm/"}]
 seo_links_heading: "Apple Watch Series 11 seçenekleri"
 seo_canonical: "https://kacagider.com.tr/akilli-saat/apple/apple-watch-series-11/"
+seo_guides_heading: "Apple Watch Series 11 ile ilgili sık arananlar"
+seo_guides: [{"label":"Apple Watch Series 11 nasıl sıfırlanır?","url":"/rehber/watchos/apple-watch-nasil-sifirlanir/"}]
 ---

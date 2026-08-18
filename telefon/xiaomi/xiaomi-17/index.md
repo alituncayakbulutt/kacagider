@@ -10,4 +10,6 @@ seo_breadcrumbs: [{"label":"Ana Sayfa","url":"/"},{"label":"Telefon","url":"/tel
 seo_links: []
 seo_links_heading: "Xiaomi 17 seçenekleri"
 seo_canonical: "https://kacagider.com.tr/telefon/xiaomi/xiaomi-17/"
+seo_guides_heading: "Xiaomi 17 ile ilgili sık arananlar"
+seo_guides: [{"label":"Xiaomi 17 nasıl sıfırlanır?","url":"/rehber/android/android-telefon-nasil-sifirlanir/"},{"label":"Xiaomi 17 ekran görüntüsü nasıl alınır?","url":"/rehber/android/android-ekran-goruntusu-nasil-alinir/"},{"label":"Xiaomi 17 IMEI nasıl öğrenilir?","url":"/rehber/android/android-imei-nasil-ogrenilir/"}]
 ---

@@ -10,4 +10,6 @@ seo_breadcrumbs: [{"label":"Ana Sayfa","url":"/"},{"label":"Telefon","url":"/tel
 seo_links: [{"label":"512 GB","url":"/telefon/xiaomi/xiaomi-13t-pro/512gb/"},{"label":"1 TB","url":"/telefon/xiaomi/xiaomi-13t-pro/1tb/"}]
 seo_links_heading: "Xiaomi 13T Pro seçenekleri"
 seo_canonical: "https://kacagider.com.tr/telefon/xiaomi/xiaomi-13t-pro/"
+seo_guides_heading: "Xiaomi 13T Pro ile ilgili sık arananlar"
+seo_guides: [{"label":"Xiaomi 13T Pro nasıl sıfırlanır?","url":"/rehber/android/android-telefon-nasil-sifirlanir/"},{"label":"Xiaomi 13T Pro ekran görüntüsü nasıl alınır?","url":"/rehber/android/android-ekran-goruntusu-nasil-alinir/"},{"label":"Xiaomi 13T Pro IMEI nasıl öğrenilir?","url":"/rehber/android/android-imei-nasil-ogrenilir/"}]
 ---

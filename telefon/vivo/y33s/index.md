@@ -10,4 +10,6 @@ seo_breadcrumbs: [{"label":"Ana Sayfa","url":"/"},{"label":"Telefon","url":"/tel
 seo_links: [{"label":"128 GB","url":"/telefon/vivo/y33s/128gb/"}]
 seo_links_heading: "Y33s seçenekleri"
 seo_canonical: "https://kacagider.com.tr/telefon/vivo/y33s/"
+seo_guides_heading: "Y33s ile ilgili sık arananlar"
+seo_guides: [{"label":"Y33s nasıl sıfırlanır?","url":"/rehber/android/android-telefon-nasil-sifirlanir/"},{"label":"Y33s ekran görüntüsü nasıl alınır?","url":"/rehber/android/android-ekran-goruntusu-nasil-alinir/"},{"label":"Y33s IMEI nasıl öğrenilir?","url":"/rehber/android/android-imei-nasil-ogrenilir/"}]
 ---

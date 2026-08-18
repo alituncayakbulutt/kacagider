@@ -10,4 +10,6 @@ seo_breadcrumbs: [{"label":"Ana Sayfa","url":"/"},{"label":"Oyun Konsolu","url":
 seo_links: [{"label":"512 GB","url":"/oyun-konsolu/xbox/xbox-series-s-512-gb/512gb/"}]
 seo_links_heading: "Xbox Series S 512 GB seçenekleri"
 seo_canonical: "https://kacagider.com.tr/oyun-konsolu/xbox/xbox-series-s-512-gb/"
+seo_guides_heading: "Xbox Series S 512 GB ile ilgili sık arananlar"
+seo_guides: [{"label":"Xbox Series S 512 GB nasıl sıfırlanır?","url":"/rehber/xbox/xbox-nasil-sifirlanir/"}]
 ---

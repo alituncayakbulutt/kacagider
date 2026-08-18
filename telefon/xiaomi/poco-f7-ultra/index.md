@@ -10,4 +10,6 @@ seo_breadcrumbs: [{"label":"Ana Sayfa","url":"/"},{"label":"Telefon","url":"/tel
 seo_links: [{"label":"256 GB","url":"/telefon/xiaomi/poco-f7-ultra/256gb/"},{"label":"512 GB","url":"/telefon/xiaomi/poco-f7-ultra/512gb/"}]
 seo_links_heading: "POCO F7 Ultra seçenekleri"
 seo_canonical: "https://kacagider.com.tr/telefon/xiaomi/poco-f7-ultra/"
+seo_guides_heading: "POCO F7 Ultra ile ilgili sık arananlar"
+seo_guides: [{"label":"POCO F7 Ultra nasıl sıfırlanır?","url":"/rehber/android/android-telefon-nasil-sifirlanir/"},{"label":"POCO F7 Ultra ekran görüntüsü nasıl alınır?","url":"/rehber/android/android-ekran-goruntusu-nasil-alinir/"},{"label":"POCO F7 Ultra IMEI nasıl öğrenilir?","url":"/rehber/android/android-imei-nasil-ogrenilir/"}]
 ---

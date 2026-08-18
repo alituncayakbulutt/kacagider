@@ -10,4 +10,6 @@ seo_breadcrumbs: [{"label":"Ana Sayfa","url":"/"},{"label":"Telefon","url":"/tel
 seo_links: [{"label":"256 GB","url":"/telefon/huawei/nova-12-se/256gb/"}]
 seo_links_heading: "Nova 12 SE seçenekleri"
 seo_canonical: "https://kacagider.com.tr/telefon/huawei/nova-12-se/"
+seo_guides_heading: "Nova 12 SE ile ilgili sık arananlar"
+seo_guides: [{"label":"Nova 12 SE nasıl sıfırlanır?","url":"/rehber/android/android-telefon-nasil-sifirlanir/"},{"label":"Nova 12 SE ekran görüntüsü nasıl alınır?","url":"/rehber/android/android-ekran-goruntusu-nasil-alinir/"},{"label":"Nova 12 SE IMEI nasıl öğrenilir?","url":"/rehber/android/android-imei-nasil-ogrenilir/"}]
 ---

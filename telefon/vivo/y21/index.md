@@ -10,4 +10,6 @@ seo_breadcrumbs: [{"label":"Ana Sayfa","url":"/"},{"label":"Telefon","url":"/tel
 seo_links: [{"label":"64 GB","url":"/telefon/vivo/y21/64gb/"}]
 seo_links_heading: "Y21 seçenekleri"
 seo_canonical: "https://kacagider.com.tr/telefon/vivo/y21/"
+seo_guides_heading: "Y21 ile ilgili sık arananlar"
+seo_guides: [{"label":"Y21 nasıl sıfırlanır?","url":"/rehber/android/android-telefon-nasil-sifirlanir/"},{"label":"Y21 ekran görüntüsü nasıl alınır?","url":"/rehber/android/android-ekran-goruntusu-nasil-alinir/"},{"label":"Y21 IMEI nasıl öğrenilir?","url":"/rehber/android/android-imei-nasil-ogrenilir/"}]
 ---

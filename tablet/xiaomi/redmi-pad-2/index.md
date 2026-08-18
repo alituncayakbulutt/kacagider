@@ -10,4 +10,6 @@ seo_breadcrumbs: [{"label":"Ana Sayfa","url":"/"},{"label":"Tablet","url":"/tabl
 seo_links: [{"label":"128 GB","url":"/tablet/xiaomi/redmi-pad-2/128gb/"},{"label":"256 GB","url":"/tablet/xiaomi/redmi-pad-2/256gb/"}]
 seo_links_heading: "REDMI Pad 2 seçenekleri"
 seo_canonical: "https://kacagider.com.tr/tablet/xiaomi/redmi-pad-2/"
+seo_guides_heading: "REDMI Pad 2 ile ilgili sık arananlar"
+seo_guides: [{"label":"REDMI Pad 2 nasıl sıfırlanır?","url":"/rehber/android/android-tablet-nasil-sifirlanir/"},{"label":"REDMI Pad 2 ekran görüntüsü nasıl alınır?","url":"/rehber/android/android-tablet-ekran-goruntusu/"}]
 ---

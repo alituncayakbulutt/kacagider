@@ -10,4 +10,6 @@ seo_breadcrumbs: [{"label":"Ana Sayfa","url":"/"},{"label":"Tablet","url":"/tabl
 seo_links: [{"label":"128 GB","url":"/tablet/apple/ipad-air-11-inc-m3/128gb/"},{"label":"256 GB","url":"/tablet/apple/ipad-air-11-inc-m3/256gb/"},{"label":"512 GB","url":"/tablet/apple/ipad-air-11-inc-m3/512gb/"},{"label":"1 TB","url":"/tablet/apple/ipad-air-11-inc-m3/1tb/"}]
 seo_links_heading: "iPad Air 11 inç (M3) seçenekleri"
 seo_canonical: "https://kacagider.com.tr/tablet/apple/ipad-air-11-inc-m3/"
+seo_guides_heading: "iPad Air 11 inç (M3) ile ilgili sık arananlar"
+seo_guides: [{"label":"iPad Air 11 inç (M3) nasıl sıfırlanır?","url":"/rehber/ipados/ipad-nasil-sifirlanir/"},{"label":"iPad Air 11 inç (M3) ekran görüntüsü nasıl alınır?","url":"/rehber/ipados/ipad-ekran-goruntusu/"}]
 ---

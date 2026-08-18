@@ -10,4 +10,6 @@ seo_breadcrumbs: [{"label":"Ana Sayfa","url":"/"},{"label":"Tablet","url":"/tabl
 seo_links: [{"label":"64 GB","url":"/tablet/lenovo/lenovo-tab-m10-plus/64gb/"},{"label":"128 GB","url":"/tablet/lenovo/lenovo-tab-m10-plus/128gb/"}]
 seo_links_heading: "Lenovo Tab M10 Plus seçenekleri"
 seo_canonical: "https://kacagider.com.tr/tablet/lenovo/lenovo-tab-m10-plus/"
+seo_guides_heading: "Lenovo Tab M10 Plus ile ilgili sık arananlar"
+seo_guides: [{"label":"Lenovo Tab M10 Plus nasıl sıfırlanır?","url":"/rehber/android/android-tablet-nasil-sifirlanir/"},{"label":"Lenovo Tab M10 Plus ekran görüntüsü nasıl alınır?","url":"/rehber/android/android-tablet-ekran-goruntusu/"}]
 ---

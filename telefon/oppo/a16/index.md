@@ -10,4 +10,6 @@ seo_breadcrumbs: [{"label":"Ana Sayfa","url":"/"},{"label":"Telefon","url":"/tel
 seo_links: [{"label":"64 GB","url":"/telefon/oppo/a16/64gb/"}]
 seo_links_heading: "A16 seçenekleri"
 seo_canonical: "https://kacagider.com.tr/telefon/oppo/a16/"
+seo_guides_heading: "A16 ile ilgili sık arananlar"
+seo_guides: [{"label":"A16 nasıl sıfırlanır?","url":"/rehber/android/android-telefon-nasil-sifirlanir/"},{"label":"A16 ekran görüntüsü nasıl alınır?","url":"/rehber/android/android-ekran-goruntusu-nasil-alinir/"},{"label":"A16 IMEI nasıl öğrenilir?","url":"/rehber/android/android-imei-nasil-ogrenilir/"}]
 ---

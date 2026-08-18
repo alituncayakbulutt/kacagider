@@ -10,4 +10,6 @@ seo_breadcrumbs: [{"label":"Ana Sayfa","url":"/"},{"label":"Tablet","url":"/tabl
 seo_links: [{"label":"256 GB","url":"/tablet/samsung/galaxy-tab-s11-ultra/256gb/"},{"label":"512 GB","url":"/tablet/samsung/galaxy-tab-s11-ultra/512gb/"}]
 seo_links_heading: "Galaxy Tab S11 Ultra seçenekleri"
 seo_canonical: "https://kacagider.com.tr/tablet/samsung/galaxy-tab-s11-ultra/"
+seo_guides_heading: "Galaxy Tab S11 Ultra ile ilgili sık arananlar"
+seo_guides: [{"label":"Galaxy Tab S11 Ultra nasıl sıfırlanır?","url":"/rehber/android/android-tablet-nasil-sifirlanir/"},{"label":"Galaxy Tab S11 Ultra ekran görüntüsü nasıl alınır?","url":"/rehber/android/android-tablet-ekran-goruntusu/"}]
 ---

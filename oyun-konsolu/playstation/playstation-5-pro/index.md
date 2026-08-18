@@ -10,4 +10,6 @@ seo_breadcrumbs: [{"label":"Ana Sayfa","url":"/"},{"label":"Oyun Konsolu","url":
 seo_links: [{"label":"2 TB","url":"/oyun-konsolu/playstation/playstation-5-pro/2tb/"}]
 seo_links_heading: "PlayStation 5 Pro seçenekleri"
 seo_canonical: "https://kacagider.com.tr/oyun-konsolu/playstation/playstation-5-pro/"
+seo_guides_heading: "PlayStation 5 Pro ile ilgili sık arananlar"
+seo_guides: [{"label":"PlayStation 5 Pro nasıl sıfırlanır?","url":"/rehber/playstation/playstation-nasil-sifirlanir/"}]
 ---

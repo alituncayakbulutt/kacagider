@@ -10,4 +10,6 @@ seo_breadcrumbs: [{"label":"Ana Sayfa","url":"/"},{"label":"Tablet","url":"/tabl
 seo_links: [{"label":"256 GB","url":"/tablet/samsung/galaxy-tab-s9-plus/256gb/"},{"label":"512 GB","url":"/tablet/samsung/galaxy-tab-s9-plus/512gb/"}]
 seo_links_heading: "Galaxy Tab S9+ seçenekleri"
 seo_canonical: "https://kacagider.com.tr/tablet/samsung/galaxy-tab-s9-plus/"
+seo_guides_heading: "Galaxy Tab S9+ ile ilgili sık arananlar"
+seo_guides: [{"label":"Galaxy Tab S9+ nasıl sıfırlanır?","url":"/rehber/android/android-tablet-nasil-sifirlanir/"},{"label":"Galaxy Tab S9+ ekran görüntüsü nasıl alınır?","url":"/rehber/android/android-tablet-ekran-goruntusu/"}]
 ---

@@ -10,4 +10,6 @@ seo_breadcrumbs: [{"label":"Ana Sayfa","url":"/"},{"label":"Tablet","url":"/tabl
 seo_links: [{"label":"128 GB","url":"/tablet/huawei/matepad-pro-10-8/128gb/"},{"label":"256 GB","url":"/tablet/huawei/matepad-pro-10-8/256gb/"}]
 seo_links_heading: "MatePad Pro 10.8 seçenekleri"
 seo_canonical: "https://kacagider.com.tr/tablet/huawei/matepad-pro-10-8/"
+seo_guides_heading: "MatePad Pro 10.8 ile ilgili sık arananlar"
+seo_guides: [{"label":"MatePad Pro 10.8 nasıl sıfırlanır?","url":"/rehber/android/android-tablet-nasil-sifirlanir/"},{"label":"MatePad Pro 10.8 ekran görüntüsü nasıl alınır?","url":"/rehber/android/android-tablet-ekran-goruntusu/"}]
 ---

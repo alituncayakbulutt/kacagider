@@ -10,4 +10,6 @@ seo_breadcrumbs: [{"label":"Ana Sayfa","url":"/"},{"label":"Telefon","url":"/tel
 seo_links: [{"label":"64 GB","url":"/telefon/apple/iphone-se-2-nesil/64gb/"},{"label":"128 GB","url":"/telefon/apple/iphone-se-2-nesil/128gb/"},{"label":"256 GB","url":"/telefon/apple/iphone-se-2-nesil/256gb/"}]
 seo_links_heading: "iPhone SE (2. nesil) seçenekleri"
 seo_canonical: "https://kacagider.com.tr/telefon/apple/iphone-se-2-nesil/"
+seo_guides_heading: "iPhone SE (2. nesil) ile ilgili sık arananlar"
+seo_guides: [{"label":"iPhone SE (2. nesil) nasıl sıfırlanır?","url":"/rehber/ios/iphone-nasil-sifirlanir/"},{"label":"iPhone SE (2. nesil) ekran görüntüsü nasıl alınır?","url":"/rehber/ios/iphone-ekran-goruntusu-nasil-alinir/"},{"label":"iPhone SE (2. nesil) pil sağlığı nasıl kontrol edilir?","url":"/rehber/ios/iphone-pil-sagligi/"}]
 ---

@@ -10,4 +10,6 @@ seo_breadcrumbs: [{"label":"Ana Sayfa","url":"/"},{"label":"Telefon","url":"/tel
 seo_links: [{"label":"256 GB","url":"/telefon/vivo/v70-fe/256gb/"},{"label":"512 GB","url":"/telefon/vivo/v70-fe/512gb/"}]
 seo_links_heading: "V70 FE seçenekleri"
 seo_canonical: "https://kacagider.com.tr/telefon/vivo/v70-fe/"
+seo_guides_heading: "V70 FE ile ilgili sık arananlar"
+seo_guides: [{"label":"V70 FE nasıl sıfırlanır?","url":"/rehber/android/android-telefon-nasil-sifirlanir/"},{"label":"V70 FE ekran görüntüsü nasıl alınır?","url":"/rehber/android/android-ekran-goruntusu-nasil-alinir/"},{"label":"V70 FE IMEI nasıl öğrenilir?","url":"/rehber/android/android-imei-nasil-ogrenilir/"}]
 ---

@@ -10,4 +10,6 @@ seo_breadcrumbs: [{"label":"Ana Sayfa","url":"/"},{"label":"Telefon","url":"/tel
 seo_links: [{"label":"256 GB","url":"/telefon/xiaomi/redmi-note-15/256gb/"}]
 seo_links_heading: "Redmi Note 15 seçenekleri"
 seo_canonical: "https://kacagider.com.tr/telefon/xiaomi/redmi-note-15/"
+seo_guides_heading: "Redmi Note 15 ile ilgili sık arananlar"
+seo_guides: [{"label":"Redmi Note 15 nasıl sıfırlanır?","url":"/rehber/android/android-telefon-nasil-sifirlanir/"},{"label":"Redmi Note 15 ekran görüntüsü nasıl alınır?","url":"/rehber/android/android-ekran-goruntusu-nasil-alinir/"},{"label":"Redmi Note 15 IMEI nasıl öğrenilir?","url":"/rehber/android/android-imei-nasil-ogrenilir/"}]
 ---

@@ -10,4 +10,6 @@ seo_breadcrumbs: [{"label":"Ana Sayfa","url":"/"},{"label":"Tablet","url":"/tabl
 seo_links: [{"label":"32 GB","url":"/tablet/samsung/galaxy-tab-a7-lite/32gb/"},{"label":"64 GB","url":"/tablet/samsung/galaxy-tab-a7-lite/64gb/"}]
 seo_links_heading: "Galaxy Tab A7 Lite seçenekleri"
 seo_canonical: "https://kacagider.com.tr/tablet/samsung/galaxy-tab-a7-lite/"
+seo_guides_heading: "Galaxy Tab A7 Lite ile ilgili sık arananlar"
+seo_guides: [{"label":"Galaxy Tab A7 Lite nasıl sıfırlanır?","url":"/rehber/android/android-tablet-nasil-sifirlanir/"},{"label":"Galaxy Tab A7 Lite ekran görüntüsü nasıl alınır?","url":"/rehber/android/android-tablet-ekran-goruntusu/"}]
 ---

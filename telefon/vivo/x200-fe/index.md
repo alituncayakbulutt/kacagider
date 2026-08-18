@@ -10,4 +10,6 @@ seo_breadcrumbs: [{"label":"Ana Sayfa","url":"/"},{"label":"Telefon","url":"/tel
 seo_links: [{"label":"256 GB","url":"/telefon/vivo/x200-fe/256gb/"}]
 seo_links_heading: "X200 FE seçenekleri"
 seo_canonical: "https://kacagider.com.tr/telefon/vivo/x200-fe/"
+seo_guides_heading: "X200 FE ile ilgili sık arananlar"
+seo_guides: [{"label":"X200 FE nasıl sıfırlanır?","url":"/rehber/android/android-telefon-nasil-sifirlanir/"},{"label":"X200 FE ekran görüntüsü nasıl alınır?","url":"/rehber/android/android-ekran-goruntusu-nasil-alinir/"},{"label":"X200 FE IMEI nasıl öğrenilir?","url":"/rehber/android/android-imei-nasil-ogrenilir/"}]
 ---

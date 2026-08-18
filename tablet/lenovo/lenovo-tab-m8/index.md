@@ -10,4 +10,6 @@ seo_breadcrumbs: [{"label":"Ana Sayfa","url":"/"},{"label":"Tablet","url":"/tabl
 seo_links: [{"label":"32 GB","url":"/tablet/lenovo/lenovo-tab-m8/32gb/"},{"label":"64 GB","url":"/tablet/lenovo/lenovo-tab-m8/64gb/"}]
 seo_links_heading: "Lenovo Tab M8 seçenekleri"
 seo_canonical: "https://kacagider.com.tr/tablet/lenovo/lenovo-tab-m8/"
+seo_guides_heading: "Lenovo Tab M8 ile ilgili sık arananlar"
+seo_guides: [{"label":"Lenovo Tab M8 nasıl sıfırlanır?","url":"/rehber/android/android-tablet-nasil-sifirlanir/"},{"label":"Lenovo Tab M8 ekran görüntüsü nasıl alınır?","url":"/rehber/android/android-tablet-ekran-goruntusu/"}]
 ---

@@ -10,4 +10,6 @@ seo_breadcrumbs: [{"label":"Ana Sayfa","url":"/"},{"label":"Bilgisayar","url":"/
 seo_links: [{"label":"512 GB","url":"/bilgisayar/huawei/matebook-14/512gb/"},{"label":"1 TB","url":"/bilgisayar/huawei/matebook-14/1tb/"}]
 seo_links_heading: "MateBook 14 seçenekleri"
 seo_canonical: "https://kacagider.com.tr/bilgisayar/huawei/matebook-14/"
+seo_guides_heading: "MateBook 14 ile ilgili sık arananlar"
+seo_guides: [{"label":"MateBook 14 nasıl sıfırlanır?","url":"/rehber/windows/windows-nasil-sifirlanir/"},{"label":"MateBook 14 nasıl yedeklenir?","url":"/rehber/windows/windows-bilgisayar-yedekleme/"}]
 ---

@@ -10,4 +10,6 @@ seo_breadcrumbs: [{"label":"Ana Sayfa","url":"/"},{"label":"Bilgisayar","url":"/
 seo_links: [{"label":"1 TB","url":"/bilgisayar/msi/raider-ge68/1tb/"},{"label":"2 TB","url":"/bilgisayar/msi/raider-ge68/2tb/"}]
 seo_links_heading: "Raider GE68 seçenekleri"
 seo_canonical: "https://kacagider.com.tr/bilgisayar/msi/raider-ge68/"
+seo_guides_heading: "Raider GE68 ile ilgili sık arananlar"
+seo_guides: [{"label":"Raider GE68 nasıl sıfırlanır?","url":"/rehber/windows/windows-nasil-sifirlanir/"},{"label":"Raider GE68 nasıl yedeklenir?","url":"/rehber/windows/windows-bilgisayar-yedekleme/"}]
 ---

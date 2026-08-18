@@ -10,4 +10,6 @@ seo_breadcrumbs: [{"label":"Ana Sayfa","url":"/"},{"label":"Telefon","url":"/tel
 seo_links: [{"label":"256 GB","url":"/telefon/xiaomi/poco-m8-pro-5g/256gb/"},{"label":"512 GB","url":"/telefon/xiaomi/poco-m8-pro-5g/512gb/"}]
 seo_links_heading: "POCO M8 Pro 5G seçenekleri"
 seo_canonical: "https://kacagider.com.tr/telefon/xiaomi/poco-m8-pro-5g/"
+seo_guides_heading: "POCO M8 Pro 5G ile ilgili sık arananlar"
+seo_guides: [{"label":"POCO M8 Pro 5G nasıl sıfırlanır?","url":"/rehber/android/android-telefon-nasil-sifirlanir/"},{"label":"POCO M8 Pro 5G ekran görüntüsü nasıl alınır?","url":"/rehber/android/android-ekran-goruntusu-nasil-alinir/"},{"label":"POCO M8 Pro 5G IMEI nasıl öğrenilir?","url":"/rehber/android/android-imei-nasil-ogrenilir/"}]
 ---

@@ -10,4 +10,6 @@ seo_breadcrumbs: [{"label":"Ana Sayfa","url":"/"},{"label":"Tablet","url":"/tabl
 seo_links: [{"label":"256 GB","url":"/tablet/huawei/matepad-12-x/256gb/"},{"label":"512 GB","url":"/tablet/huawei/matepad-12-x/512gb/"}]
 seo_links_heading: "MatePad 12 X seçenekleri"
 seo_canonical: "https://kacagider.com.tr/tablet/huawei/matepad-12-x/"
+seo_guides_heading: "MatePad 12 X ile ilgili sık arananlar"
+seo_guides: [{"label":"MatePad 12 X nasıl sıfırlanır?","url":"/rehber/android/android-tablet-nasil-sifirlanir/"},{"label":"MatePad 12 X ekran görüntüsü nasıl alınır?","url":"/rehber/android/android-tablet-ekran-goruntusu/"}]
 ---

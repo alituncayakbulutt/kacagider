@@ -10,4 +10,6 @@ seo_breadcrumbs: [{"label":"Ana Sayfa","url":"/"},{"label":"Tablet","url":"/tabl
 seo_links: [{"label":"256 GB","url":"/tablet/apple/ipad-pro-13-inc-m4/256gb/"},{"label":"512 GB","url":"/tablet/apple/ipad-pro-13-inc-m4/512gb/"},{"label":"1 TB","url":"/tablet/apple/ipad-pro-13-inc-m4/1tb/"},{"label":"2 TB","url":"/tablet/apple/ipad-pro-13-inc-m4/2tb/"}]
 seo_links_heading: "iPad Pro 13 inç (M4) seçenekleri"
 seo_canonical: "https://kacagider.com.tr/tablet/apple/ipad-pro-13-inc-m4/"
+seo_guides_heading: "iPad Pro 13 inç (M4) ile ilgili sık arananlar"
+seo_guides: [{"label":"iPad Pro 13 inç (M4) nasıl sıfırlanır?","url":"/rehber/ipados/ipad-nasil-sifirlanir/"},{"label":"iPad Pro 13 inç (M4) ekran görüntüsü nasıl alınır?","url":"/rehber/ipados/ipad-ekran-goruntusu/"}]
 ---

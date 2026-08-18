@@ -10,4 +10,6 @@ seo_breadcrumbs: [{"label":"Ana Sayfa","url":"/"},{"label":"Telefon","url":"/tel
 seo_links: [{"label":"128 GB","url":"/telefon/huawei/p30-pro/128gb/"},{"label":"256 GB","url":"/telefon/huawei/p30-pro/256gb/"}]
 seo_links_heading: "P30 Pro seçenekleri"
 seo_canonical: "https://kacagider.com.tr/telefon/huawei/p30-pro/"
+seo_guides_heading: "P30 Pro ile ilgili sık arananlar"
+seo_guides: [{"label":"P30 Pro nasıl sıfırlanır?","url":"/rehber/android/android-telefon-nasil-sifirlanir/"},{"label":"P30 Pro ekran görüntüsü nasıl alınır?","url":"/rehber/android/android-ekran-goruntusu-nasil-alinir/"},{"label":"P30 Pro IMEI nasıl öğrenilir?","url":"/rehber/android/android-imei-nasil-ogrenilir/"}]
 ---

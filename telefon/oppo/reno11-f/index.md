@@ -10,4 +10,6 @@ seo_breadcrumbs: [{"label":"Ana Sayfa","url":"/"},{"label":"Telefon","url":"/tel
 seo_links: []
 seo_links_heading: "Reno11 F seçenekleri"
 seo_canonical: "https://kacagider.com.tr/telefon/oppo/reno11-f/"
+seo_guides_heading: "Reno11 F ile ilgili sık arananlar"
+seo_guides: [{"label":"Reno11 F nasıl sıfırlanır?","url":"/rehber/android/android-telefon-nasil-sifirlanir/"},{"label":"Reno11 F ekran görüntüsü nasıl alınır?","url":"/rehber/android/android-ekran-goruntusu-nasil-alinir/"},{"label":"Reno11 F IMEI nasıl öğrenilir?","url":"/rehber/android/android-imei-nasil-ogrenilir/"}]
 ---

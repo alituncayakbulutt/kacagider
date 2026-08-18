@@ -10,4 +10,6 @@ seo_breadcrumbs: [{"label":"Ana Sayfa","url":"/"},{"label":"Tablet","url":"/tabl
 seo_links: [{"label":"128 GB","url":"/tablet/samsung/galaxy-tab-s10-fe/128gb/"},{"label":"256 GB","url":"/tablet/samsung/galaxy-tab-s10-fe/256gb/"}]
 seo_links_heading: "Galaxy Tab S10 FE seçenekleri"
 seo_canonical: "https://kacagider.com.tr/tablet/samsung/galaxy-tab-s10-fe/"
+seo_guides_heading: "Galaxy Tab S10 FE ile ilgili sık arananlar"
+seo_guides: [{"label":"Galaxy Tab S10 FE nasıl sıfırlanır?","url":"/rehber/android/android-tablet-nasil-sifirlanir/"},{"label":"Galaxy Tab S10 FE ekran görüntüsü nasıl alınır?","url":"/rehber/android/android-tablet-ekran-goruntusu/"}]
 ---

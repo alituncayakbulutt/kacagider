@@ -10,4 +10,6 @@ seo_breadcrumbs: [{"label":"Ana Sayfa","url":"/"},{"label":"Telefon","url":"/tel
 seo_links: [{"label":"128 GB","url":"/telefon/realme/realme-12/128gb/"},{"label":"256 GB","url":"/telefon/realme/realme-12/256gb/"}]
 seo_links_heading: "Realme 12 seçenekleri"
 seo_canonical: "https://kacagider.com.tr/telefon/realme/realme-12/"
+seo_guides_heading: "Realme 12 ile ilgili sık arananlar"
+seo_guides: [{"label":"Realme 12 nasıl sıfırlanır?","url":"/rehber/android/android-telefon-nasil-sifirlanir/"},{"label":"Realme 12 ekran görüntüsü nasıl alınır?","url":"/rehber/android/android-ekran-goruntusu-nasil-alinir/"},{"label":"Realme 12 IMEI nasıl öğrenilir?","url":"/rehber/android/android-imei-nasil-ogrenilir/"}]
 ---

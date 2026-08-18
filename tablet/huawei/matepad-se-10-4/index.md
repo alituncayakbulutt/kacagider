@@ -10,4 +10,6 @@ seo_breadcrumbs: [{"label":"Ana Sayfa","url":"/"},{"label":"Tablet","url":"/tabl
 seo_links: [{"label":"32 GB","url":"/tablet/huawei/matepad-se-10-4/32gb/"},{"label":"64 GB","url":"/tablet/huawei/matepad-se-10-4/64gb/"}]
 seo_links_heading: "MatePad SE 10.4 seçenekleri"
 seo_canonical: "https://kacagider.com.tr/tablet/huawei/matepad-se-10-4/"
+seo_guides_heading: "MatePad SE 10.4 ile ilgili sık arananlar"
+seo_guides: [{"label":"MatePad SE 10.4 nasıl sıfırlanır?","url":"/rehber/android/android-tablet-nasil-sifirlanir/"},{"label":"MatePad SE 10.4 ekran görüntüsü nasıl alınır?","url":"/rehber/android/android-tablet-ekran-goruntusu/"}]
 ---

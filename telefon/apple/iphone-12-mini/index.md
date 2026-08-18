@@ -10,4 +10,6 @@ seo_breadcrumbs: [{"label":"Ana Sayfa","url":"/"},{"label":"Telefon","url":"/tel
 seo_links: [{"label":"64 GB","url":"/telefon/apple/iphone-12-mini/64gb/"},{"label":"128 GB","url":"/telefon/apple/iphone-12-mini/128gb/"},{"label":"256 GB","url":"/telefon/apple/iphone-12-mini/256gb/"}]
 seo_links_heading: "iPhone 12 mini seçenekleri"
 seo_canonical: "https://kacagider.com.tr/telefon/apple/iphone-12-mini/"
+seo_guides_heading: "iPhone 12 mini ile ilgili sık arananlar"
+seo_guides: [{"label":"iPhone 12 mini nasıl sıfırlanır?","url":"/rehber/ios/iphone-nasil-sifirlanir/"},{"label":"iPhone 12 mini ekran görüntüsü nasıl alınır?","url":"/rehber/ios/iphone-ekran-goruntusu-nasil-alinir/"},{"label":"iPhone 12 mini pil sağlığı nasıl kontrol edilir?","url":"/rehber/ios/iphone-pil-sagligi/"}]
 ---

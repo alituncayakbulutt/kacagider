@@ -10,4 +10,6 @@ seo_breadcrumbs: [{"label":"Ana Sayfa","url":"/"},{"label":"Tablet","url":"/tabl
 seo_links: [{"label":"128 GB","url":"/tablet/lenovo/lenovo-yoga-tab-13/128gb/"},{"label":"256 GB","url":"/tablet/lenovo/lenovo-yoga-tab-13/256gb/"},{"label":"512 GB","url":"/tablet/lenovo/lenovo-yoga-tab-13/512gb/"}]
 seo_links_heading: "Lenovo Yoga Tab 13 seçenekleri"
 seo_canonical: "https://kacagider.com.tr/tablet/lenovo/lenovo-yoga-tab-13/"
+seo_guides_heading: "Lenovo Yoga Tab 13 ile ilgili sık arananlar"
+seo_guides: [{"label":"Lenovo Yoga Tab 13 nasıl sıfırlanır?","url":"/rehber/android/android-tablet-nasil-sifirlanir/"},{"label":"Lenovo Yoga Tab 13 ekran görüntüsü nasıl alınır?","url":"/rehber/android/android-tablet-ekran-goruntusu/"}]
 ---

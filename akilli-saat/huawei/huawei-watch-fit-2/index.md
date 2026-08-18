@@ -10,4 +10,6 @@ seo_breadcrumbs: [{"label":"Ana Sayfa","url":"/"},{"label":"Akıllı Saat","url"
 seo_links: [{"label":"46 mm","url":"/akilli-saat/huawei/huawei-watch-fit-2/46mm/"}]
 seo_links_heading: "Huawei Watch Fit 2 seçenekleri"
 seo_canonical: "https://kacagider.com.tr/akilli-saat/huawei/huawei-watch-fit-2/"
+seo_guides_heading: "Huawei Watch Fit 2 ile ilgili sık arananlar"
+seo_guides: [{"label":"Huawei Watch Fit 2 nasıl sıfırlanır?","url":"/rehber/wear-os/galaxy-watch-nasil-sifirlanir/"}]
 ---

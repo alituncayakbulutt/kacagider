@@ -10,4 +10,6 @@ seo_breadcrumbs: [{"label":"Ana Sayfa","url":"/"},{"label":"Oyun Konsolu","url":
 seo_links: [{"label":"1 TB","url":"/oyun-konsolu/playstation/playstation-5-slim-digital/1tb/"}]
 seo_links_heading: "PlayStation 5 Slim Digital seçenekleri"
 seo_canonical: "https://kacagider.com.tr/oyun-konsolu/playstation/playstation-5-slim-digital/"
+seo_guides_heading: "PlayStation 5 Slim Digital ile ilgili sık arananlar"
+seo_guides: [{"label":"PlayStation 5 Slim Digital nasıl sıfırlanır?","url":"/rehber/playstation/playstation-nasil-sifirlanir/"}]
 ---

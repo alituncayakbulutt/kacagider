@@ -10,4 +10,6 @@ seo_breadcrumbs: [{"label":"Ana Sayfa","url":"/"},{"label":"Telefon","url":"/tel
 seo_links: [{"label":"64 GB","url":"/telefon/samsung/galaxy-m14-5g/64gb/"},{"label":"128 GB","url":"/telefon/samsung/galaxy-m14-5g/128gb/"}]
 seo_links_heading: "Galaxy M14 5G seçenekleri"
 seo_canonical: "https://kacagider.com.tr/telefon/samsung/galaxy-m14-5g/"
+seo_guides_heading: "Galaxy M14 5G ile ilgili sık arananlar"
+seo_guides: [{"label":"Galaxy M14 5G nasıl sıfırlanır?","url":"/rehber/android/android-telefon-nasil-sifirlanir/"},{"label":"Galaxy M14 5G ekran görüntüsü nasıl alınır?","url":"/rehber/android/android-ekran-goruntusu-nasil-alinir/"},{"label":"Galaxy M14 5G IMEI nasıl öğrenilir?","url":"/rehber/android/android-imei-nasil-ogrenilir/"}]
 ---

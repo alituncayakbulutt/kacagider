@@ -10,4 +10,6 @@ seo_breadcrumbs: [{"label":"Ana Sayfa","url":"/"},{"label":"Telefon","url":"/tel
 seo_links: [{"label":"256 GB","url":"/telefon/honor/x9c/256gb/"},{"label":"512 GB","url":"/telefon/honor/x9c/512gb/"}]
 seo_links_heading: "X9c seçenekleri"
 seo_canonical: "https://kacagider.com.tr/telefon/honor/x9c/"
+seo_guides_heading: "X9c ile ilgili sık arananlar"
+seo_guides: [{"label":"X9c nasıl sıfırlanır?","url":"/rehber/android/android-telefon-nasil-sifirlanir/"},{"label":"X9c ekran görüntüsü nasıl alınır?","url":"/rehber/android/android-ekran-goruntusu-nasil-alinir/"},{"label":"X9c IMEI nasıl öğrenilir?","url":"/rehber/android/android-imei-nasil-ogrenilir/"}]
 ---

@@ -10,4 +10,6 @@ seo_breadcrumbs: [{"label":"Ana Sayfa","url":"/"},{"label":"Bilgisayar","url":"/
 seo_links: [{"label":"256 GB","url":"/bilgisayar/apple/macbook-air-m4/256gb/"},{"label":"512 GB","url":"/bilgisayar/apple/macbook-air-m4/512gb/"},{"label":"1 TB","url":"/bilgisayar/apple/macbook-air-m4/1tb/"},{"label":"2 TB","url":"/bilgisayar/apple/macbook-air-m4/2tb/"}]
 seo_links_heading: "MacBook Air M4 seçenekleri"
 seo_canonical: "https://kacagider.com.tr/bilgisayar/apple/macbook-air-m4/"
+seo_guides_heading: "MacBook Air M4 ile ilgili sık arananlar"
+seo_guides: [{"label":"MacBook Air M4 nasıl sıfırlanır?","url":"/rehber/macos/mac-nasil-sifirlanir/"},{"label":"MacBook Air M4 nasıl yedeklenir?","url":"/rehber/macos/mac-yedekleme/"}]
 ---

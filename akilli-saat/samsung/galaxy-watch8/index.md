@@ -10,4 +10,6 @@ seo_breadcrumbs: [{"label":"Ana Sayfa","url":"/"},{"label":"Akıllı Saat","url"
 seo_links: [{"label":"40 mm","url":"/akilli-saat/samsung/galaxy-watch8/40mm/"},{"label":"44 mm","url":"/akilli-saat/samsung/galaxy-watch8/44mm/"}]
 seo_links_heading: "Galaxy Watch8 seçenekleri"
 seo_canonical: "https://kacagider.com.tr/akilli-saat/samsung/galaxy-watch8/"
+seo_guides_heading: "Galaxy Watch8 ile ilgili sık arananlar"
+seo_guides: [{"label":"Galaxy Watch8 nasıl sıfırlanır?","url":"/rehber/wear-os/galaxy-watch-nasil-sifirlanir/"}]
 ---

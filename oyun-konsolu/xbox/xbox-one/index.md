@@ -10,4 +10,6 @@ seo_breadcrumbs: [{"label":"Ana Sayfa","url":"/"},{"label":"Oyun Konsolu","url":
 seo_links: [{"label":"500 GB","url":"/oyun-konsolu/xbox/xbox-one/500gb/"},{"label":"1 TB","url":"/oyun-konsolu/xbox/xbox-one/1tb/"}]
 seo_links_heading: "Xbox One seçenekleri"
 seo_canonical: "https://kacagider.com.tr/oyun-konsolu/xbox/xbox-one/"
+seo_guides_heading: "Xbox One ile ilgili sık arananlar"
+seo_guides: [{"label":"Xbox One nasıl sıfırlanır?","url":"/rehber/xbox/xbox-nasil-sifirlanir/"}]
 ---

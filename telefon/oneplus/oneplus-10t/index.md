@@ -10,4 +10,6 @@ seo_breadcrumbs: [{"label":"Ana Sayfa","url":"/"},{"label":"Telefon","url":"/tel
 seo_links: [{"label":"128 GB","url":"/telefon/oneplus/oneplus-10t/128gb/"},{"label":"256 GB","url":"/telefon/oneplus/oneplus-10t/256gb/"}]
 seo_links_heading: "OnePlus 10T seçenekleri"
 seo_canonical: "https://kacagider.com.tr/telefon/oneplus/oneplus-10t/"
+seo_guides_heading: "OnePlus 10T ile ilgili sık arananlar"
+seo_guides: [{"label":"OnePlus 10T nasıl sıfırlanır?","url":"/rehber/android/android-telefon-nasil-sifirlanir/"},{"label":"OnePlus 10T ekran görüntüsü nasıl alınır?","url":"/rehber/android/android-ekran-goruntusu-nasil-alinir/"},{"label":"OnePlus 10T IMEI nasıl öğrenilir?","url":"/rehber/android/android-imei-nasil-ogrenilir/"}]
 ---

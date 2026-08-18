@@ -10,4 +10,6 @@ seo_breadcrumbs: [{"label":"Ana Sayfa","url":"/"},{"label":"Telefon","url":"/tel
 seo_links: [{"label":"64 GB","url":"/telefon/apple/iphone-12/64gb/"},{"label":"128 GB","url":"/telefon/apple/iphone-12/128gb/"},{"label":"256 GB","url":"/telefon/apple/iphone-12/256gb/"}]
 seo_links_heading: "iPhone 12 seçenekleri"
 seo_canonical: "https://kacagider.com.tr/telefon/apple/iphone-12/"
+seo_guides_heading: "iPhone 12 ile ilgili sık arananlar"
+seo_guides: [{"label":"iPhone 12 nasıl sıfırlanır?","url":"/rehber/ios/iphone-nasil-sifirlanir/"},{"label":"iPhone 12 ekran görüntüsü nasıl alınır?","url":"/rehber/ios/iphone-ekran-goruntusu-nasil-alinir/"},{"label":"iPhone 12 pil sağlığı nasıl kontrol edilir?","url":"/rehber/ios/iphone-pil-sagligi/"}]
 ---

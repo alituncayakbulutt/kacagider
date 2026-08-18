@@ -10,4 +10,6 @@ seo_breadcrumbs: [{"label":"Ana Sayfa","url":"/"},{"label":"Tablet","url":"/tabl
 seo_links: [{"label":"64 GB","url":"/tablet/apple/ipad-10-nesil/64gb/"},{"label":"256 GB","url":"/tablet/apple/ipad-10-nesil/256gb/"}]
 seo_links_heading: "iPad (10. nesil) seçenekleri"
 seo_canonical: "https://kacagider.com.tr/tablet/apple/ipad-10-nesil/"
+seo_guides_heading: "iPad (10. nesil) ile ilgili sık arananlar"
+seo_guides: [{"label":"iPad (10. nesil) nasıl sıfırlanır?","url":"/rehber/ipados/ipad-nasil-sifirlanir/"},{"label":"iPad (10. nesil) ekran görüntüsü nasıl alınır?","url":"/rehber/ipados/ipad-ekran-goruntusu/"}]
 ---

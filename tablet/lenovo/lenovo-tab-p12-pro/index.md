@@ -10,4 +10,6 @@ seo_breadcrumbs: [{"label":"Ana Sayfa","url":"/"},{"label":"Tablet","url":"/tabl
 seo_links: [{"label":"256 GB","url":"/tablet/lenovo/lenovo-tab-p12-pro/256gb/"},{"label":"512 GB","url":"/tablet/lenovo/lenovo-tab-p12-pro/512gb/"}]
 seo_links_heading: "Lenovo Tab P12 Pro seçenekleri"
 seo_canonical: "https://kacagider.com.tr/tablet/lenovo/lenovo-tab-p12-pro/"
+seo_guides_heading: "Lenovo Tab P12 Pro ile ilgili sık arananlar"
+seo_guides: [{"label":"Lenovo Tab P12 Pro nasıl sıfırlanır?","url":"/rehber/android/android-tablet-nasil-sifirlanir/"},{"label":"Lenovo Tab P12 Pro ekran görüntüsü nasıl alınır?","url":"/rehber/android/android-tablet-ekran-goruntusu/"}]
 ---

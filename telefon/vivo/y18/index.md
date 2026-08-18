@@ -10,4 +10,6 @@ seo_breadcrumbs: [{"label":"Ana Sayfa","url":"/"},{"label":"Telefon","url":"/tel
 seo_links: [{"label":"128 GB","url":"/telefon/vivo/y18/128gb/"},{"label":"256 GB","url":"/telefon/vivo/y18/256gb/"}]
 seo_links_heading: "Y18 seçenekleri"
 seo_canonical: "https://kacagider.com.tr/telefon/vivo/y18/"
+seo_guides_heading: "Y18 ile ilgili sık arananlar"
+seo_guides: [{"label":"Y18 nasıl sıfırlanır?","url":"/rehber/android/android-telefon-nasil-sifirlanir/"},{"label":"Y18 ekran görüntüsü nasıl alınır?","url":"/rehber/android/android-ekran-goruntusu-nasil-alinir/"},{"label":"Y18 IMEI nasıl öğrenilir?","url":"/rehber/android/android-imei-nasil-ogrenilir/"}]
 ---

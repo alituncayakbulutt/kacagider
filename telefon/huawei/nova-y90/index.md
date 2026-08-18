@@ -10,4 +10,6 @@ seo_breadcrumbs: [{"label":"Ana Sayfa","url":"/"},{"label":"Telefon","url":"/tel
 seo_links: [{"label":"128 GB","url":"/telefon/huawei/nova-y90/128gb/"}]
 seo_links_heading: "Nova Y90 seçenekleri"
 seo_canonical: "https://kacagider.com.tr/telefon/huawei/nova-y90/"
+seo_guides_heading: "Nova Y90 ile ilgili sık arananlar"
+seo_guides: [{"label":"Nova Y90 nasıl sıfırlanır?","url":"/rehber/android/android-telefon-nasil-sifirlanir/"},{"label":"Nova Y90 ekran görüntüsü nasıl alınır?","url":"/rehber/android/android-ekran-goruntusu-nasil-alinir/"},{"label":"Nova Y90 IMEI nasıl öğrenilir?","url":"/rehber/android/android-imei-nasil-ogrenilir/"}]
 ---

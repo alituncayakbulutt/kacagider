@@ -10,4 +10,6 @@ seo_breadcrumbs: [{"label":"Ana Sayfa","url":"/"},{"label":"Telefon","url":"/tel
 seo_links: [{"label":"128 GB","url":"/telefon/huawei/p30/128gb/"}]
 seo_links_heading: "P30 seçenekleri"
 seo_canonical: "https://kacagider.com.tr/telefon/huawei/p30/"
+seo_guides_heading: "P30 ile ilgili sık arananlar"
+seo_guides: [{"label":"P30 nasıl sıfırlanır?","url":"/rehber/android/android-telefon-nasil-sifirlanir/"},{"label":"P30 ekran görüntüsü nasıl alınır?","url":"/rehber/android/android-ekran-goruntusu-nasil-alinir/"},{"label":"P30 IMEI nasıl öğrenilir?","url":"/rehber/android/android-imei-nasil-ogrenilir/"}]
 ---

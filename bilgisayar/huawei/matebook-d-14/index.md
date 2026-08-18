@@ -10,4 +10,6 @@ seo_breadcrumbs: [{"label":"Ana Sayfa","url":"/"},{"label":"Bilgisayar","url":"/
 seo_links: [{"label":"256 GB","url":"/bilgisayar/huawei/matebook-d-14/256gb/"},{"label":"512 GB","url":"/bilgisayar/huawei/matebook-d-14/512gb/"}]
 seo_links_heading: "MateBook D 14 seçenekleri"
 seo_canonical: "https://kacagider.com.tr/bilgisayar/huawei/matebook-d-14/"
+seo_guides_heading: "MateBook D 14 ile ilgili sık arananlar"
+seo_guides: [{"label":"MateBook D 14 nasıl sıfırlanır?","url":"/rehber/windows/windows-nasil-sifirlanir/"},{"label":"MateBook D 14 nasıl yedeklenir?","url":"/rehber/windows/windows-bilgisayar-yedekleme/"}]
 ---

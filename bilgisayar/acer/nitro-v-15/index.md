@@ -10,4 +10,6 @@ seo_breadcrumbs: [{"label":"Ana Sayfa","url":"/"},{"label":"Bilgisayar","url":"/
 seo_links: [{"label":"512 GB","url":"/bilgisayar/acer/nitro-v-15/512gb/"},{"label":"1 TB","url":"/bilgisayar/acer/nitro-v-15/1tb/"}]
 seo_links_heading: "Nitro V 15 seçenekleri"
 seo_canonical: "https://kacagider.com.tr/bilgisayar/acer/nitro-v-15/"
+seo_guides_heading: "Nitro V 15 ile ilgili sık arananlar"
+seo_guides: [{"label":"Nitro V 15 nasıl sıfırlanır?","url":"/rehber/windows/windows-nasil-sifirlanir/"},{"label":"Nitro V 15 nasıl yedeklenir?","url":"/rehber/windows/windows-bilgisayar-yedekleme/"}]
 ---

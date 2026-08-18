@@ -10,4 +10,6 @@ seo_breadcrumbs: [{"label":"Ana Sayfa","url":"/"},{"label":"Telefon","url":"/tel
 seo_links: [{"label":"256 GB","url":"/telefon/vivo/v29/256gb/"}]
 seo_links_heading: "V29 seçenekleri"
 seo_canonical: "https://kacagider.com.tr/telefon/vivo/v29/"
+seo_guides_heading: "V29 ile ilgili sık arananlar"
+seo_guides: [{"label":"V29 nasıl sıfırlanır?","url":"/rehber/android/android-telefon-nasil-sifirlanir/"},{"label":"V29 ekran görüntüsü nasıl alınır?","url":"/rehber/android/android-ekran-goruntusu-nasil-alinir/"},{"label":"V29 IMEI nasıl öğrenilir?","url":"/rehber/android/android-imei-nasil-ogrenilir/"}]
 ---

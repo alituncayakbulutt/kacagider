@@ -10,4 +10,6 @@ seo_breadcrumbs: [{"label":"Ana Sayfa","url":"/"},{"label":"Telefon","url":"/tel
 seo_links: [{"label":"128 GB","url":"/telefon/oppo/reno6/128gb/"}]
 seo_links_heading: "Reno6 seçenekleri"
 seo_canonical: "https://kacagider.com.tr/telefon/oppo/reno6/"
+seo_guides_heading: "Reno6 ile ilgili sık arananlar"
+seo_guides: [{"label":"Reno6 nasıl sıfırlanır?","url":"/rehber/android/android-telefon-nasil-sifirlanir/"},{"label":"Reno6 ekran görüntüsü nasıl alınır?","url":"/rehber/android/android-ekran-goruntusu-nasil-alinir/"},{"label":"Reno6 IMEI nasıl öğrenilir?","url":"/rehber/android/android-imei-nasil-ogrenilir/"}]
 ---

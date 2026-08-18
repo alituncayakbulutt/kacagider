@@ -10,4 +10,6 @@ seo_breadcrumbs: [{"label":"Ana Sayfa","url":"/"},{"label":"Telefon","url":"/tel
 seo_links: [{"label":"128 GB","url":"/telefon/samsung/galaxy-m54-5g/128gb/"},{"label":"256 GB","url":"/telefon/samsung/galaxy-m54-5g/256gb/"}]
 seo_links_heading: "Galaxy M54 5G seçenekleri"
 seo_canonical: "https://kacagider.com.tr/telefon/samsung/galaxy-m54-5g/"
+seo_guides_heading: "Galaxy M54 5G ile ilgili sık arananlar"
+seo_guides: [{"label":"Galaxy M54 5G nasıl sıfırlanır?","url":"/rehber/android/android-telefon-nasil-sifirlanir/"},{"label":"Galaxy M54 5G ekran görüntüsü nasıl alınır?","url":"/rehber/android/android-ekran-goruntusu-nasil-alinir/"},{"label":"Galaxy M54 5G IMEI nasıl öğrenilir?","url":"/rehber/android/android-imei-nasil-ogrenilir/"}]
 ---

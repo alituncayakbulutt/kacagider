@@ -10,4 +10,6 @@ seo_breadcrumbs: [{"label":"Ana Sayfa","url":"/"},{"label":"Telefon","url":"/tel
 seo_links: [{"label":"128 GB","url":"/telefon/oppo/a18/128gb/"}]
 seo_links_heading: "A18 seçenekleri"
 seo_canonical: "https://kacagider.com.tr/telefon/oppo/a18/"
+seo_guides_heading: "A18 ile ilgili sık arananlar"
+seo_guides: [{"label":"A18 nasıl sıfırlanır?","url":"/rehber/android/android-telefon-nasil-sifirlanir/"},{"label":"A18 ekran görüntüsü nasıl alınır?","url":"/rehber/android/android-ekran-goruntusu-nasil-alinir/"},{"label":"A18 IMEI nasıl öğrenilir?","url":"/rehber/android/android-imei-nasil-ogrenilir/"}]
 ---

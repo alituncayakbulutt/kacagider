@@ -10,4 +10,6 @@ seo_breadcrumbs: [{"label":"Ana Sayfa","url":"/"},{"label":"Bilgisayar","url":"/
 seo_links: [{"label":"256 GB","url":"/bilgisayar/lenovo/thinkpad-e14/256gb/"},{"label":"512 GB","url":"/bilgisayar/lenovo/thinkpad-e14/512gb/"}]
 seo_links_heading: "ThinkPad E14 seçenekleri"
 seo_canonical: "https://kacagider.com.tr/bilgisayar/lenovo/thinkpad-e14/"
+seo_guides_heading: "ThinkPad E14 ile ilgili sık arananlar"
+seo_guides: [{"label":"ThinkPad E14 nasıl sıfırlanır?","url":"/rehber/windows/windows-nasil-sifirlanir/"},{"label":"ThinkPad E14 nasıl yedeklenir?","url":"/rehber/windows/windows-bilgisayar-yedekleme/"}]
 ---

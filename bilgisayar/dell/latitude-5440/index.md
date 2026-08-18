@@ -10,4 +10,6 @@ seo_breadcrumbs: [{"label":"Ana Sayfa","url":"/"},{"label":"Bilgisayar","url":"/
 seo_links: [{"label":"256 GB","url":"/bilgisayar/dell/latitude-5440/256gb/"},{"label":"512 GB","url":"/bilgisayar/dell/latitude-5440/512gb/"}]
 seo_links_heading: "Latitude 5440 seçenekleri"
 seo_canonical: "https://kacagider.com.tr/bilgisayar/dell/latitude-5440/"
+seo_guides_heading: "Latitude 5440 ile ilgili sık arananlar"
+seo_guides: [{"label":"Latitude 5440 nasıl sıfırlanır?","url":"/rehber/windows/windows-nasil-sifirlanir/"},{"label":"Latitude 5440 nasıl yedeklenir?","url":"/rehber/windows/windows-bilgisayar-yedekleme/"}]
 ---

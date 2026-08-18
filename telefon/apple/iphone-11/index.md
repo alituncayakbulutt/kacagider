@@ -10,4 +10,6 @@ seo_breadcrumbs: [{"label":"Ana Sayfa","url":"/"},{"label":"Telefon","url":"/tel
 seo_links: [{"label":"64 GB","url":"/telefon/apple/iphone-11/64gb/"},{"label":"128 GB","url":"/telefon/apple/iphone-11/128gb/"},{"label":"256 GB","url":"/telefon/apple/iphone-11/256gb/"}]
 seo_links_heading: "iPhone 11 seçenekleri"
 seo_canonical: "https://kacagider.com.tr/telefon/apple/iphone-11/"
+seo_guides_heading: "iPhone 11 ile ilgili sık arananlar"
+seo_guides: [{"label":"iPhone 11 nasıl sıfırlanır?","url":"/rehber/ios/iphone-nasil-sifirlanir/"},{"label":"iPhone 11 ekran görüntüsü nasıl alınır?","url":"/rehber/ios/iphone-ekran-goruntusu-nasil-alinir/"},{"label":"iPhone 11 pil sağlığı nasıl kontrol edilir?","url":"/rehber/ios/iphone-pil-sagligi/"}]
 ---

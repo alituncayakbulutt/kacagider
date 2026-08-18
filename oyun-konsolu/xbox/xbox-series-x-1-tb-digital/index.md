@@ -10,4 +10,6 @@ seo_breadcrumbs: [{"label":"Ana Sayfa","url":"/"},{"label":"Oyun Konsolu","url":
 seo_links: [{"label":"1 TB","url":"/oyun-konsolu/xbox/xbox-series-x-1-tb-digital/1tb/"}]
 seo_links_heading: "Xbox Series X 1 TB Digital seçenekleri"
 seo_canonical: "https://kacagider.com.tr/oyun-konsolu/xbox/xbox-series-x-1-tb-digital/"
+seo_guides_heading: "Xbox Series X 1 TB Digital ile ilgili sık arananlar"
+seo_guides: [{"label":"Xbox Series X 1 TB Digital nasıl sıfırlanır?","url":"/rehber/xbox/xbox-nasil-sifirlanir/"}]
 ---

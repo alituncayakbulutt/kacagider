@@ -10,4 +10,6 @@ seo_breadcrumbs: [{"label":"Ana Sayfa","url":"/"},{"label":"Telefon","url":"/tel
 seo_links: [{"label":"128 GB","url":"/telefon/xiaomi/xiaomi-11t-pro/128gb/"},{"label":"256 GB","url":"/telefon/xiaomi/xiaomi-11t-pro/256gb/"}]
 seo_links_heading: "Xiaomi 11T Pro seçenekleri"
 seo_canonical: "https://kacagider.com.tr/telefon/xiaomi/xiaomi-11t-pro/"
+seo_guides_heading: "Xiaomi 11T Pro ile ilgili sık arananlar"
+seo_guides: [{"label":"Xiaomi 11T Pro nasıl sıfırlanır?","url":"/rehber/android/android-telefon-nasil-sifirlanir/"},{"label":"Xiaomi 11T Pro ekran görüntüsü nasıl alınır?","url":"/rehber/android/android-ekran-goruntusu-nasil-alinir/"},{"label":"Xiaomi 11T Pro IMEI nasıl öğrenilir?","url":"/rehber/android/android-imei-nasil-ogrenilir/"}]
 ---

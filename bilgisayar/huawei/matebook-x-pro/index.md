@@ -10,4 +10,6 @@ seo_breadcrumbs: [{"label":"Ana Sayfa","url":"/"},{"label":"Bilgisayar","url":"/
 seo_links: [{"label":"512 GB","url":"/bilgisayar/huawei/matebook-x-pro/512gb/"},{"label":"1 TB","url":"/bilgisayar/huawei/matebook-x-pro/1tb/"}]
 seo_links_heading: "MateBook X Pro seçenekleri"
 seo_canonical: "https://kacagider.com.tr/bilgisayar/huawei/matebook-x-pro/"
+seo_guides_heading: "MateBook X Pro ile ilgili sık arananlar"
+seo_guides: [{"label":"MateBook X Pro nasıl sıfırlanır?","url":"/rehber/windows/windows-nasil-sifirlanir/"},{"label":"MateBook X Pro nasıl yedeklenir?","url":"/rehber/windows/windows-bilgisayar-yedekleme/"}]
 ---

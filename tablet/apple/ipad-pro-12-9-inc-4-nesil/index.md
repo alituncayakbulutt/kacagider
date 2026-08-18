@@ -10,4 +10,6 @@ seo_breadcrumbs: [{"label":"Ana Sayfa","url":"/"},{"label":"Tablet","url":"/tabl
 seo_links: [{"label":"128 GB","url":"/tablet/apple/ipad-pro-12-9-inc-4-nesil/128gb/"},{"label":"256 GB","url":"/tablet/apple/ipad-pro-12-9-inc-4-nesil/256gb/"},{"label":"512 GB","url":"/tablet/apple/ipad-pro-12-9-inc-4-nesil/512gb/"},{"label":"1 TB","url":"/tablet/apple/ipad-pro-12-9-inc-4-nesil/1tb/"}]
 seo_links_heading: "iPad Pro 12.9 inç (4. nesil) seçenekleri"
 seo_canonical: "https://kacagider.com.tr/tablet/apple/ipad-pro-12-9-inc-4-nesil/"
+seo_guides_heading: "iPad Pro 12.9 inç (4. nesil) ile ilgili sık arananlar"
+seo_guides: [{"label":"iPad Pro 12.9 inç (4. nesil) nasıl sıfırlanır?","url":"/rehber/ipados/ipad-nasil-sifirlanir/"},{"label":"iPad Pro 12.9 inç (4. nesil) ekran görüntüsü nasıl alınır?","url":"/rehber/ipados/ipad-ekran-goruntusu/"}]
 ---

@@ -10,4 +10,6 @@ seo_breadcrumbs: [{"label":"Ana Sayfa","url":"/"},{"label":"Tablet","url":"/tabl
 seo_links: [{"label":"64 GB","url":"/tablet/apple/ipad-mini-5-nesil/64gb/"},{"label":"256 GB","url":"/tablet/apple/ipad-mini-5-nesil/256gb/"}]
 seo_links_heading: "iPad mini (5. nesil) seçenekleri"
 seo_canonical: "https://kacagider.com.tr/tablet/apple/ipad-mini-5-nesil/"
+seo_guides_heading: "iPad mini (5. nesil) ile ilgili sık arananlar"
+seo_guides: [{"label":"iPad mini (5. nesil) nasıl sıfırlanır?","url":"/rehber/ipados/ipad-nasil-sifirlanir/"},{"label":"iPad mini (5. nesil) ekran görüntüsü nasıl alınır?","url":"/rehber/ipados/ipad-ekran-goruntusu/"}]
 ---

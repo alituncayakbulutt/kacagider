@@ -10,4 +10,6 @@ seo_breadcrumbs: [{"label":"Ana Sayfa","url":"/"},{"label":"Tablet","url":"/tabl
 seo_links: [{"label":"64 GB","url":"/tablet/samsung/galaxy-tab-a9-plus/64gb/"},{"label":"128 GB","url":"/tablet/samsung/galaxy-tab-a9-plus/128gb/"}]
 seo_links_heading: "Galaxy Tab A9+ seçenekleri"
 seo_canonical: "https://kacagider.com.tr/tablet/samsung/galaxy-tab-a9-plus/"
+seo_guides_heading: "Galaxy Tab A9+ ile ilgili sık arananlar"
+seo_guides: [{"label":"Galaxy Tab A9+ nasıl sıfırlanır?","url":"/rehber/android/android-tablet-nasil-sifirlanir/"},{"label":"Galaxy Tab A9+ ekran görüntüsü nasıl alınır?","url":"/rehber/android/android-tablet-ekran-goruntusu/"}]
 ---

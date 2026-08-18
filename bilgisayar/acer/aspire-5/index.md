@@ -10,4 +10,6 @@ seo_breadcrumbs: [{"label":"Ana Sayfa","url":"/"},{"label":"Bilgisayar","url":"/
 seo_links: [{"label":"256 GB","url":"/bilgisayar/acer/aspire-5/256gb/"},{"label":"512 GB","url":"/bilgisayar/acer/aspire-5/512gb/"}]
 seo_links_heading: "Aspire 5 seçenekleri"
 seo_canonical: "https://kacagider.com.tr/bilgisayar/acer/aspire-5/"
+seo_guides_heading: "Aspire 5 ile ilgili sık arananlar"
+seo_guides: [{"label":"Aspire 5 nasıl sıfırlanır?","url":"/rehber/windows/windows-nasil-sifirlanir/"},{"label":"Aspire 5 nasıl yedeklenir?","url":"/rehber/windows/windows-bilgisayar-yedekleme/"}]
 ---

@@ -10,4 +10,6 @@ seo_breadcrumbs: [{"label":"Ana Sayfa","url":"/"},{"label":"Akıllı Saat","url"
 seo_links: [{"label":"41 mm","url":"/akilli-saat/huawei/huawei-watch-gt-5/41mm/"},{"label":"46 mm","url":"/akilli-saat/huawei/huawei-watch-gt-5/46mm/"}]
 seo_links_heading: "Huawei Watch GT 5 seçenekleri"
 seo_canonical: "https://kacagider.com.tr/akilli-saat/huawei/huawei-watch-gt-5/"
+seo_guides_heading: "Huawei Watch GT 5 ile ilgili sık arananlar"
+seo_guides: [{"label":"Huawei Watch GT 5 nasıl sıfırlanır?","url":"/rehber/wear-os/galaxy-watch-nasil-sifirlanir/"}]
 ---

@@ -10,4 +10,6 @@ seo_breadcrumbs: [{"label":"Ana Sayfa","url":"/"},{"label":"Tablet","url":"/tabl
 seo_links: [{"label":"32 GB","url":"/tablet/apple/ipad-7-nesil/32gb/"},{"label":"128 GB","url":"/tablet/apple/ipad-7-nesil/128gb/"}]
 seo_links_heading: "iPad (7. nesil) seçenekleri"
 seo_canonical: "https://kacagider.com.tr/tablet/apple/ipad-7-nesil/"
+seo_guides_heading: "iPad (7. nesil) ile ilgili sık arananlar"
+seo_guides: [{"label":"iPad (7. nesil) nasıl sıfırlanır?","url":"/rehber/ipados/ipad-nasil-sifirlanir/"},{"label":"iPad (7. nesil) ekran görüntüsü nasıl alınır?","url":"/rehber/ipados/ipad-ekran-goruntusu/"}]
 ---

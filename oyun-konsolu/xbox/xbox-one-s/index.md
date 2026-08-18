@@ -10,4 +10,6 @@ seo_breadcrumbs: [{"label":"Ana Sayfa","url":"/"},{"label":"Oyun Konsolu","url":
 seo_links: [{"label":"500 GB","url":"/oyun-konsolu/xbox/xbox-one-s/500gb/"},{"label":"1 TB","url":"/oyun-konsolu/xbox/xbox-one-s/1tb/"},{"label":"2 TB","url":"/oyun-konsolu/xbox/xbox-one-s/2tb/"}]
 seo_links_heading: "Xbox One S seçenekleri"
 seo_canonical: "https://kacagider.com.tr/oyun-konsolu/xbox/xbox-one-s/"
+seo_guides_heading: "Xbox One S ile ilgili sık arananlar"
+seo_guides: [{"label":"Xbox One S nasıl sıfırlanır?","url":"/rehber/xbox/xbox-nasil-sifirlanir/"}]
 ---

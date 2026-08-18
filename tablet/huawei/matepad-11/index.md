@@ -10,4 +10,6 @@ seo_breadcrumbs: [{"label":"Ana Sayfa","url":"/"},{"label":"Tablet","url":"/tabl
 seo_links: [{"label":"128 GB","url":"/tablet/huawei/matepad-11/128gb/"},{"label":"256 GB","url":"/tablet/huawei/matepad-11/256gb/"}]
 seo_links_heading: "MatePad 11 seçenekleri"
 seo_canonical: "https://kacagider.com.tr/tablet/huawei/matepad-11/"
+seo_guides_heading: "MatePad 11 ile ilgili sık arananlar"
+seo_guides: [{"label":"MatePad 11 nasıl sıfırlanır?","url":"/rehber/android/android-tablet-nasil-sifirlanir/"},{"label":"MatePad 11 ekran görüntüsü nasıl alınır?","url":"/rehber/android/android-tablet-ekran-goruntusu/"}]
 ---

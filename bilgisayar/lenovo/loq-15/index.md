@@ -10,4 +10,6 @@ seo_breadcrumbs: [{"label":"Ana Sayfa","url":"/"},{"label":"Bilgisayar","url":"/
 seo_links: [{"label":"512 GB","url":"/bilgisayar/lenovo/loq-15/512gb/"},{"label":"1 TB","url":"/bilgisayar/lenovo/loq-15/1tb/"}]
 seo_links_heading: "LOQ 15 seçenekleri"
 seo_canonical: "https://kacagider.com.tr/bilgisayar/lenovo/loq-15/"
+seo_guides_heading: "LOQ 15 ile ilgili sık arananlar"
+seo_guides: [{"label":"LOQ 15 nasıl sıfırlanır?","url":"/rehber/windows/windows-nasil-sifirlanir/"},{"label":"LOQ 15 nasıl yedeklenir?","url":"/rehber/windows/windows-bilgisayar-yedekleme/"}]
 ---

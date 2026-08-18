@@ -10,4 +10,6 @@ seo_breadcrumbs: [{"label":"Ana Sayfa","url":"/"},{"label":"Telefon","url":"/tel
 seo_links: [{"label":"256 GB","url":"/telefon/vivo/v40/256gb/"}]
 seo_links_heading: "V40 seçenekleri"
 seo_canonical: "https://kacagider.com.tr/telefon/vivo/v40/"
+seo_guides_heading: "V40 ile ilgili sık arananlar"
+seo_guides: [{"label":"V40 nasıl sıfırlanır?","url":"/rehber/android/android-telefon-nasil-sifirlanir/"},{"label":"V40 ekran görüntüsü nasıl alınır?","url":"/rehber/android/android-ekran-goruntusu-nasil-alinir/"},{"label":"V40 IMEI nasıl öğrenilir?","url":"/rehber/android/android-imei-nasil-ogrenilir/"}]
 ---

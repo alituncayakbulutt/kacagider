@@ -10,4 +10,6 @@ seo_breadcrumbs: [{"label":"Ana Sayfa","url":"/"},{"label":"Telefon","url":"/tel
 seo_links: [{"label":"256 GB","url":"/telefon/vivo/v50/256gb/"}]
 seo_links_heading: "V50 seçenekleri"
 seo_canonical: "https://kacagider.com.tr/telefon/vivo/v50/"
+seo_guides_heading: "V50 ile ilgili sık arananlar"
+seo_guides: [{"label":"V50 nasıl sıfırlanır?","url":"/rehber/android/android-telefon-nasil-sifirlanir/"},{"label":"V50 ekran görüntüsü nasıl alınır?","url":"/rehber/android/android-ekran-goruntusu-nasil-alinir/"},{"label":"V50 IMEI nasıl öğrenilir?","url":"/rehber/android/android-imei-nasil-ogrenilir/"}]
 ---

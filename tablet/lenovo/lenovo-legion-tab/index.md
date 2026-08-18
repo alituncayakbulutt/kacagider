@@ -10,4 +10,6 @@ seo_breadcrumbs: [{"label":"Ana Sayfa","url":"/"},{"label":"Tablet","url":"/tabl
 seo_links: [{"label":"256 GB","url":"/tablet/lenovo/lenovo-legion-tab/256gb/"},{"label":"512 GB","url":"/tablet/lenovo/lenovo-legion-tab/512gb/"}]
 seo_links_heading: "Lenovo Legion Tab seçenekleri"
 seo_canonical: "https://kacagider.com.tr/tablet/lenovo/lenovo-legion-tab/"
+seo_guides_heading: "Lenovo Legion Tab ile ilgili sık arananlar"
+seo_guides: [{"label":"Lenovo Legion Tab nasıl sıfırlanır?","url":"/rehber/android/android-tablet-nasil-sifirlanir/"},{"label":"Lenovo Legion Tab ekran görüntüsü nasıl alınır?","url":"/rehber/android/android-tablet-ekran-goruntusu/"}]
 ---

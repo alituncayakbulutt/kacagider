@@ -89,6 +89,7 @@
   <url><loc>https://kacagider.com.tr/telefon/apple/iphone-15-pro/512gb/</loc><lastmod>2026-08-18</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://kacagider.com.tr/telefon/apple/iphone-15-pro/1tb/</loc><lastmod>2026-08-18</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://kacagider.com.tr/telefon/apple/iphone-15-pro-max/</loc><lastmod>2026-08-18</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://kacagider.com.tr/telefon/apple/iphone-15-pro-max/rehber/nasil-sifirlanir/</loc><lastmod>2026-08-18</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
   <url><loc>https://kacagider.com.tr/telefon/apple/iphone-15-pro-max/256gb/</loc><lastmod>2026-08-18</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://kacagider.com.tr/telefon/apple/iphone-15-pro-max/512gb/</loc><lastmod>2026-08-18</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://kacagider.com.tr/telefon/apple/iphone-15-pro-max/1tb/</loc><lastmod>2026-08-18</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
@@ -1869,4 +1870,66 @@
   <url><loc>https://kacagider.com.tr/oyun-konsolu/xbox/xbox-one/</loc><lastmod>2026-08-18</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
   <url><loc>https://kacagider.com.tr/oyun-konsolu/xbox/xbox-one/500gb/</loc><lastmod>2026-08-18</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://kacagider.com.tr/oyun-konsolu/xbox/xbox-one/1tb/</loc><lastmod>2026-08-18</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://kacagider.com.tr/rehber/</loc><lastmod>2026-08-18</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://kacagider.com.tr/rehber/ios/</loc><lastmod>2026-08-18</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://kacagider.com.tr/rehber/android/</loc><lastmod>2026-08-18</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://kacagider.com.tr/rehber/ipados/</loc><lastmod>2026-08-18</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://kacagider.com.tr/rehber/windows/</loc><lastmod>2026-08-18</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://kacagider.com.tr/rehber/macos/</loc><lastmod>2026-08-18</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://kacagider.com.tr/rehber/watchos/</loc><lastmod>2026-08-18</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://kacagider.com.tr/rehber/wear-os/</loc><lastmod>2026-08-18</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://kacagider.com.tr/rehber/playstation/</loc><lastmod>2026-08-18</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://kacagider.com.tr/rehber/xbox/</loc><lastmod>2026-08-18</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://kacagider.com.tr/rehber/nintendo/</loc><lastmod>2026-08-18</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://kacagider.com.tr/rehber/ios/iphone-nasil-sifirlanir/</loc><lastmod>2026-08-18</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://kacagider.com.tr/rehber/ios/iphone-ekran-goruntusu-nasil-alinir/</loc><lastmod>2026-08-18</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://kacagider.com.tr/rehber/ios/iphone-yeniden-baslatma/</loc><lastmod>2026-08-18</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://kacagider.com.tr/rehber/ios/iphone-pil-sagligi/</loc><lastmod>2026-08-18</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://kacagider.com.tr/rehber/ios/iphone-imei-nasil-ogrenilir/</loc><lastmod>2026-08-18</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://kacagider.com.tr/rehber/ios/iphone-yedekleme/</loc><lastmod>2026-08-18</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://kacagider.com.tr/rehber/ios/iphone-satmadan-once-ne-yapilmali/</loc><lastmod>2026-08-18</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://kacagider.com.tr/rehber/ios/face-id-nasil-sifirlanir/</loc><lastmod>2026-08-18</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://kacagider.com.tr/rehber/android/android-telefon-nasil-sifirlanir/</loc><lastmod>2026-08-18</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://kacagider.com.tr/rehber/android/android-ekran-goruntusu-nasil-alinir/</loc><lastmod>2026-08-18</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://kacagider.com.tr/rehber/android/android-yeniden-baslatma/</loc><lastmod>2026-08-18</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://kacagider.com.tr/rehber/android/android-imei-nasil-ogrenilir/</loc><lastmod>2026-08-18</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://kacagider.com.tr/rehber/android/android-depolama-nasil-bosaltirilir/</loc><lastmod>2026-08-18</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://kacagider.com.tr/rehber/android/android-telefon-yedekleme/</loc><lastmod>2026-08-18</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://kacagider.com.tr/rehber/android/android-telefon-satmadan-once/</loc><lastmod>2026-08-18</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://kacagider.com.tr/rehber/android/android-guvenli-mod/</loc><lastmod>2026-08-18</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://kacagider.com.tr/rehber/ipados/ipad-nasil-sifirlanir/</loc><lastmod>2026-08-18</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://kacagider.com.tr/rehber/ipados/ipad-ekran-goruntusu/</loc><lastmod>2026-08-18</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://kacagider.com.tr/rehber/ipados/ipad-yedekleme/</loc><lastmod>2026-08-18</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://kacagider.com.tr/rehber/ipados/ipad-depolama-bosaltma/</loc><lastmod>2026-08-18</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://kacagider.com.tr/rehber/android/android-tablet-nasil-sifirlanir/</loc><lastmod>2026-08-18</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://kacagider.com.tr/rehber/android/android-tablet-ekran-goruntusu/</loc><lastmod>2026-08-18</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://kacagider.com.tr/rehber/windows/windows-nasil-sifirlanir/</loc><lastmod>2026-08-18</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://kacagider.com.tr/rehber/windows/windows-ekran-goruntusu/</loc><lastmod>2026-08-18</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://kacagider.com.tr/rehber/windows/windows-disk-alani-bosaltma/</loc><lastmod>2026-08-18</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://kacagider.com.tr/rehber/windows/windows-bilgisayar-yedekleme/</loc><lastmod>2026-08-18</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://kacagider.com.tr/rehber/windows/windows-surumu-nasil-ogrenilir/</loc><lastmod>2026-08-18</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://kacagider.com.tr/rehber/macos/mac-nasil-sifirlanir/</loc><lastmod>2026-08-18</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://kacagider.com.tr/rehber/macos/mac-ekran-goruntusu/</loc><lastmod>2026-08-18</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://kacagider.com.tr/rehber/macos/mac-yedekleme/</loc><lastmod>2026-08-18</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://kacagider.com.tr/rehber/macos/mac-depolama-bosaltma/</loc><lastmod>2026-08-18</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://kacagider.com.tr/rehber/macos/macos-surumu-nasil-ogrenilir/</loc><lastmod>2026-08-18</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://kacagider.com.tr/rehber/watchos/apple-watch-nasil-sifirlanir/</loc><lastmod>2026-08-18</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://kacagider.com.tr/rehber/watchos/apple-watch-yeniden-baslatma/</loc><lastmod>2026-08-18</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://kacagider.com.tr/rehber/watchos/apple-watch-eslestirme/</loc><lastmod>2026-08-18</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://kacagider.com.tr/rehber/watchos/apple-watch-pil-omru/</loc><lastmod>2026-08-18</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://kacagider.com.tr/rehber/wear-os/galaxy-watch-nasil-sifirlanir/</loc><lastmod>2026-08-18</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://kacagider.com.tr/rehber/wear-os/galaxy-watch-yeniden-baslatma/</loc><lastmod>2026-08-18</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://kacagider.com.tr/rehber/wear-os/galaxy-watch-eslestirme/</loc><lastmod>2026-08-18</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://kacagider.com.tr/rehber/playstation/playstation-nasil-sifirlanir/</loc><lastmod>2026-08-18</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://kacagider.com.tr/rehber/playstation/ps5-fabrika-ayarlarina-donme/</loc><lastmod>2026-08-18</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://kacagider.com.tr/rehber/playstation/playstation-kol-eslestirme/</loc><lastmod>2026-08-18</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://kacagider.com.tr/rehber/playstation/playstation-depolama-bosaltma/</loc><lastmod>2026-08-18</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://kacagider.com.tr/rehber/xbox/xbox-nasil-sifirlanir/</loc><lastmod>2026-08-18</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://kacagider.com.tr/rehber/xbox/xbox-kol-eslestirme/</loc><lastmod>2026-08-18</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://kacagider.com.tr/rehber/xbox/xbox-depolama-bosaltma/</loc><lastmod>2026-08-18</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://kacagider.com.tr/rehber/nintendo/nintendo-switch-nasil-sifirlanir/</loc><lastmod>2026-08-18</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://kacagider.com.tr/rehber/nintendo/switch-kol-eslestirme/</loc><lastmod>2026-08-18</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+
+
+  <url><loc>https://kacagider.com.tr/rehber/telefon/imei-sorgulama/</loc><lastmod>2026-08-18</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
 </urlset>

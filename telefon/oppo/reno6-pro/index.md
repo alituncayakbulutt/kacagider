@@ -10,4 +10,6 @@ seo_breadcrumbs: [{"label":"Ana Sayfa","url":"/"},{"label":"Telefon","url":"/tel
 seo_links: []
 seo_links_heading: "Reno6 Pro seçenekleri"
 seo_canonical: "https://kacagider.com.tr/telefon/oppo/reno6-pro/"
+seo_guides_heading: "Reno6 Pro ile ilgili sık arananlar"
+seo_guides: [{"label":"Reno6 Pro nasıl sıfırlanır?","url":"/rehber/android/android-telefon-nasil-sifirlanir/"},{"label":"Reno6 Pro ekran görüntüsü nasıl alınır?","url":"/rehber/android/android-ekran-goruntusu-nasil-alinir/"},{"label":"Reno6 Pro IMEI nasıl öğrenilir?","url":"/rehber/android/android-imei-nasil-ogrenilir/"}]
 ---

@@ -10,4 +10,6 @@ seo_breadcrumbs: [{"label":"Ana Sayfa","url":"/"},{"label":"Bilgisayar","url":"/
 seo_links: [{"label":"256 GB","url":"/bilgisayar/hp/elitebook-840/256gb/"},{"label":"512 GB","url":"/bilgisayar/hp/elitebook-840/512gb/"}]
 seo_links_heading: "EliteBook 840 seçenekleri"
 seo_canonical: "https://kacagider.com.tr/bilgisayar/hp/elitebook-840/"
+seo_guides_heading: "EliteBook 840 ile ilgili sık arananlar"
+seo_guides: [{"label":"EliteBook 840 nasıl sıfırlanır?","url":"/rehber/windows/windows-nasil-sifirlanir/"},{"label":"EliteBook 840 nasıl yedeklenir?","url":"/rehber/windows/windows-bilgisayar-yedekleme/"}]
 ---

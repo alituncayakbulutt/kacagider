@@ -10,4 +10,6 @@ seo_breadcrumbs: [{"label":"Ana Sayfa","url":"/"},{"label":"Telefon","url":"/tel
 seo_links: [{"label":"64 GB","url":"/telefon/apple/iphone-11-pro/64gb/"},{"label":"256 GB","url":"/telefon/apple/iphone-11-pro/256gb/"},{"label":"512 GB","url":"/telefon/apple/iphone-11-pro/512gb/"}]
 seo_links_heading: "iPhone 11 Pro seçenekleri"
 seo_canonical: "https://kacagider.com.tr/telefon/apple/iphone-11-pro/"
+seo_guides_heading: "iPhone 11 Pro ile ilgili sık arananlar"
+seo_guides: [{"label":"iPhone 11 Pro nasıl sıfırlanır?","url":"/rehber/ios/iphone-nasil-sifirlanir/"},{"label":"iPhone 11 Pro ekran görüntüsü nasıl alınır?","url":"/rehber/ios/iphone-ekran-goruntusu-nasil-alinir/"},{"label":"iPhone 11 Pro pil sağlığı nasıl kontrol edilir?","url":"/rehber/ios/iphone-pil-sagligi/"}]
 ---

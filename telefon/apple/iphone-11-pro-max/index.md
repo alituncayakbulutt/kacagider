@@ -10,4 +10,6 @@ seo_breadcrumbs: [{"label":"Ana Sayfa","url":"/"},{"label":"Telefon","url":"/tel
 seo_links: [{"label":"64 GB","url":"/telefon/apple/iphone-11-pro-max/64gb/"},{"label":"256 GB","url":"/telefon/apple/iphone-11-pro-max/256gb/"},{"label":"512 GB","url":"/telefon/apple/iphone-11-pro-max/512gb/"}]
 seo_links_heading: "iPhone 11 Pro Max seçenekleri"
 seo_canonical: "https://kacagider.com.tr/telefon/apple/iphone-11-pro-max/"
+seo_guides_heading: "iPhone 11 Pro Max ile ilgili sık arananlar"
+seo_guides: [{"label":"iPhone 11 Pro Max nasıl sıfırlanır?","url":"/rehber/ios/iphone-nasil-sifirlanir/"},{"label":"iPhone 11 Pro Max ekran görüntüsü nasıl alınır?","url":"/rehber/ios/iphone-ekran-goruntusu-nasil-alinir/"},{"label":"iPhone 11 Pro Max pil sağlığı nasıl kontrol edilir?","url":"/rehber/ios/iphone-pil-sagligi/"}]
 ---

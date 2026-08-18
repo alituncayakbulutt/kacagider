@@ -10,4 +10,6 @@ seo_breadcrumbs: [{"label":"Ana Sayfa","url":"/"},{"label":"Telefon","url":"/tel
 seo_links: [{"label":"512 GB","url":"/telefon/honor/honor-200-pro/512gb/"}]
 seo_links_heading: "Honor 200 Pro seçenekleri"
 seo_canonical: "https://kacagider.com.tr/telefon/honor/honor-200-pro/"
+seo_guides_heading: "Honor 200 Pro ile ilgili sık arananlar"
+seo_guides: [{"label":"Honor 200 Pro nasıl sıfırlanır?","url":"/rehber/android/android-telefon-nasil-sifirlanir/"},{"label":"Honor 200 Pro ekran görüntüsü nasıl alınır?","url":"/rehber/android/android-ekran-goruntusu-nasil-alinir/"},{"label":"Honor 200 Pro IMEI nasıl öğrenilir?","url":"/rehber/android/android-imei-nasil-ogrenilir/"}]
 ---

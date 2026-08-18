@@ -10,4 +10,6 @@ seo_breadcrumbs: [{"label":"Ana Sayfa","url":"/"},{"label":"Bilgisayar","url":"/
 seo_links: [{"label":"512 GB","url":"/bilgisayar/dell/xps-13/512gb/"},{"label":"1 TB","url":"/bilgisayar/dell/xps-13/1tb/"}]
 seo_links_heading: "XPS 13 seçenekleri"
 seo_canonical: "https://kacagider.com.tr/bilgisayar/dell/xps-13/"
+seo_guides_heading: "XPS 13 ile ilgili sık arananlar"
+seo_guides: [{"label":"XPS 13 nasıl sıfırlanır?","url":"/rehber/windows/windows-nasil-sifirlanir/"},{"label":"XPS 13 nasıl yedeklenir?","url":"/rehber/windows/windows-bilgisayar-yedekleme/"}]
 ---

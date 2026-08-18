@@ -10,4 +10,6 @@ seo_breadcrumbs: [{"label":"Ana Sayfa","url":"/"},{"label":"Oyun Konsolu","url":
 seo_links: [{"label":"500 GB","url":"/oyun-konsolu/playstation/playstation-4/500gb/"},{"label":"1 TB","url":"/oyun-konsolu/playstation/playstation-4/1tb/"}]
 seo_links_heading: "PlayStation 4 seçenekleri"
 seo_canonical: "https://kacagider.com.tr/oyun-konsolu/playstation/playstation-4/"
+seo_guides_heading: "PlayStation 4 ile ilgili sık arananlar"
+seo_guides: [{"label":"PlayStation 4 nasıl sıfırlanır?","url":"/rehber/playstation/playstation-nasil-sifirlanir/"}]
 ---

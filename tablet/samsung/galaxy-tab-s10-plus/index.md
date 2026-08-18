@@ -10,4 +10,6 @@ seo_breadcrumbs: [{"label":"Ana Sayfa","url":"/"},{"label":"Tablet","url":"/tabl
 seo_links: [{"label":"256 GB","url":"/tablet/samsung/galaxy-tab-s10-plus/256gb/"},{"label":"512 GB","url":"/tablet/samsung/galaxy-tab-s10-plus/512gb/"}]
 seo_links_heading: "Galaxy Tab S10+ seçenekleri"
 seo_canonical: "https://kacagider.com.tr/tablet/samsung/galaxy-tab-s10-plus/"
+seo_guides_heading: "Galaxy Tab S10+ ile ilgili sık arananlar"
+seo_guides: [{"label":"Galaxy Tab S10+ nasıl sıfırlanır?","url":"/rehber/android/android-tablet-nasil-sifirlanir/"},{"label":"Galaxy Tab S10+ ekran görüntüsü nasıl alınır?","url":"/rehber/android/android-tablet-ekran-goruntusu/"}]
 ---

@@ -10,4 +10,6 @@ seo_breadcrumbs: [{"label":"Ana Sayfa","url":"/"},{"label":"Telefon","url":"/tel
 seo_links: [{"label":"256 GB","url":"/telefon/samsung/galaxy-z-flip6/256gb/"},{"label":"512 GB","url":"/telefon/samsung/galaxy-z-flip6/512gb/"}]
 seo_links_heading: "Galaxy Z Flip6 seçenekleri"
 seo_canonical: "https://kacagider.com.tr/telefon/samsung/galaxy-z-flip6/"
+seo_guides_heading: "Galaxy Z Flip6 ile ilgili sık arananlar"
+seo_guides: [{"label":"Galaxy Z Flip6 nasıl sıfırlanır?","url":"/rehber/android/android-telefon-nasil-sifirlanir/"},{"label":"Galaxy Z Flip6 ekran görüntüsü nasıl alınır?","url":"/rehber/android/android-ekran-goruntusu-nasil-alinir/"},{"label":"Galaxy Z Flip6 IMEI nasıl öğrenilir?","url":"/rehber/android/android-imei-nasil-ogrenilir/"}]
 ---

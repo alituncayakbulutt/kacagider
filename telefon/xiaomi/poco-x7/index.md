@@ -10,4 +10,6 @@ seo_breadcrumbs: [{"label":"Ana Sayfa","url":"/"},{"label":"Telefon","url":"/tel
 seo_links: [{"label":"256 GB","url":"/telefon/xiaomi/poco-x7/256gb/"},{"label":"512 GB","url":"/telefon/xiaomi/poco-x7/512gb/"}]
 seo_links_heading: "POCO X7 seçenekleri"
 seo_canonical: "https://kacagider.com.tr/telefon/xiaomi/poco-x7/"
+seo_guides_heading: "POCO X7 ile ilgili sık arananlar"
+seo_guides: [{"label":"POCO X7 nasıl sıfırlanır?","url":"/rehber/android/android-telefon-nasil-sifirlanir/"},{"label":"POCO X7 ekran görüntüsü nasıl alınır?","url":"/rehber/android/android-ekran-goruntusu-nasil-alinir/"},{"label":"POCO X7 IMEI nasıl öğrenilir?","url":"/rehber/android/android-imei-nasil-ogrenilir/"}]
 ---

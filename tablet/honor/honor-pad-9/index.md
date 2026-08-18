@@ -10,4 +10,6 @@ seo_breadcrumbs: [{"label":"Ana Sayfa","url":"/"},{"label":"Tablet","url":"/tabl
 seo_links: [{"label":"128 GB","url":"/tablet/honor/honor-pad-9/128gb/"},{"label":"256 GB","url":"/tablet/honor/honor-pad-9/256gb/"},{"label":"512 GB","url":"/tablet/honor/honor-pad-9/512gb/"}]
 seo_links_heading: "Honor Pad 9 seçenekleri"
 seo_canonical: "https://kacagider.com.tr/tablet/honor/honor-pad-9/"
+seo_guides_heading: "Honor Pad 9 ile ilgili sık arananlar"
+seo_guides: [{"label":"Honor Pad 9 nasıl sıfırlanır?","url":"/rehber/android/android-tablet-nasil-sifirlanir/"},{"label":"Honor Pad 9 ekran görüntüsü nasıl alınır?","url":"/rehber/android/android-tablet-ekran-goruntusu/"}]
 ---

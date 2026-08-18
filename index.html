@@ -1580,7 +1580,7 @@ try{
 .kg-topbar-inner{
   max-width:1480px;
   margin:0 auto;
-  min-height:84px;
+  min-height:102px;
   display:grid;
   grid-template-columns:250px 1fr auto;
   align-items:center;
@@ -1636,15 +1636,16 @@ try{
   padding:29px 0 26px;
   transition:color .16s ease;
 }
-.kg-main-nav a.active{color:#22c55e}
-.kg-main-nav a:not(.active):hover{color:#d9fbe6}
+.kg-main-nav a[data-nav="didYouKnow"]{margin-left:auto}
+.kg-main-nav a.active{color:#16a34a}
+.kg-main-nav a:not(.active):hover{color:#15803d}
 .kg-main-nav a.active::after{
   content:"";
   position:absolute;
   left:0;right:0;bottom:14px;
   height:3px;
   border-radius:99px;
-  background:#22c55e;
+  background:#16a34a;
 }
 .kg-topbar-actions{
   display:flex;
@@ -1652,13 +1653,13 @@ try{
   gap:14px;
 }
 .kg-theme-btn{
-  width:48px;
-  height:48px;
+  width:40px;
+  height:40px;
   border-radius:11px;
   border:1px solid rgba(226,232,240,.32);
   background:rgba(255,255,255,.06);
   color:#f8fafc;
-  font-size:25px;
+  font-size:21px;
   cursor:pointer;
 }
 .kg-mobile-nav-toggle{
@@ -1847,9 +1848,12 @@ html, body,
 .kg-info-section{max-width:1408px;margin:0 auto 32px;padding:34px;background:#fff;border:1px solid #e5e7eb;border-radius:20px;box-shadow:0 10px 25px rgba(15,23,42,.05)}
 .kg-info-heading{text-align:center;max-width:720px;margin:0 auto 26px}.kg-info-heading h2{margin:0 0 8px;font-size:30px;letter-spacing:-.7px;color:#111827}.kg-info-heading p{margin:0;color:#667085;line-height:1.55}
 .kg-faq-list{display:grid;gap:10px;max-width:980px;margin:0 auto}.kg-faq-item{border:1px solid #e3e8ef;border-radius:13px;background:#fbfcfe;overflow:hidden}.kg-faq-question{width:100%;display:flex;align-items:center;justify-content:space-between;gap:16px;padding:18px 20px;border:0;background:transparent;color:#182230;text-align:left;font:inherit;font-weight:850;cursor:pointer}.kg-faq-icon{color:#16a34a;font-size:22px;line-height:1;transition:transform .2s ease}.kg-faq-item.is-open .kg-faq-icon{transform:rotate(45deg)}.kg-faq-answer{max-height:0;overflow:hidden;transition:max-height .24s ease,padding .24s ease;padding:0 20px;color:#667085;line-height:1.6}.kg-faq-item.is-open .kg-faq-answer{max-height:220px;padding:0 20px 18px}
+.kg-dyk-search{max-width:760px;margin:0 auto 26px}.kg-dyk-search label{display:block;margin-bottom:8px;color:#27334a;font-size:14px;font-weight:850}.kg-dyk-search input{width:100%;min-height:46px;padding:0 15px;border:1px solid #d5dde6;border-radius:12px;background:#fff;color:#172033;font:inherit;outline:none}.kg-dyk-search input:focus{border-color:#16a34a;box-shadow:0 0 0 3px rgba(22,163,74,.1)}.kg-dyk-search-status{min-height:20px;margin:8px 0 0;color:#667085;font-size:13px}.kg-dyk-search-empty{grid-column:1/-1;padding:20px;border:1px dashed #cbd5e1;border-radius:14px;color:#667085;text-align:center}.kg-dyk-category[hidden],.kg-dyk-category li[hidden],.kg-dyk-more[hidden]{display:none!important}.kg-dyk-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;max-width:1120px;margin:0 auto}.kg-dyk-category{padding:20px;border:1px solid #e3e8ef;border-radius:14px;background:#f8fafc}.kg-dyk-category h3{margin:0 0 13px;color:#172033;font-size:18px}.kg-dyk-category ul{display:grid;gap:10px;margin:0;padding:0;list-style:none}.kg-dyk-category li{position:relative;padding-left:21px;color:#667085;font-size:14px;line-height:1.55}.kg-dyk-category li::before{content:"✓";position:absolute;left:0;color:#16a34a;font-weight:900}.kg-dyk-question{display:block;margin-bottom:3px;color:#27334a;font-size:14px;font-weight:850}.kg-dyk-answer{display:block;color:#667085;font-size:13px;line-height:1.5}.kg-dyk-guide-link{display:inline-block;margin-top:5px;color:#15803d;font-size:13px;font-weight:850;text-decoration:none}.kg-dyk-guide-link:hover{text-decoration:underline}.kg-dyk-more{margin-top:13px}.kg-dyk-more summary{display:inline-flex;align-items:center;gap:6px;cursor:pointer;color:#159447;font-size:14px;font-weight:850;list-style:none}.kg-dyk-more summary::-webkit-details-marker{display:none}.kg-dyk-more summary::after{content:"⌄";font-size:17px;line-height:1;transition:transform .18s ease}.kg-dyk-more[open] summary::after{transform:rotate(180deg)}.kg-dyk-less{display:none}.kg-dyk-more[open] .kg-dyk-more-label{display:none}.kg-dyk-more[open] .kg-dyk-less{display:inline}.kg-dyk-extra{margin-top:13px!important;padding-top:13px!important;border-top:1px solid #e3e8ef}
+.kg-dyk-imei-card{max-width:760px;margin:0 auto 26px;padding:18px 20px;border:1px solid #e3e8ef;border-radius:14px;background:#f8fafc}.kg-dyk-imei-card h3{margin:0 0 6px;color:#172033;font-size:19px}.kg-dyk-imei-card>p{margin:0;color:#667085;font-size:14px;line-height:1.55}.kg-dyk-imei-form{display:grid;gap:9px;margin-top:14px}.kg-dyk-imei-form label{color:#27334a;font-size:13px;font-weight:850}.kg-dyk-imei-form input{width:100%;min-height:44px;padding:0 14px;border:1px solid #d5dde6;border-radius:11px;background:#fff;color:#172033;font:inherit;outline:none}.kg-dyk-imei-form input:focus{border-color:#16a34a;box-shadow:0 0 0 3px rgba(22,163,74,.1)}.kg-dyk-imei-button{display:flex;align-items:center;justify-content:center;min-height:44px;border-radius:11px;background:#087a37;color:#fff;font-size:14px;font-weight:850;text-decoration:none}.kg-dyk-imei-button:not(.is-disabled):hover{background:#06672e}.kg-dyk-imei-button.is-disabled{opacity:.5;pointer-events:none;cursor:not-allowed}.kg-dyk-imei-helper,.kg-dyk-imei-privacy{margin-top:10px!important;font-size:13px!important}.kg-dyk-imei-privacy{color:#475467!important}
 .kg-contact-layout{display:grid;grid-template-columns:minmax(0,.82fr) minmax(0,1.18fr);gap:28px;max-width:980px;margin:0 auto}.kg-contact-card{padding:22px;border-radius:15px;background:#f8fafc;border:1px solid #e5e7eb}.kg-contact-card h3{margin:0 0 12px;color:#111827;font-size:19px}.kg-contact-card p{margin:0 0 14px;color:#667085;line-height:1.6}.kg-contact-card a,.kg-contact-message a{color:#15803d;font-weight:850;text-decoration:none}.kg-contact-meta{display:grid;gap:12px}.kg-contact-form{display:grid;grid-template-columns:1fr 1fr;gap:14px}.kg-contact-field{display:grid;gap:7px}.kg-contact-field.full{grid-column:1/-1}.kg-contact-field label{font-size:13px;font-weight:800;color:#475467}.kg-contact-field input,.kg-contact-field textarea{width:100%;border:1px solid #d5dde6;border-radius:11px;padding:12px;background:#fff;color:#101828;font:inherit;outline:none}.kg-contact-field textarea{min-height:126px;resize:vertical}.kg-contact-field input:focus,.kg-contact-field textarea:focus{border-color:#16a34a;box-shadow:0 0 0 3px rgba(22,163,74,.1)}.kg-contact-error{min-height:16px;color:#dc2626;font-size:12px}.kg-contact-submit{grid-column:1/-1;justify-self:start;border:0;border-radius:10px;padding:13px 20px;background:#0b9a3c;color:#fff;font:inherit;font-weight:900;cursor:pointer}.kg-contact-submit:hover{background:#087c31}.kg-contact-message{grid-column:1/-1;margin:0;color:#176b38;font-size:13px;line-height:1.5}
 html[data-theme="dark"],html[data-theme="dark"] body{background:#0d1522!important;color:#e8eef8}html[data-theme="dark"] body{background:linear-gradient(180deg,#101a2a,#0d1522)!important}html[data-theme="dark"] .kg-approved-topbar{background:#101a2b!important;border-color:#28364a!important}html[data-theme="dark"] .kg-brand,html[data-theme="dark"] .kg-brand-main,html[data-theme="dark"] .kg-brand small,html[data-theme="dark"] .kg-main-nav a{color:#edf3fb!important}html[data-theme="dark"] .kg-theme-btn{background:#182337!important;border-color:#33445d!important;color:#f8d467!important}html[data-theme="dark"] #viewHome,html[data-theme="dark"] #viewHome:not(.category-selected),html[data-theme="dark"] .app-view{background:#0d1522!important;color:#e8eef8}html[data-theme="dark"] #viewHome:not(.category-selected) .kg-approved-card,html[data-theme="dark"] #viewHome:not(.category-selected) .kg-approved-card.active,html[data-theme="dark"] #viewHome:not(.category-selected) .kg-approved-card[data-category],html[data-theme="dark"] #viewHome:not(.category-selected) .kg-product-art,html[data-theme="dark"] #viewHome:not(.category-selected) .kg-approved-card .kg-product-art,html[data-theme="dark"] #viewHome:not(.category-selected) .kg-product-art img,html[data-theme="dark"] #viewHome:not(.category-selected) .kg-card-cta,html[data-theme="dark"] #viewHome:not(.category-selected) .trustbar,html[data-theme="dark"] .panel,html[data-theme="dark"] .selected-category-bar,html[data-theme="dark"] .bottom-features,html[data-theme="dark"] .kg-info-section,html[data-theme="dark"] .standalone-card{background:#172235!important;border-color:#2d3c52!important;color:#e8eef8!important}html[data-theme="dark"] .hero p,html[data-theme="dark"] .kg-approved-hero p,html[data-theme="dark"] .category-sub,html[data-theme="dark"] .feature,html[data-theme="dark"] .feature small,html[data-theme="dark"] .calc-help,html[data-theme="dark"] .info-strip,html[data-theme="dark"] .generic-note{color:#aebbd0!important}html[data-theme="dark"] .hero h1,html[data-theme="dark"] .kg-approved-card .category-name,html[data-theme="dark"] .section-title,html[data-theme="dark"] .field label,html[data-theme="dark"] .price-line,html[data-theme="dark"] .factors h3{color:#edf3fb!important}html[data-theme="dark"] #viewHome.category-selected select,html[data-theme="dark"] #viewHome.category-selected input,html[data-theme="dark"] select,html[data-theme="dark"] input,html[data-theme="dark"] textarea,html[data-theme="dark"] .option{background:#111c2d!important;border-color:#34445b!important;color:#e8eef8!important}html[data-theme="dark"] .option.active{background:#133b2b!important;border-color:#22c55e!important;color:#d9fbe6!important}html[data-theme="dark"] .price-card{background:#0b1320!important}html[data-theme="dark"] .sell-card,html[data-theme="dark"] .trust{background:#132233!important;border-color:#2e5260!important}html[data-theme="dark"] .kg-faq-item,html[data-theme="dark"] .kg-contact-card{background:#111c2d!important;border-color:#2d3c52!important}html[data-theme="dark"] .kg-info-heading h2,html[data-theme="dark"] .kg-faq-question,html[data-theme="dark"] .kg-contact-card h3,html[data-theme="dark"] .kg-contact-field label{color:#edf3fb!important}html[data-theme="dark"] .kg-info-heading p,html[data-theme="dark"] .kg-faq-answer,html[data-theme="dark"] .kg-contact-card p{color:#b7c3d5!important}
 html[data-theme="dark"]{--kg-dark-text:#f1f5f9;--kg-dark-muted:#b8c4d4;--kg-dark-surface:#172235;--kg-dark-border:#2d3c52;--kg-dark-input:#111c2d}
+html[data-theme="dark"] .kg-dyk-search label{color:#edf3fb!important}html[data-theme="dark"] .kg-dyk-search input{background:#111c2d!important;border-color:#2d3c52!important;color:#edf3fb!important}html[data-theme="dark"] .kg-dyk-search-status,html[data-theme="dark"] .kg-dyk-search-empty{color:#b7c3d5!important}html[data-theme="dark"] .kg-dyk-search-empty{border-color:#2d3c52!important}html[data-theme="dark"] .kg-dyk-category,html[data-theme="dark"] .kg-dyk-imei-card{background:#111c2d!important;border-color:#2d3c52!important}html[data-theme="dark"] .kg-dyk-category h3,html[data-theme="dark"] .kg-dyk-question,html[data-theme="dark"] .kg-dyk-imei-card h3,html[data-theme="dark"] .kg-dyk-imei-form label{color:#edf3fb!important}html[data-theme="dark"] .kg-dyk-category li,html[data-theme="dark"] .kg-dyk-answer,html[data-theme="dark"] .kg-dyk-imei-card>p{color:#b7c3d5!important}html[data-theme="dark"] .kg-dyk-imei-form input{background:#0d1522!important;border-color:#2d3c52!important;color:#edf3fb!important}html[data-theme="dark"] .kg-dyk-imei-privacy{color:#b7c3d5!important}html[data-theme="dark"] .kg-dyk-guide-link{color:#4ade80!important}html[data-theme="dark"] .kg-dyk-extra{border-color:#2d3c52!important}
 html[data-theme="dark"] #viewHome .kg-approved-hero h1,html[data-theme="dark"] #viewHome .kg-approved-card .category-name,html[data-theme="dark"] #viewHome.category-selected .section-title,html[data-theme="dark"] #viewHome.category-selected .field label,html[data-theme="dark"] #viewHome .price-line,html[data-theme="dark"] #viewHome .factors h3,html[data-theme="dark"] .view-header h1,html[data-theme="dark"] .how-card h3,html[data-theme="dark"] .about-card strong,html[data-theme="dark"] .about-motto{color:var(--kg-dark-text)!important}
 html[data-theme="dark"] #viewHome .kg-approved-hero p,html[data-theme="dark"] #viewHome .kg-approved-card .category-sub,html[data-theme="dark"] #viewHome .kg-approved-card .kg-card-cta,html[data-theme="dark"] #viewHome .calc-help,html[data-theme="dark"] #viewHome .factor,html[data-theme="dark"] #viewHome .factor-empty,html[data-theme="dark"] #viewHome .trust p,html[data-theme="dark"] #viewHome .sell-card p,html[data-theme="dark"] #viewHome .selected-category-bar,html[data-theme="dark"] .view-header p,html[data-theme="dark"] .how-card p,html[data-theme="dark"] .about-card p{color:var(--kg-dark-muted)!important}
 html[data-theme="dark"] #viewHome:not(.category-selected) .kg-approved-card,html[data-theme="dark"] #viewHome:not(.category-selected) .kg-approved-card.active,html[data-theme="dark"] #viewHome:not(.category-selected) .kg-card-cta,html[data-theme="dark"] #viewHome .panel,html[data-theme="dark"] #viewHome .selected-category-bar,html[data-theme="dark"] .how-card,html[data-theme="dark"] .about-card{background:var(--kg-dark-surface)!important;border-color:var(--kg-dark-border)!important}
@@ -1860,6 +1864,7 @@ html[data-theme="dark"] .kg-approved-topbar{background:#071426!important;border-
 html[data-theme="dark"] .kg-brand-main span,html[data-theme="dark"] .kg-main-nav a.active{color:#22c55e!important}
 html[data-theme="dark"] .kg-main-nav a:not(.active):hover{color:#d9fbe6!important}
 @media(max-width:720px){.kg-info-section{margin:0 12px 22px;padding:24px 16px}.kg-info-heading h2{font-size:25px}.kg-contact-layout{grid-template-columns:1fr;gap:16px}.kg-contact-form{grid-template-columns:1fr}.kg-contact-field.full{grid-column:auto}.kg-contact-submit,.kg-contact-message{grid-column:auto}.kg-faq-question{padding:16px}.kg-faq-item.is-open .kg-faq-answer{padding:0 16px 16px}}
+@media(max-width:720px){.kg-dyk-grid{grid-template-columns:1fr}.kg-dyk-category{padding:17px}.kg-dyk-category li{font-size:13px}}
 </style>
 
 </head>
@@ -1874,7 +1879,6 @@ html[data-theme="dark"] .kg-main-nav a:not(.active):hover{color:#d9fbe6!importan
     </a>
 
     <nav class="kg-main-nav" aria-label="Ana menü">
-      <a href="#" class="active" data-nav="home" onclick="kgGoHome(); return false;">Ana Sayfa</a>
       <a href="#" data-nav="phone" onclick="kgGoCategory('phone'); return false;">Telefon</a>
       <a href="#" data-nav="tablet" onclick="kgGoCategory('tablet'); return false;">Tablet</a>
       <a href="#" data-nav="computer" onclick="kgGoCategory('computer'); return false;">Bilgisayar</a>
@@ -1883,6 +1887,7 @@ html[data-theme="dark"] .kg-main-nav a:not(.active):hover{color:#d9fbe6!importan
       <a href="#" data-nav="about" onclick="showView && showView('about'); return false;">Hakkımızda</a>
       <a href="#" data-nav="faq" onclick="kgGoSection('sss'); return false;">SSS</a>
       <a href="#" data-nav="contact" onclick="kgGoSection('iletisim'); return false;">İletişim</a>
+      <a href="#" data-nav="didYouKnow" onclick="showView('didYouKnow'); return false;">BİLGİ MERKEZİ</a>
     </nav>
 
     <div class="kg-topbar-actions">
@@ -2111,6 +2116,36 @@ html[data-theme="dark"] .kg-main-nav a:not(.active):hover{color:#d9fbe6!importan
     <div class="feature">🎁 %100 ücretsiz<small>Kayıt olmadan kullan</small></div>
   </div>
 </main>
+
+<section class="app-view kg-info-section kg-did-you-know-page" id="viewDidYouKnow" aria-labelledby="didYouKnowTitle">
+  <div class="kg-info-heading">
+    <h2 id="didYouKnowTitle">Bunları Biliyor Muydunuz?</h2>
+    <p>Cihazınızı kullanırken ve ikinci el değerini değerlendirirken işinize yarayabilecek kısa notlar.</p>
+  </div>
+  <div class="kg-dyk-search">
+    <label for="didYouKnowSearch">Bilgi Merkezi'nde ara</label>
+    <input id="didYouKnowSearch" type="search" autocomplete="off" placeholder="Örn. sıfırlama, IMEI, pil sağlığı, ekran görüntüsü">
+    <p class="kg-dyk-search-status" id="didYouKnowSearchStatus" aria-live="polite"></p>
+  </div>
+  <section class="kg-dyk-imei-card" aria-labelledby="didYouKnowImeiTitle">
+    <h3 id="didYouKnowImeiTitle">IMEI Sorgulama</h3>
+    <p>Telefonunuzun kayıt ve kayıp/çalıntı durumunu resmi BTK / e-Devlet hizmeti üzerinden kontrol edin.</p>
+    <div class="kg-dyk-imei-form">
+      <label for="didYouKnowImeiInput">15 haneli IMEI numarası</label>
+      <input id="didYouKnowImeiInput" type="text" inputmode="numeric" autocomplete="off" maxlength="15" placeholder="Örn. 123456789012345" aria-describedby="didYouKnowImeiHint">
+      <a id="didYouKnowImeiButton" class="kg-dyk-imei-button is-disabled" href="https://www.turkiye.gov.tr/imei-sorgulama" target="_blank" rel="noopener noreferrer" aria-disabled="true">BTK / e-Devlet’te IMEI Sorgula</a>
+    </div>
+    <p class="kg-dyk-imei-helper" id="didYouKnowImeiHint">IMEI numaranızı öğrenmek için telefonunuzun arama ekranına *#06# yazabilirsiniz. Çift SIM / eSIM cihazlarda birden fazla IMEI bulunabilir.</p>
+    <p class="kg-dyk-imei-privacy">🔒 KaçaGider IMEI numaranızı kaydetmez. Sorgulama resmi BTK / e-Devlet hizmeti üzerinden yapılır.</p>
+  </section>
+  <div class="kg-dyk-grid">
+    <article class="kg-dyk-category"><h3>Telefon</h3><ul><li data-guide-topic="Ekran görüntüsü nasıl alınır?">Ekran görüntüsü nasıl alınır?</li><li data-guide-topic="Telefon nasıl yeniden başlatılır?">Telefon nasıl yeniden başlatılır?</li><li data-guide-topic="Telefon nasıl sıfırlanır?">Telefon nasıl sıfırlanır?</li><li data-guide-topic="IMEI / BTK sorgulama nasıl yapılır?">IMEI / BTK sorgulama nasıl yapılır? <a class="kg-dyk-guide-link" href="/rehber/telefon/imei-sorgulama/">Detaylı IMEI ve BTK sorgulama rehberini gör →</a></li><li data-guide-topic="Pil sağlığı nasıl kontrol edilir?">Pil sağlığı nasıl kontrol edilir?</li></ul><details class="kg-dyk-more"><summary><span class="kg-dyk-more-label">+ 15 bilgi daha</span><span class="kg-dyk-less">Daha az göster</span></summary><ul class="kg-dyk-extra"><li data-guide-topic="Fabrika ayarlarına nasıl dönülür?">Fabrika ayarlarına nasıl dönülür?</li><li data-guide-topic="Telefon nasıl yedeklenir?">Telefon nasıl yedeklenir?</li><li data-guide-topic="Depolama alanı nasıl boşaltılır?">Depolama alanı nasıl boşaltılır?</li><li data-guide-topic="Telefon neden yavaşlar?">Telefon neden yavaşlar?</li><li data-guide-topic="Telefon neden ısınır?">Telefon neden ısınır?</li><li data-guide-topic="Şarj neden çabuk biter?">Şarj neden çabuk biter?</li><li data-guide-topic="Telefon şarj olmuyorsa ne yapılır?">Telefon şarj olmuyorsa ne yapılır?</li><li data-guide-topic="Telefon suya düşerse ne yapılır?">Telefon suya düşerse ne yapılır?</li><li data-guide-topic="SIM PIN kodu nasıl değiştirilir?">SIM PIN kodu nasıl değiştirilir?</li><li data-guide-topic="eSIM nedir ve nasıl kullanılır?">eSIM nedir ve nasıl kullanılır?</li><li data-guide-topic="Ekran kilidi nasıl değiştirilir?">Ekran kilidi nasıl değiştirilir?</li><li data-guide-topic="Telefon satmadan önce ne yapılmalıdır?">Telefon satmadan önce ne yapılmalıdır?</li><li data-guide-topic="iCloud hesabından nasıl çıkış yapılır?">iCloud hesabından nasıl çıkış yapılır?</li><li data-guide-topic="Google hesabından nasıl çıkış yapılır?">Google hesabından nasıl çıkış yapılır?</li><li data-guide-topic="Garanti durumu nasıl kontrol edilir?">Garanti durumu nasıl kontrol edilir?</li></ul></details></article>
+    <article class="kg-dyk-category"><h3>Tablet</h3><ul><li data-guide-topic="Ekran görüntüsü nasıl alınır?">Ekran görüntüsü nasıl alınır?</li><li data-guide-topic="Tablet nasıl yeniden başlatılır?">Tablet nasıl yeniden başlatılır?</li><li data-guide-topic="Tablet nasıl sıfırlanır?">Tablet nasıl sıfırlanır?</li><li data-guide-topic="Tablet nasıl yedeklenir?">Tablet nasıl yedeklenir?</li><li data-guide-topic="Depolama alanı nasıl boşaltılır?">Depolama alanı nasıl boşaltılır?</li></ul><details class="kg-dyk-more"><summary><span class="kg-dyk-more-label">+ 10 bilgi daha</span><span class="kg-dyk-less">Daha az göster</span></summary><ul class="kg-dyk-extra"><li data-guide-topic="Fabrika ayarlarına nasıl dönülür?">Fabrika ayarlarına nasıl dönülür?</li><li data-guide-topic="Tablet neden yavaşlar?">Tablet neden yavaşlar?</li><li data-guide-topic="Tablet neden ısınır?">Tablet neden ısınır?</li><li data-guide-topic="Pil neden çabuk biter?">Pil neden çabuk biter?</li><li data-guide-topic="Tablet şarj olmuyorsa ne yapılır?">Tablet şarj olmuyorsa ne yapılır?</li><li data-guide-topic="Ekran dönmüyorsa ne yapılır?">Ekran dönmüyorsa ne yapılır?</li><li data-guide-topic="Wi-Fi bağlantı sorunu nasıl çözülür?">Wi-Fi bağlantı sorunu nasıl çözülür?</li><li data-guide-topic="Tablet satmadan önce ne yapılmalıdır?">Tablet satmadan önce ne yapılmalıdır?</li><li data-guide-topic="Hesaplardan nasıl çıkış yapılır?">Hesaplardan nasıl çıkış yapılır?</li><li data-guide-topic="Pil sağlığı nasıl korunur?">Pil sağlığı nasıl korunur?</li></ul></details></article>
+    <article class="kg-dyk-category"><h3>Bilgisayar</h3><ul><li data-guide-topic="Windows bilgisayar nasıl sıfırlanır?">Windows bilgisayar nasıl sıfırlanır?</li><li data-guide-topic="Mac nasıl sıfırlanır?">Mac nasıl sıfırlanır?</li><li data-guide-topic="Bilgisayar nasıl yedeklenir?">Bilgisayar nasıl yedeklenir?</li><li data-guide-topic="Bilgisayar neden yavaşlar?">Bilgisayar neden yavaşlar?</li><li data-guide-topic="Disk alanı nasıl boşaltılır?">Disk alanı nasıl boşaltılır?</li></ul><details class="kg-dyk-more"><summary><span class="kg-dyk-more-label">+ 13 bilgi daha</span><span class="kg-dyk-less">Daha az göster</span></summary><ul class="kg-dyk-extra"><li data-guide-topic="Bilgisayar neden ısınır?">Bilgisayar neden ısınır?</li><li data-guide-topic="SSD sağlığı nasıl kontrol edilir?">SSD sağlığı nasıl kontrol edilir?</li><li data-guide-topic="Pil sağlığı nasıl kontrol edilir?">Pil sağlığı nasıl kontrol edilir?</li><li data-guide-topic="Bilgisayar açılmıyorsa ne yapılır?">Bilgisayar açılmıyorsa ne yapılır?</li><li data-guide-topic="Wi-Fi sorunu nasıl çözülür?">Wi-Fi sorunu nasıl çözülür?</li><li data-guide-topic="Ekran görüntüsü nasıl alınır?">Ekran görüntüsü nasıl alınır?</li><li data-guide-topic="Windows ekran görüntüsü nasıl alınır?">Windows ekran görüntüsü nasıl alınır?</li><li data-guide-topic="Mac ekran görüntüsü nasıl alınır?">Mac ekran görüntüsü nasıl alınır?</li><li data-guide-topic="Bilgisayar satmadan önce ne yapılmalıdır?">Bilgisayar satmadan önce ne yapılmalıdır?</li><li data-guide-topic="Fabrika ayarlarına nasıl dönülür?">Fabrika ayarlarına nasıl dönülür?</li><li data-guide-topic="Windows sürümü nasıl öğrenilir?">Windows sürümü nasıl öğrenilir?</li><li data-guide-topic="macOS sürümü nasıl öğrenilir?">macOS sürümü nasıl öğrenilir?</li><li data-guide-topic="RAM miktarı nasıl öğrenilir?">RAM miktarı nasıl öğrenilir?</li></ul></details></article>
+    <article class="kg-dyk-category"><h3>Akıllı Saat</h3><ul><li data-guide-topic="Akıllı saat nasıl sıfırlanır?">Akıllı saat nasıl sıfırlanır?</li><li data-guide-topic="Akıllı saat nasıl yeniden başlatılır?">Akıllı saat nasıl yeniden başlatılır?</li><li data-guide-topic="Telefonla nasıl eşleştirilir?">Telefonla nasıl eşleştirilir?</li><li data-guide-topic="Telefon eşleşmesi nasıl kaldırılır?">Telefon eşleşmesi nasıl kaldırılır?</li><li data-guide-topic="Apple Watch nasıl sıfırlanır?">Apple Watch nasıl sıfırlanır?</li></ul><details class="kg-dyk-more"><summary><span class="kg-dyk-more-label">+ 10 bilgi daha</span><span class="kg-dyk-less">Daha az göster</span></summary><ul class="kg-dyk-extra"><li data-guide-topic="Galaxy Watch nasıl sıfırlanır?">Galaxy Watch nasıl sıfırlanır?</li><li data-guide-topic="Ekran görüntüsü nasıl alınır?">Ekran görüntüsü nasıl alınır?</li><li data-guide-topic="Pil ömrü nasıl uzatılır?">Pil ömrü nasıl uzatılır?</li><li data-guide-topic="Saat şarj olmuyorsa ne yapılır?">Saat şarj olmuyorsa ne yapılır?</li><li data-guide-topic="Bildirimler gelmiyorsa ne yapılır?">Bildirimler gelmiyorsa ne yapılır?</li><li data-guide-topic="Akıllı saat satmadan önce ne yapılmalıdır?">Akıllı saat satmadan önce ne yapılmalıdır?</li><li data-guide-topic="Fabrika ayarlarına nasıl dönülür?">Fabrika ayarlarına nasıl dönülür?</li><li data-guide-topic="Yazılım güncellemesi nasıl yapılır?">Yazılım güncellemesi nasıl yapılır?</li><li data-guide-topic="Su kilidi nedir?">Su kilidi nedir?</li><li data-guide-topic="Kayıp akıllı saat nasıl bulunur?">Kayıp akıllı saat nasıl bulunur?</li></ul></details></article>
+    <article class="kg-dyk-category"><h3>Oyun Konsolu</h3><ul><li data-guide-topic="PlayStation nasıl sıfırlanır?">PlayStation nasıl sıfırlanır?</li><li data-guide-topic="Xbox nasıl sıfırlanır?">Xbox nasıl sıfırlanır?</li><li data-guide-topic="Nintendo Switch nasıl sıfırlanır?">Nintendo Switch nasıl sıfırlanır?</li><li data-guide-topic="Konsol nasıl yeniden başlatılır?">Konsol nasıl yeniden başlatılır?</li><li data-guide-topic="Depolama alanı nasıl boşaltılır?">Depolama alanı nasıl boşaltılır?</li></ul><details class="kg-dyk-more"><summary><span class="kg-dyk-more-label">+ 10 bilgi daha</span><span class="kg-dyk-less">Daha az göster</span></summary><ul class="kg-dyk-extra"><li data-guide-topic="Fabrika ayarlarına nasıl dönülür?">Fabrika ayarlarına nasıl dönülür?</li><li data-guide-topic="Oyunlar nasıl yedeklenir?">Oyunlar nasıl yedeklenir?</li><li data-guide-topic="Kayıtlı oyun verileri nasıl yedeklenir?">Kayıtlı oyun verileri nasıl yedeklenir?</li><li data-guide-topic="Kontrolcü nasıl eşleştirilir?">Kontrolcü nasıl eşleştirilir?</li><li data-guide-topic="Kontrolcü bağlantı sorunu nasıl çözülür?">Kontrolcü bağlantı sorunu nasıl çözülür?</li><li data-guide-topic="Konsol internete bağlanmıyorsa ne yapılır?">Konsol internete bağlanmıyorsa ne yapılır?</li><li data-guide-topic="Konsol neden ısınır?">Konsol neden ısınır?</li><li data-guide-topic="Konsol satmadan önce ne yapılmalıdır?">Konsol satmadan önce ne yapılmalıdır?</li><li data-guide-topic="Hesap konsoldan nasıl kaldırılır?">Hesap konsoldan nasıl kaldırılır?</li><li data-guide-topic="Sistem yazılımı nasıl güncellenir?">Sistem yazılımı nasıl güncellenir?</li></ul></details></article>
+  </div>
+</section>
 
 <section class="app-view kg-info-section" id="viewFaq" aria-labelledby="faqTitle">
     <div class="kg-info-heading">
@@ -2954,6 +2989,7 @@ function showView(name, btn){
     faq:"viewFaq",
     contact:"viewContact",
     how:"viewHow",
+    didYouKnow:"viewDidYouKnow",
     about:"viewAbout",
     history:"viewHistory",
     sell:"viewSell"
@@ -3010,6 +3046,7 @@ function showView(name, btn){
   }
 
   if(name==="about") setActiveNav("about");
+  if(name==="didYouKnow") setActiveNav("didYouKnow");
   if(name==="faq") setActiveNav("faq");
   if(name==="contact") setActiveNav("contact");
 
@@ -3735,6 +3772,193 @@ document.addEventListener("DOMContentLoaded", function(){
       else message.style.color="";
     });
   }
+})();
+</script>
+
+<script id="kg-information-center-answers">
+(function(){
+  const answers={
+    "Ekran görüntüsü nasıl alınır?":"iPhone'da yan düğme ile ses açma tuşuna, Android'de ise genellikle güç ile ses kısma tuşuna kısa basın. Tuşlar ve kısayollar modele göre değişebilir.",
+    "Telefon nasıl yeniden başlatılır?":"Güç düğmesini basılı tutup yeniden başlat seçeneğini kullanın. iPhone modellerinde yan düğme ve ses düğmelerinden biri birlikte kullanılabilir.",
+    "Telefon nasıl sıfırlanır?":"Ayarlar içindeki Sıfırla veya Fabrika ayarlarına dön bölümünü kullanın. İşlem kişisel verileri silebileceği için önce yedek alın.",
+    "IMEI / BTK sorgulama nasıl yapılır?":"Telefonunuzun IMEI numarasını arama ekranına *#06# yazarak öğrenebilirsiniz. Kayıt ve kayıp/çalıntı durumunu resmi BTK/e-Devlet IMEI Sorgulama hizmetinden kontrol edin.",
+    "Pil sağlığı nasıl kontrol edilir?":"iPhone'da Ayarlar > Pil > Pil Sağlığı bölümünü açın. Android'de menü adı üreticiye ve yazılım sürümüne göre değişebilir.",
+    "Fabrika ayarlarına nasıl dönülür?":"Ayarlar içinden sıfırlama veya tüm içerikleri silme seçeneğini bulun. Bu işlem verileri silebilir; önce yedek ve hesap çıkışı yapın.",
+    "Telefon nasıl yedeklenir?":"iPhone'u iCloud'a veya bilgisayara, Android telefonu ise Google hesabına ya da üreticinin yedekleme aracına yedekleyin.",
+    "Depolama alanı nasıl boşaltılır?":"Kullanmadığınız uygulamaları, indirilen dosyaları ve büyük videoları kaldırın. Ayarlar içindeki depolama bölümü en çok yer kaplayan öğeleri gösterir.",
+    "Telefon neden yavaşlar?":"Dolu depolama, arka planda çalışan uygulamalar veya eski yazılım performansı etkileyebilir. Boş alan açıp yazılım güncellemesini kontrol edin.",
+    "Telefon neden ısınır?":"Şarj, oyun, uzun kamera kullanımı veya zayıf çekim geçici ısınmaya neden olabilir. Aşırı ısınma sürerse kullanımı durdurup teknik destek alın.",
+    "Şarj neden çabuk biter?":"Yüksek ekran parlaklığı, arka plan uygulamaları ve yıpranmış pil tüketimi artırabilir. Pil kullanım ekranından yoğun tüketen uygulamaları kontrol edin.",
+    "Telefon şarj olmuyorsa ne yapılır?":"Kablo, adaptör ve şarj girişini güvenli şekilde kontrol edin; farklı, uyumlu bir aksesuar deneyin. Sorun sürerse teknik servis gerekebilir.",
+    "Telefon suya düşerse ne yapılır?":"Cihazı kapatın, şarja takmayın ve portlara sıcak hava uygulamayın. Sıvı hasarı riski için mümkün olan kısa sürede yetkili veya uzman servise başvurun.",
+    "SIM PIN kodu nasıl değiştirilir?":"Ayarlar içindeki SIM veya mobil ağ güvenliği bölümünden PIN değiştirme seçeneğini bulun. Yanlış denemeler SIM kartı kilitleyebilir.",
+    "eSIM nedir ve nasıl kullanılır?":"eSIM, fiziksel kart yerine cihaz içine tanımlanan dijital hattır. Operatörünüzün verdiği QR kodu veya uygulama ile etkinleştirilir; destek modele göre değişir.",
+    "Ekran kilidi nasıl değiştirilir?":"Ayarlar içindeki güvenlik veya Face ID/Touch ID ve Parola bölümünden yeni parola ya da ekran kilidi yöntemi belirleyin.",
+    "Telefon satmadan önce ne yapılmalıdır?":"Önce yedek alın, Apple veya Google hesabından çıkış yapın, cihaz bulma özelliğini kapatın ve ardından fabrika ayarlarına dönün.",
+    "iCloud hesabından nasıl çıkış yapılır?":"Ayarlar'da adınıza dokunup en alttaki Çıkış Yap seçeneğini kullanın. Çıkış sırasında Apple Hesabı parolanız istenebilir.",
+    "Google hesabından nasıl çıkış yapılır?":"Ayarlar > Hesaplar bölümünden Google hesabınızı seçip kaldırın. Cihazı satacaksanız bu işlemi sıfırlamadan önce yapın.",
+    "Garanti durumu nasıl kontrol edilir?":"Fatura, e-fatura veya üreticinin seri numarası sorgulama sayfasını kontrol edin. Kapsam ve süre satıcıya ya da ürüne göre değişebilir.",
+    "Tablet nasıl yeniden başlatılır?":"Güç düğmesini basılı tutup yeniden başlat seçeneğini kullanın. Yanıt vermiyorsa modelin zorla yeniden başlatma tuş kombinasyonunu üreticiden doğrulayın.",
+    "Tablet nasıl sıfırlanır?":"Ayarlar içindeki Sıfırla veya Fabrika ayarlarına dön seçeneğini kullanın. Uygulamalar ve kişisel veriler silinebileceği için önce yedek alın.",
+    "Tablet nasıl yedeklenir?":"iPad'i iCloud'a veya bilgisayara, Android tableti ise Google hesabına ya da üretici yedekleme aracına yedekleyin.",
+    "Tablet neden yavaşlar?":"Depolama alanının dolu olması, çok sayıda açık uygulama veya eski yazılım performansı düşürebilir. Boş alan açıp güncellemeleri kontrol edin.",
+    "Tablet neden ısınır?":"Şarj, oyun, uzun video kullanımı veya sıcak ortam geçici ısınmaya yol açabilir. Aşırı ısınma devam ederse kullanımı bırakıp destek alın.",
+    "Pil neden çabuk biter?":"Yüksek parlaklık, arka plan uygulamaları ve pilin yaşlanması tüketimi artırabilir. Pil kullanım ekranından gereksiz uygulamaları sınırlayın.",
+    "Tablet şarj olmuyorsa ne yapılır?":"Uyumlu kablo ve adaptörü, şarj girişini ve prizi kontrol edin. Sorun sürerse port veya pil için teknik servis gerekebilir.",
+    "Ekran dönmüyorsa ne yapılır?":"Hızlı ayarlardan ekran döndürme kilidinin kapalı olduğundan emin olun. Uygulama veya model desteği de ekranın yönünü etkileyebilir.",
+    "Wi-Fi bağlantı sorunu nasıl çözülür?":"Wi-Fi'yi kapatıp açın, ağı unutup yeniden bağlanın ve modemi kontrol edin. Sorun devam ederse ağ ayarlarını sıfırlama seçeneğini dikkatle değerlendirin.",
+    "Tablet satmadan önce ne yapılmalıdır?":"Verileri yedekleyin, hesaplardan çıkış yapın, cihaz bulma kilitlerini kaldırın ve fabrika ayarlarına dönün.",
+    "Hesaplardan nasıl çıkış yapılır?":"Ayarlar içindeki hesaplar bölümünden bağlı hesapları seçip kaldırın. Menü adları işletim sistemi ve sürüme göre değişebilir.",
+    "Pil sağlığı nasıl korunur?":"Cihazı aşırı sıcak ortamdan uzak tutun, uyumlu şarj ekipmanı kullanın ve uzun süre tamamen boş halde bırakmayın.",
+    "Windows bilgisayar nasıl sıfırlanır?":"Ayarlar > Sistem > Kurtarma bölümünden Bu bilgisayarı sıfırla seçeneğini kullanın. Dosyaları koruma seçeneği olsa bile önce yedek alın.",
+    "Mac nasıl sıfırlanır?":"macOS Kurtarma modundan Diski Silme ve macOS'i yeniden yükleme adımlarını kullanabilirsiniz. İşlem öncesi Time Machine veya başka bir yedek alın.",
+    "Bilgisayar nasıl yedeklenir?":"Önemli dosyaları harici diske veya buluta kopyalayın. Windows'ta Dosya Geçmişi, Mac'te Time Machine gibi araçlar kullanılabilir.",
+    "Bilgisayar neden yavaşlar?":"Başlangıç uygulamaları, dolu disk, güncel olmayan yazılım veya donanım sorunları etkili olabilir. Görev Yöneticisi veya Etkinlik Monitörü ile yoğun işlemleri kontrol edin.",
+    "Disk alanı nasıl boşaltılır?":"Geçici dosyaları, kullanılmayan uygulamaları ve büyük dosyaları kaldırın. Windows Depolama ve macOS Depolama Yönetimi bölümleri yardımcı olur.",
+    "Bilgisayar neden ısınır?":"Yoğun uygulamalar, tıkanmış havalandırma veya sıcak ortam ısınmaya yol açabilir. Havalandırmayı açık tutun; sorun sürerse servis kontrolü gerekebilir.",
+    "SSD sağlığı nasıl kontrol edilir?":"Üreticinin tanılama aracını veya işletim sisteminin disk denetim araçlarını kullanın. Kritik hata uyarısında verilerinizi hemen yedekleyin.",
+    "Bilgisayar açılmıyorsa ne yapılır?":"Güç kablosu, adaptör ve priz bağlantısını kontrol edin; harici aksesuarları çıkarıp tekrar deneyin. Sorun sürerse teknik servis gerekebilir.",
+    "Wi-Fi sorunu nasıl çözülür?":"Wi-Fi'yi kapatıp açın, ağı unutup yeniden bağlanın ve modemi kontrol edin. Sorun sürerse ağ ayarlarını veya üretici desteğini değerlendirin.",
+    "Windows ekran görüntüsü nasıl alınır?":"Windows'ta Windows + Shift + S ile alan seçerek, Print Screen ile tam ekran görüntüsü alabilirsiniz. Kısayollar sürüme göre değişebilir.",
+    "Mac ekran görüntüsü nasıl alınır?":"Mac'te Command + Shift + 3 tam ekranı, Command + Shift + 4 ise seçili alanı yakalar.",
+    "Bilgisayar satmadan önce ne yapılmalıdır?":"Dosyaları yedekleyin, hesaplardan çıkış yapın, lisans ve kişisel bilgileri kaldırın; ardından işletim sistemini güvenli şekilde sıfırlayın.",
+    "Windows sürümü nasıl öğrenilir?":"Ayarlar > Sistem > Hakkında bölümünden veya winver komutuyla Windows sürümünü görebilirsiniz.",
+    "macOS sürümü nasıl öğrenilir?":"Ekranın sol üstündeki Apple menüsünden Bu Mac Hakkında seçeneğini açın.",
+    "RAM miktarı nasıl öğrenilir?":"Windows'ta Ayarlar > Sistem > Hakkında, Mac'te Bu Mac Hakkında bölümünde bellek miktarı görünür.",
+    "Akıllı saat nasıl sıfırlanır?":"Saatin Ayarlar menüsündeki Sıfırla seçeneğini kullanın. Menü adı marka ve modele göre değişebilir; önce eşleşme ve verileri kontrol edin.",
+    "Akıllı saat nasıl yeniden başlatılır?":"Genellikle yan düğme veya güç menüsünden yeniden başlat seçeneğini kullanın. Donmuş cihazlarda üreticinin zorla yeniden başlatma adımını doğrulayın.",
+    "Telefonla nasıl eşleştirilir?":"Saat uygulamasını açıp ekrandaki eşleştirme adımlarını izleyin. Bluetooth ve gerekli uygulama izinleri açık olmalıdır.",
+    "Telefon eşleşmesi nasıl kaldırılır?":"Saat uygulamasından eşleşmeyi kaldırın; bu işlem çoğu modelde saati sıfırlayabilir. Satış öncesinde hesabınızdan da kaldırın.",
+    "Apple Watch nasıl sıfırlanır?":"Saatte Ayarlar > Genel > Sıfırla yolunu kullanabilir veya iPhone'daki Watch uygulamasından eşleşmeyi kaldırabilirsiniz.",
+    "Galaxy Watch nasıl sıfırlanır?":"Saat ayarlarından Sıfırla seçeneğini veya Galaxy Wearable uygulamasını kullanın. Adımlar model ve yazılım sürümüne göre değişebilir.",
+    "Pil ömrü nasıl uzatılır?":"Ekran parlaklığını ve gereksiz bildirimleri azaltın; kullanmadığınız bağlantıları kapatın. Pil tasarrufu seçenekleri markaya göre değişir.",
+    "Saat şarj olmuyorsa ne yapılır?":"Şarj pedi ve adaptörün uyumlu olduğundan, temas yüzeylerinin temiz olduğundan emin olun. Sorun devam ederse servis desteği gerekebilir.",
+    "Bildirimler gelmiyorsa ne yapılır?":"Telefon ve saat arasındaki Bluetooth bağlantısını, uygulama izinlerini ve bildirim ayarlarını kontrol edin.",
+    "Akıllı saat satmadan önce ne yapılmalıdır?":"Telefon eşleşmesini kaldırın, hesaptan çıkın ve saati fabrika ayarlarına döndürün. Veri kaybını önlemek için gerekli bilgileri önce yedekleyin.",
+    "Yazılım güncellemesi nasıl yapılır?":"Saatin ayarlarındaki Yazılım Güncelleme bölümünü veya eşleştirilmiş telefon uygulamasını kullanın. Şarj seviyesi ve bağlantı gereksinimleri modele göre değişir.",
+    "Su kilidi nedir?":"Bazı saatlerde ekranın yanlış dokunmalarını önleyen moddur. Apple Watch gibi desteklenen modellerde su tahliyesi işleviyle birlikte kullanılabilir.",
+    "Kayıp akıllı saat nasıl bulunur?":"Eşleştirilmiş telefonun bulma uygulamasından son konumu veya ses çaldırma seçeneğini kontrol edin. Bu özellik marka ve ayarlara bağlıdır.",
+    "PlayStation nasıl sıfırlanır?":"Ayarlar içindeki Başlatma veya Sistem Yazılımı bölümünden sıfırlama seçeneğini kullanın. Kayıtlar ve hesap verileri silinebileceği için önce yedekleyin.",
+    "Xbox nasıl sıfırlanır?":"Ayarlar > Sistem > Konsol bilgileri içinden Konsolu sıfırla seçeneğini kullanın. Oyunları koruma seçeneği olsa da kayıtları yedeklemek güvenlidir.",
+    "Nintendo Switch nasıl sıfırlanır?":"Sistem Ayarları > Sistem > Biçimlendirme Seçenekleri bölümünü kontrol edin. Hesap ve kayıt verileri için Nintendo'nun güncel yönergelerini doğrulayın.",
+    "Konsol nasıl yeniden başlatılır?":"Güç menüsünden yeniden başlatmayı seçin; yanıt vermiyorsa güç düğmesini birkaç saniye basılı tutun. Süre modele göre değişebilir.",
+    "Oyunlar nasıl yedeklenir?":"Dijital oyunlar genellikle hesapla ilişkilidir; kayıt verileri ise bulut veya harici depolama desteğine göre yedeklenebilir.",
+    "Kayıtlı oyun verileri nasıl yedeklenir?":"Konsolun bulut kayıt veya desteklenen harici depolama seçeneklerini kontrol edin. PlayStation ve Xbox'ta abonelik gereksinimleri değişebilir.",
+    "Kontrolcü nasıl eşleştirilir?":"Konsolun eşleştirme modunu açın ve kontrolcünün eşleştirme düğmesini kullanın. Kabloyla bağlama seçeneği modele göre bulunabilir.",
+    "Kontrolcü bağlantı sorunu nasıl çözülür?":"Kontrolcüyü şarj edin, yeniden eşleştirin ve konsolu yeniden başlatın. Sorun devam ederse kablo veya donanım kontrolü gerekebilir.",
+    "Konsol internete bağlanmıyorsa ne yapılır?":"Ağ ayarlarını ve modemi kontrol edin; ağı unutup yeniden bağlanmayı deneyin. Sunucu kesintileri de bağlantıyı etkileyebilir.",
+    "Konsol neden ısınır?":"Uzun oyun oturumları, kapalı alan ve tozlu havalandırma ısınmayı artırabilir. Konsolu iyi havalandırılan bir yerde kullanın.",
+    "Konsol satmadan önce ne yapılmalıdır?":"Kayıtları yedekleyin, hesapları kaldırın, cihazı sıfırlayın ve aksesuarları kontrol edin. Sıfırlama kişisel verileri siler.",
+    "Hesap konsoldan nasıl kaldırılır?":"Kullanıcı veya hesap ayarlarından hesabınızı seçip kaldırın. Satış öncesi konsolu sıfırlamak ek bir güvenlik adımıdır.",
+    "Sistem yazılımı nasıl güncellenir?":"Konsolun Ayarlar > Sistem veya Güncelleme bölümünden güncellemeleri kontrol edin. İnternet bağlantısı ve yeterli depolama gerekebilir."
+  };
+  const center=document.getElementById("viewDidYouKnow");
+  if(!center) return;
+  const imeiInput=document.getElementById("didYouKnowImeiInput");
+  const imeiButton=document.getElementById("didYouKnowImeiButton");
+  if(imeiInput && imeiButton){
+    const updateImeiButton=function(){
+      imeiInput.value=imeiInput.value.replace(/\D/g,"").slice(0,15);
+      const valid=imeiInput.value.length===15;
+      imeiButton.classList.toggle("is-disabled",!valid);
+      imeiButton.setAttribute("aria-disabled",String(!valid));
+      imeiButton.tabIndex=valid ? 0 : -1;
+    };
+    imeiInput.addEventListener("input",updateImeiButton);
+    imeiButton.addEventListener("click",function(event){
+      if(imeiButton.getAttribute("aria-disabled")==="true") event.preventDefault();
+    });
+    updateImeiButton();
+  }
+  const guideLinks={
+    "Telefon":{"Ekran görüntüsü nasıl alınır?":"/rehber/android/android-ekran-goruntusu-nasil-alinir/","Telefon nasıl yeniden başlatılır?":"/rehber/android/android-yeniden-baslatma/","Telefon nasıl sıfırlanır?":"/rehber/android/android-telefon-nasil-sifirlanir/","IMEI / BTK sorgulama nasıl yapılır?":"/rehber/telefon/imei-sorgulama/","Telefon nasıl yedeklenir?":"/rehber/android/android-telefon-yedekleme/","Depolama alanı nasıl boşaltılır?":"/rehber/android/android-depolama-nasil-bosaltirilir/","Telefon satmadan önce ne yapılmalıdır?":"/rehber/android/android-telefon-satmadan-once/","iCloud hesabından nasıl çıkış yapılır?":"/rehber/ios/iphone-satmadan-once-ne-yapilmali/"},
+    "Tablet":{"Ekran görüntüsü nasıl alınır?":"/rehber/ipados/ipad-ekran-goruntusu/","Tablet nasıl sıfırlanır?":"/rehber/ipados/ipad-nasil-sifirlanir/","Tablet nasıl yedeklenir?":"/rehber/ipados/ipad-yedekleme/","Depolama alanı nasıl boşaltılır?":"/rehber/ipados/ipad-depolama-bosaltma/"},
+    "Bilgisayar":{"Windows bilgisayar nasıl sıfırlanır?":"/rehber/windows/windows-nasil-sifirlanir/","Mac nasıl sıfırlanır?":"/rehber/macos/mac-nasil-sifirlanir/","Bilgisayar nasıl yedeklenir?":"/rehber/windows/windows-bilgisayar-yedekleme/","Disk alanı nasıl boşaltılır?":"/rehber/windows/windows-disk-alani-bosaltma/","Windows ekran görüntüsü nasıl alınır?":"/rehber/windows/windows-ekran-goruntusu/","Mac ekran görüntüsü nasıl alınır?":"/rehber/macos/mac-ekran-goruntusu/","Windows sürümü nasıl öğrenilir?":"/rehber/windows/windows-surumu-nasil-ogrenilir/","macOS sürümü nasıl öğrenilir?":"/rehber/macos/macos-surumu-nasil-ogrenilir/"},
+    "Akıllı Saat":{"Apple Watch nasıl sıfırlanır?":"/rehber/watchos/apple-watch-nasil-sifirlanir/","Akıllı saat nasıl yeniden başlatılır?":"/rehber/watchos/apple-watch-yeniden-baslatma/","Telefonla nasıl eşleştirilir?":"/rehber/watchos/apple-watch-eslestirme/","Galaxy Watch nasıl sıfırlanır?":"/rehber/wear-os/galaxy-watch-nasil-sifirlanir/","Galaxy Watch nasıl yeniden başlatılır?":"/rehber/wear-os/galaxy-watch-yeniden-baslatma/"},
+    "Oyun Konsolu":{"PlayStation nasıl sıfırlanır?":"/rehber/playstation/playstation-nasil-sifirlanir/","Xbox nasıl sıfırlanır?":"/rehber/xbox/xbox-nasil-sifirlanir/","Nintendo Switch nasıl sıfırlanır?":"/rehber/nintendo/nintendo-switch-nasil-sifirlanir/","Kontrolcü nasıl eşleştirilir?":"/rehber/playstation/playstation-kol-eslestirme/","Depolama alanı nasıl boşaltılır?":"/rehber/playstation/playstation-depolama-bosaltma/"}
+  };
+  center.querySelectorAll("[data-guide-topic]").forEach(function(item){
+    const topic=item.dataset.guideTopic;
+    const question=document.createElement("strong");
+    const answer=document.createElement("span");
+    question.className="kg-dyk-question";
+    answer.className="kg-dyk-answer";
+    question.textContent=topic;
+    answer.textContent=answers[topic] || "Cihazın Ayarlar veya Sistem bölümünden ilgili seçeneği kontrol edin; menü adları modele ve yazılım sürümüne göre değişebilir.";
+    item.replaceChildren(question,answer);
+    const category=item.closest(".kg-dyk-category")?.querySelector("h3")?.textContent;
+    const url=guideLinks[category]?.[topic];
+    if(url){const link=document.createElement("a");link.className="kg-dyk-guide-link";link.href=url;link.textContent=topic==="IMEI / BTK sorgulama nasıl yapılır?" ? "Detaylı IMEI ve BTK sorgulama rehberini gör →" : "Detaylı anlatımı gör →";item.appendChild(link);}
+  });
+
+  const keywordGroups=[
+    {test:/sıfırla|fabrika ayar|biçimlendirme|başlatma/i, words:"sıfırla sıfırlama sıfırlamak sıfırlanır reset resetleme fabrika ayarı fabrika ayarları format cihazı silme iphone android windows mac playstation xbox nintendo"},
+    {test:/ekran görüntüsü|screenshot/i, words:"ekran görüntüsü ekran resmi screenshot ss ekran fotoğrafı ekran görüntüsü alma"},
+    {test:/pil|şarj/i, words:"pil pil sağlığı batarya batarya sağlığı battery şarj pil ömrü şarj hızlı bitiyor"},
+    {test:/imei|btk|telefon kayıt|kayıt durumu|kayıtlı mı|kaçak telefon|yurtdışı telefon|çalıntı telefon|kayıp telefon/i, words:"imei imei sorgulama btk btk imei telefon kayıt kayıt durumu kayıtlı mı kaçak telefon yurtdışı telefon çalıntı telefon kayıp telefon *#06# imei öğrenme imei numarası seri numarası"},
+    {test:/yeniden başlat/i, words:"yeniden başlatma restart kapat aç güç düğmesi"},
+    {test:/yedek/i, words:"yedek yedekleme backup iCloud Google Drive bulut harici disk"},
+    {test:/depolama|disk alanı|ssd/i, words:"depolama hafıza alan boşaltma yer açma disk ssd kapasite"},
+    {test:/yavaş/i, words:"yavaş kasma donma performans hızlandırma"},
+    {test:/ısın/i, words:"ısınma sıcak aşırı ısınma fan havalandırma"},
+    {test:/wi-fi|internete bağlan/i, words:"wifi wi-fi kablosuz internet bağlantı ağ modem"},
+    {test:/satmadan önce/i, words:"satış satmadan önce ikinci el cihazı satma hesap çıkışı veri silme"},
+    {test:/hesap.*çıkış|iCloud|Google hesabı/i, words:"hesap çıkış yapma iCloud Apple Hesabı Google hesabı cihaz bulma kilit"},
+    {test:/kontrolcü/i, words:"kontrolcü kol gamepad eşleştirme bağlantı"},
+    {test:/sürüm|yazılım güncelleme/i, words:"yazılım güncelleme sistem sürümü update güncel"}
+  ];
+  const normalize=function(value){
+    return String(value||"").toLocaleLowerCase("tr-TR").replace(/ı/g,"i").replace(/ğ/g,"g").replace(/ü/g,"u").replace(/ş/g,"s").replace(/ö/g,"o").replace(/ç/g,"c").replace(/[^a-z0-9*#]+/g," ").trim();
+  };
+  const cards=Array.from(center.querySelectorAll(".kg-dyk-category"));
+  cards.forEach(function(card){
+    const category=card.querySelector("h3")?.textContent||"";
+    card.querySelectorAll("[data-guide-topic]").forEach(function(item){
+      const topic=item.dataset.guideTopic;
+      const answerText=answers[topic]||"";
+      const aliases=keywordGroups.filter(function(group){return group.test.test(topic+" "+answerText);}).map(function(group){return group.words;}).join(" ");
+      item.dataset.search=normalize([category,topic,answerText,aliases,"bilgi merkezi cihaz rehberi"].join(" "));
+    });
+  });
+  const input=document.getElementById("didYouKnowSearch");
+  const status=document.getElementById("didYouKnowSearchStatus");
+  const grid=center.querySelector(".kg-dyk-grid");
+  const empty=document.createElement("p");
+  empty.className="kg-dyk-search-empty";
+  empty.hidden=true;
+  empty.textContent="Bu aramayla eşleşen bilgi bulunamadı.";
+  grid.appendChild(empty);
+  function resetSearch(){
+    cards.forEach(function(card){
+      card.hidden=false;
+      card.querySelectorAll("[data-guide-topic]").forEach(function(item){item.hidden=false;});
+      card.querySelectorAll(".kg-dyk-more").forEach(function(more){more.hidden=false;more.open=false;});
+    });
+    empty.hidden=true;
+    status.textContent="";
+  }
+  function search(){
+    const terms=normalize(input.value).split(/\s+/).filter(Boolean);
+    if(!terms.length){resetSearch();return;}
+    let total=0;
+    cards.forEach(function(card){
+      let cardMatches=0;
+      card.querySelectorAll("[data-guide-topic]").forEach(function(item){
+        const match=terms.every(function(term){return item.dataset.search.includes(term);});
+        item.hidden=!match;
+        if(match){cardMatches++;total++;}
+      });
+      card.hidden=cardMatches===0;
+      card.querySelectorAll(".kg-dyk-more").forEach(function(more){
+        const hasExtraMatch=Array.from(more.querySelectorAll("[data-guide-topic]")).some(function(item){return !item.hidden;});
+        more.hidden=!hasExtraMatch;
+        more.open=hasExtraMatch;
+      });
+    });
+    empty.hidden=total!==0;
+    status.textContent=total ? total+" ilgili bilgi bulundu." : "";
+  }
+  if(input) input.addEventListener("input",search);
 })();
 </script>
 

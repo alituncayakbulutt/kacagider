@@ -10,4 +10,6 @@ seo_breadcrumbs: [{"label":"Ana Sayfa","url":"/"},{"label":"Telefon","url":"/tel
 seo_links: [{"label":"128 GB","url":"/telefon/google/pixel-7/128gb/"},{"label":"256 GB","url":"/telefon/google/pixel-7/256gb/"}]
 seo_links_heading: "Pixel 7 seçenekleri"
 seo_canonical: "https://kacagider.com.tr/telefon/google/pixel-7/"
+seo_guides_heading: "Pixel 7 ile ilgili sık arananlar"
+seo_guides: [{"label":"Pixel 7 nasıl sıfırlanır?","url":"/rehber/android/android-telefon-nasil-sifirlanir/"},{"label":"Pixel 7 ekran görüntüsü nasıl alınır?","url":"/rehber/android/android-ekran-goruntusu-nasil-alinir/"},{"label":"Pixel 7 IMEI nasıl öğrenilir?","url":"/rehber/android/android-imei-nasil-ogrenilir/"}]
 ---

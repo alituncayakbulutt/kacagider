@@ -10,4 +10,6 @@ seo_breadcrumbs: [{"label":"Ana Sayfa","url":"/"},{"label":"Telefon","url":"/tel
 seo_links: [{"label":"128 GB","url":"/telefon/samsung/galaxy-a26/128gb/"},{"label":"256 GB","url":"/telefon/samsung/galaxy-a26/256gb/"}]
 seo_links_heading: "Galaxy A26 seçenekleri"
 seo_canonical: "https://kacagider.com.tr/telefon/samsung/galaxy-a26/"
+seo_guides_heading: "Galaxy A26 ile ilgili sık arananlar"
+seo_guides: [{"label":"Galaxy A26 nasıl sıfırlanır?","url":"/rehber/android/android-telefon-nasil-sifirlanir/"},{"label":"Galaxy A26 ekran görüntüsü nasıl alınır?","url":"/rehber/android/android-ekran-goruntusu-nasil-alinir/"},{"label":"Galaxy A26 IMEI nasıl öğrenilir?","url":"/rehber/android/android-imei-nasil-ogrenilir/"}]
 ---

@@ -10,4 +10,6 @@ seo_breadcrumbs: [{"label":"Ana Sayfa","url":"/"},{"label":"Bilgisayar","url":"/
 seo_links: [{"label":"512 GB","url":"/bilgisayar/acer/predator-helios-neo-16/512gb/"},{"label":"1 TB","url":"/bilgisayar/acer/predator-helios-neo-16/1tb/"}]
 seo_links_heading: "Predator Helios Neo 16 seçenekleri"
 seo_canonical: "https://kacagider.com.tr/bilgisayar/acer/predator-helios-neo-16/"
+seo_guides_heading: "Predator Helios Neo 16 ile ilgili sık arananlar"
+seo_guides: [{"label":"Predator Helios Neo 16 nasıl sıfırlanır?","url":"/rehber/windows/windows-nasil-sifirlanir/"},{"label":"Predator Helios Neo 16 nasıl yedeklenir?","url":"/rehber/windows/windows-bilgisayar-yedekleme/"}]
 ---

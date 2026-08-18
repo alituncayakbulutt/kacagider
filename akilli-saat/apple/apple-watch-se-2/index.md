@@ -10,4 +10,6 @@ seo_breadcrumbs: [{"label":"Ana Sayfa","url":"/"},{"label":"Akıllı Saat","url"
 seo_links: [{"label":"40 mm","url":"/akilli-saat/apple/apple-watch-se-2/40mm/"},{"label":"44 mm","url":"/akilli-saat/apple/apple-watch-se-2/44mm/"}]
 seo_links_heading: "Apple Watch SE 2 seçenekleri"
 seo_canonical: "https://kacagider.com.tr/akilli-saat/apple/apple-watch-se-2/"
+seo_guides_heading: "Apple Watch SE 2 ile ilgili sık arananlar"
+seo_guides: [{"label":"Apple Watch SE 2 nasıl sıfırlanır?","url":"/rehber/watchos/apple-watch-nasil-sifirlanir/"}]
 ---

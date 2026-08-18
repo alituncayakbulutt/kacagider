@@ -10,4 +10,6 @@ seo_breadcrumbs: [{"label":"Ana Sayfa","url":"/"},{"label":"Tablet","url":"/tabl
 seo_links: [{"label":"256 GB","url":"/tablet/xiaomi/poco-pad-x1/256gb/"},{"label":"512 GB","url":"/tablet/xiaomi/poco-pad-x1/512gb/"}]
 seo_links_heading: "POCO Pad X1 seçenekleri"
 seo_canonical: "https://kacagider.com.tr/tablet/xiaomi/poco-pad-x1/"
+seo_guides_heading: "POCO Pad X1 ile ilgili sık arananlar"
+seo_guides: [{"label":"POCO Pad X1 nasıl sıfırlanır?","url":"/rehber/android/android-tablet-nasil-sifirlanir/"},{"label":"POCO Pad X1 ekran görüntüsü nasıl alınır?","url":"/rehber/android/android-tablet-ekran-goruntusu/"}]
 ---

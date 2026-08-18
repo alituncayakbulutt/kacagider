@@ -10,4 +10,6 @@ seo_breadcrumbs: [{"label":"Ana Sayfa","url":"/"},{"label":"Tablet","url":"/tabl
 seo_links: [{"label":"64 GB","url":"/tablet/apple/ipad-air-5-nesil/64gb/"},{"label":"256 GB","url":"/tablet/apple/ipad-air-5-nesil/256gb/"}]
 seo_links_heading: "iPad Air (5. nesil) seçenekleri"
 seo_canonical: "https://kacagider.com.tr/tablet/apple/ipad-air-5-nesil/"
+seo_guides_heading: "iPad Air (5. nesil) ile ilgili sık arananlar"
+seo_guides: [{"label":"iPad Air (5. nesil) nasıl sıfırlanır?","url":"/rehber/ipados/ipad-nasil-sifirlanir/"},{"label":"iPad Air (5. nesil) ekran görüntüsü nasıl alınır?","url":"/rehber/ipados/ipad-ekran-goruntusu/"}]
 ---

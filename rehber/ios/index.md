@@ -1,0 +1,13 @@
+---
+layout: "seo"
+seo_title: "iOS Rehberleri | KaçaGider"
+seo_description: "iOS cihazlar için kısa ve uygulanabilir rehberler."
+seo_h1: "iOS Rehberleri"
+seo_intro: "iOS cihazlarda sık kullanılan işlemler için rehberler."
+seo_context_heading: "iOS rehberleri"
+seo_context: "Menü adları sürüme ve cihaza göre değişebilir."
+seo_breadcrumbs: [{"label":"Ana Sayfa","url":"/"},{"label":"Rehber","url":"/rehber/"},{"label":"iOS","url":"/rehber/ios/"}]
+seo_links: [{"label":"iPhone Nasıl Sıfırlanır?","url":"/rehber/ios/iphone-nasil-sifirlanir/"},{"label":"iPhone Ekran Görüntüsü Nasıl Alınır?","url":"/rehber/ios/iphone-ekran-goruntusu-nasil-alinir/"},{"label":"iPhone Nasıl Yeniden Başlatılır?","url":"/rehber/ios/iphone-yeniden-baslatma/"},{"label":"iPhone Pil Sağlığı Nasıl Kontrol Edilir?","url":"/rehber/ios/iphone-pil-sagligi/"},{"label":"iPhone IMEI Numarası Nasıl Öğrenilir?","url":"/rehber/ios/iphone-imei-nasil-ogrenilir/"},{"label":"iPhone Nasıl Yedeklenir?","url":"/rehber/ios/iphone-yedekleme/"},{"label":"iPhone Satmadan Önce Ne Yapılmalı?","url":"/rehber/ios/iphone-satmadan-once-ne-yapilmali/"},{"label":"Face ID Nasıl Sıfırlanır?","url":"/rehber/ios/face-id-nasil-sifirlanir/"}]
+seo_links_heading: "iOS konuları"
+seo_canonical: "https://kacagider.com.tr/rehber/ios/"
+---

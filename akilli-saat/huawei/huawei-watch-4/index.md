@@ -10,4 +10,6 @@ seo_breadcrumbs: [{"label":"Ana Sayfa","url":"/"},{"label":"Akıllı Saat","url"
 seo_links: [{"label":"46 mm","url":"/akilli-saat/huawei/huawei-watch-4/46mm/"}]
 seo_links_heading: "Huawei Watch 4 seçenekleri"
 seo_canonical: "https://kacagider.com.tr/akilli-saat/huawei/huawei-watch-4/"
+seo_guides_heading: "Huawei Watch 4 ile ilgili sık arananlar"
+seo_guides: [{"label":"Huawei Watch 4 nasıl sıfırlanır?","url":"/rehber/wear-os/galaxy-watch-nasil-sifirlanir/"}]
 ---

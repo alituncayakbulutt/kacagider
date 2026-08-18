@@ -10,4 +10,6 @@ seo_breadcrumbs: [{"label":"Ana Sayfa","url":"/"},{"label":"Bilgisayar","url":"/
 seo_links: [{"label":"512 GB","url":"/bilgisayar/monster/tulpar-t7/512gb/"},{"label":"1 TB","url":"/bilgisayar/monster/tulpar-t7/1tb/"}]
 seo_links_heading: "Tulpar T7 seçenekleri"
 seo_canonical: "https://kacagider.com.tr/bilgisayar/monster/tulpar-t7/"
+seo_guides_heading: "Tulpar T7 ile ilgili sık arananlar"
+seo_guides: [{"label":"Tulpar T7 nasıl sıfırlanır?","url":"/rehber/windows/windows-nasil-sifirlanir/"},{"label":"Tulpar T7 nasıl yedeklenir?","url":"/rehber/windows/windows-bilgisayar-yedekleme/"}]
 ---

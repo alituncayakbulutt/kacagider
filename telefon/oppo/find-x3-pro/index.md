@@ -10,4 +10,6 @@ seo_breadcrumbs: [{"label":"Ana Sayfa","url":"/"},{"label":"Telefon","url":"/tel
 seo_links: [{"label":"256 GB","url":"/telefon/oppo/find-x3-pro/256gb/"}]
 seo_links_heading: "Find X3 Pro seçenekleri"
 seo_canonical: "https://kacagider.com.tr/telefon/oppo/find-x3-pro/"
+seo_guides_heading: "Find X3 Pro ile ilgili sık arananlar"
+seo_guides: [{"label":"Find X3 Pro nasıl sıfırlanır?","url":"/rehber/android/android-telefon-nasil-sifirlanir/"},{"label":"Find X3 Pro ekran görüntüsü nasıl alınır?","url":"/rehber/android/android-ekran-goruntusu-nasil-alinir/"},{"label":"Find X3 Pro IMEI nasıl öğrenilir?","url":"/rehber/android/android-imei-nasil-ogrenilir/"}]
 ---

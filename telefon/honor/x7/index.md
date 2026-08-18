@@ -10,4 +10,6 @@ seo_breadcrumbs: [{"label":"Ana Sayfa","url":"/"},{"label":"Telefon","url":"/tel
 seo_links: [{"label":"128 GB","url":"/telefon/honor/x7/128gb/"}]
 seo_links_heading: "X7 seçenekleri"
 seo_canonical: "https://kacagider.com.tr/telefon/honor/x7/"
+seo_guides_heading: "X7 ile ilgili sık arananlar"
+seo_guides: [{"label":"X7 nasıl sıfırlanır?","url":"/rehber/android/android-telefon-nasil-sifirlanir/"},{"label":"X7 ekran görüntüsü nasıl alınır?","url":"/rehber/android/android-ekran-goruntusu-nasil-alinir/"},{"label":"X7 IMEI nasıl öğrenilir?","url":"/rehber/android/android-imei-nasil-ogrenilir/"}]
 ---

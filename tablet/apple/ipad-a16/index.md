@@ -10,4 +10,6 @@ seo_breadcrumbs: [{"label":"Ana Sayfa","url":"/"},{"label":"Tablet","url":"/tabl
 seo_links: [{"label":"128 GB","url":"/tablet/apple/ipad-a16/128gb/"},{"label":"256 GB","url":"/tablet/apple/ipad-a16/256gb/"},{"label":"512 GB","url":"/tablet/apple/ipad-a16/512gb/"}]
 seo_links_heading: "iPad (A16) seçenekleri"
 seo_canonical: "https://kacagider.com.tr/tablet/apple/ipad-a16/"
+seo_guides_heading: "iPad (A16) ile ilgili sık arananlar"
+seo_guides: [{"label":"iPad (A16) nasıl sıfırlanır?","url":"/rehber/ipados/ipad-nasil-sifirlanir/"},{"label":"iPad (A16) ekran görüntüsü nasıl alınır?","url":"/rehber/ipados/ipad-ekran-goruntusu/"}]
 ---

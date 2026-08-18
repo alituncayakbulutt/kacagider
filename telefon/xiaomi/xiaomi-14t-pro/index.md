@@ -10,4 +10,6 @@ seo_breadcrumbs: [{"label":"Ana Sayfa","url":"/"},{"label":"Telefon","url":"/tel
 seo_links: [{"label":"512 GB","url":"/telefon/xiaomi/xiaomi-14t-pro/512gb/"},{"label":"1 TB","url":"/telefon/xiaomi/xiaomi-14t-pro/1tb/"}]
 seo_links_heading: "Xiaomi 14T Pro seçenekleri"
 seo_canonical: "https://kacagider.com.tr/telefon/xiaomi/xiaomi-14t-pro/"
+seo_guides_heading: "Xiaomi 14T Pro ile ilgili sık arananlar"
+seo_guides: [{"label":"Xiaomi 14T Pro nasıl sıfırlanır?","url":"/rehber/android/android-telefon-nasil-sifirlanir/"},{"label":"Xiaomi 14T Pro ekran görüntüsü nasıl alınır?","url":"/rehber/android/android-ekran-goruntusu-nasil-alinir/"},{"label":"Xiaomi 14T Pro IMEI nasıl öğrenilir?","url":"/rehber/android/android-imei-nasil-ogrenilir/"}]
 ---

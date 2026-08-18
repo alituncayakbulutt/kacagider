@@ -10,4 +10,6 @@ seo_breadcrumbs: [{"label":"Ana Sayfa","url":"/"},{"label":"Telefon","url":"/tel
 seo_links: [{"label":"128 GB","url":"/telefon/honor/x9a/128gb/"},{"label":"256 GB","url":"/telefon/honor/x9a/256gb/"}]
 seo_links_heading: "X9a seçenekleri"
 seo_canonical: "https://kacagider.com.tr/telefon/honor/x9a/"
+seo_guides_heading: "X9a ile ilgili sık arananlar"
+seo_guides: [{"label":"X9a nasıl sıfırlanır?","url":"/rehber/android/android-telefon-nasil-sifirlanir/"},{"label":"X9a ekran görüntüsü nasıl alınır?","url":"/rehber/android/android-ekran-goruntusu-nasil-alinir/"},{"label":"X9a IMEI nasıl öğrenilir?","url":"/rehber/android/android-imei-nasil-ogrenilir/"}]
 ---

@@ -10,4 +10,6 @@ seo_breadcrumbs: [{"label":"Ana Sayfa","url":"/"},{"label":"Telefon","url":"/tel
 seo_links: [{"label":"128 GB","url":"/telefon/oneplus/oneplus-11/128gb/"},{"label":"256 GB","url":"/telefon/oneplus/oneplus-11/256gb/"},{"label":"512 GB","url":"/telefon/oneplus/oneplus-11/512gb/"}]
 seo_links_heading: "OnePlus 11 seçenekleri"
 seo_canonical: "https://kacagider.com.tr/telefon/oneplus/oneplus-11/"
+seo_guides_heading: "OnePlus 11 ile ilgili sık arananlar"
+seo_guides: [{"label":"OnePlus 11 nasıl sıfırlanır?","url":"/rehber/android/android-telefon-nasil-sifirlanir/"},{"label":"OnePlus 11 ekran görüntüsü nasıl alınır?","url":"/rehber/android/android-ekran-goruntusu-nasil-alinir/"},{"label":"OnePlus 11 IMEI nasıl öğrenilir?","url":"/rehber/android/android-imei-nasil-ogrenilir/"}]
 ---

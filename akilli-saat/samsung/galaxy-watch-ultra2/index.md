@@ -10,4 +10,6 @@ seo_breadcrumbs: [{"label":"Ana Sayfa","url":"/"},{"label":"Akıllı Saat","url"
 seo_links: [{"label":"47 mm","url":"/akilli-saat/samsung/galaxy-watch-ultra2/47mm/"}]
 seo_links_heading: "Galaxy Watch Ultra2 seçenekleri"
 seo_canonical: "https://kacagider.com.tr/akilli-saat/samsung/galaxy-watch-ultra2/"
+seo_guides_heading: "Galaxy Watch Ultra2 ile ilgili sık arananlar"
+seo_guides: [{"label":"Galaxy Watch Ultra2 nasıl sıfırlanır?","url":"/rehber/wear-os/galaxy-watch-nasil-sifirlanir/"}]
 ---

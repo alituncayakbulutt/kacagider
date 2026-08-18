@@ -10,4 +10,6 @@ seo_breadcrumbs: [{"label":"Ana Sayfa","url":"/"},{"label":"Tablet","url":"/tabl
 seo_links: [{"label":"256 GB","url":"/tablet/huawei/matepad-pro-12-2/256gb/"},{"label":"512 GB","url":"/tablet/huawei/matepad-pro-12-2/512gb/"},{"label":"1 TB","url":"/tablet/huawei/matepad-pro-12-2/1tb/"}]
 seo_links_heading: "MatePad Pro 12.2 seçenekleri"
 seo_canonical: "https://kacagider.com.tr/tablet/huawei/matepad-pro-12-2/"
+seo_guides_heading: "MatePad Pro 12.2 ile ilgili sık arananlar"
+seo_guides: [{"label":"MatePad Pro 12.2 nasıl sıfırlanır?","url":"/rehber/android/android-tablet-nasil-sifirlanir/"},{"label":"MatePad Pro 12.2 ekran görüntüsü nasıl alınır?","url":"/rehber/android/android-tablet-ekran-goruntusu/"}]
 ---

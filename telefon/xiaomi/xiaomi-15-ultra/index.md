@@ -10,4 +10,6 @@ seo_breadcrumbs: [{"label":"Ana Sayfa","url":"/"},{"label":"Telefon","url":"/tel
 seo_links: [{"label":"512 GB","url":"/telefon/xiaomi/xiaomi-15-ultra/512gb/"},{"label":"1 TB","url":"/telefon/xiaomi/xiaomi-15-ultra/1tb/"}]
 seo_links_heading: "Xiaomi 15 Ultra seçenekleri"
 seo_canonical: "https://kacagider.com.tr/telefon/xiaomi/xiaomi-15-ultra/"
+seo_guides_heading: "Xiaomi 15 Ultra ile ilgili sık arananlar"
+seo_guides: [{"label":"Xiaomi 15 Ultra nasıl sıfırlanır?","url":"/rehber/android/android-telefon-nasil-sifirlanir/"},{"label":"Xiaomi 15 Ultra ekran görüntüsü nasıl alınır?","url":"/rehber/android/android-ekran-goruntusu-nasil-alinir/"},{"label":"Xiaomi 15 Ultra IMEI nasıl öğrenilir?","url":"/rehber/android/android-imei-nasil-ogrenilir/"}]
 ---

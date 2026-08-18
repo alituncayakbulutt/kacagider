@@ -10,4 +10,6 @@ seo_breadcrumbs: [{"label":"Ana Sayfa","url":"/"},{"label":"Telefon","url":"/tel
 seo_links: [{"label":"128 GB","url":"/telefon/vivo/y22s/128gb/"}]
 seo_links_heading: "Y22s seçenekleri"
 seo_canonical: "https://kacagider.com.tr/telefon/vivo/y22s/"
+seo_guides_heading: "Y22s ile ilgili sık arananlar"
+seo_guides: [{"label":"Y22s nasıl sıfırlanır?","url":"/rehber/android/android-telefon-nasil-sifirlanir/"},{"label":"Y22s ekran görüntüsü nasıl alınır?","url":"/rehber/android/android-ekran-goruntusu-nasil-alinir/"},{"label":"Y22s IMEI nasıl öğrenilir?","url":"/rehber/android/android-imei-nasil-ogrenilir/"}]
 ---

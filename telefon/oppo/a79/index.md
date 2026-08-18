@@ -10,4 +10,6 @@ seo_breadcrumbs: [{"label":"Ana Sayfa","url":"/"},{"label":"Telefon","url":"/tel
 seo_links: [{"label":"256 GB","url":"/telefon/oppo/a79/256gb/"}]
 seo_links_heading: "A79 seçenekleri"
 seo_canonical: "https://kacagider.com.tr/telefon/oppo/a79/"
+seo_guides_heading: "A79 ile ilgili sık arananlar"
+seo_guides: [{"label":"A79 nasıl sıfırlanır?","url":"/rehber/android/android-telefon-nasil-sifirlanir/"},{"label":"A79 ekran görüntüsü nasıl alınır?","url":"/rehber/android/android-ekran-goruntusu-nasil-alinir/"},{"label":"A79 IMEI nasıl öğrenilir?","url":"/rehber/android/android-imei-nasil-ogrenilir/"}]
 ---

@@ -10,4 +10,6 @@ seo_breadcrumbs: [{"label":"Ana Sayfa","url":"/"},{"label":"Telefon","url":"/tel
 seo_links: [{"label":"128 GB","url":"/telefon/google/pixel-6a/128gb/"}]
 seo_links_heading: "Pixel 6a seçenekleri"
 seo_canonical: "https://kacagider.com.tr/telefon/google/pixel-6a/"
+seo_guides_heading: "Pixel 6a ile ilgili sık arananlar"
+seo_guides: [{"label":"Pixel 6a nasıl sıfırlanır?","url":"/rehber/android/android-telefon-nasil-sifirlanir/"},{"label":"Pixel 6a ekran görüntüsü nasıl alınır?","url":"/rehber/android/android-ekran-goruntusu-nasil-alinir/"},{"label":"Pixel 6a IMEI nasıl öğrenilir?","url":"/rehber/android/android-imei-nasil-ogrenilir/"}]
 ---

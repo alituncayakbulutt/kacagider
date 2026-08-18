@@ -10,4 +10,6 @@ seo_breadcrumbs: [{"label":"Ana Sayfa","url":"/"},{"label":"Telefon","url":"/tel
 seo_links: [{"label":"64 GB","url":"/telefon/oppo/a17/64gb/"}]
 seo_links_heading: "A17 seçenekleri"
 seo_canonical: "https://kacagider.com.tr/telefon/oppo/a17/"
+seo_guides_heading: "A17 ile ilgili sık arananlar"
+seo_guides: [{"label":"A17 nasıl sıfırlanır?","url":"/rehber/android/android-telefon-nasil-sifirlanir/"},{"label":"A17 ekran görüntüsü nasıl alınır?","url":"/rehber/android/android-ekran-goruntusu-nasil-alinir/"},{"label":"A17 IMEI nasıl öğrenilir?","url":"/rehber/android/android-imei-nasil-ogrenilir/"}]
 ---

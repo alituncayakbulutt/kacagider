@@ -10,4 +10,6 @@ seo_breadcrumbs: [{"label":"Ana Sayfa","url":"/"},{"label":"Oyun Konsolu","url":
 seo_links: [{"label":"1 TB","url":"/oyun-konsolu/playstation/playstation-4-pro/1tb/"}]
 seo_links_heading: "PlayStation 4 Pro seçenekleri"
 seo_canonical: "https://kacagider.com.tr/oyun-konsolu/playstation/playstation-4-pro/"
+seo_guides_heading: "PlayStation 4 Pro ile ilgili sık arananlar"
+seo_guides: [{"label":"PlayStation 4 Pro nasıl sıfırlanır?","url":"/rehber/playstation/playstation-nasil-sifirlanir/"}]
 ---

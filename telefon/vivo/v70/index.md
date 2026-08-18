@@ -10,4 +10,6 @@ seo_breadcrumbs: [{"label":"Ana Sayfa","url":"/"},{"label":"Telefon","url":"/tel
 seo_links: [{"label":"256 GB","url":"/telefon/vivo/v70/256gb/"}]
 seo_links_heading: "V70 seçenekleri"
 seo_canonical: "https://kacagider.com.tr/telefon/vivo/v70/"
+seo_guides_heading: "V70 ile ilgili sık arananlar"
+seo_guides: [{"label":"V70 nasıl sıfırlanır?","url":"/rehber/android/android-telefon-nasil-sifirlanir/"},{"label":"V70 ekran görüntüsü nasıl alınır?","url":"/rehber/android/android-ekran-goruntusu-nasil-alinir/"},{"label":"V70 IMEI nasıl öğrenilir?","url":"/rehber/android/android-imei-nasil-ogrenilir/"}]
 ---

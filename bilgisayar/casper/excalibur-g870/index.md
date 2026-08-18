@@ -10,4 +10,6 @@ seo_breadcrumbs: [{"label":"Ana Sayfa","url":"/"},{"label":"Bilgisayar","url":"/
 seo_links: [{"label":"512 GB","url":"/bilgisayar/casper/excalibur-g870/512gb/"},{"label":"1 TB","url":"/bilgisayar/casper/excalibur-g870/1tb/"}]
 seo_links_heading: "Excalibur G870 seçenekleri"
 seo_canonical: "https://kacagider.com.tr/bilgisayar/casper/excalibur-g870/"
+seo_guides_heading: "Excalibur G870 ile ilgili sık arananlar"
+seo_guides: [{"label":"Excalibur G870 nasıl sıfırlanır?","url":"/rehber/windows/windows-nasil-sifirlanir/"},{"label":"Excalibur G870 nasıl yedeklenir?","url":"/rehber/windows/windows-bilgisayar-yedekleme/"}]
 ---

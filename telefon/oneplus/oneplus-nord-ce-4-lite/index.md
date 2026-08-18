@@ -10,4 +10,6 @@ seo_breadcrumbs: [{"label":"Ana Sayfa","url":"/"},{"label":"Telefon","url":"/tel
 seo_links: [{"label":"256 GB","url":"/telefon/oneplus/oneplus-nord-ce-4-lite/256gb/"}]
 seo_links_heading: "OnePlus Nord CE 4 Lite seçenekleri"
 seo_canonical: "https://kacagider.com.tr/telefon/oneplus/oneplus-nord-ce-4-lite/"
+seo_guides_heading: "OnePlus Nord CE 4 Lite ile ilgili sık arananlar"
+seo_guides: [{"label":"OnePlus Nord CE 4 Lite nasıl sıfırlanır?","url":"/rehber/android/android-telefon-nasil-sifirlanir/"},{"label":"OnePlus Nord CE 4 Lite ekran görüntüsü nasıl alınır?","url":"/rehber/android/android-ekran-goruntusu-nasil-alinir/"},{"label":"OnePlus Nord CE 4 Lite IMEI nasıl öğrenilir?","url":"/rehber/android/android-imei-nasil-ogrenilir/"}]
 ---

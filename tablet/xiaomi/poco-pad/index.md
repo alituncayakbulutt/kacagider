@@ -10,4 +10,6 @@ seo_breadcrumbs: [{"label":"Ana Sayfa","url":"/"},{"label":"Tablet","url":"/tabl
 seo_links: [{"label":"256 GB","url":"/tablet/xiaomi/poco-pad/256gb/"}]
 seo_links_heading: "POCO Pad seçenekleri"
 seo_canonical: "https://kacagider.com.tr/tablet/xiaomi/poco-pad/"
+seo_guides_heading: "POCO Pad ile ilgili sık arananlar"
+seo_guides: [{"label":"POCO Pad nasıl sıfırlanır?","url":"/rehber/android/android-tablet-nasil-sifirlanir/"},{"label":"POCO Pad ekran görüntüsü nasıl alınır?","url":"/rehber/android/android-tablet-ekran-goruntusu/"}]
 ---

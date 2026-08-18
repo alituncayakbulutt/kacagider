@@ -10,4 +10,6 @@ seo_breadcrumbs: [{"label":"Ana Sayfa","url":"/"},{"label":"Bilgisayar","url":"/
 seo_links: [{"label":"512 GB","url":"/bilgisayar/acer/swift-go-14/512gb/"},{"label":"1 TB","url":"/bilgisayar/acer/swift-go-14/1tb/"}]
 seo_links_heading: "Swift Go 14 seçenekleri"
 seo_canonical: "https://kacagider.com.tr/bilgisayar/acer/swift-go-14/"
+seo_guides_heading: "Swift Go 14 ile ilgili sık arananlar"
+seo_guides: [{"label":"Swift Go 14 nasıl sıfırlanır?","url":"/rehber/windows/windows-nasil-sifirlanir/"},{"label":"Swift Go 14 nasıl yedeklenir?","url":"/rehber/windows/windows-bilgisayar-yedekleme/"}]
 ---

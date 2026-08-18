@@ -415,7 +415,8 @@ body.fresh-start #selectedCategoryBar{
 
 
 /* Yalnızca SEO sayfalarının breadcrumb ve bağlamsal içeriği. */
-.kg-seo-breadcrumb{max-width:1180px;margin:18px auto 0;padding:0 20px;color:#667085;font-size:13px;line-height:1.5}.kg-seo-breadcrumb a{color:#087a37;text-decoration:none;font-weight:700}.kg-seo-breadcrumb a:hover{text-decoration:underline}.kg-seo-breadcrumb span{margin:0 7px;color:#98a2b3}.kg-seo-context{max-width:1180px;margin:20px auto 0;padding:18px 20px;border:1px solid #dfe7ef;border-radius:14px;background:#fff}.kg-seo-context h2{margin:0 0 8px;font-size:20px;color:#111827}.kg-seo-context p{margin:0;color:#667085;line-height:1.65}.kg-seo-links{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}.kg-seo-links a{border:1px solid #cfe7d8;border-radius:999px;padding:7px 10px;color:#087a37;background:#f4fcf7;text-decoration:none;font-size:13px;font-weight:700}.kg-seo-links a:hover{background:#e7f8ec}@media(max-width:720px){.kg-seo-breadcrumb{padding:0 12px}.kg-seo-context{margin:16px 12px 0;padding:16px}.kg-seo-context h2{font-size:18px}}
+.kg-seo-breadcrumb{max-width:1180px;margin:18px auto 0;padding:0 20px;color:#667085;font-size:13px;line-height:1.5}.kg-seo-breadcrumb a{color:#087a37;text-decoration:none;font-weight:700}.kg-seo-breadcrumb a:hover{text-decoration:underline}.kg-seo-breadcrumb span{margin:0 7px;color:#98a2b3}.kg-seo-context,.kg-seo-guide{max-width:1180px;margin:20px auto 0;padding:18px 20px;border:1px solid #dfe7ef;border-radius:14px;background:#fff}.kg-seo-context h2,.kg-seo-guide h2{margin:0 0 8px;font-size:20px;color:#111827}.kg-seo-context p,.kg-seo-guide p{margin:0;color:#667085;line-height:1.65}.kg-seo-links{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}.kg-seo-links a{border:1px solid #cfe7d8;border-radius:999px;padding:7px 10px;color:#087a37;background:#f4fcf7;text-decoration:none;font-size:13px;font-weight:700}.kg-seo-links a:hover{background:#e7f8ec}.kg-seo-guide-list{margin:12px 0 0;padding-left:20px}.kg-seo-guide-list li+li{margin-top:8px}.kg-seo-guide-list a{color:#087a37;font-weight:700}.kg-seo-guide-note{margin-top:14px;padding:12px 14px;border:1px solid #d5e8ff;border-radius:8px;background:#eef6ff;color:#2864b8}.kg-seo-guide-back{display:inline-block;margin-top:16px;color:#087a37;font-weight:700}@media(max-width:720px){.kg-seo-breadcrumb{padding:0 12px}.kg-seo-context,.kg-seo-guide{margin:16px 12px 0;padding:16px}.kg-seo-context h2,.kg-seo-guide h2{font-size:18px}}
+.kg-imei-checker{max-width:1180px;margin:20px auto 0;padding:18px 20px;border:1px solid #dfe7ef;border-radius:14px;background:#fff}.kg-imei-checker h2{margin:0 0 8px;font-size:20px;color:#111827}.kg-imei-checker p{margin:0;color:#667085;line-height:1.65}.kg-imei-checker-form{display:flex;flex-wrap:wrap;gap:10px;margin-top:14px}.kg-imei-checker-input{min-width:min(100%,300px);height:42px;padding:0 12px;border:1px solid #cfd7e4;border-radius:8px;color:#101828;outline:none}.kg-imei-checker-input:focus{border-color:#5ccf8c;box-shadow:0 0 0 3px rgba(16,185,86,.10)}.kg-imei-checker-button,.kg-imei-official-link{display:inline-flex;align-items:center;justify-content:center;min-height:42px;padding:0 15px;border:0;border-radius:8px;background:#087a37;color:#fff;font:inherit;font-weight:800;text-decoration:none;cursor:pointer}.kg-imei-checker-button:disabled{opacity:.5;cursor:not-allowed}.kg-imei-checker-status{width:100%;min-height:20px;font-size:13px}.kg-imei-checker-privacy{margin-top:12px!important;font-size:13px;color:#475467!important}@media(max-width:720px){.kg-imei-checker{margin:16px 12px 0;padding:16px}.kg-imei-checker h2{font-size:18px}.kg-imei-checker-form>*{width:100%}}
 
 </style>
 
@@ -1658,13 +1659,13 @@ try{
   gap:14px;
 }
 .kg-theme-btn{
-  width:48px;
-  height:48px;
+  width:40px;
+  height:40px;
   border-radius:11px;
   border:1px solid rgba(226,232,240,.32);
   background:rgba(255,255,255,.06);
   color:#f8fafc;
-  font-size:25px;
+  font-size:21px;
   cursor:pointer;
 }
 .kg-mobile-nav-toggle{
@@ -1909,6 +1910,10 @@ html[data-theme="dark"] .kg-main-nav a:not(.active):hover{color:#d9fbe6!importan
     <p>{{ page.seo_intro }}</p>
   </div>
 
+{% if page.seo_guide %}<section class="kg-seo-guide" aria-labelledby="seoGuideContentTitle"><h2 id="seoGuideContentTitle">{{ page.seo_guide_heading | default: "Rehber adımları" }}</h2><p>{{ page.seo_guide_answer }}</p>{% if page.seo_guide_steps %}<ol class="kg-seo-guide-list">{% for step in page.seo_guide_steps %}<li>{{ step }}</li>{% endfor %}</ol>{% endif %}{% if page.seo_guide_note %}<p class="kg-seo-guide-note">{{ page.seo_guide_note }}</p>{% endif %}<a class="kg-seo-guide-back" href="{{ page.seo_guide_return_url }}">{{ page.seo_guide_return_label }}</a></section>{% endif %}
+{% if page.imei_sections %}<section class="kg-seo-guide" aria-label="IMEI sorgulama açıklamaları">{% for section in page.imei_sections %}<section><h2>{{ section.title }}</h2><p>{{ section.text }}</p></section>{% endfor %}<a class="kg-imei-official-link" href="{{ page.imei_official_url }}" target="_blank" rel="noopener noreferrer">BTK / e-Devlet’te IMEI Sorgula</a></section>{% endif %}
+{% if page.imei_checker %}<section class="kg-imei-checker" aria-labelledby="imeiCheckerTitle"><h2 id="imeiCheckerTitle">IMEI numaranız</h2><p>IMEI numarasını yalnızca kendi cihazınızda kontrol edin.</p><div class="kg-imei-checker-form"><input class="kg-imei-checker-input" id="imeiCheckerInput" inputmode="numeric" autocomplete="off" maxlength="15" placeholder="15 haneli IMEI numarası" aria-describedby="imeiCheckerStatus"><button class="kg-imei-checker-button" id="imeiCheckerButton" type="button" disabled>BTK’da Sorgula</button><span class="kg-imei-checker-status" id="imeiCheckerStatus" aria-live="polite"></span></div><p class="kg-imei-checker-privacy">KaçaGider IMEI numaranızı kaydetmez. Sorgulama resmi BTK/e-Devlet hizmeti üzerinden yapılır.</p></section>{% endif %}
+
 
   <section class="home-intro kg-category-section">
     <div class="category-grid kg-approved-category-grid">
@@ -2122,6 +2127,7 @@ html[data-theme="dark"] .kg-main-nav a:not(.active):hover{color:#d9fbe6!importan
   </div>
 
 {% if page.seo_context %}<section class="kg-seo-context" aria-label="Sayfa bilgisi"><h2>{{ page.seo_context_heading }}</h2><p>{{ page.seo_context }}</p>{% if page.seo_links %}<div class="kg-seo-links" aria-label="İlgili sayfalar">{% for link in page.seo_links %}<a href="{{ link.url }}">{{ link.label }}</a>{% endfor %}</div>{% endif %}</section>{% endif %}
+{% if page.seo_guides %}<section class="kg-seo-guide" aria-labelledby="seoGuideTitle"><h2 id="seoGuideTitle">{{ page.seo_guides_heading | default: "Sık Arananlar" }}</h2><ul class="kg-seo-guide-list">{% for guide in page.seo_guides %}<li><a href="{{ guide.url }}">{{ guide.label }}</a></li>{% endfor %}</ul></section>{% endif %}
 </main>
 
 <section class="app-view kg-info-section" id="viewFaq" aria-labelledby="faqTitle">
@@ -3749,6 +3755,26 @@ document.addEventListener("DOMContentLoaded", function(){
   }
 })();
 </script>
+
+{% if page.imei_checker %}<script id="kg-imei-checker">
+(function(){
+  const input=document.getElementById("imeiCheckerInput");
+  const button=document.getElementById("imeiCheckerButton");
+  const status=document.getElementById("imeiCheckerStatus");
+  const officialUrl={{ page.imei_official_url | jsonify }};
+  if(!input || !button || !status) return;
+  const update=function(){
+    input.value=input.value.replace(/\D/g,"").slice(0,15);
+    const valid=input.value.length===15;
+    button.disabled=!valid;
+    status.textContent=input.value.length===0 ? "" : (valid ? "15 hane girildi. Resmi BTK/e-Devlet sayfasını açabilirsiniz." : "IMEI numarası 15 haneli olmalıdır.");
+  };
+  input.addEventListener("input",update);
+  button.addEventListener("click",function(){
+    if(!button.disabled) window.open(officialUrl,"_blank","noopener,noreferrer");
+  });
+})();
+</script>{% endif %}
 
 </body>
 </html>

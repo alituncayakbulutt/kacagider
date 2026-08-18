@@ -10,4 +10,6 @@ seo_breadcrumbs: [{"label":"Ana Sayfa","url":"/"},{"label":"Tablet","url":"/tabl
 seo_links: [{"label":"256 GB","url":"/tablet/apple/ipad-pro-11-inc-m5/256gb/"},{"label":"512 GB","url":"/tablet/apple/ipad-pro-11-inc-m5/512gb/"},{"label":"1 TB","url":"/tablet/apple/ipad-pro-11-inc-m5/1tb/"},{"label":"2 TB","url":"/tablet/apple/ipad-pro-11-inc-m5/2tb/"}]
 seo_links_heading: "iPad Pro 11 inç (M5) seçenekleri"
 seo_canonical: "https://kacagider.com.tr/tablet/apple/ipad-pro-11-inc-m5/"
+seo_guides_heading: "iPad Pro 11 inç (M5) ile ilgili sık arananlar"
+seo_guides: [{"label":"iPad Pro 11 inç (M5) nasıl sıfırlanır?","url":"/rehber/ipados/ipad-nasil-sifirlanir/"},{"label":"iPad Pro 11 inç (M5) ekran görüntüsü nasıl alınır?","url":"/rehber/ipados/ipad-ekran-goruntusu/"}]
 ---

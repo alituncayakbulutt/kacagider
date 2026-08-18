@@ -10,4 +10,6 @@ seo_breadcrumbs: [{"label":"Ana Sayfa","url":"/"},{"label":"Telefon","url":"/tel
 seo_links: [{"label":"256 GB","url":"/telefon/oneplus/oneplus-12r/256gb/"}]
 seo_links_heading: "OnePlus 12R seçenekleri"
 seo_canonical: "https://kacagider.com.tr/telefon/oneplus/oneplus-12r/"
+seo_guides_heading: "OnePlus 12R ile ilgili sık arananlar"
+seo_guides: [{"label":"OnePlus 12R nasıl sıfırlanır?","url":"/rehber/android/android-telefon-nasil-sifirlanir/"},{"label":"OnePlus 12R ekran görüntüsü nasıl alınır?","url":"/rehber/android/android-ekran-goruntusu-nasil-alinir/"},{"label":"OnePlus 12R IMEI nasıl öğrenilir?","url":"/rehber/android/android-imei-nasil-ogrenilir/"}]
 ---

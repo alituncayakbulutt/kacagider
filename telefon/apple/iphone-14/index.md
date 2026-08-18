@@ -10,4 +10,6 @@ seo_breadcrumbs: [{"label":"Ana Sayfa","url":"/"},{"label":"Telefon","url":"/tel
 seo_links: [{"label":"128 GB","url":"/telefon/apple/iphone-14/128gb/"},{"label":"256 GB","url":"/telefon/apple/iphone-14/256gb/"},{"label":"512 GB","url":"/telefon/apple/iphone-14/512gb/"}]
 seo_links_heading: "iPhone 14 seçenekleri"
 seo_canonical: "https://kacagider.com.tr/telefon/apple/iphone-14/"
+seo_guides_heading: "iPhone 14 ile ilgili sık arananlar"
+seo_guides: [{"label":"iPhone 14 nasıl sıfırlanır?","url":"/rehber/ios/iphone-nasil-sifirlanir/"},{"label":"iPhone 14 ekran görüntüsü nasıl alınır?","url":"/rehber/ios/iphone-ekran-goruntusu-nasil-alinir/"},{"label":"iPhone 14 pil sağlığı nasıl kontrol edilir?","url":"/rehber/ios/iphone-pil-sagligi/"}]
 ---
