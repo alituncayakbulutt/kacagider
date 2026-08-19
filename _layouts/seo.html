@@ -216,12 +216,12 @@ select:focus,input:focus{border-color:#5ccf8c;box-shadow:0 0 0 3px rgba(16,185,8
 .app-view.active{display:block}
 .view-shell{max-width:1480px;margin:0 auto;padding:28px 30px 48px}
 .view-header{text-align:center;margin-bottom:24px}
-.view-header h1{font-size:36px;margin:0 0 8px;letter-spacing:-1px}
+.view-header h1,.view-header .view-heading{font-size:36px;margin:0 0 8px;letter-spacing:-1px}
 .view-header p{color:#667085;margin:0 auto;max-width:720px;line-height:1.55}
 .standalone-card{max-width:1000px;margin:0 auto;background:#fff;border:1px solid var(--line);border-radius:17px;padding:26px;box-shadow:0 8px 26px rgba(15,23,42,.06)}
 .standalone-sell{max-width:720px}
 .back-home-btn{border:0;background:#eefbf3;color:#087a37;border-radius:8px;padding:10px 14px;font-weight:850;cursor:pointer;width:auto}
-@media(max-width:720px){.view-shell{padding:20px 12px 38px}.view-header h1{font-size:29px}}
+@media(max-width:720px){.view-shell{padding:20px 12px 38px}.view-header h1,.view-header .view-heading{font-size:29px}}
 
 
 .catalog-summary{margin-top:7px;font-size:11px;color:#087a37;font-weight:750}
@@ -426,6 +426,10 @@ body.fresh-start #selectedCategoryBar{
 /* Yalnızca SEO sayfalarının breadcrumb ve bağlamsal içeriği. */
 .kg-seo-breadcrumb{max-width:1180px;margin:18px auto 0;padding:0 20px;color:#667085;font-size:13px;line-height:1.5}.kg-seo-breadcrumb a{color:#087a37;text-decoration:none;font-weight:700}.kg-seo-breadcrumb a:hover{text-decoration:underline}.kg-seo-breadcrumb span{margin:0 7px;color:#98a2b3}.kg-seo-context,.kg-seo-guide{max-width:1180px;margin:20px auto 0;padding:18px 20px;border:1px solid #dfe7ef;border-radius:14px;background:#fff}.kg-seo-context h2,.kg-seo-guide h2{margin:0 0 8px;font-size:20px;color:#111827}.kg-seo-context p,.kg-seo-guide p{margin:0;color:#667085;line-height:1.65}.kg-seo-links{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}.kg-seo-links a{border:1px solid #cfe7d8;border-radius:999px;padding:7px 10px;color:#087a37;background:#f4fcf7;text-decoration:none;font-size:13px;font-weight:700}.kg-seo-links a:hover{background:#e7f8ec}.kg-seo-guide-list{margin:12px 0 0;padding-left:20px}.kg-seo-guide-list li+li{margin-top:8px}.kg-seo-guide-list a{color:#087a37;font-weight:700}.kg-seo-guide-note{margin-top:14px;padding:12px 14px;border:1px solid #d5e8ff;border-radius:8px;background:#eef6ff;color:#2864b8}.kg-seo-guide-back{display:inline-block;margin-top:16px;color:#087a37;font-weight:700}@media(max-width:720px){.kg-seo-breadcrumb{padding:0 12px}.kg-seo-context,.kg-seo-guide{margin:16px 12px 0;padding:16px}.kg-seo-context h2,.kg-seo-guide h2{font-size:18px}}
 .kg-imei-checker{max-width:1180px;margin:20px auto 0;padding:18px 20px;border:1px solid #dfe7ef;border-radius:14px;background:#fff}.kg-imei-checker h2{margin:0 0 8px;font-size:20px;color:#111827}.kg-imei-checker p{margin:0;color:#667085;line-height:1.65}.kg-imei-checker-form{display:flex;flex-wrap:wrap;gap:10px;margin-top:14px}.kg-imei-checker-input{min-width:min(100%,300px);height:42px;padding:0 12px;border:1px solid #cfd7e4;border-radius:8px;color:#101828;outline:none}.kg-imei-checker-input:focus{border-color:#5ccf8c;box-shadow:0 0 0 3px rgba(16,185,86,.10)}.kg-imei-checker-button,.kg-imei-official-link{display:inline-flex;align-items:center;justify-content:center;min-height:42px;padding:0 15px;border:0;border-radius:8px;background:#087a37;color:#fff;font:inherit;font-weight:800;text-decoration:none;cursor:pointer}.kg-imei-checker-button:disabled{opacity:.5;cursor:not-allowed}.kg-imei-checker-status{width:100%;min-height:20px;font-size:13px}.kg-imei-checker-privacy{margin-top:12px!important;font-size:13px;color:#475467!important}@media(max-width:720px){.kg-imei-checker{margin:16px 12px 0;padding:16px}.kg-imei-checker h2{font-size:18px}.kg-imei-checker-form>*{width:100%}}
+
+
+/* FAZ 1 pilot sayfalarının mevcut kart ve vurgu dilini kullanan ekleri. */
+.kg-seo-cta-wrap{display:flex;justify-content:center;margin:18px 20px 0}.kg-seo-cta{display:inline-flex;align-items:center;justify-content:center;padding:13px 20px;border-radius:12px;background:#0aa34a;color:#fff;font-weight:800;text-decoration:none;box-shadow:0 8px 18px rgba(10,163,74,.16)}.kg-seo-cta:hover{background:#087f3b}.kg-seo-article{max-width:1180px;margin:20px auto 0;padding:22px 20px;border:1px solid #dfe7ef;border-radius:14px;background:#fff}.kg-seo-article-section+.kg-seo-article-section{margin-top:24px;padding-top:24px;border-top:1px solid #e8edf3}.kg-seo-article h2{margin:0 0 9px;font-size:22px;color:#111827}.kg-seo-article h3{margin:0 0 6px;font-size:17px;color:#111827}.kg-seo-article p{margin:0;color:#667085;line-height:1.7}.kg-seo-article ul{margin:12px 0 0;padding-left:20px;color:#667085;line-height:1.7}.kg-seo-faq-item+.kg-seo-faq-item{margin-top:14px}@media(max-width:720px){.kg-seo-cta-wrap{margin:16px 12px 0}.kg-seo-cta{width:100%}.kg-seo-article{margin:16px 12px 0;padding:18px 16px}.kg-seo-article h2{font-size:20px}}
 
 </style>
 
@@ -889,7 +893,7 @@ body{
   letter-spacing:1.2px;
   margin-bottom:12px;
 }
-.about-hero h1{
+.about-hero h1,.about-hero .view-heading{
   margin:0 0 14px;
   max-width:760px;
   font-size:38px;
@@ -969,7 +973,7 @@ body{
 @media(max-width:760px){
   .about-page{margin:20px auto 40px}
   .about-hero{padding:28px 22px}
-  .about-hero h1{font-size:29px}
+  .about-hero h1,.about-hero .view-heading{font-size:29px}
   .about-grid{grid-template-columns:1fr}
 }
 </style>
@@ -1880,6 +1884,7 @@ html[data-theme="dark"] .kg-main-nav a:not(.active):hover{color:#d9fbe6!importan
 
 
 {% if page.seo_breadcrumbs %}<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{% for crumb in page.seo_breadcrumbs %}{"@type":"ListItem","position":{{ forloop.index }},"name":{{ crumb.label | jsonify }},"item":"https://kacagider.com.tr{{ crumb.url }}"}{% unless forloop.last %},{% endunless %}{% endfor %}]}</script>{% endif %}
+{% if page.seo_faqs %}<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{% for faq in page.seo_faqs %}{"@type":"Question","name":{{ faq.question | jsonify }},"acceptedAnswer":{"@type":"Answer","text":{{ faq.answer | jsonify }}}}{% unless forloop.last %},{% endunless %}{% endfor %}]}</script>{% endif %}
 </head>
 <body class="fresh-start">
 
@@ -1917,6 +1922,7 @@ html[data-theme="dark"] .kg-main-nav a:not(.active):hover{color:#d9fbe6!importan
   <div class="hero kg-approved-hero">
     <h1>{{ page.seo_h1 }}</h1>
     <p>{{ page.seo_intro }}</p>
+{% if page.seo_cta %}<div class="kg-seo-cta-wrap"><a class="kg-seo-cta" href="{{ page.seo_cta.url }}">{{ page.seo_cta.label }}</a></div>{% endif %}
   </div>
 
 {% if page.seo_guide %}<section class="kg-seo-guide" aria-labelledby="seoGuideContentTitle"><h2 id="seoGuideContentTitle">{{ page.seo_guide_heading | default: "Rehber adımları" }}</h2><p>{{ page.seo_guide_answer }}</p>{% if page.seo_guide_steps %}<ol class="kg-seo-guide-list">{% for step in page.seo_guide_steps %}<li>{{ step }}</li>{% endfor %}</ol>{% endif %}{% if page.seo_guide_note %}<p class="kg-seo-guide-note">{{ page.seo_guide_note }}</p>{% endif %}<a class="kg-seo-guide-back" href="{{ page.seo_guide_return_url }}">{{ page.seo_guide_return_label }}</a></section>{% endif %}
@@ -2137,6 +2143,8 @@ html[data-theme="dark"] .kg-main-nav a:not(.active):hover{color:#d9fbe6!importan
 
 {% if page.seo_context %}<section class="kg-seo-context" aria-label="Sayfa bilgisi"><h2>{{ page.seo_context_heading }}</h2><p>{{ page.seo_context }}</p>{% if page.seo_links %}<div class="kg-seo-links" aria-label="İlgili sayfalar">{% for link in page.seo_links %}<a href="{{ link.url }}">{{ link.label }}</a>{% endfor %}</div>{% endif %}</section>{% endif %}
 {% if page.seo_guides %}<section class="kg-seo-guide" aria-labelledby="seoGuideTitle"><h2 id="seoGuideTitle">{{ page.seo_guides_heading | default: "Sık Arananlar" }}</h2><ul class="kg-seo-guide-list">{% for guide in page.seo_guides %}<li><a href="{{ guide.url }}">{{ guide.label }}</a></li>{% endfor %}</ul></section>{% endif %}
+{% if page.seo_sections %}<section class="kg-seo-article" aria-label="Sayfa rehberi">{% for section in page.seo_sections %}<article class="kg-seo-article-section"><h2>{{ section.title }}</h2><p>{{ section.text }}</p>{% if section.items %}<ul>{% for item in section.items %}<li>{{ item }}</li>{% endfor %}</ul>{% endif %}</article>{% endfor %}</section>{% endif %}
+{% if page.seo_faqs %}<section class="kg-seo-article" aria-labelledby="seoFaqTitle"><h2 id="seoFaqTitle">Sık Sorulan Sorular</h2>{% for faq in page.seo_faqs %}<article class="kg-seo-faq-item"><h3>{{ faq.question }}</h3><p>{{ faq.answer }}</p></article>{% endfor %}</section>{% endif %}
 </main>
 
 <section class="app-view kg-info-section" id="viewFaq" aria-labelledby="faqTitle">
@@ -2184,7 +2192,7 @@ html[data-theme="dark"] .kg-main-nav a:not(.active):hover{color:#d9fbe6!importan
 <section class="app-view" id="viewHow">
   <div class="view-shell">
     <div class="view-header">
-      <h1>KaçaGider.com.tr nasıl çalışır?</h1>
+      <h2 class="view-heading">KaçaGider.com.tr nasıl çalışır?</h2>
       <p>Ürününün özelliklerini ve kondisyonunu gir; KaçaGider.com.tr mevcut piyasa kayıtlarını ve güvenilir kullanıcı satış sinyallerini değerlendirerek tahmini piyasa değerini hesaplasın.</p>
     </div>
     <div class="standalone-card">
@@ -2206,7 +2214,7 @@ html[data-theme="dark"] .kg-main-nav a:not(.active):hover{color:#d9fbe6!importan
   <div class="about-page">
     <div class="about-hero">
       <span class="about-eyebrow">HAKKIMIZDA</span>
-      <h1>İkinci elde gerçek değeri herkes için daha ulaşılabilir hale getiriyoruz.</h1>
+      <h2 class="view-heading">İkinci elde gerçek değeri herkes için daha ulaşılabilir hale getiriyoruz.</h2>
       <p>KaçaGider.com.tr, ikinci el ürününü satmak isteyen insanların uzun uzun ilan araştırmadan, ürününün piyasa karşılığını daha hızlı ve daha anlaşılır biçimde öğrenebilmesi için kuruldu.</p>
     </div>
 
@@ -2244,7 +2252,7 @@ html[data-theme="dark"] .kg-main-nav a:not(.active):hover{color:#d9fbe6!importan
 <section class="app-view" id="viewHistory">
   <div class="view-shell">
     <div class="view-header">
-      <h1>Fiyat Geçmişi</h1>
+      <h2 class="view-heading">Fiyat Geçmişi</h2>
       <p>Son hesapladığın ürünün Supabase üzerindeki piyasa fiyat kayıtlarını burada inceleyebilirsin.</p>
     </div>
     <div class="standalone-card">
@@ -2266,7 +2274,7 @@ html[data-theme="dark"] .kg-main-nav a:not(.active):hover{color:#d9fbe6!importan
 <section class="app-view" id="viewSell">
   <div class="view-shell">
     <div class="view-header">
-      <h1>Satışını Bildir</h1>
+      <h2 class="view-heading">Satışını Bildir</h2>
       <p>Ürününü sattıysan gerçekleşen satış fiyatını paylaş. Bildirimin kalite kontrolünden geçtikten sonra fiyat motoruna katkı sağlayabilir.</p>
     </div>
     <div class="standalone-card standalone-sell">
