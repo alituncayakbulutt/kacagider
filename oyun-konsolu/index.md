@@ -1,11 +1,11 @@
 ---
 layout: "seo"
-seo_title: "Oyun Konsolu İkinci El Fiyatları 2026 | KaçaGider"
-seo_description: "Oyun Konsolu ikinci el fiyatlarını Türkiye ikinci el piyasası ve ürün kondisyonuna göre KaçaGider ile değerlendirin."
-seo_h1: "Oyun Konsolu İkinci El Fiyatları"
-seo_intro: "Oyun Konsolu ikinci el fiyatlarını Türkiye ikinci el piyasası ve ürün kondisyonuna göre KaçaGider ile değerlendirin."
-seo_context_heading: "Oyun Konsolu için ikinci el değerleme"
-seo_context: "Oyun Konsolu ikinci el fiyatlarını Türkiye ikinci el piyasası ve ürün kondisyonuna göre KaçaGider ile değerlendirin."
+seo_title: "İkinci El Oyun Konsolu Fiyatları: PS5 ve Xbox | KaçaGider"
+seo_description: "İkinci el oyun konsolu fiyatlarını inceleyin. PS5 ne kadar eder, PlayStation veya Xbox'ımı kaça satarım soruları için konsolunuzun tahmini ikinci el değerini hesaplayın."
+seo_h1: "İkinci El Oyun Konsolu Fiyatları"
+seo_intro: "Oyun konsolum ne kadar eder diye merak ediyorsanız PlayStation veya Xbox modelinizi seçerek tahmini ikinci el konsol değerini KaçaGider ile öğrenebilirsiniz."
+seo_context_heading: "Oyun konsolum ne kadar eder?"
+seo_context: "İkinci el oyun konsolu fiyatları; model ve sürüm, depolama kapasitesi, cihaz ve kontrolcü kondisyonu, aksesuarlar ve genel çalışma durumuna göre değişebilir. PS5, PlayStation veya Xbox'ımı kaça satarım sorusu için aşağıdan markanızı seçerek model bazlı değerleme sayfasına geçebilirsiniz."
 seo_breadcrumbs: [{"label":"Ana Sayfa","url":"/"},{"label":"Oyun Konsolu","url":"/oyun-konsolu/"}]
 seo_links: [{"label":"PlayStation","url":"/oyun-konsolu/playstation/"},{"label":"Xbox","url":"/oyun-konsolu/xbox/"}]
 seo_links_heading: "Oyun Konsolu markaları"
