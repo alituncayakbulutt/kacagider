@@ -79,6 +79,47 @@
     });
   }
 
+  function ensureResultProductName(){
+    var price=document.getElementById("mainPrice");
+    if(!price) return null;
+    var card=price.closest(".price-card");
+    if(!card) return null;
+    var el=document.getElementById("resultProductName");
+    if(el) return el;
+    el=document.createElement("div");
+    el.id="resultProductName";
+    el.setAttribute("aria-live","polite");
+    el.style.display="none";
+    el.style.margin="2px 0 5px";
+    el.style.fontSize="21px";
+    el.style.lineHeight="1.25";
+    el.style.fontWeight="900";
+    el.style.color="#f8fafc";
+    el.style.letterSpacing="-.2px";
+    price.parentNode.insertBefore(el,price);
+    return el;
+  }
+
+  function updateResultProductName(ctx){
+    var el=ensureResultProductName();
+    if(!el) return;
+    var brand=String((ctx&&ctx.brand)||"").trim();
+    var model=String((ctx&&ctx.model)||"").trim();
+    var label="";
+    if(model){
+      label=brand && model.toLowerCase().indexOf(brand.toLowerCase())!==0 ? brand+" "+model : model;
+    }
+    el.textContent=label;
+    el.style.display=label ? "block" : "none";
+  }
+
+  function clearResultProductName(){
+    var el=document.getElementById("resultProductName");
+    if(!el) return;
+    el.textContent="";
+    el.style.display="none";
+  }
+
   function parseNumber(value){
     var digits=String(value||"").replace(/[^0-9]/g,"");
     return digits ? Number(digits) : 0;
@@ -98,14 +139,17 @@
     if(!target || !target.id) return;
     var ctx=withStorageUnit(valuationContext());
     if(target.id==="phoneBrand" || target.id==="genericBrand"){
+      clearResultProductName();
       kgGaEvent("brand_selected",ctx);
       return;
     }
     if(target.id==="model" || target.id==="genericModel"){
+      clearResultProductName();
       kgGaEvent("model_selected",ctx);
       return;
     }
     if(target.id==="storage" || target.id==="genericStorage"){
+      clearResultProductName();
       kgGaEvent("storage_selected",ctx);
     }
   }
@@ -121,6 +165,7 @@
 
     var categoryCard=target.closest("[data-category]");
     if(categoryCard && CATEGORY_LABELS[categoryCard.dataset.category]){
+      clearResultProductName();
       kgGaEvent("category_selected",{category:CATEGORY_LABELS[categoryCard.dataset.category]});
     }
 
@@ -172,6 +217,7 @@
       var estimatedPrice=parseNumber(price.textContent);
       if(!estimatedPrice) return;
       var ctx=withStorageUnit(valuationContext());
+      updateResultProductName(ctx);
       var signature=[ctx.category,ctx.brand,ctx.model,ctx.storage,estimatedPrice].join("|");
       if(signature===lastCompletionSignature) return;
       lastCompletionSignature=signature;
@@ -306,6 +352,7 @@
   }
 
   function ready(){
+    ensureResultProductName();
     document.addEventListener("change",function(event){onChange(event.target);},true);
     document.addEventListener("click",onClick,true);
     watchValuationCompletion();
