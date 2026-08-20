@@ -204,11 +204,113 @@
     observer.observe(result,{attributes:true,attributeFilter:["style","class"],childList:true,subtree:true});
   }
 
+  function setupContactForm(){
+    var form=document.getElementById("contactForm");
+    if(!form || form.dataset.kgContactActive==="1") return;
+    form.dataset.kgContactActive="1";
+
+    var honey=document.createElement("input");
+    honey.type="text";
+    honey.name="_honey";
+    honey.tabIndex=-1;
+    honey.autocomplete="off";
+    honey.setAttribute("aria-hidden","true");
+    honey.style.position="absolute";
+    honey.style.left="-9999px";
+    honey.style.width="1px";
+    honey.style.height="1px";
+    honey.style.opacity="0";
+    form.appendChild(honey);
+
+    document.addEventListener("submit",async function(event){
+      if(!event.target || event.target.id!=="contactForm") return;
+      event.preventDefault();
+      event.stopImmediatePropagation();
+
+      var name=document.getElementById("contactName");
+      var email=document.getElementById("contactEmail");
+      var subject=document.getElementById("contactSubject");
+      var messageInput=document.getElementById("contactMessage");
+      var status=document.getElementById("contactFormMessage");
+      var submitButton=form.querySelector(".kg-contact-submit");
+      var fields=[
+        [name,"contactNameError","Ad Soyad alanını doldurun."],
+        [email,"contactEmailError","Geçerli bir e-posta adresi girin."],
+        [subject,"contactSubjectError","Konu alanını doldurun."],
+        [messageInput,"contactMessageError","Mesaj alanını doldurun."]
+      ];
+      var valid=true;
+
+      fields.forEach(function(field){
+        var input=field[0];
+        var error=document.getElementById(field[1]);
+        var value=input ? String(input.value||"").trim() : "";
+        var invalid=!value || (input===email && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value));
+        if(error) error.textContent=invalid ? field[2] : "";
+        if(invalid) valid=false;
+      });
+
+      if(!valid){
+        if(status){
+          status.textContent="Lütfen işaretlenen alanları kontrol edin.";
+          status.style.color="#dc2626";
+        }
+        return;
+      }
+
+      if(honey.value){
+        form.reset();
+        if(status){status.textContent="Mesajınız gönderildi. Teşekkürler.";status.style.color="";}
+        return;
+      }
+
+      var oldText=submitButton ? submitButton.textContent : "";
+      if(submitButton){submitButton.disabled=true;submitButton.textContent="Gönderiliyor...";}
+      if(status){status.textContent="";status.style.color="";}
+
+      try{
+        var response=await fetch("https://formsubmit.co/ajax/info@kacagider.com.tr",{
+          method:"POST",
+          headers:{"Content-Type":"application/json","Accept":"application/json"},
+          body:JSON.stringify({
+            name:String(name.value||"").trim(),
+            email:String(email.value||"").trim(),
+            subject:String(subject.value||"").trim(),
+            message:String(messageInput.value||"").trim(),
+            _subject:"KaçaGider İletişim: "+String(subject.value||"").trim(),
+            _template:"table",
+            _honey:""
+          })
+        });
+        var data={};
+        try{data=await response.json();}catch(e){}
+        if(!response.ok || data.success===false) throw new Error(data.message||"İletişim formu gönderilemedi.");
+
+        form.reset();
+        if(status){
+          status.textContent="Mesajınız gönderildi. En kısa sürede dönüş yapacağız.";
+          status.style.color="#176b38";
+        }
+        kgGaEvent("contact_form_submitted",{source_path:window.location.pathname});
+      }catch(error){
+        console.error("İletişim formu gönderilemedi:",error);
+        if(status){
+          status.innerHTML='Mesaj gönderilemedi. Lütfen tekrar deneyin veya <a href="mailto:info@kacagider.com.tr">info@kacagider.com.tr</a> adresinden bize ulaşın.';
+          status.style.color="#dc2626";
+        }
+        kgGaEvent("contact_form_error",{source_path:window.location.pathname});
+      }finally{
+        if(submitButton){submitButton.disabled=false;submitButton.textContent=oldText||"Gönder";}
+      }
+    },true);
+  }
+
   function ready(){
     document.addEventListener("change",function(event){onChange(event.target);},true);
     document.addEventListener("click",onClick,true);
     watchValuationCompletion();
     watchSaleSubmission();
+    setupContactForm();
   }
 
   if(document.readyState==="loading") document.addEventListener("DOMContentLoaded",ready,{once:true});
