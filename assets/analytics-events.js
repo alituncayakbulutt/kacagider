@@ -107,7 +107,7 @@
     var model=String((ctx&&ctx.model)||"").trim();
     var label="";
     if(model){
-      label=brand && model.toLowerCase().indexOf(brand.toLowerCase())!==0 ? brand+" "+model : model;
+      label=brand && model.toLocaleLowerCase("tr-TR").indexOf(brand.toLocaleLowerCase("tr-TR"))!==0 ? brand+" "+model : model;
     }
     el.textContent=label;
     el.style.display=label ? "block" : "none";
@@ -133,6 +133,20 @@
   function withStorageUnit(ctx){
     if(!ctx.storage) return ctx;
     return Object.assign({},ctx,{storage_unit:storageUnit()});
+  }
+
+  function renderResultProductNameIfReady(){
+    var price=document.getElementById("mainPrice");
+    if(!price || !parseNumber(price.textContent)) return;
+    var ctx=withStorageUnit(valuationContext());
+    if(!ctx.model) return;
+    updateResultProductName(ctx);
+  }
+
+  function scheduleResultProductName(){
+    [0,60,160,320,650].forEach(function(delay){
+      window.setTimeout(renderResultProductNameIfReady,delay);
+    });
   }
 
   function onChange(target){
@@ -174,6 +188,7 @@
       completionArmed=true;
       lastCompletionSignature="";
       kgGaEvent("valuation_started",withStorageUnit(valuationContext()));
+      scheduleResultProductName();
     }
 
     var sellIntent=target.closest(".sell-btn,.price-sale-cta");
@@ -213,6 +228,7 @@
     var price=document.getElementById("mainPrice");
     if(!price || typeof MutationObserver==="undefined") return;
     var observer=new MutationObserver(function(){
+      scheduleResultProductName();
       if(!completionArmed) return;
       var estimatedPrice=parseNumber(price.textContent);
       if(!estimatedPrice) return;
@@ -358,6 +374,7 @@
     watchValuationCompletion();
     watchSaleSubmission();
     setupContactForm();
+    scheduleResultProductName();
   }
 
   if(document.readyState==="loading") document.addEventListener("DOMContentLoaded",ready,{once:true});
