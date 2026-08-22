@@ -1,7 +1,7 @@
 ---
 layout: "seo"
-seo_title: "iPhone 11 64 GB Ne Kadar Eder? 2026 İkinci El Fiyatı | KaçaGider"
-seo_description: "iPhone 11 64 GB ne kadar eder? Hafıza ve cihaz durumuna göre güncel ikinci el tahmini satış değerini KaçaGider ile ücretsiz hesapla."
+seo_title: "iPhone 11 64 GB Kaça Satılır? 2026 İkinci El Fiyatı | KaçaGider"
+seo_description: "iPhone 11 64 GB kaça satılır? Pil sağlığı ve cihaz durumuna göre 2026 güncel ikinci el tahmini satış değerini KaçaGider ile ücretsiz hesapla."
 seo_h1: "iPhone 11 64 GB İkinci El Fiyatı"
 seo_intro: "Apple iPhone 11 64 GB ikinci el değerini Türkiye ikinci el piyasasına göre hafıza, kondisyon ve cihaz kayıt durumu bilgileriyle KaçaGider üzerinden değerlendirin."
 seo_context_heading: "iPhone 11 64 GB için ikinci el değerleme"

@@ -1,7 +1,7 @@
 ---
 layout: "seo"
-seo_title: "iPhone 17 Pro Max 1 TB Ne Kadar Eder? 2026 | KaçaGider"
-seo_description: "iPhone 17 Pro Max 1 TB ne kadar eder? Hafıza ve cihaz durumuna göre güncel ikinci el tahmini satış değerini KaçaGider ile ücretsiz hesapla."
+seo_title: "iPhone 17 Pro Max 1 TB Kaça Satılır? 2026 Fiyatı | KaçaGider"
+seo_description: "iPhone 17 Pro Max 1 TB kaça satılır? Pil sağlığı ve cihaz durumuna göre 2026 güncel ikinci el tahmini satış değerini KaçaGider ile ücretsiz hesapla."
 seo_h1: "iPhone 17 Pro Max 1 TB İkinci El Fiyatı"
 seo_intro: "Apple iPhone 17 Pro Max 1 TB ikinci el değerini Türkiye ikinci el piyasasına göre hafıza, kondisyon ve cihaz kayıt durumu bilgileriyle KaçaGider üzerinden değerlendirin."
 seo_context_heading: "iPhone 17 Pro Max 1 TB için ikinci el değerleme"

@@ -1,7 +1,7 @@
 ---
 layout: "seo"
-seo_title: "iPhone 15 Pro Max Ne Kadar Eder? 2026 İkinci El Fiyatı | KaçaGider"
-seo_description: "iPhone 15 Pro Max ne kadar eder? Hafıza ve cihaz durumuna göre güncel ikinci el tahmini satış değerini KaçaGider ile ücretsiz hesapla."
+seo_title: "iPhone 15 Pro Max Kaça Satılır? 2026 İkinci El Fiyatı | KaçaGider"
+seo_description: "iPhone 15 Pro Max kaça satılır? Hafıza, pil sağlığı ve cihaz durumuna göre 2026 güncel ikinci el tahmini satış değerini KaçaGider ile ücretsiz hesapla."
 seo_h1: "iPhone 15 Pro Max İkinci El Fiyatı"
 seo_intro: "Apple iPhone 15 Pro Max ikinci el fiyatını Türkiye ikinci el piyasasına göre hafıza, kondisyon ve cihaz kayıt durumu bilgileriyle KaçaGider üzerinden değerlendirin."
 seo_context_heading: "iPhone 15 Pro Max için ikinci el değerleme"
