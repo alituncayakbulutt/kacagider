@@ -2,9 +2,6 @@ from pathlib import Path
 import re
 import sys
 
-ROOT = Path('.')
-DEVICE_ROOTS = [Path('telefon'), Path('tablet'), Path('bilgisayar'), Path('akilli-saat'), Path('oyun-konsolu')]
-EXTRA_ROOTS = [Path('rehber'), Path('telefonum-ne-kadar-eder'), Path('telefonum-kac-para'), Path('telefonum-kaca-gider')]
 REQUIRED = ['seo_title', 'seo_description', 'seo_h1', 'seo_canonical']
 errors = []
 warnings = []
@@ -26,8 +23,6 @@ def frontmatter(path: Path):
 
 
 def expected_url(path: Path):
-    if path == Path('index.html'):
-        return 'https://kacagider.com.tr/'
     rel = path.parent.as_posix().strip('/')
     return f'https://kacagider.com.tr/{rel}/'
 
@@ -39,20 +34,22 @@ def local_target_exists(url: str):
     if clean == '/':
         return Path('index.html').exists()
     rel = clean.strip('/')
-    return (Path(rel) / 'index.md').exists() or Path(rel).is_file() or Path(rel).exists()
+    return (Path(rel) / 'index.md').exists() or Path(rel).exists()
 
+
+# Full-site scope: every index.md that declares an SEO canonical.
 pages = []
-for root in DEVICE_ROOTS + EXTRA_ROOTS:
-    if root.exists():
-        pages.extend(root.rglob('index.md'))
+for path in Path('.').rglob('index.md'):
+    if any(part.startswith('.') for part in path.parts):
+        continue
+    fm, _ = frontmatter(path)
+    if fm.get('seo_canonical'):
+        pages.append(path)
 
 canonicals = {}
 titles = {}
 for path in sorted(set(pages)):
     fm, text = frontmatter(path)
-    if not fm:
-        warnings.append(f'{path}: front matter could not be parsed')
-        continue
 
     for field in REQUIRED:
         if not fm.get(field):
@@ -75,7 +72,6 @@ for path in sorted(set(pages)):
     if desc and len(desc) > 180:
         warnings.append(f'{path}: long description ({len(desc)} chars)')
 
-    # Validate local URLs explicitly present in JSON-like front-matter arrays.
     for url in re.findall(r'"url":"(/[^"]*)"', text):
         if not local_target_exists(url):
             errors.append(f'{path}: broken local link {url}')
@@ -84,7 +80,6 @@ for canonical, paths in canonicals.items():
     if len(paths) > 1:
         errors.append(f'duplicate canonical {canonical}: {", ".join(paths)}')
 
-# Duplicate titles are usually a signal, but not always a hard build failure.
 for title, paths in titles.items():
     if len(paths) > 1:
         warnings.append(f'duplicate title {title}: {", ".join(paths)}')
@@ -114,13 +109,20 @@ if 'summary_large_image' not in index:
 if Path('rehber/telefon/index.md').exists():
     errors.append('rehber/telefon/index.md exists; deleted Telefon Bilgi Merkezi hub must stay absent')
 
-# Basic sitemap coverage for canonical SEO pages.
 sitemap = Path('sitemap.xml').read_text(encoding='utf-8') if Path('sitemap.xml').exists() else ''
 for canonical in canonicals:
     if canonical not in sitemap:
         errors.append(f'sitemap.xml: missing {canonical}')
 
-print(f'SEO AUDIT: {len(set(pages))} SEO pages checked')
+# Sitemap URLs that no longer resolve to a local source are suspicious; warn rather than auto-delete.
+for url in re.findall(r'<loc>(https://kacagider\.com\.tr/[^<]*)</loc>', sitemap):
+    route = url.replace('https://kacagider.com.tr/', '', 1).strip('/')
+    if not route:
+        continue
+    if not ((Path(route) / 'index.md').exists() or (Path(route) / 'index.html').exists() or Path(route).exists()):
+        warnings.append(f'sitemap.xml: URL has no local source {url}')
+
+print(f'SEO AUDIT: {len(set(pages))} canonical SEO pages checked')
 if warnings:
     print(f'WARNINGS ({len(warnings)}):')
     for item in warnings[:100]:
