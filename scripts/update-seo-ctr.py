@@ -3,6 +3,7 @@ import re
 
 TITLE_RE = re.compile(r'^(seo_title:\s*)"([^"]*)"\s*$', re.M)
 DESC_RE = re.compile(r'^(seo_description:\s*)"([^"]*)"\s*$', re.M)
+H1_RE = re.compile(r'^(seo_h1:\s*)"([^"]*)"\s*$', re.M)
 STORAGE_RE = re.compile(r'\b(?:\d+\s*GB|\d+\s*TB)\b', re.I)
 
 
@@ -41,6 +42,10 @@ def make_title(base: str) -> str:
     if len(short) <= 68:
         return short
     return f'{base} Kaça Satılır? | KaçaGider'
+
+
+def make_h1(base: str) -> str:
+    return f'{base} Kaça Satılır? 2026 İkinci El Fiyatı'
 
 
 def phone_description(base: str, camera: bool = False) -> str:
@@ -140,7 +145,29 @@ def optimize_tree(root: Path, brand: str, description_builder, skip_model=None):
     print(f'{brand}: scanned {scanned}, changed {changed}, skipped {skipped}.')
 
 
-# TELEFON — mevcut yapı korunur, yalnızca arama sonucu başlık/açıklamaları güncellenir.
+def align_h1_tree(root: Path, label: str):
+    scanned = changed = 0
+    for path in root.rglob('index.md'):
+        if len(path.parts) < 4:
+            continue
+        text = path.read_text(encoding='utf-8')
+        title_match = TITLE_RE.search(text)
+        h1_match = H1_RE.search(text)
+        if not title_match or not h1_match:
+            continue
+        scanned += 1
+        base = extract_base(title_match.group(2))
+        if not base:
+            continue
+        new_h1 = make_h1(base)
+        updated = H1_RE.sub(lambda m: f'{m.group(1)}"{new_h1}"', text, count=1)
+        if updated != text:
+            path.write_text(updated, encoding='utf-8')
+            changed += 1
+    print(f'{label} H1: scanned {scanned}, changed {changed}.')
+
+
+# AŞAMA 1 — mevcut yapı korunur, yalnızca arama sonucu başlık/açıklamaları güncellenir.
 optimize_tree(
     Path('telefon/apple'),
     'Apple iPhone',
@@ -157,18 +184,24 @@ optimize_tree(Path('telefon/realme'), 'Realme', lambda base: phone_description(b
 optimize_tree(Path('telefon/oneplus'), 'OnePlus', lambda base: phone_description(base, camera=True))
 optimize_tree(Path('telefon/google'), 'Google Pixel', lambda base: phone_description(base, camera=True))
 
-# TABLET — Apple, Samsung, Xiaomi, Huawei, Honor, Lenovo ve mevcut tüm model/hafıza sayfaları.
 for brand in ['apple', 'samsung', 'xiaomi', 'huawei', 'honor', 'lenovo']:
     optimize_tree(Path('tablet') / brand, f'Tablet {brand}', tablet_description)
 
-# BİLGİSAYAR — mevcut tüm marka/model sayfaları.
 for brand in ['apple', 'asus', 'acer', 'casper', 'dell', 'hp', 'huawei', 'lenovo', 'monster', 'msi']:
     optimize_tree(Path('bilgisayar') / brand, f'Bilgisayar {brand}', computer_description)
 
-# AKILLI SAAT — mevcut Apple, Samsung ve Huawei model sayfaları.
 for brand in ['apple', 'samsung', 'huawei']:
     optimize_tree(Path('akilli-saat') / brand, f'Akıllı Saat {brand}', watch_description)
 
-# OYUN KONSOLU — mevcut PlayStation ve Xbox model sayfaları.
 for brand in ['playstation', 'xbox']:
     optimize_tree(Path('oyun-konsolu') / brand, f'Oyun Konsolu {brand}', console_description)
+
+# AŞAMA 2A.1 — sayfa yapısını değiştirmeden H1'i arama niyetiyle hizala.
+for root, label in [
+    (Path('telefon'), 'Telefon'),
+    (Path('tablet'), 'Tablet'),
+    (Path('bilgisayar'), 'Bilgisayar'),
+    (Path('akilli-saat'), 'Akıllı Saat'),
+    (Path('oyun-konsolu'), 'Oyun Konsolu'),
+]:
+    align_h1_tree(root, label)
