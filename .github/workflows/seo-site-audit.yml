@@ -1,0 +1,35 @@
+name: SEO Site Audit
+
+on:
+  push:
+    paths:
+      - 'index.html'
+      - '_layouts/**'
+      - 'telefon/**'
+      - 'tablet/**'
+      - 'bilgisayar/**'
+      - 'akilli-saat/**'
+      - 'oyun-konsolu/**'
+      - 'rehber/**'
+      - 'telefonum-ne-kadar-eder/**'
+      - 'telefonum-kac-para/**'
+      - 'telefonum-kaca-gider/**'
+      - 'robots.txt'
+      - 'sitemap.xml'
+      - 'scripts/seo-site-audit.py'
+      - '.github/workflows/seo-site-audit.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+      - name: Run SEO site audit
+        run: python scripts/seo-site-audit.py
