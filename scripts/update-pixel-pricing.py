@@ -1,5 +1,6 @@
 from pathlib import Path
 
+# Trigger note: 2026-08-22 market-average screen pricing rollout.
 INDEX = Path('index.html')
 
 SCRIPT_ANCHOR = '<script src="data/phone-prices.js"></script>'
