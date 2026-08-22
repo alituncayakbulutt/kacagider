@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" role="img" aria-label="KaçaGider">
+  <rect width="48" height="48" rx="12" fill="#0b1628"/>
+  <path d="M13 11h7v10.2L29.4 11H38L27.1 22.2 39 37H30.2L22.3 27l-2.3 2.4V37h-7V11Z" fill="#ffffff"/>
+  <circle cx="37" cy="11" r="5" fill="#10b956"/>
+</svg>
