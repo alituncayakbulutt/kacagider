@@ -15,17 +15,49 @@ OVERRIDES = {
         'seo_description': 'iPhone 13 ne kadar eder, kaça satılır? Hafıza, pil sağlığı, ekran ve cihaz durumuna göre 2026 güncel tahmini ikinci el satış değerini ücretsiz hesapla.',
         'seo_intro': 'iPhone 13 ne kadar eder ve kaça satılır? Hafıza, pil sağlığı, ekran ve genel cihaz durumunu seçerek 2026 güncel tahmini ikinci el satış değerini KaçaGider ile ücretsiz öğrenebilirsiniz.',
     },
+    'telefon/apple/iphone-13-pro/index.md': {
+        'seo_description': 'iPhone 13 Pro ne kadar eder, kaça satılır? Hafıza, pil sağlığı, ekran ve cihaz durumuna göre 2026 güncel tahmini ikinci el satış değerini ücretsiz hesapla.',
+        'seo_intro': 'iPhone 13 Pro ne kadar eder ve kaça satılır? Hafıza, pil sağlığı, ekran ve genel cihaz durumunu seçerek 2026 güncel tahmini ikinci el satış değerini KaçaGider ile ücretsiz öğrenebilirsiniz.',
+    },
+    'telefon/apple/iphone-13-pro-max/index.md': {
+        'seo_description': 'iPhone 13 Pro Max ne kadar eder, kaça satılır? Hafıza, pil sağlığı, ekran ve cihaz durumuna göre 2026 güncel tahmini ikinci el satış değerini ücretsiz hesapla.',
+        'seo_intro': 'iPhone 13 Pro Max ne kadar eder ve kaça satılır? Hafıza, pil sağlığı, ekran ve genel cihaz durumunu seçerek 2026 güncel tahmini ikinci el satış değerini KaçaGider ile ücretsiz öğrenebilirsiniz.',
+    },
     'telefon/samsung/galaxy-s24/index.md': {
         'seo_description': 'Galaxy S24 ne kadar eder, kaça satılır? Hafıza, ekran, batarya ve cihaz durumuna göre 2026 güncel tahmini ikinci el satış değerini ücretsiz hesapla.',
         'seo_intro': 'Galaxy S24 ne kadar eder ve kaça satılır? Hafıza, ekran, batarya ve genel cihaz durumunu seçerek 2026 güncel tahmini ikinci el satış değerini KaçaGider ile ücretsiz öğrenebilirsiniz.',
+    },
+    'telefon/samsung/galaxy-s24-plus/index.md': {
+        'seo_description': 'Galaxy S24+ ne kadar eder, kaça satılır? Hafıza, ekran, batarya ve cihaz durumuna göre 2026 güncel tahmini ikinci el satış değerini ücretsiz hesapla.',
+        'seo_intro': 'Galaxy S24+ ne kadar eder ve kaça satılır? Hafıza, ekran, batarya ve genel cihaz durumunu seçerek 2026 güncel tahmini ikinci el satış değerini KaçaGider ile ücretsiz öğrenebilirsiniz.',
+    },
+    'telefon/samsung/galaxy-s24-ultra/index.md': {
+        'seo_description': 'Galaxy S24 Ultra ne kadar eder, kaça satılır? Hafıza, ekran, batarya ve cihaz durumuna göre 2026 güncel tahmini ikinci el satış değerini ücretsiz hesapla.',
+        'seo_intro': 'Galaxy S24 Ultra ne kadar eder ve kaça satılır? Hafıza, ekran, batarya ve genel cihaz durumunu seçerek 2026 güncel tahmini ikinci el satış değerini KaçaGider ile ücretsiz öğrenebilirsiniz.',
     },
     'telefon/samsung/galaxy-s23/index.md': {
         'seo_description': 'Galaxy S23 ne kadar eder, kaça satılır? Hafıza, ekran, batarya ve cihaz durumuna göre 2026 güncel tahmini ikinci el satış değerini ücretsiz hesapla.',
         'seo_intro': 'Galaxy S23 ne kadar eder ve kaça satılır? Hafıza, ekran, batarya ve genel cihaz durumunu seçerek 2026 güncel tahmini ikinci el satış değerini KaçaGider ile ücretsiz öğrenebilirsiniz.',
     },
+    'telefon/samsung/galaxy-s23-plus/index.md': {
+        'seo_description': 'Galaxy S23+ ne kadar eder, kaça satılır? Hafıza, ekran, batarya ve cihaz durumuna göre 2026 güncel tahmini ikinci el satış değerini ücretsiz hesapla.',
+        'seo_intro': 'Galaxy S23+ ne kadar eder ve kaça satılır? Hafıza, ekran, batarya ve genel cihaz durumunu seçerek 2026 güncel tahmini ikinci el satış değerini KaçaGider ile ücretsiz öğrenebilirsiniz.',
+    },
+    'telefon/samsung/galaxy-s23-ultra/index.md': {
+        'seo_description': 'Galaxy S23 Ultra ne kadar eder, kaça satılır? Hafıza, ekran, batarya ve cihaz durumuna göre 2026 güncel tahmini ikinci el satış değerini ücretsiz hesapla.',
+        'seo_intro': 'Galaxy S23 Ultra ne kadar eder ve kaça satılır? Hafıza, ekran, batarya ve genel cihaz durumunu seçerek 2026 güncel tahmini ikinci el satış değerini KaçaGider ile ücretsiz öğrenebilirsiniz.',
+    },
     'telefon/xiaomi/redmi-note-13-pro/index.md': {
         'seo_description': 'Redmi Note 13 Pro ne kadar eder, kaça satılır? Hafıza, ekran, batarya ve cihaz durumuna göre 2026 güncel tahmini ikinci el satış değerini ücretsiz hesapla.',
         'seo_intro': 'Redmi Note 13 Pro ne kadar eder ve kaça satılır? Hafıza, ekran, batarya ve genel cihaz durumunu seçerek 2026 güncel tahmini ikinci el satış değerini KaçaGider ile ücretsiz öğrenebilirsiniz.',
+    },
+    'telefon/xiaomi/redmi-note-13-pro-5g/index.md': {
+        'seo_description': 'Redmi Note 13 Pro 5G ne kadar eder, kaça satılır? Hafıza, ekran, batarya ve cihaz durumuna göre 2026 güncel tahmini ikinci el satış değerini ücretsiz hesapla.',
+        'seo_intro': 'Redmi Note 13 Pro 5G ne kadar eder ve kaça satılır? Hafıza, ekran, batarya ve genel cihaz durumunu seçerek 2026 güncel tahmini ikinci el satış değerini KaçaGider ile ücretsiz öğrenebilirsiniz.',
+    },
+    'telefon/xiaomi/redmi-note-13-pro-plus-5g/index.md': {
+        'seo_description': 'Redmi Note 13 Pro+ 5G ne kadar eder, kaça satılır? Hafıza, ekran, batarya ve cihaz durumuna göre 2026 güncel tahmini ikinci el satış değerini ücretsiz hesapla.',
+        'seo_intro': 'Redmi Note 13 Pro+ 5G ne kadar eder ve kaça satılır? Hafıza, ekran, batarya ve genel cihaz durumunu seçerek 2026 güncel tahmini ikinci el satış değerini KaçaGider ile ücretsiz öğrenebilirsiniz.',
     },
 }
 
