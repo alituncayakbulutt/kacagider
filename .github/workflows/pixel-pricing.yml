@@ -1,0 +1,35 @@
+name: Pixel Pricing Update
+
+on:
+  push:
+    paths:
+      - 'data/screen-repair-prices.js'
+      - 'scripts/update-pixel-pricing.py'
+      - '.github/workflows/pixel-pricing.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update-pixel-pricing:
+    if: github.actor != 'github-actions[bot]'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+      - name: Apply pixel pricing rule
+        run: python scripts/update-pixel-pricing.py
+      - name: Commit index update
+        run: |
+          if git diff --quiet; then
+            echo "No pricing changes needed."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add index.html
+          git commit -m "Pricing: pixel defect uses 50 percent screen cost"
+          git push
