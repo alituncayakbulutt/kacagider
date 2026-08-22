@@ -1,4 +1,5 @@
 from pathlib import Path
+import re
 
 changed = []
 
@@ -37,10 +38,25 @@ if '<meta name="twitter:card" content="summary">' in text:
         1,
     )
 
-new_text = text
 old_text = index.read_text(encoding="utf-8")
-if new_text != old_text:
-    index.write_text(new_text, encoding="utf-8")
+if text != old_text:
+    index.write_text(text, encoding="utf-8")
     changed.append(str(index))
+
+# 3) Repair the grammatical form produced by the first Search Console 4B templates.
+#    Search intent stays identical; only the Turkish sentence is corrected.
+bad_copy = re.compile(
+    r'^(seo_description:\s*".*?ikinci el fiyatı Türkiye 2026:\s*)(.+?) göre güncel tahmini (.*")$',
+    re.MULTILINE,
+)
+for path in Path('.').rglob('index.md'):
+    try:
+        original = path.read_text(encoding='utf-8')
+    except UnicodeDecodeError:
+        continue
+    repaired = bad_copy.sub(r'\1\2 dikkate alınarak güncel tahmini \3', original)
+    if repaired != original:
+        path.write_text(repaired, encoding='utf-8')
+        changed.append(str(path))
 
 print("SEO checkup fixes:", ", ".join(changed) if changed else "no changes needed")
