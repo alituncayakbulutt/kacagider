@@ -13,6 +13,7 @@
 
 <base href="/">
 <script src="data/phone-prices.js"></script>
+<script src="data/screen-repair-prices.js"></script>
 <script src="/assets/analytics-events.js" defer></script>
 <script>
 try{
@@ -2731,7 +2732,16 @@ function conditionAdjustments(){
       countImpact+depthImpact);
   }
 
-  if(state.protector==="yes"){adj+=150;addFactor(factors,"Ekran koruyucu var",150)}
+  if(state.protector==="yes"){
+    const screenRepairPrice = typeof getAverageScreenRepairPrice === "function"
+      ? Number(getAverageScreenRepairPrice(CURRENT_BRAND,CURRENT_MODEL))
+      : 0;
+    const pixelImpact = screenRepairPrice>0 ? -Math.round((screenRepairPrice*.50)/50)*50 : 0;
+    if(pixelImpact){
+      adj+=pixelImpact;
+      addFactor(factors,"Ekran: piksel atması",pixelImpact);
+    }
+  }
 
   const dent={none:0,light:-500,medium:-1400,serious:-3000}[state.dent]||0;
   if(dent){adj+=dent;addFactor(factors,"Kasa: "+{light:"hafif ezik/darbe",medium:"orta ezik/darbe",serious:"ciddi ezik/darbe"}[state.dent],dent)}
