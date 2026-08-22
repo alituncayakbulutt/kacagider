@@ -36,6 +36,37 @@ OVERRIDES = {
         'seo_intro': 'Galaxy S25 ne kadar eder ve kaça satılır? 2026 ikinci el değeri hafıza, ekran, batarya ve genel cihaz durumuna göre değişir. KaçaGider ile tahmini satış değerini ücretsiz hesaplayabilirsiniz.',
     },
 
+    # Öncelik 1B — görünürlük alan model sayfalarının kardeş hafıza/model kümeleri.
+    # Amaç: Google aynı ürün ailesinde farklı depolama sorguları gösterdiğinde aynı güçlü CTR dilini korumak.
+    'telefon/xiaomi/poco-x8-pro-max/index.md': {
+        'seo_description': 'POCO X8 Pro Max ne kadar eder, kaça satılır? Hafıza, ekran, batarya ve cihaz durumuna göre 2026 güncel tahmini ikinci el satış değerini ücretsiz hesapla.',
+        'seo_intro': 'POCO X8 Pro Max ne kadar eder ve kaça satılır? Hafıza seçeneği, ekran, batarya ve genel cihaz durumuna göre 2026 tahmini ikinci el satış değerini ücretsiz öğrenebilirsiniz.',
+    },
+    'telefon/xiaomi/poco-x8-pro-max/256gb/index.md': {
+        'seo_description': 'POCO X8 Pro Max 256 GB ne kadar eder, kaça satılır? Ekran, batarya ve cihaz durumuna göre 2026 güncel tahmini ikinci el satış değerini ücretsiz hesapla.',
+        'seo_intro': 'POCO X8 Pro Max 256 GB ne kadar eder ve kaça satılır? Ekran, batarya ve genel cihaz durumuna göre 2026 tahmini ikinci el satış değerini KaçaGider ile ücretsiz öğrenebilirsiniz.',
+    },
+    'telefon/samsung/galaxy-a25/128gb/index.md': {
+        'seo_description': 'Galaxy A25 128 GB ne kadar eder, kaça satılır? Ekran, batarya ve cihaz durumuna göre 2026 güncel tahmini ikinci el satış değerini ücretsiz hesapla.',
+        'seo_intro': 'Galaxy A25 128 GB ne kadar eder ve kaça satılır? Ekran, batarya ve genel cihaz durumuna göre 2026 tahmini ikinci el satış değerini KaçaGider ile ücretsiz öğrenebilirsiniz.',
+    },
+    'telefon/samsung/galaxy-a25/256gb/index.md': {
+        'seo_description': 'Galaxy A25 256 GB ne kadar eder, kaça satılır? Ekran, batarya ve cihaz durumuna göre 2026 güncel tahmini ikinci el satış değerini ücretsiz hesapla.',
+        'seo_intro': 'Galaxy A25 256 GB ne kadar eder ve kaça satılır? Ekran, batarya ve genel cihaz durumuna göre 2026 tahmini ikinci el satış değerini KaçaGider ile ücretsiz öğrenebilirsiniz.',
+    },
+    'telefon/samsung/galaxy-s25/128gb/index.md': {
+        'seo_description': 'Galaxy S25 128 GB ne kadar eder, kaça satılır? Ekran, batarya ve cihaz durumuna göre 2026 güncel tahmini ikinci el satış değerini ücretsiz hesapla.',
+        'seo_intro': 'Galaxy S25 128 GB ne kadar eder ve kaça satılır? Ekran, batarya ve genel cihaz durumuna göre 2026 tahmini ikinci el satış değerini KaçaGider ile ücretsiz öğrenebilirsiniz.',
+    },
+    'telefon/samsung/galaxy-s25/256gb/index.md': {
+        'seo_description': 'Galaxy S25 256 GB ne kadar eder, kaça satılır? Ekran, batarya ve cihaz durumuna göre 2026 güncel tahmini ikinci el satış değerini ücretsiz hesapla.',
+        'seo_intro': 'Galaxy S25 256 GB ne kadar eder ve kaça satılır? Ekran, batarya ve genel cihaz durumuna göre 2026 tahmini ikinci el satış değerini KaçaGider ile ücretsiz öğrenebilirsiniz.',
+    },
+    'telefon/samsung/galaxy-s25/512gb/index.md': {
+        'seo_description': 'Galaxy S25 512 GB ne kadar eder, kaça satılır? Ekran, batarya ve cihaz durumuna göre 2026 güncel tahmini ikinci el satış değerini ücretsiz hesapla.',
+        'seo_intro': 'Galaxy S25 512 GB ne kadar eder ve kaça satılır? Ekran, batarya ve genel cihaz durumuna göre 2026 tahmini ikinci el satış değerini KaçaGider ile ücretsiz öğrenebilirsiniz.',
+    },
+
     # Öncelik 2 — yüksek ticari arama niyetli değer sayfaları.
     'telefonum-ne-kadar-eder/index.md': {
         'seo_title': 'Telefonum Ne Kadar Eder? 2026 Güncel İkinci El Değeri | KaçaGider',
