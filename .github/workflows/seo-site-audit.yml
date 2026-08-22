@@ -11,11 +11,13 @@ on:
       - 'akilli-saat/**'
       - 'oyun-konsolu/**'
       - 'rehber/**'
+      - 'bilgi-merkezi/**'
       - 'telefonum-ne-kadar-eder/**'
       - 'telefonum-kac-para/**'
       - 'telefonum-kaca-gider/**'
       - 'robots.txt'
       - 'sitemap.xml'
+      - 'scripts/update-sitemap-lastmod.py'
       - 'scripts/seo-site-audit.py'
       - '.github/workflows/seo-site-audit.yml'
   workflow_dispatch:
