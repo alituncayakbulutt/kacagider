@@ -1,7 +1,7 @@
 ---
 layout: "seo"
-seo_title: "Galaxy A13 Ne Kadar Eder? 2026 İkinci El Fiyatı | KaçaGider"
-seo_description: "Galaxy A13 ne kadar eder? Hafıza ve cihaz durumuna göre güncel ikinci el tahmini satış değerini KaçaGider ile ücretsiz hesapla."
+seo_title: "Galaxy A13 Kaça Satılır? 2026 İkinci El Fiyatı | KaçaGider"
+seo_description: "Galaxy A13 kaça satılır? Hafıza, ekran, batarya ve cihaz durumuna göre 2026 güncel ikinci el tahmini satış değerini KaçaGider ile ücretsiz hesapla."
 seo_h1: "Galaxy A13 İkinci El Fiyatı"
 seo_intro: "Samsung Galaxy A13 ikinci el fiyatını Türkiye ikinci el piyasasına göre hafıza, kondisyon ve cihaz kayıt durumu bilgileriyle KaçaGider üzerinden değerlendirin."
 seo_context_heading: "Galaxy A13 için ikinci el değerleme"

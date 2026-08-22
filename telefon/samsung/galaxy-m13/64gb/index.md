@@ -1,7 +1,7 @@
 ---
 layout: "seo"
-seo_title: "Galaxy M13 64 GB Ne Kadar Eder? 2026 İkinci El Fiyatı | KaçaGider"
-seo_description: "Galaxy M13 64 GB ne kadar eder? Hafıza ve cihaz durumuna göre güncel ikinci el tahmini satış değerini KaçaGider ile ücretsiz hesapla."
+seo_title: "Galaxy M13 64 GB Kaça Satılır? 2026 İkinci El Fiyatı | KaçaGider"
+seo_description: "Galaxy M13 64 GB kaça satılır? Ekran, batarya ve cihaz durumuna göre 2026 güncel ikinci el tahmini satış değerini KaçaGider ile ücretsiz hesapla."
 seo_h1: "Galaxy M13 64 GB İkinci El Fiyatı"
 seo_intro: "Samsung Galaxy M13 64 GB ikinci el değerini Türkiye ikinci el piyasasına göre hafıza, kondisyon ve cihaz kayıt durumu bilgileriyle KaçaGider üzerinden değerlendirin."
 seo_context_heading: "Galaxy M13 64 GB için ikinci el değerleme"
