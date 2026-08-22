@@ -49,6 +49,26 @@ try{
 <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
 <link rel="canonical" href="{{ page.seo_canonical }}">
 
+{% assign kg_share_image = page.seo_image %}
+{% unless kg_share_image %}
+  {% if page.seo_canonical contains '/tablet/' %}
+    {% assign kg_share_image = '/assets/categories/tablet.jpg' %}
+  {% elsif page.seo_canonical contains '/bilgisayar/' %}
+    {% assign kg_share_image = '/assets/categories/bilgisayar.jpg' %}
+  {% elsif page.seo_canonical contains '/akilli-saat/' %}
+    {% assign kg_share_image = '/assets/categories/akilli-saat.jpg' %}
+  {% elsif page.seo_canonical contains '/oyun-konsolu/' %}
+    {% assign kg_share_image = '/assets/categories/oyun-konsolu.jpg' %}
+  {% else %}
+    {% assign kg_share_image = '/assets/categories/telefon.jpg' %}
+  {% endif %}
+{% endunless %}
+{% assign kg_share_image_absolute = kg_share_image | prepend: 'https://kacagider.com.tr' %}
+<meta id="kg-social-image-meta" property="og:image" content="{{ kg_share_image_absolute }}">
+<meta property="og:image:secure_url" content="{{ kg_share_image_absolute }}">
+<meta property="og:image:alt" content="{{ page.seo_h1 | default: page.seo_title }}">
+<meta name="twitter:image" content="{{ kg_share_image_absolute }}">
+<meta name="twitter:image:alt" content="{{ page.seo_h1 | default: page.seo_title }}">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="tr_TR">
 <meta property="og:site_name" content="KaçaGider">
@@ -56,7 +76,7 @@ try{
 <meta property="og:description" content="{{ page.seo_description }}">
 <meta property="og:url" content="{{ page.seo_canonical }}">
 
-<meta name="twitter:card" content="summary">
+<meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="{{ page.seo_title }}">
 <meta name="twitter:description" content="{{ page.seo_description }}">
 
