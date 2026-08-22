@@ -1,11 +1,11 @@
 ---
 layout: "seo"
-seo_title: "Telefonum Ne Kadar Eder? 2026 Güncel Değer Hesaplama | KaçaGider"
-seo_description: "Telefonum ne kadar eder diye merak ediyorsan marka, model, hafıza ve cihaz durumunu seç. 2026 güncel ikinci el tahmini değerini KaçaGider ile ücretsiz hesapla."
-seo_h1: "Telefonum Ne Kadar Eder?"
-seo_intro: "Telefonunun yaklaşık ikinci el değerini birkaç adımda hesapla. Marka, model, hafıza, pil, ekran ve cihaz durumuna göre güncel tahmini satış değerini öğren."
-seo_context_heading: "Telefonumun değerini nasıl öğrenirim?"
-seo_context: "KaçaGider; telefonun marka, model, hafıza ve kondisyon bilgilerini kullanarak Türkiye ikinci el piyasasına göre tahmini bir değer sunar. Telefonunu satmadan önce yaklaşık kaç para ettiğini görmek için cihazını seç ve ücretsiz hesaplamaya başla."
+seo_title: "Telefonum Ne Kadar Eder? 2026 Güncel İkinci El Değeri | KaçaGider"
+seo_description: "Telefonum ne kadar eder, kaç para eder veya kaça satılır? Marka, model, hafıza ve cihaz durumunu seç; 2026 güncel tahmini ikinci el satış değerini ücretsiz hesapla."
+seo_h1: "Telefonum Ne Kadar Eder? 2026 Güncel İkinci El Değeri"
+seo_intro: "Telefonunuzun bugün yaklaşık ne kadar ettiğini öğrenmek için marka, model, hafıza ve cihaz durumunu seçin. KaçaGider ile 2026 güncel tahmini ikinci el satış değerini ücretsiz hesaplayabilirsiniz."
+seo_context_heading: "Telefonum ne kadar eder ve kaça satılır?"
+seo_context: "Telefonun ikinci el değeri marka, model, hafıza, pil sağlığı, ekran ve kasa durumu ile değişen parça geçmişine göre değişir. Telefonum kaç para eder veya telefonumu kaça satarım diye merak ediyorsanız cihaz bilgilerini seçerek güncel tahmini satış değerini görebilirsiniz."
 seo_breadcrumbs: [{"label":"Ana Sayfa","url":"/"},{"label":"Telefon","url":"/telefon/"},{"label":"Telefonum Ne Kadar Eder?","url":"/telefonum-ne-kadar-eder/"}]
 seo_links: [{"label":"Telefon fiyatını hesapla","url":"/telefon/"},{"label":"iPhone ikinci el fiyatları","url":"/telefon/apple/"},{"label":"Samsung ikinci el fiyatları","url":"/telefon/samsung/"},{"label":"Xiaomi ikinci el fiyatları","url":"/telefon/xiaomi/"}]
 seo_links_heading: "Telefonunun değerini öğren"
