@@ -5,6 +5,7 @@ on:
     paths:
       - 'scripts/update-seo-ctr.py'
       - 'scripts/add-breadcrumb-schema.py'
+      - 'scripts/add-social-image-meta.py'
       - '.github/workflows/seo-ctr-bulk.yml'
   workflow_dispatch:
 
@@ -24,6 +25,8 @@ jobs:
         run: python scripts/update-seo-ctr.py
       - name: Add breadcrumb structured data
         run: python scripts/add-breadcrumb-schema.py
+      - name: Add category share image metadata
+        run: python scripts/add-social-image-meta.py
       - name: Commit changes
         run: |
           if git diff --quiet; then
@@ -33,5 +36,5 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add telefon tablet bilgisayar akilli-saat oyun-konsolu _layouts/seo.html
-          git commit -m "SEO 2B: add BreadcrumbList structured data"
+          git commit -m "SEO 2C: add category social image metadata"
           git push
