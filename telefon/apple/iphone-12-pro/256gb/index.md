@@ -1,7 +1,7 @@
 ---
 layout: "seo"
 seo_title: "iPhone 12 Pro 256 GB Kaça Satılır? 2026 İkinci El Fiyatı | KaçaGider"
-seo_description: "iPhone 12 Pro 256 GB ikinci el fiyatı Türkiye 2026: hafıza, pil sağlığı, ekran ve cihaz durumu göre güncel tahmini satış değerini KaçaGider ile ücretsiz hesapla."
+seo_description: "iPhone 12 Pro 256 GB ikinci el fiyatı Türkiye 2026: hafıza, pil sağlığı, ekran ve cihaz durumu dikkate alınarak güncel tahmini satış değerini KaçaGider ile ücretsiz hesapla."
 seo_h1: "iPhone 12 Pro 256 GB Kaça Satılır? 2026 İkinci El Fiyatı"
 seo_intro: "iPhone 12 Pro 256 GB ikinci el fiyatı Türkiye 2026 ne kadar? Hafıza, pil sağlığı, ekran ve cihaz durumu birlikte değerlendirilir. Cihaz bilgilerini seçerek güncel tahmini satış değerini KaçaGider ile ücretsiz öğrenebilirsiniz."
 seo_context_heading: "iPhone 12 Pro 256 GB ikinci el değeri nasıl hesaplanır?"

@@ -1,7 +1,7 @@
 ---
 layout: "seo"
 seo_title: "MacBook Air M2 Kaça Satılır? 2026 İkinci El Fiyatı | KaçaGider"
-seo_description: "MacBook Air M2 ikinci el fiyatı Türkiye 2026: RAM, depolama, pil ve cihaz durumu göre güncel tahmini satış değerini KaçaGider ile ücretsiz hesapla."
+seo_description: "MacBook Air M2 ikinci el fiyatı Türkiye 2026: RAM, depolama, pil ve cihaz durumu dikkate alınarak güncel tahmini satış değerini KaçaGider ile ücretsiz hesapla."
 seo_h1: "MacBook Air M2 Kaça Satılır? 2026 İkinci El Fiyatı"
 seo_intro: "MacBook Air M2 ikinci el fiyatı Türkiye 2026 ne kadar? Ram, depolama, pil ve cihaz durumu birlikte değerlendirilir. Cihaz bilgilerini seçerek güncel tahmini satış değerini KaçaGider ile ücretsiz öğrenebilirsiniz."
 seo_context_heading: "MacBook Air M2 ikinci el değeri nasıl hesaplanır?"

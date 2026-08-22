@@ -1,7 +1,7 @@
 ---
 layout: "seo"
 seo_title: "iPhone 15 Pro Max 256 GB Kaça Satılır? 2026 Fiyatı | KaçaGider"
-seo_description: "iPhone 15 Pro Max 256 GB ikinci el fiyatı Türkiye 2026: pil sağlığı, ekran ve cihaz durumu göre güncel tahmini satış değerini KaçaGider ile ücretsiz hesapla."
+seo_description: "iPhone 15 Pro Max 256 GB ikinci el fiyatı Türkiye 2026: pil sağlığı, ekran ve cihaz durumu dikkate alınarak güncel tahmini satış değerini KaçaGider ile ücretsiz hesapla."
 seo_h1: "iPhone 15 Pro Max 256 GB Kaça Satılır? 2026 İkinci El Fiyatı"
 seo_intro: "iPhone 15 Pro Max 256 GB ikinci el fiyatı Türkiye 2026 ne kadar? Pil sağlığı, ekran ve cihaz durumu birlikte değerlendirilir. Cihaz bilgilerini seçerek güncel tahmini satış değerini KaçaGider ile ücretsiz öğrenebilirsiniz."
 seo_context_heading: "iPhone 15 Pro Max 256 GB ikinci el değeri nasıl hesaplanır?"

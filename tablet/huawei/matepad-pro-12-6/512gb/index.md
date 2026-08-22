@@ -1,7 +1,7 @@
 ---
 layout: "seo"
 seo_title: "MatePad Pro 12.6 512 GB Kaça Satılır? 2026 Fiyatı | KaçaGider"
-seo_description: "MatePad Pro 12.6 512 GB ikinci el fiyatı Türkiye 2026: hafıza, ekran, batarya ve cihaz durumu göre güncel tahmini satış değerini KaçaGider ile ücretsiz hesapla."
+seo_description: "MatePad Pro 12.6 512 GB ikinci el fiyatı Türkiye 2026: hafıza, ekran, batarya ve cihaz durumu dikkate alınarak güncel tahmini satış değerini KaçaGider ile ücretsiz hesapla."
 seo_h1: "MatePad Pro 12.6 512 GB Kaça Satılır? 2026 İkinci El Fiyatı"
 seo_intro: "MatePad Pro 12.6 512 GB ikinci el fiyatı Türkiye 2026 ne kadar? Hafıza, ekran, batarya ve cihaz durumu birlikte değerlendirilir. Cihaz bilgilerini seçerek güncel tahmini satış değerini KaçaGider ile ücretsiz öğrenebilirsiniz."
 seo_context_heading: "MatePad Pro 12.6 512 GB ikinci el değeri nasıl hesaplanır?"
