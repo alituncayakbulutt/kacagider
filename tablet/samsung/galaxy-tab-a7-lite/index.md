@@ -2,7 +2,7 @@
 layout: "seo"
 seo_title: "Galaxy Tab A7 Lite Kaça Satılır? 2026 İkinci El Fiyatı | KaçaGider"
 seo_description: "Galaxy Tab A7 Lite kaça satılır? Hafıza, ekran, batarya ve cihaz durumuna göre 2026 güncel ikinci el tahmini satış değerini KaçaGider ile ücretsiz hesapla."
-seo_h1: "Galaxy Tab A7 Lite İkinci El Fiyatı"
+seo_h1: "Galaxy Tab A7 Lite Kaça Satılır? 2026 İkinci El Fiyatı"
 seo_intro: "Samsung Galaxy Tab A7 Lite ikinci el fiyatını Türkiye ikinci el piyasasına göre kapasite ve kondisyon bilgileriyle KaçaGider üzerinden değerlendirin."
 seo_context_heading: "Galaxy Tab A7 Lite için ikinci el değerleme"
 seo_context: "Samsung Galaxy Tab A7 Lite ikinci el fiyatını Türkiye ikinci el piyasasına göre kapasite ve kondisyon bilgileriyle KaçaGider üzerinden değerlendirin."

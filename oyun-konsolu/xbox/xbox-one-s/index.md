@@ -2,7 +2,7 @@
 layout: "seo"
 seo_title: "Xbox One S Kaça Satılır? 2026 İkinci El Fiyatı | KaçaGider"
 seo_description: "Xbox One S kaça satılır? Depolama, kozmetik durum, aksesuarlar ve çalışma durumuna göre 2026 güncel ikinci el tahmini satış değerini KaçaGider ile ücretsiz hesapla."
-seo_h1: "Xbox One S İkinci El Fiyatı"
+seo_h1: "Xbox One S Kaça Satılır? 2026 İkinci El Fiyatı"
 seo_intro: "Xbox One S ikinci el fiyatını Türkiye ikinci el piyasasına göre depolama ve kondisyon bilgileriyle KaçaGider üzerinden değerlendirin."
 seo_context_heading: "Xbox One S için ikinci el değerleme"
 seo_context: "Xbox One S ikinci el fiyatını Türkiye ikinci el piyasasına göre depolama ve kondisyon bilgileriyle KaçaGider üzerinden değerlendirin."

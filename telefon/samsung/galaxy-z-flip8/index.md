@@ -2,7 +2,7 @@
 layout: "seo"
 seo_title: "Galaxy Z Flip8 Kaça Satılır? 2026 İkinci El Fiyatı | KaçaGider"
 seo_description: "Galaxy Z Flip8 kaça satılır? Hafıza, ekran, batarya ve cihaz durumuna göre 2026 güncel ikinci el tahmini satış değerini KaçaGider ile ücretsiz hesapla."
-seo_h1: "Galaxy Z Flip8 İkinci El Fiyatı"
+seo_h1: "Galaxy Z Flip8 Kaça Satılır? 2026 İkinci El Fiyatı"
 seo_intro: "Samsung Galaxy Z Flip8 ikinci el fiyatını Türkiye ikinci el piyasasına göre hafıza, kondisyon ve cihaz kayıt durumu bilgileriyle KaçaGider üzerinden değerlendirin."
 seo_context_heading: "Galaxy Z Flip8 için ikinci el değerleme"
 seo_context: "Samsung Galaxy Z Flip8 ikinci el fiyatını Türkiye ikinci el piyasasına göre hafıza, kondisyon ve cihaz kayıt durumu bilgileriyle KaçaGider üzerinden değerlendirin."

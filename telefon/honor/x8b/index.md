@@ -2,7 +2,7 @@
 layout: "seo"
 seo_title: "X8b Kaça Satılır? 2026 İkinci El Fiyatı | KaçaGider"
 seo_description: "X8b kaça satılır? Hafıza, ekran, batarya, kamera ve cihaz durumuna göre 2026 güncel ikinci el tahmini satış değerini KaçaGider ile ücretsiz hesapla."
-seo_h1: "X8b İkinci El Fiyatı"
+seo_h1: "X8b Kaça Satılır? 2026 İkinci El Fiyatı"
 seo_intro: "Honor X8b ikinci el fiyatını Türkiye ikinci el piyasasına göre hafıza, kondisyon ve cihaz kayıt durumu bilgileriyle KaçaGider üzerinden değerlendirin."
 seo_context_heading: "X8b için ikinci el değerleme"
 seo_context: "Honor X8b ikinci el fiyatını Türkiye ikinci el piyasasına göre hafıza, kondisyon ve cihaz kayıt durumu bilgileriyle KaçaGider üzerinden değerlendirin."

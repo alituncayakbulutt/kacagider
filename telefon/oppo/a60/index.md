@@ -2,7 +2,7 @@
 layout: "seo"
 seo_title: "A60 Kaça Satılır? 2026 İkinci El Fiyatı | KaçaGider"
 seo_description: "A60 kaça satılır? Hafıza, ekran, batarya, kamera ve cihaz durumuna göre 2026 güncel ikinci el tahmini satış değerini KaçaGider ile ücretsiz hesapla."
-seo_h1: "A60 İkinci El Fiyatı"
+seo_h1: "A60 Kaça Satılır? 2026 İkinci El Fiyatı"
 seo_intro: "Oppo A60 ikinci el fiyatını Türkiye ikinci el piyasasına göre hafıza, kondisyon ve cihaz kayıt durumu bilgileriyle KaçaGider üzerinden değerlendirin."
 seo_context_heading: "A60 için ikinci el değerleme"
 seo_context: "Oppo A60 ikinci el fiyatını Türkiye ikinci el piyasasına göre hafıza, kondisyon ve cihaz kayıt durumu bilgileriyle KaçaGider üzerinden değerlendirin."

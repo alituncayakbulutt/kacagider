@@ -2,7 +2,7 @@
 layout: "seo"
 seo_title: "Nova 12 SE Kaça Satılır? 2026 İkinci El Fiyatı | KaçaGider"
 seo_description: "Nova 12 SE kaça satılır? Hafıza, ekran, batarya, kamera ve cihaz durumuna göre 2026 güncel ikinci el tahmini satış değerini KaçaGider ile ücretsiz hesapla."
-seo_h1: "Nova 12 SE İkinci El Fiyatı"
+seo_h1: "Nova 12 SE Kaça Satılır? 2026 İkinci El Fiyatı"
 seo_intro: "Huawei Nova 12 SE ikinci el fiyatını Türkiye ikinci el piyasasına göre hafıza, kondisyon ve cihaz kayıt durumu bilgileriyle KaçaGider üzerinden değerlendirin."
 seo_context_heading: "Nova 12 SE için ikinci el değerleme"
 seo_context: "Huawei Nova 12 SE ikinci el fiyatını Türkiye ikinci el piyasasına göre hafıza, kondisyon ve cihaz kayıt durumu bilgileriyle KaçaGider üzerinden değerlendirin."

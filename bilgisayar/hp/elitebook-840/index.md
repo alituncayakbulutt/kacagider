@@ -2,7 +2,7 @@
 layout: "seo"
 seo_title: "EliteBook 840 Kaça Satılır? 2026 İkinci El Fiyatı | KaçaGider"
 seo_description: "EliteBook 840 kaça satılır? İşlemci, RAM, depolama ve cihaz durumuna göre 2026 güncel ikinci el tahmini satış değerini KaçaGider ile ücretsiz hesapla."
-seo_h1: "EliteBook 840 İkinci El Fiyatı"
+seo_h1: "EliteBook 840 Kaça Satılır? 2026 İkinci El Fiyatı"
 seo_intro: "HP EliteBook 840 ikinci el fiyatını Türkiye ikinci el piyasasına göre kapasite ve kondisyon bilgileriyle KaçaGider üzerinden değerlendirin."
 seo_context_heading: "EliteBook 840 için ikinci el değerleme"
 seo_context: "HP EliteBook 840 ikinci el fiyatını Türkiye ikinci el piyasasına göre kapasite ve kondisyon bilgileriyle KaçaGider üzerinden değerlendirin."

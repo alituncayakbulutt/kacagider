@@ -2,7 +2,7 @@
 layout: "seo"
 seo_title: "Realme 13 Kaça Satılır? 2026 İkinci El Fiyatı | KaçaGider"
 seo_description: "Realme 13 kaça satılır? Hafıza, ekran, batarya, kamera ve cihaz durumuna göre 2026 güncel ikinci el tahmini satış değerini KaçaGider ile ücretsiz hesapla."
-seo_h1: "Realme 13 İkinci El Fiyatı"
+seo_h1: "Realme 13 Kaça Satılır? 2026 İkinci El Fiyatı"
 seo_intro: "Realme 13 ikinci el fiyatını Türkiye ikinci el piyasasına göre hafıza, kondisyon ve cihaz kayıt durumu bilgileriyle KaçaGider üzerinden değerlendirin."
 seo_context_heading: "Realme 13 için ikinci el değerleme"
 seo_context: "Realme 13 ikinci el fiyatını Türkiye ikinci el piyasasına göre hafıza, kondisyon ve cihaz kayıt durumu bilgileriyle KaçaGider üzerinden değerlendirin."

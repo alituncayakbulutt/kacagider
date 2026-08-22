@@ -2,7 +2,7 @@
 layout: "seo"
 seo_title: "Realme C33 Kaça Satılır? 2026 İkinci El Fiyatı | KaçaGider"
 seo_description: "Realme C33 kaça satılır? Hafıza, ekran, batarya, kamera ve cihaz durumuna göre 2026 güncel ikinci el tahmini satış değerini KaçaGider ile ücretsiz hesapla."
-seo_h1: "Realme C33 İkinci El Fiyatı"
+seo_h1: "Realme C33 Kaça Satılır? 2026 İkinci El Fiyatı"
 seo_intro: "Realme C33 ikinci el fiyatını Türkiye ikinci el piyasasına göre hafıza, kondisyon ve cihaz kayıt durumu bilgileriyle KaçaGider üzerinden değerlendirin."
 seo_context_heading: "Realme C33 için ikinci el değerleme"
 seo_context: "Realme C33 ikinci el fiyatını Türkiye ikinci el piyasasına göre hafıza, kondisyon ve cihaz kayıt durumu bilgileriyle KaçaGider üzerinden değerlendirin."

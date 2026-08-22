@@ -2,7 +2,7 @@
 layout: "seo"
 seo_title: "MateBook 14 Kaça Satılır? 2026 İkinci El Fiyatı | KaçaGider"
 seo_description: "MateBook 14 kaça satılır? İşlemci, RAM, depolama ve cihaz durumuna göre 2026 güncel ikinci el tahmini satış değerini KaçaGider ile ücretsiz hesapla."
-seo_h1: "MateBook 14 İkinci El Fiyatı"
+seo_h1: "MateBook 14 Kaça Satılır? 2026 İkinci El Fiyatı"
 seo_intro: "Huawei MateBook 14 ikinci el fiyatını Türkiye ikinci el piyasasına göre kapasite ve kondisyon bilgileriyle KaçaGider üzerinden değerlendirin."
 seo_context_heading: "MateBook 14 için ikinci el değerleme"
 seo_context: "Huawei MateBook 14 ikinci el fiyatını Türkiye ikinci el piyasasına göre kapasite ve kondisyon bilgileriyle KaçaGider üzerinden değerlendirin."

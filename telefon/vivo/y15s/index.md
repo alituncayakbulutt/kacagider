@@ -2,7 +2,7 @@
 layout: "seo"
 seo_title: "Y15s Kaça Satılır? 2026 İkinci El Fiyatı | KaçaGider"
 seo_description: "Y15s kaça satılır? Hafıza, ekran, batarya, kamera ve cihaz durumuna göre 2026 güncel ikinci el tahmini satış değerini KaçaGider ile ücretsiz hesapla."
-seo_h1: "Y15s İkinci El Fiyatı"
+seo_h1: "Y15s Kaça Satılır? 2026 İkinci El Fiyatı"
 seo_intro: "Vivo Y15s ikinci el fiyatını Türkiye ikinci el piyasasına göre hafıza, kondisyon ve cihaz kayıt durumu bilgileriyle KaçaGider üzerinden değerlendirin."
 seo_context_heading: "Y15s için ikinci el değerleme"
 seo_context: "Vivo Y15s ikinci el fiyatını Türkiye ikinci el piyasasına göre hafıza, kondisyon ve cihaz kayıt durumu bilgileriyle KaçaGider üzerinden değerlendirin."

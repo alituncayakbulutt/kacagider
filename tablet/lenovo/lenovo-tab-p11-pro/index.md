@@ -2,7 +2,7 @@
 layout: "seo"
 seo_title: "Lenovo Tab P11 Pro Kaça Satılır? 2026 İkinci El Fiyatı | KaçaGider"
 seo_description: "Lenovo Tab P11 Pro kaça satılır? Hafıza, ekran, batarya ve cihaz durumuna göre 2026 güncel ikinci el tahmini satış değerini KaçaGider ile ücretsiz hesapla."
-seo_h1: "Lenovo Tab P11 Pro İkinci El Fiyatı"
+seo_h1: "Lenovo Tab P11 Pro Kaça Satılır? 2026 İkinci El Fiyatı"
 seo_intro: "Lenovo Tab P11 Pro ikinci el fiyatını Türkiye ikinci el piyasasına göre kapasite ve kondisyon bilgileriyle KaçaGider üzerinden değerlendirin."
 seo_context_heading: "Lenovo Tab P11 Pro için ikinci el değerleme"
 seo_context: "Lenovo Tab P11 Pro ikinci el fiyatını Türkiye ikinci el piyasasına göre kapasite ve kondisyon bilgileriyle KaçaGider üzerinden değerlendirin."

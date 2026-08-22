@@ -2,7 +2,7 @@
 layout: "seo"
 seo_title: "POCO Pad Kaça Satılır? 2026 İkinci El Fiyatı | KaçaGider"
 seo_description: "POCO Pad kaça satılır? Hafıza, ekran, batarya ve cihaz durumuna göre 2026 güncel ikinci el tahmini satış değerini KaçaGider ile ücretsiz hesapla."
-seo_h1: "POCO Pad İkinci El Fiyatı"
+seo_h1: "POCO Pad Kaça Satılır? 2026 İkinci El Fiyatı"
 seo_intro: "Xiaomi POCO Pad ikinci el fiyatını Türkiye ikinci el piyasasına göre kapasite ve kondisyon bilgileriyle KaçaGider üzerinden değerlendirin."
 seo_context_heading: "POCO Pad için ikinci el değerleme"
 seo_context: "Xiaomi POCO Pad ikinci el fiyatını Türkiye ikinci el piyasasına göre kapasite ve kondisyon bilgileriyle KaçaGider üzerinden değerlendirin."

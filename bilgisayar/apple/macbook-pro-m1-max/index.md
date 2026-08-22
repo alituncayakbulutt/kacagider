@@ -2,7 +2,7 @@
 layout: "seo"
 seo_title: "MacBook Pro M1 Max Kaça Satılır? 2026 İkinci El Fiyatı | KaçaGider"
 seo_description: "MacBook Pro M1 Max kaça satılır? İşlemci, RAM, depolama ve cihaz durumuna göre 2026 güncel ikinci el tahmini satış değerini KaçaGider ile ücretsiz hesapla."
-seo_h1: "MacBook Pro M1 Max İkinci El Fiyatı"
+seo_h1: "MacBook Pro M1 Max Kaça Satılır? 2026 İkinci El Fiyatı"
 seo_intro: "Apple MacBook Pro M1 Max ikinci el fiyatını Türkiye ikinci el piyasasına göre kapasite ve kondisyon bilgileriyle KaçaGider üzerinden değerlendirin."
 seo_context_heading: "MacBook Pro M1 Max için ikinci el değerleme"
 seo_context: "Apple MacBook Pro M1 Max ikinci el fiyatını Türkiye ikinci el piyasasına göre kapasite ve kondisyon bilgileriyle KaçaGider üzerinden değerlendirin."

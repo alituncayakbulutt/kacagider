@@ -2,7 +2,7 @@
 layout: "seo"
 seo_title: "Redmi 13C Kaça Satılır? 2026 İkinci El Fiyatı | KaçaGider"
 seo_description: "Redmi 13C kaça satılır? Hafıza, ekran, batarya ve cihaz durumuna göre 2026 güncel ikinci el tahmini satış değerini KaçaGider ile ücretsiz hesapla."
-seo_h1: "Redmi 13C İkinci El Fiyatı"
+seo_h1: "Redmi 13C Kaça Satılır? 2026 İkinci El Fiyatı"
 seo_intro: "Xiaomi Redmi 13C ikinci el fiyatını Türkiye ikinci el piyasasına göre hafıza, kondisyon ve cihaz kayıt durumu bilgileriyle KaçaGider üzerinden değerlendirin."
 seo_context_heading: "Redmi 13C için ikinci el değerleme"
 seo_context: "Xiaomi Redmi 13C ikinci el fiyatını Türkiye ikinci el piyasasına göre hafıza, kondisyon ve cihaz kayıt durumu bilgileriyle KaçaGider üzerinden değerlendirin."

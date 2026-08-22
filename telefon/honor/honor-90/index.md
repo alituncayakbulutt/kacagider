@@ -2,7 +2,7 @@
 layout: "seo"
 seo_title: "Honor 90 Kaça Satılır? 2026 İkinci El Fiyatı | KaçaGider"
 seo_description: "Honor 90 kaça satılır? Hafıza, ekran, batarya, kamera ve cihaz durumuna göre 2026 güncel ikinci el tahmini satış değerini KaçaGider ile ücretsiz hesapla."
-seo_h1: "Honor 90 İkinci El Fiyatı"
+seo_h1: "Honor 90 Kaça Satılır? 2026 İkinci El Fiyatı"
 seo_intro: "Honor 90 ikinci el fiyatını Türkiye ikinci el piyasasına göre hafıza, kondisyon ve cihaz kayıt durumu bilgileriyle KaçaGider üzerinden değerlendirin."
 seo_context_heading: "Honor 90 için ikinci el değerleme"
 seo_context: "Honor 90 ikinci el fiyatını Türkiye ikinci el piyasasına göre hafıza, kondisyon ve cihaz kayıt durumu bilgileriyle KaçaGider üzerinden değerlendirin."

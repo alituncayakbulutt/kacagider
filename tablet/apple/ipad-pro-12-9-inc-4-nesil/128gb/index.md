@@ -2,7 +2,7 @@
 layout: "seo"
 seo_title: "iPad Pro 12.9 inç (4. nesil) 128 GB Kaça Satılır? 2026 | KaçaGider"
 seo_description: "iPad Pro 12.9 inç (4. nesil) 128 GB kaça satılır? Ekran, batarya ve cihaz durumuna göre 2026 güncel ikinci el tahmini satış değerini KaçaGider ile ücretsiz hesapla."
-seo_h1: "iPad Pro 12.9 inç (4. nesil) 128 GB İkinci El Fiyatı"
+seo_h1: "iPad Pro 12.9 inç (4. nesil) 128 GB Kaça Satılır? 2026 İkinci El Fiyatı"
 seo_intro: "Apple iPad Pro 12.9 inç (4. nesil) 128 GB ikinci el değerini Türkiye ikinci el piyasasına göre kapasite ve kondisyon bilgileriyle KaçaGider üzerinden değerlendirin."
 seo_context_heading: "iPad Pro 12.9 inç (4. nesil) 128 GB için ikinci el değerleme"
 seo_context: "Apple iPad Pro 12.9 inç (4. nesil) 128 GB ikinci el değerini Türkiye ikinci el piyasasına göre kapasite ve kondisyon bilgileriyle KaçaGider üzerinden değerlendirin."

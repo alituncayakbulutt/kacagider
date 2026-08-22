@@ -2,7 +2,7 @@
 layout: "seo"
 seo_title: "V50 Lite Kaça Satılır? 2026 İkinci El Fiyatı | KaçaGider"
 seo_description: "V50 Lite kaça satılır? Hafıza, ekran, batarya, kamera ve cihaz durumuna göre 2026 güncel ikinci el tahmini satış değerini KaçaGider ile ücretsiz hesapla."
-seo_h1: "V50 Lite İkinci El Fiyatı"
+seo_h1: "V50 Lite Kaça Satılır? 2026 İkinci El Fiyatı"
 seo_intro: "Vivo V50 Lite ikinci el fiyatını Türkiye ikinci el piyasasına göre hafıza, kondisyon ve cihaz kayıt durumu bilgileriyle KaçaGider üzerinden değerlendirin."
 seo_context_heading: "V50 Lite için ikinci el değerleme"
 seo_context: "Vivo V50 Lite ikinci el fiyatını Türkiye ikinci el piyasasına göre hafıza, kondisyon ve cihaz kayıt durumu bilgileriyle KaçaGider üzerinden değerlendirin."

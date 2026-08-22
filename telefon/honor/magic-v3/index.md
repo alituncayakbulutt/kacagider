@@ -2,7 +2,7 @@
 layout: "seo"
 seo_title: "Magic V3 Kaça Satılır? 2026 İkinci El Fiyatı | KaçaGider"
 seo_description: "Magic V3 kaça satılır? Hafıza, ekran, batarya, kamera ve cihaz durumuna göre 2026 güncel ikinci el tahmini satış değerini KaçaGider ile ücretsiz hesapla."
-seo_h1: "Magic V3 İkinci El Fiyatı"
+seo_h1: "Magic V3 Kaça Satılır? 2026 İkinci El Fiyatı"
 seo_intro: "Honor Magic V3 ikinci el fiyatını Türkiye ikinci el piyasasına göre hafıza, kondisyon ve cihaz kayıt durumu bilgileriyle KaçaGider üzerinden değerlendirin."
 seo_context_heading: "Magic V3 için ikinci el değerleme"
 seo_context: "Honor Magic V3 ikinci el fiyatını Türkiye ikinci el piyasasına göre hafıza, kondisyon ve cihaz kayıt durumu bilgileriyle KaçaGider üzerinden değerlendirin."

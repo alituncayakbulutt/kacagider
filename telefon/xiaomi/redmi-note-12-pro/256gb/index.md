@@ -2,7 +2,7 @@
 layout: "seo"
 seo_title: "Redmi Note 12 Pro 256 GB Kaça Satılır? 2026 Fiyatı | KaçaGider"
 seo_description: "Redmi Note 12 Pro 256 GB kaça satılır? Ekran, batarya ve cihaz durumuna göre 2026 güncel ikinci el tahmini satış değerini KaçaGider ile ücretsiz hesapla."
-seo_h1: "Redmi Note 12 Pro 256 GB İkinci El Fiyatı"
+seo_h1: "Redmi Note 12 Pro 256 GB Kaça Satılır? 2026 İkinci El Fiyatı"
 seo_intro: "Xiaomi Redmi Note 12 Pro 256 GB ikinci el değerini Türkiye ikinci el piyasasına göre hafıza, kondisyon ve cihaz kayıt durumu bilgileriyle KaçaGider üzerinden değerlendirin."
 seo_context_heading: "Redmi Note 12 Pro 256 GB için ikinci el değerleme"
 seo_context: "Xiaomi Redmi Note 12 Pro 256 GB ikinci el değerini Türkiye ikinci el piyasasına göre hafıza, kondisyon ve cihaz kayıt durumu bilgileriyle KaçaGider üzerinden değerlendirin."

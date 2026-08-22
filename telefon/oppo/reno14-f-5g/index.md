@@ -2,7 +2,7 @@
 layout: "seo"
 seo_title: "Reno14 F 5G Kaça Satılır? 2026 İkinci El Fiyatı | KaçaGider"
 seo_description: "Reno14 F 5G kaça satılır? Hafıza, ekran, batarya, kamera ve cihaz durumuna göre 2026 güncel ikinci el tahmini satış değerini KaçaGider ile ücretsiz hesapla."
-seo_h1: "Reno14 F 5G İkinci El Fiyatı"
+seo_h1: "Reno14 F 5G Kaça Satılır? 2026 İkinci El Fiyatı"
 seo_intro: "Oppo Reno14 F 5G ikinci el fiyatını Türkiye ikinci el piyasasına göre hafıza, kondisyon ve cihaz kayıt durumu bilgileriyle KaçaGider üzerinden değerlendirin."
 seo_context_heading: "Reno14 F 5G için ikinci el değerleme"
 seo_context: "Oppo Reno14 F 5G ikinci el fiyatını Türkiye ikinci el piyasasına göre hafıza, kondisyon ve cihaz kayıt durumu bilgileriyle KaçaGider üzerinden değerlendirin."

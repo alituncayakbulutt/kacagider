@@ -2,7 +2,7 @@
 layout: "seo"
 seo_title: "iPhone 17e Kaça Satılır? 2026 İkinci El Fiyatı | KaçaGider"
 seo_description: "iPhone 17e kaça satılır? Hafıza, pil sağlığı ve cihaz durumuna göre 2026 güncel ikinci el tahmini satış değerini KaçaGider ile ücretsiz hesapla."
-seo_h1: "iPhone 17e İkinci El Fiyatı"
+seo_h1: "iPhone 17e Kaça Satılır? 2026 İkinci El Fiyatı"
 seo_intro: "Apple iPhone 17e ikinci el fiyatını Türkiye ikinci el piyasasına göre hafıza, kondisyon ve cihaz kayıt durumu bilgileriyle KaçaGider üzerinden değerlendirin."
 seo_context_heading: "iPhone 17e için ikinci el değerleme"
 seo_context: "Apple iPhone 17e ikinci el fiyatını Türkiye ikinci el piyasasına göre hafıza, kondisyon ve cihaz kayıt durumu bilgileriyle KaçaGider üzerinden değerlendirin."

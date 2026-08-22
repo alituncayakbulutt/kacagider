@@ -2,7 +2,7 @@
 layout: "seo"
 seo_title: "Xiaomi 12 256 GB Kaça Satılır? 2026 İkinci El Fiyatı | KaçaGider"
 seo_description: "Xiaomi 12 256 GB kaça satılır? Ekran, batarya ve cihaz durumuna göre 2026 güncel ikinci el tahmini satış değerini KaçaGider ile ücretsiz hesapla."
-seo_h1: "Xiaomi 12 256 GB İkinci El Fiyatı"
+seo_h1: "Xiaomi 12 256 GB Kaça Satılır? 2026 İkinci El Fiyatı"
 seo_intro: "Xiaomi 12 256 GB ikinci el değerini Türkiye ikinci el piyasasına göre hafıza, kondisyon ve cihaz kayıt durumu bilgileriyle KaçaGider üzerinden değerlendirin."
 seo_context_heading: "Xiaomi 12 256 GB için ikinci el değerleme"
 seo_context: "Xiaomi 12 256 GB ikinci el değerini Türkiye ikinci el piyasasına göre hafıza, kondisyon ve cihaz kayıt durumu bilgileriyle KaçaGider üzerinden değerlendirin."

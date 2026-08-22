@@ -2,7 +2,7 @@
 layout: "seo"
 seo_title: "iPhone 13 Kaça Satılır? 2026 İkinci El Fiyatı | KaçaGider"
 seo_description: "iPhone 13 kaça satılır? Hafıza ve cihaz durumunu seç; güncel ikinci el tahmini satış değerini KaçaGider ile ücretsiz hesapla."
-seo_h1: "iPhone 13 İkinci El Fiyatı"
+seo_h1: "iPhone 13 Kaça Satılır? 2026 İkinci El Fiyatı"
 seo_intro: "Apple iPhone 13 ikinci el fiyatını Türkiye ikinci el piyasasına göre hafıza, kondisyon ve cihaz kayıt durumu bilgileriyle KaçaGider üzerinden değerlendirin."
 seo_context_heading: "iPhone 13 için ikinci el değerleme"
 seo_context: "Apple iPhone 13 ikinci el fiyatını Türkiye ikinci el piyasasına göre hafıza, kondisyon ve cihaz kayıt durumu bilgileriyle KaçaGider üzerinden değerlendirin."

@@ -2,7 +2,7 @@
 layout: "seo"
 seo_title: "P30 Pro Kaça Satılır? 2026 İkinci El Fiyatı | KaçaGider"
 seo_description: "P30 Pro kaça satılır? Hafıza, ekran, batarya, kamera ve cihaz durumuna göre 2026 güncel ikinci el tahmini satış değerini KaçaGider ile ücretsiz hesapla."
-seo_h1: "P30 Pro İkinci El Fiyatı"
+seo_h1: "P30 Pro Kaça Satılır? 2026 İkinci El Fiyatı"
 seo_intro: "Huawei P30 Pro ikinci el fiyatını Türkiye ikinci el piyasasına göre hafıza, kondisyon ve cihaz kayıt durumu bilgileriyle KaçaGider üzerinden değerlendirin."
 seo_context_heading: "P30 Pro için ikinci el değerleme"
 seo_context: "Huawei P30 Pro ikinci el fiyatını Türkiye ikinci el piyasasına göre hafıza, kondisyon ve cihaz kayıt durumu bilgileriyle KaçaGider üzerinden değerlendirin."

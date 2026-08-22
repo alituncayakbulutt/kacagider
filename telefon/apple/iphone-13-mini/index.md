@@ -2,7 +2,7 @@
 layout: "seo"
 seo_title: "iPhone 13 mini Ne Kadar Eder? 2026 İkinci El Fiyatı | KaçaGider"
 seo_description: "iPhone 13 mini ne kadar eder? Hafıza ve cihaz durumuna göre güncel ikinci el tahmini satış değerini KaçaGider ile ücretsiz hesapla."
-seo_h1: "iPhone 13 mini İkinci El Fiyatı"
+seo_h1: "iPhone 13 mini Kaça Satılır? 2026 İkinci El Fiyatı"
 seo_intro: "Apple iPhone 13 mini ikinci el fiyatını Türkiye ikinci el piyasasına göre hafıza, kondisyon ve cihaz kayıt durumu bilgileriyle KaçaGider üzerinden değerlendirin."
 seo_context_heading: "iPhone 13 mini için ikinci el değerleme"
 seo_context: "Apple iPhone 13 mini ikinci el fiyatını Türkiye ikinci el piyasasına göre hafıza, kondisyon ve cihaz kayıt durumu bilgileriyle KaçaGider üzerinden değerlendirin."

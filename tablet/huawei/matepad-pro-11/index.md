@@ -2,7 +2,7 @@
 layout: "seo"
 seo_title: "MatePad Pro 11 Kaça Satılır? 2026 İkinci El Fiyatı | KaçaGider"
 seo_description: "MatePad Pro 11 kaça satılır? Hafıza, ekran, batarya ve cihaz durumuna göre 2026 güncel ikinci el tahmini satış değerini KaçaGider ile ücretsiz hesapla."
-seo_h1: "MatePad Pro 11 İkinci El Fiyatı"
+seo_h1: "MatePad Pro 11 Kaça Satılır? 2026 İkinci El Fiyatı"
 seo_intro: "Huawei MatePad Pro 11 ikinci el fiyatını Türkiye ikinci el piyasasına göre kapasite ve kondisyon bilgileriyle KaçaGider üzerinden değerlendirin."
 seo_context_heading: "MatePad Pro 11 için ikinci el değerleme"
 seo_context: "Huawei MatePad Pro 11 ikinci el fiyatını Türkiye ikinci el piyasasına göre kapasite ve kondisyon bilgileriyle KaçaGider üzerinden değerlendirin."

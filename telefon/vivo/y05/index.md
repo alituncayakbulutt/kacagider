@@ -2,7 +2,7 @@
 layout: "seo"
 seo_title: "Y05 Kaça Satılır? 2026 İkinci El Fiyatı | KaçaGider"
 seo_description: "Y05 kaça satılır? Hafıza, ekran, batarya, kamera ve cihaz durumuna göre 2026 güncel ikinci el tahmini satış değerini KaçaGider ile ücretsiz hesapla."
-seo_h1: "Y05 İkinci El Fiyatı"
+seo_h1: "Y05 Kaça Satılır? 2026 İkinci El Fiyatı"
 seo_intro: "Vivo Y05 ikinci el fiyatını Türkiye ikinci el piyasasına göre hafıza, kondisyon ve cihaz kayıt durumu bilgileriyle KaçaGider üzerinden değerlendirin."
 seo_context_heading: "Y05 için ikinci el değerleme"
 seo_context: "Vivo Y05 ikinci el fiyatını Türkiye ikinci el piyasasına göre hafıza, kondisyon ve cihaz kayıt durumu bilgileriyle KaçaGider üzerinden değerlendirin."

@@ -2,7 +2,7 @@
 layout: "seo"
 seo_title: "Xiaomi 13T Kaça Satılır? 2026 İkinci El Fiyatı | KaçaGider"
 seo_description: "Xiaomi 13T kaça satılır? Hafıza, ekran, batarya ve cihaz durumuna göre 2026 güncel ikinci el tahmini satış değerini KaçaGider ile ücretsiz hesapla."
-seo_h1: "Xiaomi 13T İkinci El Fiyatı"
+seo_h1: "Xiaomi 13T Kaça Satılır? 2026 İkinci El Fiyatı"
 seo_intro: "Xiaomi 13T ikinci el fiyatını Türkiye ikinci el piyasasına göre hafıza, kondisyon ve cihaz kayıt durumu bilgileriyle KaçaGider üzerinden değerlendirin."
 seo_context_heading: "Xiaomi 13T için ikinci el değerleme"
 seo_context: "Xiaomi 13T ikinci el fiyatını Türkiye ikinci el piyasasına göre hafıza, kondisyon ve cihaz kayıt durumu bilgileriyle KaçaGider üzerinden değerlendirin."

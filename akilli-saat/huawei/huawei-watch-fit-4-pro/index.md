@@ -2,7 +2,7 @@
 layout: "seo"
 seo_title: "Huawei Watch Fit 4 Pro Kaça Satılır? 2026 Fiyatı | KaçaGider"
 seo_description: "Huawei Watch Fit 4 Pro kaça satılır? Kasa, ekran, batarya ve genel cihaz durumuna göre 2026 güncel ikinci el tahmini satış değerini KaçaGider ile ücretsiz hesapla."
-seo_h1: "Huawei Watch Fit 4 Pro İkinci El Fiyatı"
+seo_h1: "Huawei Watch Fit 4 Pro Kaça Satılır? 2026 İkinci El Fiyatı"
 seo_intro: "Huawei Watch Fit 4 Pro ikinci el fiyatını Türkiye ikinci el piyasasına göre kasa boyutu ve kondisyon bilgileriyle KaçaGider üzerinden değerlendirin."
 seo_context_heading: "Huawei Watch Fit 4 Pro için ikinci el değerleme"
 seo_context: "Huawei Watch Fit 4 Pro ikinci el fiyatını Türkiye ikinci el piyasasına göre kasa boyutu ve kondisyon bilgileriyle KaçaGider üzerinden değerlendirin."

@@ -2,7 +2,7 @@
 layout: "seo"
 seo_title: "OnePlus 8 Kaça Satılır? 2026 İkinci El Fiyatı | KaçaGider"
 seo_description: "OnePlus 8 kaça satılır? Hafıza, ekran, batarya, kamera ve cihaz durumuna göre 2026 güncel ikinci el tahmini satış değerini KaçaGider ile ücretsiz hesapla."
-seo_h1: "OnePlus 8 İkinci El Fiyatı"
+seo_h1: "OnePlus 8 Kaça Satılır? 2026 İkinci El Fiyatı"
 seo_intro: "OnePlus 8 ikinci el fiyatını Türkiye ikinci el piyasasına göre hafıza, kondisyon ve cihaz kayıt durumu bilgileriyle KaçaGider üzerinden değerlendirin."
 seo_context_heading: "OnePlus 8 için ikinci el değerleme"
 seo_context: "OnePlus 8 ikinci el fiyatını Türkiye ikinci el piyasasına göre hafıza, kondisyon ve cihaz kayıt durumu bilgileriyle KaçaGider üzerinden değerlendirin."

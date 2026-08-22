@@ -2,7 +2,7 @@
 layout: "seo"
 seo_title: "iPhone 14 Plus Kaça Satılır? 2026 İkinci El Fiyatı | KaçaGider"
 seo_description: "iPhone 14 Plus kaça satılır? Hafıza, pil sağlığı ve cihaz durumuna göre 2026 güncel ikinci el tahmini satış değerini KaçaGider ile ücretsiz hesapla."
-seo_h1: "iPhone 14 Plus İkinci El Fiyatı"
+seo_h1: "iPhone 14 Plus Kaça Satılır? 2026 İkinci El Fiyatı"
 seo_intro: "Apple iPhone 14 Plus ikinci el fiyatını Türkiye ikinci el piyasasına göre hafıza, kondisyon ve cihaz kayıt durumu bilgileriyle KaçaGider üzerinden değerlendirin."
 seo_context_heading: "iPhone 14 Plus için ikinci el değerleme"
 seo_context: "Apple iPhone 14 Plus ikinci el fiyatını Türkiye ikinci el piyasasına göre hafıza, kondisyon ve cihaz kayıt durumu bilgileriyle KaçaGider üzerinden değerlendirin."

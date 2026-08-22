@@ -2,7 +2,7 @@
 layout: "seo"
 seo_title: "Redmi Pad Kaça Satılır? 2026 İkinci El Fiyatı | KaçaGider"
 seo_description: "Redmi Pad kaça satılır? Hafıza, ekran, batarya ve cihaz durumuna göre 2026 güncel ikinci el tahmini satış değerini KaçaGider ile ücretsiz hesapla."
-seo_h1: "Redmi Pad İkinci El Fiyatı"
+seo_h1: "Redmi Pad Kaça Satılır? 2026 İkinci El Fiyatı"
 seo_intro: "Xiaomi Redmi Pad ikinci el fiyatını Türkiye ikinci el piyasasına göre kapasite ve kondisyon bilgileriyle KaçaGider üzerinden değerlendirin."
 seo_context_heading: "Redmi Pad için ikinci el değerleme"
 seo_context: "Xiaomi Redmi Pad ikinci el fiyatını Türkiye ikinci el piyasasına göre kapasite ve kondisyon bilgileriyle KaçaGider üzerinden değerlendirin."

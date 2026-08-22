@@ -2,7 +2,7 @@
 layout: "seo"
 seo_title: "Xiaomi 15 Ultra Kaça Satılır? 2026 İkinci El Fiyatı | KaçaGider"
 seo_description: "Xiaomi 15 Ultra kaça satılır? Hafıza, ekran, batarya ve cihaz durumuna göre 2026 güncel ikinci el tahmini satış değerini KaçaGider ile ücretsiz hesapla."
-seo_h1: "Xiaomi 15 Ultra İkinci El Fiyatı"
+seo_h1: "Xiaomi 15 Ultra Kaça Satılır? 2026 İkinci El Fiyatı"
 seo_intro: "Xiaomi 15 Ultra ikinci el fiyatını Türkiye ikinci el piyasasına göre hafıza, kondisyon ve cihaz kayıt durumu bilgileriyle KaçaGider üzerinden değerlendirin."
 seo_context_heading: "Xiaomi 15 Ultra için ikinci el değerleme"
 seo_context: "Xiaomi 15 Ultra ikinci el fiyatını Türkiye ikinci el piyasasına göre hafıza, kondisyon ve cihaz kayıt durumu bilgileriyle KaçaGider üzerinden değerlendirin."

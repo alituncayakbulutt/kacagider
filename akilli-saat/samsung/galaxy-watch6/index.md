@@ -2,7 +2,7 @@
 layout: "seo"
 seo_title: "Galaxy Watch6 Kaça Satılır? 2026 İkinci El Fiyatı | KaçaGider"
 seo_description: "Galaxy Watch6 kaça satılır? Kasa, ekran, batarya ve genel cihaz durumuna göre 2026 güncel ikinci el tahmini satış değerini KaçaGider ile ücretsiz hesapla."
-seo_h1: "Galaxy Watch6 İkinci El Fiyatı"
+seo_h1: "Galaxy Watch6 Kaça Satılır? 2026 İkinci El Fiyatı"
 seo_intro: "Samsung Galaxy Watch6 ikinci el fiyatını Türkiye ikinci el piyasasına göre kasa boyutu ve kondisyon bilgileriyle KaçaGider üzerinden değerlendirin."
 seo_context_heading: "Galaxy Watch6 için ikinci el değerleme"
 seo_context: "Samsung Galaxy Watch6 ikinci el fiyatını Türkiye ikinci el piyasasına göre kasa boyutu ve kondisyon bilgileriyle KaçaGider üzerinden değerlendirin."

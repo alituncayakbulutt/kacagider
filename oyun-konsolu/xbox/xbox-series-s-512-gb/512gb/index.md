@@ -2,7 +2,7 @@
 layout: "seo"
 seo_title: "Xbox Series S 512 GB 512 GB Kaça Satılır? 2026 Fiyatı | KaçaGider"
 seo_description: "Xbox Series S 512 GB 512 GB kaça satılır? Depolama, kozmetik durum, aksesuarlar ve çalışma durumuna göre 2026 güncel ikinci el tahmini satış değerini KaçaGider ile ücretsiz hesapla."
-seo_h1: "Xbox Series S 512 GB 512 GB İkinci El Fiyatı"
+seo_h1: "Xbox Series S 512 GB 512 GB Kaça Satılır? 2026 İkinci El Fiyatı"
 seo_intro: "Xbox Series S 512 GB 512 GB ikinci el değerini Türkiye ikinci el piyasasına göre depolama ve kondisyon bilgileriyle KaçaGider üzerinden değerlendirin."
 seo_context_heading: "Xbox Series S 512 GB 512 GB için ikinci el değerleme"
 seo_context: "Xbox Series S 512 GB 512 GB ikinci el değerini Türkiye ikinci el piyasasına göre depolama ve kondisyon bilgileriyle KaçaGider üzerinden değerlendirin."
