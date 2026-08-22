@@ -19,7 +19,7 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.x'
-      - name: Update phone SEO titles and descriptions
+      - name: Update device SEO titles and descriptions
         run: python scripts/update-seo-ctr.py
       - name: Commit changes
         run: |
@@ -29,6 +29,6 @@ jobs:
           fi
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add telefon
-          git commit -m "SEO: strengthen phone CTR titles and descriptions"
+          git add telefon tablet bilgisayar akilli-saat oyun-konsolu
+          git commit -m "SEO: optimize all device CTR titles and descriptions"
           git push
