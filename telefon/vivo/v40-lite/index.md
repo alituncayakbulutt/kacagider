@@ -1,7 +1,7 @@
 ---
 layout: "seo"
-seo_title: "V40 Lite İkinci El Fiyatı 2026 | KaçaGider"
-seo_description: "Vivo V40 Lite ikinci el fiyatını Türkiye ikinci el piyasasına göre hafıza, kondisyon ve cihaz kayıt durumu bilgileriyle KaçaGider üzerinden değerlendirin."
+seo_title: "V40 Lite Ne Kadar Eder? 2026 İkinci El Fiyatı | KaçaGider"
+seo_description: "V40 Lite ne kadar eder? Hafıza ve cihaz durumuna göre güncel ikinci el tahmini satış değerini KaçaGider ile ücretsiz hesapla."
 seo_h1: "V40 Lite İkinci El Fiyatı"
 seo_intro: "Vivo V40 Lite ikinci el fiyatını Türkiye ikinci el piyasasına göre hafıza, kondisyon ve cihaz kayıt durumu bilgileriyle KaçaGider üzerinden değerlendirin."
 seo_context_heading: "V40 Lite için ikinci el değerleme"

@@ -1,7 +1,7 @@
 ---
 layout: "seo"
-seo_title: "POCO F6 İkinci El Fiyatı 2026 | KaçaGider"
-seo_description: "Xiaomi POCO F6 ikinci el fiyatını Türkiye ikinci el piyasasına göre hafıza, kondisyon ve cihaz kayıt durumu bilgileriyle KaçaGider üzerinden değerlendirin."
+seo_title: "POCO F6 Ne Kadar Eder? 2026 İkinci El Fiyatı | KaçaGider"
+seo_description: "POCO F6 ne kadar eder? Hafıza ve cihaz durumuna göre güncel ikinci el tahmini satış değerini KaçaGider ile ücretsiz hesapla."
 seo_h1: "POCO F6 İkinci El Fiyatı"
 seo_intro: "Xiaomi POCO F6 ikinci el fiyatını Türkiye ikinci el piyasasına göre hafıza, kondisyon ve cihaz kayıt durumu bilgileriyle KaçaGider üzerinden değerlendirin."
 seo_context_heading: "POCO F6 için ikinci el değerleme"

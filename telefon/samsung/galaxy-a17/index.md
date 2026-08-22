@@ -1,7 +1,7 @@
 ---
 layout: "seo"
-seo_title: "Galaxy A17 İkinci El Fiyatı 2026 | KaçaGider"
-seo_description: "Samsung Galaxy A17 ikinci el fiyatını Türkiye ikinci el piyasasına göre hafıza, kondisyon ve cihaz kayıt durumu bilgileriyle KaçaGider üzerinden değerlendirin."
+seo_title: "Galaxy A17 Ne Kadar Eder? 2026 İkinci El Fiyatı | KaçaGider"
+seo_description: "Galaxy A17 ne kadar eder? Hafıza ve cihaz durumuna göre güncel ikinci el tahmini satış değerini KaçaGider ile ücretsiz hesapla."
 seo_h1: "Galaxy A17 İkinci El Fiyatı"
 seo_intro: "Samsung Galaxy A17 ikinci el fiyatını Türkiye ikinci el piyasasına göre hafıza, kondisyon ve cihaz kayıt durumu bilgileriyle KaçaGider üzerinden değerlendirin."
 seo_context_heading: "Galaxy A17 için ikinci el değerleme"

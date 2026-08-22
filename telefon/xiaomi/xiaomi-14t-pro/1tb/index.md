@@ -1,7 +1,7 @@
 ---
 layout: "seo"
-seo_title: "Xiaomi 14T Pro 1 TB İkinci El Fiyatı 2026 | KaçaGider"
-seo_description: "Xiaomi 14T Pro 1 TB ikinci el değerini Türkiye ikinci el piyasasına göre hafıza, kondisyon ve cihaz kayıt durumu bilgileriyle KaçaGider üzerinden değerlendirin."
+seo_title: "Xiaomi 14T Pro 1 TB Ne Kadar Eder? 2026 İkinci El Fiyatı | KaçaGider"
+seo_description: "Xiaomi 14T Pro 1 TB ne kadar eder? Hafıza ve cihaz durumuna göre güncel ikinci el tahmini satış değerini KaçaGider ile ücretsiz hesapla."
 seo_h1: "Xiaomi 14T Pro 1 TB İkinci El Fiyatı"
 seo_intro: "Xiaomi 14T Pro 1 TB ikinci el değerini Türkiye ikinci el piyasasına göre hafıza, kondisyon ve cihaz kayıt durumu bilgileriyle KaçaGider üzerinden değerlendirin."
 seo_context_heading: "Xiaomi 14T Pro 1 TB için ikinci el değerleme"

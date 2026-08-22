@@ -1,7 +1,7 @@
 ---
 layout: "seo"
-seo_title: "P40 İkinci El Fiyatı 2026 | KaçaGider"
-seo_description: "Huawei P40 ikinci el fiyatını Türkiye ikinci el piyasasına göre hafıza, kondisyon ve cihaz kayıt durumu bilgileriyle KaçaGider üzerinden değerlendirin."
+seo_title: "P40 Ne Kadar Eder? 2026 İkinci El Fiyatı | KaçaGider"
+seo_description: "P40 ne kadar eder? Hafıza ve cihaz durumuna göre güncel ikinci el tahmini satış değerini KaçaGider ile ücretsiz hesapla."
 seo_h1: "P40 İkinci El Fiyatı"
 seo_intro: "Huawei P40 ikinci el fiyatını Türkiye ikinci el piyasasına göre hafıza, kondisyon ve cihaz kayıt durumu bilgileriyle KaçaGider üzerinden değerlendirin."
 seo_context_heading: "P40 için ikinci el değerleme"

@@ -1,7 +1,7 @@
 ---
 layout: "seo"
-seo_title: "Redmi Note 11 64 GB İkinci El Fiyatı 2026 | KaçaGider"
-seo_description: "Xiaomi Redmi Note 11 64 GB ikinci el değerini Türkiye ikinci el piyasasına göre hafıza, kondisyon ve cihaz kayıt durumu bilgileriyle KaçaGider üzerinden değerlendirin."
+seo_title: "Redmi Note 11 64 GB Ne Kadar Eder? 2026 İkinci El Fiyatı | KaçaGider"
+seo_description: "Redmi Note 11 64 GB ne kadar eder? Hafıza ve cihaz durumuna göre güncel ikinci el tahmini satış değerini KaçaGider ile ücretsiz hesapla."
 seo_h1: "Redmi Note 11 64 GB İkinci El Fiyatı"
 seo_intro: "Xiaomi Redmi Note 11 64 GB ikinci el değerini Türkiye ikinci el piyasasına göre hafıza, kondisyon ve cihaz kayıt durumu bilgileriyle KaçaGider üzerinden değerlendirin."
 seo_context_heading: "Redmi Note 11 64 GB için ikinci el değerleme"

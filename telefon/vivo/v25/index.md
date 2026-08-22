@@ -1,7 +1,7 @@
 ---
 layout: "seo"
-seo_title: "V25 İkinci El Fiyatı 2026 | KaçaGider"
-seo_description: "Vivo V25 ikinci el fiyatını Türkiye ikinci el piyasasına göre hafıza, kondisyon ve cihaz kayıt durumu bilgileriyle KaçaGider üzerinden değerlendirin."
+seo_title: "V25 Ne Kadar Eder? 2026 İkinci El Fiyatı | KaçaGider"
+seo_description: "V25 ne kadar eder? Hafıza ve cihaz durumuna göre güncel ikinci el tahmini satış değerini KaçaGider ile ücretsiz hesapla."
 seo_h1: "V25 İkinci El Fiyatı"
 seo_intro: "Vivo V25 ikinci el fiyatını Türkiye ikinci el piyasasına göre hafıza, kondisyon ve cihaz kayıt durumu bilgileriyle KaçaGider üzerinden değerlendirin."
 seo_context_heading: "V25 için ikinci el değerleme"

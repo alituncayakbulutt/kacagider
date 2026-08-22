@@ -1,7 +1,7 @@
 ---
 layout: "seo"
-seo_title: "Xiaomi 11T Pro İkinci El Fiyatı 2026 | KaçaGider"
-seo_description: "Xiaomi 11T Pro ikinci el fiyatını Türkiye ikinci el piyasasına göre hafıza, kondisyon ve cihaz kayıt durumu bilgileriyle KaçaGider üzerinden değerlendirin."
+seo_title: "Xiaomi 11T Pro Ne Kadar Eder? 2026 İkinci El Fiyatı | KaçaGider"
+seo_description: "Xiaomi 11T Pro ne kadar eder? Hafıza ve cihaz durumuna göre güncel ikinci el tahmini satış değerini KaçaGider ile ücretsiz hesapla."
 seo_h1: "Xiaomi 11T Pro İkinci El Fiyatı"
 seo_intro: "Xiaomi 11T Pro ikinci el fiyatını Türkiye ikinci el piyasasına göre hafıza, kondisyon ve cihaz kayıt durumu bilgileriyle KaçaGider üzerinden değerlendirin."
 seo_context_heading: "Xiaomi 11T Pro için ikinci el değerleme"

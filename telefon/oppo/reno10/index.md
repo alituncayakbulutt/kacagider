@@ -1,7 +1,7 @@
 ---
 layout: "seo"
-seo_title: "Reno10 İkinci El Fiyatı 2026 | KaçaGider"
-seo_description: "Oppo Reno10 ikinci el fiyatını Türkiye ikinci el piyasasına göre hafıza, kondisyon ve cihaz kayıt durumu bilgileriyle KaçaGider üzerinden değerlendirin."
+seo_title: "Reno10 Ne Kadar Eder? 2026 İkinci El Fiyatı | KaçaGider"
+seo_description: "Reno10 ne kadar eder? Hafıza ve cihaz durumuna göre güncel ikinci el tahmini satış değerini KaçaGider ile ücretsiz hesapla."
 seo_h1: "Reno10 İkinci El Fiyatı"
 seo_intro: "Oppo Reno10 ikinci el fiyatını Türkiye ikinci el piyasasına göre hafıza, kondisyon ve cihaz kayıt durumu bilgileriyle KaçaGider üzerinden değerlendirin."
 seo_context_heading: "Reno10 için ikinci el değerleme"

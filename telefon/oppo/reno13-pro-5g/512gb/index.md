@@ -1,7 +1,7 @@
 ---
 layout: "seo"
-seo_title: "Reno13 Pro 5G 512 GB İkinci El Fiyatı 2026 | KaçaGider"
-seo_description: "Oppo Reno13 Pro 5G 512 GB ikinci el değerini Türkiye ikinci el piyasasına göre hafıza, kondisyon ve cihaz kayıt durumu bilgileriyle KaçaGider üzerinden değerlendirin."
+seo_title: "Reno13 Pro 5G 512 GB Ne Kadar Eder? 2026 | KaçaGider"
+seo_description: "Reno13 Pro 5G 512 GB ne kadar eder? Hafıza ve cihaz durumuna göre güncel ikinci el tahmini satış değerini KaçaGider ile ücretsiz hesapla."
 seo_h1: "Reno13 Pro 5G 512 GB İkinci El Fiyatı"
 seo_intro: "Oppo Reno13 Pro 5G 512 GB ikinci el değerini Türkiye ikinci el piyasasına göre hafıza, kondisyon ve cihaz kayıt durumu bilgileriyle KaçaGider üzerinden değerlendirin."
 seo_context_heading: "Reno13 Pro 5G 512 GB için ikinci el değerleme"

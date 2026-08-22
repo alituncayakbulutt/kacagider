@@ -1,7 +1,7 @@
 ---
 layout: "seo"
-seo_title: "A79 İkinci El Fiyatı 2026 | KaçaGider"
-seo_description: "Oppo A79 ikinci el fiyatını Türkiye ikinci el piyasasına göre hafıza, kondisyon ve cihaz kayıt durumu bilgileriyle KaçaGider üzerinden değerlendirin."
+seo_title: "A79 Ne Kadar Eder? 2026 İkinci El Fiyatı | KaçaGider"
+seo_description: "A79 ne kadar eder? Hafıza ve cihaz durumuna göre güncel ikinci el tahmini satış değerini KaçaGider ile ücretsiz hesapla."
 seo_h1: "A79 İkinci El Fiyatı"
 seo_intro: "Oppo A79 ikinci el fiyatını Türkiye ikinci el piyasasına göre hafıza, kondisyon ve cihaz kayıt durumu bilgileriyle KaçaGider üzerinden değerlendirin."
 seo_context_heading: "A79 için ikinci el değerleme"

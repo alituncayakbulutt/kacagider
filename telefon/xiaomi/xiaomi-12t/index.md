@@ -1,7 +1,7 @@
 ---
 layout: "seo"
-seo_title: "Xiaomi 12T İkinci El Fiyatı 2026 | KaçaGider"
-seo_description: "Xiaomi 12T ikinci el fiyatını Türkiye ikinci el piyasasına göre hafıza, kondisyon ve cihaz kayıt durumu bilgileriyle KaçaGider üzerinden değerlendirin."
+seo_title: "Xiaomi 12T Ne Kadar Eder? 2026 İkinci El Fiyatı | KaçaGider"
+seo_description: "Xiaomi 12T ne kadar eder? Hafıza ve cihaz durumuna göre güncel ikinci el tahmini satış değerini KaçaGider ile ücretsiz hesapla."
 seo_h1: "Xiaomi 12T İkinci El Fiyatı"
 seo_intro: "Xiaomi 12T ikinci el fiyatını Türkiye ikinci el piyasasına göre hafıza, kondisyon ve cihaz kayıt durumu bilgileriyle KaçaGider üzerinden değerlendirin."
 seo_context_heading: "Xiaomi 12T için ikinci el değerleme"

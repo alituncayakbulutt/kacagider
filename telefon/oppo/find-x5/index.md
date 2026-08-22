@@ -1,7 +1,7 @@
 ---
 layout: "seo"
-seo_title: "Find X5 İkinci El Fiyatı 2026 | KaçaGider"
-seo_description: "Oppo Find X5 ikinci el fiyatını Türkiye ikinci el piyasasına göre hafıza, kondisyon ve cihaz kayıt durumu bilgileriyle KaçaGider üzerinden değerlendirin."
+seo_title: "Find X5 Ne Kadar Eder? 2026 İkinci El Fiyatı | KaçaGider"
+seo_description: "Find X5 ne kadar eder? Hafıza ve cihaz durumuna göre güncel ikinci el tahmini satış değerini KaçaGider ile ücretsiz hesapla."
 seo_h1: "Find X5 İkinci El Fiyatı"
 seo_intro: "Oppo Find X5 ikinci el fiyatını Türkiye ikinci el piyasasına göre hafıza, kondisyon ve cihaz kayıt durumu bilgileriyle KaçaGider üzerinden değerlendirin."
 seo_context_heading: "Find X5 için ikinci el değerleme"

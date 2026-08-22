@@ -1,7 +1,7 @@
 ---
 layout: "seo"
-seo_title: "V23 5G İkinci El Fiyatı 2026 | KaçaGider"
-seo_description: "Vivo V23 5G ikinci el fiyatını Türkiye ikinci el piyasasına göre hafıza, kondisyon ve cihaz kayıt durumu bilgileriyle KaçaGider üzerinden değerlendirin."
+seo_title: "V23 5G Ne Kadar Eder? 2026 İkinci El Fiyatı | KaçaGider"
+seo_description: "V23 5G ne kadar eder? Hafıza ve cihaz durumuna göre güncel ikinci el tahmini satış değerini KaçaGider ile ücretsiz hesapla."
 seo_h1: "V23 5G İkinci El Fiyatı"
 seo_intro: "Vivo V23 5G ikinci el fiyatını Türkiye ikinci el piyasasına göre hafıza, kondisyon ve cihaz kayıt durumu bilgileriyle KaçaGider üzerinden değerlendirin."
 seo_context_heading: "V23 5G için ikinci el değerleme"

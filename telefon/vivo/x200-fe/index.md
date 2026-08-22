@@ -1,7 +1,7 @@
 ---
 layout: "seo"
-seo_title: "X200 FE İkinci El Fiyatı 2026 | KaçaGider"
-seo_description: "Vivo X200 FE ikinci el fiyatını Türkiye ikinci el piyasasına göre hafıza, kondisyon ve cihaz kayıt durumu bilgileriyle KaçaGider üzerinden değerlendirin."
+seo_title: "X200 FE Ne Kadar Eder? 2026 İkinci El Fiyatı | KaçaGider"
+seo_description: "X200 FE ne kadar eder? Hafıza ve cihaz durumuna göre güncel ikinci el tahmini satış değerini KaçaGider ile ücretsiz hesapla."
 seo_h1: "X200 FE İkinci El Fiyatı"
 seo_intro: "Vivo X200 FE ikinci el fiyatını Türkiye ikinci el piyasasına göre hafıza, kondisyon ve cihaz kayıt durumu bilgileriyle KaçaGider üzerinden değerlendirin."
 seo_context_heading: "X200 FE için ikinci el değerleme"

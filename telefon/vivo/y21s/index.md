@@ -1,7 +1,7 @@
 ---
 layout: "seo"
-seo_title: "Y21s İkinci El Fiyatı 2026 | KaçaGider"
-seo_description: "Vivo Y21s ikinci el fiyatını Türkiye ikinci el piyasasına göre hafıza, kondisyon ve cihaz kayıt durumu bilgileriyle KaçaGider üzerinden değerlendirin."
+seo_title: "Y21s Ne Kadar Eder? 2026 İkinci El Fiyatı | KaçaGider"
+seo_description: "Y21s ne kadar eder? Hafıza ve cihaz durumuna göre güncel ikinci el tahmini satış değerini KaçaGider ile ücretsiz hesapla."
 seo_h1: "Y21s İkinci El Fiyatı"
 seo_intro: "Vivo Y21s ikinci el fiyatını Türkiye ikinci el piyasasına göre hafıza, kondisyon ve cihaz kayıt durumu bilgileriyle KaçaGider üzerinden değerlendirin."
 seo_context_heading: "Y21s için ikinci el değerleme"

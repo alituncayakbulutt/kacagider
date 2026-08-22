@@ -1,7 +1,7 @@
 ---
 layout: "seo"
-seo_title: "iPhone Air İkinci El Fiyatı 2026 | KaçaGider"
-seo_description: "Apple iPhone Air ikinci el fiyatını Türkiye ikinci el piyasasına göre hafıza, kondisyon ve cihaz kayıt durumu bilgileriyle KaçaGider üzerinden değerlendirin."
+seo_title: "iPhone Air Ne Kadar Eder? 2026 İkinci El Fiyatı | KaçaGider"
+seo_description: "iPhone Air ne kadar eder? Hafıza ve cihaz durumuna göre güncel ikinci el tahmini satış değerini KaçaGider ile ücretsiz hesapla."
 seo_h1: "iPhone Air İkinci El Fiyatı"
 seo_intro: "Apple iPhone Air ikinci el fiyatını Türkiye ikinci el piyasasına göre hafıza, kondisyon ve cihaz kayıt durumu bilgileriyle KaçaGider üzerinden değerlendirin."
 seo_context_heading: "iPhone Air için ikinci el değerleme"

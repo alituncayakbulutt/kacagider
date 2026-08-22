@@ -1,7 +1,7 @@
 ---
 layout: "seo"
-seo_title: "Galaxy S26 İkinci El Fiyatı 2026 | KaçaGider"
-seo_description: "Samsung Galaxy S26 ikinci el fiyatını Türkiye ikinci el piyasasına göre hafıza, kondisyon ve cihaz kayıt durumu bilgileriyle KaçaGider üzerinden değerlendirin."
+seo_title: "Galaxy S26 Ne Kadar Eder? 2026 İkinci El Fiyatı | KaçaGider"
+seo_description: "Galaxy S26 ne kadar eder? Hafıza ve cihaz durumuna göre güncel ikinci el tahmini satış değerini KaçaGider ile ücretsiz hesapla."
 seo_h1: "Galaxy S26 İkinci El Fiyatı"
 seo_intro: "Samsung Galaxy S26 ikinci el fiyatını Türkiye ikinci el piyasasına göre hafıza, kondisyon ve cihaz kayıt durumu bilgileriyle KaçaGider üzerinden değerlendirin."
 seo_context_heading: "Galaxy S26 için ikinci el değerleme"

@@ -1,7 +1,7 @@
 ---
 layout: "seo"
-seo_title: "Galaxy Z Fold3 İkinci El Fiyatı 2026 | KaçaGider"
-seo_description: "Samsung Galaxy Z Fold3 ikinci el fiyatını Türkiye ikinci el piyasasına göre hafıza, kondisyon ve cihaz kayıt durumu bilgileriyle KaçaGider üzerinden değerlendirin."
+seo_title: "Galaxy Z Fold3 Ne Kadar Eder? 2026 İkinci El Fiyatı | KaçaGider"
+seo_description: "Galaxy Z Fold3 ne kadar eder? Hafıza ve cihaz durumuna göre güncel ikinci el tahmini satış değerini KaçaGider ile ücretsiz hesapla."
 seo_h1: "Galaxy Z Fold3 İkinci El Fiyatı"
 seo_intro: "Samsung Galaxy Z Fold3 ikinci el fiyatını Türkiye ikinci el piyasasına göre hafıza, kondisyon ve cihaz kayıt durumu bilgileriyle KaçaGider üzerinden değerlendirin."
 seo_context_heading: "Galaxy Z Fold3 için ikinci el değerleme"

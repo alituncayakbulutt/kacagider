@@ -1,7 +1,7 @@
 ---
 layout: "seo"
-seo_title: "Find X7 Ultra İkinci El Fiyatı 2026 | KaçaGider"
-seo_description: "Oppo Find X7 Ultra ikinci el fiyatını Türkiye ikinci el piyasasına göre hafıza, kondisyon ve cihaz kayıt durumu bilgileriyle KaçaGider üzerinden değerlendirin."
+seo_title: "Find X7 Ultra Ne Kadar Eder? 2026 İkinci El Fiyatı | KaçaGider"
+seo_description: "Find X7 Ultra ne kadar eder? Hafıza ve cihaz durumuna göre güncel ikinci el tahmini satış değerini KaçaGider ile ücretsiz hesapla."
 seo_h1: "Find X7 Ultra İkinci El Fiyatı"
 seo_intro: "Oppo Find X7 Ultra ikinci el fiyatını Türkiye ikinci el piyasasına göre hafıza, kondisyon ve cihaz kayıt durumu bilgileriyle KaçaGider üzerinden değerlendirin."
 seo_context_heading: "Find X7 Ultra için ikinci el değerleme"

@@ -1,7 +1,7 @@
 ---
 layout: "seo"
-seo_title: "iPhone 15 Plus İkinci El Fiyatı 2026 | KaçaGider"
-seo_description: "Apple iPhone 15 Plus ikinci el fiyatını Türkiye ikinci el piyasasına göre hafıza, kondisyon ve cihaz kayıt durumu bilgileriyle KaçaGider üzerinden değerlendirin."
+seo_title: "iPhone 15 Plus Ne Kadar Eder? 2026 İkinci El Fiyatı | KaçaGider"
+seo_description: "iPhone 15 Plus ne kadar eder? Hafıza ve cihaz durumuna göre güncel ikinci el tahmini satış değerini KaçaGider ile ücretsiz hesapla."
 seo_h1: "iPhone 15 Plus İkinci El Fiyatı"
 seo_intro: "Apple iPhone 15 Plus ikinci el fiyatını Türkiye ikinci el piyasasına göre hafıza, kondisyon ve cihaz kayıt durumu bilgileriyle KaçaGider üzerinden değerlendirin."
 seo_context_heading: "iPhone 15 Plus için ikinci el değerleme"

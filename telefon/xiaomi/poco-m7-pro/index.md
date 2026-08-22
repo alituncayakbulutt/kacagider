@@ -1,7 +1,7 @@
 ---
 layout: "seo"
-seo_title: "POCO M7 Pro İkinci El Fiyatı 2026 | KaçaGider"
-seo_description: "Xiaomi POCO M7 Pro ikinci el fiyatını Türkiye ikinci el piyasasına göre hafıza, kondisyon ve cihaz kayıt durumu bilgileriyle KaçaGider üzerinden değerlendirin."
+seo_title: "POCO M7 Pro Ne Kadar Eder? 2026 İkinci El Fiyatı | KaçaGider"
+seo_description: "POCO M7 Pro ne kadar eder? Hafıza ve cihaz durumuna göre güncel ikinci el tahmini satış değerini KaçaGider ile ücretsiz hesapla."
 seo_h1: "POCO M7 Pro İkinci El Fiyatı"
 seo_intro: "Xiaomi POCO M7 Pro ikinci el fiyatını Türkiye ikinci el piyasasına göre hafıza, kondisyon ve cihaz kayıt durumu bilgileriyle KaçaGider üzerinden değerlendirin."
 seo_context_heading: "POCO M7 Pro için ikinci el değerleme"

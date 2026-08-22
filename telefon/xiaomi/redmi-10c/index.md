@@ -1,7 +1,7 @@
 ---
 layout: "seo"
-seo_title: "Redmi 10C İkinci El Fiyatı 2026 | KaçaGider"
-seo_description: "Xiaomi Redmi 10C ikinci el fiyatını Türkiye ikinci el piyasasına göre hafıza, kondisyon ve cihaz kayıt durumu bilgileriyle KaçaGider üzerinden değerlendirin."
+seo_title: "Redmi 10C Ne Kadar Eder? 2026 İkinci El Fiyatı | KaçaGider"
+seo_description: "Redmi 10C ne kadar eder? Hafıza ve cihaz durumuna göre güncel ikinci el tahmini satış değerini KaçaGider ile ücretsiz hesapla."
 seo_h1: "Redmi 10C İkinci El Fiyatı"
 seo_intro: "Xiaomi Redmi 10C ikinci el fiyatını Türkiye ikinci el piyasasına göre hafıza, kondisyon ve cihaz kayıt durumu bilgileriyle KaçaGider üzerinden değerlendirin."
 seo_context_heading: "Redmi 10C için ikinci el değerleme"

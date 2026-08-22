@@ -1,7 +1,7 @@
 ---
 layout: "seo"
-seo_title: "Pixel 6 İkinci El Fiyatı 2026 | KaçaGider"
-seo_description: "Google Pixel 6 ikinci el fiyatını Türkiye ikinci el piyasasına göre hafıza, kondisyon ve cihaz kayıt durumu bilgileriyle KaçaGider üzerinden değerlendirin."
+seo_title: "Pixel 6 Ne Kadar Eder? 2026 İkinci El Fiyatı | KaçaGider"
+seo_description: "Pixel 6 ne kadar eder? Hafıza ve cihaz durumuna göre güncel ikinci el tahmini satış değerini KaçaGider ile ücretsiz hesapla."
 seo_h1: "Pixel 6 İkinci El Fiyatı"
 seo_intro: "Google Pixel 6 ikinci el fiyatını Türkiye ikinci el piyasasına göre hafıza, kondisyon ve cihaz kayıt durumu bilgileriyle KaçaGider üzerinden değerlendirin."
 seo_context_heading: "Pixel 6 için ikinci el değerleme"

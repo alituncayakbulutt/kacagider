@@ -1,7 +1,7 @@
 ---
 layout: "seo"
-seo_title: "iPhone 15 Pro Max Nasıl Sıfırlanır? | KaçaGider"
-seo_description: "iPhone 15 Pro Max nasıl sıfırlanır? Verileri yedekleme, tüm içerikleri silme ve cihazı fabrika ayarlarına döndürme adımlarını KaçaGider ile inceleyin."
+seo_title: "iPhone 15 Pro Max Nasıl Sıfırlanır? Ne Kadar Eder? 2026 | KaçaGider"
+seo_description: "iPhone 15 Pro Max Nasıl Sıfırlanır? ne kadar eder? Hafıza ve cihaz durumuna göre güncel ikinci el tahmini satış değerini KaçaGider ile ücretsiz hesapla."
 seo_h1: "iPhone 15 Pro Max Nasıl Sıfırlanır?"
 seo_intro: "iPhone 15 Pro Max'i sıfırlamak için Ayarlar içindeki aktarım veya sıfırlama menüsünden tüm içerikleri ve ayarları silebilirsiniz."
 seo_context_heading: "Sıfırlama öncesi dikkat edilmesi gerekenler"

@@ -1,7 +1,7 @@
 ---
 layout: "seo"
-seo_title: "Realme GT 7 Pro 256 GB İkinci El Fiyatı 2026 | KaçaGider"
-seo_description: "Realme GT 7 Pro 256 GB ikinci el değerini Türkiye ikinci el piyasasına göre hafıza, kondisyon ve cihaz kayıt durumu bilgileriyle KaçaGider üzerinden değerlendirin."
+seo_title: "Realme GT 7 Pro 256 GB Ne Kadar Eder? 2026 | KaçaGider"
+seo_description: "Realme GT 7 Pro 256 GB ne kadar eder? Hafıza ve cihaz durumuna göre güncel ikinci el tahmini satış değerini KaçaGider ile ücretsiz hesapla."
 seo_h1: "Realme GT 7 Pro 256 GB İkinci El Fiyatı"
 seo_intro: "Realme GT 7 Pro 256 GB ikinci el değerini Türkiye ikinci el piyasasına göre hafıza, kondisyon ve cihaz kayıt durumu bilgileriyle KaçaGider üzerinden değerlendirin."
 seo_context_heading: "Realme GT 7 Pro 256 GB için ikinci el değerleme"

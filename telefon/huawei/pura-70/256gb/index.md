@@ -1,7 +1,7 @@
 ---
 layout: "seo"
-seo_title: "Pura 70 256 GB İkinci El Fiyatı 2026 | KaçaGider"
-seo_description: "Huawei Pura 70 256 GB ikinci el değerini Türkiye ikinci el piyasasına göre hafıza, kondisyon ve cihaz kayıt durumu bilgileriyle KaçaGider üzerinden değerlendirin."
+seo_title: "Pura 70 256 GB Ne Kadar Eder? 2026 İkinci El Fiyatı | KaçaGider"
+seo_description: "Pura 70 256 GB ne kadar eder? Hafıza ve cihaz durumuna göre güncel ikinci el tahmini satış değerini KaçaGider ile ücretsiz hesapla."
 seo_h1: "Pura 70 256 GB İkinci El Fiyatı"
 seo_intro: "Huawei Pura 70 256 GB ikinci el değerini Türkiye ikinci el piyasasına göre hafıza, kondisyon ve cihaz kayıt durumu bilgileriyle KaçaGider üzerinden değerlendirin."
 seo_context_heading: "Pura 70 256 GB için ikinci el değerleme"

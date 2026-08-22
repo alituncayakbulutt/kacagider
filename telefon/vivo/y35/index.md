@@ -1,7 +1,7 @@
 ---
 layout: "seo"
-seo_title: "Y35 İkinci El Fiyatı 2026 | KaçaGider"
-seo_description: "Vivo Y35 ikinci el fiyatını Türkiye ikinci el piyasasına göre hafıza, kondisyon ve cihaz kayıt durumu bilgileriyle KaçaGider üzerinden değerlendirin."
+seo_title: "Y35 Ne Kadar Eder? 2026 İkinci El Fiyatı | KaçaGider"
+seo_description: "Y35 ne kadar eder? Hafıza ve cihaz durumuna göre güncel ikinci el tahmini satış değerini KaçaGider ile ücretsiz hesapla."
 seo_h1: "Y35 İkinci El Fiyatı"
 seo_intro: "Vivo Y35 ikinci el fiyatını Türkiye ikinci el piyasasına göre hafıza, kondisyon ve cihaz kayıt durumu bilgileriyle KaçaGider üzerinden değerlendirin."
 seo_context_heading: "Y35 için ikinci el değerleme"

@@ -1,7 +1,7 @@
 ---
 layout: "seo"
-seo_title: "Pura 70 İkinci El Fiyatı 2026 | KaçaGider"
-seo_description: "Huawei Pura 70 ikinci el fiyatını Türkiye ikinci el piyasasına göre hafıza, kondisyon ve cihaz kayıt durumu bilgileriyle KaçaGider üzerinden değerlendirin."
+seo_title: "Pura 70 Ne Kadar Eder? 2026 İkinci El Fiyatı | KaçaGider"
+seo_description: "Pura 70 ne kadar eder? Hafıza ve cihaz durumuna göre güncel ikinci el tahmini satış değerini KaçaGider ile ücretsiz hesapla."
 seo_h1: "Pura 70 İkinci El Fiyatı"
 seo_intro: "Huawei Pura 70 ikinci el fiyatını Türkiye ikinci el piyasasına göre hafıza, kondisyon ve cihaz kayıt durumu bilgileriyle KaçaGider üzerinden değerlendirin."
 seo_context_heading: "Pura 70 için ikinci el değerleme"

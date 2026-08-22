@@ -1,7 +1,7 @@
 ---
 layout: "seo"
-seo_title: "iPhone SE (3. nesil) İkinci El Fiyatı 2026 | KaçaGider"
-seo_description: "Apple iPhone SE (3. nesil) ikinci el fiyatını Türkiye ikinci el piyasasına göre hafıza, kondisyon ve cihaz kayıt durumu bilgileriyle KaçaGider üzerinden değerlendirin."
+seo_title: "iPhone SE (3. nesil) Ne Kadar Eder? 2026 | KaçaGider"
+seo_description: "iPhone SE (3. nesil) ne kadar eder? Hafıza ve cihaz durumuna göre güncel ikinci el tahmini satış değerini KaçaGider ile ücretsiz hesapla."
 seo_h1: "iPhone SE (3. nesil) İkinci El Fiyatı"
 seo_intro: "Apple iPhone SE (3. nesil) ikinci el fiyatını Türkiye ikinci el piyasasına göre hafıza, kondisyon ve cihaz kayıt durumu bilgileriyle KaçaGider üzerinden değerlendirin."
 seo_context_heading: "iPhone SE (3. nesil) için ikinci el değerleme"

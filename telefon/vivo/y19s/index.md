@@ -1,7 +1,7 @@
 ---
 layout: "seo"
-seo_title: "Y19s İkinci El Fiyatı 2026 | KaçaGider"
-seo_description: "Vivo Y19s ikinci el fiyatını Türkiye ikinci el piyasasına göre hafıza, kondisyon ve cihaz kayıt durumu bilgileriyle KaçaGider üzerinden değerlendirin."
+seo_title: "Y19s Ne Kadar Eder? 2026 İkinci El Fiyatı | KaçaGider"
+seo_description: "Y19s ne kadar eder? Hafıza ve cihaz durumuna göre güncel ikinci el tahmini satış değerini KaçaGider ile ücretsiz hesapla."
 seo_h1: "Y19s İkinci El Fiyatı"
 seo_intro: "Vivo Y19s ikinci el fiyatını Türkiye ikinci el piyasasına göre hafıza, kondisyon ve cihaz kayıt durumu bilgileriyle KaçaGider üzerinden değerlendirin."
 seo_context_heading: "Y19s için ikinci el değerleme"

@@ -1,7 +1,7 @@
 ---
 layout: "seo"
-seo_title: "Xiaomi 11 Lite 5G NE İkinci El Fiyatı 2026 | KaçaGider"
-seo_description: "Xiaomi 11 Lite 5G NE ikinci el fiyatını Türkiye ikinci el piyasasına göre hafıza, kondisyon ve cihaz kayıt durumu bilgileriyle KaçaGider üzerinden değerlendirin."
+seo_title: "Xiaomi 11 Lite 5G NE Ne Kadar Eder? 2026 | KaçaGider"
+seo_description: "Xiaomi 11 Lite 5G NE ne kadar eder? Hafıza ve cihaz durumuna göre güncel ikinci el tahmini satış değerini KaçaGider ile ücretsiz hesapla."
 seo_h1: "Xiaomi 11 Lite 5G NE İkinci El Fiyatı"
 seo_intro: "Xiaomi 11 Lite 5G NE ikinci el fiyatını Türkiye ikinci el piyasasına göre hafıza, kondisyon ve cihaz kayıt durumu bilgileriyle KaçaGider üzerinden değerlendirin."
 seo_context_heading: "Xiaomi 11 Lite 5G NE için ikinci el değerleme"

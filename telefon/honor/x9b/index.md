@@ -1,7 +1,7 @@
 ---
 layout: "seo"
-seo_title: "X9b İkinci El Fiyatı 2026 | KaçaGider"
-seo_description: "Honor X9b ikinci el fiyatını Türkiye ikinci el piyasasına göre hafıza, kondisyon ve cihaz kayıt durumu bilgileriyle KaçaGider üzerinden değerlendirin."
+seo_title: "X9b Ne Kadar Eder? 2026 İkinci El Fiyatı | KaçaGider"
+seo_description: "X9b ne kadar eder? Hafıza ve cihaz durumuna göre güncel ikinci el tahmini satış değerini KaçaGider ile ücretsiz hesapla."
 seo_h1: "X9b İkinci El Fiyatı"
 seo_intro: "Honor X9b ikinci el fiyatını Türkiye ikinci el piyasasına göre hafıza, kondisyon ve cihaz kayıt durumu bilgileriyle KaçaGider üzerinden değerlendirin."
 seo_context_heading: "X9b için ikinci el değerleme"

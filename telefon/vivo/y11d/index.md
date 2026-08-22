@@ -1,7 +1,7 @@
 ---
 layout: "seo"
-seo_title: "Y11d İkinci El Fiyatı 2026 | KaçaGider"
-seo_description: "Vivo Y11d ikinci el fiyatını Türkiye ikinci el piyasasına göre hafıza, kondisyon ve cihaz kayıt durumu bilgileriyle KaçaGider üzerinden değerlendirin."
+seo_title: "Y11d Ne Kadar Eder? 2026 İkinci El Fiyatı | KaçaGider"
+seo_description: "Y11d ne kadar eder? Hafıza ve cihaz durumuna göre güncel ikinci el tahmini satış değerini KaçaGider ile ücretsiz hesapla."
 seo_h1: "Y11d İkinci El Fiyatı"
 seo_intro: "Vivo Y11d ikinci el fiyatını Türkiye ikinci el piyasasına göre hafıza, kondisyon ve cihaz kayıt durumu bilgileriyle KaçaGider üzerinden değerlendirin."
 seo_context_heading: "Y11d için ikinci el değerleme"

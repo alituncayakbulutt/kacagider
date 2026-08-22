@@ -1,7 +1,7 @@
 ---
 layout: "seo"
-seo_title: "OnePlus Nord İkinci El Fiyatı 2026 | KaçaGider"
-seo_description: "OnePlus Nord ikinci el fiyatını Türkiye ikinci el piyasasına göre hafıza, kondisyon ve cihaz kayıt durumu bilgileriyle KaçaGider üzerinden değerlendirin."
+seo_title: "OnePlus Nord Ne Kadar Eder? 2026 İkinci El Fiyatı | KaçaGider"
+seo_description: "OnePlus Nord ne kadar eder? Hafıza ve cihaz durumuna göre güncel ikinci el tahmini satış değerini KaçaGider ile ücretsiz hesapla."
 seo_h1: "OnePlus Nord İkinci El Fiyatı"
 seo_intro: "OnePlus Nord ikinci el fiyatını Türkiye ikinci el piyasasına göre hafıza, kondisyon ve cihaz kayıt durumu bilgileriyle KaçaGider üzerinden değerlendirin."
 seo_context_heading: "OnePlus Nord için ikinci el değerleme"

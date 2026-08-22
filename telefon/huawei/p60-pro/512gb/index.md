@@ -1,7 +1,7 @@
 ---
 layout: "seo"
-seo_title: "P60 Pro 512 GB İkinci El Fiyatı 2026 | KaçaGider"
-seo_description: "Huawei P60 Pro 512 GB ikinci el değerini Türkiye ikinci el piyasasına göre hafıza, kondisyon ve cihaz kayıt durumu bilgileriyle KaçaGider üzerinden değerlendirin."
+seo_title: "P60 Pro 512 GB Ne Kadar Eder? 2026 İkinci El Fiyatı | KaçaGider"
+seo_description: "P60 Pro 512 GB ne kadar eder? Hafıza ve cihaz durumuna göre güncel ikinci el tahmini satış değerini KaçaGider ile ücretsiz hesapla."
 seo_h1: "P60 Pro 512 GB İkinci El Fiyatı"
 seo_intro: "Huawei P60 Pro 512 GB ikinci el değerini Türkiye ikinci el piyasasına göre hafıza, kondisyon ve cihaz kayıt durumu bilgileriyle KaçaGider üzerinden değerlendirin."
 seo_context_heading: "P60 Pro 512 GB için ikinci el değerleme"

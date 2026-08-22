@@ -1,7 +1,7 @@
 ---
 layout: "seo"
-seo_title: "Galaxy A56 5G 128 GB İkinci El Fiyatı 2026 | KaçaGider"
-seo_description: "Samsung Galaxy A56 5G 128 GB ikinci el değerini Türkiye ikinci el piyasasına göre hafıza, kondisyon ve cihaz kayıt durumu bilgileriyle KaçaGider üzerinden değerlendirin."
+seo_title: "Galaxy A56 5G 128 GB Ne Kadar Eder? 2026 | KaçaGider"
+seo_description: "Galaxy A56 5G 128 GB ne kadar eder? Hafıza ve cihaz durumuna göre güncel ikinci el tahmini satış değerini KaçaGider ile ücretsiz hesapla."
 seo_h1: "Galaxy A56 5G 128 GB İkinci El Fiyatı"
 seo_intro: "Samsung Galaxy A56 5G 128 GB ikinci el değerini Türkiye ikinci el piyasasına göre hafıza, kondisyon ve cihaz kayıt durumu bilgileriyle KaçaGider üzerinden değerlendirin."
 seo_context_heading: "Galaxy A56 5G 128 GB için ikinci el değerleme"

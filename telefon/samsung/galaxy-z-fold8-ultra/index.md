@@ -1,7 +1,7 @@
 ---
 layout: "seo"
-seo_title: "Galaxy Z Fold8 Ultra İkinci El Fiyatı 2026 | KaçaGider"
-seo_description: "Samsung Galaxy Z Fold8 Ultra ikinci el fiyatını Türkiye ikinci el piyasasına göre hafıza, kondisyon ve cihaz kayıt durumu bilgileriyle KaçaGider üzerinden değerlendirin."
+seo_title: "Galaxy Z Fold8 Ultra Ne Kadar Eder? 2026 | KaçaGider"
+seo_description: "Galaxy Z Fold8 Ultra ne kadar eder? Hafıza ve cihaz durumuna göre güncel ikinci el tahmini satış değerini KaçaGider ile ücretsiz hesapla."
 seo_h1: "Galaxy Z Fold8 Ultra İkinci El Fiyatı"
 seo_intro: "Samsung Galaxy Z Fold8 Ultra ikinci el fiyatını Türkiye ikinci el piyasasına göre hafıza, kondisyon ve cihaz kayıt durumu bilgileriyle KaçaGider üzerinden değerlendirin."
 seo_context_heading: "Galaxy Z Fold8 Ultra için ikinci el değerleme"

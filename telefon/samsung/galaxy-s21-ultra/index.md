@@ -1,7 +1,7 @@
 ---
 layout: "seo"
-seo_title: "Galaxy S21 Ultra İkinci El Fiyatı 2026 | KaçaGider"
-seo_description: "Samsung Galaxy S21 Ultra ikinci el fiyatını Türkiye ikinci el piyasasına göre hafıza, kondisyon ve cihaz kayıt durumu bilgileriyle KaçaGider üzerinden değerlendirin."
+seo_title: "Galaxy S21 Ultra Ne Kadar Eder? 2026 İkinci El Fiyatı | KaçaGider"
+seo_description: "Galaxy S21 Ultra ne kadar eder? Hafıza ve cihaz durumuna göre güncel ikinci el tahmini satış değerini KaçaGider ile ücretsiz hesapla."
 seo_h1: "Galaxy S21 Ultra İkinci El Fiyatı"
 seo_intro: "Samsung Galaxy S21 Ultra ikinci el fiyatını Türkiye ikinci el piyasasına göre hafıza, kondisyon ve cihaz kayıt durumu bilgileriyle KaçaGider üzerinden değerlendirin."
 seo_context_heading: "Galaxy S21 Ultra için ikinci el değerleme"

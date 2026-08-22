@@ -1,7 +1,7 @@
 ---
 layout: "seo"
-seo_title: "Realme 12 Pro+ İkinci El Fiyatı 2026 | KaçaGider"
-seo_description: "Realme 12 Pro+ ikinci el fiyatını Türkiye ikinci el piyasasına göre hafıza, kondisyon ve cihaz kayıt durumu bilgileriyle KaçaGider üzerinden değerlendirin."
+seo_title: "Realme 12 Pro+ Ne Kadar Eder? 2026 İkinci El Fiyatı | KaçaGider"
+seo_description: "Realme 12 Pro+ ne kadar eder? Hafıza ve cihaz durumuna göre güncel ikinci el tahmini satış değerini KaçaGider ile ücretsiz hesapla."
 seo_h1: "Realme 12 Pro+ İkinci El Fiyatı"
 seo_intro: "Realme 12 Pro+ ikinci el fiyatını Türkiye ikinci el piyasasına göre hafıza, kondisyon ve cihaz kayıt durumu bilgileriyle KaçaGider üzerinden değerlendirin."
 seo_context_heading: "Realme 12 Pro+ için ikinci el değerleme"
