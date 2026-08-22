@@ -58,7 +58,7 @@ for root, factors in TARGETS.items():
             continue
 
         description = (
-            f"{label} ikinci el fiyatı Türkiye 2026: {factors} göre güncel tahmini "
+            f"{label} ikinci el fiyatı Türkiye 2026: {factors} dikkate alınarak güncel tahmini "
             "satış değerini KaçaGider ile ücretsiz hesapla."
         )
         intro = (
