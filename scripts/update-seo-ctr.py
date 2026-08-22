@@ -1,8 +1,6 @@
 from pathlib import Path
 import re
 
-ROOT = Path('telefon/apple')
-
 TITLE_RE = re.compile(r'^(seo_title:\s*)"([^"]*)"\s*$', re.M)
 DESC_RE = re.compile(r'^(seo_description:\s*)"([^"]*)"\s*$', re.M)
 STORAGE_RE = re.compile(r'\b(?:\d+\s*GB|\d+\s*TB)\b', re.I)
@@ -42,7 +40,7 @@ def make_title(base: str) -> str:
     return f'{base} Kaça Satılır? | KaçaGider'
 
 
-def make_description(base: str) -> str:
+def apple_description(base: str) -> str:
     if STORAGE_RE.search(base):
         return (
             f'{base} kaça satılır? Pil sağlığı ve cihaz durumuna göre 2026 güncel ikinci el '
@@ -54,47 +52,64 @@ def make_description(base: str) -> str:
     )
 
 
-changed = 0
-scanned = 0
-skipped_iphone13 = 0
+def samsung_description(base: str) -> str:
+    if STORAGE_RE.search(base):
+        return (
+            f'{base} kaça satılır? Ekran, batarya ve cihaz durumuna göre 2026 güncel ikinci el '
+            f'tahmini satış değerini KaçaGider ile ücretsiz hesapla.'
+        )
+    return (
+        f'{base} kaça satılır? Hafıza, ekran, batarya ve cihaz durumuna göre 2026 güncel ikinci el '
+        f'tahmini satış değerini KaçaGider ile ücretsiz hesapla.'
+    )
 
-for path in ROOT.rglob('index.md'):
-    parts = path.parts
-    # Only iPhone model/storage pages. Skip Apple brand root.
-    if len(parts) < 4:
-        continue
 
-    model_slug = parts[2]
-    if not model_slug.startswith('iphone-'):
-        continue
+def optimize_tree(root: Path, brand: str, description_builder, skip_model=None):
+    scanned = changed = skipped = 0
+    for path in root.rglob('index.md'):
+        parts = path.parts
+        if len(parts) < 4:
+            continue
 
-    # iPhone 13 family is intentionally kept on its already-customized SEO wording.
-    if model_slug == 'iphone-13' or model_slug.startswith('iphone-13-'):
-        skipped_iphone13 += 1
-        continue
+        model_slug = parts[2]
+        if skip_model and skip_model(model_slug):
+            skipped += 1
+            continue
 
-    text = path.read_text(encoding='utf-8')
-    title_match = TITLE_RE.search(text)
-    desc_match = DESC_RE.search(text)
-    if not title_match or not desc_match:
-        continue
+        text = path.read_text(encoding='utf-8')
+        title_match = TITLE_RE.search(text)
+        desc_match = DESC_RE.search(text)
+        if not title_match or not desc_match:
+            continue
 
-    scanned += 1
-    base = extract_base(title_match.group(2))
-    if not base:
-        continue
+        scanned += 1
+        base = extract_base(title_match.group(2))
+        if not base:
+            continue
 
-    new_title = make_title(base)
-    new_desc = make_description(base)
+        new_title = make_title(base)
+        new_desc = description_builder(base)
 
-    updated = TITLE_RE.sub(lambda m: f'{m.group(1)}"{new_title}"', text, count=1)
-    updated = DESC_RE.sub(lambda m: f'{m.group(1)}"{new_desc}"', updated, count=1)
+        updated = TITLE_RE.sub(lambda m: f'{m.group(1)}"{new_title}"', text, count=1)
+        updated = DESC_RE.sub(lambda m: f'{m.group(1)}"{new_desc}"', updated, count=1)
 
-    if updated != text:
-        path.write_text(updated, encoding='utf-8')
-        changed += 1
+        if updated != text:
+            path.write_text(updated, encoding='utf-8')
+            changed += 1
 
-print(
-    f'Scanned {scanned} Apple iPhone model/storage pages (excluding iPhone 13 family); '
-    f'changed {changed}; skipped iPhone 13 pages: {skipped_iphone13}.'
+    print(f'{brand}: scanned {scanned}, changed {changed}, skipped {skipped}.')
+
+
+optimize_tree(
+    Path('telefon/apple'),
+    'Apple iPhone',
+    apple_description,
+    skip_model=lambda slug: slug == 'iphone-13' or slug.startswith('iphone-13-'),
+)
+
+# Optimize every existing Samsung Galaxy model and storage page (S, A, M, Z Fold, Z Flip, FE, Edge, etc.).
+optimize_tree(
+    Path('telefon/samsung'),
+    'Samsung Galaxy',
+    samsung_description,
 )
