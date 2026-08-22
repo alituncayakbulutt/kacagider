@@ -83,6 +83,25 @@ try{
   "description": "Kullanıcının ürün, model, hafıza ve kondisyon bilgilerine göre ikinci el piyasa değeri tahmini sunan web uygulaması."
 }
 </script>
+
+{% if page.seo_breadcrumbs and page.seo_breadcrumbs.size > 1 %}
+<script type="application/ld+json" id="kg-breadcrumb-schema">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {% for crumb in page.seo_breadcrumbs %}
+    {
+      "@type": "ListItem",
+      "position": {{ forloop.index }},
+      "name": {{ crumb.label | jsonify }},
+      "item": {{ crumb.url | prepend: "https://kacagider.com.tr" | jsonify }}
+    }{% unless forloop.last %},{% endunless %}
+    {% endfor %}
+  ]
+}
+</script>
+{% endif %}
 <style>
 :root {
   --navy:#0b1628; --navy2:#101d33; --green:#10b956; --green2:#08a84d;
