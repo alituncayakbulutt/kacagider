@@ -1,7 +1,7 @@
 ---
 layout: "seo"
-seo_title: "Telefon İkinci El Fiyatları 2026 | KaçaGider"
-seo_description: "Telefon ikinci el fiyatlarını Türkiye ikinci el piyasası ve ürün kondisyonuna göre KaçaGider ile değerlendirin."
+seo_title: "Telefonum Ne Kadar Eder? 2026 İkinci El Fiyatları | KaçaGider"
+seo_description: "Telefonun ne kadar eder? Marka, model ve cihaz durumunu seç; güncel ikinci el tahmini satış değerini KaçaGider ile ücretsiz ve hızlıca hesapla."
 seo_h1: "Telefon İkinci El Fiyatları"
 seo_intro: "Telefon ikinci el fiyatlarını Türkiye ikinci el piyasası ve ürün kondisyonuna göre KaçaGider ile değerlendirin."
 seo_context_heading: "Telefon için ikinci el değerleme"
