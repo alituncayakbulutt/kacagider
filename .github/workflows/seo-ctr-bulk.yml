@@ -4,6 +4,7 @@ on:
   push:
     paths:
       - 'scripts/update-seo-ctr.py'
+      - 'scripts/add-breadcrumb-schema.py'
       - '.github/workflows/seo-ctr-bulk.yml'
   workflow_dispatch:
 
@@ -21,6 +22,8 @@ jobs:
           python-version: '3.x'
       - name: Update device SEO and visible CTR signals
         run: python scripts/update-seo-ctr.py
+      - name: Add breadcrumb structured data
+        run: python scripts/add-breadcrumb-schema.py
       - name: Commit changes
         run: |
           if git diff --quiet; then
@@ -29,6 +32,6 @@ jobs:
           fi
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add telefon tablet bilgisayar akilli-saat oyun-konsolu
-          git commit -m "SEO 2A: align visible CTR signals across device pages"
+          git add telefon tablet bilgisayar akilli-saat oyun-konsolu _layouts/seo.html
+          git commit -m "SEO 2B: add BreadcrumbList structured data"
           git push
