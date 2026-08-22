@@ -1,7 +1,7 @@
 ---
 layout: "seo"
-seo_title: "Redmi Note 14 5G Ne Kadar Eder? 2026 İkinci El Fiyatı | KaçaGider"
-seo_description: "Redmi Note 14 5G ne kadar eder? Hafıza ve cihaz durumuna göre güncel ikinci el tahmini satış değerini KaçaGider ile ücretsiz hesapla."
+seo_title: "Redmi Note 14 5G Kaça Satılır? 2026 İkinci El Fiyatı | KaçaGider"
+seo_description: "Redmi Note 14 5G kaça satılır? Hafıza, ekran, batarya ve cihaz durumuna göre 2026 güncel ikinci el tahmini satış değerini KaçaGider ile ücretsiz hesapla."
 seo_h1: "Redmi Note 14 5G İkinci El Fiyatı"
 seo_intro: "Xiaomi Redmi Note 14 5G ikinci el fiyatını Türkiye ikinci el piyasasına göre hafıza, kondisyon ve cihaz kayıt durumu bilgileriyle KaçaGider üzerinden değerlendirin."
 seo_context_heading: "Redmi Note 14 5G için ikinci el değerleme"

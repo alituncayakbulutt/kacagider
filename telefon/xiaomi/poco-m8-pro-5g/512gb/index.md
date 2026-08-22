@@ -1,7 +1,7 @@
 ---
 layout: "seo"
-seo_title: "POCO M8 Pro 5G 512 GB Ne Kadar Eder? 2026 | KaçaGider"
-seo_description: "POCO M8 Pro 5G 512 GB ne kadar eder? Hafıza ve cihaz durumuna göre güncel ikinci el tahmini satış değerini KaçaGider ile ücretsiz hesapla."
+seo_title: "POCO M8 Pro 5G 512 GB Kaça Satılır? 2026 Fiyatı | KaçaGider"
+seo_description: "POCO M8 Pro 5G 512 GB kaça satılır? Ekran, batarya ve cihaz durumuna göre 2026 güncel ikinci el tahmini satış değerini KaçaGider ile ücretsiz hesapla."
 seo_h1: "POCO M8 Pro 5G 512 GB İkinci El Fiyatı"
 seo_intro: "Xiaomi POCO M8 Pro 5G 512 GB ikinci el değerini Türkiye ikinci el piyasasına göre hafıza, kondisyon ve cihaz kayıt durumu bilgileriyle KaçaGider üzerinden değerlendirin."
 seo_context_heading: "POCO M8 Pro 5G 512 GB için ikinci el değerleme"

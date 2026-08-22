@@ -1,7 +1,7 @@
 ---
 layout: "seo"
-seo_title: "POCO X8 Pro Max Ne Kadar Eder? 2026 İkinci El Fiyatı | KaçaGider"
-seo_description: "POCO X8 Pro Max ne kadar eder? Hafıza ve cihaz durumuna göre güncel ikinci el tahmini satış değerini KaçaGider ile ücretsiz hesapla."
+seo_title: "POCO X8 Pro Max Kaça Satılır? 2026 İkinci El Fiyatı | KaçaGider"
+seo_description: "POCO X8 Pro Max kaça satılır? Hafıza, ekran, batarya ve cihaz durumuna göre 2026 güncel ikinci el tahmini satış değerini KaçaGider ile ücretsiz hesapla."
 seo_h1: "POCO X8 Pro Max İkinci El Fiyatı"
 seo_intro: "Xiaomi POCO X8 Pro Max ikinci el fiyatını Türkiye ikinci el piyasasına göre hafıza, kondisyon ve cihaz kayıt durumu bilgileriyle KaçaGider üzerinden değerlendirin."
 seo_context_heading: "POCO X8 Pro Max için ikinci el değerleme"

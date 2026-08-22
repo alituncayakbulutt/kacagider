@@ -1,7 +1,7 @@
 ---
 layout: "seo"
-seo_title: "POCO X6 Ne Kadar Eder? 2026 İkinci El Fiyatı | KaçaGider"
-seo_description: "POCO X6 ne kadar eder? Hafıza ve cihaz durumuna göre güncel ikinci el tahmini satış değerini KaçaGider ile ücretsiz hesapla."
+seo_title: "POCO X6 Kaça Satılır? 2026 İkinci El Fiyatı | KaçaGider"
+seo_description: "POCO X6 kaça satılır? Hafıza, ekran, batarya ve cihaz durumuna göre 2026 güncel ikinci el tahmini satış değerini KaçaGider ile ücretsiz hesapla."
 seo_h1: "POCO X6 İkinci El Fiyatı"
 seo_intro: "Xiaomi POCO X6 ikinci el fiyatını Türkiye ikinci el piyasasına göre hafıza, kondisyon ve cihaz kayıt durumu bilgileriyle KaçaGider üzerinden değerlendirin."
 seo_context_heading: "POCO X6 için ikinci el değerleme"

@@ -1,7 +1,7 @@
 ---
 layout: "seo"
-seo_title: "Redmi Note 10 Ne Kadar Eder? 2026 İkinci El Fiyatı | KaçaGider"
-seo_description: "Redmi Note 10 ne kadar eder? Hafıza ve cihaz durumuna göre güncel ikinci el tahmini satış değerini KaçaGider ile ücretsiz hesapla."
+seo_title: "Redmi Note 10 Kaça Satılır? 2026 İkinci El Fiyatı | KaçaGider"
+seo_description: "Redmi Note 10 kaça satılır? Hafıza, ekran, batarya ve cihaz durumuna göre 2026 güncel ikinci el tahmini satış değerini KaçaGider ile ücretsiz hesapla."
 seo_h1: "Redmi Note 10 İkinci El Fiyatı"
 seo_intro: "Xiaomi Redmi Note 10 ikinci el fiyatını Türkiye ikinci el piyasasına göre hafıza, kondisyon ve cihaz kayıt durumu bilgileriyle KaçaGider üzerinden değerlendirin."
 seo_context_heading: "Redmi Note 10 için ikinci el değerleme"

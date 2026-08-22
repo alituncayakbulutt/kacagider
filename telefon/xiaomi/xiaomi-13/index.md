@@ -1,7 +1,7 @@
 ---
 layout: "seo"
-seo_title: "Xiaomi 13 Ne Kadar Eder? 2026 İkinci El Fiyatı | KaçaGider"
-seo_description: "Xiaomi 13 ne kadar eder? Hafıza ve cihaz durumuna göre güncel ikinci el tahmini satış değerini KaçaGider ile ücretsiz hesapla."
+seo_title: "Xiaomi 13 Kaça Satılır? 2026 İkinci El Fiyatı | KaçaGider"
+seo_description: "Xiaomi 13 kaça satılır? Hafıza, ekran, batarya ve cihaz durumuna göre 2026 güncel ikinci el tahmini satış değerini KaçaGider ile ücretsiz hesapla."
 seo_h1: "Xiaomi 13 İkinci El Fiyatı"
 seo_intro: "Xiaomi 13 ikinci el fiyatını Türkiye ikinci el piyasasına göre hafıza, kondisyon ve cihaz kayıt durumu bilgileriyle KaçaGider üzerinden değerlendirin."
 seo_context_heading: "Xiaomi 13 için ikinci el değerleme"

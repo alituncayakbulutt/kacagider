@@ -1,7 +1,7 @@
 ---
 layout: "seo"
-seo_title: "POCO F6 Pro Ne Kadar Eder? 2026 İkinci El Fiyatı | KaçaGider"
-seo_description: "POCO F6 Pro ne kadar eder? Hafıza ve cihaz durumuna göre güncel ikinci el tahmini satış değerini KaçaGider ile ücretsiz hesapla."
+seo_title: "POCO F6 Pro Kaça Satılır? 2026 İkinci El Fiyatı | KaçaGider"
+seo_description: "POCO F6 Pro kaça satılır? Hafıza, ekran, batarya ve cihaz durumuna göre 2026 güncel ikinci el tahmini satış değerini KaçaGider ile ücretsiz hesapla."
 seo_h1: "POCO F6 Pro İkinci El Fiyatı"
 seo_intro: "Xiaomi POCO F6 Pro ikinci el fiyatını Türkiye ikinci el piyasasına göre hafıza, kondisyon ve cihaz kayıt durumu bilgileriyle KaçaGider üzerinden değerlendirin."
 seo_context_heading: "POCO F6 Pro için ikinci el değerleme"
