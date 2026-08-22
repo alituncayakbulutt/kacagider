@@ -8,11 +8,14 @@ STORAGE_RE = re.compile(r'\b(?:\d+\s*GB|\d+\s*TB)\b', re.I)
 
 def extract_base(title: str) -> str:
     patterns = [
+        r'\s+Ne Kadar Eder\?\s+2026\s+Fiyatı\s+Kaça Satılır\?\s*\|\s*KaçaGider$',
+        r'\s+Ne Kadar Eder\?\s+2026\s+İkinci El Fiyatı\s+Kaça Satılır\?\s*\|\s*KaçaGider$',
         r'\s+Kaça Satılır\?\s+2026\s+İkinci El Fiyatı\s*\|\s*KaçaGider$',
         r'\s+Kaça Satılır\?\s+2026\s+Fiyatı\s*\|\s*KaçaGider$',
         r'\s+Kaça Satılır\?\s+2026\s*\|\s*KaçaGider$',
         r'\s+Kaça Satılır\?\s*\|\s*KaçaGider$',
         r'\s+Ne Kadar Eder\?\s+2026\s+İkinci El Fiyatı\s*\|\s*KaçaGider$',
+        r'\s+Ne Kadar Eder\?\s+2026\s+Fiyatı\s*\|\s*KaçaGider$',
         r'\s+Ne Kadar Eder\?\s+2026\s*\|\s*KaçaGider$',
         r'\s+Ne Kadar Eder\?\s*\|\s*KaçaGider$',
         r'\s+İkinci El Fiyatı\s+2026\s*\|\s*KaçaGider$',
