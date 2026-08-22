@@ -1,5 +1,6 @@
 from pathlib import Path
 
+# AŞAMA 2B: mevcut seo_breadcrumbs verisini görünür yapıyı değiştirmeden JSON-LD'ye çevirir.
 LAYOUT = Path('_layouts/seo.html')
 MARKER = 'id="kg-breadcrumb-schema"'
 ANCHOR = '''<script type="application/ld+json">
