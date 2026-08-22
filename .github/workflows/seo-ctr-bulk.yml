@@ -1,0 +1,34 @@
+name: SEO CTR Bulk Update
+
+on:
+  push:
+    paths:
+      - 'scripts/update-seo-ctr.py'
+      - '.github/workflows/seo-ctr-bulk.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update-seo:
+    if: github.actor != 'github-actions[bot]'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+      - name: Update phone SEO titles and descriptions
+        run: python scripts/update-seo-ctr.py
+      - name: Commit changes
+        run: |
+          if git diff --quiet; then
+            echo "No SEO changes needed."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add telefon
+          git commit -m "SEO: strengthen phone CTR titles and descriptions"
+          git push
