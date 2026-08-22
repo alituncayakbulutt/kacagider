@@ -6,6 +6,7 @@ SITEMAP = Path('sitemap.xml')
 BASE = 'https://kacagider.com.tr'
 
 URL_RE = re.compile(r'(<url>\s*<loc>([^<]+)</loc>.*?<lastmod>)([^<]+)(</lastmod>.*?</url>)')
+ENTRY_RE = re.compile(r'\s*<url>\s*<loc>([^<]+)</loc>.*?</url>', re.DOTALL)
 CANONICAL_RE = re.compile(r'^seo_canonical:\s*"(https://kacagider\.com\.tr/[^"]*)"\s*$', re.MULTILINE)
 LOC_RE = re.compile(r'<loc>([^<]+)</loc>')
 
@@ -96,9 +97,23 @@ def discover_canonical_pages():
     return sorted(found, key=lambda item: item[0])
 
 
+def prune_stale_entry(match):
+    url = match.group(1)
+    if not url.startswith(BASE):
+        return match.group(0)
+    if url_to_source(url):
+        return match.group(0)
+    prune_stale_entry.changed += 1
+    return ''
+
+
 replace_entry.changed = 0
+prune_stale_entry.changed = 0
 text = SITEMAP.read_text(encoding='utf-8')
 updated = URL_RE.sub(replace_entry, text)
+
+# Remove URLs that no longer have any source page in the repository.
+updated = ENTRY_RE.sub(prune_stale_entry, updated)
 
 # Add canonical SEO pages that were created after the sitemap entry list was built.
 existing = set(LOC_RE.findall(updated))
@@ -117,13 +132,17 @@ if missing_entries:
     marker = '</urlset>'
     if marker not in updated:
         raise SystemExit('sitemap.xml: closing urlset tag not found')
-    block = '\n'.join(missing_entries) + '\n'
+    block = '\n' + '\n'.join(missing_entries) + '\n'
     updated = updated.replace(marker, block + marker, 1)
+
+# Keep XML readable after removals.
+updated = re.sub(r'\n{3,}', '\n\n', updated)
 
 if updated != text:
     SITEMAP.write_text(updated, encoding='utf-8')
     print(
         f'Sitemap synced: {replace_entry.changed} lastmod update(s), '
+        f'{prune_stale_entry.changed} stale URL(s) removed, '
         f'{len(missing_entries)} missing canonical page(s) added.'
     )
 else:
