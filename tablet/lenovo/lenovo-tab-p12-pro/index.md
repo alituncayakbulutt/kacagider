@@ -1,7 +1,7 @@
 ---
 layout: "seo"
-seo_title: "Lenovo Tab P12 Pro İkinci El Fiyatı 2026 | KaçaGider"
-seo_description: "Lenovo Tab P12 Pro ikinci el fiyatını Türkiye ikinci el piyasasına göre kapasite ve kondisyon bilgileriyle KaçaGider üzerinden değerlendirin."
+seo_title: "Lenovo Tab P12 Pro Kaça Satılır? 2026 İkinci El Fiyatı | KaçaGider"
+seo_description: "Lenovo Tab P12 Pro kaça satılır? Hafıza, ekran, batarya ve cihaz durumuna göre 2026 güncel ikinci el tahmini satış değerini KaçaGider ile ücretsiz hesapla."
 seo_h1: "Lenovo Tab P12 Pro İkinci El Fiyatı"
 seo_intro: "Lenovo Tab P12 Pro ikinci el fiyatını Türkiye ikinci el piyasasına göre kapasite ve kondisyon bilgileriyle KaçaGider üzerinden değerlendirin."
 seo_context_heading: "Lenovo Tab P12 Pro için ikinci el değerleme"

@@ -1,7 +1,7 @@
 ---
 layout: "seo"
-seo_title: "IdeaPad Slim 3 İkinci El Fiyatı 2026 | KaçaGider"
-seo_description: "Lenovo IdeaPad Slim 3 ikinci el fiyatını Türkiye ikinci el piyasasına göre kapasite ve kondisyon bilgileriyle KaçaGider üzerinden değerlendirin."
+seo_title: "IdeaPad Slim 3 Kaça Satılır? 2026 İkinci El Fiyatı | KaçaGider"
+seo_description: "IdeaPad Slim 3 kaça satılır? İşlemci, RAM, depolama ve cihaz durumuna göre 2026 güncel ikinci el tahmini satış değerini KaçaGider ile ücretsiz hesapla."
 seo_h1: "IdeaPad Slim 3 İkinci El Fiyatı"
 seo_intro: "Lenovo IdeaPad Slim 3 ikinci el fiyatını Türkiye ikinci el piyasasına göre kapasite ve kondisyon bilgileriyle KaçaGider üzerinden değerlendirin."
 seo_context_heading: "IdeaPad Slim 3 için ikinci el değerleme"

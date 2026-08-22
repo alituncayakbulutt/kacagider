@@ -1,7 +1,7 @@
 ---
 layout: "seo"
-seo_title: "Xiaomi Pad mini İkinci El Fiyatı 2026 | KaçaGider"
-seo_description: "Xiaomi Pad mini ikinci el fiyatını Türkiye ikinci el piyasasına göre kapasite ve kondisyon bilgileriyle KaçaGider üzerinden değerlendirin."
+seo_title: "Xiaomi Pad mini Kaça Satılır? 2026 İkinci El Fiyatı | KaçaGider"
+seo_description: "Xiaomi Pad mini kaça satılır? Hafıza, ekran, batarya ve cihaz durumuna göre 2026 güncel ikinci el tahmini satış değerini KaçaGider ile ücretsiz hesapla."
 seo_h1: "Xiaomi Pad mini İkinci El Fiyatı"
 seo_intro: "Xiaomi Pad mini ikinci el fiyatını Türkiye ikinci el piyasasına göre kapasite ve kondisyon bilgileriyle KaçaGider üzerinden değerlendirin."
 seo_context_heading: "Xiaomi Pad mini için ikinci el değerleme"

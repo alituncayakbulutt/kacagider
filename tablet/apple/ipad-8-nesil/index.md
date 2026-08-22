@@ -1,7 +1,7 @@
 ---
 layout: "seo"
-seo_title: "iPad (8. nesil) İkinci El Fiyatı 2026 | KaçaGider"
-seo_description: "Apple iPad (8. nesil) ikinci el fiyatını Türkiye ikinci el piyasasına göre kapasite ve kondisyon bilgileriyle KaçaGider üzerinden değerlendirin."
+seo_title: "iPad (8. nesil) Kaça Satılır? 2026 İkinci El Fiyatı | KaçaGider"
+seo_description: "iPad (8. nesil) kaça satılır? Hafıza, ekran, batarya ve cihaz durumuna göre 2026 güncel ikinci el tahmini satış değerini KaçaGider ile ücretsiz hesapla."
 seo_h1: "iPad (8. nesil) İkinci El Fiyatı"
 seo_intro: "Apple iPad (8. nesil) ikinci el fiyatını Türkiye ikinci el piyasasına göre kapasite ve kondisyon bilgileriyle KaçaGider üzerinden değerlendirin."
 seo_context_heading: "iPad (8. nesil) için ikinci el değerleme"

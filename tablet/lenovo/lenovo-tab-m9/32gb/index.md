@@ -1,7 +1,7 @@
 ---
 layout: "seo"
-seo_title: "Lenovo Tab M9 32 GB İkinci El Fiyatı 2026 | KaçaGider"
-seo_description: "Lenovo Tab M9 32 GB ikinci el değerini Türkiye ikinci el piyasasına göre kapasite ve kondisyon bilgileriyle KaçaGider üzerinden değerlendirin."
+seo_title: "Lenovo Tab M9 32 GB Kaça Satılır? 2026 İkinci El Fiyatı | KaçaGider"
+seo_description: "Lenovo Tab M9 32 GB kaça satılır? Ekran, batarya ve cihaz durumuna göre 2026 güncel ikinci el tahmini satış değerini KaçaGider ile ücretsiz hesapla."
 seo_h1: "Lenovo Tab M9 32 GB İkinci El Fiyatı"
 seo_intro: "Lenovo Tab M9 32 GB ikinci el değerini Türkiye ikinci el piyasasına göre kapasite ve kondisyon bilgileriyle KaçaGider üzerinden değerlendirin."
 seo_context_heading: "Lenovo Tab M9 32 GB için ikinci el değerleme"

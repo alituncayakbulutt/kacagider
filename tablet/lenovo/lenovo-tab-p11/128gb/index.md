@@ -1,7 +1,7 @@
 ---
 layout: "seo"
-seo_title: "Lenovo Tab P11 128 GB İkinci El Fiyatı 2026 | KaçaGider"
-seo_description: "Lenovo Tab P11 128 GB ikinci el değerini Türkiye ikinci el piyasasına göre kapasite ve kondisyon bilgileriyle KaçaGider üzerinden değerlendirin."
+seo_title: "Lenovo Tab P11 128 GB Kaça Satılır? 2026 Fiyatı | KaçaGider"
+seo_description: "Lenovo Tab P11 128 GB kaça satılır? Ekran, batarya ve cihaz durumuna göre 2026 güncel ikinci el tahmini satış değerini KaçaGider ile ücretsiz hesapla."
 seo_h1: "Lenovo Tab P11 128 GB İkinci El Fiyatı"
 seo_intro: "Lenovo Tab P11 128 GB ikinci el değerini Türkiye ikinci el piyasasına göre kapasite ve kondisyon bilgileriyle KaçaGider üzerinden değerlendirin."
 seo_context_heading: "Lenovo Tab P11 128 GB için ikinci el değerleme"

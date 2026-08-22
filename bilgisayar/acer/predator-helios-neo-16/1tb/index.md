@@ -1,7 +1,7 @@
 ---
 layout: "seo"
-seo_title: "Predator Helios Neo 16 1 TB İkinci El Fiyatı 2026 | KaçaGider"
-seo_description: "Acer Predator Helios Neo 16 1 TB ikinci el değerini Türkiye ikinci el piyasasına göre kapasite ve kondisyon bilgileriyle KaçaGider üzerinden değerlendirin."
+seo_title: "Predator Helios Neo 16 1 TB Kaça Satılır? 2026 Fiyatı | KaçaGider"
+seo_description: "Predator Helios Neo 16 1 TB kaça satılır? İşlemci, RAM, depolama ve cihaz durumuna göre 2026 güncel ikinci el tahmini satış değerini KaçaGider ile ücretsiz hesapla."
 seo_h1: "Predator Helios Neo 16 1 TB İkinci El Fiyatı"
 seo_intro: "Acer Predator Helios Neo 16 1 TB ikinci el değerini Türkiye ikinci el piyasasına göre kapasite ve kondisyon bilgileriyle KaçaGider üzerinden değerlendirin."
 seo_context_heading: "Predator Helios Neo 16 1 TB için ikinci el değerleme"

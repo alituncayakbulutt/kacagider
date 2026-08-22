@@ -1,7 +1,7 @@
 ---
 layout: "seo"
-seo_title: "iPad mini (5. nesil) 64 GB İkinci El Fiyatı 2026 | KaçaGider"
-seo_description: "Apple iPad mini (5. nesil) 64 GB ikinci el değerini Türkiye ikinci el piyasasına göre kapasite ve kondisyon bilgileriyle KaçaGider üzerinden değerlendirin."
+seo_title: "iPad mini (5. nesil) 64 GB Kaça Satılır? 2026 Fiyatı | KaçaGider"
+seo_description: "iPad mini (5. nesil) 64 GB kaça satılır? Ekran, batarya ve cihaz durumuna göre 2026 güncel ikinci el tahmini satış değerini KaçaGider ile ücretsiz hesapla."
 seo_h1: "iPad mini (5. nesil) 64 GB İkinci El Fiyatı"
 seo_intro: "Apple iPad mini (5. nesil) 64 GB ikinci el değerini Türkiye ikinci el piyasasına göre kapasite ve kondisyon bilgileriyle KaçaGider üzerinden değerlendirin."
 seo_context_heading: "iPad mini (5. nesil) 64 GB için ikinci el değerleme"

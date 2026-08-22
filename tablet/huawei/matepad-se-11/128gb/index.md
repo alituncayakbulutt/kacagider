@@ -1,7 +1,7 @@
 ---
 layout: "seo"
-seo_title: "MatePad SE 11 128 GB İkinci El Fiyatı 2026 | KaçaGider"
-seo_description: "Huawei MatePad SE 11 128 GB ikinci el değerini Türkiye ikinci el piyasasına göre kapasite ve kondisyon bilgileriyle KaçaGider üzerinden değerlendirin."
+seo_title: "MatePad SE 11 128 GB Kaça Satılır? 2026 İkinci El Fiyatı | KaçaGider"
+seo_description: "MatePad SE 11 128 GB kaça satılır? Ekran, batarya ve cihaz durumuna göre 2026 güncel ikinci el tahmini satış değerini KaçaGider ile ücretsiz hesapla."
 seo_h1: "MatePad SE 11 128 GB İkinci El Fiyatı"
 seo_intro: "Huawei MatePad SE 11 128 GB ikinci el değerini Türkiye ikinci el piyasasına göre kapasite ve kondisyon bilgileriyle KaçaGider üzerinden değerlendirin."
 seo_context_heading: "MatePad SE 11 128 GB için ikinci el değerleme"

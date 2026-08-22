@@ -1,7 +1,7 @@
 ---
 layout: "seo"
-seo_title: "Honor MagicPad 2 256 GB İkinci El Fiyatı 2026 | KaçaGider"
-seo_description: "Honor MagicPad 2 256 GB ikinci el değerini Türkiye ikinci el piyasasına göre kapasite ve kondisyon bilgileriyle KaçaGider üzerinden değerlendirin."
+seo_title: "Honor MagicPad 2 256 GB Kaça Satılır? 2026 Fiyatı | KaçaGider"
+seo_description: "Honor MagicPad 2 256 GB kaça satılır? Ekran, batarya ve cihaz durumuna göre 2026 güncel ikinci el tahmini satış değerini KaçaGider ile ücretsiz hesapla."
 seo_h1: "Honor MagicPad 2 256 GB İkinci El Fiyatı"
 seo_intro: "Honor MagicPad 2 256 GB ikinci el değerini Türkiye ikinci el piyasasına göre kapasite ve kondisyon bilgileriyle KaçaGider üzerinden değerlendirin."
 seo_context_heading: "Honor MagicPad 2 256 GB için ikinci el değerleme"

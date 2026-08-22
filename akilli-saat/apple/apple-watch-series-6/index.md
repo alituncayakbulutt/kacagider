@@ -1,7 +1,7 @@
 ---
 layout: "seo"
-seo_title: "Apple Watch Series 6 İkinci El Fiyatı 2026 | KaçaGider"
-seo_description: "Apple Watch Series 6 ikinci el fiyatını Türkiye ikinci el piyasasına göre kasa boyutu ve kondisyon bilgileriyle KaçaGider üzerinden değerlendirin."
+seo_title: "Apple Watch Series 6 Kaça Satılır? 2026 İkinci El Fiyatı | KaçaGider"
+seo_description: "Apple Watch Series 6 kaça satılır? Kasa, ekran, batarya ve genel cihaz durumuna göre 2026 güncel ikinci el tahmini satış değerini KaçaGider ile ücretsiz hesapla."
 seo_h1: "Apple Watch Series 6 İkinci El Fiyatı"
 seo_intro: "Apple Watch Series 6 ikinci el fiyatını Türkiye ikinci el piyasasına göre kasa boyutu ve kondisyon bilgileriyle KaçaGider üzerinden değerlendirin."
 seo_context_heading: "Apple Watch Series 6 için ikinci el değerleme"

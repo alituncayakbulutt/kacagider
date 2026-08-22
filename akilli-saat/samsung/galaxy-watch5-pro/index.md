@@ -1,7 +1,7 @@
 ---
 layout: "seo"
-seo_title: "Galaxy Watch5 Pro İkinci El Fiyatı 2026 | KaçaGider"
-seo_description: "Samsung Galaxy Watch5 Pro ikinci el fiyatını Türkiye ikinci el piyasasına göre kasa boyutu ve kondisyon bilgileriyle KaçaGider üzerinden değerlendirin."
+seo_title: "Galaxy Watch5 Pro Kaça Satılır? 2026 İkinci El Fiyatı | KaçaGider"
+seo_description: "Galaxy Watch5 Pro kaça satılır? Kasa, ekran, batarya ve genel cihaz durumuna göre 2026 güncel ikinci el tahmini satış değerini KaçaGider ile ücretsiz hesapla."
 seo_h1: "Galaxy Watch5 Pro İkinci El Fiyatı"
 seo_intro: "Samsung Galaxy Watch5 Pro ikinci el fiyatını Türkiye ikinci el piyasasına göre kasa boyutu ve kondisyon bilgileriyle KaçaGider üzerinden değerlendirin."
 seo_context_heading: "Galaxy Watch5 Pro için ikinci el değerleme"

@@ -1,7 +1,7 @@
 ---
 layout: "seo"
-seo_title: "Abra A5 İkinci El Fiyatı 2026 | KaçaGider"
-seo_description: "Monster Abra A5 ikinci el fiyatını Türkiye ikinci el piyasasına göre kapasite ve kondisyon bilgileriyle KaçaGider üzerinden değerlendirin."
+seo_title: "Abra A5 Kaça Satılır? 2026 İkinci El Fiyatı | KaçaGider"
+seo_description: "Abra A5 kaça satılır? İşlemci, RAM, depolama ve cihaz durumuna göre 2026 güncel ikinci el tahmini satış değerini KaçaGider ile ücretsiz hesapla."
 seo_h1: "Abra A5 İkinci El Fiyatı"
 seo_intro: "Monster Abra A5 ikinci el fiyatını Türkiye ikinci el piyasasına göre kapasite ve kondisyon bilgileriyle KaçaGider üzerinden değerlendirin."
 seo_context_heading: "Abra A5 için ikinci el değerleme"

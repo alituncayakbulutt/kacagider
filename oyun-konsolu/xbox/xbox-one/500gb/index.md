@@ -1,7 +1,7 @@
 ---
 layout: "seo"
-seo_title: "Xbox One 500 GB İkinci El Fiyatı 2026 | KaçaGider"
-seo_description: "Xbox One 500 GB ikinci el değerini Türkiye ikinci el piyasasına göre depolama ve kondisyon bilgileriyle KaçaGider üzerinden değerlendirin."
+seo_title: "Xbox One 500 GB Kaça Satılır? 2026 İkinci El Fiyatı | KaçaGider"
+seo_description: "Xbox One 500 GB kaça satılır? Depolama, kozmetik durum, aksesuarlar ve çalışma durumuna göre 2026 güncel ikinci el tahmini satış değerini KaçaGider ile ücretsiz hesapla."
 seo_h1: "Xbox One 500 GB İkinci El Fiyatı"
 seo_intro: "Xbox One 500 GB ikinci el değerini Türkiye ikinci el piyasasına göre depolama ve kondisyon bilgileriyle KaçaGider üzerinden değerlendirin."
 seo_context_heading: "Xbox One 500 GB için ikinci el değerleme"

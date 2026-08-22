@@ -1,7 +1,7 @@
 ---
 layout: "seo"
-seo_title: "iPad Pro 13 inç (M5) 256 GB İkinci El Fiyatı 2026 | KaçaGider"
-seo_description: "Apple iPad Pro 13 inç (M5) 256 GB ikinci el değerini Türkiye ikinci el piyasasına göre kapasite ve kondisyon bilgileriyle KaçaGider üzerinden değerlendirin."
+seo_title: "iPad Pro 13 inç (M5) 256 GB Kaça Satılır? 2026 Fiyatı | KaçaGider"
+seo_description: "iPad Pro 13 inç (M5) 256 GB kaça satılır? Ekran, batarya ve cihaz durumuna göre 2026 güncel ikinci el tahmini satış değerini KaçaGider ile ücretsiz hesapla."
 seo_h1: "iPad Pro 13 inç (M5) 256 GB İkinci El Fiyatı"
 seo_intro: "Apple iPad Pro 13 inç (M5) 256 GB ikinci el değerini Türkiye ikinci el piyasasına göre kapasite ve kondisyon bilgileriyle KaçaGider üzerinden değerlendirin."
 seo_context_heading: "iPad Pro 13 inç (M5) 256 GB için ikinci el değerleme"

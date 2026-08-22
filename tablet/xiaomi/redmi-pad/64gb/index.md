@@ -1,7 +1,7 @@
 ---
 layout: "seo"
-seo_title: "Redmi Pad 64 GB İkinci El Fiyatı 2026 | KaçaGider"
-seo_description: "Xiaomi Redmi Pad 64 GB ikinci el değerini Türkiye ikinci el piyasasına göre kapasite ve kondisyon bilgileriyle KaçaGider üzerinden değerlendirin."
+seo_title: "Redmi Pad 64 GB Kaça Satılır? 2026 İkinci El Fiyatı | KaçaGider"
+seo_description: "Redmi Pad 64 GB kaça satılır? Ekran, batarya ve cihaz durumuna göre 2026 güncel ikinci el tahmini satış değerini KaçaGider ile ücretsiz hesapla."
 seo_h1: "Redmi Pad 64 GB İkinci El Fiyatı"
 seo_intro: "Xiaomi Redmi Pad 64 GB ikinci el değerini Türkiye ikinci el piyasasına göre kapasite ve kondisyon bilgileriyle KaçaGider üzerinden değerlendirin."
 seo_context_heading: "Redmi Pad 64 GB için ikinci el değerleme"

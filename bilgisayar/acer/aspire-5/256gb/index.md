@@ -1,7 +1,7 @@
 ---
 layout: "seo"
-seo_title: "Aspire 5 256 GB İkinci El Fiyatı 2026 | KaçaGider"
-seo_description: "Acer Aspire 5 256 GB ikinci el değerini Türkiye ikinci el piyasasına göre kapasite ve kondisyon bilgileriyle KaçaGider üzerinden değerlendirin."
+seo_title: "Aspire 5 256 GB Kaça Satılır? 2026 İkinci El Fiyatı | KaçaGider"
+seo_description: "Aspire 5 256 GB kaça satılır? İşlemci, RAM, depolama ve cihaz durumuna göre 2026 güncel ikinci el tahmini satış değerini KaçaGider ile ücretsiz hesapla."
 seo_h1: "Aspire 5 256 GB İkinci El Fiyatı"
 seo_intro: "Acer Aspire 5 256 GB ikinci el değerini Türkiye ikinci el piyasasına göre kapasite ve kondisyon bilgileriyle KaçaGider üzerinden değerlendirin."
 seo_context_heading: "Aspire 5 256 GB için ikinci el değerleme"

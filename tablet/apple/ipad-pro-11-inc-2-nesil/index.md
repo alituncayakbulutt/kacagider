@@ -1,7 +1,7 @@
 ---
 layout: "seo"
-seo_title: "iPad Pro 11 inç (2. nesil) İkinci El Fiyatı 2026 | KaçaGider"
-seo_description: "Apple iPad Pro 11 inç (2. nesil) ikinci el fiyatını Türkiye ikinci el piyasasına göre kapasite ve kondisyon bilgileriyle KaçaGider üzerinden değerlendirin."
+seo_title: "iPad Pro 11 inç (2. nesil) Kaça Satılır? 2026 Fiyatı | KaçaGider"
+seo_description: "iPad Pro 11 inç (2. nesil) kaça satılır? Hafıza, ekran, batarya ve cihaz durumuna göre 2026 güncel ikinci el tahmini satış değerini KaçaGider ile ücretsiz hesapla."
 seo_h1: "iPad Pro 11 inç (2. nesil) İkinci El Fiyatı"
 seo_intro: "Apple iPad Pro 11 inç (2. nesil) ikinci el fiyatını Türkiye ikinci el piyasasına göre kapasite ve kondisyon bilgileriyle KaçaGider üzerinden değerlendirin."
 seo_context_heading: "iPad Pro 11 inç (2. nesil) için ikinci el değerleme"

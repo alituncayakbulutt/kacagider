@@ -1,7 +1,7 @@
 ---
 layout: "seo"
-seo_title: "Apple Watch SE 2 İkinci El Fiyatı 2026 | KaçaGider"
-seo_description: "Apple Watch SE 2 ikinci el fiyatını Türkiye ikinci el piyasasına göre kasa boyutu ve kondisyon bilgileriyle KaçaGider üzerinden değerlendirin."
+seo_title: "Apple Watch SE 2 Kaça Satılır? 2026 İkinci El Fiyatı | KaçaGider"
+seo_description: "Apple Watch SE 2 kaça satılır? Kasa, ekran, batarya ve genel cihaz durumuna göre 2026 güncel ikinci el tahmini satış değerini KaçaGider ile ücretsiz hesapla."
 seo_h1: "Apple Watch SE 2 İkinci El Fiyatı"
 seo_intro: "Apple Watch SE 2 ikinci el fiyatını Türkiye ikinci el piyasasına göre kasa boyutu ve kondisyon bilgileriyle KaçaGider üzerinden değerlendirin."
 seo_context_heading: "Apple Watch SE 2 için ikinci el değerleme"

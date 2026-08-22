@@ -1,7 +1,7 @@
 ---
 layout: "seo"
-seo_title: "Lenovo Tab M8 İkinci El Fiyatı 2026 | KaçaGider"
-seo_description: "Lenovo Tab M8 ikinci el fiyatını Türkiye ikinci el piyasasına göre kapasite ve kondisyon bilgileriyle KaçaGider üzerinden değerlendirin."
+seo_title: "Lenovo Tab M8 Kaça Satılır? 2026 İkinci El Fiyatı | KaçaGider"
+seo_description: "Lenovo Tab M8 kaça satılır? Hafıza, ekran, batarya ve cihaz durumuna göre 2026 güncel ikinci el tahmini satış değerini KaçaGider ile ücretsiz hesapla."
 seo_h1: "Lenovo Tab M8 İkinci El Fiyatı"
 seo_intro: "Lenovo Tab M8 ikinci el fiyatını Türkiye ikinci el piyasasına göre kapasite ve kondisyon bilgileriyle KaçaGider üzerinden değerlendirin."
 seo_context_heading: "Lenovo Tab M8 için ikinci el değerleme"

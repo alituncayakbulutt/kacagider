@@ -1,7 +1,7 @@
 ---
 layout: "seo"
-seo_title: "Galaxy Watch8 Classic İkinci El Fiyatı 2026 | KaçaGider"
-seo_description: "Samsung Galaxy Watch8 Classic ikinci el fiyatını Türkiye ikinci el piyasasına göre kasa boyutu ve kondisyon bilgileriyle KaçaGider üzerinden değerlendirin."
+seo_title: "Galaxy Watch8 Classic Kaça Satılır? 2026 Fiyatı | KaçaGider"
+seo_description: "Galaxy Watch8 Classic kaça satılır? Kasa, ekran, batarya ve genel cihaz durumuna göre 2026 güncel ikinci el tahmini satış değerini KaçaGider ile ücretsiz hesapla."
 seo_h1: "Galaxy Watch8 Classic İkinci El Fiyatı"
 seo_intro: "Samsung Galaxy Watch8 Classic ikinci el fiyatını Türkiye ikinci el piyasasına göre kasa boyutu ve kondisyon bilgileriyle KaçaGider üzerinden değerlendirin."
 seo_context_heading: "Galaxy Watch8 Classic için ikinci el değerleme"

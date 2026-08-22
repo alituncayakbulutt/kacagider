@@ -1,7 +1,7 @@
 ---
 layout: "seo"
-seo_title: "MacBook Pro M2 Max 2 TB İkinci El Fiyatı 2026 | KaçaGider"
-seo_description: "Apple MacBook Pro M2 Max 2 TB ikinci el değerini Türkiye ikinci el piyasasına göre kapasite ve kondisyon bilgileriyle KaçaGider üzerinden değerlendirin."
+seo_title: "MacBook Pro M2 Max 2 TB Kaça Satılır? 2026 Fiyatı | KaçaGider"
+seo_description: "MacBook Pro M2 Max 2 TB kaça satılır? İşlemci, RAM, depolama ve cihaz durumuna göre 2026 güncel ikinci el tahmini satış değerini KaçaGider ile ücretsiz hesapla."
 seo_h1: "MacBook Pro M2 Max 2 TB İkinci El Fiyatı"
 seo_intro: "Apple MacBook Pro M2 Max 2 TB ikinci el değerini Türkiye ikinci el piyasasına göre kapasite ve kondisyon bilgileriyle KaçaGider üzerinden değerlendirin."
 seo_context_heading: "MacBook Pro M2 Max 2 TB için ikinci el değerleme"

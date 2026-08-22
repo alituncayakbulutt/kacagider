@@ -1,7 +1,7 @@
 ---
 layout: "seo"
-seo_title: "Galaxy Watch4 Classic İkinci El Fiyatı 2026 | KaçaGider"
-seo_description: "Samsung Galaxy Watch4 Classic ikinci el fiyatını Türkiye ikinci el piyasasına göre kasa boyutu ve kondisyon bilgileriyle KaçaGider üzerinden değerlendirin."
+seo_title: "Galaxy Watch4 Classic Kaça Satılır? 2026 Fiyatı | KaçaGider"
+seo_description: "Galaxy Watch4 Classic kaça satılır? Kasa, ekran, batarya ve genel cihaz durumuna göre 2026 güncel ikinci el tahmini satış değerini KaçaGider ile ücretsiz hesapla."
 seo_h1: "Galaxy Watch4 Classic İkinci El Fiyatı"
 seo_intro: "Samsung Galaxy Watch4 Classic ikinci el fiyatını Türkiye ikinci el piyasasına göre kasa boyutu ve kondisyon bilgileriyle KaçaGider üzerinden değerlendirin."
 seo_context_heading: "Galaxy Watch4 Classic için ikinci el değerleme"

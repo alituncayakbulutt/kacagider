@@ -1,7 +1,7 @@
 ---
 layout: "seo"
-seo_title: "MateBook D 14 İkinci El Fiyatı 2026 | KaçaGider"
-seo_description: "Huawei MateBook D 14 ikinci el fiyatını Türkiye ikinci el piyasasına göre kapasite ve kondisyon bilgileriyle KaçaGider üzerinden değerlendirin."
+seo_title: "MateBook D 14 Kaça Satılır? 2026 İkinci El Fiyatı | KaçaGider"
+seo_description: "MateBook D 14 kaça satılır? İşlemci, RAM, depolama ve cihaz durumuna göre 2026 güncel ikinci el tahmini satış değerini KaçaGider ile ücretsiz hesapla."
 seo_h1: "MateBook D 14 İkinci El Fiyatı"
 seo_intro: "Huawei MateBook D 14 ikinci el fiyatını Türkiye ikinci el piyasasına göre kapasite ve kondisyon bilgileriyle KaçaGider üzerinden değerlendirin."
 seo_context_heading: "MateBook D 14 için ikinci el değerleme"

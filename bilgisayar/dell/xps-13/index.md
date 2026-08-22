@@ -1,7 +1,7 @@
 ---
 layout: "seo"
-seo_title: "XPS 13 İkinci El Fiyatı 2026 | KaçaGider"
-seo_description: "Dell XPS 13 ikinci el fiyatını Türkiye ikinci el piyasasına göre kapasite ve kondisyon bilgileriyle KaçaGider üzerinden değerlendirin."
+seo_title: "XPS 13 Kaça Satılır? 2026 İkinci El Fiyatı | KaçaGider"
+seo_description: "XPS 13 kaça satılır? İşlemci, RAM, depolama ve cihaz durumuna göre 2026 güncel ikinci el tahmini satış değerini KaçaGider ile ücretsiz hesapla."
 seo_h1: "XPS 13 İkinci El Fiyatı"
 seo_intro: "Dell XPS 13 ikinci el fiyatını Türkiye ikinci el piyasasına göre kapasite ve kondisyon bilgileriyle KaçaGider üzerinden değerlendirin."
 seo_context_heading: "XPS 13 için ikinci el değerleme"

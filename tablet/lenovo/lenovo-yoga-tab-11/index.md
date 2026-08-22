@@ -1,7 +1,7 @@
 ---
 layout: "seo"
-seo_title: "Lenovo Yoga Tab 11 İkinci El Fiyatı 2026 | KaçaGider"
-seo_description: "Lenovo Yoga Tab 11 ikinci el fiyatını Türkiye ikinci el piyasasına göre kapasite ve kondisyon bilgileriyle KaçaGider üzerinden değerlendirin."
+seo_title: "Lenovo Yoga Tab 11 Kaça Satılır? 2026 İkinci El Fiyatı | KaçaGider"
+seo_description: "Lenovo Yoga Tab 11 kaça satılır? Hafıza, ekran, batarya ve cihaz durumuna göre 2026 güncel ikinci el tahmini satış değerini KaçaGider ile ücretsiz hesapla."
 seo_h1: "Lenovo Yoga Tab 11 İkinci El Fiyatı"
 seo_intro: "Lenovo Yoga Tab 11 ikinci el fiyatını Türkiye ikinci el piyasasına göre kapasite ve kondisyon bilgileriyle KaçaGider üzerinden değerlendirin."
 seo_context_heading: "Lenovo Yoga Tab 11 için ikinci el değerleme"

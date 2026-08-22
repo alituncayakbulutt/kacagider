@@ -1,7 +1,7 @@
 ---
 layout: "seo"
-seo_title: "PlayStation 5 Slim Digital 1 TB İkinci El Fiyatı 2026 | KaçaGider"
-seo_description: "PlayStation 5 Slim Digital 1 TB ikinci el değerini Türkiye ikinci el piyasasına göre depolama ve kondisyon bilgileriyle KaçaGider üzerinden değerlendirin."
+seo_title: "PlayStation 5 Slim Digital 1 TB Kaça Satılır? 2026 | KaçaGider"
+seo_description: "PlayStation 5 Slim Digital 1 TB kaça satılır? Depolama, kozmetik durum, aksesuarlar ve çalışma durumuna göre 2026 güncel ikinci el tahmini satış değerini KaçaGider ile ücretsiz hesapla."
 seo_h1: "PlayStation 5 Slim Digital 1 TB İkinci El Fiyatı"
 seo_intro: "PlayStation 5 Slim Digital 1 TB ikinci el değerini Türkiye ikinci el piyasasına göre depolama ve kondisyon bilgileriyle KaçaGider üzerinden değerlendirin."
 seo_context_heading: "PlayStation 5 Slim Digital 1 TB için ikinci el değerleme"

@@ -1,7 +1,7 @@
 ---
 layout: "seo"
-seo_title: "MatePad SE 10.4 32 GB İkinci El Fiyatı 2026 | KaçaGider"
-seo_description: "Huawei MatePad SE 10.4 32 GB ikinci el değerini Türkiye ikinci el piyasasına göre kapasite ve kondisyon bilgileriyle KaçaGider üzerinden değerlendirin."
+seo_title: "MatePad SE 10.4 32 GB Kaça Satılır? 2026 Fiyatı | KaçaGider"
+seo_description: "MatePad SE 10.4 32 GB kaça satılır? Ekran, batarya ve cihaz durumuna göre 2026 güncel ikinci el tahmini satış değerini KaçaGider ile ücretsiz hesapla."
 seo_h1: "MatePad SE 10.4 32 GB İkinci El Fiyatı"
 seo_intro: "Huawei MatePad SE 10.4 32 GB ikinci el değerini Türkiye ikinci el piyasasına göre kapasite ve kondisyon bilgileriyle KaçaGider üzerinden değerlendirin."
 seo_context_heading: "MatePad SE 10.4 32 GB için ikinci el değerleme"
