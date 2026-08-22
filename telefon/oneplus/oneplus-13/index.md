@@ -1,7 +1,7 @@
 ---
 layout: "seo"
-seo_title: "OnePlus 13 Ne Kadar Eder? 2026 İkinci El Fiyatı | KaçaGider"
-seo_description: "OnePlus 13 ne kadar eder? Hafıza ve cihaz durumuna göre güncel ikinci el tahmini satış değerini KaçaGider ile ücretsiz hesapla."
+seo_title: "OnePlus 13 Kaça Satılır? 2026 İkinci El Fiyatı | KaçaGider"
+seo_description: "OnePlus 13 kaça satılır? Hafıza, ekran, batarya, kamera ve cihaz durumuna göre 2026 güncel ikinci el tahmini satış değerini KaçaGider ile ücretsiz hesapla."
 seo_h1: "OnePlus 13 İkinci El Fiyatı"
 seo_intro: "OnePlus 13 ikinci el fiyatını Türkiye ikinci el piyasasına göre hafıza, kondisyon ve cihaz kayıt durumu bilgileriyle KaçaGider üzerinden değerlendirin."
 seo_context_heading: "OnePlus 13 için ikinci el değerleme"

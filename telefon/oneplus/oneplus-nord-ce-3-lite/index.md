@@ -1,7 +1,7 @@
 ---
 layout: "seo"
-seo_title: "OnePlus Nord CE 3 Lite Ne Kadar Eder? 2026 | KaçaGider"
-seo_description: "OnePlus Nord CE 3 Lite ne kadar eder? Hafıza ve cihaz durumuna göre güncel ikinci el tahmini satış değerini KaçaGider ile ücretsiz hesapla."
+seo_title: "OnePlus Nord CE 3 Lite Kaça Satılır? 2026 Fiyatı | KaçaGider"
+seo_description: "OnePlus Nord CE 3 Lite kaça satılır? Hafıza, ekran, batarya, kamera ve cihaz durumuna göre 2026 güncel ikinci el tahmini satış değerini KaçaGider ile ücretsiz hesapla."
 seo_h1: "OnePlus Nord CE 3 Lite İkinci El Fiyatı"
 seo_intro: "OnePlus Nord CE 3 Lite ikinci el fiyatını Türkiye ikinci el piyasasına göre hafıza, kondisyon ve cihaz kayıt durumu bilgileriyle KaçaGider üzerinden değerlendirin."
 seo_context_heading: "OnePlus Nord CE 3 Lite için ikinci el değerleme"
