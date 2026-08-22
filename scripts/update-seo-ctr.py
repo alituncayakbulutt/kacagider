@@ -4,6 +4,9 @@ import re
 TITLE_RE = re.compile(r'^(seo_title:\s*)"([^"]*)"\s*$', re.M)
 DESC_RE = re.compile(r'^(seo_description:\s*)"([^"]*)"\s*$', re.M)
 H1_RE = re.compile(r'^(seo_h1:\s*)"([^"]*)"\s*$', re.M)
+INTRO_RE = re.compile(r'^(seo_intro:\s*)"([^"]*)"\s*$', re.M)
+CONTEXT_HEADING_RE = re.compile(r'^(seo_context_heading:\s*)"([^"]*)"\s*$', re.M)
+CONTEXT_RE = re.compile(r'^(seo_context:\s*)"([^"]*)"\s*$', re.M)
 STORAGE_RE = re.compile(r'\b(?:\d+\s*GB|\d+\s*TB)\b', re.I)
 
 
@@ -109,6 +112,42 @@ def console_description(base: str) -> str:
     )
 
 
+def visible_details(kind: str, base: str, camera: bool = False) -> str:
+    has_storage = STORAGE_RE.search(base) is not None
+    if kind == 'apple-phone':
+        return 'pil sağlığı, ekran ve genel cihaz durumu' if has_storage else 'hafıza, pil sağlığı, ekran ve genel cihaz durumu'
+    if kind == 'phone':
+        details = 'ekran, batarya'
+        if camera:
+            details += ', kamera'
+        details += ' ve cihaz durumu'
+        return details if has_storage else f'hafıza, {details}'
+    if kind == 'tablet':
+        return 'ekran, batarya ve cihaz durumu' if has_storage else 'hafıza, ekran, batarya ve cihaz durumu'
+    if kind == 'computer':
+        return 'işlemci, RAM, ekran ve genel cihaz durumu' if has_storage else 'işlemci, RAM, depolama, ekran ve genel cihaz durumu'
+    if kind == 'watch':
+        return 'kasa boyutu, ekran, batarya ve genel cihaz durumu'
+    if kind == 'console':
+        return 'kozmetik durum, aksesuarlar ve çalışma durumu' if has_storage else 'depolama, kozmetik durum, aksesuarlar ve çalışma durumu'
+    raise ValueError(f'Unknown visible copy kind: {kind}')
+
+
+def make_visible_copy(base: str, kind: str, camera: bool = False):
+    details = visible_details(kind, base, camera=camera)
+    intro = (
+        f'{base} kaça satılır? 2026 ikinci el değeri; {details} gibi özelliklere göre değişir. '
+        f'KaçaGider ile cihazınızın tahmini satış değerini ücretsiz hesaplayabilirsiniz.'
+    )
+    heading = f'{base} ikinci el değeri nasıl hesaplanır?'
+    context = (
+        f'{base} ikinci el fiyatı belirlenirken {details} birlikte değerlendirilir. '
+        f'Cihazın kondisyonu ve çalışan özelliklerinin durumu tahmini satış değerini doğrudan etkiler. '
+        f'KaçaGider üzerinden bilgilerinizi seçerek 2026 için güncel tahmini ikinci el satış değerini görebilirsiniz.'
+    )
+    return intro, heading, context
+
+
 def optimize_tree(root: Path, brand: str, description_builder, skip_model=None):
     scanned = changed = skipped = 0
     for path in root.rglob('index.md'):
@@ -167,6 +206,34 @@ def align_h1_tree(root: Path, label: str):
     print(f'{label} H1: scanned {scanned}, changed {changed}.')
 
 
+def align_visible_copy_tree(root: Path, label: str, kind: str, camera: bool = False):
+    scanned = changed = 0
+    for path in root.rglob('index.md'):
+        if len(path.parts) < 4:
+            continue
+        text = path.read_text(encoding='utf-8')
+        title_match = TITLE_RE.search(text)
+        intro_match = INTRO_RE.search(text)
+        heading_match = CONTEXT_HEADING_RE.search(text)
+        context_match = CONTEXT_RE.search(text)
+        if not title_match or not intro_match or not heading_match or not context_match:
+            continue
+
+        scanned += 1
+        base = extract_base(title_match.group(2))
+        if not base:
+            continue
+        new_intro, new_heading, new_context = make_visible_copy(base, kind, camera=camera)
+
+        updated = INTRO_RE.sub(lambda m: f'{m.group(1)}"{new_intro}"', text, count=1)
+        updated = CONTEXT_HEADING_RE.sub(lambda m: f'{m.group(1)}"{new_heading}"', updated, count=1)
+        updated = CONTEXT_RE.sub(lambda m: f'{m.group(1)}"{new_context}"', updated, count=1)
+        if updated != text:
+            path.write_text(updated, encoding='utf-8')
+            changed += 1
+    print(f'{label} visible copy: scanned {scanned}, changed {changed}.')
+
+
 # AŞAMA 1 — mevcut yapı korunur, yalnızca arama sonucu başlık/açıklamaları güncellenir.
 optimize_tree(
     Path('telefon/apple'),
@@ -205,3 +272,23 @@ for root, label in [
     (Path('oyun-konsolu'), 'Oyun Konsolu'),
 ]:
     align_h1_tree(root, label)
+
+# AŞAMA 2A.2–2A.4 — görünür giriş metni, bağlam başlığı ve bağlam paragrafını
+# aynı "kaça satılır / ikinci el değeri" arama niyetine getir. URL, layout, link ve fiyat yapısı değişmez.
+align_visible_copy_tree(Path('telefon/apple'), 'Apple iPhone', 'apple-phone')
+for brand in ['samsung', 'xiaomi']:
+    align_visible_copy_tree(Path('telefon') / brand, f'Telefon {brand}', 'phone')
+for brand in ['oppo', 'vivo', 'huawei', 'honor', 'realme', 'oneplus', 'google']:
+    align_visible_copy_tree(Path('telefon') / brand, f'Telefon {brand}', 'phone', camera=True)
+
+for brand in ['apple', 'samsung', 'xiaomi', 'huawei', 'honor', 'lenovo']:
+    align_visible_copy_tree(Path('tablet') / brand, f'Tablet {brand}', 'tablet')
+
+for brand in ['apple', 'asus', 'acer', 'casper', 'dell', 'hp', 'huawei', 'lenovo', 'monster', 'msi']:
+    align_visible_copy_tree(Path('bilgisayar') / brand, f'Bilgisayar {brand}', 'computer')
+
+for brand in ['apple', 'samsung', 'huawei']:
+    align_visible_copy_tree(Path('akilli-saat') / brand, f'Akıllı Saat {brand}', 'watch')
+
+for brand in ['playstation', 'xbox']:
+    align_visible_copy_tree(Path('oyun-konsolu') / brand, f'Oyun Konsolu {brand}', 'console')
