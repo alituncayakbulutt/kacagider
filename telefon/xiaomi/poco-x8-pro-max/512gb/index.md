@@ -1,7 +1,7 @@
 ---
 layout: "seo"
-seo_title: "POCO X8 Pro Max 512 GB İkinci El Fiyatı 2026 | KaçaGider"
-seo_description: "Xiaomi POCO X8 Pro Max 512 GB ikinci el değerini Türkiye ikinci el piyasasına göre hafıza, kondisyon ve cihaz kayıt durumu bilgileriyle KaçaGider üzerinden değerlendirin."
+seo_title: "POCO X8 Pro Max 512 GB Ne Kadar Eder? 2026 Fiyatı | KaçaGider"
+seo_description: "POCO X8 Pro Max 512 GB ne kadar eder? Cihaz durumunu seç; güncel ikinci el tahmini satış değerini KaçaGider ile ücretsiz ve hızlıca hesapla."
 seo_h1: "POCO X8 Pro Max 512 GB İkinci El Fiyatı"
 seo_intro: "Xiaomi POCO X8 Pro Max 512 GB ikinci el değerini Türkiye ikinci el piyasasına göre hafıza, kondisyon ve cihaz kayıt durumu bilgileriyle KaçaGider üzerinden değerlendirin."
 seo_context_heading: "POCO X8 Pro Max 512 GB için ikinci el değerleme"
