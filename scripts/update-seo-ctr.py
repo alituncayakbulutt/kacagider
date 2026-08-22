@@ -43,6 +43,22 @@ def make_title(base: str) -> str:
     return f'{base} Kaça Satılır? | KaçaGider'
 
 
+def phone_description(base: str, camera: bool = False) -> str:
+    details = 'ekran, batarya'
+    if camera:
+        details += ', kamera'
+    details += ' ve cihaz durumu'
+    if STORAGE_RE.search(base):
+        return (
+            f'{base} kaça satılır? {details.capitalize()}na göre 2026 güncel ikinci el '
+            f'tahmini satış değerini KaçaGider ile ücretsiz hesapla.'
+        )
+    return (
+        f'{base} kaça satılır? Hafıza, {details}na göre 2026 güncel ikinci el '
+        f'tahmini satış değerini KaçaGider ile ücretsiz hesapla.'
+    )
+
+
 def apple_description(base: str) -> str:
     if STORAGE_RE.search(base):
         return (
@@ -55,7 +71,7 @@ def apple_description(base: str) -> str:
     )
 
 
-def samsung_description(base: str) -> str:
+def tablet_description(base: str) -> str:
     if STORAGE_RE.search(base):
         return (
             f'{base} kaça satılır? Ekran, batarya ve cihaz durumuna göre 2026 güncel ikinci el '
@@ -67,51 +83,24 @@ def samsung_description(base: str) -> str:
     )
 
 
-def xiaomi_description(base: str) -> str:
-    if STORAGE_RE.search(base):
-        return (
-            f'{base} kaça satılır? Ekran, batarya ve cihaz durumuna göre 2026 güncel ikinci el '
-            f'tahmini satış değerini KaçaGider ile ücretsiz hesapla.'
-        )
+def computer_description(base: str) -> str:
     return (
-        f'{base} kaça satılır? Hafıza, ekran, batarya ve cihaz durumuna göre 2026 güncel ikinci el '
+        f'{base} kaça satılır? İşlemci, RAM, depolama ve cihaz durumuna göre 2026 güncel ikinci el '
         f'tahmini satış değerini KaçaGider ile ücretsiz hesapla.'
     )
 
 
-def oppo_description(base: str) -> str:
-    if STORAGE_RE.search(base):
-        return (
-            f'{base} kaça satılır? Ekran, batarya, kamera ve cihaz durumuna göre 2026 güncel ikinci el '
-            f'tahmini satış değerini KaçaGider ile ücretsiz hesapla.'
-        )
+def watch_description(base: str) -> str:
     return (
-        f'{base} kaça satılır? Hafıza, ekran, batarya, kamera ve cihaz durumuna göre 2026 güncel ikinci el '
+        f'{base} kaça satılır? Kasa, ekran, batarya ve genel cihaz durumuna göre 2026 güncel ikinci el '
         f'tahmini satış değerini KaçaGider ile ücretsiz hesapla.'
     )
 
 
-def vivo_description(base: str) -> str:
-    if STORAGE_RE.search(base):
-        return (
-            f'{base} kaça satılır? Ekran, batarya, kamera ve cihaz durumuna göre 2026 güncel ikinci el '
-            f'tahmini satış değerini KaçaGider ile ücretsiz hesapla.'
-        )
+def console_description(base: str) -> str:
     return (
-        f'{base} kaça satılır? Hafıza, ekran, batarya, kamera ve cihaz durumuna göre 2026 güncel ikinci el '
-        f'tahmini satış değerini KaçaGider ile ücretsiz hesapla.'
-    )
-
-
-def huawei_description(base: str) -> str:
-    if STORAGE_RE.search(base):
-        return (
-            f'{base} kaça satılır? Ekran, batarya, kamera ve cihaz durumuna göre 2026 güncel ikinci el '
-            f'tahmini satış değerini KaçaGider ile ücretsiz hesapla.'
-        )
-    return (
-        f'{base} kaça satılır? Hafıza, ekran, batarya, kamera ve cihaz durumuna göre 2026 güncel ikinci el '
-        f'tahmini satış değerini KaçaGider ile ücretsiz hesapla.'
+        f'{base} kaça satılır? Depolama, kozmetik durum, aksesuarlar ve çalışma durumuna göre 2026 güncel '
+        f'ikinci el tahmini satış değerini KaçaGider ile ücretsiz hesapla.'
     )
 
 
@@ -151,44 +140,35 @@ def optimize_tree(root: Path, brand: str, description_builder, skip_model=None):
     print(f'{brand}: scanned {scanned}, changed {changed}, skipped {skipped}.')
 
 
+# TELEFON — mevcut yapı korunur, yalnızca arama sonucu başlık/açıklamaları güncellenir.
 optimize_tree(
     Path('telefon/apple'),
     'Apple iPhone',
     apple_description,
     skip_model=lambda slug: slug == 'iphone-13' or slug.startswith('iphone-13-'),
 )
+optimize_tree(Path('telefon/samsung'), 'Samsung Galaxy', lambda base: phone_description(base))
+optimize_tree(Path('telefon/xiaomi'), 'Xiaomi Redmi POCO', lambda base: phone_description(base))
+optimize_tree(Path('telefon/oppo'), 'OPPO', lambda base: phone_description(base, camera=True))
+optimize_tree(Path('telefon/vivo'), 'Vivo', lambda base: phone_description(base, camera=True))
+optimize_tree(Path('telefon/huawei'), 'Huawei', lambda base: phone_description(base, camera=True))
+optimize_tree(Path('telefon/honor'), 'Honor', lambda base: phone_description(base, camera=True))
+optimize_tree(Path('telefon/realme'), 'Realme', lambda base: phone_description(base, camera=True))
+optimize_tree(Path('telefon/oneplus'), 'OnePlus', lambda base: phone_description(base, camera=True))
+optimize_tree(Path('telefon/google'), 'Google Pixel', lambda base: phone_description(base, camera=True))
 
-# Keep the existing Samsung structure and only update search snippet metadata.
-optimize_tree(
-    Path('telefon/samsung'),
-    'Samsung Galaxy',
-    samsung_description,
-)
+# TABLET — Apple, Samsung, Xiaomi, Huawei, Honor, Lenovo ve mevcut tüm model/hafıza sayfaları.
+for brand in ['apple', 'samsung', 'xiaomi', 'huawei', 'honor', 'lenovo']:
+    optimize_tree(Path('tablet') / brand, f'Tablet {brand}', tablet_description)
 
-# Keep the existing Xiaomi / Redmi / POCO structure and only update search snippet metadata.
-optimize_tree(
-    Path('telefon/xiaomi'),
-    'Xiaomi Redmi POCO',
-    xiaomi_description,
-)
+# BİLGİSAYAR — mevcut tüm marka/model sayfaları.
+for brand in ['apple', 'asus', 'acer', 'casper', 'dell', 'hp', 'huawei', 'lenovo', 'monster', 'msi']:
+    optimize_tree(Path('bilgisayar') / brand, f'Bilgisayar {brand}', computer_description)
 
-# Keep the existing OPPO Reno / Find / A-series structure and only update search snippet metadata.
-optimize_tree(
-    Path('telefon/oppo'),
-    'OPPO',
-    oppo_description,
-)
+# AKILLI SAAT — mevcut Apple, Samsung ve Huawei model sayfaları.
+for brand in ['apple', 'samsung', 'huawei']:
+    optimize_tree(Path('akilli-saat') / brand, f'Akıllı Saat {brand}', watch_description)
 
-# Keep the existing Vivo V / Y / X-series structure and only update search snippet metadata.
-optimize_tree(
-    Path('telefon/vivo'),
-    'Vivo',
-    vivo_description,
-)
-
-# Keep the existing Huawei P / Pura / Mate / Nova structure and only update search snippet metadata.
-optimize_tree(
-    Path('telefon/huawei'),
-    'Huawei',
-    huawei_description,
-)
+# OYUN KONSOLU — mevcut PlayStation ve Xbox model sayfaları.
+for brand in ['playstation', 'xbox']:
+    optimize_tree(Path('oyun-konsolu') / brand, f'Oyun Konsolu {brand}', console_description)
