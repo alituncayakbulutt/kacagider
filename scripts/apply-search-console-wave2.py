@@ -5,7 +5,6 @@ import re
 # Yalnızca kullanıcının paylaştığı sorgularda gösterim alan kümeler.
 # Mevcut title, H1, URL, canonical, breadcrumb, rehber ve fiyatlandırma yapısı korunur.
 TARGETS = {
-    # Samsung A serisi
     Path("telefon/samsung/galaxy-a16"): "hafıza, ekran, batarya ve cihaz durumu",
     Path("telefon/samsung/galaxy-a26"): "hafıza, ekran, batarya ve cihaz durumu",
     Path("telefon/samsung/galaxy-a32"): "hafıza, ekran, batarya ve cihaz durumu",
@@ -13,14 +12,11 @@ TARGETS = {
     Path("telefon/samsung/galaxy-a36-5g"): "hafıza, ekran, batarya ve cihaz durumu",
     Path("telefon/samsung/galaxy-a52"): "hafıza, ekran, batarya ve cihaz durumu",
     Path("telefon/samsung/galaxy-a56-5g"): "hafıza, ekran, batarya ve cihaz durumu",
-    # iPhone 12 Pro
     Path("telefon/apple/iphone-12-pro"): "hafıza, pil sağlığı, ekran ve cihaz durumu",
-    # Tablet sorguları
     Path("tablet/samsung"): "hafıza, ekran, batarya ve cihaz durumu",
     Path("tablet/apple/ipad-9-nesil"): "hafıza, ekran, batarya ve cihaz durumu",
     Path("tablet/apple/ipad-10-nesil"): "hafıza, ekran, batarya ve cihaz durumu",
     Path("tablet/lenovo/tab-m11"): "hafıza, ekran, batarya ve cihaz durumu",
-    # Apple Watch sorguları
     Path("akilli-saat/apple/apple-watch-se-2"): "kasa, ekran, batarya ve genel cihaz durumu",
     Path("akilli-saat/apple/apple-watch-series-6"): "kasa, ekran, batarya ve genel cihaz durumu",
     Path("akilli-saat/apple/apple-watch-series-7"): "kasa, ekran, batarya ve genel cihaz durumu",
@@ -62,7 +58,7 @@ for root, factors in TARGETS.items():
             continue
 
         description = (
-            f"{label} ikinci el fiyatı Türkiye 2026: {factors} göre güncel tahmini "
+            f"{label} ikinci el fiyatı Türkiye 2026: {factors} dikkate alınarak güncel tahmini "
             "satış değerini KaçaGider ile ücretsiz hesapla."
         )
         intro = (
