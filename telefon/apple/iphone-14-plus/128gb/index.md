@@ -1,9 +1,9 @@
 ---
 layout: "seo"
 seo_title: "iPhone 14 Plus 128 GB Kaça Satılır? 2026 Fiyatı | KaçaGider"
-seo_description: "iPhone 14 Plus 128 GB kaça satılır? Pil sağlığı ve cihaz durumuna göre 2026 güncel ikinci el tahmini satış değerini KaçaGider ile ücretsiz hesapla."
+seo_description: "iPhone 14 Plus 128 GB ne kadar eder, kaça satılır? Pil sağlığı, ekran ve cihaz durumuna göre 2026 güncel tahmini ikinci el satış değerini ücretsiz hesapla."
 seo_h1: "iPhone 14 Plus 128 GB Kaça Satılır? 2026 İkinci El Fiyatı"
-seo_intro: "iPhone 14 Plus 128 GB kaça satılır? 2026 ikinci el değeri; pil sağlığı, ekran ve genel cihaz durumu gibi özelliklere göre değişir. KaçaGider ile cihazınızın tahmini satış değerini ücretsiz hesaplayabilirsiniz."
+seo_intro: "iPhone 14 Plus 128 GB ne kadar eder ve kaça satılır? Pil sağlığı, ekran ve genel cihaz durumunu seçerek 2026 güncel tahmini ikinci el satış değerini KaçaGider ile ücretsiz öğrenebilirsiniz."
 seo_context_heading: "iPhone 14 Plus 128 GB ikinci el değeri nasıl hesaplanır?"
 seo_context: "iPhone 14 Plus 128 GB ikinci el fiyatı belirlenirken pil sağlığı, ekran ve genel cihaz durumu birlikte değerlendirilir. Cihazın kondisyonu ve çalışan özelliklerinin durumu tahmini satış değerini doğrudan etkiler. KaçaGider üzerinden bilgilerinizi seçerek 2026 için güncel tahmini ikinci el satış değerini görebilirsiniz."
 seo_breadcrumbs: [{"label":"Ana Sayfa","url":"/"},{"label":"Telefon","url":"/telefon/"},{"label":"Apple","url":"/telefon/apple/"},{"label":"iPhone 14 Plus","url":"/telefon/apple/iphone-14-plus/"},{"label":"128 GB","url":"/telefon/apple/iphone-14-plus/128gb/"}]
