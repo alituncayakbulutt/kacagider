@@ -13,9 +13,11 @@ on:
       - 'scripts/apply-search-console-wave2.py'
       - 'scripts/apply-search-console-wave3.py'
       - 'scripts/apply-seo-checkup-fixes.py'
+      - 'scripts/add-favicon-links.py'
       - 'scripts/add-breadcrumb-schema.py'
       - 'scripts/add-social-image-meta.py'
       - 'scripts/update-sitemap-lastmod.py'
+      - 'favicon.svg'
       - 'rehber/**'
       - 'bilgi-merkezi/**'
       - '.github/workflows/seo-ctr-bulk.yml'
@@ -55,6 +57,8 @@ jobs:
         run: python scripts/apply-search-console-wave3.py
       - name: Apply SEO checkup consistency fixes
         run: python scripts/apply-seo-checkup-fixes.py
+      - name: Add favicon links
+        run: python scripts/add-favicon-links.py
       - name: Add breadcrumb structured data
         run: python scripts/add-breadcrumb-schema.py
       - name: Add category share image metadata
