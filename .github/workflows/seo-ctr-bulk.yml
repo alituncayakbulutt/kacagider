@@ -7,6 +7,7 @@ on:
       - 'scripts/apply-seo-priority-overrides.py'
       - 'scripts/apply-organic-growth-wave1.py'
       - 'scripts/apply-organic-growth-variants.py'
+      - 'scripts/apply-organic-growth-wave2.py'
       - 'scripts/add-breadcrumb-schema.py'
       - 'scripts/add-social-image-meta.py'
       - 'scripts/update-sitemap-lastmod.py'
@@ -35,6 +36,8 @@ jobs:
         run: python scripts/apply-organic-growth-wave1.py
       - name: Apply organic growth variant expansion
         run: python scripts/apply-organic-growth-variants.py
+      - name: Apply organic growth wave 2
+        run: python scripts/apply-organic-growth-wave2.py
       - name: Add breadcrumb structured data
         run: python scripts/add-breadcrumb-schema.py
       - name: Add category share image metadata
@@ -50,5 +53,5 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add telefon tablet bilgisayar akilli-saat oyun-konsolu telefonum-ne-kadar-eder telefonum-kac-para telefonum-kaca-gider _layouts/seo.html sitemap.xml
-          git commit -m "SEO 4A: expand organic model variants"
+          git commit -m "SEO 4A: expand organic growth wave 2"
           git push
