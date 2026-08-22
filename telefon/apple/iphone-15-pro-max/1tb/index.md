@@ -1,9 +1,9 @@
 ---
 layout: "seo"
 seo_title: "iPhone 15 Pro Max 1 TB Kaça Satılır? 2026 Fiyatı | KaçaGider"
-seo_description: "iPhone 15 Pro Max 1 TB ne kadar eder, kaça satılır? Pil sağlığı, ekran ve cihaz durumuna göre 2026 güncel tahmini ikinci el satış değerini ücretsiz hesapla."
+seo_description: "iPhone 15 Pro Max 1 TB ikinci el fiyatı Türkiye 2026: pil sağlığı, ekran ve cihaz durumu göre güncel tahmini satış değerini KaçaGider ile ücretsiz hesapla."
 seo_h1: "iPhone 15 Pro Max 1 TB Kaça Satılır? 2026 İkinci El Fiyatı"
-seo_intro: "iPhone 15 Pro Max 1 TB ne kadar eder ve kaça satılır? Pil sağlığı, ekran ve genel cihaz durumunu seçerek 2026 güncel tahmini ikinci el satış değerini KaçaGider ile ücretsiz öğrenebilirsiniz."
+seo_intro: "iPhone 15 Pro Max 1 TB ikinci el fiyatı Türkiye 2026 ne kadar? Pil sağlığı, ekran ve cihaz durumu birlikte değerlendirilir. Cihaz bilgilerini seçerek güncel tahmini satış değerini KaçaGider ile ücretsiz öğrenebilirsiniz."
 seo_context_heading: "iPhone 15 Pro Max 1 TB ikinci el değeri nasıl hesaplanır?"
 seo_context: "iPhone 15 Pro Max 1 TB ikinci el fiyatı belirlenirken pil sağlığı, ekran ve genel cihaz durumu birlikte değerlendirilir. Cihazın kondisyonu ve çalışan özelliklerinin durumu tahmini satış değerini doğrudan etkiler. KaçaGider üzerinden bilgilerinizi seçerek 2026 için güncel tahmini ikinci el satış değerini görebilirsiniz."
 seo_breadcrumbs: [{"label":"Ana Sayfa","url":"/"},{"label":"Telefon","url":"/telefon/"},{"label":"Apple","url":"/telefon/apple/"},{"label":"iPhone 15 Pro Max","url":"/telefon/apple/iphone-15-pro-max/"},{"label":"1 TB","url":"/telefon/apple/iphone-15-pro-max/1tb/"}]
