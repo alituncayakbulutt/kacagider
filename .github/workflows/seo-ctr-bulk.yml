@@ -16,6 +16,8 @@ on:
       - 'scripts/add-breadcrumb-schema.py'
       - 'scripts/add-social-image-meta.py'
       - 'scripts/update-sitemap-lastmod.py'
+      - 'rehber/**'
+      - 'bilgi-merkezi/**'
       - '.github/workflows/seo-ctr-bulk.yml'
   workflow_dispatch:
 
@@ -57,7 +59,7 @@ jobs:
         run: python scripts/add-breadcrumb-schema.py
       - name: Add category share image metadata
         run: python scripts/add-social-image-meta.py
-      - name: Sync sitemap lastmod from Git history
+      - name: Sync sitemap lastmod and canonical coverage
         run: python scripts/update-sitemap-lastmod.py
       - name: Commit changes
         run: |
