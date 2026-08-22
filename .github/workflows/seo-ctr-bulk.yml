@@ -11,6 +11,7 @@ on:
       - 'scripts/apply-organic-growth-wave3.py'
       - 'scripts/apply-search-console-wave1.py'
       - 'scripts/apply-search-console-wave2.py'
+      - 'scripts/apply-search-console-wave3.py'
       - 'scripts/add-breadcrumb-schema.py'
       - 'scripts/add-social-image-meta.py'
       - 'scripts/update-sitemap-lastmod.py'
@@ -47,6 +48,8 @@ jobs:
         run: python scripts/apply-search-console-wave1.py
       - name: Apply Search Console wave 2
         run: python scripts/apply-search-console-wave2.py
+      - name: Apply Search Console wave 3
+        run: python scripts/apply-search-console-wave3.py
       - name: Add breadcrumb structured data
         run: python scripts/add-breadcrumb-schema.py
       - name: Add category share image metadata
