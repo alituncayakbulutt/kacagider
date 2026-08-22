@@ -1,7 +1,7 @@
 ---
 layout: "seo"
-seo_title: "Y200 Ne Kadar Eder? 2026 İkinci El Fiyatı | KaçaGider"
-seo_description: "Y200 ne kadar eder? Hafıza ve cihaz durumuna göre güncel ikinci el tahmini satış değerini KaçaGider ile ücretsiz hesapla."
+seo_title: "Y200 Kaça Satılır? 2026 İkinci El Fiyatı | KaçaGider"
+seo_description: "Y200 kaça satılır? Hafıza, ekran, batarya, kamera ve cihaz durumuna göre 2026 güncel ikinci el tahmini satış değerini KaçaGider ile ücretsiz hesapla."
 seo_h1: "Y200 İkinci El Fiyatı"
 seo_intro: "Vivo Y200 ikinci el fiyatını Türkiye ikinci el piyasasına göre hafıza, kondisyon ve cihaz kayıt durumu bilgileriyle KaçaGider üzerinden değerlendirin."
 seo_context_heading: "Y200 için ikinci el değerleme"

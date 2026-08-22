@@ -1,7 +1,7 @@
 ---
 layout: "seo"
-seo_title: "V60 Lite Ne Kadar Eder? 2026 İkinci El Fiyatı | KaçaGider"
-seo_description: "V60 Lite ne kadar eder? Hafıza ve cihaz durumuna göre güncel ikinci el tahmini satış değerini KaçaGider ile ücretsiz hesapla."
+seo_title: "V60 Lite Kaça Satılır? 2026 İkinci El Fiyatı | KaçaGider"
+seo_description: "V60 Lite kaça satılır? Hafıza, ekran, batarya, kamera ve cihaz durumuna göre 2026 güncel ikinci el tahmini satış değerini KaçaGider ile ücretsiz hesapla."
 seo_h1: "V60 Lite İkinci El Fiyatı"
 seo_intro: "Vivo V60 Lite ikinci el fiyatını Türkiye ikinci el piyasasına göre hafıza, kondisyon ve cihaz kayıt durumu bilgileriyle KaçaGider üzerinden değerlendirin."
 seo_context_heading: "V60 Lite için ikinci el değerleme"

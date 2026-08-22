@@ -1,7 +1,7 @@
 ---
 layout: "seo"
-seo_title: "V60 5G Ne Kadar Eder? 2026 İkinci El Fiyatı | KaçaGider"
-seo_description: "V60 5G ne kadar eder? Hafıza ve cihaz durumuna göre güncel ikinci el tahmini satış değerini KaçaGider ile ücretsiz hesapla."
+seo_title: "V60 5G Kaça Satılır? 2026 İkinci El Fiyatı | KaçaGider"
+seo_description: "V60 5G kaça satılır? Hafıza, ekran, batarya, kamera ve cihaz durumuna göre 2026 güncel ikinci el tahmini satış değerini KaçaGider ile ücretsiz hesapla."
 seo_h1: "V60 5G İkinci El Fiyatı"
 seo_intro: "Vivo V60 5G ikinci el fiyatını Türkiye ikinci el piyasasına göre hafıza, kondisyon ve cihaz kayıt durumu bilgileriyle KaçaGider üzerinden değerlendirin."
 seo_context_heading: "V60 5G için ikinci el değerleme"
