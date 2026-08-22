@@ -64,6 +64,18 @@ def samsung_description(base: str) -> str:
     )
 
 
+def xiaomi_description(base: str) -> str:
+    if STORAGE_RE.search(base):
+        return (
+            f'{base} kaça satılır? Ekran, batarya ve cihaz durumuna göre 2026 güncel ikinci el '
+            f'tahmini satış değerini KaçaGider ile ücretsiz hesapla.'
+        )
+    return (
+        f'{base} kaça satılır? Hafıza, ekran, batarya ve cihaz durumuna göre 2026 güncel ikinci el '
+        f'tahmini satış değerini KaçaGider ile ücretsiz hesapla.'
+    )
+
+
 def optimize_tree(root: Path, brand: str, description_builder, skip_model=None):
     scanned = changed = skipped = 0
     for path in root.rglob('index.md'):
@@ -107,9 +119,16 @@ optimize_tree(
     skip_model=lambda slug: slug == 'iphone-13' or slug.startswith('iphone-13-'),
 )
 
-# Optimize every existing Samsung Galaxy model and storage page (S, A, M, Z Fold, Z Flip, FE, Edge, etc.).
+# Keep the existing Samsung structure and only update search snippet metadata.
 optimize_tree(
     Path('telefon/samsung'),
     'Samsung Galaxy',
     samsung_description,
+)
+
+# Keep the existing Xiaomi / Redmi / POCO structure and only update search snippet metadata.
+optimize_tree(
+    Path('telefon/xiaomi'),
+    'Xiaomi Redmi POCO',
+    xiaomi_description,
 )
