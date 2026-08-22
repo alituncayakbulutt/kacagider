@@ -1,14 +1,19 @@
 from pathlib import Path
 import re
 
-ROOT = Path('telefon')
+ROOT = Path('telefon/apple')
 
 TITLE_RE = re.compile(r'^(seo_title:\s*)"([^"]*)"\s*$', re.M)
 DESC_RE = re.compile(r'^(seo_description:\s*)"([^"]*)"\s*$', re.M)
+STORAGE_RE = re.compile(r'\b(?:\d+\s*GB|\d+\s*TB)\b', re.I)
 
 
 def extract_base(title: str) -> str:
     patterns = [
+        r'\s+Kaça Satılır\?\s+2026\s+İkinci El Fiyatı\s*\|\s*KaçaGider$',
+        r'\s+Kaça Satılır\?\s+2026\s+Fiyatı\s*\|\s*KaçaGider$',
+        r'\s+Kaça Satılır\?\s+2026\s*\|\s*KaçaGider$',
+        r'\s+Kaça Satılır\?\s*\|\s*KaçaGider$',
         r'\s+Ne Kadar Eder\?\s+2026\s+İkinci El Fiyatı\s*\|\s*KaçaGider$',
         r'\s+Ne Kadar Eder\?\s+2026\s*\|\s*KaçaGider$',
         r'\s+Ne Kadar Eder\?\s*\|\s*KaçaGider$',
@@ -20,35 +25,52 @@ def extract_base(title: str) -> str:
     for p in patterns:
         new = re.sub(p, '', base, flags=re.I)
         if new != base:
-            base = new.strip()
-            break
+            return new.strip()
     return base
 
 
 def make_title(base: str) -> str:
-    long = f'{base} Ne Kadar Eder? 2026 İkinci El Fiyatı | KaçaGider'
+    long = f'{base} Kaça Satılır? 2026 İkinci El Fiyatı | KaçaGider'
     if len(long) <= 68:
         return long
-    medium = f'{base} Ne Kadar Eder? 2026 | KaçaGider'
+    medium = f'{base} Kaça Satılır? 2026 Fiyatı | KaçaGider'
     if len(medium) <= 68:
         return medium
-    return f'{base} Ne Kadar Eder? | KaçaGider'
+    short = f'{base} Kaça Satılır? 2026 | KaçaGider'
+    if len(short) <= 68:
+        return short
+    return f'{base} Kaça Satılır? | KaçaGider'
 
 
 def make_description(base: str) -> str:
+    if STORAGE_RE.search(base):
+        return (
+            f'{base} kaça satılır? Pil sağlığı ve cihaz durumuna göre 2026 güncel ikinci el '
+            f'tahmini satış değerini KaçaGider ile ücretsiz hesapla.'
+        )
     return (
-        f'{base} ne kadar eder? Hafıza ve cihaz durumuna göre güncel ikinci el '
+        f'{base} kaça satılır? Hafıza, pil sağlığı ve cihaz durumuna göre 2026 güncel ikinci el '
         f'tahmini satış değerini KaçaGider ile ücretsiz hesapla.'
     )
 
+
 changed = 0
 scanned = 0
+skipped_iphone13 = 0
 
 for path in ROOT.rglob('index.md'):
     parts = path.parts
-    # Only model and storage pages: telefon/marka/model/index.md and deeper.
-    # Skip category root and brand pages.
+    # Only iPhone model/storage pages. Skip Apple brand root.
     if len(parts) < 4:
+        continue
+
+    model_slug = parts[2]
+    if not model_slug.startswith('iphone-'):
+        continue
+
+    # iPhone 13 family is intentionally kept on its already-customized SEO wording.
+    if model_slug == 'iphone-13' or model_slug.startswith('iphone-13-'):
+        skipped_iphone13 += 1
         continue
 
     text = path.read_text(encoding='utf-8')
@@ -58,8 +80,7 @@ for path in ROOT.rglob('index.md'):
         continue
 
     scanned += 1
-    old_title = title_match.group(2)
-    base = extract_base(old_title)
+    base = extract_base(title_match.group(2))
     if not base:
         continue
 
@@ -73,4 +94,7 @@ for path in ROOT.rglob('index.md'):
         path.write_text(updated, encoding='utf-8')
         changed += 1
 
-print(f'Scanned {scanned} phone model/storage pages; changed {changed}.')
+print(
+    f'Scanned {scanned} Apple iPhone model/storage pages (excluding iPhone 13 family); '
+    f'changed {changed}; skipped iPhone 13 pages: {skipped_iphone13}.'
+)
