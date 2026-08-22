@@ -103,6 +103,18 @@ def vivo_description(base: str) -> str:
     )
 
 
+def huawei_description(base: str) -> str:
+    if STORAGE_RE.search(base):
+        return (
+            f'{base} kaça satılır? Ekran, batarya, kamera ve cihaz durumuna göre 2026 güncel ikinci el '
+            f'tahmini satış değerini KaçaGider ile ücretsiz hesapla.'
+        )
+    return (
+        f'{base} kaça satılır? Hafıza, ekran, batarya, kamera ve cihaz durumuna göre 2026 güncel ikinci el '
+        f'tahmini satış değerini KaçaGider ile ücretsiz hesapla.'
+    )
+
+
 def optimize_tree(root: Path, brand: str, description_builder, skip_model=None):
     scanned = changed = skipped = 0
     for path in root.rglob('index.md'):
@@ -172,4 +184,11 @@ optimize_tree(
     Path('telefon/vivo'),
     'Vivo',
     vivo_description,
+)
+
+# Keep the existing Huawei P / Pura / Mate / Nova structure and only update search snippet metadata.
+optimize_tree(
+    Path('telefon/huawei'),
+    'Huawei',
+    huawei_description,
 )
