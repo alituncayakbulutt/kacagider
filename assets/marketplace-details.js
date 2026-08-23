@@ -14,17 +14,17 @@ var GROUP_LABELS={
   backGlass:"Arka Cam Durumu"
 };
 
-var SPRITE="/assets/categories/latest/categories-sprite.svg?v=20260823d";
-var LATEST_CATEGORY_POSITIONS={
-  phone:"0% 50%",
-  telefon:"0% 50%",
-  tablet:"25% 50%",
-  computer:"50% 50%",
-  bilgisayar:"50% 50%",
-  watch:"75% 50%",
-  "akilli-saat":"75% 50%",
-  console:"100% 50%",
-  "oyun-konsolu":"100% 50%"
+var SPRITE="/assets/categories/latest/categories-sprite.svg?v=20260823e";
+var LATEST_CATEGORY_TRANSFORMS={
+  phone:"translateX(-10%)",
+  telefon:"translateX(-10%)",
+  tablet:"translateX(-30%)",
+  computer:"translateX(-50%)",
+  bilgisayar:"translateX(-50%)",
+  watch:"translateX(-70%)",
+  "akilli-saat":"translateX(-70%)",
+  console:"translateX(-90%)",
+  "oyun-konsolu":"translateX(-90%)"
 };
 
 var CATEGORY_ALT={
@@ -96,19 +96,28 @@ Storage.prototype.setItem=function(key,value){
 
 function installLatestCategoryImages(){
   var root=document.getElementById('viewHome')||document;
-  Object.keys(LATEST_CATEGORY_POSITIONS).forEach(function(key){
+  Object.keys(LATEST_CATEGORY_TRANSFORMS).forEach(function(key){
     root.querySelectorAll('[data-category="'+key+'"]').forEach(function(card){
       var art=card.querySelector('.kg-product-art');
-      if(!art) return;
+      var img=art&&art.querySelector('img');
+      if(!art||!img) return;
       art.setAttribute('role','img');
       art.setAttribute('aria-label',CATEGORY_ALT[key]||'Güncel cihaz modeli');
-      art.style.setProperty('background-image','url("'+SPRITE+'")','important');
-      art.style.setProperty('background-repeat','no-repeat','important');
-      art.style.setProperty('background-size','500% 100%','important');
-      art.style.setProperty('background-position',LATEST_CATEGORY_POSITIONS[key],'important');
-      art.style.setProperty('background-color','#fff','important');
-      var img=art.querySelector('img');
-      if(img) img.style.setProperty('display','none','important');
+      art.style.setProperty('position','relative','important');
+      art.style.setProperty('overflow','hidden','important');
+      art.style.setProperty('background','#fff','important');
+      img.setAttribute('src',SPRITE);
+      img.setAttribute('alt','');
+      img.style.setProperty('display','block','important');
+      img.style.setProperty('position','absolute','important');
+      img.style.setProperty('top','0','important');
+      img.style.setProperty('left','50%','important');
+      img.style.setProperty('height','100%','important');
+      img.style.setProperty('width','auto','important');
+      img.style.setProperty('max-width','none','important');
+      img.style.setProperty('object-fit','fill','important');
+      img.style.setProperty('background','transparent','important');
+      img.style.setProperty('transform',LATEST_CATEGORY_TRANSFORMS[key],'important');
     });
   });
 }
