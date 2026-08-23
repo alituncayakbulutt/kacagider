@@ -14,20 +14,22 @@ var GROUP_LABELS={
   backGlass:"Arka Cam Durumu"
 };
 
-/* Son onaylanan localhost görünümü: tek ürün, kutusuz konsol, eşit ve orantılı ölçek. */
+/* Son onaylanan görünüm: kırmızı telefon, tek mor iPad, mor MacBook, tek Milanese saat, kutusuz PS5. */
 var LATEST_CATEGORY_IMAGES={
-  phone:"/assets/categories/latest/telefon-card.webp?v=20260824d",
-  telefon:"/assets/categories/latest/telefon-card.webp?v=20260824d",
-  tablet:"https://drpc.com.co/Tienda/upload/1722.jpg",
+  phone:"https://www.smartmobsolution.com/wp-content/uploads/2023/08/Product-Red.jpg",
+  telefon:"https://www.smartmobsolution.com/wp-content/uploads/2023/08/Product-Red.jpg",
+  tablet:"https://uk.static.webuy.com/product_images/Computing/Apple%20iPad/SAPPA24362TBSPGWIFA_l.jpg",
   computer:"https://estore.jawwal.ps/storage/product/4968/3CGHOZcn3BlG6UKhFZiabuRcN7q0nqCbpup4hVCs.jpg",
   bilgisayar:"https://estore.jawwal.ps/storage/product/4968/3CGHOZcn3BlG6UKhFZiabuRcN7q0nqCbpup4hVCs.jpg",
-  watch:"https://sundayvibes.com.au/cdn/shop/files/SVW007001-Milanese-Loop-Apple-Watch-Band-SundayVibes-20.jpg?v=1742633895",
-  "akilli-saat":"https://sundayvibes.com.au/cdn/shop/files/SVW007001-Milanese-Loop-Apple-Watch-Band-SundayVibes-20.jpg?v=1742633895",
-  console:"/assets/categories/oyun-konsolu.jpg?v=20260824d",
-  "oyun-konsolu":"/assets/categories/oyun-konsolu.jpg?v=20260824d"
+  watch:"https://www.suritt.com/cdn/shop/files/milanesasilvernueva.jpg",
+  "akilli-saat":"https://www.suritt.com/cdn/shop/files/milanesasilvernueva.jpg",
+  console:"/assets/categories/oyun-konsolu.jpg?v=20260824e",
+  "oyun-konsolu":"/assets/categories/oyun-konsolu.jpg?v=20260824e"
 };
 
 var CATEGORY_FALLBACK_IMAGES={
+  phone:"/assets/categories/latest/telefon-card.webp",
+  telefon:"/assets/categories/latest/telefon-card.webp",
   tablet:"/assets/categories/tablet.jpg",
   computer:"/assets/categories/bilgisayar.jpg",
   bilgisayar:"/assets/categories/bilgisayar.jpg",
@@ -37,21 +39,22 @@ var CATEGORY_FALLBACK_IMAGES={
   "oyun-konsolu":"/assets/categories/oyun-konsolu.jpg"
 };
 
-var CATEGORY_SCALE={
-  phone:"scale(1.55)",
-  telefon:"scale(1.55)",
-  tablet:"scale(1.08)",
-  computer:"scale(1.08)",
-  bilgisayar:"scale(1.08)",
-  watch:"scale(1.10)",
-  "akilli-saat":"scale(1.10)",
-  console:"scale(1.08)",
-  "oyun-konsolu":"scale(1.08)"
+/* Kartların görsel alanındaki optik boyutları eşitlenmiştir. */
+var CATEGORY_SIZE={
+  phone:{w:"78%",h:"78%"},
+  telefon:{w:"78%",h:"78%"},
+  tablet:{w:"82%",h:"82%"},
+  computer:{w:"88%",h:"72%"},
+  bilgisayar:{w:"88%",h:"72%"},
+  watch:{w:"82%",h:"82%"},
+  "akilli-saat":{w:"82%",h:"82%"},
+  console:{w:"84%",h:"78%"},
+  "oyun-konsolu":{w:"84%",h:"78%"}
 };
 
 var CATEGORY_ALT={
-  phone:"Güncel lansman telefon modeli",
-  telefon:"Güncel lansman telefon modeli",
+  phone:"Kırmızı lansman telefon modeli",
+  telefon:"Kırmızı lansman telefon modeli",
   tablet:"Tek iPad Pro ürün görseli",
   computer:"Tek MacBook Pro ürün görseli",
   bilgisayar:"Tek MacBook Pro ürün görseli",
@@ -124,6 +127,7 @@ function installLatestCategoryImages(){
       var img=art&&art.querySelector('img');
       if(!art||!img) return;
       var src=LATEST_CATEGORY_IMAGES[key];
+      var size=CATEGORY_SIZE[key]||{w:"82%",h:"82%"};
 
       art.style.setProperty('position','relative','important');
       art.style.setProperty('overflow','hidden','important');
@@ -149,13 +153,13 @@ function installLatestCategoryImages(){
 
       img.style.setProperty('display','block','important');
       img.style.setProperty('position','static','important');
-      img.style.setProperty('width','100%','important');
-      img.style.setProperty('height','100%','important');
-      img.style.setProperty('max-width','100%','important');
-      img.style.setProperty('max-height','100%','important');
+      img.style.setProperty('width',size.w,'important');
+      img.style.setProperty('height',size.h,'important');
+      img.style.setProperty('max-width',size.w,'important');
+      img.style.setProperty('max-height',size.h,'important');
       img.style.setProperty('object-fit','contain','important');
       img.style.setProperty('object-position','center center','important');
-      img.style.setProperty('transform',CATEGORY_SCALE[key]||'scale(1)','important');
+      img.style.setProperty('transform','none','important');
       img.style.setProperty('transform-origin','center center','important');
       img.style.setProperty('background','#fff','important');
     });
