@@ -92,6 +92,16 @@ function installListingsNav(){
   else nav.appendChild(link);
 }
 
+function loadMarketplaceHeader(){
+  if(document.getElementById('kgMarketplaceHomeHeaderScript')) return;
+  var s=document.createElement('script');
+  s.id='kgMarketplaceHomeHeaderScript';
+  s.src='/assets/marketplace-home-header.js';
+  s.defer=true;
+  document.head.appendChild(s);
+}
+
+loadMarketplaceHeader();
 if(document.readyState==='loading') document.addEventListener('DOMContentLoaded',installListingsNav,{once:true});
 else installListingsNav();
 new MutationObserver(installListingsNav).observe(document.documentElement,{subtree:true,childList:true});
