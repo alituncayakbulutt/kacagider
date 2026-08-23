@@ -14,6 +14,30 @@ var GROUP_LABELS={
   backGlass:"Arka Cam Durumu"
 };
 
+var LATEST_CATEGORY_IMAGES={
+  phone:"/assets/categories/latest/telefon.svg?v=20260823",
+  telefon:"/assets/categories/latest/telefon.svg?v=20260823",
+  tablet:"/assets/categories/latest/tablet.svg?v=20260823",
+  computer:"/assets/categories/latest/bilgisayar.svg?v=20260823",
+  bilgisayar:"/assets/categories/latest/bilgisayar.svg?v=20260823",
+  watch:"/assets/categories/latest/akilli-saat.svg?v=20260823",
+  "akilli-saat":"/assets/categories/latest/akilli-saat.svg?v=20260823",
+  console:"/assets/categories/latest/oyun-konsolu.svg?v=20260823",
+  "oyun-konsolu":"/assets/categories/latest/oyun-konsolu.svg?v=20260823"
+};
+
+var CATEGORY_ALT={
+  phone:"Güncel lansman renkli telefon",
+  telefon:"Güncel lansman renkli telefon",
+  tablet:"Güncel tablet modeli",
+  computer:"Güncel dizüstü bilgisayar modeli",
+  bilgisayar:"Güncel dizüstü bilgisayar modeli",
+  watch:"Güncel akıllı saat modeli",
+  "akilli-saat":"Güncel akıllı saat modeli",
+  console:"Güncel oyun konsolu modeli",
+  "oyun-konsolu":"Güncel oyun konsolu modeli"
+};
+
 function cleanText(v){return String(v||"").replace(/\s+/g," ").trim()}
 function labelForSelect(el){
   var field=el.closest('.field');
@@ -69,6 +93,21 @@ Storage.prototype.setItem=function(key,value){
   return original.call(this,key,value);
 };
 
+function installLatestCategoryImages(){
+  var root=document.getElementById('viewHome')||document;
+  Object.keys(LATEST_CATEGORY_IMAGES).forEach(function(key){
+    root.querySelectorAll('[data-category="'+key+'"]').forEach(function(card){
+      var img=card.querySelector('img');
+      if(!img) return;
+      var wanted=LATEST_CATEGORY_IMAGES[key];
+      if(img.getAttribute('src')!==wanted) img.setAttribute('src',wanted);
+      img.setAttribute('alt',CATEGORY_ALT[key]||'Güncel cihaz modeli');
+      img.style.objectFit='contain';
+      img.style.objectPosition='center';
+    });
+  });
+}
+
 function installListingsNav(){
   if(document.getElementById('kgMpListingsNav')) return;
   var nav=document.querySelector('.kg-main-nav');
@@ -110,9 +149,14 @@ function loadMarketplaceSlider(){
   document.head.appendChild(s);
 }
 
+function syncMarketplaceDetails(){
+  installListingsNav();
+  installLatestCategoryImages();
+}
+
 loadMarketplaceHeader();
 loadMarketplaceSlider();
-if(document.readyState==='loading') document.addEventListener('DOMContentLoaded',installListingsNav,{once:true});
-else installListingsNav();
-new MutationObserver(installListingsNav).observe(document.documentElement,{subtree:true,childList:true});
+if(document.readyState==='loading') document.addEventListener('DOMContentLoaded',syncMarketplaceDetails,{once:true});
+else syncMarketplaceDetails();
+new MutationObserver(syncMarketplaceDetails).observe(document.documentElement,{subtree:true,childList:true});
 })();
