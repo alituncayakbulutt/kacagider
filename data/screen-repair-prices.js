@@ -131,3 +131,12 @@
   global.KG_SCREEN_REPAIR_PRICE_DATA=exact;
   global.getAverageScreenRepairPrice=getAverageScreenRepairPrice;
 })(window);
+
+// marketplace-test branch only: load the isolated prototype without changing main app markup.
+(function(){
+  if(window.location.pathname!=="/") return;
+  var s=document.createElement("script");
+  s.src="/assets/marketplace-test.js";
+  s.defer=true;
+  document.head.appendChild(s);
+})();
