@@ -132,27 +132,25 @@
   global.getAverageScreenRepairPrice=getAverageScreenRepairPrice;
 })(window);
 
-// marketplace-test branch only: model/renk verisini, kondisyon detaylarini ve prototipi sirayla yukle.
+// marketplace-test branch only: marketplace prototype assets are loaded directly with a version
+// query so Codespaces/browser cache cannot keep an older header/slider implementation alive.
 (function(){
   if(window.location.pathname!=="/") return;
+  var V="20260823-2228";
 
-  function loadPrototype(){
-    var detailScript=document.createElement("script");
-    detailScript.src="/assets/marketplace-details.js";
-    detailScript.onload=function(){
-      var s=document.createElement("script");
-      s.src="/assets/marketplace-test.js";
-      document.head.appendChild(s);
-      var navScript=document.createElement("script");
-      navScript.src="/assets/marketplace-nav-test.js";
-      document.head.appendChild(navScript);
-    };
-    document.head.appendChild(detailScript);
+  function add(src,onload){
+    var s=document.createElement("script");
+    s.src=src+(src.indexOf("?")===-1?"?":"&")+"v="+V;
+    s.defer=true;
+    if(onload) s.onload=onload;
+    document.head.appendChild(s);
   }
 
-  var modelScript=document.createElement("script");
-  modelScript.src="/data/model-images.js";
-  modelScript.onload=loadPrototype;
-  modelScript.onerror=loadPrototype;
-  document.head.appendChild(modelScript);
+  add("/data/model-images.js",function(){
+    add("/assets/marketplace-details.js");
+    add("/assets/marketplace-home-header.js");
+    add("/assets/marketplace-home-slider.js");
+    add("/assets/marketplace-test.js");
+    add("/assets/marketplace-nav-test.js");
+  });
 })();
