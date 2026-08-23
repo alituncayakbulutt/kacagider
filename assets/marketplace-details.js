@@ -14,21 +14,17 @@ var GROUP_LABELS={
   backGlass:"Arka Cam Durumu"
 };
 
-/*
-  Ana kategori kartlarında güncel resmi ürün görselleri kullanılır.
-  Telefon görseli kullanıcı tarafından seçilen lansman görseli olarak yerelde kalır.
-  Diğer kategoriler Apple / PlayStation resmi ürün kaynaklarından gelir.
-*/
+/* Son onaylanan localhost görünümü: tek ürün, kutusuz konsol, eşit ve orantılı ölçek. */
 var LATEST_CATEGORY_IMAGES={
-  phone:"/assets/categories/latest/telefon-card.webp?v=20260824c",
-  telefon:"/assets/categories/latest/telefon-card.webp?v=20260824c",
-  tablet:"https://cdsassets.apple.com/live/7WUAS350/images/tech-specs/ipad-pro-11-inch-m5.png",
-  computer:"https://cdsassets.apple.com/live/7WUAS350/images/tech-specs/macbook-pro-14-inch-m5-pro-m5-max.png",
-  bilgisayar:"https://cdsassets.apple.com/live/7WUAS350/images/tech-specs/macbook-pro-14-inch-m5-pro-m5-max.png",
-  watch:"https://cdsassets.apple.com/live/7WUAS350/images/tech-specs/apple-watch-ultra-3-hero.png",
-  "akilli-saat":"https://cdsassets.apple.com/live/7WUAS350/images/tech-specs/apple-watch-ultra-3-hero.png",
-  console:"https://gmedia.playstation.com/is/image/SIEPDC/PS5-Pro-box-image-block-01-en-02apr25",
-  "oyun-konsolu":"https://gmedia.playstation.com/is/image/SIEPDC/PS5-Pro-box-image-block-01-en-02apr25"
+  phone:"/assets/categories/latest/telefon-card.webp?v=20260824d",
+  telefon:"/assets/categories/latest/telefon-card.webp?v=20260824d",
+  tablet:"https://drpc.com.co/Tienda/upload/1722.jpg",
+  computer:"https://estore.jawwal.ps/storage/product/4968/3CGHOZcn3BlG6UKhFZiabuRcN7q0nqCbpup4hVCs.jpg",
+  bilgisayar:"https://estore.jawwal.ps/storage/product/4968/3CGHOZcn3BlG6UKhFZiabuRcN7q0nqCbpup4hVCs.jpg",
+  watch:"https://sundayvibes.com.au/cdn/shop/files/SVW007001-Milanese-Loop-Apple-Watch-Band-SundayVibes-20.jpg?v=1742633895",
+  "akilli-saat":"https://sundayvibes.com.au/cdn/shop/files/SVW007001-Milanese-Loop-Apple-Watch-Band-SundayVibes-20.jpg?v=1742633895",
+  console:"/assets/categories/oyun-konsolu.jpg?v=20260824d",
+  "oyun-konsolu":"/assets/categories/oyun-konsolu.jpg?v=20260824d"
 };
 
 var CATEGORY_FALLBACK_IMAGES={
@@ -44,25 +40,25 @@ var CATEGORY_FALLBACK_IMAGES={
 var CATEGORY_SCALE={
   phone:"scale(1.55)",
   telefon:"scale(1.55)",
-  tablet:"scale(1.02)",
-  computer:"scale(1.04)",
-  bilgisayar:"scale(1.04)",
-  watch:"scale(.96)",
-  "akilli-saat":"scale(.96)",
-  console:"scale(1.04)",
-  "oyun-konsolu":"scale(1.04)"
+  tablet:"scale(1.08)",
+  computer:"scale(1.08)",
+  bilgisayar:"scale(1.08)",
+  watch:"scale(1.10)",
+  "akilli-saat":"scale(1.10)",
+  console:"scale(1.08)",
+  "oyun-konsolu":"scale(1.08)"
 };
 
 var CATEGORY_ALT={
-  phone:"Kozmik turuncu güncel lansman telefon modeli",
-  telefon:"Kozmik turuncu güncel lansman telefon modeli",
-  tablet:"Apple iPad Pro M5",
-  computer:"Apple MacBook Pro M5 Pro ve M5 Max",
-  bilgisayar:"Apple MacBook Pro M5 Pro ve M5 Max",
-  watch:"Apple Watch Ultra 3",
-  "akilli-saat":"Apple Watch Ultra 3",
-  console:"PlayStation 5 Pro",
-  "oyun-konsolu":"PlayStation 5 Pro"
+  phone:"Güncel lansman telefon modeli",
+  telefon:"Güncel lansman telefon modeli",
+  tablet:"Tek iPad Pro ürün görseli",
+  computer:"Tek MacBook Pro ürün görseli",
+  bilgisayar:"Tek MacBook Pro ürün görseli",
+  watch:"Tek Apple Watch Milanese ürün görseli",
+  "akilli-saat":"Tek Apple Watch Milanese ürün görseli",
+  console:"PlayStation 5 ve DualSense ürün görseli",
+  "oyun-konsolu":"PlayStation 5 ve DualSense ürün görseli"
 };
 
 function cleanText(v){return String(v||"").replace(/\s+/g," ").trim()}
