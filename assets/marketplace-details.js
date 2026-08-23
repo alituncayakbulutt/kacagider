@@ -14,22 +14,21 @@ var GROUP_LABELS={
   backGlass:"Arka Cam Durumu"
 };
 
-var SPRITE="/assets/categories/latest/categories-sprite.svg?v=20260823e";
-var LATEST_CATEGORY_TRANSFORMS={
-  phone:"translateX(-10%)",
-  telefon:"translateX(-10%)",
-  tablet:"translateX(-30%)",
-  computer:"translateX(-50%)",
-  bilgisayar:"translateX(-50%)",
-  watch:"translateX(-70%)",
-  "akilli-saat":"translateX(-70%)",
-  console:"translateX(-90%)",
-  "oyun-konsolu":"translateX(-90%)"
+var LATEST_CATEGORY_IMAGES={
+  phone:"/assets/categories/latest/telefon-card.webp?v=20260824a",
+  telefon:"/assets/categories/latest/telefon-card.webp?v=20260824a",
+  tablet:"/assets/categories/latest/tablet-card.webp?v=20260824a",
+  computer:"/assets/categories/latest/bilgisayar-card.webp?v=20260824a",
+  bilgisayar:"/assets/categories/latest/bilgisayar-card.webp?v=20260824a",
+  watch:"/assets/categories/latest/akilli-saat-card.webp?v=20260824a",
+  "akilli-saat":"/assets/categories/latest/akilli-saat-card.webp?v=20260824a",
+  console:"/assets/categories/latest/oyun-konsolu-card.webp?v=20260824a",
+  "oyun-konsolu":"/assets/categories/latest/oyun-konsolu-card.webp?v=20260824a"
 };
 
 var CATEGORY_ALT={
-  phone:"Güncel lansman renkli telefon",
-  telefon:"Güncel lansman renkli telefon",
+  phone:"Kozmik turuncu güncel lansman telefon modeli",
+  telefon:"Kozmik turuncu güncel lansman telefon modeli",
   tablet:"Güncel tablet modeli",
   computer:"Güncel dizüstü bilgisayar modeli",
   bilgisayar:"Güncel dizüstü bilgisayar modeli",
@@ -96,28 +95,31 @@ Storage.prototype.setItem=function(key,value){
 
 function installLatestCategoryImages(){
   var root=document.getElementById('viewHome')||document;
-  Object.keys(LATEST_CATEGORY_TRANSFORMS).forEach(function(key){
+  Object.keys(LATEST_CATEGORY_IMAGES).forEach(function(key){
     root.querySelectorAll('[data-category="'+key+'"]').forEach(function(card){
       var art=card.querySelector('.kg-product-art');
       var img=art&&art.querySelector('img');
       if(!art||!img) return;
-      art.setAttribute('role','img');
-      art.setAttribute('aria-label',CATEGORY_ALT[key]||'Güncel cihaz modeli');
+      var src=LATEST_CATEGORY_IMAGES[key];
+      if(img.getAttribute('data-kg-direct-src')===src) return;
       art.style.setProperty('position','relative','important');
       art.style.setProperty('overflow','hidden','important');
+      art.style.setProperty('display','flex','important');
+      art.style.setProperty('align-items','center','important');
+      art.style.setProperty('justify-content','center','important');
       art.style.setProperty('background','#fff','important');
-      img.setAttribute('src',SPRITE);
-      img.setAttribute('alt','');
+      img.setAttribute('src',src);
+      img.setAttribute('data-kg-direct-src',src);
+      img.setAttribute('alt',CATEGORY_ALT[key]||'Güncel cihaz modeli');
       img.style.setProperty('display','block','important');
-      img.style.setProperty('position','absolute','important');
-      img.style.setProperty('top','0','important');
-      img.style.setProperty('left','50%','important');
-      img.style.setProperty('height','100%','important');
-      img.style.setProperty('width','auto','important');
-      img.style.setProperty('max-width','none','important');
-      img.style.setProperty('object-fit','fill','important');
+      img.style.setProperty('position','static','important');
+      img.style.setProperty('width','92%','important');
+      img.style.setProperty('height','92%','important');
+      img.style.setProperty('max-width','92%','important');
+      img.style.setProperty('object-fit','contain','important');
+      img.style.setProperty('object-position','center','important');
+      img.style.setProperty('transform','none','important');
       img.style.setProperty('background','transparent','important');
-      img.style.setProperty('transform',LATEST_CATEGORY_TRANSFORMS[key],'important');
     });
   });
 }
