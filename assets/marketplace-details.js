@@ -14,40 +14,55 @@ var GROUP_LABELS={
   backGlass:"Arka Cam Durumu"
 };
 
+/*
+  Ana kategori kartlarında güncel resmi ürün görselleri kullanılır.
+  Telefon görseli kullanıcı tarafından seçilen lansman görseli olarak yerelde kalır.
+  Diğer kategoriler Apple / PlayStation resmi ürün kaynaklarından gelir.
+*/
 var LATEST_CATEGORY_IMAGES={
-  phone:"/assets/categories/latest/telefon-card.webp?v=20260824b",
-  telefon:"/assets/categories/latest/telefon-card.webp?v=20260824b",
-  tablet:"/assets/categories/tablet.jpg?v=20260824b",
-  computer:"/assets/categories/bilgisayar.jpg?v=20260824b",
-  bilgisayar:"/assets/categories/bilgisayar.jpg?v=20260824b",
-  watch:"/assets/categories/akilli-saat.jpg?v=20260824b",
-  "akilli-saat":"/assets/categories/akilli-saat.jpg?v=20260824b",
-  console:"/assets/categories/oyun-konsolu.jpg?v=20260824b",
-  "oyun-konsolu":"/assets/categories/oyun-konsolu.jpg?v=20260824b"
+  phone:"/assets/categories/latest/telefon-card.webp?v=20260824c",
+  telefon:"/assets/categories/latest/telefon-card.webp?v=20260824c",
+  tablet:"https://cdsassets.apple.com/live/7WUAS350/images/tech-specs/ipad-pro-11-inch-m5.png",
+  computer:"https://cdsassets.apple.com/live/7WUAS350/images/tech-specs/macbook-pro-14-inch-m5-pro-m5-max.png",
+  bilgisayar:"https://cdsassets.apple.com/live/7WUAS350/images/tech-specs/macbook-pro-14-inch-m5-pro-m5-max.png",
+  watch:"https://cdsassets.apple.com/live/7WUAS350/images/tech-specs/apple-watch-ultra-3-hero.png",
+  "akilli-saat":"https://cdsassets.apple.com/live/7WUAS350/images/tech-specs/apple-watch-ultra-3-hero.png",
+  console:"https://gmedia.playstation.com/is/image/SIEPDC/PS5-Pro-box-image-block-01-en-02apr25",
+  "oyun-konsolu":"https://gmedia.playstation.com/is/image/SIEPDC/PS5-Pro-box-image-block-01-en-02apr25"
+};
+
+var CATEGORY_FALLBACK_IMAGES={
+  tablet:"/assets/categories/tablet.jpg",
+  computer:"/assets/categories/bilgisayar.jpg",
+  bilgisayar:"/assets/categories/bilgisayar.jpg",
+  watch:"/assets/categories/akilli-saat.jpg",
+  "akilli-saat":"/assets/categories/akilli-saat.jpg",
+  console:"/assets/categories/oyun-konsolu.jpg",
+  "oyun-konsolu":"/assets/categories/oyun-konsolu.jpg"
 };
 
 var CATEGORY_SCALE={
   phone:"scale(1.55)",
   telefon:"scale(1.55)",
-  tablet:"scale(1.08)",
-  computer:"scale(1.08)",
-  bilgisayar:"scale(1.08)",
-  watch:"scale(1.08)",
-  "akilli-saat":"scale(1.08)",
-  console:"scale(1.08)",
-  "oyun-konsolu":"scale(1.08)"
+  tablet:"scale(1.02)",
+  computer:"scale(1.04)",
+  bilgisayar:"scale(1.04)",
+  watch:"scale(.96)",
+  "akilli-saat":"scale(.96)",
+  console:"scale(1.04)",
+  "oyun-konsolu":"scale(1.04)"
 };
 
 var CATEGORY_ALT={
   phone:"Kozmik turuncu güncel lansman telefon modeli",
   telefon:"Kozmik turuncu güncel lansman telefon modeli",
-  tablet:"Güncel tablet modeli",
-  computer:"Güncel dizüstü bilgisayar modeli",
-  bilgisayar:"Güncel dizüstü bilgisayar modeli",
-  watch:"Güncel akıllı saat modeli",
-  "akilli-saat":"Güncel akıllı saat modeli",
-  console:"Güncel oyun konsolu modeli",
-  "oyun-konsolu":"Güncel oyun konsolu modeli"
+  tablet:"Apple iPad Pro M5",
+  computer:"Apple MacBook Pro M5 Pro ve M5 Max",
+  bilgisayar:"Apple MacBook Pro M5 Pro ve M5 Max",
+  watch:"Apple Watch Ultra 3",
+  "akilli-saat":"Apple Watch Ultra 3",
+  console:"PlayStation 5 Pro",
+  "oyun-konsolu":"PlayStation 5 Pro"
 };
 
 function cleanText(v){return String(v||"").replace(/\s+/g," ").trim()}
@@ -113,27 +128,40 @@ function installLatestCategoryImages(){
       var img=art&&art.querySelector('img');
       if(!art||!img) return;
       var src=LATEST_CATEGORY_IMAGES[key];
+
       art.style.setProperty('position','relative','important');
       art.style.setProperty('overflow','hidden','important');
       art.style.setProperty('display','flex','important');
       art.style.setProperty('align-items','center','important');
       art.style.setProperty('justify-content','center','important');
       art.style.setProperty('background','#fff','important');
+
       if(img.getAttribute('data-kg-direct-src')!==src){
         img.setAttribute('src',src);
         img.setAttribute('data-kg-direct-src',src);
         img.setAttribute('alt',CATEGORY_ALT[key]||'Güncel cihaz modeli');
+        img.setAttribute('loading','eager');
+        img.setAttribute('decoding','async');
+        img.onerror=function(){
+          var fallback=CATEGORY_FALLBACK_IMAGES[key];
+          if(fallback && this.getAttribute('src')!==fallback){
+            this.onerror=null;
+            this.setAttribute('src',fallback);
+          }
+        };
       }
+
       img.style.setProperty('display','block','important');
       img.style.setProperty('position','static','important');
-      img.style.setProperty('width','96%','important');
-      img.style.setProperty('height','96%','important');
-      img.style.setProperty('max-width','96%','important');
+      img.style.setProperty('width','100%','important');
+      img.style.setProperty('height','100%','important');
+      img.style.setProperty('max-width','100%','important');
+      img.style.setProperty('max-height','100%','important');
       img.style.setProperty('object-fit','contain','important');
-      img.style.setProperty('object-position','center','important');
+      img.style.setProperty('object-position','center center','important');
       img.style.setProperty('transform',CATEGORY_SCALE[key]||'scale(1)','important');
       img.style.setProperty('transform-origin','center center','important');
-      img.style.setProperty('background','transparent','important');
+      img.style.setProperty('background','#fff','important');
     });
   });
 }
