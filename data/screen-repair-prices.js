@@ -132,11 +132,15 @@
   global.getAverageScreenRepairPrice=getAverageScreenRepairPrice;
 })(window);
 
-// marketplace-test branch only: load the isolated prototype without changing main app markup.
+// marketplace-test branch only: capture selected valuation details, then load the isolated prototype.
 (function(){
   if(window.location.pathname!=="/") return;
-  var s=document.createElement("script");
-  s.src="/assets/marketplace-test.js";
-  s.defer=true;
-  document.head.appendChild(s);
+  var detailScript=document.createElement("script");
+  detailScript.src="/assets/marketplace-details.js";
+  detailScript.onload=function(){
+    var s=document.createElement("script");
+    s.src="/assets/marketplace-test.js";
+    document.head.appendChild(s);
+  };
+  document.head.appendChild(detailScript);
 })();
