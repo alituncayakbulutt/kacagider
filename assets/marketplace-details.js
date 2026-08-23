@@ -14,16 +14,17 @@ var GROUP_LABELS={
   backGlass:"Arka Cam Durumu"
 };
 
+var SPRITE="/assets/categories/latest/categories-sprite.svg?v=20260823";
 var LATEST_CATEGORY_IMAGES={
-  phone:"/assets/categories/latest/telefon.svg?v=20260823",
-  telefon:"/assets/categories/latest/telefon.svg?v=20260823",
-  tablet:"/assets/categories/latest/tablet.svg?v=20260823",
-  computer:"/assets/categories/latest/bilgisayar.svg?v=20260823",
-  bilgisayar:"/assets/categories/latest/bilgisayar.svg?v=20260823",
-  watch:"/assets/categories/latest/akilli-saat.svg?v=20260823",
-  "akilli-saat":"/assets/categories/latest/akilli-saat.svg?v=20260823",
-  console:"/assets/categories/latest/oyun-konsolu.svg?v=20260823",
-  "oyun-konsolu":"/assets/categories/latest/oyun-konsolu.svg?v=20260823"
+  phone:SPRITE+"#svgView(viewBox(0,0,400,400))",
+  telefon:SPRITE+"#svgView(viewBox(0,0,400,400))",
+  tablet:SPRITE+"#svgView(viewBox(400,0,400,400))",
+  computer:SPRITE+"#svgView(viewBox(800,0,400,400))",
+  bilgisayar:SPRITE+"#svgView(viewBox(800,0,400,400))",
+  watch:SPRITE+"#svgView(viewBox(1200,0,400,400))",
+  "akilli-saat":SPRITE+"#svgView(viewBox(1200,0,400,400))",
+  console:SPRITE+"#svgView(viewBox(1600,0,400,400))",
+  "oyun-konsolu":SPRITE+"#svgView(viewBox(1600,0,400,400))"
 };
 
 var CATEGORY_ALT={
