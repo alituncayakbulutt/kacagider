@@ -94,7 +94,7 @@
   function installHome(){
     if(qs("#kgMpHome"))return;var home=qs("#viewHome");if(!home)return;var host=document.createElement("section");host.id="kgMpHome";host.className="kg-mp-home";
     host.innerHTML='<div class="kg-mp-home-card"><div class="kg-mp-home-copy"><span class="kg-mp-badge">✦ YENİ · ÜCRETSİZ İLAN</span><strong>Değerini öğren. <span>İlanını oluştur, alıcını bul.</span></strong><p>Telefon, tablet, bilgisayar, akıllı saat veya oyun konsolunun değerini hesapla; cihaz bilgilerin ilan formuna otomatik aktarılsın.</p><div class="kg-mp-benefits"><span>İlan vermek ücretsiz</span><span>Bilgiler otomatik aktarılır</span><span>KaçaGider fiyatı bağımsız kalır</span></div></div><button type="button" class="kg-mp-home-action">Ücretsiz İlan Ver →<small>Önce cihazının değerini öğren</small></button></div>';
-    var grid=qs(".kg-approved-category-grid",home)||qs(".category-grid",home);var holder=grid?grid.parentElement:null;if(holder)holder.insertAdjacentElement("afterend",host);else{var hero=qs(".kg-approved-hero",home)||qs(".hero",home);if(hero)hero.insertAdjacentElement("afterend",host);else home.prepend(host)}
+    var grid=qs(".kg-approved-category-grid",home)||qs(".category-grid",home);if(grid)grid.insertAdjacentElement("beforebegin",host);else{var hero=qs(".kg-approved-hero",home)||qs(".hero",home);if(hero)hero.insertAdjacentElement("afterend",host);else home.prepend(host)}
     qs(".kg-mp-home-action",host).addEventListener("click",renderCategoryChoice)
   }
 
