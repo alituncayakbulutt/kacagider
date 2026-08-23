@@ -14,17 +14,18 @@ var GROUP_LABELS={
   backGlass:"Arka Cam Durumu"
 };
 
-var SPRITE="/assets/categories/latest/categories-sprite.svg?v=20260823";
-var LATEST_CATEGORY_IMAGES={
-  phone:SPRITE+"#svgView(viewBox(0,0,400,400))",
-  telefon:SPRITE+"#svgView(viewBox(0,0,400,400))",
-  tablet:SPRITE+"#svgView(viewBox(400,0,400,400))",
-  computer:SPRITE+"#svgView(viewBox(800,0,400,400))",
-  bilgisayar:SPRITE+"#svgView(viewBox(800,0,400,400))",
-  watch:SPRITE+"#svgView(viewBox(1200,0,400,400))",
-  "akilli-saat":SPRITE+"#svgView(viewBox(1200,0,400,400))",
-  console:SPRITE+"#svgView(viewBox(1600,0,400,400))",
-  "oyun-konsolu":SPRITE+"#svgView(viewBox(1600,0,400,400))"
+var SPRITE="/assets/categories/latest/categories-sprite.svg?v=20260823b";
+var TRANSPARENT="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==";
+var LATEST_CATEGORY_POSITIONS={
+  phone:"0% 50%",
+  telefon:"0% 50%",
+  tablet:"25% 50%",
+  computer:"50% 50%",
+  bilgisayar:"50% 50%",
+  watch:"75% 50%",
+  "akilli-saat":"75% 50%",
+  console:"100% 50%",
+  "oyun-konsolu":"100% 50%"
 };
 
 var CATEGORY_ALT={
@@ -96,13 +97,18 @@ Storage.prototype.setItem=function(key,value){
 
 function installLatestCategoryImages(){
   var root=document.getElementById('viewHome')||document;
-  Object.keys(LATEST_CATEGORY_IMAGES).forEach(function(key){
+  Object.keys(LATEST_CATEGORY_POSITIONS).forEach(function(key){
     root.querySelectorAll('[data-category="'+key+'"]').forEach(function(card){
       var img=card.querySelector('img');
       if(!img) return;
-      var wanted=LATEST_CATEGORY_IMAGES[key];
-      if(img.getAttribute('src')!==wanted) img.setAttribute('src',wanted);
+      if(img.getAttribute('data-kg-latest')===key) return;
+      img.setAttribute('src',TRANSPARENT);
+      img.setAttribute('data-kg-latest',key);
       img.setAttribute('alt',CATEGORY_ALT[key]||'Güncel cihaz modeli');
+      img.style.backgroundImage='url("'+SPRITE+'")';
+      img.style.backgroundRepeat='no-repeat';
+      img.style.backgroundSize='500% auto';
+      img.style.backgroundPosition=LATEST_CATEGORY_POSITIONS[key];
       img.style.objectFit='contain';
       img.style.objectPosition='center';
     });
