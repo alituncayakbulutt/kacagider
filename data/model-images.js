@@ -125,10 +125,11 @@
   }
 
   // Ilan kartinda otomatik cihaz gorseli tam gorunsun; kirpma/scale kullanma.
+  // Kart temasi koyu; cihaz gorsellerinin seffaf zemini de ayni koyu alana oturur.
   if(document && document.head && !document.getElementById("kg-model-image-sizing")){
     const style=document.createElement("style");
     style.id="kg-model-image-sizing";
-    style.textContent=".visual{height:300px!important;overflow:hidden!important}.visual img.model-image{width:96%!important;height:96%!important;max-width:none!important;max-height:none!important;object-fit:contain!important;object-position:center center!important;padding:0!important;margin:auto!important;transform:none!important;background:#f8fafc!important}@media(max-width:540px){.visual{height:315px!important}.visual img.model-image{width:95%!important;height:95%!important}}";
+    style.textContent=".card{background:#070a0f!important;border-color:#202938!important;box-shadow:0 12px 30px rgba(7,10,15,.16)!important}.card:hover{border-color:#344054!important;box-shadow:0 16px 38px rgba(7,10,15,.24)!important}.card .body{background:#070a0f!important}.card .title,.card .asking{color:#f8fafc!important}.card .meta,.card .loc,.card .estimate span{color:#98a2b3!important}.card .estimate{border-top-color:#263244!important}.card .estimate strong{color:#22c55e!important}.card .chip{color:#d0d5dd!important;background:#111827!important;border-color:#2b3545!important}.card .detail{background:#111827!important;border:1px solid #2b3545!important}.card .detail:hover{background:#182235!important}.visual{height:300px!important;overflow:hidden!important;background:#090d13!important}.visual img.model-image{width:96%!important;height:96%!important;max-width:none!important;max-height:none!important;object-fit:contain!important;object-position:center center!important;padding:0!important;margin:auto!important;transform:none!important;background:#090d13!important}.placeholder{background:#090d13!important;color:#e5e7eb!important}@media(max-width:540px){.visual{height:315px!important}.visual img.model-image{width:95%!important;height:95%!important}}";
     document.head.appendChild(style);
   }
 
