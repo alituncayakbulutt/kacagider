@@ -15,15 +15,27 @@ var GROUP_LABELS={
 };
 
 var LATEST_CATEGORY_IMAGES={
-  phone:"/assets/categories/latest/telefon-card.webp?v=20260824a",
-  telefon:"/assets/categories/latest/telefon-card.webp?v=20260824a",
-  tablet:"/assets/categories/latest/tablet-card.webp?v=20260824a",
-  computer:"/assets/categories/latest/bilgisayar-card.webp?v=20260824a",
-  bilgisayar:"/assets/categories/latest/bilgisayar-card.webp?v=20260824a",
-  watch:"/assets/categories/latest/akilli-saat-card.webp?v=20260824a",
-  "akilli-saat":"/assets/categories/latest/akilli-saat-card.webp?v=20260824a",
-  console:"/assets/categories/latest/oyun-konsolu-card.webp?v=20260824a",
-  "oyun-konsolu":"/assets/categories/latest/oyun-konsolu-card.webp?v=20260824a"
+  phone:"/assets/categories/latest/telefon-card.webp?v=20260824b",
+  telefon:"/assets/categories/latest/telefon-card.webp?v=20260824b",
+  tablet:"/assets/categories/tablet.jpg?v=20260824b",
+  computer:"/assets/categories/bilgisayar.jpg?v=20260824b",
+  bilgisayar:"/assets/categories/bilgisayar.jpg?v=20260824b",
+  watch:"/assets/categories/akilli-saat.jpg?v=20260824b",
+  "akilli-saat":"/assets/categories/akilli-saat.jpg?v=20260824b",
+  console:"/assets/categories/oyun-konsolu.jpg?v=20260824b",
+  "oyun-konsolu":"/assets/categories/oyun-konsolu.jpg?v=20260824b"
+};
+
+var CATEGORY_SCALE={
+  phone:"scale(1.55)",
+  telefon:"scale(1.55)",
+  tablet:"scale(1.08)",
+  computer:"scale(1.08)",
+  bilgisayar:"scale(1.08)",
+  watch:"scale(1.08)",
+  "akilli-saat":"scale(1.08)",
+  console:"scale(1.08)",
+  "oyun-konsolu":"scale(1.08)"
 };
 
 var CATEGORY_ALT={
@@ -101,24 +113,26 @@ function installLatestCategoryImages(){
       var img=art&&art.querySelector('img');
       if(!art||!img) return;
       var src=LATEST_CATEGORY_IMAGES[key];
-      if(img.getAttribute('data-kg-direct-src')===src) return;
       art.style.setProperty('position','relative','important');
       art.style.setProperty('overflow','hidden','important');
       art.style.setProperty('display','flex','important');
       art.style.setProperty('align-items','center','important');
       art.style.setProperty('justify-content','center','important');
       art.style.setProperty('background','#fff','important');
-      img.setAttribute('src',src);
-      img.setAttribute('data-kg-direct-src',src);
-      img.setAttribute('alt',CATEGORY_ALT[key]||'Güncel cihaz modeli');
+      if(img.getAttribute('data-kg-direct-src')!==src){
+        img.setAttribute('src',src);
+        img.setAttribute('data-kg-direct-src',src);
+        img.setAttribute('alt',CATEGORY_ALT[key]||'Güncel cihaz modeli');
+      }
       img.style.setProperty('display','block','important');
       img.style.setProperty('position','static','important');
-      img.style.setProperty('width','92%','important');
-      img.style.setProperty('height','92%','important');
-      img.style.setProperty('max-width','92%','important');
+      img.style.setProperty('width','96%','important');
+      img.style.setProperty('height','96%','important');
+      img.style.setProperty('max-width','96%','important');
       img.style.setProperty('object-fit','contain','important');
       img.style.setProperty('object-position','center','important');
-      img.style.setProperty('transform','none','important');
+      img.style.setProperty('transform',CATEGORY_SCALE[key]||'scale(1)','important');
+      img.style.setProperty('transform-origin','center center','important');
       img.style.setProperty('background','transparent','important');
     });
   });
