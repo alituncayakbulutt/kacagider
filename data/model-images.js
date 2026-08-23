@@ -7,6 +7,7 @@
    * - Otomatik model gorseli yalnizca marka + model + secilen renk eslesiyorsa kullanilir.
    * - Bir modele ait tum renkleri ayni karede gosteren "colors" gorselleri kullanilmaz.
    * - Renk eslesmesi henuz yoksa yanlis fotograf gostermek yerine bos sonuc doner ve kategori fallback'i kullanilir.
+   * - Ilan formunda gorsel eslemesi bulunan modeller icin sadece gercekte uretilen renkler listelenir.
    */
 
   const APPLE={
@@ -80,15 +81,22 @@
     return modelData[color]||"";
   }
 
-  // Otomatik cihaz gorseli kesilmeden karta daha dolu otursun.
-  // Onceki scale yaklasimi alt kismi kirpiyordu; bunun yerine gorsel alanini portre oranina yaklastiriyoruz.
+  function getModelColors(brand,model){
+    brand=String(brand||"").trim();
+    model=String(model||"").trim();
+    const modelData=DATA[brand]&&DATA[brand][model];
+    return modelData ? Object.keys(modelData) : [];
+  }
+
+  // Ilan kartinda otomatik cihaz gorseli tam gorunsun; kirpma/scale kullanma.
   if(document && document.head && !document.getElementById("kg-model-image-sizing")){
     const style=document.createElement("style");
     style.id="kg-model-image-sizing";
-    style.textContent=".visual:has(img.model-image){height:355px!important;background:#f8fafc!important}.visual img.model-image{width:94%!important;height:96%!important;max-width:94%!important;max-height:96%!important;object-fit:contain!important;object-position:center center!important;padding:0!important;transform:none!important;background:#f8fafc!important}.visual{overflow:hidden!important}@media(max-width:820px){.visual:has(img.model-image){height:330px!important}}@media(max-width:540px){.visual:has(img.model-image){height:350px!important}.visual img.model-image{width:96%!important;height:97%!important;max-width:96%!important;max-height:97%!important}}";
+    style.textContent=".visual{height:300px!important;overflow:hidden!important}.visual img.model-image{width:96%!important;height:96%!important;max-width:none!important;max-height:none!important;object-fit:contain!important;object-position:center center!important;padding:0!important;margin:auto!important;transform:none!important;background:#f8fafc!important}@media(max-width:540px){.visual{height:315px!important}.visual img.model-image{width:95%!important;height:95%!important}}";
     document.head.appendChild(style);
   }
 
   global.KG_MODEL_IMAGE_DATA=DATA;
   global.getKgModelImage=getModelImage;
+  global.getKgModelColors=getModelColors;
 })(window);
