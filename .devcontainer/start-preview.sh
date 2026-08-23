@@ -14,14 +14,38 @@ if git diff --quiet && git diff --cached --quiet; then
   git -c core.hooksPath=/dev/null pull --ff-only origin marketplace-test || true
 fi
 
-# Eski preview sunucusunu kapat, yenisini başlat.
-pkill -f "python3 -m http.server 8000" >/dev/null 2>&1 || true
-nohup python3 -m http.server 8000 --bind 0.0.0.0 >/tmp/kacagider-preview.log 2>&1 &
+# Eski preview sunucusunu kapat.
+pkill -f "http.server 8000" >/dev/null 2>&1 || true
+pkill -f "http-server.*8000" >/dev/null 2>&1 || true
+pkill -f "php -S 0.0.0.0:8000" >/dev/null 2>&1 || true
+
+LOG=/tmp/kacagider-preview.log
+: > "$LOG"
+
+# Ortamda bulunan ilk uygun statik sunucuyu kullan.
+if command -v python3 >/dev/null 2>&1; then
+  nohup python3 -m http.server 8000 --bind 0.0.0.0 >"$LOG" 2>&1 &
+elif command -v python >/dev/null 2>&1; then
+  nohup python -m http.server 8000 --bind 0.0.0.0 >"$LOG" 2>&1 &
+elif command -v php >/dev/null 2>&1; then
+  nohup php -S 0.0.0.0:8000 -t . >"$LOG" 2>&1 &
+elif command -v npx >/dev/null 2>&1; then
+  nohup npx --yes http-server . -p 8000 -a 0.0.0.0 >"$LOG" 2>&1 &
+else
+  echo "Uygun statik sunucu bulunamadı." | tee -a "$LOG"
+  exit 1
+fi
+
 echo $! >/tmp/kacagider-preview.pid
 
-sleep 1
-if curl -fsS http://127.0.0.1:8000/ >/dev/null 2>&1; then
-  echo "KaçaGider marketplace-test preview hazır: port 8000"
-else
-  echo "Preview sunucusu başlatılamadı. Log: /tmp/kacagider-preview.log"
-fi
+for i in 1 2 3 4 5; do
+  if curl -fsS http://127.0.0.1:8000/ >/dev/null 2>&1; then
+    echo "KaçaGider marketplace-test preview hazır: port 8000"
+    exit 0
+  fi
+  sleep 1
+done
+
+echo "Preview sunucusu başlatılamadı. Log: $LOG"
+cat "$LOG" || true
+exit 1
