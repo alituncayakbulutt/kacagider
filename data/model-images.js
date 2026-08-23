@@ -124,8 +124,6 @@
     }
   }
 
-  // Ilan kartinda otomatik cihaz gorseli tam gorunsun; kirpma/scale kullanma.
-  // Kart temasi koyu; cihaz gorsellerinin seffaf zemini de ayni koyu alana oturur.
   if(document && document.head && !document.getElementById("kg-model-image-sizing")){
     const style=document.createElement("style");
     style.id="kg-model-image-sizing";
@@ -142,4 +140,12 @@
   global.KG_MODEL_IMAGE_DATA=DATA;
   global.getKgModelImage=getModelImage;
   global.getKgModelColors=getModelColors;
+
+  if(window.location.pathname==="/" && !document.getElementById("kgHeroSliderSyncScript")){
+    const sync=document.createElement("script");
+    sync.id="kgHeroSliderSyncScript";
+    sync.src="/assets/marketplace-hero-slider-sync.js?v=1";
+    sync.defer=true;
+    document.head.appendChild(sync);
+  }
 })(window);
