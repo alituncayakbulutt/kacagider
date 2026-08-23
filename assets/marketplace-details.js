@@ -14,8 +14,7 @@ var GROUP_LABELS={
   backGlass:"Arka Cam Durumu"
 };
 
-var SPRITE="/assets/categories/latest/categories-sprite.svg?v=20260823b";
-var TRANSPARENT="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==";
+var SPRITE="/assets/categories/latest/categories-sprite.svg?v=20260823d";
 var LATEST_CATEGORY_POSITIONS={
   phone:"0% 50%",
   telefon:"0% 50%",
@@ -99,18 +98,17 @@ function installLatestCategoryImages(){
   var root=document.getElementById('viewHome')||document;
   Object.keys(LATEST_CATEGORY_POSITIONS).forEach(function(key){
     root.querySelectorAll('[data-category="'+key+'"]').forEach(function(card){
-      var img=card.querySelector('img');
-      if(!img) return;
-      if(img.getAttribute('data-kg-latest')===key) return;
-      img.setAttribute('src',TRANSPARENT);
-      img.setAttribute('data-kg-latest',key);
-      img.setAttribute('alt',CATEGORY_ALT[key]||'Güncel cihaz modeli');
-      img.style.backgroundImage='url("'+SPRITE+'")';
-      img.style.backgroundRepeat='no-repeat';
-      img.style.backgroundSize='500% auto';
-      img.style.backgroundPosition=LATEST_CATEGORY_POSITIONS[key];
-      img.style.objectFit='contain';
-      img.style.objectPosition='center';
+      var art=card.querySelector('.kg-product-art');
+      if(!art) return;
+      art.setAttribute('role','img');
+      art.setAttribute('aria-label',CATEGORY_ALT[key]||'Güncel cihaz modeli');
+      art.style.setProperty('background-image','url("'+SPRITE+'")','important');
+      art.style.setProperty('background-repeat','no-repeat','important');
+      art.style.setProperty('background-size','500% 100%','important');
+      art.style.setProperty('background-position',LATEST_CATEGORY_POSITIONS[key],'important');
+      art.style.setProperty('background-color','#fff','important');
+      var img=art.querySelector('img');
+      if(img) img.style.setProperty('display','none','important');
     });
   });
 }
