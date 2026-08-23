@@ -60,12 +60,12 @@
   function readFav(){try{return JSON.parse(localStorage.getItem(FAV)||'[]')}catch(e){return[]}}
   function writeFav(v){localStorage.setItem(FAV,JSON.stringify(v))}
   function money(v){return Number(v||0).toLocaleString('tr-TR')+' TL'}
-  function esc(s){return String(s||'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#039;'}[c]))}
+  function esc(s){return String(s||'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot',"'":'&#039;'}[c]))}
   function marketInfo(x){const ask=Number(x.salePrice||0),est=Number(x.estimatedPrice||0);if(!ask||!est)return{c:'good',t:'Fiyat karşılaştırması hazır değil',d:999};const pct=((ask-est)/est)*100,abs=Math.abs(pct);if(pct<=-5)return{c:'low',t:'KaçaGider değerinin %'+Math.round(abs)+' altında',d:abs};if(abs<=5)return{c:'good',t:'Piyasa değerine yakın',d:abs};if(pct<=15)return{c:'high',t:'KaçaGider değerinin %'+Math.round(abs)+' üzerinde',d:abs};return{c:'veryhigh',t:'KaçaGider değerinin %'+Math.round(abs)+' üzerinde',d:abs}}
   function mediaHtml(x){
     const alt=esc([x.brand,x.model].filter(Boolean).join(' '));
     if(Array.isArray(x.photos)&&x.photos[0]) return '<img src="'+x.photos[0]+'" alt="'+alt+'">';
-    const modelImage=typeof window.getKgModelImage==='function'?window.getKgModelImage(x.brand,x.model):'';
+    const modelImage=typeof window.getKgModelImage==='function'?window.getKgModelImage(x.brand,x.model,x.color):'';
     if(modelImage) return '<img class="model-image" src="'+modelImage+'" alt="'+alt+'" onerror="this.style.display=\'none\';this.nextElementSibling.style.display=\'flex\'"><div class="placeholder" style="display:none">'+(icon[x.category]||'📦')+'</div>';
     return '<div class="placeholder">'+(icon[x.category]||'📦')+'</div>';
   }
