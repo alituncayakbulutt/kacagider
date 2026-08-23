@@ -68,4 +68,31 @@ Storage.prototype.setItem=function(key,value){
   }
   return original.call(this,key,value);
 };
+
+function installListingsNav(){
+  if(document.getElementById('kgMpListingsNav')) return;
+  var nav=document.querySelector('.kg-main-nav');
+  if(!nav){
+    var infoCandidates=Array.from(document.querySelectorAll('a,button')).filter(function(el){
+      return cleanText(el.textContent).toLocaleUpperCase('tr-TR').indexOf('BİLGİ MERKEZİ')!==-1;
+    });
+    if(infoCandidates.length) nav=infoCandidates[0].parentElement;
+  }
+  if(!nav) return;
+  var link=document.createElement('a');
+  link.id='kgMpListingsNav';
+  link.href='/ilanlar/';
+  link.textContent='İlanlar';
+  link.setAttribute('aria-label','Yayındaki ilanları görüntüle');
+  link.style.whiteSpace='nowrap';
+  var info=Array.from(nav.querySelectorAll('a,button')).find(function(el){
+    return cleanText(el.textContent).toLocaleUpperCase('tr-TR').indexOf('BİLGİ MERKEZİ')!==-1;
+  });
+  if(info) nav.insertBefore(link,info);
+  else nav.appendChild(link);
+}
+
+if(document.readyState==='loading') document.addEventListener('DOMContentLoaded',installListingsNav,{once:true});
+else installListingsNav();
+new MutationObserver(installListingsNav).observe(document.documentElement,{subtree:true,childList:true});
 })();
