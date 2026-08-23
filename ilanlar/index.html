@@ -21,7 +21,7 @@
     .filters{display:flex;gap:9px;flex-wrap:wrap;margin:14px 0 24px}.filter{border:1px solid var(--line);background:#fff;border-radius:999px;padding:9px 14px;font-weight:800;color:#475467;cursor:pointer}.filter.active{border-color:#8ee7ae;background:#effcf4;color:#087735}
     .grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:20px}
     .card{position:relative;background:#fff;border:1px solid var(--line);border-radius:20px;overflow:hidden;box-shadow:0 8px 28px rgba(15,23,42,.055);display:flex;flex-direction:column;transition:.18s ease}.card:hover{transform:translateY(-3px);box-shadow:0 14px 36px rgba(15,23,42,.09);border-color:#d7dee8}
-    .visual{height:235px;background:linear-gradient(145deg,#f8fafc,#edf2f7);display:flex;align-items:center;justify-content:center;font-size:66px;overflow:hidden}.visual img{width:100%;height:100%;object-fit:cover}.placeholder{width:100%;height:100%;display:flex;align-items:center;justify-content:center;background:linear-gradient(145deg,#f9fbfd,#edf2f7)}
+    .visual{height:235px;background:linear-gradient(145deg,#f8fafc,#edf2f7);display:flex;align-items:center;justify-content:center;font-size:66px;overflow:hidden}.visual img{width:100%;height:100%;object-fit:cover}.visual img.model-image{object-fit:contain;padding:18px;background:#f8fafc}.placeholder{width:100%;height:100%;display:flex;align-items:center;justify-content:center;background:linear-gradient(145deg,#f9fbfd,#edf2f7)}
     .fav{position:absolute;right:12px;top:12px;z-index:2;width:38px;height:38px;border:1px solid rgba(255,255,255,.75);border-radius:50%;background:rgba(255,255,255,.92);display:flex;align-items:center;justify-content:center;cursor:pointer;font-size:20px;box-shadow:0 4px 12px rgba(15,23,42,.10)}.fav.active{color:#e11d48}
     .body{padding:17px;display:flex;flex-direction:column;flex:1}.meta{font-size:11px;font-weight:850;color:#667085;margin-bottom:6px}.title{font-size:19px;line-height:1.22;font-weight:950;margin-bottom:9px;letter-spacing:-.25px}.loc{font-size:12px;color:#667085;margin-bottom:13px}.asking{font-size:25px;font-weight:950;letter-spacing:-.6px;margin-bottom:8px;color:#101828}.estimate{display:flex;align-items:center;justify-content:space-between;gap:10px;padding-top:10px;border-top:1px solid #edf0f4;margin-bottom:10px}.estimate span{font-size:11px;color:#667085}.estimate strong{font-size:14px;color:#0b8f3f}
     .market{display:inline-flex;align-items:center;width:max-content;max-width:100%;gap:6px;border-radius:999px;padding:6px 9px;font-size:10px;font-weight:900;margin-bottom:13px}.market.good{background:#ecfdf3;color:#067647}.market.low{background:#eff8ff;color:#175cd3}.market.high{background:#fff7ed;color:#b54708}.market.veryhigh{background:#fff1f0;color:#b42318}.market::before{content:"●";font-size:8px}
@@ -49,6 +49,7 @@
   <section class="grid" id="grid"></section>
   <div class="note">Test sürümü: İlanlar ve fotoğraflar yalnızca bu tarayıcıda tutulur. Gerçek yayında Supabase Storage/veritabanı ve gerçek üyelik sistemi bağlanacak.</div>
 </main>
+<script src="/data/model-images.js"></script>
 <script>
 (function(){
   const KEY='kg_marketplace_listings_v1',FAV='kg_marketplace_favorites_v1';
@@ -61,6 +62,13 @@
   function money(v){return Number(v||0).toLocaleString('tr-TR')+' TL'}
   function esc(s){return String(s||'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#039;'}[c]))}
   function marketInfo(x){const ask=Number(x.salePrice||0),est=Number(x.estimatedPrice||0);if(!ask||!est)return{c:'good',t:'Fiyat karşılaştırması hazır değil',d:999};const pct=((ask-est)/est)*100,abs=Math.abs(pct);if(pct<=-5)return{c:'low',t:'KaçaGider değerinin %'+Math.round(abs)+' altında',d:abs};if(abs<=5)return{c:'good',t:'Piyasa değerine yakın',d:abs};if(pct<=15)return{c:'high',t:'KaçaGider değerinin %'+Math.round(abs)+' üzerinde',d:abs};return{c:'veryhigh',t:'KaçaGider değerinin %'+Math.round(abs)+' üzerinde',d:abs}}
+  function mediaHtml(x){
+    const alt=esc([x.brand,x.model].filter(Boolean).join(' '));
+    if(Array.isArray(x.photos)&&x.photos[0]) return '<img src="'+x.photos[0]+'" alt="'+alt+'">';
+    const modelImage=typeof window.getKgModelImage==='function'?window.getKgModelImage(x.brand,x.model):'';
+    if(modelImage) return '<img class="model-image" src="'+modelImage+'" alt="'+alt+'" onerror="this.style.display=\'none\';this.nextElementSibling.style.display=\'flex\'"><div class="placeholder" style="display:none">'+(icon[x.category]||'📦')+'</div>';
+    return '<div class="placeholder">'+(icon[x.category]||'📦')+'</div>';
+  }
   function render(){
     const all=read(); const favs=readFav(); const q=search.value.trim().toLocaleLowerCase('tr-TR');
     let rows=all.map((x,index)=>({x,index,m:marketInfo(x)})).filter(r=>filter==='all'||r.x.category===filter).filter(r=>{if(!q)return true;return [r.x.brand,r.x.model,r.x.storage,r.x.color,r.x.city,r.x.district,r.x.category].filter(Boolean).join(' ').toLocaleLowerCase('tr-TR').includes(q)});
@@ -71,7 +79,7 @@
     count.textContent=all.length+' aktif ilan';
     if(!rows.length){grid.innerHTML='<div class="empty"><strong>İlan bulunamadı</strong>Arama veya filtrelerini değiştirerek tekrar deneyebilirsin.</div>';return}
     grid.innerHTML=rows.map(({x,index,m})=>{
-      const media=Array.isArray(x.photos)&&x.photos[0]?'<img src="'+x.photos[0]+'" alt="'+esc([x.brand,x.model].filter(Boolean).join(' '))+'">':'<div class="placeholder">'+(icon[x.category]||'📦')+'</div>';
+      const media=mediaHtml(x);
       const meta=[x.category,x.storage,x.color].filter(Boolean).map(esc).join(' · ');
       const chips=[x.storage,x.color].filter(Boolean).map(v=>'<span class="chip">'+esc(v)+'</span>').join('');
       const id=x.id||('index-'+index),active=favs.includes(id)?' active':'';
