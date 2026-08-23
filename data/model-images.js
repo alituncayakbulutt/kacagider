@@ -80,6 +80,14 @@
     return modelData[color]||"";
   }
 
+  // Ilan kartinda otomatik cihaz gorseli kart alanini daha dolu kullansin.
+  if(document && document.head && !document.getElementById("kg-model-image-sizing")){
+    const style=document.createElement("style");
+    style.id="kg-model-image-sizing";
+    style.textContent=".visual img.model-image{width:100%!important;height:100%!important;object-fit:contain!important;padding:4px 10px 0!important;transform:scale(1.34);transform-origin:center center;background:#f8fafc!important}.visual{overflow:hidden!important}@media(max-width:540px){.visual img.model-image{transform:scale(1.28)}}";
+    document.head.appendChild(style);
+  }
+
   global.KG_MODEL_IMAGE_DATA=DATA;
   global.getKgModelImage=getModelImage;
 })(window);
