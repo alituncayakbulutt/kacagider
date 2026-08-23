@@ -80,11 +80,12 @@
     return modelData[color]||"";
   }
 
-  // Ilan kartinda otomatik cihaz gorseli kart alanini daha dolu kullansin.
+  // Otomatik cihaz gorseli kesilmeden karta daha dolu otursun.
+  // Onceki scale yaklasimi alt kismi kirpiyordu; bunun yerine gorsel alanini portre oranina yaklastiriyoruz.
   if(document && document.head && !document.getElementById("kg-model-image-sizing")){
     const style=document.createElement("style");
     style.id="kg-model-image-sizing";
-    style.textContent=".visual img.model-image{width:100%!important;height:100%!important;object-fit:contain!important;padding:4px 10px 0!important;transform:scale(1.34);transform-origin:center center;background:#f8fafc!important}.visual{overflow:hidden!important}@media(max-width:540px){.visual img.model-image{transform:scale(1.28)}}";
+    style.textContent=".visual:has(img.model-image){height:355px!important;background:#f8fafc!important}.visual img.model-image{width:94%!important;height:96%!important;max-width:94%!important;max-height:96%!important;object-fit:contain!important;object-position:center center!important;padding:0!important;transform:none!important;background:#f8fafc!important}.visual{overflow:hidden!important}@media(max-width:820px){.visual:has(img.model-image){height:330px!important}}@media(max-width:540px){.visual:has(img.model-image){height:350px!important}.visual img.model-image{width:96%!important;height:97%!important;max-width:96%!important;max-height:97%!important}}";
     document.head.appendChild(style);
   }
 
