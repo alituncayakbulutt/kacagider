@@ -88,12 +88,54 @@
     return modelData ? Object.keys(modelData) : [];
   }
 
+  function selectedText(id){
+    const el=document.getElementById(id);
+    if(!el) return "";
+    const opt=el.options&&el.options[el.selectedIndex];
+    return String(opt?opt.textContent:el.value||"").trim();
+  }
+
+  function currentBrandModel(){
+    const generic=document.getElementById("genericPanel");
+    const isGeneric=generic&&getComputedStyle(generic).display!=="none";
+    return {
+      brand:selectedText(isGeneric?"genericBrand":"phoneBrand"),
+      model:selectedText(isGeneric?"genericModel":"model")
+    };
+  }
+
+  function syncListingColorSelect(){
+    const select=document.getElementById("kgColor");
+    if(!select||select.dataset.kgRealColors==="1") return;
+    const info=currentBrandModel();
+    const colors=getModelColors(info.brand,info.model);
+    if(!colors.length) return;
+    const current=String(select.value||"").trim();
+    select.innerHTML='<option value="">Renk seçiniz</option>'+colors.map(function(color){return '<option value="'+color+'">'+color+'</option>';}).join('');
+    if(colors.indexOf(current)!==-1) select.value=current;
+    select.dataset.kgRealColors="1";
+    const field=select.closest(".kg-mp-field");
+    if(field&&!field.querySelector(".kg-real-color-note")){
+      const note=document.createElement("small");
+      note.className="kg-real-color-note";
+      note.style.color="#667085";
+      note.textContent="Bu model için yalnızca gerçek üretim renkleri gösterilir.";
+      field.appendChild(note);
+    }
+  }
+
   // Ilan kartinda otomatik cihaz gorseli tam gorunsun; kirpma/scale kullanma.
   if(document && document.head && !document.getElementById("kg-model-image-sizing")){
     const style=document.createElement("style");
     style.id="kg-model-image-sizing";
     style.textContent=".visual{height:300px!important;overflow:hidden!important}.visual img.model-image{width:96%!important;height:96%!important;max-width:none!important;max-height:none!important;object-fit:contain!important;object-position:center center!important;padding:0!important;margin:auto!important;transform:none!important;background:#f8fafc!important}@media(max-width:540px){.visual{height:315px!important}.visual img.model-image{width:95%!important;height:95%!important}}";
     document.head.appendChild(style);
+  }
+
+  if(document){
+    if(document.readyState==="loading") document.addEventListener("DOMContentLoaded",syncListingColorSelect,{once:true});
+    else syncListingColorSelect();
+    new MutationObserver(syncListingColorSelect).observe(document.documentElement,{subtree:true,childList:true});
   }
 
   global.KG_MODEL_IMAGE_DATA=DATA;
