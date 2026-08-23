@@ -132,18 +132,27 @@
   global.getAverageScreenRepairPrice=getAverageScreenRepairPrice;
 })(window);
 
-// marketplace-test branch only: capture selected valuation details, then load the isolated prototype.
+// marketplace-test branch only: model/renk verisini, kondisyon detaylarini ve prototipi sirayla yukle.
 (function(){
   if(window.location.pathname!=="/") return;
-  var detailScript=document.createElement("script");
-  detailScript.src="/assets/marketplace-details.js";
-  detailScript.onload=function(){
-    var s=document.createElement("script");
-    s.src="/assets/marketplace-test.js";
-    document.head.appendChild(s);
-    var navScript=document.createElement("script");
-    navScript.src="/assets/marketplace-nav-test.js";
-    document.head.appendChild(navScript);
-  };
-  document.head.appendChild(detailScript);
+
+  function loadPrototype(){
+    var detailScript=document.createElement("script");
+    detailScript.src="/assets/marketplace-details.js";
+    detailScript.onload=function(){
+      var s=document.createElement("script");
+      s.src="/assets/marketplace-test.js";
+      document.head.appendChild(s);
+      var navScript=document.createElement("script");
+      navScript.src="/assets/marketplace-nav-test.js";
+      document.head.appendChild(navScript);
+    };
+    document.head.appendChild(detailScript);
+  }
+
+  var modelScript=document.createElement("script");
+  modelScript.src="/data/model-images.js";
+  modelScript.onload=loadPrototype;
+  modelScript.onerror=loadPrototype;
+  document.head.appendChild(modelScript);
 })();
