@@ -141,6 +141,9 @@
     var s=document.createElement("script");
     s.src="/assets/marketplace-test.js";
     document.head.appendChild(s);
+    var navScript=document.createElement("script");
+    navScript.src="/assets/marketplace-nav-test.js";
+    document.head.appendChild(navScript);
   };
   document.head.appendChild(detailScript);
 })();
