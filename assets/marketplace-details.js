@@ -101,7 +101,17 @@ function loadMarketplaceHeader(){
   document.head.appendChild(s);
 }
 
+function loadMarketplaceSlider(){
+  if(document.getElementById('kgMarketplaceHomeSliderScript')) return;
+  var s=document.createElement('script');
+  s.id='kgMarketplaceHomeSliderScript';
+  s.src='/assets/marketplace-home-slider.js';
+  s.defer=true;
+  document.head.appendChild(s);
+}
+
 loadMarketplaceHeader();
+loadMarketplaceSlider();
 if(document.readyState==='loading') document.addEventListener('DOMContentLoaded',installListingsNav,{once:true});
 else installListingsNav();
 new MutationObserver(installListingsNav).observe(document.documentElement,{subtree:true,childList:true});
