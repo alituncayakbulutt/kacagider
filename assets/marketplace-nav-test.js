@@ -28,7 +28,6 @@ function css(){
   .kg-v3-subbar .kg-main-nav a:hover,.kg-v3-subbar .kg-main-nav a.active{color:#15803d!important}
   .kg-v3-subbar .kg-main-nav a.active:after{content:"";position:absolute;left:0;right:0;bottom:9px;height:3px;border-radius:9px;background:#16a34a}
   .kg-v3-subbar #kgMpListingsNav{display:none!important}
-
   #viewHome:not(.category-selected)>.hero,#viewHome:not(.category-selected)>.kg-approved-hero{display:none!important}
   #viewHome:not(.category-selected) #kgMpHome{display:none!important}
   #kgMarketplaceSlider{display:none!important}
@@ -44,7 +43,6 @@ function css(){
   .kg-v3-actions{display:flex;gap:11px;flex-wrap:wrap;margin-top:22px}.kg-v3-btn{min-height:48px;padding:0 19px;border-radius:13px;border:1px solid #cfd9d5;background:#fff;color:#142033;font-size:14px;font-weight:900;cursor:pointer;text-decoration:none;display:inline-flex;align-items:center;justify-content:center}.kg-v3-btn.primary{background:#16a34a;border-color:#16a34a;color:#fff;box-shadow:0 10px 20px rgba(22,163,74,.18)}
   .kg-v3-visual{position:relative;height:252px;display:flex;align-items:center;justify-content:center}.kg-v3-card{position:relative;width:min(330px,92%);height:246px;border-radius:25px;border:1px solid rgba(255,255,255,.95);background:rgba(255,255,255,.84);box-shadow:0 22px 46px rgba(15,23,42,.13);display:flex;align-items:center;justify-content:center;overflow:hidden}.kg-v3-card img{width:82%;height:82%;object-fit:contain}.kg-v3-badge{position:absolute;right:1%;top:7%;padding:8px 11px;border-radius:999px;background:#fff;color:#087a37;border:1px solid #e4ece8;font-size:10px;font-weight:950;box-shadow:0 8px 18px rgba(15,23,42,.1)}.kg-v3-stat{position:absolute;left:-5%;bottom:2%;min-width:190px;padding:12px 14px;border-radius:15px;background:#071426;color:#fff;box-shadow:0 12px 28px rgba(7,20,38,.2)}.kg-v3-stat small{display:block;color:#b9c7d8;font-size:9px;font-weight:750;margin-bottom:3px}.kg-v3-stat strong{display:block;color:#4ade80;font-size:14px;font-weight:950}
   .kg-v3-arrow{position:absolute;top:50%;z-index:5;width:42px;height:42px;margin-top:-21px;border:1px solid #d9e3df;border-radius:50%;background:#fff;color:#142033;box-shadow:0 8px 20px rgba(15,23,42,.1);font-size:24px;line-height:1;cursor:pointer}.kg-v3-arrow.prev{left:14px}.kg-v3-arrow.next{right:14px}.kg-v3-dots{position:absolute;z-index:6;left:50%;bottom:15px;transform:translateX(-50%);display:flex;gap:7px}.kg-v3-dot{width:8px;height:8px;border:0;padding:0;border-radius:999px;background:#aab6b0;cursor:pointer}.kg-v3-dot.active{width:27px;background:#16a34a}
-
   @media(max-width:1120px){.kg-approved-topbar .kg-topbar-inner{grid-template-columns:205px minmax(280px,1fr) auto!important;gap:15px!important;padding:11px 18px!important}.kg-approved-topbar .kg-brand-main{font-size:31px!important}.kg-v3-subbar .kg-main-nav{gap:22px!important}.kg-v3-subbar .kg-main-nav a{font-size:13px!important}.kg-v3-action{padding:0 12px;font-size:12px}}
   @media(max-width:900px){.kg-approved-topbar .kg-topbar-inner{grid-template-columns:1fr auto!important;grid-template-areas:"brand actions" "search search"!important;gap:10px!important;padding:10px 14px!important}.kg-approved-topbar .kg-brand{grid-area:brand}.kg-v3-search{grid-area:search;height:48px}.kg-approved-topbar .kg-topbar-actions{grid-area:actions}.kg-v3-action.listings{display:none}.kg-v3-action.sell{height:42px;padding:0 11px;font-size:11px}.kg-approved-topbar .kg-mobile-nav-toggle{display:block!important;width:42px!important;height:42px!important}.kg-v3-subbar{display:none}.kg-approved-topbar.menu-open .kg-v3-subbar{display:block!important;position:absolute;left:0;right:0;top:100%}.kg-approved-topbar.menu-open .kg-v3-subbar .kg-main-nav{display:grid!important;grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:0!important;padding:8px 12px!important}.kg-approved-topbar.menu-open .kg-v3-subbar .kg-main-nav a{padding:13px 10px!important}.kg-v3-shell{height:570px}.kg-v3-slide{grid-template-columns:1fr;padding:30px 42px 48px;gap:18px}.kg-v3-copy{text-align:center;margin:auto}.kg-v3-copy h1,.kg-v3-copy h2,.kg-v3-copy p{text-align:center!important}.kg-v3-actions{justify-content:center}.kg-v3-visual{height:205px}.kg-v3-card{height:200px}.kg-v3-copy h1,.kg-v3-copy h2{font-size:35px!important}}
   @media(max-width:600px){#kgV3Slider{padding:0 10px;margin:15px auto 20px}.kg-v3-shell{height:590px;border-radius:20px}.kg-v3-slide{padding:26px 24px 48px}.kg-v3-copy h1,.kg-v3-copy h2{font-size:30px!important}.kg-v3-copy p{font-size:14px!important}.kg-v3-actions{display:grid;grid-template-columns:1fr}.kg-v3-btn{width:100%}.kg-v3-visual{height:185px}.kg-v3-card{width:255px;height:180px}.kg-v3-stat{left:1%;min-width:155px}.kg-v3-badge{right:1%}.kg-v3-arrow{width:36px;height:36px;margin-top:-18px}}
@@ -70,35 +68,58 @@ function rebuildHeader(){
   var actions=header.querySelector('.kg-topbar-actions');
   if(!inner||!nav||!actions) return false;
   css();
-
   header.querySelectorAll('.kg-market-search,.kg-v3-search').forEach(function(x){x.remove();});
-  header.querySelectorAll('.kg-market-subbar,.kg-v3-subbar').forEach(function(x){
-    var n=x.querySelector('.kg-main-nav');if(n&&n!==nav) return; x.remove();
-  });
-
+  header.querySelectorAll('.kg-market-subbar,.kg-v3-subbar').forEach(function(x){var n=x.querySelector('.kg-main-nav');if(n&&n!==nav)return;x.remove();});
   var search=document.createElement('form');
   search.className='kg-v3-search';
   search.innerHTML='<span aria-hidden="true">⌕</span><input type="search" placeholder="Marka, model veya ilan ara..." aria-label="İlanlarda ara"><button type="submit">Ara</button>';
   search.onsubmit=function(e){e.preventDefault();var q=search.querySelector('input').value.trim();if(q)location.href='/ilanlar/?q='+encodeURIComponent(q);};
   inner.insertBefore(search,actions);
-
   var mobile=actions.querySelector('#mobileNavToggle');
   var theme=actions.querySelector('#themeToggle');
   actions.innerHTML='';
   var listings=document.createElement('a');listings.href='/ilanlar/';listings.className='kg-v3-action listings';listings.textContent='İlanlar';
   var sell=document.createElement('a');sell.href='#';sell.className='kg-v3-action sell';sell.textContent='Ücretsiz İlan Ver';sell.onclick=function(e){e.preventDefault();goSell();};
   actions.appendChild(listings);actions.appendChild(sell);if(mobile)actions.appendChild(mobile);if(theme)actions.appendChild(theme);
-
   var sub=document.createElement('div');sub.className='kg-v3-subbar';var si=document.createElement('div');si.className='kg-v3-subbar-inner';sub.appendChild(si);si.appendChild(nav);header.appendChild(sub);
   var mp=document.getElementById('kgMpListingsNav');if(mp)mp.style.display='none';
   return true;
 }
 
 var slides=[
-  {eyebrow:'ANINDA DEĞERLEME',title:'Telefonun Kaç Para Eder? <span>Güncel İkinci El Telefon Değerini Öğren</span>',text:'Telefon, tablet, bilgisayar, akıllı saat ve oyun konsolları için güncel piyasa verileriyle anında fiyat tahmini al.',primary:'Fiyatını Hesapla',secondary:'Ücretsiz İlan Ver',image:'/assets/categories/telefon.jpg',badge:'Üyeliksiz sorgulama',stat1:'Sonuç',stat2:'Anında tahmin'},
-  {eyebrow:'KAÇAGİDER PAZARYERİ',title:'Değerini öğren. <span>Doğru fiyata sat.</span>',text:'Cihazının güncel tahmini değerini öğren, ücretsiz ilanını oluştur ve alıcını bul.',primary:'Ücretsiz İlan Ver',secondary:'İlanları Gör',image:'/assets/categories/telefon.jpg',badge:'Ücretsiz ilan',stat1:'KaçaGider tahmini',stat2:'Bağımsız fiyat'},
-  {eyebrow:'ŞEFFAF KARŞILAŞTIRMA',title:'İlan fiyatını tahminle karşılaştır. <span>Güvenle karar ver.</span>',text:'Satıcının ilan fiyatını KaçaGider tahminiyle yan yana gör. Değerine yakın ilanları daha kolay fark et.',primary:'İlanları İncele',secondary:'Fiyatını Hesapla',image:'/assets/categories/tablet.jpg',badge:'Piyasa değerine yakın',stat1:'Karşılaştırma',stat2:'Tahmin + ilan fiyatı'}
+  {eyebrow:'GÜNCEL PİYASA DEĞERİ',title:'Telefonun Kaç Para Eder? <span>Güncel İkinci El Telefon Değerini Öğren</span>',text:'Telefon, tablet, bilgisayar, akıllı saat ve oyun konsolları için güncel piyasa verilerini değerlendirerek ortalama satış değerini öğren.',primary:'Piyasa Değerini Hesapla',secondary:'Ücretsiz İlan Ver',image:'/assets/categories/telefon.jpg',badge:'Üyeliksiz sorgulama',stat1:'Piyasa araştırması',stat2:'Ortalama satış değeri'},
+  {eyebrow:'KAÇAGİDER PAZARYERİ',title:'Değerini öğren. <span>Doğru fiyata sat.</span>',text:'Cihazının güncel piyasa değerini öğren, ücretsiz ilanını oluştur ve alıcını bul.',primary:'Ücretsiz İlan Ver',secondary:'İlanları Gör',image:'/assets/categories/telefon.jpg',badge:'Ücretsiz ilan',stat1:'KaçaGider piyasa değeri',stat2:'Bağımsız piyasa verisi'},
+  {eyebrow:'ŞEFFAF KARŞILAŞTIRMA',title:'İlan fiyatını piyasa değeriyle karşılaştır. <span>Güvenle karar ver.</span>',text:'Satıcının ilan fiyatını KaçaGider piyasa değeriyle yan yana gör. Değerine yakın ilanları daha kolay fark et.',primary:'İlanları İncele',secondary:'Piyasa Değerini Hesapla',image:'/assets/categories/tablet.jpg',badge:'Piyasa değerine yakın',stat1:'Karşılaştırma',stat2:'Piyasa değeri + ilan fiyatı'}
 ];
+
+function normalizeMarketLanguage(root){
+  root=root||document;
+  var replacements=[
+    ['KaçaGider tahmini değeri','KaçaGider piyasa değeri'],
+    ['KaçaGider tahmini','KaçaGider piyasa değeri'],
+    ['tahmini satış fiyatı','ortalama satış değeri'],
+    ['Tahmini satış fiyatı','Ortalama satış değeri'],
+    ['tahmini fiyat','ortalama satış değeri'],
+    ['Tahmini fiyat','Ortalama satış değeri'],
+    ['anında fiyat tahmini al','güncel piyasa değerini öğren'],
+    ['Anında fiyat tahmini al','Güncel piyasa değerini öğren'],
+    ['anında tahmin','sonucu saniyeler içinde gör'],
+    ['Anında tahmin','Sonucu saniyeler içinde gör'],
+    ['tahmini değer','piyasa değeri'],
+    ['Tahmini değer','Piyasa değeri'],
+    ['tahminle karşılaştır','piyasa değeriyle karşılaştır'],
+    ['Tahminle karşılaştır','Piyasa değeriyle karşılaştır'],
+    ['Tahmin + ilan fiyatı','Piyasa değeri + ilan fiyatı']
+  ];
+  var walker=document.createTreeWalker(root,NodeFilter.SHOW_TEXT);
+  var node;
+  while((node=walker.nextNode())){
+    var text=node.nodeValue;
+    if(!text||!text.trim())continue;
+    replacements.forEach(function(pair){text=text.split(pair[0]).join(pair[1]);});
+    node.nodeValue=text;
+  }
+}
 
 function installSlider(){
   if(location.pathname!=='/') return;
@@ -108,7 +129,6 @@ function installSlider(){
   var hero=home.querySelector(':scope > .kg-approved-hero,:scope > .hero');
   if(!hero)return;
   var existing=document.getElementById('kgV3Slider');if(existing)existing.remove();
-
   var root=document.createElement('section');root.id='kgV3Slider';root.setAttribute('aria-label','KaçaGider hizmetleri');
   var shell=document.createElement('div');shell.className='kg-v3-shell';root.appendChild(shell);
   slides.forEach(function(sl,i){
@@ -117,7 +137,8 @@ function installSlider(){
     var slot=art.querySelector('.kg-v3-title-slot');
     if(i===0){
       var h=hero.querySelector('h1');var p=hero.querySelector('p');
-      if(h)slot.appendChild(h);if(p)slot.appendChild(p);
+      if(h)slot.appendChild(h);
+      if(p){p.textContent=sl.text;slot.appendChild(p);}
     }else{
       slot.innerHTML='<h2>'+sl.title+'</h2><p>'+sl.text+'</p>';
     }
@@ -132,14 +153,20 @@ function installSlider(){
   var idx=0,timer;
   function show(n){idx=(n+slides.length)%slides.length;root.querySelectorAll('.kg-v3-slide').forEach(function(x,i){x.classList.toggle('active',i===idx);});root.querySelectorAll('.kg-v3-dot').forEach(function(x,i){x.classList.toggle('active',i===idx);});}
   function restart(){clearInterval(timer);timer=setInterval(function(){show(idx+1);},6000);}
-  root.querySelector('.prev').onclick=function(){show(idx-1);restart();};root.querySelector('.next').onclick=function(){show(idx+1);restart();};root.querySelectorAll('.kg-v3-dot').forEach(function(b){b.onclick=function(){show(Number(b.dataset.i));restart();};});restart();
+  root.querySelector('.prev').onclick=function(){show(idx-1);restart();};
+  root.querySelector('.next').onclick=function(){show(idx+1);restart();};
+  root.querySelectorAll('.kg-v3-dot').forEach(function(b){b.onclick=function(){show(Number(b.dataset.i));restart();};});
+  restart();
+  normalizeMarketLanguage(home);
 }
 
 function boot(){
   rebuildHeader();
   installSlider();
-  setTimeout(rebuildHeader,300);
-  setTimeout(rebuildHeader,900);
+  normalizeMarketLanguage(document);
+  setTimeout(function(){rebuildHeader();normalizeMarketLanguage(document);},300);
+  setTimeout(function(){rebuildHeader();normalizeMarketLanguage(document);},900);
 }
 if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',boot,{once:true});else boot();
+new MutationObserver(function(){normalizeMarketLanguage(document);}).observe(document.documentElement,{subtree:true,childList:true});
 })();
