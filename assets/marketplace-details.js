@@ -14,42 +14,41 @@ var GROUP_LABELS={
   backGlass:"Arka Cam Durumu"
 };
 
-/* Son onaylanan görünüm: kırmızı telefon, tek mor iPad, mor MacBook, tek Milanese saat, kutusuz PS5. */
+/* Son hedef görünüm: kırmızı telefon, tek mor iPad, mor MacBook, tek Milanese saat, kutusuz PS5. */
 var LATEST_CATEGORY_IMAGES={
-  phone:"https://www.smartmobsolution.com/wp-content/uploads/2023/08/Product-Red.jpg",
-  telefon:"https://www.smartmobsolution.com/wp-content/uploads/2023/08/Product-Red.jpg",
-  tablet:"https://uk.static.webuy.com/product_images/Computing/Apple%20iPad/SAPPA24362TBSPGWIFA_l.jpg",
-  computer:"https://estore.jawwal.ps/storage/product/4968/3CGHOZcn3BlG6UKhFZiabuRcN7q0nqCbpup4hVCs.jpg",
-  bilgisayar:"https://estore.jawwal.ps/storage/product/4968/3CGHOZcn3BlG6UKhFZiabuRcN7q0nqCbpup4hVCs.jpg",
-  watch:"https://www.suritt.com/cdn/shop/files/milanesasilvernueva.jpg",
-  "akilli-saat":"https://www.suritt.com/cdn/shop/files/milanesasilvernueva.jpg",
-  console:"/assets/categories/oyun-konsolu.jpg?v=20260824e",
-  "oyun-konsolu":"/assets/categories/oyun-konsolu.jpg?v=20260824e"
+  phone:"https://img.chilling.tw/images/Haley%20Ting/iphone-18-pro-dark-red-foldable-colors-a1~1.jpg",
+  telefon:"https://img.chilling.tw/images/Haley%20Ting/iphone-18-pro-dark-red-foldable-colors-a1~1.jpg",
+  tablet:"https://drpc.com.co/Tienda/upload/1722.jpg",
+  computer:"https://api.priceinkenya.com/media/130760/conversions/Apple-MacBook-Pro-2023-Series-original.webp",
+  bilgisayar:"https://api.priceinkenya.com/media/130760/conversions/Apple-MacBook-Pro-2023-Series-original.webp",
+  watch:"https://1801889e95b1f9bf.kinxzone.com/webfile/product/17/17892/r89g4co8s2w8.jpeg",
+  "akilli-saat":"https://1801889e95b1f9bf.kinxzone.com/webfile/product/17/17892/r89g4co8s2w8.jpeg",
+  console:"/assets/categories/oyun-konsolu.jpg?v=20260824f",
+  "oyun-konsolu":"/assets/categories/oyun-konsolu.jpg?v=20260824f"
 };
 
 var CATEGORY_FALLBACK_IMAGES={
   phone:"/assets/categories/latest/telefon-card.webp",
   telefon:"/assets/categories/latest/telefon-card.webp",
-  tablet:"/assets/categories/tablet.jpg",
-  computer:"/assets/categories/bilgisayar.jpg",
-  bilgisayar:"/assets/categories/bilgisayar.jpg",
-  watch:"/assets/categories/akilli-saat.jpg",
-  "akilli-saat":"/assets/categories/akilli-saat.jpg",
+  tablet:"https://uk.static.webuy.com/product_images/Computing/Apple%20iPad/SAPPA24362TBSPGWIFA_l.jpg",
+  computer:"https://estore.jawwal.ps/storage/product/4968/3CGHOZcn3BlG6UKhFZiabuRcN7q0nqCbpup4hVCs.jpg",
+  bilgisayar:"https://estore.jawwal.ps/storage/product/4968/3CGHOZcn3BlG6UKhFZiabuRcN7q0nqCbpup4hVCs.jpg",
+  watch:"https://www.suritt.com/cdn/shop/files/milanesasilvernueva.jpg",
+  "akilli-saat":"https://www.suritt.com/cdn/shop/files/milanesasilvernueva.jpg",
   console:"/assets/categories/oyun-konsolu.jpg",
   "oyun-konsolu":"/assets/categories/oyun-konsolu.jpg"
 };
 
-/* Kartların görsel alanındaki optik boyutları eşitlenmiştir. */
 var CATEGORY_SIZE={
-  phone:{w:"78%",h:"78%"},
-  telefon:{w:"78%",h:"78%"},
-  tablet:{w:"82%",h:"82%"},
-  computer:{w:"88%",h:"72%"},
-  bilgisayar:{w:"88%",h:"72%"},
-  watch:{w:"82%",h:"82%"},
-  "akilli-saat":{w:"82%",h:"82%"},
-  console:{w:"84%",h:"78%"},
-  "oyun-konsolu":{w:"84%",h:"78%"}
+  phone:{w:"84%",h:"84%"},
+  telefon:{w:"84%",h:"84%"},
+  tablet:{w:"86%",h:"86%"},
+  computer:{w:"92%",h:"76%"},
+  bilgisayar:{w:"92%",h:"76%"},
+  watch:{w:"84%",h:"84%"},
+  "akilli-saat":{w:"84%",h:"84%"},
+  console:{w:"86%",h:"82%"},
+  "oyun-konsolu":{w:"86%",h:"82%"}
 };
 
 var CATEGORY_ALT={
@@ -127,7 +126,7 @@ function installLatestCategoryImages(){
       var img=art&&art.querySelector('img');
       if(!art||!img) return;
       var src=LATEST_CATEGORY_IMAGES[key];
-      var size=CATEGORY_SIZE[key]||{w:"82%",h:"82%"};
+      var size=CATEGORY_SIZE[key]||{w:"84%",h:"84%"};
 
       art.style.setProperty('position','relative','important');
       art.style.setProperty('overflow','hidden','important');
@@ -135,6 +134,10 @@ function installLatestCategoryImages(){
       art.style.setProperty('align-items','center','important');
       art.style.setProperty('justify-content','center','important');
       art.style.setProperty('background','#fff','important');
+      art.style.setProperty('height','300px','important');
+      art.style.setProperty('min-height','300px','important');
+      art.style.setProperty('padding','58px 14px 12px','important');
+      art.style.setProperty('box-sizing','border-box','important');
 
       if(img.getAttribute('data-kg-direct-src')!==src){
         img.setAttribute('src',src);
