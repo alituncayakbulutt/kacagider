@@ -90,10 +90,11 @@ if 'Sitemap: https://kacagider.com.tr/sitemap.xml' not in robots:
 
 index = Path('index.html').read_text(encoding='utf-8')
 layout = Path('_layouts/seo.html').read_text(encoding='utf-8')
+stale_ga_id = 'G-' + '6L6B0DE3L6'
 for name, text in [('index.html', index), ('_layouts/seo.html', layout)]:
-    if 'G-078JHH25LH' in text:
+    if stale_ga_id in text:
         errors.append(f'{name}: stale GA4 measurement ID found')
-    if 'G-6L6B0DE3L6' not in text:
+    if 'G-078JHH25LH' not in text:
         errors.append(f'{name}: correct GA4 measurement ID missing')
     if 'data/phone-prices.js' not in text:
         errors.append(f'{name}: phone pricing script missing')
