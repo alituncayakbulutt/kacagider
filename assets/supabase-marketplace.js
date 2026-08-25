@@ -3,7 +3,7 @@
 
   const SUPABASE_URL="https://cfkrmzoghpoddkvzplyq.supabase.co";
   const SUPABASE_PUBLISHABLE_KEY="sb_publishable_6GWze78qYhMyZQaM05MElQ_HrAJDAxE";
-  const SDK_URL="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.min.js";
+  const SDK_URL="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2";
 
   const CATEGORY_LABELS={
     phone:"Telefon",
