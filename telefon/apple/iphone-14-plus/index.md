@@ -1,11 +1,11 @@
 ---
 layout: "seo"
 seo_title: "iPhone 14 Plus Kaça Satılır? 2026 İkinci El Fiyatı | KaçaGider"
-seo_description: "iPhone 14 Plus ne kadar eder, kaça satılır? Hafıza, pil sağlığı, ekran ve cihaz durumuna göre 2026 güncel tahmini ikinci el satış değerini ücretsiz hesapla."
+seo_description: "iPhone 14 Plus ne kadar eder, kaça satılır? Hafıza, pil sağlığı, ekran ve cihaz durumuna göre 2026 güncel ikinci el piyasa değerini ücretsiz hesapla."
 seo_h1: "iPhone 14 Plus Kaça Satılır? 2026 İkinci El Fiyatı"
-seo_intro: "iPhone 14 Plus ne kadar eder ve kaça satılır? Hafıza, pil sağlığı, ekran ve genel cihaz durumunu seçerek 2026 güncel tahmini ikinci el satış değerini KaçaGider ile ücretsiz öğrenebilirsiniz."
+seo_intro: "iPhone 14 Plus ne kadar eder ve kaça satılır? Hafıza, pil sağlığı, ekran ve genel cihaz durumunu seçerek 2026 güncel ikinci el piyasa değerini KaçaGider ile ücretsiz öğrenebilirsiniz."
 seo_context_heading: "iPhone 14 Plus ikinci el değeri nasıl hesaplanır?"
-seo_context: "iPhone 14 Plus ikinci el fiyatı belirlenirken hafıza, pil sağlığı, ekran ve genel cihaz durumu birlikte değerlendirilir. Cihazın kondisyonu ve çalışan özelliklerinin durumu tahmini satış değerini doğrudan etkiler. KaçaGider üzerinden bilgilerinizi seçerek 2026 için güncel tahmini ikinci el satış değerini görebilirsiniz."
+seo_context: "iPhone 14 Plus ikinci el fiyatı belirlenirken hafıza, pil sağlığı, ekran ve genel cihaz durumu birlikte değerlendirilir. Cihazın kondisyonu ve çalışan özelliklerinin durumu ortalama satış değerini doğrudan etkiler. KaçaGider üzerinden bilgilerinizi seçerek 2026 için güncel ikinci el piyasa değerini görebilirsiniz."
 seo_breadcrumbs: [{"label":"Ana Sayfa","url":"/"},{"label":"Telefon","url":"/telefon/"},{"label":"Apple","url":"/telefon/apple/"},{"label":"iPhone 14 Plus","url":"/telefon/apple/iphone-14-plus/"}]
 seo_links: [{"label":"128 GB","url":"/telefon/apple/iphone-14-plus/128gb/"},{"label":"256 GB","url":"/telefon/apple/iphone-14-plus/256gb/"},{"label":"512 GB","url":"/telefon/apple/iphone-14-plus/512gb/"}]
 seo_links_heading: "iPhone 14 Plus seçenekleri"

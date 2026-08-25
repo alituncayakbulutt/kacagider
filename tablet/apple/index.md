@@ -3,7 +3,7 @@ layout: "seo"
 seo_title: "iPad İkinci El Fiyatları 2026 | KaçaGider"
 seo_description: "iPad ikinci el fiyatlarını karşılaştırın. iPad, iPad mini, iPad Air ve iPad Pro modellerinin güncel ikinci el değerini KaçaGider ile öğrenin."
 seo_h1: "iPad İkinci El Fiyatları ve Tablet Değeri"
-seo_intro: "iPad'iniz ne kadar eder? Model, depolama kapasitesi ve cihaz durumuna göre Apple iPad'inizin tahmini ikinci el değerini KaçaGider ile öğrenin."
+seo_intro: "iPad'iniz ne kadar eder? Model, depolama kapasitesi ve cihaz durumuna göre Apple iPad'inizin ikinci el piyasa değerini KaçaGider ile öğrenin."
 seo_context_heading: "iPad ikinci el değeri nasıl belirlenir?"
 seo_context: "iPad ikinci el fiyatı; model, depolama kapasitesi, ekran ve kasa durumu, pil performansı, bağlantı tipi ve cihazın onarım geçmişine göre değişir. Aşağıdan iPad modelinizi seçerek tabletinizi yaklaşık kaça satabileceğinizi hesaplayabilirsiniz."
 seo_breadcrumbs: [{"label":"Ana Sayfa","url":"/"},{"label":"Tablet","url":"/tablet/"},{"label":"Apple","url":"/tablet/apple/"}]

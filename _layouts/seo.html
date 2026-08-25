@@ -86,11 +86,13 @@ try{
 {
   "@context": "https://schema.org",
   "@type": "WebSite",
+  "@id": "https://kacagider.com.tr/#website",
   "name": "KaçaGider",
   "alternateName": "KaçaGider.com.tr",
   "url": "https://kacagider.com.tr/",
   "inLanguage": "tr-TR",
-  "description": "İkinci el telefon ve elektronik ürünler için tahmini piyasa değeri hesaplama platformu."
+  "description": "Telefon, tablet, bilgisayar, akıllı saat ve oyun konsolları için güncel ikinci el piyasa değeri ve satış kararı platformu.",
+  "publisher": {"@id":"https://kacagider.com.tr/#organization"}
 }
 </script>
 <script type="application/ld+json">
@@ -102,7 +104,8 @@ try{
   "applicationCategory": "UtilitiesApplication",
   "operatingSystem": "Web",
   "inLanguage": "tr-TR",
-  "description": "Kullanıcının ürün, model, hafıza ve kondisyon bilgilerine göre ikinci el piyasa değeri tahmini sunan web uygulaması."
+  "description": "Kullanıcının ürün, model, kapasite ve kondisyon bilgilerini güncel piyasa verileriyle değerlendirerek ikinci el piyasa değerini anlamasına yardımcı olan web uygulaması.",
+  "provider": {"@id":"https://kacagider.com.tr/#organization"}
 }
 </script>
 
@@ -1926,7 +1929,32 @@ html[data-theme="dark"] .kg-main-nav a:not(.active):hover{color:#d9fbe6!importan
 
 
 {% if page.seo_breadcrumbs %}<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{% for crumb in page.seo_breadcrumbs %}{"@type":"ListItem","position":{{ forloop.index }},"name":{{ crumb.label | jsonify }},"item":"https://kacagider.com.tr{{ crumb.url }}"}{% unless forloop.last %},{% endunless %}{% endfor %}]}</script>{% endif %}
-{% if page.seo_faqs %}<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{% for faq in page.seo_faqs %}{"@type":"Question","name":{{ faq.question | jsonify }},"acceptedAnswer":{"@type":"Answer","text":{{ faq.answer | jsonify }}}}{% unless forloop.last %},{% endunless %}{% endfor %}]}</script>{% endif %}
+
+<script type="application/ld+json" id="kg-organization-schema">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "@id": "https://kacagider.com.tr/#organization",
+  "name": "KaçaGider",
+  "alternateName": "KaçaGider.com.tr",
+  "url": "https://kacagider.com.tr/",
+  "email": "info@kacagider.com.tr"
+}
+</script>
+<script type="application/ld+json" id="kg-webpage-schema">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "@id": "{{ page.seo_canonical }}#webpage",
+  "url": "{{ page.seo_canonical }}",
+  "name": {{ page.seo_title | jsonify }},
+  "description": {{ page.seo_description | jsonify }},
+  "inLanguage": "tr-TR",
+  "isPartOf": {"@id":"https://kacagider.com.tr/#website"},
+  "about": {"@id":"https://kacagider.com.tr/#organization"}
+}
+</script>
+
 </head>
 <body class="fresh-start">
 
@@ -2124,7 +2152,7 @@ html[data-theme="dark"] .kg-main-nav a:not(.active):hover{color:#d9fbe6!importan
 
     <aside class="side">
       <div class="price-card">
-        <div class="price-label">Tahmini Satış Fiyatınız</div>
+        <div class="price-label">KaçaGider Piyasa Değeriniz</div>
         <div class="price-kicker">Piyasa değeri</div>
         <div class="price-kicker" id="deviceRegistrationResult" style="display:none"></div>
         <div class="big-price" id="mainPrice">— TL</div>
@@ -2195,11 +2223,11 @@ html[data-theme="dark"] .kg-main-nav a:not(.active):hover{color:#d9fbe6!importan
       <p>KaçaGider hakkında merak ettiğiniz soruların cevaplarını burada bulabilirsiniz.</p>
     </div>
     <div class="kg-faq-list">
-      <article class="kg-faq-item"><button class="kg-faq-question" type="button" aria-expanded="false"><span>KaçaGider nedir?</span><span class="kg-faq-icon">+</span></button><div class="kg-faq-answer">KaçaGider; telefon, tablet, bilgisayar, akıllı saat ve oyun konsolu gibi teknolojik cihazların güncel piyasa değerini tahmin etmenize yardımcı olan bir fiyat değerlendirme platformudur.</div></article>
-      <article class="kg-faq-item"><button class="kg-faq-question" type="button" aria-expanded="false"><span>Cihazımın fiyatı nasıl hesaplanıyor?</span><span class="kg-faq-icon">+</span></button><div class="kg-faq-answer">Cihazın marka, model, teknik özellik, kondisyon ve kullanıcı tarafından verilen diğer bilgiler dikkate alınarak tahmini piyasa değeri oluşturulur.</div></article>
-      <article class="kg-faq-item"><button class="kg-faq-question" type="button" aria-expanded="false"><span>Gösterilen fiyat kesin satış fiyatı mı?</span><span class="kg-faq-icon">+</span></button><div class="kg-faq-answer">Hayır. Gösterilen değer tahmini piyasa fiyatıdır. Cihazın fiziksel durumu, aksesuarları, garanti durumu ve piyasa koşullarına göre gerçek satış fiyatı değişebilir.</div></article>
+      <article class="kg-faq-item"><button class="kg-faq-question" type="button" aria-expanded="false"><span>KaçaGider nedir?</span><span class="kg-faq-icon">+</span></button><div class="kg-faq-answer">KaçaGider; telefon, tablet, bilgisayar, akıllı saat ve oyun konsolu gibi teknolojik cihazların güncel piyasa değerini değerlendirmenize yardımcı olan bir fiyat değerlendirme platformudur.</div></article>
+      <article class="kg-faq-item"><button class="kg-faq-question" type="button" aria-expanded="false"><span>Cihazımın fiyatı nasıl hesaplanıyor?</span><span class="kg-faq-icon">+</span></button><div class="kg-faq-answer">Cihazın marka, model, teknik özellik, kondisyon ve kullanıcı tarafından verilen diğer bilgiler dikkate alınarak güncel piyasa değeri oluşturulur.</div></article>
+      <article class="kg-faq-item"><button class="kg-faq-question" type="button" aria-expanded="false"><span>Gösterilen fiyat kesin satış fiyatı mı?</span><span class="kg-faq-icon">+</span></button><div class="kg-faq-answer">Hayır. Gösterilen değer güncel piyasa verilerine dayanan bir piyasa değeri göstergesidir. Cihazın fiziksel durumu, aksesuarları, garanti durumu ve piyasa koşullarına göre gerçek satış fiyatı değişebilir.</div></article>
       <article class="kg-faq-item"><button class="kg-faq-question" type="button" aria-expanded="false"><span>KaçaGider cihaz satın alıyor mu?</span><span class="kg-faq-icon">+</span></button><div class="kg-faq-answer">Şu anki sistemin amacı cihazınızın tahmini değerini öğrenmenizi sağlamaktır. Doğrudan satın alma hizmeti sunulmamaktadır.</div></article>
-      <article class="kg-faq-item"><button class="kg-faq-question" type="button" aria-expanded="false"><span>Hangi cihazların fiyatını öğrenebilirim?</span><span class="kg-faq-icon">+</span></button><div class="kg-faq-answer">Telefon, tablet, bilgisayar, akıllı saat ve oyun konsolu kategorilerindeki desteklenen marka ve modellerin tahmini değerini öğrenebilirsiniz.</div></article>
+      <article class="kg-faq-item"><button class="kg-faq-question" type="button" aria-expanded="false"><span>Hangi cihazların fiyatını öğrenebilirim?</span><span class="kg-faq-icon">+</span></button><div class="kg-faq-answer">Telefon, tablet, bilgisayar, akıllı saat ve oyun konsolu kategorilerindeki desteklenen marka ve modellerin güncel piyasa değerini öğrenebilirsiniz.</div></article>
       <article class="kg-faq-item"><button class="kg-faq-question" type="button" aria-expanded="false"><span>Değerleme yapmak ücretli mi?</span><span class="kg-faq-icon">+</span></button><div class="kg-faq-answer">KaçaGider üzerinden cihaz değerleme işlemi ücretsizdir.</div></article>
       <article class="kg-faq-item"><button class="kg-faq-question" type="button" aria-expanded="false"><span>Verdiğim bilgiler saklanıyor mu?</span><span class="kg-faq-icon">+</span></button><div class="kg-faq-answer">Değerleme için girilen cihaz bilgileri yalnızca gerekli işlemler kapsamında kullanılmalıdır. Kullanıcıdan gereksiz kişisel bilgi talep edilmez.</div></article>
       <article class="kg-faq-item"><button class="kg-faq-question" type="button" aria-expanded="false"><span>Fiyatlar ne kadar güncel?</span><span class="kg-faq-icon">+</span></button><div class="kg-faq-answer">Değerleme sonuçları mümkün olan en güncel piyasa verilerine göre tahmin edilmeyi amaçlar. Piyasa koşullarına bağlı olarak fiyatlar zaman içerisinde değişebilir.</div></article>
@@ -2235,7 +2263,7 @@ html[data-theme="dark"] .kg-main-nav a:not(.active):hover{color:#d9fbe6!importan
   <div class="view-shell">
     <div class="view-header">
       <h2 class="view-heading">KaçaGider.com.tr nasıl çalışır?</h2>
-      <p>Ürününün özelliklerini ve kondisyonunu gir; KaçaGider.com.tr mevcut piyasa kayıtlarını ve güvenilir kullanıcı satış sinyallerini değerlendirerek tahmini piyasa değerini hesaplasın.</p>
+      <p>Ürününün özelliklerini ve kondisyonunu gir; KaçaGider.com.tr mevcut piyasa kayıtlarını ve güvenilir kullanıcı satış sinyallerini değerlendirerek güncel piyasa değerini hesaplasın.</p>
     </div>
     <div class="standalone-card">
       <div class="how-grid">
@@ -2277,7 +2305,7 @@ html[data-theme="dark"] .kg-main-nav a:not(.active):hover{color:#d9fbe6!importan
         <div class="icon">📊</div>
         <small>Yaklaşımımız</small>
         <strong>Gerçek satış verileri</strong>
-        <p>Piyasa kayıtlarını ve doğrulanmış kullanıcı satışlarını bir araya getirerek fiyat tahminlerini zaman içinde daha güçlü hale getirmek.</p>
+        <p>Piyasa kayıtlarını ve doğrulanmış kullanıcı satışlarını bir araya getirerek piyasa değeri hesaplamalarını zaman içinde daha güçlü hale getirmek.</p>
       </div>
     </div>
 
@@ -3106,7 +3134,7 @@ function refreshStandaloneSell(){
       summary.innerHTML=
         "📱 "+CURRENT_BRAND+" "+CURRENT_MODEL+" • "+
         CURRENT_STORAGE+" GB"+
-        " &nbsp;•&nbsp; KaçaGider tahmini: <strong>"+
+        " &nbsp;•&nbsp; KaçaGider piyasa değeri: <strong>"+
         tl(CURRENT_MARKET_PRICE)+"</strong>";
     }
   }else{

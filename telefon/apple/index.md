@@ -3,7 +3,7 @@ layout: "seo"
 seo_title: "iPhone Ne Kadar Eder? 2026 İkinci El Fiyatları | KaçaGider"
 seo_description: "iPhone ne kadar eder, kaça satılır? Model, hafıza, pil sağlığı ve cihaz durumuna göre 2026 güncel ikinci el iPhone değerini KaçaGider ile ücretsiz hesapla."
 seo_h1: "iPhone Ne Kadar Eder? 2026 İkinci El Fiyatları"
-seo_intro: "iPhone ne kadar eder veya kaça satılır diye merak ediyorsanız modelinizi seçin. Hafıza, pil sağlığı ve cihaz durumuna göre 2026 güncel tahmini ikinci el değerini ücretsiz hesaplayabilirsiniz."
+seo_intro: "iPhone ne kadar eder veya kaça satılır diye merak ediyorsanız modelinizi seçin. Hafıza, pil sağlığı ve cihaz durumuna göre 2026 güncel ikinci el piyasa değerini ücretsiz hesaplayabilirsiniz."
 seo_context_heading: "iPhone ikinci el değeri nasıl belirlenir?"
 seo_context: "iPhone ikinci el fiyatı; model, depolama kapasitesi, pil sağlığı, ekran ve kasa durumu, Face ID veya Touch ID çalışması ve cihazın onarım geçmişine göre değişir. Aşağıdan iPhone modelinizi seçerek cihazınızın güncel piyasa değerini öğrenebilir ve telefonunuzu yaklaşık kaça satabileceğinizi hesaplayabilirsiniz."
 seo_breadcrumbs: [{"label":"Ana Sayfa","url":"/"},{"label":"Telefon","url":"/telefon/"},{"label":"Apple","url":"/telefon/apple/"}]

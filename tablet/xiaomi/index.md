@@ -3,7 +3,7 @@ layout: "seo"
 seo_title: "Xiaomi Pad İkinci El Fiyatları 2026 | KaçaGider"
 seo_description: "Xiaomi Pad, Redmi Pad ve POCO Pad ikinci el fiyatlarını karşılaştırın; tabletinizin güncel ikinci el değerini KaçaGider ile öğrenin."
 seo_h1: "Xiaomi, Redmi ve POCO Tablet İkinci El Fiyatları"
-seo_intro: "Xiaomi tabletiniz ne kadar eder? Xiaomi Pad, Redmi Pad veya POCO Pad modelinizi seçerek tahmini ikinci el değerini öğrenin."
+seo_intro: "Xiaomi tabletiniz ne kadar eder? Xiaomi Pad, Redmi Pad veya POCO Pad modelinizi seçerek ikinci el piyasa değerini öğrenin."
 seo_context_heading: "Xiaomi tablet ikinci el değeri nasıl belirlenir?"
 seo_context: "Xiaomi, Redmi ve POCO tabletlerde ikinci el değer; model, kapasite, ekran ve kasa durumu, pil performansı ve onarım geçmişine göre değişir. Modelinizi seçerek yaklaşık satış değerini hesaplayabilirsiniz."
 seo_breadcrumbs: [{"label":"Ana Sayfa","url":"/"},{"label":"Tablet","url":"/tablet/"},{"label":"Xiaomi","url":"/tablet/xiaomi/"}]

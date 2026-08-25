@@ -3,7 +3,7 @@ layout: "seo"
 seo_title: "PlayStation İkinci El Fiyatları ve PS5 Değeri 2026 | KaçaGider"
 seo_description: "PS5 ve PS4 ikinci el fiyatlarını inceleyin. PlayStation'ım ne kadar eder, kaça satılır ve güncel ikinci el değeri nedir KaçaGider ile öğrenin."
 seo_h1: "PlayStation İkinci El Fiyatları"
-seo_intro: "PlayStation konsolunuz ne kadar eder? PS5, PS5 Slim, PS5 Pro ve PS4 modellerinin tahmini ikinci el değerini cihaz durumuna göre KaçaGider ile hesaplayın."
+seo_intro: "PlayStation konsolunuz ne kadar eder? PS5, PS5 Slim, PS5 Pro ve PS4 modellerinin ikinci el piyasa değerini cihaz durumuna göre KaçaGider ile hesaplayın."
 seo_context_heading: "PS5 ve PlayStation ikinci el değeri nasıl belirlenir?"
 seo_context: "PlayStation ikinci el fiyatı; konsol modeli, depolama kapasitesi, diskli veya dijital sürüm olması, cihaz ve kontrolcü kondisyonu ile güncel ikinci el piyasasına göre değişir. Aşağıdan modelinizi seçerek konsolunuzun tahmini değerini görebilirsiniz."
 seo_breadcrumbs: [{"label":"Ana Sayfa","url":"/"},{"label":"Oyun Konsolu","url":"/oyun-konsolu/"},{"label":"PlayStation","url":"/oyun-konsolu/playstation/"}]

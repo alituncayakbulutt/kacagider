@@ -1,11 +1,11 @@
 ---
 layout: "seo"
 seo_title: "X7 Kaça Satılır? 2026 İkinci El Fiyatı | KaçaGider"
-seo_description: "X7 ikinci el fiyatı Türkiye 2026: hafıza, ekran, batarya ve cihaz durumu dikkate alınarak güncel tahmini satış değerini KaçaGider ile ücretsiz hesapla."
+seo_description: "X7 ikinci el fiyatı Türkiye 2026: hafıza, ekran, batarya ve cihaz durumu dikkate alınarak güncel ortalama satış değerini KaçaGider ile ücretsiz hesapla."
 seo_h1: "X7 Kaça Satılır? 2026 İkinci El Fiyatı"
-seo_intro: "X7 ikinci el fiyatı Türkiye 2026 ne kadar? Hafıza, ekran, batarya ve cihaz durumu birlikte değerlendirilir. Cihaz bilgilerini seçerek güncel tahmini satış değerini KaçaGider ile ücretsiz öğrenebilirsiniz."
+seo_intro: "X7 ikinci el fiyatı Türkiye 2026 ne kadar? Hafıza, ekran, batarya ve cihaz durumu birlikte değerlendirilir. Cihaz bilgilerini seçerek güncel ortalama satış değerini KaçaGider ile ücretsiz öğrenebilirsiniz."
 seo_context_heading: "X7 ikinci el değeri nasıl hesaplanır?"
-seo_context: "X7 ikinci el fiyatı belirlenirken hafıza, ekran, batarya, kamera ve cihaz durumu birlikte değerlendirilir. Cihazın kondisyonu ve çalışan özelliklerinin durumu tahmini satış değerini doğrudan etkiler. KaçaGider üzerinden bilgilerinizi seçerek 2026 için güncel tahmini ikinci el satış değerini görebilirsiniz."
+seo_context: "X7 ikinci el fiyatı belirlenirken hafıza, ekran, batarya, kamera ve cihaz durumu birlikte değerlendirilir. Cihazın kondisyonu ve çalışan özelliklerinin durumu ortalama satış değerini doğrudan etkiler. KaçaGider üzerinden bilgilerinizi seçerek 2026 için güncel ikinci el piyasa değerini görebilirsiniz."
 seo_breadcrumbs: [{"label":"Ana Sayfa","url":"/"},{"label":"Telefon","url":"/telefon/"},{"label":"Honor","url":"/telefon/honor/"},{"label":"X7","url":"/telefon/honor/x7/"}]
 seo_links: [{"label":"128 GB","url":"/telefon/honor/x7/128gb/"}]
 seo_links_heading: "X7 seçenekleri"

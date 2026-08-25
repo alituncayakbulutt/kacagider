@@ -3,7 +3,7 @@ layout: "seo"
 seo_title: "MacBook İkinci El Fiyatları 2026 | KaçaGider"
 seo_description: "MacBook Air ve MacBook Pro ikinci el fiyatlarını karşılaştırın. M1, M2, M3 ve M4 MacBook modellerinin güncel ikinci el değerini KaçaGider ile öğrenin."
 seo_h1: "MacBook İkinci El Fiyatları ve Laptop Değeri"
-seo_intro: "MacBook'unuz ne kadar eder? MacBook Air veya Pro modelinizi ve cihaz durumunu seçerek tahmini ikinci el değerini KaçaGider ile öğrenin."
+seo_intro: "MacBook'unuz ne kadar eder? MacBook Air veya Pro modelinizi ve cihaz durumunu seçerek ikinci el piyasa değerini KaçaGider ile öğrenin."
 seo_context_heading: "MacBook ikinci el değeri nasıl belirlenir?"
 seo_context: "MacBook ikinci el fiyatı; model, işlemci, RAM, depolama, pil durumu, ekran ve kasa kondisyonu ile onarım geçmişine göre değişir. Modelinizi seçerek bilgisayarınızı yaklaşık kaça satabileceğinizi hesaplayabilirsiniz."
 seo_breadcrumbs: [{"label":"Ana Sayfa","url":"/"},{"label":"Bilgisayar","url":"/bilgisayar/"},{"label":"Apple","url":"/bilgisayar/apple/"}]

@@ -1,9 +1,9 @@
 ---
 layout: "seo"
 seo_title: "Samsung Telefon Ne Kadar Eder? 2026 İkinci El Fiyatları | KaçaGider"
-seo_description: "Samsung telefon ne kadar eder, kaça satılır? Galaxy modelini ve cihaz durumunu seç; 2026 güncel tahmini ikinci el satış değerini KaçaGider ile ücretsiz hesapla."
+seo_description: "Samsung telefon ne kadar eder, kaça satılır? Galaxy modelini ve cihaz durumunu seç; 2026 güncel ikinci el piyasa değerini KaçaGider ile ücretsiz hesapla."
 seo_h1: "Samsung Telefon Ne Kadar Eder? 2026 İkinci El Fiyatları"
-seo_intro: "Samsung telefonunuz ne kadar eder veya kaça satılır? Galaxy modelinizi seçerek cihaz durumuna göre 2026 güncel tahmini ikinci el satış değerini ücretsiz hesaplayabilirsiniz."
+seo_intro: "Samsung telefonunuz ne kadar eder veya kaça satılır? Galaxy modelinizi seçerek cihaz durumuna göre 2026 güncel ikinci el piyasa değerini ücretsiz hesaplayabilirsiniz."
 seo_context_heading: "Samsung telefon ikinci el değeri nasıl belirlenir?"
 seo_context: "Samsung telefonların ikinci el fiyatı; model, depolama kapasitesi, ekran ve kasa durumu, batarya performansı, kamera, şarj ve diğer teknik özelliklerin çalışmasına göre değişir. Aşağıdan Galaxy modelinizi seçerek telefonunuzun güncel piyasa değerini öğrenebilir ve yaklaşık satış değerini hesaplayabilirsiniz."
 seo_breadcrumbs: [{"label":"Ana Sayfa","url":"/"},{"label":"Telefon","url":"/telefon/"},{"label":"Samsung","url":"/telefon/samsung/"}]
