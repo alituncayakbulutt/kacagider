@@ -4,6 +4,7 @@
   const SUPABASE_URL="https://cfkrmzoghpoddkvzplyq.supabase.co";
   const SUPABASE_PUBLISHABLE_KEY="sb_publishable_6GWze78qYhMyZQaM05MElQ_HrAJDAxE";
   const SDK_URL="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2";
+  const BUCKET="listing-images";
 
   const CATEGORY_LABELS={
     phone:"Telefon",
@@ -106,7 +107,6 @@
     const user=await getUser();
     if(!user) throw new Error("İlan yayınlamak için giriş yapmalısın.");
 
-    const now=new Date().toISOString();
     const payload={
       user_id:user.id,
       category:categoryKey(input.category),
@@ -122,8 +122,8 @@
       details:Array.isArray(input.details)?input.details:[],
       seller_name:String(user.user_metadata&&user.user_metadata.full_name||"").trim()||null,
       contact_phone:String(input.contactPhone||"").trim()||null,
-      status:"published",
-      published_at:now
+      status:"draft",
+      published_at:null
     };
 
     if(!payload.brand||!payload.model) throw new Error("Marka ve model bilgisi eksik.");
@@ -136,6 +136,7 @@
       .single();
     if(listingError) throw listingError;
 
+    const uploadedPaths=[];
     const photoRows=[];
     const photos=Array.isArray(input.photos)?input.photos.slice(0,5):[];
     try{
@@ -144,9 +145,10 @@
         const safeExt=file.name.split(".").pop()||"jpg";
         const objectPath=`${user.id}/${listing.id}/${Date.now()}-${i}.${safeExt}`;
         const {error:uploadError}=await client.storage
-          .from("listing-images")
+          .from(BUCKET)
           .upload(objectPath,file,{cacheControl:"3600",upsert:false,contentType:file.type});
         if(uploadError) throw uploadError;
+        uploadedPaths.push(objectPath);
         photoRows.push({
           listing_id:listing.id,
           user_id:user.id,
@@ -155,24 +157,34 @@
           alt_text:[payload.brand,payload.model,payload.color].filter(Boolean).join(" ")
         });
       }
+
       if(photoRows.length){
         const {error:photoError}=await client.from("listing_photos").insert(photoRows);
         if(photoError) throw photoError;
       }
+
+      const publishedAt=new Date().toISOString();
+      const {data:published,error:publishError}=await client
+        .from("listings")
+        .update({status:"published",published_at:publishedAt})
+        .eq("id",listing.id)
+        .eq("user_id",user.id)
+        .select("*")
+        .single();
+      if(publishError) throw publishError;
+      return published;
     }catch(error){
-      await client.from("listings").delete().eq("id",listing.id);
-      for(const row of photoRows){
-        try{await client.storage.from("listing-images").remove([row.object_path]);}catch(_e){}
+      if(uploadedPaths.length){
+        try{await client.storage.from(BUCKET).remove(uploadedPaths);}catch(_e){}
       }
+      try{await client.from("listings").delete().eq("id",listing.id).eq("user_id",user.id);}catch(_e){}
       throw error;
     }
-
-    return listing;
   }
 
   function publicPhotoUrl(client,path){
     if(!path) return "";
-    const {data}=client.storage.from("listing-images").getPublicUrl(path);
+    const {data}=client.storage.from(BUCKET).getPublicUrl(path);
     return data&&data.publicUrl?data.publicUrl:"";
   }
 
