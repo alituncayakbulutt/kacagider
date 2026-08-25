@@ -51,6 +51,39 @@
 
   const DATA={Apple:APPLE};
 
+  const CATEGORY_IMAGES={
+    "Telefon":"/assets/marketplace/icons/telefon.svg",
+    "Tablet":"/assets/marketplace/icons/tablet.svg",
+    "Bilgisayar":"/assets/marketplace/icons/bilgisayar.svg",
+    "Akıllı Saat":"/assets/marketplace/icons/akilli-saat.svg",
+    "Oyun Konsolu":"/assets/marketplace/icons/oyun-konsolu.svg"
+  };
+
+  const VERIFIED_MODEL_COLORS={
+    Samsung:{
+      "Galaxy S20":["Kozmik Gri","Bulut Mavisi","Bulut Pembesi"],
+      "Galaxy S20+":["Kozmik Siyah","Kozmik Gri","Bulut Mavisi"],
+      "Galaxy S20 Ultra":["Kozmik Siyah","Kozmik Gri"]
+    },
+    Xiaomi:{
+      "Xiaomi 12 Lite":["Siyah","Lite Yeşil","Lite Pembe"]
+    }
+  };
+
+  const BRAND_COLORS={
+    Apple:["Siyah","Beyaz","Gri","Gümüş","Mavi","Yeşil","Mor","Pembe","Kırmızı","Sarı","Altın","Diğer"],
+    Samsung:["Siyah","Beyaz","Gri","Gümüş","Mavi","Yeşil","Mor","Pembe","Kırmızı","Altın","Diğer"],
+    Xiaomi:["Siyah","Beyaz","Gri","Gümüş","Mavi","Yeşil","Mor","Pembe","Altın","Diğer"],
+    Oppo:["Siyah","Beyaz","Gri","Gümüş","Mavi","Yeşil","Mor","Pembe","Altın","Diğer"],
+    Vivo:["Siyah","Beyaz","Gri","Gümüş","Mavi","Yeşil","Mor","Pembe","Altın","Diğer"],
+    Huawei:["Siyah","Beyaz","Gri","Gümüş","Mavi","Yeşil","Mor","Pembe","Altın","Diğer"],
+    Honor:["Siyah","Beyaz","Gri","Gümüş","Mavi","Yeşil","Mor","Pembe","Altın","Diğer"],
+    Realme:["Siyah","Beyaz","Gri","Gümüş","Mavi","Yeşil","Mor","Sarı","Altın","Diğer"],
+    OnePlus:["Siyah","Beyaz","Gri","Gümüş","Mavi","Yeşil","Kırmızı","Altın","Diğer"],
+    Google:["Siyah","Beyaz","Gri","Mavi","Yeşil","Pembe","Diğer"]
+  };
+  const GENERIC_COLORS=["Siyah","Beyaz","Gri","Gümüş","Mavi","Yeşil","Mor","Pembe","Kırmızı","Sarı","Altın","Kahverengi","Diğer"];
+
   const COLOR_ALIASES={
     "space gray":"Gri","space grey":"Gri","uzay grisi":"Gri","grafit":"Gri","graphite":"Gri",
     "silver":"Gümüş","gumus":"Gümüş","gümüş":"Gümüş",
@@ -81,11 +114,18 @@
     return modelData[color]||"";
   }
 
+  function getCategoryImage(category){
+    return CATEGORY_IMAGES[String(category||"").trim()]||"";
+  }
+
   function getModelColors(brand,model){
     brand=String(brand||"").trim();
     model=String(model||"").trim();
     const modelData=DATA[brand]&&DATA[brand][model];
-    return modelData ? Object.keys(modelData) : [];
+    if(modelData) return Object.keys(modelData);
+    const verified=VERIFIED_MODEL_COLORS[brand]&&VERIFIED_MODEL_COLORS[brand][model];
+    if(verified) return verified.slice();
+    return (BRAND_COLORS[brand]||GENERIC_COLORS).slice();
   }
 
   function selectedText(id){
@@ -105,12 +145,21 @@
   }
 
   function syncListingColorSelect(){
-    const select=document.getElementById("kgColor");
+    let select=document.getElementById("kgColor")||document.getElementById("kgMpColor");
     if(!select||select.dataset.kgRealColors==="1") return;
     const info=currentBrandModel();
     const colors=getModelColors(info.brand,info.model);
     if(!colors.length) return;
     const current=String(select.value||"").trim();
+    if(select.tagName!=="SELECT"){
+      const replacement=document.createElement("select");
+      replacement.id=select.id;
+      replacement.name=select.name||"color";
+      replacement.required=select.required;
+      replacement.className=select.className;
+      select.replaceWith(replacement);
+      select=replacement;
+    }
     select.innerHTML='<option value="">Renk seçiniz</option>'+colors.map(function(color){return '<option value="'+color+'">'+color+'</option>';}).join('');
     if(colors.indexOf(current)!==-1) select.value=current;
     select.dataset.kgRealColors="1";
@@ -119,16 +168,10 @@
       const note=document.createElement("small");
       note.className="kg-real-color-note";
       note.style.color="#667085";
-      note.textContent="Bu model için yalnızca gerçek üretim renkleri gösterilir.";
+      const exact=Boolean((DATA[info.brand]&&DATA[info.brand][info.model])||(VERIFIED_MODEL_COLORS[info.brand]&&VERIFIED_MODEL_COLORS[info.brand][info.model]));
+      note.textContent=exact?"Bu model için doğrulanmış üretim renkleri gösterilir.":"Bu marka için yaygın ürün renkleri gösterilir.";
       field.appendChild(note);
     }
-  }
-
-  if(document && document.head && !document.getElementById("kg-model-image-sizing")){
-    const style=document.createElement("style");
-    style.id="kg-model-image-sizing";
-    style.textContent=".card{background:#070a0f!important;border-color:#202938!important;box-shadow:0 12px 30px rgba(7,10,15,.16)!important}.card:hover{border-color:#344054!important;box-shadow:0 16px 38px rgba(7,10,15,.24)!important}.card .body{background:#070a0f!important}.card .title,.card .asking{color:#f8fafc!important}.card .meta,.card .loc,.card .estimate span{color:#98a2b3!important}.card .estimate{border-top-color:#263244!important}.card .estimate strong{color:#22c55e!important}.card .chip{color:#d0d5dd!important;background:#111827!important;border-color:#2b3545!important}.card .detail{background:#111827!important;border:1px solid #2b3545!important}.card .detail:hover{background:#182235!important}.visual{height:300px!important;overflow:hidden!important;background:#090d13!important}.visual img.model-image{width:96%!important;height:96%!important;max-width:none!important;max-height:none!important;object-fit:contain!important;object-position:center center!important;padding:0!important;margin:auto!important;transform:none!important;background:#090d13!important}.placeholder{background:#090d13!important;color:#e5e7eb!important}@media(max-width:540px){.visual{height:315px!important}.visual img.model-image{width:95%!important;height:95%!important}}";
-    document.head.appendChild(style);
   }
 
   if(document){
@@ -140,12 +183,5 @@
   global.KG_MODEL_IMAGE_DATA=DATA;
   global.getKgModelImage=getModelImage;
   global.getKgModelColors=getModelColors;
-
-  if(window.location.pathname==="/" && !document.getElementById("kgHeroSliderSyncScript")){
-    const sync=document.createElement("script");
-    sync.id="kgHeroSliderSyncScript";
-    sync.src="/assets/marketplace-hero-slider-sync.js?v=1";
-    sync.defer=true;
-    document.head.appendChild(sync);
-  }
+  global.getKgCategoryImage=getCategoryImage;
 })(window);
