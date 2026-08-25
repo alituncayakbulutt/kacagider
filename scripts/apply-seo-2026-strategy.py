@@ -47,6 +47,38 @@ index = replace_if_present(
     "Telefon, tablet, bilgisayar, akıllı saat ve oyun konsolları için güncel piyasa verileriyle anında fiyat tahmini al.",
     "Telefon, tablet, bilgisayar, akıllı saat ve oyun konsolları için güncel piyasa verilerini değerlendir; cihazının ikinci el piyasa değerini öğren.",
 )
+
+# Stable entity IDs help Google connect the brand, website and application.
+index = index.replace(
+    '"@type": "WebSite",\n  "name": "KaçaGider",',
+    '"@type": "WebSite",\n  "@id": "https://kacagider.com.tr/#website",\n  "name": "KaçaGider",',
+    1,
+)
+index = index.replace(
+    '"description": "Telefon, tablet, bilgisayar, akıllı saat ve oyun konsolları için güncel ikinci el piyasa değeri ve satış kararı platformu."\n}',
+    '"description": "Telefon, tablet, bilgisayar, akıllı saat ve oyun konsolları için güncel ikinci el piyasa değeri ve satış kararı platformu.",\n  "publisher": {"@id":"https://kacagider.com.tr/#organization"}\n}',
+    1,
+)
+index = index.replace(
+    '"description": "Kullanıcının ürün, model, kapasite ve kondisyon bilgilerini güncel piyasa verileriyle değerlendirerek ikinci el piyasa değerini anlamasına yardımcı olan web uygulaması."\n}',
+    '"description": "Kullanıcının ürün, model, kapasite ve kondisyon bilgilerini güncel piyasa verileriyle değerlendirerek ikinci el piyasa değerini anlamasına yardımcı olan web uygulaması.",\n  "provider": {"@id":"https://kacagider.com.tr/#organization"}\n}',
+    1,
+)
+if '"@id": "https://kacagider.com.tr/#organization"' not in index:
+    org = r'''
+<script type="application/ld+json" id="kg-organization-schema">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "@id": "https://kacagider.com.tr/#organization",
+  "name": "KaçaGider",
+  "alternateName": "KaçaGider.com.tr",
+  "url": "https://kacagider.com.tr/",
+  "email": "info@kacagider.com.tr"
+}
+</script>
+'''
+    index = index.replace("</head>", org + "\n</head>", 1)
 write("index.html", index)
 
 
@@ -101,7 +133,6 @@ if '"@id": "https://kacagider.com.tr/#organization"' not in layout:
 '''
     layout = layout.replace("</head>", entities + "\n</head>", 1)
 
-# Add stable @id/publisher/provider relationships where the existing schemas permit it.
 layout = layout.replace(
     '"@type": "WebSite",\n  "name": "KaçaGider",',
     '"@type": "WebSite",\n  "@id": "https://kacagider.com.tr/#website",\n  "name": "KaçaGider",',
@@ -121,7 +152,7 @@ write("_layouts/seo.html", layout)
 
 
 # 3) Generator: future regenerations must not restore old copy, FAQ rich-result markup,
-# or duplicate-intent pilot pages.
+# duplicate-intent pilot pages, or generic category-root titles.
 gen = read("scripts/generate-seo-static-pages.mjs")
 
 seo_copy_pattern = re.compile(r"function seoCopy\(\{kind,model,variant,brand\}\)\{[\s\S]*?\n\}")
@@ -134,6 +165,35 @@ seo_copy_replacement = '''function seoCopy({kind,model,variant,brand}){
   return `${config.plural} ikinci el piyasa değerlerini güncel piyasa verileri ve ürün kondisyonuna göre KaçaGider ile değerlendirin.`;
 }'''
 gen = seo_copy_pattern.sub(seo_copy_replacement, gen, count=1)
+
+page_meta_pattern = re.compile(r"function pageMeta\(\{kind,brand,model,variant,url,breadcrumbs,links,linksHeading\}\)\{[\s\S]*?\n\}")
+page_meta_replacement = '''function pageMeta({kind,brand,model,variant,url,breadcrumbs,links,linksHeading}){
+  const config=categoryConfig[kind];
+  const subject=[model,variant].filter(Boolean).join(" ") || (brand ? `${brand} ${config.name}` : config.name);
+  const plural=!model && !variant;
+  const priceText=plural ? "İkinci El Fiyatları" : "İkinci El Fiyatı";
+  let h1=`${subject} ${priceText}`;
+  let title=`${h1} 2026 | KaçaGider`;
+  let description=seoCopy({kind,brand,model,variant});
+  let intro=description;
+  let contextHeading=`${subject} için ikinci el değerleme`;
+  let context=seoCopy({kind,brand,model,variant});
+
+  if(!brand&&!model&&!variant){
+    const roots={
+      phone:{title:"Telefonum Ne Kadar Eder? 2026 İkinci El Fiyatları | KaçaGider",h1:"Telefonum Ne Kadar Eder? 2026 İkinci El Telefon Fiyatları",description:"Telefonum ne kadar eder, kaç para eder veya kaça satılır? Marka, model, hafıza ve kondisyonu seç; 2026 güncel ikinci el piyasa değerini ücretsiz öğren."},
+      tablet:{title:"Tabletim Ne Kadar Eder? İkinci El Tablet Fiyatları | KaçaGider",h1:"Tabletim Ne Kadar Eder? İkinci El Tablet Fiyatları",description:"Tabletim ne kadar eder, tabletimi kaça satarım? iPad, Samsung, Xiaomi, Huawei, Lenovo ve Honor modellerinde güncel ikinci el piyasa değerini öğren."},
+      computer:{title:"Bilgisayarım Ne Kadar Eder? İkinci El Laptop Fiyatları | KaçaGider",h1:"Bilgisayarım Ne Kadar Eder? İkinci El Laptop Fiyatları",description:"Bilgisayarım ne kadar eder, laptopumu kaça satarım? MacBook, Asus, Lenovo, HP, Dell, MSI ve diğer modellerde güncel ikinci el piyasa değerini öğren."},
+      watch:{title:"Akıllı Saatim Ne Kadar Eder? İkinci El Saat Fiyatları | KaçaGider",h1:"Akıllı Saatim Ne Kadar Eder? İkinci El Saat Fiyatları",description:"Akıllı saatim ne kadar eder, saatimi kaça satarım? Apple Watch, Samsung Galaxy Watch ve Huawei modellerinde güncel ikinci el piyasa değerini öğren."},
+      console:{title:"PS5 / Xbox Ne Kadar Eder? İkinci El Konsol Fiyatları | KaçaGider",h1:"PS5 / Xbox Ne Kadar Eder? İkinci El Konsol Fiyatları",description:"PS5 veya Xbox ne kadar eder, konsolumu kaça satarım? PlayStation ve Xbox modellerinde güncel ikinci el piyasa değerini ücretsiz öğren."}
+    };
+    const root=roots[kind];
+    if(root){title=root.title;h1=root.h1;description=root.description;intro=root.description;contextHeading=`${config.name} ikinci el piyasa değeri`;context=seoCopy({kind,brand,model,variant});}
+  }
+
+  return {layout:"seo",seo_title:title,seo_description:description,seo_h1:h1,seo_intro:intro,seo_context_heading:contextHeading,seo_context:context,seo_breadcrumbs:breadcrumbs,seo_links:links,seo_links_heading:linksHeading,seo_canonical:absolute(url)};
+}'''
+gen = page_meta_pattern.sub(page_meta_replacement, gen, count=1)
 
 gen = gen.replace(
     "<title>İkinci El Telefon Fiyatları – Telefonun Kaç Para Eder? | KaçaGider</title>",
