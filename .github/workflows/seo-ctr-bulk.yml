@@ -19,6 +19,7 @@ on:
       - 'scripts/update-sitemap-lastmod.py'
       - 'scripts/apply-seo-2026-strategy.py'
       - 'scripts/apply-marketplace-seo-final.py'
+      - 'scripts/ensure-marketplace-live.py'
       - 'favicon.svg'
       - 'rehber/**'
       - 'bilgi-merkezi/**'
@@ -71,6 +72,8 @@ jobs:
         run: python scripts/apply-seo-2026-strategy.py
       - name: Apply marketplace positioning and final language
         run: python scripts/apply-marketplace-seo-final.py
+      - name: Ensure marketplace production scripts stay connected
+        run: python scripts/ensure-marketplace-live.py
       - name: Protect marketplace, pricing and Analytics
         run: |
           forbidden="$(git diff --name-only | grep -E '^(ilan/|ilanlar/|assets/marketplace|assets/supabase|supabase/|data/)' || true)"
@@ -84,13 +87,16 @@ jobs:
             exit 1
           fi
           grep -q 'G-078JHH25LH' index.html
+          test "$(grep -c 'src="/assets/marketplace-details.js"' index.html)" -eq 1
+          test "$(grep -c 'src="/assets/marketplace-nav-test.js"' index.html)" -eq 1
+          test "$(grep -c 'src="/assets/marketplace-test.js"' index.html)" -eq 1
           git diff --check
       - name: Run SEO site audit
         run: python scripts/seo-site-audit.py
       - name: Commit changes
         run: |
           if git diff --quiet; then
-            echo "No SEO changes needed."
+            echo "No SEO/marketplace bridge changes needed."
             exit 0
           fi
           git config user.name "github-actions[bot]"
