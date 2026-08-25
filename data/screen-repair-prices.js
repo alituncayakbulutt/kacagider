@@ -131,3 +131,26 @@
   global.KG_SCREEN_REPAIR_PRICE_DATA=exact;
   global.getAverageScreenRepairPrice=getAverageScreenRepairPrice;
 })(window);
+
+// marketplace-test branch only: marketplace prototype assets are loaded directly with a version
+// query so Codespaces/browser cache cannot keep an older header/slider implementation alive.
+(function(){
+  if(window.location.pathname!=="/") return;
+  var V="20260823-2228";
+
+  function add(src,onload){
+    var s=document.createElement("script");
+    s.src=src+(src.indexOf("?")===-1?"?":"&")+"v="+V;
+    s.defer=true;
+    if(onload) s.onload=onload;
+    document.head.appendChild(s);
+  }
+
+  add("/data/model-images.js",function(){
+    add("/assets/marketplace-details.js");
+    add("/assets/marketplace-home-header.js");
+    add("/assets/marketplace-home-slider.js");
+    add("/assets/marketplace-test.js");
+    add("/assets/marketplace-nav-test.js");
+  });
+})();

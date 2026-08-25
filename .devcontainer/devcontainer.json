@@ -1,0 +1,12 @@
+{
+  "name": "KaçaGider Marketplace Test",
+  "image": "mcr.microsoft.com/devcontainers/universal:2",
+  "forwardPorts": [8000],
+  "portsAttributes": {
+    "8000": {
+      "label": "KaçaGider Marketplace Preview",
+      "onAutoForward": "openBrowser"
+    }
+  },
+  "postStartCommand": "bash .devcontainer/start-preview.sh"
+}
