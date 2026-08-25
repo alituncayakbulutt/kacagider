@@ -6,6 +6,7 @@ window.__KG_MARKETPLACE_V4__=true;
 var photos=[];
 var pending=null;
 var priceObserver=null;
+var modalScrollY=0;
 var COLORS=["Siyah","Beyaz","Gri","Gümüş","Altın","Mavi","Yeşil","Kırmızı","Mor","Pembe","Turuncu","Sarı","Diğer"];
 var CATEGORIES=[["phone","📱","Telefon"],["tablet","▣","Tablet"],["computer","💻","Bilgisayar"],["watch","⌚","Akıllı Saat"],["console","🎮","Oyun Konsolu"]];
 
@@ -49,7 +50,7 @@ function style(){
   document.head.appendChild(s);
 }
 function overlay(){var o=q("#kgMpOverlay");if(o)return o;o=document.createElement("div");o.id="kgMpOverlay";o.className="kg-mp-overlay";o.innerHTML='<section class="kg-mp-modal"><div class="kg-mp-head"><div><h2 id="kgMpTitle"></h2><p id="kgMpSub"></p></div><button type="button" class="kg-mp-close" aria-label="Kapat">×</button></div><div class="kg-mp-body" id="kgMpBody"></div></section>';document.body.appendChild(o);q(".kg-mp-close",o).onclick=close;o.addEventListener("click",function(e){if(e.target===o)close();});return o;}
-function open(){overlay().classList.add("open");document.body.style.overflow="hidden";}
+function open(){modalScrollY=window.scrollY||window.pageYOffset||0;overlay().classList.add("open");document.body.style.overflow="hidden";}
 function close(){var o=q("#kgMpOverlay");if(o)o.classList.remove("open");document.body.style.overflow="";}
 function modal(title,sub,body){open();q("#kgMpTitle").textContent=title;q("#kgMpSub").textContent=sub||"";q("#kgMpBody").innerHTML=body;}
 
@@ -62,7 +63,19 @@ function ensureBackend(){
     existing.addEventListener("error",function(){clearInterval(t);reject(new Error("Marketplace veri katmanı yüklenemedi."));},{once:true});
   });
 }
-function selectCategory(key){var card=q('[data-category="'+key+'"]');if(card)card.click();setTimeout(function(){var target=q("#selectedCategoryBar")||q("#valuationArea")||q(".form-panel");if(target)target.scrollIntoView({behavior:"smooth",block:"start"});},120);}
+function selectCategory(key){
+  var card=q('[data-category="'+key+'"]'),view=q("#viewHome"),valuation=q("#valuationArea"),selected=q("#selectedCategoryName");
+  var labels={phone:"Telefon",tablet:"Tablet",computer:"Bilgisayar",watch:"Akıllı Saat",console:"Oyun Konsolu"};
+  var same=view&&view.classList.contains("category-selected")&&valuation&&getComputedStyle(valuation).display!=="none"&&selected&&String(selected.textContent||"").trim()===labels[key];
+  if(same){
+    var html=document.documentElement,previous=html.style.scrollBehavior;
+    html.style.scrollBehavior="auto";
+    window.scrollTo(0,modalScrollY);
+    html.style.scrollBehavior=previous;
+    return;
+  }
+  if(card)card.click();
+}
 function choose(){modal("Ne satmak istiyorsun?","Önce cihazının güncel piyasa değerini öğren.",'<div class="kg-mp-note">Piyasa değeri sorgulama ücretsizdir. İlan yayınlamak için üyelik gerekir.</div><div class="kg-mp-category-grid">'+CATEGORIES.map(function(c){return '<button type="button" class="kg-mp-category" data-cat="'+c[0]+'"><i>'+c[1]+'</i><strong>'+c[2]+'</strong><small>Değerini öğren</small></button>';}).join("")+'</div>');qa("[data-cat]",q("#kgMpBody")).forEach(function(b){b.onclick=function(){close();selectCategory(b.dataset.cat);};});}
 
 async function beginListing(c){pending=c||context();if(!pending.marketValue){alert("Önce cihazının piyasa değerini hesapla.");return;}try{var api=await ensureBackend();await api.ready;var user=await api.getUser();if(user){listing(pending);return;}auth("register");}catch(e){alert("İlan sistemi bağlanırken hata oluştu: "+(e.message||e));}}
