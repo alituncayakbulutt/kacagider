@@ -61,6 +61,16 @@
     return CATEGORY_LABELS[categoryKey(value)]||value||"";
   }
 
+  function isEmailVerified(user){
+    return Boolean(user && (user.email_confirmed_at || user.confirmed_at));
+  }
+
+  function verificationError(){
+    const error=new Error("İlan yayınlamak için önce e-posta adresini doğrulamalısın. Gelen kutundaki KaçaGider doğrulama bağlantısını açıp ardından giriş yap.");
+    error.name="EmailNotVerifiedError";
+    return error;
+  }
+
   function dataUrlToFile(dataUrl,index){
     const parts=String(dataUrl||"").split(",");
     if(parts.length<2) throw new Error("Fotoğraf verisi okunamadı.");
@@ -73,16 +83,23 @@
     return new File([bytes],`photo-${index+1}.${ext}`,{type:mime});
   }
 
-  async function getUser(){
+  async function getUser({requireVerified=false}={}){
     const client=await init();
     const {data,error}=await client.auth.getUser();
     if(error && error.name!=="AuthSessionMissingError") throw error;
-    return data&&data.user?data.user:null;
+    const user=data&&data.user?data.user:null;
+    if(requireVerified && user && !isEmailVerified(user)) throw verificationError();
+    return user;
+  }
+
+  async function getVerifiedUser(){
+    const user=await getUser();
+    return user && isEmailVerified(user) ? user : null;
   }
 
   async function signUp({fullName,email,password}){
     const client=await init();
-    return client.auth.signUp({
+    const result=await client.auth.signUp({
       email,
       password,
       options:{
@@ -90,11 +107,27 @@
         emailRedirectTo:"https://www.kacagider.com.tr/"
       }
     });
+
+    // Güvenlik: Dashboard'da Confirm email yanlışlıkla kapalı olsa bile
+    // yeni kayıt oturumunu ilan akışına taşımıyoruz. Production'da Confirm email açık olmalı.
+    if(!result.error && result.data && result.data.session){
+      await client.auth.signOut();
+      result.data.session=null;
+      result.data.requiresEmailVerification=true;
+    }
+    return result;
   }
 
   async function signIn({email,password}){
     const client=await init();
-    return client.auth.signInWithPassword({email,password});
+    const result=await client.auth.signInWithPassword({email,password});
+    if(result.error) return result;
+    const user=result.data&&result.data.user;
+    if(!isEmailVerified(user)){
+      await client.auth.signOut();
+      return {data:{user:null,session:null},error:verificationError()};
+    }
+    return result;
   }
 
   async function signOut(){
@@ -104,7 +137,7 @@
 
   async function publishListing(input){
     const client=await init();
-    const user=await getUser();
+    const user=await getUser({requireVerified:true});
     if(!user) throw new Error("İlan yayınlamak için giriş yapmalısın.");
 
     const payload={
@@ -241,6 +274,8 @@
     ready:init(),
     init,
     getUser,
+    getVerifiedUser,
+    isEmailVerified,
     signUp,
     signIn,
     signOut,
