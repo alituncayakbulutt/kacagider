@@ -34,7 +34,7 @@ def local_target_exists(url: str):
     if clean == '/':
         return Path('index.html').exists()
     rel = clean.strip('/')
-    return (Path(rel) / 'index.md').exists() or Path(rel).exists()
+    return (Path(rel) / 'index.md').exists() or (Path(rel) / 'index.html').exists() or Path(rel).exists()
 
 
 # Full-site scope: every index.md that declares an SEO canonical.
@@ -48,6 +48,7 @@ for path in Path('.').rglob('index.md'):
 
 canonicals = {}
 titles = {}
+descriptions = {}
 for path in sorted(set(pages)):
     fm, text = frontmatter(path)
 
@@ -60,6 +61,8 @@ for path in sorted(set(pages)):
         expected = expected_url(path)
         if canonical != expected:
             errors.append(f'{path}: canonical mismatch ({canonical} != {expected})')
+        if any(host in canonical for host in ('localhost', 'github.dev', 'app.github.dev')):
+            errors.append(f'{path}: preview/local URL used as canonical ({canonical})')
         canonicals.setdefault(canonical, []).append(str(path))
 
     title = fm.get('seo_title', '')
@@ -67,10 +70,16 @@ for path in sorted(set(pages)):
         titles.setdefault(title, []).append(str(path))
         if len(title) > 75:
             warnings.append(f'{path}: long title ({len(title)} chars)')
+        if len(title) < 25:
+            warnings.append(f'{path}: very short title ({len(title)} chars)')
 
     desc = fm.get('seo_description', '')
-    if desc and len(desc) > 180:
-        warnings.append(f'{path}: long description ({len(desc)} chars)')
+    if desc:
+        descriptions.setdefault(desc, []).append(str(path))
+        if len(desc) > 180:
+            warnings.append(f'{path}: long description ({len(desc)} chars)')
+        if len(desc) < 90:
+            warnings.append(f'{path}: short description ({len(desc)} chars)')
 
     for url in re.findall(r'"url":"(/[^"]*)"', text):
         if not local_target_exists(url):
@@ -83,6 +92,10 @@ for canonical, paths in canonicals.items():
 for title, paths in titles.items():
     if len(paths) > 1:
         warnings.append(f'duplicate title {title}: {", ".join(paths)}')
+
+for desc, paths in descriptions.items():
+    if len(paths) > 1:
+        warnings.append(f'duplicate description ({len(paths)} pages): {", ".join(paths)}')
 
 robots = Path('robots.txt').read_text(encoding='utf-8') if Path('robots.txt').exists() else ''
 if 'Sitemap: https://kacagider.com.tr/sitemap.xml' not in robots:
@@ -106,11 +119,30 @@ if 'property="og:image"' not in index or 'name="twitter:image"' not in index:
 if 'summary_large_image' not in index:
     warnings.append('index.html: Twitter large image card missing')
 
+# Homepage/global messaging should use market-value language rather than presenting KaçaGider as a random estimator.
+legacy_phrases = ('tahmini fiyat', 'fiyat tahmini', 'tahmini piyasa değeri')
+for name, text in [('index.html', index), ('_layouts/seo.html', layout)]:
+    low = text.casefold()
+    for phrase in legacy_phrases:
+        if phrase in low:
+            warnings.append(f'{name}: legacy valuation wording still present ({phrase})')
+
 # Preserve the intentionally deleted visible phone-guide hub.
 if Path('rehber/telefon/index.md').exists():
     errors.append('rehber/telefon/index.md exists; deleted Telefon Bilgi Merkezi hub must stay absent')
 
+# A real 404 page prevents soft-error experiences and must never be indexable.
+not_found = Path('404.html')
+if not not_found.exists():
+    errors.append('404.html: custom 404 page missing')
+else:
+    not_found_text = not_found.read_text(encoding='utf-8').casefold()
+    if 'noindex' not in not_found_text:
+        errors.append('404.html: noindex directive missing')
+
 sitemap = Path('sitemap.xml').read_text(encoding='utf-8') if Path('sitemap.xml').exists() else ''
+if any(host in sitemap for host in ('localhost', 'github.dev', 'app.github.dev')):
+    errors.append('sitemap.xml: preview/local URL found')
 for canonical in canonicals:
     if canonical not in sitemap:
         errors.append(f'sitemap.xml: missing {canonical}')
