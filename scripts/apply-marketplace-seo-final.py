@@ -3,8 +3,6 @@ import re
 
 ROOT = Path(__file__).resolve().parents[1]
 
-# KaçaGider'ın ürün konumlandırması:
-# Değerini öğren -> doğru fiyatı belirle -> ücretsiz ilan ver -> doğru alıcıyla buluş.
 FINAL_HOME_TITLE = "Cihazın Ne Kadar Eder? İkinci El Değeri & Ücretsiz İlan | KaçaGider"
 FINAL_HOME_DESCRIPTION = (
     "Telefon, tablet, bilgisayar, akıllı saat ve oyun konsolunun güncel ikinci el piyasa değerini öğren. "
@@ -12,20 +10,13 @@ FINAL_HOME_DESCRIPTION = (
 )
 
 TEXT_ROOTS = [
-    "telefon",
-    "tablet",
-    "bilgisayar",
-    "akilli-saat",
-    "oyun-konsolu",
-    "telefonum-ne-kadar-eder",
-    "telefonum-kac-para",
-    "telefonum-kaca-gider",
-    "bilgi-merkezi",
-    "rehber",
+    "telefon", "tablet", "bilgisayar", "akilli-saat", "oyun-konsolu",
+    "telefonum-ne-kadar-eder", "telefonum-kac-para", "telefonum-kaca-gider",
+    "bilgi-merkezi", "rehber",
 ]
 
-# Sadece kullanıcıya görünen metinlerdeki eski estimator dilini dönüştürür.
-# Teknik değişken adlarına ve fiyat motoruna dokunmaz.
+# Kullanıcıya görünen eski estimator dilini piyasa değeri diline taşır.
+# Teknik değişkenlere, pricing engine'e ve veri dosyalarına dokunmaz.
 REPLACEMENTS = [
     ("güncel tahmini ikinci el satış değerini", "güncel ikinci el piyasa değerini"),
     ("güncel tahmini ikinci el değerini", "güncel ikinci el piyasa değerini"),
@@ -67,43 +58,16 @@ def rewrite_file(path: Path) -> bool:
 
 changed = []
 
-# 1) Ana sayfa: beş kategori + değer öğrenme + ücretsiz ilan + alıcı bulma.
+# 1) Ana sayfa: değer öğrenme + doğru fiyat + ücretsiz ilan + alıcı bulma.
 index_path = ROOT / "index.html"
-index = index_path.read_text(encoding="utf-8")
-index = rewrite_language(index)
-
-# Hem eski hem ara strateji başlıklarını tek final başlıkta birleştir.
+original_index = index_path.read_text(encoding="utf-8")
+index = rewrite_language(original_index)
 index = re.sub(r"<title>.*?</title>", f"<title>{FINAL_HOME_TITLE}</title>", index, count=1, flags=re.S)
-index = re.sub(
-    r'<meta name="description" content="[^"]*">',
-    f'<meta name="description" content="{FINAL_HOME_DESCRIPTION}">',
-    index,
-    count=1,
-)
-index = re.sub(
-    r'<meta property="og:title" content="[^"]*">',
-    f'<meta property="og:title" content="{FINAL_HOME_TITLE}">',
-    index,
-    count=1,
-)
-index = re.sub(
-    r'<meta property="og:description" content="[^"]*">',
-    f'<meta property="og:description" content="{FINAL_HOME_DESCRIPTION}">',
-    index,
-    count=1,
-)
-index = re.sub(
-    r'<meta name="twitter:title" content="[^"]*">',
-    f'<meta name="twitter:title" content="{FINAL_HOME_TITLE}">',
-    index,
-    count=1,
-)
-index = re.sub(
-    r'<meta name="twitter:description" content="[^"]*">',
-    f'<meta name="twitter:description" content="{FINAL_HOME_DESCRIPTION}">',
-    index,
-    count=1,
-)
+index = re.sub(r'<meta name="description" content="[^"]*">', f'<meta name="description" content="{FINAL_HOME_DESCRIPTION}">', index, count=1)
+index = re.sub(r'<meta property="og:title" content="[^"]*">', f'<meta property="og:title" content="{FINAL_HOME_TITLE}">', index, count=1)
+index = re.sub(r'<meta property="og:description" content="[^"]*">', f'<meta property="og:description" content="{FINAL_HOME_DESCRIPTION}">', index, count=1)
+index = re.sub(r'<meta name="twitter:title" content="[^"]*">', f'<meta name="twitter:title" content="{FINAL_HOME_TITLE}">', index, count=1)
+index = re.sub(r'<meta name="twitter:description" content="[^"]*">', f'<meta name="twitter:description" content="{FINAL_HOME_DESCRIPTION}">', index, count=1)
 index = index.replace(
     'content="KaçaGider ikinci el telefon değeri hesaplama"',
     'content="KaçaGider ikinci el cihaz piyasa değeri ve ücretsiz ilan"',
@@ -120,13 +84,11 @@ index = index.replace(
     "Telefon, tablet, bilgisayar, akıllı saat ve oyun konsolları için güncel piyasa verilerini değerlendir; cihazının ikinci el piyasa değerini öğren.",
     "Telefon, tablet, bilgisayar, akıllı saat ve oyun konsolunun piyasa değerini öğren; doğru fiyatı belirle ve ücretsiz ilan ver.",
 )
-
-original = index_path.read_text(encoding="utf-8")
-if index != original:
+if index != original_index:
     index_path.write_text(index, encoding="utf-8")
     changed.append("index.html")
 
-# 2) Global SEO layout ve mevcut SEO/rehber sayfalarında yeni fiyat dili.
+# 2) Global layout ve SEO içerikleri.
 layout_path = ROOT / "_layouts" / "seo.html"
 if rewrite_file(layout_path):
     changed.append("_layouts/seo.html")
@@ -140,50 +102,48 @@ for root_name in TEXT_ROOTS:
             if rewrite_file(path):
                 changed.append(str(path.relative_to(ROOT)))
 
-# 3) Kategori kökleri: arama niyeti + satış niyetini birlikte anlat.
+# 3) Beş kategori kökünde arama niyeti ile satış niyetini aynı sayfada birleştir.
 ROOT_PAGE_COPY = {
-    "telefon/index.md": (
-        "Telefonum ne kadar eder, kaç para eder veya kaça satılır? Marka, model, hafıza ve kondisyonu seç; güncel ikinci el piyasa değerini öğren, doğru fiyatı belirle ve ücretsiz ilan ver.",
-        "Telefonunun marka, model, hafıza ve kondisyon bilgilerini seçerek güncel ikinci el piyasa değerini öğren. Değerini gördükten sonra doğru satış fiyatını belirleyip KaçaGider'da ücretsiz ilan verebilirsin.",
-    ),
-    "tablet/index.md": (
-        "Tabletim ne kadar eder veya tabletimi kaça satarım? iPad, Samsung, Xiaomi, Huawei, Lenovo ve Honor modellerinde güncel ikinci el piyasa değerini öğren, doğru fiyatı belirle ve ücretsiz ilan ver.",
-        "Tabletinin marka, model, kapasite ve kondisyon bilgilerini seçerek güncel ikinci el piyasa değerini öğren. Doğru fiyatı belirledikten sonra KaçaGider'da ücretsiz ilan verip alıcını bul.",
-    ),
-    "bilgisayar/index.md": (
-        "Bilgisayarım ne kadar eder veya laptopumu kaça satarım? MacBook ve desteklenen laptop modellerinde güncel ikinci el piyasa değerini öğren, doğru fiyatı belirle ve ücretsiz ilan ver.",
-        "Bilgisayarının marka, model, kapasite ve kondisyon bilgilerini seçerek güncel ikinci el piyasa değerini öğren. Doğru fiyatı belirleyip KaçaGider'da ücretsiz ilan vererek alıcını bul.",
-    ),
-    "akilli-saat/index.md": (
-        "Akıllı saatim ne kadar eder veya saatimi kaça satarım? Apple Watch, Galaxy Watch ve Huawei modellerinde güncel ikinci el piyasa değerini öğren, doğru fiyatı belirle ve ücretsiz ilan ver.",
-        "Akıllı saatinin marka, model, kasa boyutu ve kondisyon bilgilerini seçerek güncel ikinci el piyasa değerini öğren. Doğru fiyatı belirleyip KaçaGider'da ücretsiz ilan ver.",
-    ),
-    "oyun-konsolu/index.md": (
-        "PS5, PlayStation veya Xbox ne kadar eder? Konsolunun güncel ikinci el piyasa değerini öğren, doğru satış fiyatını belirle ve KaçaGider'da ücretsiz ilan vererek alıcını bul.",
-        "Oyun konsolunun model, depolama ve kondisyon bilgilerini seçerek güncel ikinci el piyasa değerini öğren. Doğru fiyatı belirleyip ücretsiz ilan vererek alıcını bul.",
-    ),
+    "telefon/index.md": {
+        "description": "Telefonum ne kadar eder, kaç para eder veya kaça satılır? Marka, model, hafıza ve kondisyonu seç; güncel ikinci el piyasa değerini öğren, doğru fiyatı belirle ve ücretsiz ilan ver.",
+        "intro": "Telefonunun marka, model, hafıza ve kondisyon bilgilerini seçerek güncel ikinci el piyasa değerini öğren. Değerini gördükten sonra doğru satış fiyatını belirleyip KaçaGider'da ücretsiz ilan verebilirsin.",
+        "context": "Telefonun ikinci el piyasa değeri; marka, model, hafıza, ekran ve kasa durumu, batarya, değişen parçalar ve genel kondisyona göre değişir. Piyasa değerini öğrendikten sonra KaçaGider'da ücretsiz ilan oluşturarak telefonunu doğru satış fiyatıyla alıcılarla buluşturabilirsin.",
+    },
+    "tablet/index.md": {
+        "description": "Tabletim ne kadar eder veya tabletimi kaça satarım? iPad, Samsung, Xiaomi, Huawei, Lenovo ve Honor modellerinde güncel ikinci el piyasa değerini öğren, doğru fiyatı belirle ve ücretsiz ilan ver.",
+        "intro": "Tabletinin marka, model, kapasite ve kondisyon bilgilerini seçerek güncel ikinci el piyasa değerini öğren. Doğru fiyatı belirledikten sonra KaçaGider'da ücretsiz ilan verip alıcını bul.",
+        "context": "Tablet ikinci el piyasa değeri; marka, model, kapasite, kozmetik durum, çalışma durumu ve aksesuar bütünlüğüne göre değişir. Değerini öğrendikten sonra doğru fiyatı belirleyip KaçaGider'da ücretsiz ilan verebilirsin.",
+    },
+    "bilgisayar/index.md": {
+        "description": "Bilgisayarım ne kadar eder veya laptopumu kaça satarım? MacBook ve desteklenen laptop modellerinde güncel ikinci el piyasa değerini öğren, doğru fiyatı belirle ve ücretsiz ilan ver.",
+        "intro": "Bilgisayarının marka, model, kapasite ve kondisyon bilgilerini seçerek güncel ikinci el piyasa değerini öğren. Doğru fiyatı belirleyip KaçaGider'da ücretsiz ilan vererek alıcını bul.",
+        "context": "Bilgisayar ikinci el piyasa değeri; marka, model, depolama, kozmetik durum, çalışma durumu ve aksesuarlarına göre değişir. Değerini öğrendikten sonra KaçaGider'da ücretsiz ilan oluşturarak doğru fiyatla satışa çıkarabilirsin.",
+    },
+    "akilli-saat/index.md": {
+        "description": "Akıllı saatim ne kadar eder veya saatimi kaça satarım? Apple Watch, Galaxy Watch ve Huawei modellerinde güncel ikinci el piyasa değerini öğren, doğru fiyatı belirle ve ücretsiz ilan ver.",
+        "intro": "Akıllı saatinin marka, model, kasa boyutu ve kondisyon bilgilerini seçerek güncel ikinci el piyasa değerini öğren. Doğru fiyatı belirleyip KaçaGider'da ücretsiz ilan ver.",
+        "context": "Akıllı saat ikinci el piyasa değeri; marka, model, kasa boyutu, kozmetik durum, çalışma durumu ve aksesuarlarına göre değişir. Piyasa değerini öğrendikten sonra KaçaGider'da ücretsiz ilan verebilirsin.",
+    },
+    "oyun-konsolu/index.md": {
+        "description": "PS5, PlayStation veya Xbox ne kadar eder? Konsolunun güncel ikinci el piyasa değerini öğren, doğru satış fiyatını belirle ve KaçaGider'da ücretsiz ilan vererek alıcını bul.",
+        "intro": "Oyun konsolunun model, depolama ve kondisyon bilgilerini seçerek güncel ikinci el piyasa değerini öğren. Doğru fiyatı belirleyip ücretsiz ilan vererek alıcını bul.",
+        "context": "Oyun konsolu ikinci el piyasa değeri; model, depolama, kozmetik durum, çalışma durumu ve aksesuar bütünlüğüne göre değişir. Değerini öğrendikten sonra KaçaGider'da ücretsiz ilan oluşturarak doğru fiyatla satışa çıkarabilirsin.",
+    },
 }
 
-for rel, (description, intro) in ROOT_PAGE_COPY.items():
+for rel, copy in ROOT_PAGE_COPY.items():
     path = ROOT / rel
     if not path.exists():
         continue
     text = path.read_text(encoding="utf-8")
-    updated = re.sub(r'^seo_description:.*$', f'seo_description: "{description}"', text, count=1, flags=re.M)
-    updated = re.sub(r'^seo_intro:.*$', f'seo_intro: "{intro}"', updated, count=1, flags=re.M)
-    if "ücretsiz ilan" not in re.search(r'^seo_context:.*$', updated, flags=re.M).group(0).lower() if re.search(r'^seo_context:.*$', updated, flags=re.M) else True:
-        updated = re.sub(
-            r'^(seo_context:\s*"[^"]*)"$',
-            r'\1 Piyasa değerini öğrendikten sonra KaçaGider\'da ücretsiz ilan oluşturarak cihazınızı doğru satış fiyatıyla alıcılarla buluşturabilirsiniz."',
-            updated,
-            count=1,
-            flags=re.M,
-        )
+    updated = re.sub(r'^seo_description:.*$', f'seo_description: "{copy["description"]}"', text, count=1, flags=re.M)
+    updated = re.sub(r'^seo_intro:.*$', f'seo_intro: "{copy["intro"]}"', updated, count=1, flags=re.M)
+    updated = re.sub(r'^seo_context:.*$', f'seo_context: "{copy["context"]}"', updated, count=1, flags=re.M)
     if updated != text:
         path.write_text(updated, encoding="utf-8")
         changed.append(rel)
 
-# 4) Gelecekte statik sayfalar yeniden üretildiğinde eski dil geri dönmesin.
+# 4) Gelecekte statik sayfa üretimi eski kullanıcı dilini geri getirmesin.
 generator_path = ROOT / "scripts" / "generate-seo-static-pages.mjs"
 if generator_path.exists() and rewrite_file(generator_path):
     changed.append("scripts/generate-seo-static-pages.mjs")
