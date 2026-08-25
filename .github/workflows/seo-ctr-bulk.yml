@@ -17,6 +17,8 @@ on:
       - 'scripts/add-breadcrumb-schema.py'
       - 'scripts/add-social-image-meta.py'
       - 'scripts/update-sitemap-lastmod.py'
+      - 'scripts/apply-seo-2026-strategy.py'
+      - 'scripts/apply-marketplace-seo-final.py'
       - 'favicon.svg'
       - 'rehber/**'
       - 'bilgi-merkezi/**'
@@ -65,6 +67,26 @@ jobs:
         run: python scripts/add-social-image-meta.py
       - name: Sync sitemap lastmod and canonical coverage
         run: python scripts/update-sitemap-lastmod.py
+      - name: Apply 2026 entity and market-value strategy last
+        run: python scripts/apply-seo-2026-strategy.py
+      - name: Apply marketplace positioning and final language
+        run: python scripts/apply-marketplace-seo-final.py
+      - name: Protect marketplace, pricing and Analytics
+        run: |
+          forbidden="$(git diff --name-only | grep -E '^(ilan/|ilanlar/|assets/marketplace|assets/supabase|supabase/|data/)' || true)"
+          if [ -n "$forbidden" ]; then
+            echo "SEO workflow attempted to change protected marketplace/pricing files:"
+            echo "$forbidden"
+            exit 1
+          fi
+          if grep -R -n 'G-6L6B0DE3L6' index.html _layouts assets/analytics-events.js 2>/dev/null; then
+            echo 'Stale GA4 measurement ID detected.'
+            exit 1
+          fi
+          grep -q 'G-078JHH25LH' index.html
+          git diff --check
+      - name: Run SEO site audit
+        run: python scripts/seo-site-audit.py
       - name: Commit changes
         run: |
           if git diff --quiet; then
@@ -73,6 +95,6 @@ jobs:
           fi
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add index.html telefon tablet bilgisayar akilli-saat oyun-konsolu telefonum-ne-kadar-eder telefonum-kac-para telefonum-kaca-gider _layouts/seo.html sitemap.xml
-          git commit -m "SEO checkup: apply safe site-wide fixes"
+          git add index.html telefon tablet bilgisayar akilli-saat oyun-konsolu telefonum-ne-kadar-eder telefonum-kac-para telefonum-kaca-gider bilgi-merkezi rehber _layouts/seo.html sitemap.xml scripts/generate-seo-static-pages.mjs
+          git commit -m "SEO: Değerini öğren, doğru fiyata sat stratejisini uygula"
           git push
