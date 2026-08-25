@@ -1,15 +1,15 @@
 ---
 layout: "seo"
-seo_title: "Telefon Değerleme Rehberleri | KaçaGider"
-seo_description: "İkinci el telefon değerini etkileyen marka, model, depolama, kondisyon ve piyasa durumunu inceleyin."
-seo_h1: "Telefon Değerleme"
-seo_intro: "İkinci el telefon değerini etkileyen marka, model, depolama, kondisyon ve piyasa durumunu inceleyin."
+seo_title: "İkinci El Cihaz Değeri Nasıl Belirlenir? | KaçaGider"
+seo_description: "Telefon, tablet, bilgisayar, akıllı saat ve oyun konsolunun ikinci el piyasa değerini etkileyen model, kondisyon, depolama, pil ve piyasa faktörlerini öğrenin."
+seo_h1: "İkinci El Cihaz Değeri Nasıl Belirlenir?"
+seo_intro: "Bir cihazın ikinci el piyasa değeri yalnızca marka ve modelden oluşmaz. Teknik özellikler, kondisyon, onarım geçmişi ve güncel piyasa hareketleri birlikte değerlendirilmelidir."
 seo_canonical: "https://kacagider.com.tr/bilgi-merkezi/degerleme/"
-seo_breadcrumbs: [{"label":"Ana Sayfa","url":"/"},{"label":"Bilgi Merkezi","url":"/bilgi-merkezi/"},{"label":"Telefon Değerleme","url":"/bilgi-merkezi/degerleme/"}]
-seo_context_heading: "Telefon Değerleme"
-seo_context: "Model, depolama, ekran, pil, aksesuar ve piyasa koşulları tahmini ikinci el değeri etkileyebilir."
-seo_links_heading: "İlgili rehberler"
-seo_links: [{"label":"Telefonun Değeri Nasıl Hesaplanır?","url":"/bilgi-merkezi/degerleme/telefon-degeri-nasil-hesaplanir/"},{"label":"Telefonunu Hesapla","url":"/telefon/"}]
-seo_sections: [{"title":"Telefon Değerleme hakkında","text":"Model, depolama, ekran, pil, aksesuar ve piyasa koşulları tahmini ikinci el değeri etkileyebilir."}]
-seo_faqs: [{"question":"Telefon Değerleme nedir?","answer":"Model, depolama, ekran, pil, aksesuar ve piyasa koşulları tahmini ikinci el değeri etkileyebilir."}]
+seo_breadcrumbs: [{"label":"Ana Sayfa","url":"/"},{"label":"Bilgi Merkezi","url":"/bilgi-merkezi/"},{"label":"İkinci El Cihaz Değerleme","url":"/bilgi-merkezi/degerleme/"}]
+seo_context_heading: "KaçaGider piyasa değerini nasıl ele alır?"
+seo_context: "KaçaGider'in hedefi ilanlardaki en yüksek veya en düşük rakamı kopyalamak değildir. Piyasa kayıtları, gerçekleşen satış sinyalleri ve cihazın kondisyon bilgileri birlikte değerlendirilerek kullanıcıya ortalama satış değerine yakın, karar vermeyi kolaylaştıran bir piyasa referansı sunulması amaçlanır."
+seo_links_heading: "İlgili rehberler ve değerleme sayfaları"
+seo_links: [{"label":"Telefonun Değeri Nasıl Hesaplanır?","url":"/bilgi-merkezi/degerleme/telefon-degeri-nasil-hesaplanir/"},{"label":"Telefon Piyasa Değeri","url":"/telefon/"},{"label":"Tablet Piyasa Değeri","url":"/tablet/"},{"label":"Bilgisayar Piyasa Değeri","url":"/bilgisayar/"},{"label":"Akıllı Saat Piyasa Değeri","url":"/akilli-saat/"},{"label":"Oyun Konsolu Piyasa Değeri","url":"/oyun-konsolu/"}]
+seo_sections: [{"title":"1. Marka, model ve teknik özellikler","text":"Aynı ürün ailesindeki farklı model, depolama, ekran boyutu, bağlantı seçeneği veya donanım varyantları ikinci el piyasa değerini değiştirebilir. Bu nedenle cihaz doğru varyantıyla eşleştirilmelidir."},{"title":"2. Fiziksel ve işlevsel kondisyon","text":"Ekran, kasa, köşeler, arka yüzey, pil, bağlantılar, kontrolcü veya kategoriye özel diğer parçaların durumu satış değerini etkiler. Çalışmayan veya hasarlı bir özellik, benzer temiz cihazlara göre fiyat farkı oluşturabilir."},{"title":"3. Onarım ve değişen parça geçmişi","text":"Değişen ekran, batarya, kasa veya başka bir bileşenin varlığı ve kullanılan parçanın niteliği cihazın piyasa algısını etkileyebilir. Değişen parça bilgisi fiyat değerlendirmesinde kondisyonla birlikte ele alınmalıdır."},{"title":"4. Piyasa kayıtları ve satış sinyalleri","text":"İlanlarda yazan rakamlar tek başına gerçekleşmiş satış fiyatını göstermez. Sağlıklı bir piyasa referansı için güncel piyasa kayıtları, gerçekleşen satış bildirimleri ve benzer cihazların fiyat aralıkları birlikte değerlendirilmelidir."},{"title":"5. Kategoriye göre farklı değer faktörleri","text":"Telefonlarda pil, ekran ve cihaz kaydı; tabletlerde ekran ve depolama; bilgisayarlarda donanım, depolama ve pil; akıllı saatlerde kasa boyutu ve fiziksel durum; oyun konsollarında sürüm, depolama, kontrolcü ve aksesuar durumu daha belirleyici olabilir."}]
+seo_faqs: [{"question":"İlan fiyatı cihazın gerçek piyasa değeri midir?","answer":"Tek başına değildir. İlan fiyatı satıcının istediği rakamdır; sağlıklı bir piyasa değerlendirmesinde benzer cihazların piyasa kayıtları, satış sinyalleri ve kondisyonu birlikte ele alınır."},{"question":"Kondisyon ikinci el fiyatını ne kadar etkiler?","answer":"Etkisi kategori ve hasarın türüne göre değişir. Ekran, kasa, pil, değişen parçalar ve çalışmayan özellikler benzer temiz cihazlarla aradaki fiyat farkını artırabilir."},{"question":"KaçaGider neden tek bir ilan fiyatını esas almaz?","answer":"Tek bir ilandaki rakam piyasanın tamamını temsil etmeyebilir. Amaç, daha geniş piyasa kayıtlarını ve satış sinyallerini kondisyonla birlikte değerlendirerek daha dengeli bir referans oluşturmaktır."}]
 ---
