@@ -103,6 +103,15 @@ function loadFreshAuthBackend(){
   document.head.appendChild(script);
 }
 
-function boot(){loadFreshAuthBackend();applyImages();requestAnimationFrame(applyImages);setTimeout(applyImages,350);watchHeaderAccount();}
+function loadMobileHomeResponsive(){
+  if(document.querySelector('link[data-kg-mobile-home-responsive="1"]'))return;
+  var link=document.createElement("link");
+  link.rel="stylesheet";
+  link.href="/assets/mobile-home-responsive.css?v=20260828-1";
+  link.dataset.kgMobileHomeResponsive="1";
+  document.head.appendChild(link);
+}
+
+function boot(){loadMobileHomeResponsive();loadFreshAuthBackend();applyImages();requestAnimationFrame(applyImages);setTimeout(applyImages,350);watchHeaderAccount();}
 if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",boot,{once:true});else boot();
 })();
