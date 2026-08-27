@@ -3,14 +3,29 @@
 if(window.__KG_ACCOUNT_SESSION_NAV__)return;
 window.__KG_ACCOUNT_SESSION_NAV__=true;
 
+var cachedApi=null;
+var cachedUser=null;
+var hostObserver=null;
+
 function installStyle(){
   if(document.getElementById("kgAccountSessionNavStyle"))return;
   var s=document.createElement("style");
   s.id="kgAccountSessionNavStyle";
   s.textContent=`
-    .kg-account-session{display:inline-flex;align-items:center;justify-content:center;min-height:40px;padding:0 13px;border:1px solid rgba(255,255,255,.34);border-radius:10px;background:rgba(255,255,255,.06);color:#fff;font:inherit;font-size:12px;font-weight:900;white-space:nowrap;cursor:pointer}
-    .kg-account-session:hover{background:rgba(255,255,255,.13)}
-    .kg-account-session:disabled{opacity:.6;cursor:wait}
+    .kg-account-session,.kg-v4-action.account{
+      display:inline-flex!important;align-items:center!important;justify-content:center!important;gap:9px!important;
+      min-height:46px!important;padding:0 15px!important;border:1px solid #536278!important;border-radius:12px!important;
+      background:rgba(255,255,255,.04)!important;color:#fff!important;font:inherit!important;font-size:13px!important;
+      font-weight:900!important;white-space:nowrap!important;cursor:pointer!important;visibility:visible!important;opacity:1!important;
+      box-shadow:none!important;transition:background .18s ease,border-color .18s ease!important;
+    }
+    .kg-account-session:hover,.kg-v4-action.account:hover{background:rgba(255,255,255,.11)!important;border-color:#718198!important}
+    .kg-account-session:disabled,.kg-v4-action.account:disabled{opacity:.62!important;cursor:wait!important}
+    .kg-account-session::before,.kg-v4-action.account::before{
+      content:"";display:block;width:18px;height:18px;flex:0 0 18px;background:currentColor;
+      -webkit-mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='none' stroke='%23000' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' d='M20 21a8 8 0 0 0-16 0M12 13a4 4 0 1 0 0-8 4 4 0 0 0 0 8Z'/%3E%3C/svg%3E") center/contain no-repeat;
+      mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='none' stroke='%23000' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' d='M20 21a8 8 0 0 0-16 0M12 13a4 4 0 1 0 0-8 4 4 0 0 0 0 8Z'/%3E%3C/svg%3E") center/contain no-repeat;
+    }
     .kg-account-login-overlay{position:fixed;inset:0;z-index:1000002;background:rgba(7,20,38,.72);display:flex;align-items:center;justify-content:center;padding:18px}
     .kg-account-login-card{width:min(430px,100%);background:#fff;color:#101828;border-radius:18px;padding:22px;box-shadow:0 28px 80px rgba(2,6,23,.35);position:relative}
     .kg-account-login-card h2{margin:0 0 6px;font-size:24px}.kg-account-login-card p{margin:0 0 16px;color:#667085;font-size:13px;line-height:1.5}
@@ -22,13 +37,27 @@ function installStyle(){
     .kg-account-submit{width:100%;min-height:46px;border:0;border-radius:10px;background:#16a34a;color:#fff;font-weight:900;cursor:pointer}.kg-account-submit:disabled,.kg-account-google:disabled{opacity:.6;cursor:wait}
     .kg-account-note{margin:0 0 12px;padding:10px 12px;border-radius:10px;background:#f0fdf4;color:#166534;font-size:12px;display:none}.kg-account-note.show{display:block}.kg-account-note.error{background:#fff1f2;color:#b42318}
     .kg-account-forgot{margin-top:10px;border:0;background:transparent;padding:0;color:#087a37;font-size:11px;font-weight:850;cursor:pointer}
-    @media(max-width:540px){.kg-account-session{min-height:38px;padding:0 9px;font-size:10px}}
+    @media(max-width:900px){.kg-account-session,.kg-v4-action.account{min-height:42px!important;padding:0 10px!important;font-size:11px!important;gap:7px!important}.kg-account-session::before,.kg-v4-action.account::before{width:16px;height:16px;flex-basis:16px}}
   `;
   document.head.appendChild(s);
 }
 
 function actionsHost(){
   return document.querySelector(".kg-approved-topbar .kg-topbar-actions") || document.querySelector(".top nav");
+}
+
+function placeAfterSell(button){
+  var host=actionsHost();
+  if(!host||!button)return;
+  var sell=host.querySelector(".kg-v4-action.sell,.cta");
+  var theme=host.querySelector(".kg-theme-btn,#themeToggle");
+  if(sell){
+    if(sell.nextSibling!==button)host.insertBefore(button,sell.nextSibling);
+  }else if(theme){
+    if(theme.previousSibling!==button)host.insertBefore(button,theme);
+  }else if(button.parentNode!==host){
+    host.appendChild(button);
+  }
 }
 
 function waitForBackend(tries){
@@ -72,8 +101,8 @@ function openLogin(api){
     try{
       var result=await api.signIn({email:document.getElementById("kgAccountEmail").value,password:document.getElementById("kgAccountPassword").value});
       if(result&&result.error)throw result.error;
-      var user=result&&result.data?result.data.user:null;
-      closeLogin();setButton(user,api);
+      cachedUser=result&&result.data?result.data.user:null;
+      closeLogin();renderFallback(cachedUser,api);
     }catch(error){showNote(error.message||"Giriş yapılamadı.",true);submit.disabled=false;}
   };
   document.getElementById("kgAccountForgot").onclick=async function(){
@@ -83,48 +112,78 @@ function openLogin(api){
   };
 }
 
-function setButton(user,api){
+function useHeaderOwnedButton(){
+  var headerButton=document.getElementById("kgHeaderAccountAction");
+  if(!headerButton)return false;
+  var fallback=document.getElementById("kgAccountSessionAction");
+  if(fallback)fallback.remove();
+  headerButton.classList.add("account");
+  installStyle();
+  placeAfterSell(headerButton);
+  return true;
+}
+
+function renderFallback(user,api){
+  if(useHeaderOwnedButton())return;
   var host=actionsHost();
   if(!host)return;
   installStyle();
-  var legacy=document.getElementById("kgAccountLogout");if(legacy)legacy.remove();
-  var old=document.getElementById("kgAccountSessionAction");if(old)old.remove();
-  var button=document.createElement("button");
-  button.type="button";
-  button.id="kgAccountSessionAction";
-  button.className="kg-account-session";
+  var button=document.getElementById("kgAccountSessionAction");
+  if(!button){
+    button=document.createElement("button");
+    button.type="button";
+    button.id="kgAccountSessionAction";
+    button.className="kg-account-session";
+  }
   if(user){
     button.textContent="Çıkış Yap";
     button.setAttribute("aria-label","KaçaGider hesabından çıkış yap");
     button.onclick=async function(){
       button.disabled=true;button.textContent="Çıkılıyor…";
-      try{var result=await api.signOut();if(result&&result.error)throw result.error;try{sessionStorage.removeItem("kg-pending-listing-auth-v1");}catch(_e){}setButton(null,api);}
-      catch(error){console.error("KaçaGider çıkış:",error);button.disabled=false;button.textContent="Çıkış Yap";alert("Çıkış işlemi tamamlanamadı. Lütfen tekrar dene.");}
+      try{
+        var result=await api.signOut();if(result&&result.error)throw result.error;
+        try{sessionStorage.removeItem("kg-pending-listing-auth-v1");}catch(_e){}
+        cachedUser=null;renderFallback(null,api);
+      }catch(error){console.error("KaçaGider çıkış:",error);button.disabled=false;button.textContent="Çıkış Yap";alert("Çıkış işlemi tamamlanamadı. Lütfen tekrar dene.");}
     };
   }else{
     button.textContent="Giriş Yap";
     button.setAttribute("aria-label","KaçaGider hesabına giriş yap");
     button.onclick=function(){openLogin(api);};
   }
-  var cta=host.querySelector(".cta,.kg-v4-action.sell");
-  if(cta)host.insertBefore(button,cta);else host.appendChild(button);
+  button.disabled=false;
+  if(button.parentNode!==host)host.appendChild(button);
+  placeAfterSell(button);
 }
 
 async function sync(){
   try{
     var api=await waitForBackend(0);await api.ready;
-    var user=api.getSessionUser?await api.getSessionUser():await api.getUser();
-    setButton(user,api);
+    cachedApi=api;
+    cachedUser=api.getSessionUser?await api.getSessionUser():await api.getUser();
+    renderFallback(cachedUser,api);
     return api;
   }catch(error){console.warn("KaçaGider hesap menüsü:",error);return null;}
 }
 
+function observeHeader(){
+  var host=actionsHost();
+  if(!host||typeof MutationObserver==="undefined"||hostObserver)return;
+  hostObserver=new MutationObserver(function(){
+    if(useHeaderOwnedButton())return;
+    if(cachedApi)renderFallback(cachedUser,cachedApi);
+  });
+  hostObserver.observe(host,{childList:true,subtree:false});
+}
+
 async function boot(){
+  installStyle();
   var api=await sync();
+  observeHeader();
   if(!api)return;
   var client=await api.init();
-  if(client&&client.auth&&typeof client.auth.onAuthStateChange==="function")client.auth.onAuthStateChange(function(_event,session){setButton(session&&session.user?session.user:null,api);});
-  setTimeout(sync,350);setTimeout(sync,900);
+  if(client&&client.auth&&typeof client.auth.onAuthStateChange==="function")client.auth.onAuthStateChange(function(_event,session){cachedUser=session&&session.user?session.user:null;renderFallback(cachedUser,api);});
+  setTimeout(sync,350);setTimeout(sync,900);setTimeout(function(){useHeaderOwnedButton();},1400);
 }
 
 if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",boot,{once:true});
