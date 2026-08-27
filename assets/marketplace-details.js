@@ -65,7 +65,7 @@ function applyImages(){
 function loadAccountSessionNav(){
   if(window.__KG_ACCOUNT_SESSION_NAV__||document.querySelector('script[data-kg-account-session-nav]'))return;
   var s=document.createElement("script");
-  s.src="/assets/account-session-nav.js?v=20260827-2308";
+  s.src="/assets/account-session-nav.js?v=20260827-2318";
   s.async=true;
   s.dataset.kgAccountSessionNav="1";
   document.head.appendChild(s);
