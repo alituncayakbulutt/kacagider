@@ -94,6 +94,15 @@ function watchHeaderAccount(){
   [0,80,250,600,1200,2200].forEach(function(ms){setTimeout(placeHeaderAccount,ms);});
 }
 
-function boot(){applyImages();requestAnimationFrame(applyImages);setTimeout(applyImages,350);watchHeaderAccount();}
+function loadFreshAuthBackend(){
+  if(document.querySelector('script[data-kg-google-auth-fresh="1"]'))return;
+  var script=document.createElement("script");
+  script.src="/assets/supabase-marketplace.js?v=20260827-google-auth-3";
+  script.async=true;
+  script.dataset.kgGoogleAuthFresh="1";
+  document.head.appendChild(script);
+}
+
+function boot(){loadFreshAuthBackend();applyImages();requestAnimationFrame(applyImages);setTimeout(applyImages,350);watchHeaderAccount();}
 if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",boot,{once:true});else boot();
 })();
