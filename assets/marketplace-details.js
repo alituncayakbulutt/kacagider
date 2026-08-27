@@ -50,99 +50,28 @@ function installStyle(){
   #viewHome .kg-product-art,#viewHome .category-image,#viewHome .category-media{overflow:hidden!important;display:flex!important;align-items:center!important;justify-content:center!important;background:#fff!important}
   #viewHome .kg-product-art img,#viewHome .category-image img,#viewHome .category-media img{display:block!important;width:86%!important;height:86%!important;max-width:86%!important;max-height:86%!important;object-fit:contain!important;object-position:center!important;transform:none!important;background:transparent!important}
   #viewHome [data-category="computer"] .kg-product-art img,#viewHome [data-category="bilgisayar"] .kg-product-art img{width:92%!important;max-width:92%!important;height:78%!important;max-height:78%!important}
-  #kgHeaderAccountAction,#kgAccountSessionAction{gap:9px!important;min-width:112px!important;box-shadow:none!important;transition:background .18s ease,border-color .18s ease!important}
-  #kgHeaderAccountAction:hover,#kgAccountSessionAction:hover{background:rgba(255,255,255,.11)!important;border-color:#718198!important}
-  #kgHeaderAccountAction::before,#kgAccountSessionAction::before{content:"";display:block;width:18px;height:18px;flex:0 0 18px;background:currentColor;-webkit-mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='none' stroke='%23000' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' d='M20 21a8 8 0 0 0-16 0M12 13a4 4 0 1 0 0-8 4 4 0 0 0 0 8Z'/%3E%3C/svg%3E") center/contain no-repeat;mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='none' stroke='%23000' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' d='M20 21a8 8 0 0 0-16 0M12 13a4 4 0 1 0 0-8 4 4 0 0 0 0 8Z'/%3E%3C/svg%3E") center/contain no-repeat}
-  @media(max-width:900px){#kgHeaderAccountAction,#kgAccountSessionAction{min-width:auto!important;padding:0 10px!important}}
   `;
   document.head.appendChild(s);
 }
 function applyImages(){
-  installStyle();var root=document.getElementById("viewHome")||document;
-  Object.keys(CATEGORY_IMAGES).forEach(function(key){root.querySelectorAll('[data-category="'+key+'"]').forEach(function(card){var img=card.querySelector(".kg-product-art img,.category-image img,.category-media img");if(!img)return;var src=CATEGORY_IMAGES[key];if(img.getAttribute("data-kg-stable-src")===src)return;img.src=src;img.setAttribute("data-kg-stable-src",src);img.alt=CATEGORY_ALT[key]||"İkinci el cihaz";img.loading="eager";img.decoding="async";img.onerror=null;});});
-}
-
-function loadAccountSessionNav(){
-  if(window.__KG_ACCOUNT_SESSION_NAV__||document.querySelector('script[data-kg-account-session-nav]'))return;
-  var s=document.createElement("script");
-  s.src="/assets/account-session-nav.js?v=20260827-2318";
-  s.async=true;
-  s.dataset.kgAccountSessionNav="1";
-  document.head.appendChild(s);
-}
-
-function showAndPlaceAccount(button,host,sell){
-  button.style.setProperty("display","inline-flex","important");
-  button.style.setProperty("visibility","visible","important");
-  button.style.setProperty("opacity","1","important");
-  button.style.setProperty("align-items","center","important");
-  button.style.setProperty("justify-content","center","important");
-  button.style.setProperty("height","46px","important");
-  button.style.setProperty("padding","0 14px","important");
-  button.style.setProperty("border","1px solid #536278","important");
-  button.style.setProperty("border-radius","12px","important");
-  button.style.setProperty("background","rgba(255,255,255,.04)","important");
-  button.style.setProperty("color","#fff","important");
-  button.style.setProperty("font-size","13px","important");
-  button.style.setProperty("font-weight","900","important");
-  button.style.setProperty("white-space","nowrap","important");
-  button.style.setProperty("cursor","pointer","important");
-  if(sell){
-    if(sell.nextSibling!==button)host.insertBefore(button,sell.nextSibling);
-  }else{
-    var theme=host.querySelector(".kg-theme-btn,#themeToggle");
-    if(theme)host.insertBefore(button,theme);else host.appendChild(button);
-  }
-}
-
-function ensureDirectAccountEntry(){
-  var host=document.querySelector(".kg-approved-topbar .kg-topbar-actions");
-  if(!host)return;
-  var sell=host.querySelector(".kg-v4-action.sell,.cta");
-  var headerAccount=document.getElementById("kgHeaderAccountAction");
-  if(headerAccount){
-    showAndPlaceAccount(headerAccount,host,sell);
-    return;
-  }
-  var sessionAccount=document.getElementById("kgAccountSessionAction");
-  if(sessionAccount){
-    showAndPlaceAccount(sessionAccount,host,sell);
-    return;
-  }
-  var button=document.createElement("button");
-  button.type="button";
-  button.id="kgAccountSessionAction";
-  button.className="kg-account-session";
-  button.textContent="Giriş Yap";
-  button.setAttribute("aria-label","KaçaGider hesabına giriş yap");
-  button.addEventListener("click",function(){
-    loadAccountSessionNav();
-    button.disabled=true;
-    button.textContent="Giriş hazırlanıyor…";
-    setTimeout(function(){
-      var current=document.getElementById("kgHeaderAccountAction")||document.getElementById("kgAccountSessionAction");
-      if(current&&current!==button){current.click();return;}
-      button.disabled=false;
-      button.textContent="Giriş Yap";
-    },650);
+  installStyle();
+  var root=document.getElementById("viewHome")||document;
+  Object.keys(CATEGORY_IMAGES).forEach(function(key){
+    root.querySelectorAll('[data-category="'+key+'"]').forEach(function(card){
+      var img=card.querySelector(".kg-product-art img,.category-image img,.category-media img");
+      if(!img)return;
+      var src=CATEGORY_IMAGES[key];
+      if(img.getAttribute("data-kg-stable-src")===src)return;
+      img.src=src;
+      img.setAttribute("data-kg-stable-src",src);
+      img.alt=CATEGORY_ALT[key]||"İkinci el cihaz";
+      img.loading="eager";
+      img.decoding="async";
+      img.onerror=null;
+    });
   });
-  showAndPlaceAccount(button,host,sell);
 }
 
-function watchAccountEntry(){
-  loadAccountSessionNav();
-  ensureDirectAccountEntry();
-  var header=document.querySelector(".kg-approved-topbar");
-  if(header&&typeof MutationObserver!=="undefined"){
-    new MutationObserver(function(){ensureDirectAccountEntry();}).observe(header,{childList:true,subtree:true});
-  }
-  var tries=0,timer=setInterval(function(){
-    ensureDirectAccountEntry();
-    tries++;
-    if(tries>=40)clearInterval(timer);
-  },250);
-}
-
-function boot(){applyImages();requestAnimationFrame(applyImages);setTimeout(applyImages,350);watchAccountEntry();}
+function boot(){applyImages();requestAnimationFrame(applyImages);setTimeout(applyImages,350);}
 if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",boot,{once:true});else boot();
 })();
