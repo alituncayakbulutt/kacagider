@@ -104,12 +104,15 @@ function loadFreshAuthBackend(){
 }
 
 function loadMobileHomeResponsive(){
-  if(document.querySelector('link[data-kg-mobile-home-responsive="1"]'))return;
-  var link=document.createElement("link");
-  link.rel="stylesheet";
-  link.href="/assets/mobile-home-responsive.css?v=20260828-1";
-  link.dataset.kgMobileHomeResponsive="1";
-  document.head.appendChild(link);
+  setTimeout(function(){
+    var old=document.querySelector('link[data-kg-mobile-home-responsive="1"]');
+    if(old)old.remove();
+    var link=document.createElement("link");
+    link.rel="stylesheet";
+    link.href="/assets/mobile-home-responsive.css?v=20260828-2-"+Date.now();
+    link.dataset.kgMobileHomeResponsive="1";
+    document.head.appendChild(link);
+  },300);
 }
 
 function boot(){loadMobileHomeResponsive();loadFreshAuthBackend();applyImages();requestAnimationFrame(applyImages);setTimeout(applyImages,350);watchHeaderAccount();}
