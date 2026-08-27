@@ -51,6 +51,55 @@ function applyImages(){
   Object.keys(CATEGORY_IMAGES).forEach(function(key){root.querySelectorAll('[data-category="'+key+'"]').forEach(function(card){var img=card.querySelector(".kg-product-art img,.category-image img,.category-media img");if(!img)return;var src=CATEGORY_IMAGES[key];if(img.getAttribute("data-kg-stable-src")===src)return;img.src=src;img.setAttribute("data-kg-stable-src",src);img.alt=CATEGORY_ALT[key]||"İkinci el cihaz";img.loading="eager";img.decoding="async";img.onerror=null;});});
 }
 
-function boot(){applyImages();requestAnimationFrame(applyImages);setTimeout(applyImages,350);}
+function loadAccountSessionNav(){
+  if(window.__KG_ACCOUNT_SESSION_NAV__||document.querySelector('script[data-kg-account-session-nav]'))return;
+  var s=document.createElement("script");
+  s.src="/assets/account-session-nav.js?v=20260827-2258";
+  s.async=true;
+  s.dataset.kgAccountSessionNav="1";
+  document.head.appendChild(s);
+}
+
+function ensureDirectAccountEntry(){
+  var host=document.querySelector(".kg-approved-topbar .kg-topbar-actions");
+  if(!host)return;
+  if(document.getElementById("kgHeaderAccountAction")||document.getElementById("kgAccountSessionAction"))return;
+  var button=document.createElement("button");
+  button.type="button";
+  button.id="kgAccountSessionAction";
+  button.className="kg-account-session";
+  button.textContent="Giriş Yap";
+  button.setAttribute("aria-label","KaçaGider hesabına giriş yap");
+  button.style.cssText="display:inline-flex;align-items:center;justify-content:center;height:46px;padding:0 14px;border:1px solid #536278;border-radius:12px;background:rgba(255,255,255,.04);color:#fff;font:inherit;font-size:13px;font-weight:900;white-space:nowrap;cursor:pointer";
+  button.addEventListener("click",function(){
+    loadAccountSessionNav();
+    button.disabled=true;
+    button.textContent="Giriş hazırlanıyor…";
+    setTimeout(function(){
+      var current=document.getElementById("kgAccountSessionAction");
+      if(current&&current!==button){current.click();return;}
+      button.disabled=false;
+      button.textContent="Giriş Yap";
+    },650);
+  });
+  var sell=host.querySelector(".kg-v4-action.sell,.cta");
+  if(sell)host.insertBefore(button,sell);else host.appendChild(button);
+}
+
+function watchAccountEntry(){
+  loadAccountSessionNav();
+  ensureDirectAccountEntry();
+  var header=document.querySelector(".kg-approved-topbar");
+  if(header&&typeof MutationObserver!=="undefined"){
+    new MutationObserver(function(){ensureDirectAccountEntry();}).observe(header,{childList:true,subtree:true});
+  }
+  var tries=0,timer=setInterval(function(){
+    ensureDirectAccountEntry();
+    tries++;
+    if(tries>=30)clearInterval(timer);
+  },300);
+}
+
+function boot(){applyImages();requestAnimationFrame(applyImages);setTimeout(applyImages,350);watchAccountEntry();}
 if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",boot,{once:true});else boot();
 })();
