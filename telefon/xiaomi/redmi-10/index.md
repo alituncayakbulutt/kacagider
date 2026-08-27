@@ -1,11 +1,11 @@
 ---
 layout: "seo"
-seo_title: "Xiaomi Redmi 10 Ne Kadar Eder? İkinci El Fiyatı | KaçaGider"
-seo_description: "Xiaomi Redmi 10 ne kadar eder? 64 GB, 128 GB seçeneklerinde Xiaomi Redmi 10 ikinci el fiyatı ve piyasa değeri, hafıza, kondisyon ve cihaz kayıt durumu dikkate alınarak KaçaGider ile ücretsiz hesaplanır."
-seo_h1: "Xiaomi Redmi 10 Ne Kadar Eder?"
-seo_intro: "Xiaomi Redmi 10 için güncel ikinci el değerini, gerçek cihaz bilgileri ve kondisyon ayrıntılarıyla KaçaGider üzerinden inceleyin."
-seo_context_heading: "Xiaomi Redmi 10 için güncel değerleme"
-seo_context: "Xiaomi Redmi 10 değeri; hafıza, kondisyon ve cihaz kayıt durumu ile birlikte güncel piyasa koşullarına göre değişebilir."
+seo_title: "Xiaomi Redmi 10 Ne Kadar Eder? Kaça Satılır? 2026 Fiyatı | KaçaGider"
+seo_description: "Xiaomi Redmi 10 Ne Kadar Eder? kaça satılır? Hafıza, ekran, batarya ve cihaz durumuna göre 2026 güncel ikinci el ortalama satış değerini KaçaGider ile ücretsiz hesapla."
+seo_h1: "Xiaomi Redmi 10 Ne Kadar Eder? Kaça Satılır? 2026 İkinci El Fiyatı"
+seo_intro: "Xiaomi Redmi 10 Ne Kadar Eder? kaça satılır? 2026 ikinci el değeri; hafıza, ekran, batarya ve cihaz durumu gibi özelliklere göre değişir. KaçaGider ile cihazınızın ortalama satış değerini ücretsiz hesaplayabilirsiniz."
+seo_context_heading: "Xiaomi Redmi 10 Ne Kadar Eder? ikinci el değeri nasıl hesaplanır?"
+seo_context: "Xiaomi Redmi 10 Ne Kadar Eder? ikinci el fiyatı belirlenirken hafıza, ekran, batarya ve cihaz durumu birlikte değerlendirilir. Cihazın kondisyonu ve çalışan özelliklerinin durumu ortalama satış değerini doğrudan etkiler. KaçaGider üzerinden bilgilerinizi seçerek 2026 için güncel ikinci el piyasa değerini görebilirsiniz."
 seo_breadcrumbs: [{"label":"Ana Sayfa","url":"/"},{"label":"Telefon","url":"/telefon/"},{"label":"Xiaomi","url":"/telefon/xiaomi/"},{"label":"Redmi 10","url":"/telefon/xiaomi/redmi-10/"}]
 seo_links: [{"label":"Telefon değerleme","url":"/telefon/"},{"label":"İkinci el fiyat nasıl hesaplanır?","url":"/ikinci-el-fiyat-nasil-hesaplanir/"},{"label":"Xiaomi 11 Lite 5G NE ikinci el fiyatı","url":"/telefon/xiaomi/xiaomi-11-lite-5g-ne/"},{"label":"Xiaomi 11T ikinci el fiyatı","url":"/telefon/xiaomi/xiaomi-11t/"},{"label":"Xiaomi 11T Pro ikinci el fiyatı","url":"/telefon/xiaomi/xiaomi-11t-pro/"},{"label":"64 GB","url":"/telefon/xiaomi/redmi-10/64gb/"},{"label":"128 GB","url":"/telefon/xiaomi/redmi-10/128gb/"}]
 seo_links_heading: "Xiaomi Redmi 10 ilgili sayfalar"

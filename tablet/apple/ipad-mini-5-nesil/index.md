@@ -1,11 +1,11 @@
 ---
 layout: "seo"
-seo_title: "Apple iPad mini (5. nesil) Ne Kadar Eder? İkinci El Fiyatı | KaçaGider"
-seo_description: "Apple iPad mini (5. nesil) ne kadar eder? 64 GB, 256 GB seçeneklerinde Apple iPad mini (5. nesil) ikinci el fiyatı ve piyasa değeri, kapasite ve kondisyon dikkate alınarak KaçaGider ile ücretsiz hesaplanır."
-seo_h1: "Apple iPad mini (5. nesil) Ne Kadar Eder?"
-seo_intro: "Apple iPad mini (5. nesil) için güncel ikinci el değerini, gerçek cihaz bilgileri ve kondisyon ayrıntılarıyla KaçaGider üzerinden inceleyin."
-seo_context_heading: "Apple iPad mini (5. nesil) için güncel değerleme"
-seo_context: "Apple iPad mini (5. nesil) değeri; kapasite ve kondisyon ile birlikte güncel piyasa koşullarına göre değişebilir."
+seo_title: "Apple iPad mini (5. nesil) Ne Kadar Eder? Kaça Satılır? | KaçaGider"
+seo_description: "Apple iPad mini (5. nesil) Ne Kadar Eder? kaça satılır? Hafıza, ekran, batarya ve cihaz durumuna göre 2026 güncel ikinci el ortalama satış değerini KaçaGider ile ücretsiz hesapla."
+seo_h1: "Apple iPad mini (5. nesil) Ne Kadar Eder? Kaça Satılır? 2026 İkinci El Fiyatı"
+seo_intro: "Apple iPad mini (5. nesil) Ne Kadar Eder? kaça satılır? 2026 ikinci el değeri; hafıza, ekran, batarya ve cihaz durumu gibi özelliklere göre değişir. KaçaGider ile cihazınızın ortalama satış değerini ücretsiz hesaplayabilirsiniz."
+seo_context_heading: "Apple iPad mini (5. nesil) Ne Kadar Eder? ikinci el değeri nasıl hesaplanır?"
+seo_context: "Apple iPad mini (5. nesil) Ne Kadar Eder? ikinci el fiyatı belirlenirken hafıza, ekran, batarya ve cihaz durumu birlikte değerlendirilir. Cihazın kondisyonu ve çalışan özelliklerinin durumu ortalama satış değerini doğrudan etkiler. KaçaGider üzerinden bilgilerinizi seçerek 2026 için güncel ikinci el piyasa değerini görebilirsiniz."
 seo_breadcrumbs: [{"label":"Ana Sayfa","url":"/"},{"label":"Tablet","url":"/tablet/"},{"label":"Apple","url":"/tablet/apple/"},{"label":"iPad mini (5. nesil)","url":"/tablet/apple/ipad-mini-5-nesil/"}]
 seo_links: [{"label":"Tablet değerleme","url":"/tablet/"},{"label":"İkinci el fiyat nasıl hesaplanır?","url":"/ikinci-el-fiyat-nasil-hesaplanir/"},{"label":"iPad (7. nesil) ikinci el fiyatı","url":"/tablet/apple/ipad-7-nesil/"},{"label":"iPad (8. nesil) ikinci el fiyatı","url":"/tablet/apple/ipad-8-nesil/"},{"label":"iPad (9. nesil) ikinci el fiyatı","url":"/tablet/apple/ipad-9-nesil/"},{"label":"64 GB","url":"/tablet/apple/ipad-mini-5-nesil/64gb/"},{"label":"256 GB","url":"/tablet/apple/ipad-mini-5-nesil/256gb/"}]
 seo_links_heading: "Apple iPad mini (5. nesil) ilgili sayfalar"

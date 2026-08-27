@@ -1,11 +1,11 @@
 ---
 layout: "seo"
-seo_title: "Dell G15 Ne Kadar Eder? İkinci El Fiyatı | KaçaGider"
-seo_description: "Dell G15 ne kadar eder? 512 GB, 1 TB seçeneklerinde Dell G15 ikinci el fiyatı ve piyasa değeri, kapasite ve kondisyon dikkate alınarak KaçaGider ile ücretsiz hesaplanır."
-seo_h1: "Dell G15 Ne Kadar Eder?"
-seo_intro: "Dell G15 için güncel ikinci el değerini, gerçek cihaz bilgileri ve kondisyon ayrıntılarıyla KaçaGider üzerinden inceleyin."
-seo_context_heading: "Dell G15 için güncel değerleme"
-seo_context: "Dell G15 değeri; kapasite ve kondisyon ile birlikte güncel piyasa koşullarına göre değişebilir."
+seo_title: "Dell G15 Ne Kadar Eder? Kaça Satılır? 2026 Fiyatı | KaçaGider"
+seo_description: "Dell G15 Ne Kadar Eder? kaça satılır? İşlemci, RAM, depolama ve cihaz durumuna göre 2026 güncel ikinci el ortalama satış değerini KaçaGider ile ücretsiz hesapla."
+seo_h1: "Dell G15 Ne Kadar Eder? Kaça Satılır? 2026 İkinci El Fiyatı"
+seo_intro: "Dell G15 Ne Kadar Eder? kaça satılır? 2026 ikinci el değeri; işlemci, RAM, depolama, ekran ve genel cihaz durumu gibi özelliklere göre değişir. KaçaGider ile cihazınızın ortalama satış değerini ücretsiz hesaplayabilirsiniz."
+seo_context_heading: "Dell G15 Ne Kadar Eder? ikinci el değeri nasıl hesaplanır?"
+seo_context: "Dell G15 Ne Kadar Eder? ikinci el fiyatı belirlenirken işlemci, RAM, depolama, ekran ve genel cihaz durumu birlikte değerlendirilir. Cihazın kondisyonu ve çalışan özelliklerinin durumu ortalama satış değerini doğrudan etkiler. KaçaGider üzerinden bilgilerinizi seçerek 2026 için güncel ikinci el piyasa değerini görebilirsiniz."
 seo_breadcrumbs: [{"label":"Ana Sayfa","url":"/"},{"label":"Bilgisayar","url":"/bilgisayar/"},{"label":"Dell","url":"/bilgisayar/dell/"},{"label":"G15","url":"/bilgisayar/dell/g15/"}]
 seo_links: [{"label":"Bilgisayar değerleme","url":"/bilgisayar/"},{"label":"İkinci el fiyat nasıl hesaplanır?","url":"/ikinci-el-fiyat-nasil-hesaplanir/"},{"label":"Inspiron 15 ikinci el fiyatı","url":"/bilgisayar/dell/inspiron-15/"},{"label":"Vostro 3520 ikinci el fiyatı","url":"/bilgisayar/dell/vostro-3520/"},{"label":"Latitude 5440 ikinci el fiyatı","url":"/bilgisayar/dell/latitude-5440/"},{"label":"512 GB","url":"/bilgisayar/dell/g15/512gb/"},{"label":"1 TB","url":"/bilgisayar/dell/g15/1tb/"}]
 seo_links_heading: "Dell G15 ilgili sayfalar"

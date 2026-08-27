@@ -1,11 +1,11 @@
 ---
 layout: "seo"
-seo_title: "Huawei Mate 60 Pro 256 GB Ne Kadar Eder? İkinci El Fiyatı | KaçaGider"
-seo_description: "Huawei Mate 60 Pro 256 GB ne kadar eder? 256 GB, 512 GB, 1 TB seçeneklerinde Huawei Mate 60 Pro 256 GB ikinci el fiyatı ve piyasa değeri, hafıza, kondisyon ve cihaz kayıt durumu dikkate alınarak KaçaGider ile ücretsiz hesaplanır."
-seo_h1: "Huawei Mate 60 Pro 256 GB İkinci El Fiyatı"
-seo_intro: "Huawei Mate 60 Pro 256 GB için güncel ikinci el değerini, gerçek cihaz bilgileri ve kondisyon ayrıntılarıyla KaçaGider üzerinden inceleyin."
-seo_context_heading: "Huawei Mate 60 Pro 256 GB için güncel değerleme"
-seo_context: "Huawei Mate 60 Pro 256 GB değeri; hafıza, kondisyon ve cihaz kayıt durumu ile birlikte güncel piyasa koşullarına göre değişebilir."
+seo_title: "Huawei Mate 60 Pro 256 GB Ne Kadar Eder? Kaça Satılır? | KaçaGider"
+seo_description: "Huawei Mate 60 Pro 256 GB Ne Kadar Eder? kaça satılır? Ekran, batarya, kamera ve cihaz durumuna göre 2026 güncel ikinci el ortalama satış değerini KaçaGider ile ücretsiz hesapla."
+seo_h1: "Huawei Mate 60 Pro 256 GB Ne Kadar Eder? Kaça Satılır? 2026 İkinci El Fiyatı"
+seo_intro: "Huawei Mate 60 Pro 256 GB Ne Kadar Eder? kaça satılır? 2026 ikinci el değeri; ekran, batarya, kamera ve cihaz durumu gibi özelliklere göre değişir. KaçaGider ile cihazınızın ortalama satış değerini ücretsiz hesaplayabilirsiniz."
+seo_context_heading: "Huawei Mate 60 Pro 256 GB Ne Kadar Eder? ikinci el değeri nasıl hesaplanır?"
+seo_context: "Huawei Mate 60 Pro 256 GB Ne Kadar Eder? ikinci el fiyatı belirlenirken ekran, batarya, kamera ve cihaz durumu birlikte değerlendirilir. Cihazın kondisyonu ve çalışan özelliklerinin durumu ortalama satış değerini doğrudan etkiler. KaçaGider üzerinden bilgilerinizi seçerek 2026 için güncel ikinci el piyasa değerini görebilirsiniz."
 seo_breadcrumbs: [{"label":"Ana Sayfa","url":"/"},{"label":"Telefon","url":"/telefon/"},{"label":"Huawei","url":"/telefon/huawei/"},{"label":"Mate 60 Pro","url":"/telefon/huawei/mate-60-pro/"},{"label":"256 GB","url":"/telefon/huawei/mate-60-pro/256gb/"}]
 seo_links: [{"label":"Telefon değerleme","url":"/telefon/"},{"label":"İkinci el fiyat nasıl hesaplanır?","url":"/ikinci-el-fiyat-nasil-hesaplanir/"},{"label":"Mate 60 Pro ana sayfası","url":"/telefon/huawei/mate-60-pro/"},{"label":"512 GB","url":"/telefon/huawei/mate-60-pro/512gb/"},{"label":"1 TB","url":"/telefon/huawei/mate-60-pro/1tb/"}]
 seo_links_heading: "Huawei Mate 60 Pro 256 GB ilgili sayfalar"

@@ -1,11 +1,11 @@
 ---
 layout: "seo"
-seo_title: "Xbox Series S 1 TB 1 TB Ne Kadar Eder? Güncel İkinci El Fiyatı | KaçaGider"
-seo_description: "Xbox Series S 1 TB 1 TB ne kadar eder? 1 TB seçeneklerinde Xbox Series S 1 TB 1 TB ikinci el fiyatı ve piyasa değeri, depolama ve kondisyon dikkate alınarak KaçaGider ile ücretsiz hesaplanır."
-seo_h1: "Xbox Series S 1 TB 1 TB İkinci El Fiyatı"
-seo_intro: "Xbox Series S 1 TB 1 TB için güncel ikinci el değerini, gerçek cihaz bilgileri ve kondisyon ayrıntılarıyla KaçaGider üzerinden inceleyin."
-seo_context_heading: "Xbox Series S 1 TB 1 TB için güncel değerleme"
-seo_context: "Xbox Series S 1 TB 1 TB değeri; depolama ve kondisyon ile birlikte güncel piyasa koşullarına göre değişebilir."
+seo_title: "Xbox Series S 1 TB 1 TB Ne Kadar Eder? Güncel Kaça Satılır? | KaçaGider"
+seo_description: "Xbox Series S 1 TB 1 TB ne kadar eder? İkinci el fiyatı ve piyasa değerini cihaz özellikleri ve kondisyonuna göre KaçaGider ile öğren."
+seo_h1: "Xbox Series S 1 TB 1 TB Ne Kadar Eder? Güncel Kaça Satılır? 2026 İkinci El Fiyatı"
+seo_intro: "Xbox Series S 1 TB 1 TB Ne Kadar Eder? Güncel kaça satılır? 2026 ikinci el değeri; kozmetik durum, aksesuarlar ve çalışma durumu gibi özelliklere göre değişir. KaçaGider ile cihazınızın ortalama satış değerini ücretsiz hesaplayabilirsiniz."
+seo_context_heading: "Xbox Series S 1 TB 1 TB Ne Kadar Eder? Güncel ikinci el değeri nasıl hesaplanır?"
+seo_context: "Xbox Series S 1 TB 1 TB Ne Kadar Eder? Güncel ikinci el fiyatı belirlenirken kozmetik durum, aksesuarlar ve çalışma durumu birlikte değerlendirilir. Cihazın kondisyonu ve çalışan özelliklerinin durumu ortalama satış değerini doğrudan etkiler. KaçaGider üzerinden bilgilerinizi seçerek 2026 için güncel ikinci el piyasa değerini görebilirsiniz."
 seo_breadcrumbs: [{"label":"Ana Sayfa","url":"/"},{"label":"Oyun Konsolu","url":"/oyun-konsolu/"},{"label":"Xbox","url":"/oyun-konsolu/xbox/"},{"label":"Xbox Series S 1 TB","url":"/oyun-konsolu/xbox/xbox-series-s-1-tb/"},{"label":"1 TB","url":"/oyun-konsolu/xbox/xbox-series-s-1-tb/1tb/"}]
 seo_links: [{"label":"Oyun Konsolu değerleme","url":"/oyun-konsolu/"},{"label":"İkinci el fiyat nasıl hesaplanır?","url":"/ikinci-el-fiyat-nasil-hesaplanir/"},{"label":"Xbox Series S 1 TB ana sayfası","url":"/oyun-konsolu/xbox/xbox-series-s-1-tb/"}]
 seo_links_heading: "Xbox Series S 1 TB 1 TB ilgili sayfalar"

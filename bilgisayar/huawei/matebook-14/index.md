@@ -1,11 +1,11 @@
 ---
 layout: "seo"
-seo_title: "Huawei MateBook 14 Ne Kadar Eder? İkinci El Fiyatı | KaçaGider"
-seo_description: "Huawei MateBook 14 ne kadar eder? 512 GB, 1 TB seçeneklerinde Huawei MateBook 14 ikinci el fiyatı ve piyasa değeri, kapasite ve kondisyon dikkate alınarak KaçaGider ile ücretsiz hesaplanır."
-seo_h1: "Huawei MateBook 14 Ne Kadar Eder?"
-seo_intro: "Huawei MateBook 14 için güncel ikinci el değerini, gerçek cihaz bilgileri ve kondisyon ayrıntılarıyla KaçaGider üzerinden inceleyin."
-seo_context_heading: "Huawei MateBook 14 için güncel değerleme"
-seo_context: "Huawei MateBook 14 değeri; kapasite ve kondisyon ile birlikte güncel piyasa koşullarına göre değişebilir."
+seo_title: "Huawei MateBook 14 Ne Kadar Eder? Kaça Satılır? 2026 | KaçaGider"
+seo_description: "Huawei MateBook 14 Ne Kadar Eder? kaça satılır? İşlemci, RAM, depolama ve cihaz durumuna göre 2026 güncel ikinci el ortalama satış değerini KaçaGider ile ücretsiz hesapla."
+seo_h1: "Huawei MateBook 14 Ne Kadar Eder? Kaça Satılır? 2026 İkinci El Fiyatı"
+seo_intro: "Huawei MateBook 14 Ne Kadar Eder? kaça satılır? 2026 ikinci el değeri; işlemci, RAM, depolama, ekran ve genel cihaz durumu gibi özelliklere göre değişir. KaçaGider ile cihazınızın ortalama satış değerini ücretsiz hesaplayabilirsiniz."
+seo_context_heading: "Huawei MateBook 14 Ne Kadar Eder? ikinci el değeri nasıl hesaplanır?"
+seo_context: "Huawei MateBook 14 Ne Kadar Eder? ikinci el fiyatı belirlenirken işlemci, RAM, depolama, ekran ve genel cihaz durumu birlikte değerlendirilir. Cihazın kondisyonu ve çalışan özelliklerinin durumu ortalama satış değerini doğrudan etkiler. KaçaGider üzerinden bilgilerinizi seçerek 2026 için güncel ikinci el piyasa değerini görebilirsiniz."
 seo_breadcrumbs: [{"label":"Ana Sayfa","url":"/"},{"label":"Bilgisayar","url":"/bilgisayar/"},{"label":"Huawei","url":"/bilgisayar/huawei/"},{"label":"MateBook 14","url":"/bilgisayar/huawei/matebook-14/"}]
 seo_links: [{"label":"Bilgisayar değerleme","url":"/bilgisayar/"},{"label":"İkinci el fiyat nasıl hesaplanır?","url":"/ikinci-el-fiyat-nasil-hesaplanir/"},{"label":"MateBook D 14 ikinci el fiyatı","url":"/bilgisayar/huawei/matebook-d-14/"},{"label":"MateBook D 16 ikinci el fiyatı","url":"/bilgisayar/huawei/matebook-d-16/"},{"label":"MateBook X Pro ikinci el fiyatı","url":"/bilgisayar/huawei/matebook-x-pro/"},{"label":"512 GB","url":"/bilgisayar/huawei/matebook-14/512gb/"},{"label":"1 TB","url":"/bilgisayar/huawei/matebook-14/1tb/"}]
 seo_links_heading: "Huawei MateBook 14 ilgili sayfalar"

@@ -1,11 +1,11 @@
 ---
 layout: "seo"
-seo_title: "Lenovo ThinkPad E14 Ne Kadar Eder? İkinci El Fiyatı | KaçaGider"
-seo_description: "Lenovo ThinkPad E14 ne kadar eder? 256 GB, 512 GB seçeneklerinde Lenovo ThinkPad E14 ikinci el fiyatı ve piyasa değeri, kapasite ve kondisyon dikkate alınarak KaçaGider ile ücretsiz hesaplanır."
-seo_h1: "Lenovo ThinkPad E14 Ne Kadar Eder?"
-seo_intro: "Lenovo ThinkPad E14 için güncel ikinci el değerini, gerçek cihaz bilgileri ve kondisyon ayrıntılarıyla KaçaGider üzerinden inceleyin."
-seo_context_heading: "Lenovo ThinkPad E14 için güncel değerleme"
-seo_context: "Lenovo ThinkPad E14 değeri; kapasite ve kondisyon ile birlikte güncel piyasa koşullarına göre değişebilir."
+seo_title: "Lenovo ThinkPad E14 Ne Kadar Eder? Kaça Satılır? 2026 | KaçaGider"
+seo_description: "Lenovo ThinkPad E14 Ne Kadar Eder? kaça satılır? İşlemci, RAM, depolama ve cihaz durumuna göre 2026 güncel ikinci el ortalama satış değerini KaçaGider ile ücretsiz hesapla."
+seo_h1: "Lenovo ThinkPad E14 Ne Kadar Eder? Kaça Satılır? 2026 İkinci El Fiyatı"
+seo_intro: "Lenovo ThinkPad E14 Ne Kadar Eder? kaça satılır? 2026 ikinci el değeri; işlemci, RAM, depolama, ekran ve genel cihaz durumu gibi özelliklere göre değişir. KaçaGider ile cihazınızın ortalama satış değerini ücretsiz hesaplayabilirsiniz."
+seo_context_heading: "Lenovo ThinkPad E14 Ne Kadar Eder? ikinci el değeri nasıl hesaplanır?"
+seo_context: "Lenovo ThinkPad E14 Ne Kadar Eder? ikinci el fiyatı belirlenirken işlemci, RAM, depolama, ekran ve genel cihaz durumu birlikte değerlendirilir. Cihazın kondisyonu ve çalışan özelliklerinin durumu ortalama satış değerini doğrudan etkiler. KaçaGider üzerinden bilgilerinizi seçerek 2026 için güncel ikinci el piyasa değerini görebilirsiniz."
 seo_breadcrumbs: [{"label":"Ana Sayfa","url":"/"},{"label":"Bilgisayar","url":"/bilgisayar/"},{"label":"Lenovo","url":"/bilgisayar/lenovo/"},{"label":"ThinkPad E14","url":"/bilgisayar/lenovo/thinkpad-e14/"}]
 seo_links: [{"label":"Bilgisayar değerleme","url":"/bilgisayar/"},{"label":"İkinci el fiyat nasıl hesaplanır?","url":"/ikinci-el-fiyat-nasil-hesaplanir/"},{"label":"IdeaPad Slim 3 ikinci el fiyatı","url":"/bilgisayar/lenovo/ideapad-slim-3/"},{"label":"LOQ 15 ikinci el fiyatı","url":"/bilgisayar/lenovo/loq-15/"},{"label":"Legion 5 ikinci el fiyatı","url":"/bilgisayar/lenovo/legion-5/"},{"label":"256 GB","url":"/bilgisayar/lenovo/thinkpad-e14/256gb/"},{"label":"512 GB","url":"/bilgisayar/lenovo/thinkpad-e14/512gb/"}]
 seo_links_heading: "Lenovo ThinkPad E14 ilgili sayfalar"

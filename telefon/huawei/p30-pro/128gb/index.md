@@ -1,11 +1,11 @@
 ---
 layout: "seo"
-seo_title: "Huawei P30 Pro 128 GB Ne Kadar Eder? İkinci El Fiyatı | KaçaGider"
-seo_description: "Huawei P30 Pro 128 GB ne kadar eder? 128 GB, 256 GB seçeneklerinde Huawei P30 Pro 128 GB ikinci el fiyatı ve piyasa değeri, hafıza, kondisyon ve cihaz kayıt durumu dikkate alınarak KaçaGider ile ücretsiz hesaplanır."
-seo_h1: "Huawei P30 Pro 128 GB İkinci El Fiyatı"
-seo_intro: "Huawei P30 Pro 128 GB için güncel ikinci el değerini, gerçek cihaz bilgileri ve kondisyon ayrıntılarıyla KaçaGider üzerinden inceleyin."
-seo_context_heading: "Huawei P30 Pro 128 GB için güncel değerleme"
-seo_context: "Huawei P30 Pro 128 GB değeri; hafıza, kondisyon ve cihaz kayıt durumu ile birlikte güncel piyasa koşullarına göre değişebilir."
+seo_title: "Huawei P30 Pro 128 GB Ne Kadar Eder? Kaça Satılır? 2026 | KaçaGider"
+seo_description: "Huawei P30 Pro 128 GB Ne Kadar Eder? kaça satılır? Ekran, batarya, kamera ve cihaz durumuna göre 2026 güncel ikinci el ortalama satış değerini KaçaGider ile ücretsiz hesapla."
+seo_h1: "Huawei P30 Pro 128 GB Ne Kadar Eder? Kaça Satılır? 2026 İkinci El Fiyatı"
+seo_intro: "Huawei P30 Pro 128 GB Ne Kadar Eder? kaça satılır? 2026 ikinci el değeri; ekran, batarya, kamera ve cihaz durumu gibi özelliklere göre değişir. KaçaGider ile cihazınızın ortalama satış değerini ücretsiz hesaplayabilirsiniz."
+seo_context_heading: "Huawei P30 Pro 128 GB Ne Kadar Eder? ikinci el değeri nasıl hesaplanır?"
+seo_context: "Huawei P30 Pro 128 GB Ne Kadar Eder? ikinci el fiyatı belirlenirken ekran, batarya, kamera ve cihaz durumu birlikte değerlendirilir. Cihazın kondisyonu ve çalışan özelliklerinin durumu ortalama satış değerini doğrudan etkiler. KaçaGider üzerinden bilgilerinizi seçerek 2026 için güncel ikinci el piyasa değerini görebilirsiniz."
 seo_breadcrumbs: [{"label":"Ana Sayfa","url":"/"},{"label":"Telefon","url":"/telefon/"},{"label":"Huawei","url":"/telefon/huawei/"},{"label":"P30 Pro","url":"/telefon/huawei/p30-pro/"},{"label":"128 GB","url":"/telefon/huawei/p30-pro/128gb/"}]
 seo_links: [{"label":"Telefon değerleme","url":"/telefon/"},{"label":"İkinci el fiyat nasıl hesaplanır?","url":"/ikinci-el-fiyat-nasil-hesaplanir/"},{"label":"P30 Pro ana sayfası","url":"/telefon/huawei/p30-pro/"},{"label":"256 GB","url":"/telefon/huawei/p30-pro/256gb/"}]
 seo_links_heading: "Huawei P30 Pro 128 GB ilgili sayfalar"

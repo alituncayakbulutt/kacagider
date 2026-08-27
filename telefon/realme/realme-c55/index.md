@@ -1,11 +1,11 @@
 ---
 layout: "seo"
-seo_title: "Realme C55 Ne Kadar Eder? Güncel İkinci El Fiyatı | KaçaGider"
-seo_description: "Realme C55 ne kadar eder? 128 GB, 256 GB seçeneklerinde Realme C55 ikinci el fiyatı ve piyasa değeri, hafıza, kondisyon ve cihaz kayıt durumu dikkate alınarak KaçaGider ile ücretsiz hesaplanır."
-seo_h1: "Realme C55 Ne Kadar Eder?"
-seo_intro: "Realme C55 için güncel ikinci el değerini, gerçek cihaz bilgileri ve kondisyon ayrıntılarıyla KaçaGider üzerinden inceleyin."
-seo_context_heading: "Realme C55 için güncel değerleme"
-seo_context: "Realme C55 değeri; hafıza, kondisyon ve cihaz kayıt durumu ile birlikte güncel piyasa koşullarına göre değişebilir."
+seo_title: "Realme C55 Ne Kadar Eder? Güncel Kaça Satılır? 2026 | KaçaGider"
+seo_description: "Realme C55 Ne Kadar Eder? Güncel kaça satılır? Hafıza, ekran, batarya, kamera ve cihaz durumuna göre 2026 güncel ikinci el ortalama satış değerini KaçaGider ile ücretsiz hesapla."
+seo_h1: "Realme C55 Ne Kadar Eder? Güncel Kaça Satılır? 2026 İkinci El Fiyatı"
+seo_intro: "Realme C55 Ne Kadar Eder? Güncel kaça satılır? 2026 ikinci el değeri; hafıza, ekran, batarya, kamera ve cihaz durumu gibi özelliklere göre değişir. KaçaGider ile cihazınızın ortalama satış değerini ücretsiz hesaplayabilirsiniz."
+seo_context_heading: "Realme C55 Ne Kadar Eder? Güncel ikinci el değeri nasıl hesaplanır?"
+seo_context: "Realme C55 Ne Kadar Eder? Güncel ikinci el fiyatı belirlenirken hafıza, ekran, batarya, kamera ve cihaz durumu birlikte değerlendirilir. Cihazın kondisyonu ve çalışan özelliklerinin durumu ortalama satış değerini doğrudan etkiler. KaçaGider üzerinden bilgilerinizi seçerek 2026 için güncel ikinci el piyasa değerini görebilirsiniz."
 seo_breadcrumbs: [{"label":"Ana Sayfa","url":"/"},{"label":"Telefon","url":"/telefon/"},{"label":"Realme","url":"/telefon/realme/"},{"label":"Realme C55","url":"/telefon/realme/realme-c55/"}]
 seo_links: [{"label":"Telefon değerleme","url":"/telefon/"},{"label":"İkinci el fiyat nasıl hesaplanır?","url":"/ikinci-el-fiyat-nasil-hesaplanir/"},{"label":"Realme 8 ikinci el fiyatı","url":"/telefon/realme/realme-8/"},{"label":"Realme 8 Pro ikinci el fiyatı","url":"/telefon/realme/realme-8-pro/"},{"label":"Realme 9 ikinci el fiyatı","url":"/telefon/realme/realme-9/"},{"label":"128 GB","url":"/telefon/realme/realme-c55/128gb/"},{"label":"256 GB","url":"/telefon/realme/realme-c55/256gb/"}]
 seo_links_heading: "Realme C55 ilgili sayfalar"

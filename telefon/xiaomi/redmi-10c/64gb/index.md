@@ -1,11 +1,11 @@
 ---
 layout: "seo"
-seo_title: "Xiaomi Redmi 10C 64 GB Ne Kadar Eder? İkinci El Fiyatı | KaçaGider"
-seo_description: "Xiaomi Redmi 10C 64 GB ne kadar eder? 64 GB, 128 GB seçeneklerinde Xiaomi Redmi 10C 64 GB ikinci el fiyatı ve piyasa değeri, hafıza, kondisyon ve cihaz kayıt durumu dikkate alınarak KaçaGider ile ücretsiz hesaplanır."
-seo_h1: "Xiaomi Redmi 10C 64 GB İkinci El Fiyatı"
-seo_intro: "Xiaomi Redmi 10C 64 GB için güncel ikinci el değerini, gerçek cihaz bilgileri ve kondisyon ayrıntılarıyla KaçaGider üzerinden inceleyin."
-seo_context_heading: "Xiaomi Redmi 10C 64 GB için güncel değerleme"
-seo_context: "Xiaomi Redmi 10C 64 GB değeri; hafıza, kondisyon ve cihaz kayıt durumu ile birlikte güncel piyasa koşullarına göre değişebilir."
+seo_title: "Xiaomi Redmi 10C 64 GB Ne Kadar Eder? Kaça Satılır? 2026 | KaçaGider"
+seo_description: "Xiaomi Redmi 10C 64 GB Ne Kadar Eder? kaça satılır? Ekran, batarya ve cihaz durumuna göre 2026 güncel ikinci el ortalama satış değerini KaçaGider ile ücretsiz hesapla."
+seo_h1: "Xiaomi Redmi 10C 64 GB Ne Kadar Eder? Kaça Satılır? 2026 İkinci El Fiyatı"
+seo_intro: "Xiaomi Redmi 10C 64 GB Ne Kadar Eder? kaça satılır? 2026 ikinci el değeri; ekran, batarya ve cihaz durumu gibi özelliklere göre değişir. KaçaGider ile cihazınızın ortalama satış değerini ücretsiz hesaplayabilirsiniz."
+seo_context_heading: "Xiaomi Redmi 10C 64 GB Ne Kadar Eder? ikinci el değeri nasıl hesaplanır?"
+seo_context: "Xiaomi Redmi 10C 64 GB Ne Kadar Eder? ikinci el fiyatı belirlenirken ekran, batarya ve cihaz durumu birlikte değerlendirilir. Cihazın kondisyonu ve çalışan özelliklerinin durumu ortalama satış değerini doğrudan etkiler. KaçaGider üzerinden bilgilerinizi seçerek 2026 için güncel ikinci el piyasa değerini görebilirsiniz."
 seo_breadcrumbs: [{"label":"Ana Sayfa","url":"/"},{"label":"Telefon","url":"/telefon/"},{"label":"Xiaomi","url":"/telefon/xiaomi/"},{"label":"Redmi 10C","url":"/telefon/xiaomi/redmi-10c/"},{"label":"64 GB","url":"/telefon/xiaomi/redmi-10c/64gb/"}]
 seo_links: [{"label":"Telefon değerleme","url":"/telefon/"},{"label":"İkinci el fiyat nasıl hesaplanır?","url":"/ikinci-el-fiyat-nasil-hesaplanir/"},{"label":"Redmi 10C ana sayfası","url":"/telefon/xiaomi/redmi-10c/"},{"label":"128 GB","url":"/telefon/xiaomi/redmi-10c/128gb/"}]
 seo_links_heading: "Xiaomi Redmi 10C 64 GB ilgili sayfalar"

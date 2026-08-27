@@ -1,11 +1,11 @@
 ---
 layout: "seo"
-seo_title: "Xbox Series S 512 GB 512 GB Ne Kadar Eder? Güncel İkinci El Fiyatı | KaçaGider"
-seo_description: "Xbox Series S 512 GB 512 GB ne kadar eder? 512 GB seçeneklerinde Xbox Series S 512 GB 512 GB ikinci el fiyatı ve piyasa değeri, depolama ve kondisyon dikkate alınarak KaçaGider ile ücretsiz hesaplanır."
-seo_h1: "Xbox Series S 512 GB 512 GB İkinci El Fiyatı"
-seo_intro: "Xbox Series S 512 GB 512 GB için güncel ikinci el değerini, gerçek cihaz bilgileri ve kondisyon ayrıntılarıyla KaçaGider üzerinden inceleyin."
-seo_context_heading: "Xbox Series S 512 GB 512 GB için güncel değerleme"
-seo_context: "Xbox Series S 512 GB 512 GB değeri; depolama ve kondisyon ile birlikte güncel piyasa koşullarına göre değişebilir."
+seo_title: "Xbox Series S 512 GB 512 GB Ne Kadar Eder? Güncel Kaça Satılır? | KaçaGider"
+seo_description: "Xbox Series S 512 GB 512 GB ne kadar eder? İkinci el fiyatı ve piyasa değerini cihaz özellikleri ve kondisyonuna göre KaçaGider ile öğren."
+seo_h1: "Xbox Series S 512 GB 512 GB Ne Kadar Eder? Güncel Kaça Satılır? 2026 İkinci El Fiyatı"
+seo_intro: "Xbox Series S 512 GB 512 GB Ne Kadar Eder? Güncel kaça satılır? 2026 ikinci el değeri; kozmetik durum, aksesuarlar ve çalışma durumu gibi özelliklere göre değişir. KaçaGider ile cihazınızın ortalama satış değerini ücretsiz hesaplayabilirsiniz."
+seo_context_heading: "Xbox Series S 512 GB 512 GB Ne Kadar Eder? Güncel ikinci el değeri nasıl hesaplanır?"
+seo_context: "Xbox Series S 512 GB 512 GB Ne Kadar Eder? Güncel ikinci el fiyatı belirlenirken kozmetik durum, aksesuarlar ve çalışma durumu birlikte değerlendirilir. Cihazın kondisyonu ve çalışan özelliklerinin durumu ortalama satış değerini doğrudan etkiler. KaçaGider üzerinden bilgilerinizi seçerek 2026 için güncel ikinci el piyasa değerini görebilirsiniz."
 seo_breadcrumbs: [{"label":"Ana Sayfa","url":"/"},{"label":"Oyun Konsolu","url":"/oyun-konsolu/"},{"label":"Xbox","url":"/oyun-konsolu/xbox/"},{"label":"Xbox Series S 512 GB","url":"/oyun-konsolu/xbox/xbox-series-s-512-gb/"},{"label":"512 GB","url":"/oyun-konsolu/xbox/xbox-series-s-512-gb/512gb/"}]
 seo_links: [{"label":"Oyun Konsolu değerleme","url":"/oyun-konsolu/"},{"label":"İkinci el fiyat nasıl hesaplanır?","url":"/ikinci-el-fiyat-nasil-hesaplanir/"},{"label":"Xbox Series S 512 GB ana sayfası","url":"/oyun-konsolu/xbox/xbox-series-s-512-gb/"}]
 seo_links_heading: "Xbox Series S 512 GB 512 GB ilgili sayfalar"

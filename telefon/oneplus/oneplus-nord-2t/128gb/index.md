@@ -1,11 +1,11 @@
 ---
 layout: "seo"
-seo_title: "OnePlus Nord 2T 128 GB Ne Kadar Eder? Güncel İkinci El Fiyatı | KaçaGider"
-seo_description: "OnePlus Nord 2T 128 GB ne kadar eder? 128 GB, 256 GB seçeneklerinde OnePlus Nord 2T 128 GB ikinci el fiyatı ve piyasa değeri, hafıza, kondisyon ve cihaz kayıt durumu dikkate alınarak KaçaGider ile ücretsiz hesaplanır."
-seo_h1: "OnePlus Nord 2T 128 GB İkinci El Fiyatı"
-seo_intro: "OnePlus Nord 2T 128 GB için güncel ikinci el değerini, gerçek cihaz bilgileri ve kondisyon ayrıntılarıyla KaçaGider üzerinden inceleyin."
-seo_context_heading: "OnePlus Nord 2T 128 GB için güncel değerleme"
-seo_context: "OnePlus Nord 2T 128 GB değeri; hafıza, kondisyon ve cihaz kayıt durumu ile birlikte güncel piyasa koşullarına göre değişebilir."
+seo_title: "OnePlus Nord 2T 128 GB Ne Kadar Eder? Güncel Kaça Satılır? | KaçaGider"
+seo_description: "OnePlus Nord 2T 128 GB ne kadar eder? İkinci el fiyatı ve piyasa değerini cihaz özellikleri ve kondisyonuna göre KaçaGider ile öğren."
+seo_h1: "OnePlus Nord 2T 128 GB Ne Kadar Eder? Güncel Kaça Satılır? 2026 İkinci El Fiyatı"
+seo_intro: "OnePlus Nord 2T 128 GB Ne Kadar Eder? Güncel kaça satılır? 2026 ikinci el değeri; ekran, batarya, kamera ve cihaz durumu gibi özelliklere göre değişir. KaçaGider ile cihazınızın ortalama satış değerini ücretsiz hesaplayabilirsiniz."
+seo_context_heading: "OnePlus Nord 2T 128 GB Ne Kadar Eder? Güncel ikinci el değeri nasıl hesaplanır?"
+seo_context: "OnePlus Nord 2T 128 GB Ne Kadar Eder? Güncel ikinci el fiyatı belirlenirken ekran, batarya, kamera ve cihaz durumu birlikte değerlendirilir. Cihazın kondisyonu ve çalışan özelliklerinin durumu ortalama satış değerini doğrudan etkiler. KaçaGider üzerinden bilgilerinizi seçerek 2026 için güncel ikinci el piyasa değerini görebilirsiniz."
 seo_breadcrumbs: [{"label":"Ana Sayfa","url":"/"},{"label":"Telefon","url":"/telefon/"},{"label":"OnePlus","url":"/telefon/oneplus/"},{"label":"OnePlus Nord 2T","url":"/telefon/oneplus/oneplus-nord-2t/"},{"label":"128 GB","url":"/telefon/oneplus/oneplus-nord-2t/128gb/"}]
 seo_links: [{"label":"Telefon değerleme","url":"/telefon/"},{"label":"İkinci el fiyat nasıl hesaplanır?","url":"/ikinci-el-fiyat-nasil-hesaplanir/"},{"label":"OnePlus Nord 2T ana sayfası","url":"/telefon/oneplus/oneplus-nord-2t/"},{"label":"256 GB","url":"/telefon/oneplus/oneplus-nord-2t/256gb/"}]
 seo_links_heading: "OnePlus Nord 2T 128 GB ilgili sayfalar"

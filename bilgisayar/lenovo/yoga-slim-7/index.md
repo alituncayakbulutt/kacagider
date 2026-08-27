@@ -1,11 +1,11 @@
 ---
 layout: "seo"
-seo_title: "Lenovo Yoga Slim 7 Ne Kadar Eder? İkinci El Fiyatı | KaçaGider"
-seo_description: "Lenovo Yoga Slim 7 ne kadar eder? 512 GB, 1 TB seçeneklerinde Lenovo Yoga Slim 7 ikinci el fiyatı ve piyasa değeri, kapasite ve kondisyon dikkate alınarak KaçaGider ile ücretsiz hesaplanır."
-seo_h1: "Lenovo Yoga Slim 7 Ne Kadar Eder?"
-seo_intro: "Lenovo Yoga Slim 7 için güncel ikinci el değerini, gerçek cihaz bilgileri ve kondisyon ayrıntılarıyla KaçaGider üzerinden inceleyin."
-seo_context_heading: "Lenovo Yoga Slim 7 için güncel değerleme"
-seo_context: "Lenovo Yoga Slim 7 değeri; kapasite ve kondisyon ile birlikte güncel piyasa koşullarına göre değişebilir."
+seo_title: "Lenovo Yoga Slim 7 Ne Kadar Eder? Kaça Satılır? 2026 | KaçaGider"
+seo_description: "Lenovo Yoga Slim 7 Ne Kadar Eder? kaça satılır? İşlemci, RAM, depolama ve cihaz durumuna göre 2026 güncel ikinci el ortalama satış değerini KaçaGider ile ücretsiz hesapla."
+seo_h1: "Lenovo Yoga Slim 7 Ne Kadar Eder? Kaça Satılır? 2026 İkinci El Fiyatı"
+seo_intro: "Lenovo Yoga Slim 7 Ne Kadar Eder? kaça satılır? 2026 ikinci el değeri; işlemci, RAM, depolama, ekran ve genel cihaz durumu gibi özelliklere göre değişir. KaçaGider ile cihazınızın ortalama satış değerini ücretsiz hesaplayabilirsiniz."
+seo_context_heading: "Lenovo Yoga Slim 7 Ne Kadar Eder? ikinci el değeri nasıl hesaplanır?"
+seo_context: "Lenovo Yoga Slim 7 Ne Kadar Eder? ikinci el fiyatı belirlenirken işlemci, RAM, depolama, ekran ve genel cihaz durumu birlikte değerlendirilir. Cihazın kondisyonu ve çalışan özelliklerinin durumu ortalama satış değerini doğrudan etkiler. KaçaGider üzerinden bilgilerinizi seçerek 2026 için güncel ikinci el piyasa değerini görebilirsiniz."
 seo_breadcrumbs: [{"label":"Ana Sayfa","url":"/"},{"label":"Bilgisayar","url":"/bilgisayar/"},{"label":"Lenovo","url":"/bilgisayar/lenovo/"},{"label":"Yoga Slim 7","url":"/bilgisayar/lenovo/yoga-slim-7/"}]
 seo_links: [{"label":"Bilgisayar değerleme","url":"/bilgisayar/"},{"label":"İkinci el fiyat nasıl hesaplanır?","url":"/ikinci-el-fiyat-nasil-hesaplanir/"},{"label":"IdeaPad Slim 3 ikinci el fiyatı","url":"/bilgisayar/lenovo/ideapad-slim-3/"},{"label":"ThinkPad E14 ikinci el fiyatı","url":"/bilgisayar/lenovo/thinkpad-e14/"},{"label":"LOQ 15 ikinci el fiyatı","url":"/bilgisayar/lenovo/loq-15/"},{"label":"512 GB","url":"/bilgisayar/lenovo/yoga-slim-7/512gb/"},{"label":"1 TB","url":"/bilgisayar/lenovo/yoga-slim-7/1tb/"}]
 seo_links_heading: "Lenovo Yoga Slim 7 ilgili sayfalar"

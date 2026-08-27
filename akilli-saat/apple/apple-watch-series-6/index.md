@@ -1,11 +1,11 @@
 ---
 layout: "seo"
-seo_title: "Apple Watch Series 6 Ne Kadar Eder? Güncel İkinci El Fiyatı | KaçaGider"
-seo_description: "Apple Watch Series 6 ne kadar eder? 40 mm, 44 mm seçeneklerinde Apple Watch Series 6 ikinci el fiyatı ve piyasa değeri, kasa boyutu ve kondisyon dikkate alınarak KaçaGider ile ücretsiz hesaplanır."
-seo_h1: "Apple Watch Series 6 Ne Kadar Eder?"
-seo_intro: "Apple Watch Series 6 için güncel ikinci el değerini, gerçek cihaz bilgileri ve kondisyon ayrıntılarıyla KaçaGider üzerinden inceleyin."
-seo_context_heading: "Apple Watch Series 6 için güncel değerleme"
-seo_context: "Apple Watch Series 6 değeri; kasa boyutu ve kondisyon ile birlikte güncel piyasa koşullarına göre değişebilir."
+seo_title: "Apple Watch Series 6 Ne Kadar Eder? Güncel Kaça Satılır? | KaçaGider"
+seo_description: "Apple Watch Series 6 ne kadar eder? İkinci el fiyatı ve piyasa değerini cihaz özellikleri ve kondisyonuna göre KaçaGider ile öğren."
+seo_h1: "Apple Watch Series 6 Ne Kadar Eder? Güncel Kaça Satılır? 2026 İkinci El Fiyatı"
+seo_intro: "Apple Watch Series 6 Ne Kadar Eder? Güncel ikinci el fiyatı Türkiye 2026 ne kadar? Kasa, ekran, batarya ve genel cihaz durumu birlikte değerlendirilir. Cihaz bilgilerini seçerek güncel ortalama satış değerini KaçaGider ile ücretsiz öğrenebilirsiniz."
+seo_context_heading: "Apple Watch Series 6 Ne Kadar Eder? Güncel ikinci el değeri nasıl hesaplanır?"
+seo_context: "Apple Watch Series 6 Ne Kadar Eder? Güncel ikinci el fiyatı belirlenirken kasa boyutu, ekran, batarya ve genel cihaz durumu birlikte değerlendirilir. Cihazın kondisyonu ve çalışan özelliklerinin durumu ortalama satış değerini doğrudan etkiler. KaçaGider üzerinden bilgilerinizi seçerek 2026 için güncel ikinci el piyasa değerini görebilirsiniz."
 seo_breadcrumbs: [{"label":"Ana Sayfa","url":"/"},{"label":"Akıllı Saat","url":"/akilli-saat/"},{"label":"Apple","url":"/akilli-saat/apple/"},{"label":"Apple Watch Series 6","url":"/akilli-saat/apple/apple-watch-series-6/"}]
 seo_links: [{"label":"Akıllı Saat değerleme","url":"/akilli-saat/"},{"label":"İkinci el fiyat nasıl hesaplanır?","url":"/ikinci-el-fiyat-nasil-hesaplanir/"},{"label":"Apple Watch Series 7 ikinci el fiyatı","url":"/akilli-saat/apple/apple-watch-series-7/"},{"label":"Apple Watch Series 8 ikinci el fiyatı","url":"/akilli-saat/apple/apple-watch-series-8/"},{"label":"Apple Watch Series 9 ikinci el fiyatı","url":"/akilli-saat/apple/apple-watch-series-9/"},{"label":"40 mm","url":"/akilli-saat/apple/apple-watch-series-6/40mm/"},{"label":"44 mm","url":"/akilli-saat/apple/apple-watch-series-6/44mm/"}]
 seo_links_heading: "Apple Watch Series 6 ilgili sayfalar"

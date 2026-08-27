@@ -1,11 +1,11 @@
 ---
 layout: "seo"
-seo_title: "OnePlus Nord 3 Ne Kadar Eder? Güncel İkinci El Fiyatı | KaçaGider"
-seo_description: "OnePlus Nord 3 ne kadar eder? 128 GB, 256 GB seçeneklerinde OnePlus Nord 3 ikinci el fiyatı ve piyasa değeri, hafıza, kondisyon ve cihaz kayıt durumu dikkate alınarak KaçaGider ile ücretsiz hesaplanır."
-seo_h1: "OnePlus Nord 3 Ne Kadar Eder?"
-seo_intro: "OnePlus Nord 3 için güncel ikinci el değerini, gerçek cihaz bilgileri ve kondisyon ayrıntılarıyla KaçaGider üzerinden inceleyin."
-seo_context_heading: "OnePlus Nord 3 için güncel değerleme"
-seo_context: "OnePlus Nord 3 değeri; hafıza, kondisyon ve cihaz kayıt durumu ile birlikte güncel piyasa koşullarına göre değişebilir."
+seo_title: "OnePlus Nord 3 Ne Kadar Eder? Güncel Kaça Satılır? 2026 | KaçaGider"
+seo_description: "OnePlus Nord 3 ne kadar eder? İkinci el fiyatı ve piyasa değerini cihaz özellikleri ve kondisyonuna göre KaçaGider ile öğren."
+seo_h1: "OnePlus Nord 3 Ne Kadar Eder? Güncel Kaça Satılır? 2026 İkinci El Fiyatı"
+seo_intro: "OnePlus Nord 3 Ne Kadar Eder? Güncel kaça satılır? 2026 ikinci el değeri; hafıza, ekran, batarya, kamera ve cihaz durumu gibi özelliklere göre değişir. KaçaGider ile cihazınızın ortalama satış değerini ücretsiz hesaplayabilirsiniz."
+seo_context_heading: "OnePlus Nord 3 Ne Kadar Eder? Güncel ikinci el değeri nasıl hesaplanır?"
+seo_context: "OnePlus Nord 3 Ne Kadar Eder? Güncel ikinci el fiyatı belirlenirken hafıza, ekran, batarya, kamera ve cihaz durumu birlikte değerlendirilir. Cihazın kondisyonu ve çalışan özelliklerinin durumu ortalama satış değerini doğrudan etkiler. KaçaGider üzerinden bilgilerinizi seçerek 2026 için güncel ikinci el piyasa değerini görebilirsiniz."
 seo_breadcrumbs: [{"label":"Ana Sayfa","url":"/"},{"label":"Telefon","url":"/telefon/"},{"label":"OnePlus","url":"/telefon/oneplus/"},{"label":"OnePlus Nord 3","url":"/telefon/oneplus/oneplus-nord-3/"}]
 seo_links: [{"label":"Telefon değerleme","url":"/telefon/"},{"label":"İkinci el fiyat nasıl hesaplanır?","url":"/ikinci-el-fiyat-nasil-hesaplanir/"},{"label":"OnePlus 8 ikinci el fiyatı","url":"/telefon/oneplus/oneplus-8/"},{"label":"OnePlus 8 Pro ikinci el fiyatı","url":"/telefon/oneplus/oneplus-8-pro/"},{"label":"OnePlus 9 ikinci el fiyatı","url":"/telefon/oneplus/oneplus-9/"},{"label":"128 GB","url":"/telefon/oneplus/oneplus-nord-3/128gb/"},{"label":"256 GB","url":"/telefon/oneplus/oneplus-nord-3/256gb/"}]
 seo_links_heading: "OnePlus Nord 3 ilgili sayfalar"

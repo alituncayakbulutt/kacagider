@@ -1,11 +1,11 @@
 ---
 layout: "seo"
-seo_title: "PlayStation 5 Diskli Ne Kadar Eder? Güncel İkinci El Fiyatı | KaçaGider"
-seo_description: "PlayStation 5 Diskli ne kadar eder? 825 GB seçeneklerinde PlayStation 5 Diskli ikinci el fiyatı ve piyasa değeri, depolama ve kondisyon dikkate alınarak KaçaGider ile ücretsiz hesaplanır."
-seo_h1: "PlayStation 5 Diskli Ne Kadar Eder?"
-seo_intro: "PlayStation 5 Diskli için güncel ikinci el değerini, gerçek cihaz bilgileri ve kondisyon ayrıntılarıyla KaçaGider üzerinden inceleyin."
-seo_context_heading: "PlayStation 5 Diskli için güncel değerleme"
-seo_context: "PlayStation 5 Diskli değeri; depolama ve kondisyon ile birlikte güncel piyasa koşullarına göre değişebilir."
+seo_title: "PlayStation 5 Diskli Ne Kadar Eder? Güncel Kaça Satılır? | KaçaGider"
+seo_description: "PlayStation 5 Diskli ne kadar eder? İkinci el fiyatı ve piyasa değerini cihaz özellikleri ve kondisyonuna göre KaçaGider ile öğren."
+seo_h1: "PlayStation 5 Diskli Ne Kadar Eder? Güncel Kaça Satılır? 2026 İkinci El Fiyatı"
+seo_intro: "PlayStation 5 Diskli Ne Kadar Eder? Güncel kaça satılır? 2026 ikinci el değeri; depolama, kozmetik durum, aksesuarlar ve çalışma durumu gibi özelliklere göre değişir. KaçaGider ile cihazınızın ortalama satış değerini ücretsiz hesaplayabilirsiniz."
+seo_context_heading: "PlayStation 5 Diskli Ne Kadar Eder? Güncel ikinci el değeri nasıl hesaplanır?"
+seo_context: "PlayStation 5 Diskli Ne Kadar Eder? Güncel ikinci el fiyatı belirlenirken depolama, kozmetik durum, aksesuarlar ve çalışma durumu birlikte değerlendirilir. Cihazın kondisyonu ve çalışan özelliklerinin durumu ortalama satış değerini doğrudan etkiler. KaçaGider üzerinden bilgilerinizi seçerek 2026 için güncel ikinci el piyasa değerini görebilirsiniz."
 seo_breadcrumbs: [{"label":"Ana Sayfa","url":"/"},{"label":"Oyun Konsolu","url":"/oyun-konsolu/"},{"label":"PlayStation","url":"/oyun-konsolu/playstation/"},{"label":"PlayStation 5 Diskli","url":"/oyun-konsolu/playstation/playstation-5-diskli/"}]
 seo_links: [{"label":"Oyun Konsolu değerleme","url":"/oyun-konsolu/"},{"label":"İkinci el fiyat nasıl hesaplanır?","url":"/ikinci-el-fiyat-nasil-hesaplanir/"},{"label":"PlayStation 5 Pro ikinci el fiyatı","url":"/oyun-konsolu/playstation/playstation-5-pro/"},{"label":"PlayStation 5 Slim Diskli ikinci el fiyatı","url":"/oyun-konsolu/playstation/playstation-5-slim-diskli/"},{"label":"PlayStation 5 Slim Digital ikinci el fiyatı","url":"/oyun-konsolu/playstation/playstation-5-slim-digital/"},{"label":"825 GB","url":"/oyun-konsolu/playstation/playstation-5-diskli/825gb/"}]
 seo_links_heading: "PlayStation 5 Diskli ilgili sayfalar"

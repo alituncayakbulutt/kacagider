@@ -1,11 +1,11 @@
 ---
 layout: "seo"
-seo_title: "Telefonum Ne Kadar Eder? İkinci El Değerini Hesapla | KaçaGider"
-seo_description: "Telefon ikinci el değerini ve güncel piyasa fiyatını KaçaGider ile öğren. Telefon özelliklerini seçerek ücretsiz değerleme yap."
-seo_h1: "Telefonum Ne Kadar Eder?"
-seo_intro: "Telefon cihazınızın güncel ikinci el değerini, gerçek ürün bilgileri ve kondisyonunu seçerek KaçaGider ile inceleyin."
-seo_context_heading: "Telefon değerleme rehberi"
-seo_context: "Telefon piyasa değeri; model, hafıza, kondisyon ve cihaz kayıt durumu ve güncel piyasa koşullarına göre değerlendirilir."
+seo_title: "Telefonum Ne Kadar Eder? 2026 Güncel İkinci El Değeri | KaçaGider"
+seo_description: "Telefonum ne kadar eder, kaç para eder veya kaça satılır? Marka, model, hafıza ve cihaz durumunu seç; 2026 güncel ikinci el piyasa değerini ücretsiz hesapla."
+seo_h1: "Telefonum Ne Kadar Eder? 2026 Güncel İkinci El Değeri"
+seo_intro: "Telefonunuzun bugün yaklaşık ne kadar ettiğini öğrenmek için marka, model, hafıza ve cihaz durumunu seçin. KaçaGider ile 2026 güncel ikinci el piyasa değerini ücretsiz hesaplayabilirsiniz."
+seo_context_heading: "Telefonum ne kadar eder ve kaça satılır?"
+seo_context: "Telefonun ikinci el değeri marka, model, hafıza, pil sağlığı, ekran ve kasa durumu ile değişen parça geçmişine göre değişir. Telefonum kaç para eder veya telefonumu kaça satarım diye merak ediyorsanız cihaz bilgilerini seçerek güncel ortalama satış değerini görebilirsiniz."
 seo_breadcrumbs: [{"label":"Ana Sayfa","url":"/"},{"label":"Telefon","url":"/telefon/"},{"label":"Telefonum Ne Kadar Eder?","url":"/telefonum-ne-kadar-eder/"}]
 seo_links: [{"label":"Telefon değerleme aracını aç","url":"/telefon/"},{"label":"İkinci el fiyat nasıl hesaplanır?","url":"/ikinci-el-fiyat-nasil-hesaplanir/"}]
 seo_links_heading: "İlgili sayfalar"

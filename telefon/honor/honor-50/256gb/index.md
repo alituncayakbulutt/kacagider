@@ -1,11 +1,11 @@
 ---
 layout: "seo"
-seo_title: "Honor 50 256 GB Ne Kadar Eder? Güncel İkinci El Fiyatı | KaçaGider"
-seo_description: "Honor 50 256 GB ne kadar eder? 128 GB, 256 GB seçeneklerinde Honor 50 256 GB ikinci el fiyatı ve piyasa değeri, hafıza, kondisyon ve cihaz kayıt durumu dikkate alınarak KaçaGider ile ücretsiz hesaplanır."
-seo_h1: "Honor 50 256 GB İkinci El Fiyatı"
-seo_intro: "Honor 50 256 GB için güncel ikinci el değerini, gerçek cihaz bilgileri ve kondisyon ayrıntılarıyla KaçaGider üzerinden inceleyin."
-seo_context_heading: "Honor 50 256 GB için güncel değerleme"
-seo_context: "Honor 50 256 GB değeri; hafıza, kondisyon ve cihaz kayıt durumu ile birlikte güncel piyasa koşullarına göre değişebilir."
+seo_title: "Honor 50 256 GB Ne Kadar Eder? Güncel Kaça Satılır? 2026 | KaçaGider"
+seo_description: "Honor 50 256 GB Ne Kadar Eder? Güncel kaça satılır? Ekran, batarya, kamera ve cihaz durumuna göre 2026 güncel ikinci el ortalama satış değerini KaçaGider ile ücretsiz hesapla."
+seo_h1: "Honor 50 256 GB Ne Kadar Eder? Güncel Kaça Satılır? 2026 İkinci El Fiyatı"
+seo_intro: "Honor 50 256 GB Ne Kadar Eder? Güncel kaça satılır? 2026 ikinci el değeri; ekran, batarya, kamera ve cihaz durumu gibi özelliklere göre değişir. KaçaGider ile cihazınızın ortalama satış değerini ücretsiz hesaplayabilirsiniz."
+seo_context_heading: "Honor 50 256 GB Ne Kadar Eder? Güncel ikinci el değeri nasıl hesaplanır?"
+seo_context: "Honor 50 256 GB Ne Kadar Eder? Güncel ikinci el fiyatı belirlenirken ekran, batarya, kamera ve cihaz durumu birlikte değerlendirilir. Cihazın kondisyonu ve çalışan özelliklerinin durumu ortalama satış değerini doğrudan etkiler. KaçaGider üzerinden bilgilerinizi seçerek 2026 için güncel ikinci el piyasa değerini görebilirsiniz."
 seo_breadcrumbs: [{"label":"Ana Sayfa","url":"/"},{"label":"Telefon","url":"/telefon/"},{"label":"Honor","url":"/telefon/honor/"},{"label":"Honor 50","url":"/telefon/honor/honor-50/"},{"label":"256 GB","url":"/telefon/honor/honor-50/256gb/"}]
 seo_links: [{"label":"Telefon değerleme","url":"/telefon/"},{"label":"İkinci el fiyat nasıl hesaplanır?","url":"/ikinci-el-fiyat-nasil-hesaplanir/"},{"label":"Honor 50 ana sayfası","url":"/telefon/honor/honor-50/"},{"label":"128 GB","url":"/telefon/honor/honor-50/128gb/"}]
 seo_links_heading: "Honor 50 256 GB ilgili sayfalar"

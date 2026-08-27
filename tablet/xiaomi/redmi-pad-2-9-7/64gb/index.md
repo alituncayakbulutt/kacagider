@@ -1,11 +1,11 @@
 ---
 layout: "seo"
-seo_title: "Xiaomi REDMI Pad 2 9.7 64 GB Ne Kadar Eder? İkinci El Fiyatı | KaçaGider"
-seo_description: "Xiaomi REDMI Pad 2 9.7 64 GB ne kadar eder? 64 GB, 128 GB seçeneklerinde Xiaomi REDMI Pad 2 9.7 64 GB ikinci el fiyatı ve piyasa değeri, kapasite ve kondisyon dikkate alınarak KaçaGider ile ücretsiz hesaplanır."
-seo_h1: "Xiaomi REDMI Pad 2 9.7 64 GB İkinci El Fiyatı"
-seo_intro: "Xiaomi REDMI Pad 2 9.7 64 GB için güncel ikinci el değerini, gerçek cihaz bilgileri ve kondisyon ayrıntılarıyla KaçaGider üzerinden inceleyin."
-seo_context_heading: "Xiaomi REDMI Pad 2 9.7 64 GB için güncel değerleme"
-seo_context: "Xiaomi REDMI Pad 2 9.7 64 GB değeri; kapasite ve kondisyon ile birlikte güncel piyasa koşullarına göre değişebilir."
+seo_title: "Xiaomi REDMI Pad 2 9.7 64 GB Ne Kadar Eder? Kaça Satılır? | KaçaGider"
+seo_description: "Xiaomi REDMI Pad 2 9.7 64 GB Ne Kadar Eder? kaça satılır? Ekran, batarya ve cihaz durumuna göre 2026 güncel ikinci el ortalama satış değerini KaçaGider ile ücretsiz hesapla."
+seo_h1: "Xiaomi REDMI Pad 2 9.7 64 GB Ne Kadar Eder? Kaça Satılır? 2026 İkinci El Fiyatı"
+seo_intro: "Xiaomi REDMI Pad 2 9.7 64 GB Ne Kadar Eder? kaça satılır? 2026 ikinci el değeri; ekran, batarya ve cihaz durumu gibi özelliklere göre değişir. KaçaGider ile cihazınızın ortalama satış değerini ücretsiz hesaplayabilirsiniz."
+seo_context_heading: "Xiaomi REDMI Pad 2 9.7 64 GB Ne Kadar Eder? ikinci el değeri nasıl hesaplanır?"
+seo_context: "Xiaomi REDMI Pad 2 9.7 64 GB Ne Kadar Eder? ikinci el fiyatı belirlenirken ekran, batarya ve cihaz durumu birlikte değerlendirilir. Cihazın kondisyonu ve çalışan özelliklerinin durumu ortalama satış değerini doğrudan etkiler. KaçaGider üzerinden bilgilerinizi seçerek 2026 için güncel ikinci el piyasa değerini görebilirsiniz."
 seo_breadcrumbs: [{"label":"Ana Sayfa","url":"/"},{"label":"Tablet","url":"/tablet/"},{"label":"Xiaomi","url":"/tablet/xiaomi/"},{"label":"REDMI Pad 2 9.7","url":"/tablet/xiaomi/redmi-pad-2-9-7/"},{"label":"64 GB","url":"/tablet/xiaomi/redmi-pad-2-9-7/64gb/"}]
 seo_links: [{"label":"Tablet değerleme","url":"/tablet/"},{"label":"İkinci el fiyat nasıl hesaplanır?","url":"/ikinci-el-fiyat-nasil-hesaplanir/"},{"label":"REDMI Pad 2 9.7 ana sayfası","url":"/tablet/xiaomi/redmi-pad-2-9-7/"},{"label":"128 GB","url":"/tablet/xiaomi/redmi-pad-2-9-7/128gb/"}]
 seo_links_heading: "Xiaomi REDMI Pad 2 9.7 64 GB ilgili sayfalar"

@@ -1,11 +1,11 @@
 ---
 layout: "seo"
-seo_title: "Huawei MatePad Pro 13.2 256 GB Ne Kadar Eder? İkinci El Fiyatı | KaçaGider"
-seo_description: "Huawei MatePad Pro 13.2 256 GB ne kadar eder? 256 GB, 512 GB, 1 TB seçeneklerinde Huawei MatePad Pro 13.2 256 GB ikinci el fiyatı ve piyasa değeri, kapasite ve kondisyon dikkate alınarak KaçaGider ile ücretsiz hesaplanır."
-seo_h1: "Huawei MatePad Pro 13.2 256 GB İkinci El Fiyatı"
-seo_intro: "Huawei MatePad Pro 13.2 256 GB için güncel ikinci el değerini, gerçek cihaz bilgileri ve kondisyon ayrıntılarıyla KaçaGider üzerinden inceleyin."
-seo_context_heading: "Huawei MatePad Pro 13.2 256 GB için güncel değerleme"
-seo_context: "Huawei MatePad Pro 13.2 256 GB değeri; kapasite ve kondisyon ile birlikte güncel piyasa koşullarına göre değişebilir."
+seo_title: "Huawei MatePad Pro 13.2 256 GB Ne Kadar Eder? Kaça Satılır? | KaçaGider"
+seo_description: "Huawei MatePad Pro 13.2 256 GB Ne Kadar Eder? kaça satılır? Ekran, batarya ve cihaz durumuna göre 2026 güncel ikinci el ortalama satış değerini KaçaGider ile ücretsiz hesapla."
+seo_h1: "Huawei MatePad Pro 13.2 256 GB Ne Kadar Eder? Kaça Satılır? 2026 İkinci El Fiyatı"
+seo_intro: "Huawei MatePad Pro 13.2 256 GB Ne Kadar Eder? kaça satılır? 2026 ikinci el değeri; ekran, batarya ve cihaz durumu gibi özelliklere göre değişir. KaçaGider ile cihazınızın ortalama satış değerini ücretsiz hesaplayabilirsiniz."
+seo_context_heading: "Huawei MatePad Pro 13.2 256 GB Ne Kadar Eder? ikinci el değeri nasıl hesaplanır?"
+seo_context: "Huawei MatePad Pro 13.2 256 GB Ne Kadar Eder? ikinci el fiyatı belirlenirken ekran, batarya ve cihaz durumu birlikte değerlendirilir. Cihazın kondisyonu ve çalışan özelliklerinin durumu ortalama satış değerini doğrudan etkiler. KaçaGider üzerinden bilgilerinizi seçerek 2026 için güncel ikinci el piyasa değerini görebilirsiniz."
 seo_breadcrumbs: [{"label":"Ana Sayfa","url":"/"},{"label":"Tablet","url":"/tablet/"},{"label":"Huawei","url":"/tablet/huawei/"},{"label":"MatePad Pro 13.2","url":"/tablet/huawei/matepad-pro-13-2/"},{"label":"256 GB","url":"/tablet/huawei/matepad-pro-13-2/256gb/"}]
 seo_links: [{"label":"Tablet değerleme","url":"/tablet/"},{"label":"İkinci el fiyat nasıl hesaplanır?","url":"/ikinci-el-fiyat-nasil-hesaplanir/"},{"label":"MatePad Pro 13.2 ana sayfası","url":"/tablet/huawei/matepad-pro-13-2/"},{"label":"512 GB","url":"/tablet/huawei/matepad-pro-13-2/512gb/"},{"label":"1 TB","url":"/tablet/huawei/matepad-pro-13-2/1tb/"}]
 seo_links_heading: "Huawei MatePad Pro 13.2 256 GB ilgili sayfalar"

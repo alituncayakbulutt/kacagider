@@ -1,11 +1,11 @@
 ---
 layout: "seo"
-seo_title: "Samsung Galaxy S24 Ne Kadar Eder? İkinci El Fiyatı | KaçaGider"
-seo_description: "Samsung Galaxy S24 ne kadar eder? 128 GB, 256 GB seçeneklerinde Samsung Galaxy S24 ikinci el fiyatı ve piyasa değeri, hafıza, kondisyon ve cihaz kayıt durumu dikkate alınarak KaçaGider ile ücretsiz hesaplanır."
-seo_h1: "Samsung Galaxy S24 Ne Kadar Eder?"
-seo_intro: "Samsung Galaxy S24 için güncel ikinci el değerini, gerçek cihaz bilgileri ve kondisyon ayrıntılarıyla KaçaGider üzerinden inceleyin."
-seo_context_heading: "Samsung Galaxy S24 için güncel değerleme"
-seo_context: "Samsung Galaxy S24 değeri; hafıza, kondisyon ve cihaz kayıt durumu ile birlikte güncel piyasa koşullarına göre değişebilir."
+seo_title: "Samsung Galaxy S24 Ne Kadar Eder? Kaça Satılır? 2026 | KaçaGider"
+seo_description: "Galaxy S24 ne kadar eder, kaça satılır? Hafıza, ekran, batarya ve cihaz durumuna göre 2026 güncel ikinci el piyasa değerini ücretsiz hesapla."
+seo_h1: "Samsung Galaxy S24 Ne Kadar Eder? Kaça Satılır? 2026 İkinci El Fiyatı"
+seo_intro: "Galaxy S24 ne kadar eder ve kaça satılır? Hafıza, ekran, batarya ve genel cihaz durumunu seçerek 2026 güncel ikinci el piyasa değerini KaçaGider ile ücretsiz öğrenebilirsiniz."
+seo_context_heading: "Samsung Galaxy S24 Ne Kadar Eder? ikinci el değeri nasıl hesaplanır?"
+seo_context: "Samsung Galaxy S24 Ne Kadar Eder? ikinci el fiyatı belirlenirken hafıza, ekran, batarya ve cihaz durumu birlikte değerlendirilir. Cihazın kondisyonu ve çalışan özelliklerinin durumu ortalama satış değerini doğrudan etkiler. KaçaGider üzerinden bilgilerinizi seçerek 2026 için güncel ikinci el piyasa değerini görebilirsiniz."
 seo_breadcrumbs: [{"label":"Ana Sayfa","url":"/"},{"label":"Telefon","url":"/telefon/"},{"label":"Samsung","url":"/telefon/samsung/"},{"label":"Galaxy S24","url":"/telefon/samsung/galaxy-s24/"}]
 seo_links: [{"label":"Telefon değerleme","url":"/telefon/"},{"label":"İkinci el fiyat nasıl hesaplanır?","url":"/ikinci-el-fiyat-nasil-hesaplanir/"},{"label":"Galaxy S20 ikinci el fiyatı","url":"/telefon/samsung/galaxy-s20/"},{"label":"Galaxy S20+ ikinci el fiyatı","url":"/telefon/samsung/galaxy-s20-plus/"},{"label":"Galaxy S20 Ultra ikinci el fiyatı","url":"/telefon/samsung/galaxy-s20-ultra/"},{"label":"128 GB","url":"/telefon/samsung/galaxy-s24/128gb/"},{"label":"256 GB","url":"/telefon/samsung/galaxy-s24/256gb/"}]
 seo_links_heading: "Samsung Galaxy S24 ilgili sayfalar"

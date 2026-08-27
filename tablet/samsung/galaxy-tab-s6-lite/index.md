@@ -1,11 +1,11 @@
 ---
 layout: "seo"
-seo_title: "Samsung Galaxy Tab S6 Lite Ne Kadar Eder? İkinci El Fiyatı | KaçaGider"
-seo_description: "Samsung Galaxy Tab S6 Lite ne kadar eder? 64 GB, 128 GB seçeneklerinde Samsung Galaxy Tab S6 Lite ikinci el fiyatı ve piyasa değeri, kapasite ve kondisyon dikkate alınarak KaçaGider ile ücretsiz hesaplanır."
-seo_h1: "Samsung Galaxy Tab S6 Lite Ne Kadar Eder?"
-seo_intro: "Samsung Galaxy Tab S6 Lite için güncel ikinci el değerini, gerçek cihaz bilgileri ve kondisyon ayrıntılarıyla KaçaGider üzerinden inceleyin."
-seo_context_heading: "Samsung Galaxy Tab S6 Lite için güncel değerleme"
-seo_context: "Samsung Galaxy Tab S6 Lite değeri; kapasite ve kondisyon ile birlikte güncel piyasa koşullarına göre değişebilir."
+seo_title: "Samsung Galaxy Tab S6 Lite Ne Kadar Eder? Kaça Satılır? | KaçaGider"
+seo_description: "Samsung Galaxy Tab S6 Lite ne kadar eder? İkinci el fiyatı ve piyasa değerini cihaz özellikleri ve kondisyonuna göre KaçaGider ile öğren."
+seo_h1: "Samsung Galaxy Tab S6 Lite Ne Kadar Eder? Kaça Satılır? 2026 İkinci El Fiyatı"
+seo_intro: "Samsung Galaxy Tab S6 Lite Ne Kadar Eder? ikinci el fiyatı Türkiye 2026 ne kadar? Hafıza, ekran, batarya ve cihaz durumu birlikte değerlendirilir. Cihaz bilgilerini seçerek güncel ortalama satış değerini KaçaGider ile ücretsiz öğrenebilirsiniz."
+seo_context_heading: "Samsung Galaxy Tab S6 Lite Ne Kadar Eder? ikinci el değeri nasıl hesaplanır?"
+seo_context: "Samsung Galaxy Tab S6 Lite Ne Kadar Eder? ikinci el fiyatı belirlenirken hafıza, ekran, batarya ve cihaz durumu birlikte değerlendirilir. Cihazın kondisyonu ve çalışan özelliklerinin durumu ortalama satış değerini doğrudan etkiler. KaçaGider üzerinden bilgilerinizi seçerek 2026 için güncel ikinci el piyasa değerini görebilirsiniz."
 seo_breadcrumbs: [{"label":"Ana Sayfa","url":"/"},{"label":"Tablet","url":"/tablet/"},{"label":"Samsung","url":"/tablet/samsung/"},{"label":"Galaxy Tab S6 Lite","url":"/tablet/samsung/galaxy-tab-s6-lite/"}]
 seo_links: [{"label":"Tablet değerleme","url":"/tablet/"},{"label":"İkinci el fiyat nasıl hesaplanır?","url":"/ikinci-el-fiyat-nasil-hesaplanir/"},{"label":"Galaxy Tab A7 ikinci el fiyatı","url":"/tablet/samsung/galaxy-tab-a7/"},{"label":"Galaxy Tab A7 Lite ikinci el fiyatı","url":"/tablet/samsung/galaxy-tab-a7-lite/"},{"label":"Galaxy Tab A8 ikinci el fiyatı","url":"/tablet/samsung/galaxy-tab-a8/"},{"label":"64 GB","url":"/tablet/samsung/galaxy-tab-s6-lite/64gb/"},{"label":"128 GB","url":"/tablet/samsung/galaxy-tab-s6-lite/128gb/"}]
 seo_links_heading: "Samsung Galaxy Tab S6 Lite ilgili sayfalar"

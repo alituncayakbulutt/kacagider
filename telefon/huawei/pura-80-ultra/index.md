@@ -1,11 +1,11 @@
 ---
 layout: "seo"
-seo_title: "Huawei Pura 80 Ultra Ne Kadar Eder? İkinci El Fiyatı | KaçaGider"
-seo_description: "Huawei Pura 80 Ultra ne kadar eder? 512 GB seçeneklerinde Huawei Pura 80 Ultra ikinci el fiyatı ve piyasa değeri, hafıza, kondisyon ve cihaz kayıt durumu dikkate alınarak KaçaGider ile ücretsiz hesaplanır."
-seo_h1: "Huawei Pura 80 Ultra Ne Kadar Eder?"
-seo_intro: "Huawei Pura 80 Ultra için güncel ikinci el değerini, gerçek cihaz bilgileri ve kondisyon ayrıntılarıyla KaçaGider üzerinden inceleyin."
-seo_context_heading: "Huawei Pura 80 Ultra için güncel değerleme"
-seo_context: "Huawei Pura 80 Ultra değeri; hafıza, kondisyon ve cihaz kayıt durumu ile birlikte güncel piyasa koşullarına göre değişebilir."
+seo_title: "Huawei Pura 80 Ultra Ne Kadar Eder? Kaça Satılır? 2026 | KaçaGider"
+seo_description: "Huawei Pura 80 Ultra ne kadar eder? İkinci el fiyatı ve piyasa değerini cihaz özellikleri ve kondisyonuna göre KaçaGider ile öğren."
+seo_h1: "Huawei Pura 80 Ultra Ne Kadar Eder? Kaça Satılır? 2026 İkinci El Fiyatı"
+seo_intro: "Huawei Pura 80 Ultra Ne Kadar Eder? kaça satılır? 2026 ikinci el değeri; hafıza, ekran, batarya, kamera ve cihaz durumu gibi özelliklere göre değişir. KaçaGider ile cihazınızın ortalama satış değerini ücretsiz hesaplayabilirsiniz."
+seo_context_heading: "Huawei Pura 80 Ultra Ne Kadar Eder? ikinci el değeri nasıl hesaplanır?"
+seo_context: "Huawei Pura 80 Ultra Ne Kadar Eder? ikinci el fiyatı belirlenirken hafıza, ekran, batarya, kamera ve cihaz durumu birlikte değerlendirilir. Cihazın kondisyonu ve çalışan özelliklerinin durumu ortalama satış değerini doğrudan etkiler. KaçaGider üzerinden bilgilerinizi seçerek 2026 için güncel ikinci el piyasa değerini görebilirsiniz."
 seo_breadcrumbs: [{"label":"Ana Sayfa","url":"/"},{"label":"Telefon","url":"/telefon/"},{"label":"Huawei","url":"/telefon/huawei/"},{"label":"Pura 80 Ultra","url":"/telefon/huawei/pura-80-ultra/"}]
 seo_links: [{"label":"Telefon değerleme","url":"/telefon/"},{"label":"İkinci el fiyat nasıl hesaplanır?","url":"/ikinci-el-fiyat-nasil-hesaplanir/"},{"label":"P30 ikinci el fiyatı","url":"/telefon/huawei/p30/"},{"label":"P30 Pro ikinci el fiyatı","url":"/telefon/huawei/p30-pro/"},{"label":"P40 ikinci el fiyatı","url":"/telefon/huawei/p40/"},{"label":"512 GB","url":"/telefon/huawei/pura-80-ultra/512gb/"}]
 seo_links_heading: "Huawei Pura 80 Ultra ilgili sayfalar"

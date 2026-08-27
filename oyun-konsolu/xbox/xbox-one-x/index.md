@@ -1,11 +1,11 @@
 ---
 layout: "seo"
-seo_title: "Xbox One X Ne Kadar Eder? Güncel İkinci El Fiyatı | KaçaGider"
-seo_description: "Xbox One X ne kadar eder? 1 TB seçeneklerinde Xbox One X ikinci el fiyatı ve piyasa değeri, depolama ve kondisyon dikkate alınarak KaçaGider ile ücretsiz hesaplanır."
-seo_h1: "Xbox One X Ne Kadar Eder?"
-seo_intro: "Xbox One X için güncel ikinci el değerini, gerçek cihaz bilgileri ve kondisyon ayrıntılarıyla KaçaGider üzerinden inceleyin."
-seo_context_heading: "Xbox One X için güncel değerleme"
-seo_context: "Xbox One X değeri; depolama ve kondisyon ile birlikte güncel piyasa koşullarına göre değişebilir."
+seo_title: "Xbox One X Ne Kadar Eder? Güncel Kaça Satılır? 2026 | KaçaGider"
+seo_description: "Xbox One X ne kadar eder? İkinci el fiyatı ve piyasa değerini cihaz özellikleri ve kondisyonuna göre KaçaGider ile öğren."
+seo_h1: "Xbox One X Ne Kadar Eder? Güncel Kaça Satılır? 2026 İkinci El Fiyatı"
+seo_intro: "Xbox One X Ne Kadar Eder? Güncel kaça satılır? 2026 ikinci el değeri; depolama, kozmetik durum, aksesuarlar ve çalışma durumu gibi özelliklere göre değişir. KaçaGider ile cihazınızın ortalama satış değerini ücretsiz hesaplayabilirsiniz."
+seo_context_heading: "Xbox One X Ne Kadar Eder? Güncel ikinci el değeri nasıl hesaplanır?"
+seo_context: "Xbox One X Ne Kadar Eder? Güncel ikinci el fiyatı belirlenirken depolama, kozmetik durum, aksesuarlar ve çalışma durumu birlikte değerlendirilir. Cihazın kondisyonu ve çalışan özelliklerinin durumu ortalama satış değerini doğrudan etkiler. KaçaGider üzerinden bilgilerinizi seçerek 2026 için güncel ikinci el piyasa değerini görebilirsiniz."
 seo_breadcrumbs: [{"label":"Ana Sayfa","url":"/"},{"label":"Oyun Konsolu","url":"/oyun-konsolu/"},{"label":"Xbox","url":"/oyun-konsolu/xbox/"},{"label":"Xbox One X","url":"/oyun-konsolu/xbox/xbox-one-x/"}]
 seo_links: [{"label":"Oyun Konsolu değerleme","url":"/oyun-konsolu/"},{"label":"İkinci el fiyat nasıl hesaplanır?","url":"/ikinci-el-fiyat-nasil-hesaplanir/"},{"label":"Xbox Series X 2 TB ikinci el fiyatı","url":"/oyun-konsolu/xbox/xbox-series-x-2-tb/"},{"label":"Xbox Series X 1 TB ikinci el fiyatı","url":"/oyun-konsolu/xbox/xbox-series-x-1-tb/"},{"label":"Xbox Series X 1 TB Digital ikinci el fiyatı","url":"/oyun-konsolu/xbox/xbox-series-x-1-tb-digital/"},{"label":"1 TB","url":"/oyun-konsolu/xbox/xbox-one-x/1tb/"}]
 seo_links_heading: "Xbox One X ilgili sayfalar"

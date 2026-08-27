@@ -1,11 +1,11 @@
 ---
 layout: "seo"
-seo_title: "Xiaomi Redmi 12C Ne Kadar Eder? İkinci El Fiyatı | KaçaGider"
-seo_description: "Xiaomi Redmi 12C ne kadar eder? 64 GB, 128 GB seçeneklerinde Xiaomi Redmi 12C ikinci el fiyatı ve piyasa değeri, hafıza, kondisyon ve cihaz kayıt durumu dikkate alınarak KaçaGider ile ücretsiz hesaplanır."
-seo_h1: "Xiaomi Redmi 12C Ne Kadar Eder?"
-seo_intro: "Xiaomi Redmi 12C için güncel ikinci el değerini, gerçek cihaz bilgileri ve kondisyon ayrıntılarıyla KaçaGider üzerinden inceleyin."
-seo_context_heading: "Xiaomi Redmi 12C için güncel değerleme"
-seo_context: "Xiaomi Redmi 12C değeri; hafıza, kondisyon ve cihaz kayıt durumu ile birlikte güncel piyasa koşullarına göre değişebilir."
+seo_title: "Xiaomi Redmi 12C Ne Kadar Eder? Kaça Satılır? 2026 | KaçaGider"
+seo_description: "Xiaomi Redmi 12C ne kadar eder? İkinci el fiyatı ve piyasa değerini cihaz özellikleri ve kondisyonuna göre KaçaGider ile öğren."
+seo_h1: "Xiaomi Redmi 12C Ne Kadar Eder? Kaça Satılır? 2026 İkinci El Fiyatı"
+seo_intro: "Xiaomi Redmi 12C Ne Kadar Eder? ikinci el fiyatı Türkiye 2026 ne kadar? Hafıza, ekran, batarya ve cihaz durumu birlikte değerlendirilir. Cihaz bilgilerini seçerek güncel ortalama satış değerini KaçaGider ile ücretsiz öğrenebilirsiniz."
+seo_context_heading: "Xiaomi Redmi 12C Ne Kadar Eder? ikinci el değeri nasıl hesaplanır?"
+seo_context: "Xiaomi Redmi 12C Ne Kadar Eder? ikinci el fiyatı belirlenirken hafıza, ekran, batarya ve cihaz durumu birlikte değerlendirilir. Cihazın kondisyonu ve çalışan özelliklerinin durumu ortalama satış değerini doğrudan etkiler. KaçaGider üzerinden bilgilerinizi seçerek 2026 için güncel ikinci el piyasa değerini görebilirsiniz."
 seo_breadcrumbs: [{"label":"Ana Sayfa","url":"/"},{"label":"Telefon","url":"/telefon/"},{"label":"Xiaomi","url":"/telefon/xiaomi/"},{"label":"Redmi 12C","url":"/telefon/xiaomi/redmi-12c/"}]
 seo_links: [{"label":"Telefon değerleme","url":"/telefon/"},{"label":"İkinci el fiyat nasıl hesaplanır?","url":"/ikinci-el-fiyat-nasil-hesaplanir/"},{"label":"Xiaomi 11 Lite 5G NE ikinci el fiyatı","url":"/telefon/xiaomi/xiaomi-11-lite-5g-ne/"},{"label":"Xiaomi 11T ikinci el fiyatı","url":"/telefon/xiaomi/xiaomi-11t/"},{"label":"Xiaomi 11T Pro ikinci el fiyatı","url":"/telefon/xiaomi/xiaomi-11t-pro/"},{"label":"64 GB","url":"/telefon/xiaomi/redmi-12c/64gb/"},{"label":"128 GB","url":"/telefon/xiaomi/redmi-12c/128gb/"}]
 seo_links_heading: "Xiaomi Redmi 12C ilgili sayfalar"

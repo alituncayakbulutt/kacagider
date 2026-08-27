@@ -1,11 +1,11 @@
 ---
 layout: "seo"
-seo_title: "Lenovo Tab P11 Pro Ne Kadar Eder? Güncel İkinci El Fiyatı | KaçaGider"
-seo_description: "Lenovo Tab P11 Pro ne kadar eder? 128 GB, 256 GB, 512 GB seçeneklerinde Lenovo Tab P11 Pro ikinci el fiyatı ve piyasa değeri, kapasite ve kondisyon dikkate alınarak KaçaGider ile ücretsiz hesaplanır."
-seo_h1: "Lenovo Tab P11 Pro Ne Kadar Eder?"
-seo_intro: "Lenovo Tab P11 Pro için güncel ikinci el değerini, gerçek cihaz bilgileri ve kondisyon ayrıntılarıyla KaçaGider üzerinden inceleyin."
-seo_context_heading: "Lenovo Tab P11 Pro için güncel değerleme"
-seo_context: "Lenovo Tab P11 Pro değeri; kapasite ve kondisyon ile birlikte güncel piyasa koşullarına göre değişebilir."
+seo_title: "Lenovo Tab P11 Pro Ne Kadar Eder? Güncel Kaça Satılır? | KaçaGider"
+seo_description: "Lenovo Tab P11 Pro Ne Kadar Eder? Güncel kaça satılır? Hafıza, ekran, batarya ve cihaz durumuna göre 2026 güncel ikinci el ortalama satış değerini KaçaGider ile ücretsiz hesapla."
+seo_h1: "Lenovo Tab P11 Pro Ne Kadar Eder? Güncel Kaça Satılır? 2026 İkinci El Fiyatı"
+seo_intro: "Lenovo Tab P11 Pro Ne Kadar Eder? Güncel kaça satılır? 2026 ikinci el değeri; hafıza, ekran, batarya ve cihaz durumu gibi özelliklere göre değişir. KaçaGider ile cihazınızın ortalama satış değerini ücretsiz hesaplayabilirsiniz."
+seo_context_heading: "Lenovo Tab P11 Pro Ne Kadar Eder? Güncel ikinci el değeri nasıl hesaplanır?"
+seo_context: "Lenovo Tab P11 Pro Ne Kadar Eder? Güncel ikinci el fiyatı belirlenirken hafıza, ekran, batarya ve cihaz durumu birlikte değerlendirilir. Cihazın kondisyonu ve çalışan özelliklerinin durumu ortalama satış değerini doğrudan etkiler. KaçaGider üzerinden bilgilerinizi seçerek 2026 için güncel ikinci el piyasa değerini görebilirsiniz."
 seo_breadcrumbs: [{"label":"Ana Sayfa","url":"/"},{"label":"Tablet","url":"/tablet/"},{"label":"Lenovo","url":"/tablet/lenovo/"},{"label":"Lenovo Tab P11 Pro","url":"/tablet/lenovo/lenovo-tab-p11-pro/"}]
 seo_links: [{"label":"Tablet değerleme","url":"/tablet/"},{"label":"İkinci el fiyat nasıl hesaplanır?","url":"/ikinci-el-fiyat-nasil-hesaplanir/"},{"label":"Lenovo Tab M8 ikinci el fiyatı","url":"/tablet/lenovo/lenovo-tab-m8/"},{"label":"Lenovo Tab M9 ikinci el fiyatı","url":"/tablet/lenovo/lenovo-tab-m9/"},{"label":"Lenovo Tab M10 ikinci el fiyatı","url":"/tablet/lenovo/lenovo-tab-m10/"},{"label":"128 GB","url":"/tablet/lenovo/lenovo-tab-p11-pro/128gb/"},{"label":"256 GB","url":"/tablet/lenovo/lenovo-tab-p11-pro/256gb/"},{"label":"512 GB","url":"/tablet/lenovo/lenovo-tab-p11-pro/512gb/"}]
 seo_links_heading: "Lenovo Tab P11 Pro ilgili sayfalar"

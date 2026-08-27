@@ -1,11 +1,11 @@
 ---
 layout: "seo"
-seo_title: "Apple iPad Air 11 inç (M3) 256 GB Ne Kadar Eder? İkinci El Fiyatı | KaçaGider"
-seo_description: "Apple iPad Air 11 inç (M3) 256 GB ne kadar eder? 128 GB, 256 GB, 512 GB, 1 TB seçeneklerinde Apple iPad Air 11 inç (M3) 256 GB ikinci el fiyatı ve piyasa değeri, kapasite ve kondisyon dikkate alınarak KaçaGider ile ücretsiz hesaplanır."
-seo_h1: "Apple iPad Air 11 inç (M3) 256 GB İkinci El Fiyatı"
-seo_intro: "Apple iPad Air 11 inç (M3) 256 GB için güncel ikinci el değerini, gerçek cihaz bilgileri ve kondisyon ayrıntılarıyla KaçaGider üzerinden inceleyin."
-seo_context_heading: "Apple iPad Air 11 inç (M3) 256 GB için güncel değerleme"
-seo_context: "Apple iPad Air 11 inç (M3) 256 GB değeri; kapasite ve kondisyon ile birlikte güncel piyasa koşullarına göre değişebilir."
+seo_title: "Apple iPad Air 11 inç (M3) 256 GB Ne Kadar Eder? Kaça Satılır? | KaçaGider"
+seo_description: "Apple iPad Air 11 inç (M3) 256 GB Ne Kadar Eder? kaça satılır? Ekran, batarya ve cihaz durumuna göre 2026 güncel ikinci el ortalama satış değerini KaçaGider ile ücretsiz hesapla."
+seo_h1: "Apple iPad Air 11 inç (M3) 256 GB Ne Kadar Eder? Kaça Satılır? 2026 İkinci El Fiyatı"
+seo_intro: "Apple iPad Air 11 inç (M3) 256 GB Ne Kadar Eder? kaça satılır? 2026 ikinci el değeri; ekran, batarya ve cihaz durumu gibi özelliklere göre değişir. KaçaGider ile cihazınızın ortalama satış değerini ücretsiz hesaplayabilirsiniz."
+seo_context_heading: "Apple iPad Air 11 inç (M3) 256 GB Ne Kadar Eder? ikinci el değeri nasıl hesaplanır?"
+seo_context: "Apple iPad Air 11 inç (M3) 256 GB Ne Kadar Eder? ikinci el fiyatı belirlenirken ekran, batarya ve cihaz durumu birlikte değerlendirilir. Cihazın kondisyonu ve çalışan özelliklerinin durumu ortalama satış değerini doğrudan etkiler. KaçaGider üzerinden bilgilerinizi seçerek 2026 için güncel ikinci el piyasa değerini görebilirsiniz."
 seo_breadcrumbs: [{"label":"Ana Sayfa","url":"/"},{"label":"Tablet","url":"/tablet/"},{"label":"Apple","url":"/tablet/apple/"},{"label":"iPad Air 11 inç (M3)","url":"/tablet/apple/ipad-air-11-inc-m3/"},{"label":"256 GB","url":"/tablet/apple/ipad-air-11-inc-m3/256gb/"}]
 seo_links: [{"label":"Tablet değerleme","url":"/tablet/"},{"label":"İkinci el fiyat nasıl hesaplanır?","url":"/ikinci-el-fiyat-nasil-hesaplanir/"},{"label":"iPad Air 11 inç (M3) ana sayfası","url":"/tablet/apple/ipad-air-11-inc-m3/"},{"label":"128 GB","url":"/tablet/apple/ipad-air-11-inc-m3/128gb/"},{"label":"512 GB","url":"/tablet/apple/ipad-air-11-inc-m3/512gb/"},{"label":"1 TB","url":"/tablet/apple/ipad-air-11-inc-m3/1tb/"}]
 seo_links_heading: "Apple iPad Air 11 inç (M3) 256 GB ilgili sayfalar"

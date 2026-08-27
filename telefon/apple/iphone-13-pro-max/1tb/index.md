@@ -1,11 +1,11 @@
 ---
 layout: "seo"
 seo_title: "Apple iPhone 13 Pro Max 1 TB Ne Kadar Eder? İkinci El Fiyatı | KaçaGider"
-seo_description: "Apple iPhone 13 Pro Max 1 TB ne kadar eder? 128 GB, 256 GB, 512 GB, 1 TB seçeneklerinde Apple iPhone 13 Pro Max 1 TB ikinci el fiyatı ve piyasa değeri, hafıza, kondisyon ve cihaz kayıt durumu dikkate alınarak KaçaGider ile ücretsiz hesaplanır."
-seo_h1: "Apple iPhone 13 Pro Max 1 TB İkinci El Fiyatı"
-seo_intro: "Apple iPhone 13 Pro Max 1 TB için güncel ikinci el değerini, gerçek cihaz bilgileri ve kondisyon ayrıntılarıyla KaçaGider üzerinden inceleyin."
-seo_context_heading: "Apple iPhone 13 Pro Max 1 TB için güncel değerleme"
-seo_context: "Apple iPhone 13 Pro Max 1 TB değeri; hafıza, kondisyon ve cihaz kayıt durumu ile birlikte güncel piyasa koşullarına göre değişebilir."
+seo_description: "iPhone 13 Pro Max 1 TB ne kadar eder, kaça satılır? Pil sağlığı, ekran ve cihaz durumuna göre 2026 güncel ikinci el piyasa değerini ücretsiz hesapla."
+seo_h1: "Apple iPhone 13 Pro Max 1 TB Ne Kadar Eder? Kaça Satılır? 2026 İkinci El Fiyatı"
+seo_intro: "iPhone 13 Pro Max 1 TB ne kadar eder ve kaça satılır? Pil sağlığı, ekran ve genel cihaz durumunu seçerek 2026 güncel ikinci el piyasa değerini KaçaGider ile ücretsiz öğrenebilirsiniz."
+seo_context_heading: "Apple iPhone 13 Pro Max 1 TB Ne Kadar Eder? ikinci el değeri nasıl hesaplanır?"
+seo_context: "Apple iPhone 13 Pro Max 1 TB Ne Kadar Eder? ikinci el fiyatı belirlenirken pil sağlığı, ekran ve genel cihaz durumu birlikte değerlendirilir. Cihazın kondisyonu ve çalışan özelliklerinin durumu ortalama satış değerini doğrudan etkiler. KaçaGider üzerinden bilgilerinizi seçerek 2026 için güncel ikinci el piyasa değerini görebilirsiniz."
 seo_breadcrumbs: [{"label":"Ana Sayfa","url":"/"},{"label":"Telefon","url":"/telefon/"},{"label":"Apple","url":"/telefon/apple/"},{"label":"iPhone 13 Pro Max","url":"/telefon/apple/iphone-13-pro-max/"},{"label":"1 TB","url":"/telefon/apple/iphone-13-pro-max/1tb/"}]
 seo_links: [{"label":"Telefon değerleme","url":"/telefon/"},{"label":"İkinci el fiyat nasıl hesaplanır?","url":"/ikinci-el-fiyat-nasil-hesaplanir/"},{"label":"iPhone 13 Pro Max ana sayfası","url":"/telefon/apple/iphone-13-pro-max/"},{"label":"128 GB","url":"/telefon/apple/iphone-13-pro-max/128gb/"},{"label":"256 GB","url":"/telefon/apple/iphone-13-pro-max/256gb/"},{"label":"512 GB","url":"/telefon/apple/iphone-13-pro-max/512gb/"}]
 seo_links_heading: "Apple iPhone 13 Pro Max 1 TB ilgili sayfalar"

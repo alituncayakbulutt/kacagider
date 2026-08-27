@@ -1,11 +1,11 @@
 ---
 layout: "seo"
-seo_title: "Oppo Find X6 Pro Ne Kadar Eder? İkinci El Fiyatı | KaçaGider"
-seo_description: "Oppo Find X6 Pro ne kadar eder? 256 GB, 512 GB seçeneklerinde Oppo Find X6 Pro ikinci el fiyatı ve piyasa değeri, hafıza, kondisyon ve cihaz kayıt durumu dikkate alınarak KaçaGider ile ücretsiz hesaplanır."
-seo_h1: "Oppo Find X6 Pro Ne Kadar Eder?"
-seo_intro: "Oppo Find X6 Pro için güncel ikinci el değerini, gerçek cihaz bilgileri ve kondisyon ayrıntılarıyla KaçaGider üzerinden inceleyin."
-seo_context_heading: "Oppo Find X6 Pro için güncel değerleme"
-seo_context: "Oppo Find X6 Pro değeri; hafıza, kondisyon ve cihaz kayıt durumu ile birlikte güncel piyasa koşullarına göre değişebilir."
+seo_title: "Oppo Find X6 Pro Ne Kadar Eder? Kaça Satılır? 2026 | KaçaGider"
+seo_description: "Oppo Find X6 Pro Ne Kadar Eder? kaça satılır? Hafıza, ekran, batarya, kamera ve cihaz durumuna göre 2026 güncel ikinci el ortalama satış değerini KaçaGider ile ücretsiz hesapla."
+seo_h1: "Oppo Find X6 Pro Ne Kadar Eder? Kaça Satılır? 2026 İkinci El Fiyatı"
+seo_intro: "Oppo Find X6 Pro Ne Kadar Eder? kaça satılır? 2026 ikinci el değeri; hafıza, ekran, batarya, kamera ve cihaz durumu gibi özelliklere göre değişir. KaçaGider ile cihazınızın ortalama satış değerini ücretsiz hesaplayabilirsiniz."
+seo_context_heading: "Oppo Find X6 Pro Ne Kadar Eder? ikinci el değeri nasıl hesaplanır?"
+seo_context: "Oppo Find X6 Pro Ne Kadar Eder? ikinci el fiyatı belirlenirken hafıza, ekran, batarya, kamera ve cihaz durumu birlikte değerlendirilir. Cihazın kondisyonu ve çalışan özelliklerinin durumu ortalama satış değerini doğrudan etkiler. KaçaGider üzerinden bilgilerinizi seçerek 2026 için güncel ikinci el piyasa değerini görebilirsiniz."
 seo_breadcrumbs: [{"label":"Ana Sayfa","url":"/"},{"label":"Telefon","url":"/telefon/"},{"label":"Oppo","url":"/telefon/oppo/"},{"label":"Find X6 Pro","url":"/telefon/oppo/find-x6-pro/"}]
 seo_links: [{"label":"Telefon değerleme","url":"/telefon/"},{"label":"İkinci el fiyat nasıl hesaplanır?","url":"/ikinci-el-fiyat-nasil-hesaplanir/"},{"label":"Reno5 ikinci el fiyatı","url":"/telefon/oppo/reno5/"},{"label":"Reno5 Lite ikinci el fiyatı","url":"/telefon/oppo/reno5-lite/"},{"label":"Reno6 ikinci el fiyatı","url":"/telefon/oppo/reno6/"},{"label":"256 GB","url":"/telefon/oppo/find-x6-pro/256gb/"},{"label":"512 GB","url":"/telefon/oppo/find-x6-pro/512gb/"}]
 seo_links_heading: "Oppo Find X6 Pro ilgili sayfalar"

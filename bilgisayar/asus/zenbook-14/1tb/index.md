@@ -1,11 +1,11 @@
 ---
 layout: "seo"
-seo_title: "Asus Zenbook 14 1 TB Ne Kadar Eder? İkinci El Fiyatı | KaçaGider"
-seo_description: "Asus Zenbook 14 1 TB ne kadar eder? 512 GB, 1 TB seçeneklerinde Asus Zenbook 14 1 TB ikinci el fiyatı ve piyasa değeri, kapasite ve kondisyon dikkate alınarak KaçaGider ile ücretsiz hesaplanır."
-seo_h1: "Asus Zenbook 14 1 TB İkinci El Fiyatı"
-seo_intro: "Asus Zenbook 14 1 TB için güncel ikinci el değerini, gerçek cihaz bilgileri ve kondisyon ayrıntılarıyla KaçaGider üzerinden inceleyin."
-seo_context_heading: "Asus Zenbook 14 1 TB için güncel değerleme"
-seo_context: "Asus Zenbook 14 1 TB değeri; kapasite ve kondisyon ile birlikte güncel piyasa koşullarına göre değişebilir."
+seo_title: "Asus Zenbook 14 1 TB Ne Kadar Eder? Kaça Satılır? 2026 | KaçaGider"
+seo_description: "Asus Zenbook 14 1 TB Ne Kadar Eder? kaça satılır? İşlemci, RAM, depolama ve cihaz durumuna göre 2026 güncel ikinci el ortalama satış değerini KaçaGider ile ücretsiz hesapla."
+seo_h1: "Asus Zenbook 14 1 TB Ne Kadar Eder? Kaça Satılır? 2026 İkinci El Fiyatı"
+seo_intro: "Asus Zenbook 14 1 TB Ne Kadar Eder? kaça satılır? 2026 ikinci el değeri; işlemci, RAM, ekran ve genel cihaz durumu gibi özelliklere göre değişir. KaçaGider ile cihazınızın ortalama satış değerini ücretsiz hesaplayabilirsiniz."
+seo_context_heading: "Asus Zenbook 14 1 TB Ne Kadar Eder? ikinci el değeri nasıl hesaplanır?"
+seo_context: "Asus Zenbook 14 1 TB Ne Kadar Eder? ikinci el fiyatı belirlenirken işlemci, RAM, ekran ve genel cihaz durumu birlikte değerlendirilir. Cihazın kondisyonu ve çalışan özelliklerinin durumu ortalama satış değerini doğrudan etkiler. KaçaGider üzerinden bilgilerinizi seçerek 2026 için güncel ikinci el piyasa değerini görebilirsiniz."
 seo_breadcrumbs: [{"label":"Ana Sayfa","url":"/"},{"label":"Bilgisayar","url":"/bilgisayar/"},{"label":"Asus","url":"/bilgisayar/asus/"},{"label":"Zenbook 14","url":"/bilgisayar/asus/zenbook-14/"},{"label":"1 TB","url":"/bilgisayar/asus/zenbook-14/1tb/"}]
 seo_links: [{"label":"Bilgisayar değerleme","url":"/bilgisayar/"},{"label":"İkinci el fiyat nasıl hesaplanır?","url":"/ikinci-el-fiyat-nasil-hesaplanir/"},{"label":"Zenbook 14 ana sayfası","url":"/bilgisayar/asus/zenbook-14/"},{"label":"512 GB","url":"/bilgisayar/asus/zenbook-14/512gb/"}]
 seo_links_heading: "Asus Zenbook 14 1 TB ilgili sayfalar"

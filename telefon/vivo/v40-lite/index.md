@@ -1,11 +1,11 @@
 ---
 layout: "seo"
-seo_title: "Vivo V40 Lite Ne Kadar Eder? İkinci El Fiyatı | KaçaGider"
-seo_description: "Vivo V40 Lite ne kadar eder? 256 GB seçeneklerinde Vivo V40 Lite ikinci el fiyatı ve piyasa değeri, hafıza, kondisyon ve cihaz kayıt durumu dikkate alınarak KaçaGider ile ücretsiz hesaplanır."
-seo_h1: "Vivo V40 Lite Ne Kadar Eder?"
-seo_intro: "Vivo V40 Lite için güncel ikinci el değerini, gerçek cihaz bilgileri ve kondisyon ayrıntılarıyla KaçaGider üzerinden inceleyin."
-seo_context_heading: "Vivo V40 Lite için güncel değerleme"
-seo_context: "Vivo V40 Lite değeri; hafıza, kondisyon ve cihaz kayıt durumu ile birlikte güncel piyasa koşullarına göre değişebilir."
+seo_title: "Vivo V40 Lite Ne Kadar Eder? Kaça Satılır? 2026 Fiyatı | KaçaGider"
+seo_description: "Vivo V40 Lite Ne Kadar Eder? kaça satılır? Hafıza, ekran, batarya, kamera ve cihaz durumuna göre 2026 güncel ikinci el ortalama satış değerini KaçaGider ile ücretsiz hesapla."
+seo_h1: "Vivo V40 Lite Ne Kadar Eder? Kaça Satılır? 2026 İkinci El Fiyatı"
+seo_intro: "Vivo V40 Lite Ne Kadar Eder? kaça satılır? 2026 ikinci el değeri; hafıza, ekran, batarya, kamera ve cihaz durumu gibi özelliklere göre değişir. KaçaGider ile cihazınızın ortalama satış değerini ücretsiz hesaplayabilirsiniz."
+seo_context_heading: "Vivo V40 Lite Ne Kadar Eder? ikinci el değeri nasıl hesaplanır?"
+seo_context: "Vivo V40 Lite Ne Kadar Eder? ikinci el fiyatı belirlenirken hafıza, ekran, batarya, kamera ve cihaz durumu birlikte değerlendirilir. Cihazın kondisyonu ve çalışan özelliklerinin durumu ortalama satış değerini doğrudan etkiler. KaçaGider üzerinden bilgilerinizi seçerek 2026 için güncel ikinci el piyasa değerini görebilirsiniz."
 seo_breadcrumbs: [{"label":"Ana Sayfa","url":"/"},{"label":"Telefon","url":"/telefon/"},{"label":"Vivo","url":"/telefon/vivo/"},{"label":"V40 Lite","url":"/telefon/vivo/v40-lite/"}]
 seo_links: [{"label":"Telefon değerleme","url":"/telefon/"},{"label":"İkinci el fiyat nasıl hesaplanır?","url":"/ikinci-el-fiyat-nasil-hesaplanir/"},{"label":"V21 ikinci el fiyatı","url":"/telefon/vivo/v21/"},{"label":"V25 ikinci el fiyatı","url":"/telefon/vivo/v25/"},{"label":"V27 ikinci el fiyatı","url":"/telefon/vivo/v27/"},{"label":"256 GB","url":"/telefon/vivo/v40-lite/256gb/"}]
 seo_links_heading: "Vivo V40 Lite ilgili sayfalar"

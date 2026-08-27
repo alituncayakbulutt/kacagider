@@ -1,11 +1,11 @@
 ---
 layout: "seo"
-seo_title: "Honor Pad X8 Ne Kadar Eder? Güncel İkinci El Fiyatı | KaçaGider"
-seo_description: "Honor Pad X8 ne kadar eder? 64 GB, 128 GB seçeneklerinde Honor Pad X8 ikinci el fiyatı ve piyasa değeri, kapasite ve kondisyon dikkate alınarak KaçaGider ile ücretsiz hesaplanır."
-seo_h1: "Honor Pad X8 Ne Kadar Eder?"
-seo_intro: "Honor Pad X8 için güncel ikinci el değerini, gerçek cihaz bilgileri ve kondisyon ayrıntılarıyla KaçaGider üzerinden inceleyin."
-seo_context_heading: "Honor Pad X8 için güncel değerleme"
-seo_context: "Honor Pad X8 değeri; kapasite ve kondisyon ile birlikte güncel piyasa koşullarına göre değişebilir."
+seo_title: "Honor Pad X8 Ne Kadar Eder? Güncel Kaça Satılır? 2026 | KaçaGider"
+seo_description: "Honor Pad X8 Ne Kadar Eder? Güncel kaça satılır? Hafıza, ekran, batarya ve cihaz durumuna göre 2026 güncel ikinci el ortalama satış değerini KaçaGider ile ücretsiz hesapla."
+seo_h1: "Honor Pad X8 Ne Kadar Eder? Güncel Kaça Satılır? 2026 İkinci El Fiyatı"
+seo_intro: "Honor Pad X8 Ne Kadar Eder? Güncel kaça satılır? 2026 ikinci el değeri; hafıza, ekran, batarya ve cihaz durumu gibi özelliklere göre değişir. KaçaGider ile cihazınızın ortalama satış değerini ücretsiz hesaplayabilirsiniz."
+seo_context_heading: "Honor Pad X8 Ne Kadar Eder? Güncel ikinci el değeri nasıl hesaplanır?"
+seo_context: "Honor Pad X8 Ne Kadar Eder? Güncel ikinci el fiyatı belirlenirken hafıza, ekran, batarya ve cihaz durumu birlikte değerlendirilir. Cihazın kondisyonu ve çalışan özelliklerinin durumu ortalama satış değerini doğrudan etkiler. KaçaGider üzerinden bilgilerinizi seçerek 2026 için güncel ikinci el piyasa değerini görebilirsiniz."
 seo_breadcrumbs: [{"label":"Ana Sayfa","url":"/"},{"label":"Tablet","url":"/tablet/"},{"label":"Honor","url":"/tablet/honor/"},{"label":"Honor Pad X8","url":"/tablet/honor/honor-pad-x8/"}]
 seo_links: [{"label":"Tablet değerleme","url":"/tablet/"},{"label":"İkinci el fiyat nasıl hesaplanır?","url":"/ikinci-el-fiyat-nasil-hesaplanir/"},{"label":"Honor Pad 8 ikinci el fiyatı","url":"/tablet/honor/honor-pad-8/"},{"label":"Honor Pad 9 ikinci el fiyatı","url":"/tablet/honor/honor-pad-9/"},{"label":"Honor Pad 10 ikinci el fiyatı","url":"/tablet/honor/honor-pad-10/"},{"label":"64 GB","url":"/tablet/honor/honor-pad-x8/64gb/"},{"label":"128 GB","url":"/tablet/honor/honor-pad-x8/128gb/"}]
 seo_links_heading: "Honor Pad X8 ilgili sayfalar"

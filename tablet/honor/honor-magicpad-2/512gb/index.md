@@ -1,11 +1,11 @@
 ---
 layout: "seo"
-seo_title: "Honor MagicPad 2 512 GB Ne Kadar Eder? Güncel İkinci El Fiyatı | KaçaGider"
-seo_description: "Honor MagicPad 2 512 GB ne kadar eder? 256 GB, 512 GB seçeneklerinde Honor MagicPad 2 512 GB ikinci el fiyatı ve piyasa değeri, kapasite ve kondisyon dikkate alınarak KaçaGider ile ücretsiz hesaplanır."
-seo_h1: "Honor MagicPad 2 512 GB İkinci El Fiyatı"
-seo_intro: "Honor MagicPad 2 512 GB için güncel ikinci el değerini, gerçek cihaz bilgileri ve kondisyon ayrıntılarıyla KaçaGider üzerinden inceleyin."
-seo_context_heading: "Honor MagicPad 2 512 GB için güncel değerleme"
-seo_context: "Honor MagicPad 2 512 GB değeri; kapasite ve kondisyon ile birlikte güncel piyasa koşullarına göre değişebilir."
+seo_title: "Honor MagicPad 2 512 GB Ne Kadar Eder? Güncel Kaça Satılır? | KaçaGider"
+seo_description: "Honor MagicPad 2 512 GB Ne Kadar Eder? Güncel kaça satılır? Ekran, batarya ve cihaz durumuna göre 2026 güncel ikinci el ortalama satış değerini KaçaGider ile ücretsiz hesapla."
+seo_h1: "Honor MagicPad 2 512 GB Ne Kadar Eder? Güncel Kaça Satılır? 2026 İkinci El Fiyatı"
+seo_intro: "Honor MagicPad 2 512 GB Ne Kadar Eder? Güncel kaça satılır? 2026 ikinci el değeri; ekran, batarya ve cihaz durumu gibi özelliklere göre değişir. KaçaGider ile cihazınızın ortalama satış değerini ücretsiz hesaplayabilirsiniz."
+seo_context_heading: "Honor MagicPad 2 512 GB Ne Kadar Eder? Güncel ikinci el değeri nasıl hesaplanır?"
+seo_context: "Honor MagicPad 2 512 GB Ne Kadar Eder? Güncel ikinci el fiyatı belirlenirken ekran, batarya ve cihaz durumu birlikte değerlendirilir. Cihazın kondisyonu ve çalışan özelliklerinin durumu ortalama satış değerini doğrudan etkiler. KaçaGider üzerinden bilgilerinizi seçerek 2026 için güncel ikinci el piyasa değerini görebilirsiniz."
 seo_breadcrumbs: [{"label":"Ana Sayfa","url":"/"},{"label":"Tablet","url":"/tablet/"},{"label":"Honor","url":"/tablet/honor/"},{"label":"Honor MagicPad 2","url":"/tablet/honor/honor-magicpad-2/"},{"label":"512 GB","url":"/tablet/honor/honor-magicpad-2/512gb/"}]
 seo_links: [{"label":"Tablet değerleme","url":"/tablet/"},{"label":"İkinci el fiyat nasıl hesaplanır?","url":"/ikinci-el-fiyat-nasil-hesaplanir/"},{"label":"Honor MagicPad 2 ana sayfası","url":"/tablet/honor/honor-magicpad-2/"},{"label":"256 GB","url":"/tablet/honor/honor-magicpad-2/256gb/"}]
 seo_links_heading: "Honor MagicPad 2 512 GB ilgili sayfalar"

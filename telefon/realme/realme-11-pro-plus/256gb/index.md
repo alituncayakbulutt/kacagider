@@ -1,11 +1,11 @@
 ---
 layout: "seo"
-seo_title: "Realme 11 Pro+ 256 GB Ne Kadar Eder? Güncel İkinci El Fiyatı | KaçaGider"
-seo_description: "Realme 11 Pro+ 256 GB ne kadar eder? 128 GB, 256 GB, 512 GB seçeneklerinde Realme 11 Pro+ 256 GB ikinci el fiyatı ve piyasa değeri, hafıza, kondisyon ve cihaz kayıt durumu dikkate alınarak KaçaGider ile ücretsiz hesaplanır."
-seo_h1: "Realme 11 Pro+ 256 GB İkinci El Fiyatı"
-seo_intro: "Realme 11 Pro+ 256 GB için güncel ikinci el değerini, gerçek cihaz bilgileri ve kondisyon ayrıntılarıyla KaçaGider üzerinden inceleyin."
-seo_context_heading: "Realme 11 Pro+ 256 GB için güncel değerleme"
-seo_context: "Realme 11 Pro+ 256 GB değeri; hafıza, kondisyon ve cihaz kayıt durumu ile birlikte güncel piyasa koşullarına göre değişebilir."
+seo_title: "Realme 11 Pro+ 256 GB Ne Kadar Eder? Güncel Kaça Satılır? | KaçaGider"
+seo_description: "Realme 11 Pro+ 256 GB ne kadar eder? İkinci el fiyatı ve piyasa değerini cihaz özellikleri ve kondisyonuna göre KaçaGider ile öğren."
+seo_h1: "Realme 11 Pro+ 256 GB Ne Kadar Eder? Güncel Kaça Satılır? 2026 İkinci El Fiyatı"
+seo_intro: "Realme 11 Pro+ 256 GB Ne Kadar Eder? Güncel kaça satılır? 2026 ikinci el değeri; ekran, batarya, kamera ve cihaz durumu gibi özelliklere göre değişir. KaçaGider ile cihazınızın ortalama satış değerini ücretsiz hesaplayabilirsiniz."
+seo_context_heading: "Realme 11 Pro+ 256 GB Ne Kadar Eder? Güncel ikinci el değeri nasıl hesaplanır?"
+seo_context: "Realme 11 Pro+ 256 GB Ne Kadar Eder? Güncel ikinci el fiyatı belirlenirken ekran, batarya, kamera ve cihaz durumu birlikte değerlendirilir. Cihazın kondisyonu ve çalışan özelliklerinin durumu ortalama satış değerini doğrudan etkiler. KaçaGider üzerinden bilgilerinizi seçerek 2026 için güncel ikinci el piyasa değerini görebilirsiniz."
 seo_breadcrumbs: [{"label":"Ana Sayfa","url":"/"},{"label":"Telefon","url":"/telefon/"},{"label":"Realme","url":"/telefon/realme/"},{"label":"Realme 11 Pro+","url":"/telefon/realme/realme-11-pro-plus/"},{"label":"256 GB","url":"/telefon/realme/realme-11-pro-plus/256gb/"}]
 seo_links: [{"label":"Telefon değerleme","url":"/telefon/"},{"label":"İkinci el fiyat nasıl hesaplanır?","url":"/ikinci-el-fiyat-nasil-hesaplanir/"},{"label":"Realme 11 Pro+ ana sayfası","url":"/telefon/realme/realme-11-pro-plus/"},{"label":"128 GB","url":"/telefon/realme/realme-11-pro-plus/128gb/"},{"label":"512 GB","url":"/telefon/realme/realme-11-pro-plus/512gb/"}]
 seo_links_heading: "Realme 11 Pro+ 256 GB ilgili sayfalar"

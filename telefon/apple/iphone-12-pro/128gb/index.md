@@ -1,11 +1,11 @@
 ---
 layout: "seo"
-seo_title: "Apple iPhone 12 Pro 128 GB Ne Kadar Eder? İkinci El Fiyatı | KaçaGider"
-seo_description: "Apple iPhone 12 Pro 128 GB ne kadar eder? 128 GB, 256 GB, 512 GB seçeneklerinde Apple iPhone 12 Pro 128 GB ikinci el fiyatı ve piyasa değeri, hafıza, kondisyon ve cihaz kayıt durumu dikkate alınarak KaçaGider ile ücretsiz hesaplanır."
-seo_h1: "Apple iPhone 12 Pro 128 GB İkinci El Fiyatı"
-seo_intro: "Apple iPhone 12 Pro 128 GB için güncel ikinci el değerini, gerçek cihaz bilgileri ve kondisyon ayrıntılarıyla KaçaGider üzerinden inceleyin."
-seo_context_heading: "Apple iPhone 12 Pro 128 GB için güncel değerleme"
-seo_context: "Apple iPhone 12 Pro 128 GB değeri; hafıza, kondisyon ve cihaz kayıt durumu ile birlikte güncel piyasa koşullarına göre değişebilir."
+seo_title: "Apple iPhone 12 Pro 128 GB Ne Kadar Eder? Kaça Satılır? | KaçaGider"
+seo_description: "Apple iPhone 12 Pro 128 GB ne kadar eder? İkinci el fiyatı ve piyasa değerini cihaz özellikleri ve kondisyonuna göre KaçaGider ile öğren."
+seo_h1: "Apple iPhone 12 Pro 128 GB Ne Kadar Eder? Kaça Satılır? 2026 İkinci El Fiyatı"
+seo_intro: "Apple iPhone 12 Pro 128 GB Ne Kadar Eder? ikinci el fiyatı Türkiye 2026 ne kadar? Hafıza, pil sağlığı, ekran ve cihaz durumu birlikte değerlendirilir. Cihaz bilgilerini seçerek güncel ortalama satış değerini KaçaGider ile ücretsiz öğrenebilirsiniz."
+seo_context_heading: "Apple iPhone 12 Pro 128 GB Ne Kadar Eder? ikinci el değeri nasıl hesaplanır?"
+seo_context: "Apple iPhone 12 Pro 128 GB Ne Kadar Eder? ikinci el fiyatı belirlenirken pil sağlığı, ekran ve genel cihaz durumu birlikte değerlendirilir. Cihazın kondisyonu ve çalışan özelliklerinin durumu ortalama satış değerini doğrudan etkiler. KaçaGider üzerinden bilgilerinizi seçerek 2026 için güncel ikinci el piyasa değerini görebilirsiniz."
 seo_breadcrumbs: [{"label":"Ana Sayfa","url":"/"},{"label":"Telefon","url":"/telefon/"},{"label":"Apple","url":"/telefon/apple/"},{"label":"iPhone 12 Pro","url":"/telefon/apple/iphone-12-pro/"},{"label":"128 GB","url":"/telefon/apple/iphone-12-pro/128gb/"}]
 seo_links: [{"label":"Telefon değerleme","url":"/telefon/"},{"label":"İkinci el fiyat nasıl hesaplanır?","url":"/ikinci-el-fiyat-nasil-hesaplanir/"},{"label":"iPhone 12 Pro ana sayfası","url":"/telefon/apple/iphone-12-pro/"},{"label":"256 GB","url":"/telefon/apple/iphone-12-pro/256gb/"},{"label":"512 GB","url":"/telefon/apple/iphone-12-pro/512gb/"}]
 seo_links_heading: "Apple iPhone 12 Pro 128 GB ilgili sayfalar"

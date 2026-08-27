@@ -1,11 +1,11 @@
 ---
 layout: "seo"
-seo_title: "Honor X7 Ne Kadar Eder? İkinci El Fiyatı | KaçaGider"
-seo_description: "Honor X7 ne kadar eder? 128 GB seçeneklerinde Honor X7 ikinci el fiyatı ve piyasa değeri, hafıza, kondisyon ve cihaz kayıt durumu dikkate alınarak KaçaGider ile ücretsiz hesaplanır."
-seo_h1: "Honor X7 Ne Kadar Eder?"
-seo_intro: "Honor X7 için güncel ikinci el değerini, gerçek cihaz bilgileri ve kondisyon ayrıntılarıyla KaçaGider üzerinden inceleyin."
-seo_context_heading: "Honor X7 için güncel değerleme"
-seo_context: "Honor X7 değeri; hafıza, kondisyon ve cihaz kayıt durumu ile birlikte güncel piyasa koşullarına göre değişebilir."
+seo_title: "Honor X7 Ne Kadar Eder? Kaça Satılır? 2026 Fiyatı | KaçaGider"
+seo_description: "Honor X7 Ne Kadar Eder? ikinci el fiyatı Türkiye 2026: hafıza, ekran, batarya ve cihaz durumu dikkate alınarak güncel ortalama satış değerini KaçaGider ile ücretsiz hesapla."
+seo_h1: "Honor X7 Ne Kadar Eder? Kaça Satılır? 2026 İkinci El Fiyatı"
+seo_intro: "Honor X7 Ne Kadar Eder? ikinci el fiyatı Türkiye 2026 ne kadar? Hafıza, ekran, batarya ve cihaz durumu birlikte değerlendirilir. Cihaz bilgilerini seçerek güncel ortalama satış değerini KaçaGider ile ücretsiz öğrenebilirsiniz."
+seo_context_heading: "Honor X7 Ne Kadar Eder? ikinci el değeri nasıl hesaplanır?"
+seo_context: "Honor X7 Ne Kadar Eder? ikinci el fiyatı belirlenirken hafıza, ekran, batarya, kamera ve cihaz durumu birlikte değerlendirilir. Cihazın kondisyonu ve çalışan özelliklerinin durumu ortalama satış değerini doğrudan etkiler. KaçaGider üzerinden bilgilerinizi seçerek 2026 için güncel ikinci el piyasa değerini görebilirsiniz."
 seo_breadcrumbs: [{"label":"Ana Sayfa","url":"/"},{"label":"Telefon","url":"/telefon/"},{"label":"Honor","url":"/telefon/honor/"},{"label":"X7","url":"/telefon/honor/x7/"}]
 seo_links: [{"label":"Telefon değerleme","url":"/telefon/"},{"label":"İkinci el fiyat nasıl hesaplanır?","url":"/ikinci-el-fiyat-nasil-hesaplanir/"},{"label":"Honor 50 ikinci el fiyatı","url":"/telefon/honor/honor-50/"},{"label":"Honor 70 ikinci el fiyatı","url":"/telefon/honor/honor-70/"},{"label":"Honor 90 ikinci el fiyatı","url":"/telefon/honor/honor-90/"},{"label":"128 GB","url":"/telefon/honor/x7/128gb/"}]
 seo_links_heading: "Honor X7 ilgili sayfalar"

@@ -1,11 +1,11 @@
 ---
 layout: "seo"
 seo_title: "Tablet İkinci El Fiyatları 2026 | KaçaGider"
-seo_description: "Tablet ikinci el fiyatlarını Türkiye ikinci el piyasası ve ürün kondisyonuna göre KaçaGider ile değerlendirin."
+seo_description: "Tablet ne kadar eder? İkinci el fiyatı ve piyasa değerini cihaz özellikleri ve kondisyonuna göre KaçaGider ile öğren."
 seo_h1: "Tablet İkinci El Fiyatları"
-seo_intro: "Tablet ikinci el fiyatlarını Türkiye ikinci el piyasası ve ürün kondisyonuna göre KaçaGider ile değerlendirin."
+seo_intro: "Tabletinin marka, model, kapasite ve kondisyon bilgilerini seçerek güncel ikinci el piyasa değerini öğren. Doğru fiyatı belirledikten sonra KaçaGider'da ücretsiz ilan verip alıcını bul."
 seo_context_heading: "Tablet için ikinci el değerleme"
-seo_context: "Tablet ikinci el fiyatlarını Türkiye ikinci el piyasası ve ürün kondisyonuna göre KaçaGider ile değerlendirin."
+seo_context: "Tablet ikinci el piyasa değeri; marka, model, kapasite, kozmetik durum, çalışma durumu ve aksesuar bütünlüğüne göre değişir. Değerini öğrendikten sonra doğru fiyatı belirleyip KaçaGider'da ücretsiz ilan verebilirsin."
 seo_breadcrumbs: [{"label":"Ana Sayfa","url":"/"},{"label":"Tablet","url":"/tablet/"}]
 seo_links: [{"label":"Tabletim Ne Kadar Eder?","url":"/tabletim-ne-kadar-eder/"},{"label":"İkinci el fiyat nasıl hesaplanır?","url":"/ikinci-el-fiyat-nasil-hesaplanir/"},{"label":"Apple","url":"/tablet/apple/"},{"label":"Samsung","url":"/tablet/samsung/"},{"label":"Xiaomi","url":"/tablet/xiaomi/"},{"label":"Huawei","url":"/tablet/huawei/"},{"label":"Lenovo","url":"/tablet/lenovo/"},{"label":"Honor","url":"/tablet/honor/"}]
 seo_links_heading: "Tablet markaları"

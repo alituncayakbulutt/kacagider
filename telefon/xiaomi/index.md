@@ -1,9 +1,9 @@
 ---
 layout: "seo"
-seo_title: "Xiaomi Telefon İkinci El Fiyatları 2026 | KaçaGider"
-seo_description: "Xiaomi Telefon modellerinin ikinci el değerini Türkiye ikinci el piyasası ve cihaz kondisyonuna göre KaçaGider ile inceleyin."
-seo_h1: "Xiaomi Telefon İkinci El Fiyatları"
-seo_intro: "Xiaomi Telefon modellerinin ikinci el değerini Türkiye ikinci el piyasası ve cihaz kondisyonuna göre KaçaGider ile inceleyin."
+seo_title: "Xiaomi, Redmi, POCO Ne Kadar Eder? 2026 Fiyatları | KaçaGider"
+seo_description: "Xiaomi, Redmi veya POCO telefon ne kadar eder, kaça satılır? Model ve cihaz durumunu seç; 2026 güncel ikinci el piyasa değerini ücretsiz hesapla."
+seo_h1: "Xiaomi, Redmi ve POCO Ne Kadar Eder? 2026 İkinci El Fiyatları"
+seo_intro: "Xiaomi, Redmi veya POCO telefonunuz ne kadar eder ve kaça satılır? Modelinizi seçerek cihaz durumuna göre 2026 güncel ikinci el piyasa değerini ücretsiz hesaplayabilirsiniz."
 seo_context_heading: "Xiaomi Telefon için ikinci el değerleme"
 seo_context: "Xiaomi Telefon modellerinin ikinci el değerini Türkiye ikinci el piyasası ve cihaz kondisyonuna göre KaçaGider ile inceleyin."
 seo_breadcrumbs: [{"label":"Ana Sayfa","url":"/"},{"label":"Telefon","url":"/telefon/"},{"label":"Xiaomi","url":"/telefon/xiaomi/"}]

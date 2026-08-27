@@ -1,11 +1,11 @@
 ---
 layout: "seo"
-seo_title: "Xbox One S Ne Kadar Eder? Güncel İkinci El Fiyatı | KaçaGider"
-seo_description: "Xbox One S ne kadar eder? 500 GB, 1 TB, 2 TB seçeneklerinde Xbox One S ikinci el fiyatı ve piyasa değeri, depolama ve kondisyon dikkate alınarak KaçaGider ile ücretsiz hesaplanır."
-seo_h1: "Xbox One S Ne Kadar Eder?"
-seo_intro: "Xbox One S için güncel ikinci el değerini, gerçek cihaz bilgileri ve kondisyon ayrıntılarıyla KaçaGider üzerinden inceleyin."
-seo_context_heading: "Xbox One S için güncel değerleme"
-seo_context: "Xbox One S değeri; depolama ve kondisyon ile birlikte güncel piyasa koşullarına göre değişebilir."
+seo_title: "Xbox One S Ne Kadar Eder? Güncel Kaça Satılır? 2026 | KaçaGider"
+seo_description: "Xbox One S ne kadar eder? İkinci el fiyatı ve piyasa değerini cihaz özellikleri ve kondisyonuna göre KaçaGider ile öğren."
+seo_h1: "Xbox One S Ne Kadar Eder? Güncel Kaça Satılır? 2026 İkinci El Fiyatı"
+seo_intro: "Xbox One S Ne Kadar Eder? Güncel ikinci el fiyatı Türkiye 2026 ne kadar? Depolama, kozmetik durum, aksesuar ve çalışma durumu birlikte değerlendirilir. Cihaz bilgilerini seçerek güncel ortalama satış değerini KaçaGider ile ücretsiz öğrenebilirsiniz."
+seo_context_heading: "Xbox One S Ne Kadar Eder? Güncel ikinci el değeri nasıl hesaplanır?"
+seo_context: "Xbox One S Ne Kadar Eder? Güncel ikinci el fiyatı belirlenirken depolama, kozmetik durum, aksesuarlar ve çalışma durumu birlikte değerlendirilir. Cihazın kondisyonu ve çalışan özelliklerinin durumu ortalama satış değerini doğrudan etkiler. KaçaGider üzerinden bilgilerinizi seçerek 2026 için güncel ikinci el piyasa değerini görebilirsiniz."
 seo_breadcrumbs: [{"label":"Ana Sayfa","url":"/"},{"label":"Oyun Konsolu","url":"/oyun-konsolu/"},{"label":"Xbox","url":"/oyun-konsolu/xbox/"},{"label":"Xbox One S","url":"/oyun-konsolu/xbox/xbox-one-s/"}]
 seo_links: [{"label":"Oyun Konsolu değerleme","url":"/oyun-konsolu/"},{"label":"İkinci el fiyat nasıl hesaplanır?","url":"/ikinci-el-fiyat-nasil-hesaplanir/"},{"label":"Xbox Series X 2 TB ikinci el fiyatı","url":"/oyun-konsolu/xbox/xbox-series-x-2-tb/"},{"label":"Xbox Series X 1 TB ikinci el fiyatı","url":"/oyun-konsolu/xbox/xbox-series-x-1-tb/"},{"label":"Xbox Series X 1 TB Digital ikinci el fiyatı","url":"/oyun-konsolu/xbox/xbox-series-x-1-tb-digital/"},{"label":"500 GB","url":"/oyun-konsolu/xbox/xbox-one-s/500gb/"},{"label":"1 TB","url":"/oyun-konsolu/xbox/xbox-one-s/1tb/"},{"label":"2 TB","url":"/oyun-konsolu/xbox/xbox-one-s/2tb/"}]
 seo_links_heading: "Xbox One S ilgili sayfalar"
