@@ -44,7 +44,18 @@ window.KGMarketplaceCollectDetails=collectDetails;
 
 function installStyle(){
   if(document.getElementById("kgStableCategoryStyle"))return;
-  var s=document.createElement("style");s.id="kgStableCategoryStyle";s.textContent=`#viewHome .kg-product-art,#viewHome .category-image,#viewHome .category-media{overflow:hidden!important;display:flex!important;align-items:center!important;justify-content:center!important;background:#fff!important}#viewHome .kg-product-art img,#viewHome .category-image img,#viewHome .category-media img{display:block!important;width:86%!important;height:86%!important;max-width:86%!important;max-height:86%!important;object-fit:contain!important;object-position:center!important;transform:none!important;background:transparent!important}#viewHome [data-category="computer"] .kg-product-art img,#viewHome [data-category="bilgisayar"] .kg-product-art img{width:92%!important;max-width:92%!important;height:78%!important;max-height:78%!important}`;document.head.appendChild(s);
+  var s=document.createElement("style");
+  s.id="kgStableCategoryStyle";
+  s.textContent=`
+  #viewHome .kg-product-art,#viewHome .category-image,#viewHome .category-media{overflow:hidden!important;display:flex!important;align-items:center!important;justify-content:center!important;background:#fff!important}
+  #viewHome .kg-product-art img,#viewHome .category-image img,#viewHome .category-media img{display:block!important;width:86%!important;height:86%!important;max-width:86%!important;max-height:86%!important;object-fit:contain!important;object-position:center!important;transform:none!important;background:transparent!important}
+  #viewHome [data-category="computer"] .kg-product-art img,#viewHome [data-category="bilgisayar"] .kg-product-art img{width:92%!important;max-width:92%!important;height:78%!important;max-height:78%!important}
+  #kgHeaderAccountAction,#kgAccountSessionAction{gap:9px!important;min-width:112px!important;box-shadow:none!important;transition:background .18s ease,border-color .18s ease!important}
+  #kgHeaderAccountAction:hover,#kgAccountSessionAction:hover{background:rgba(255,255,255,.11)!important;border-color:#718198!important}
+  #kgHeaderAccountAction::before,#kgAccountSessionAction::before{content:"";display:block;width:18px;height:18px;flex:0 0 18px;background:currentColor;-webkit-mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='none' stroke='%23000' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' d='M20 21a8 8 0 0 0-16 0M12 13a4 4 0 1 0 0-8 4 4 0 0 0 0 8Z'/%3E%3C/svg%3E") center/contain no-repeat;mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='none' stroke='%23000' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' d='M20 21a8 8 0 0 0-16 0M12 13a4 4 0 1 0 0-8 4 4 0 0 0 0 8Z'/%3E%3C/svg%3E") center/contain no-repeat}
+  @media(max-width:900px){#kgHeaderAccountAction,#kgAccountSessionAction{min-width:auto!important;padding:0 10px!important}}
+  `;
+  document.head.appendChild(s);
 }
 function applyImages(){
   installStyle();var root=document.getElementById("viewHome")||document;
@@ -54,7 +65,7 @@ function applyImages(){
 function loadAccountSessionNav(){
   if(window.__KG_ACCOUNT_SESSION_NAV__||document.querySelector('script[data-kg-account-session-nav]'))return;
   var s=document.createElement("script");
-  s.src="/assets/account-session-nav.js?v=20260827-2301";
+  s.src="/assets/account-session-nav.js?v=20260827-2308";
   s.async=true;
   s.dataset.kgAccountSessionNav="1";
   document.head.appendChild(s);
@@ -75,7 +86,13 @@ function showAndPlaceAccount(button,host,sell){
   button.style.setProperty("font-size","13px","important");
   button.style.setProperty("font-weight","900","important");
   button.style.setProperty("white-space","nowrap","important");
-  if(sell)host.insertBefore(button,sell);else host.appendChild(button);
+  button.style.setProperty("cursor","pointer","important");
+  if(sell){
+    if(sell.nextSibling!==button)host.insertBefore(button,sell.nextSibling);
+  }else{
+    var theme=host.querySelector(".kg-theme-btn,#themeToggle");
+    if(theme)host.insertBefore(button,theme);else host.appendChild(button);
+  }
 }
 
 function ensureDirectAccountEntry(){
