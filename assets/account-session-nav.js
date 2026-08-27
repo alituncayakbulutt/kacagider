@@ -58,6 +58,30 @@ function installStyle(){
       .kg-account-field input{min-height:50px;border-radius:12px;padding:12px 13px;font-size:16px;line-height:1.2}
       .kg-account-note{font-size:12px;line-height:1.4;padding:10px 11px;margin-bottom:11px}
       .kg-account-forgot{display:inline-flex;align-items:center;min-height:38px;margin-top:4px;padding:5px 0;font-size:12px}
+
+      .kg-mp-overlay:has(#kgMpAuth){
+        align-items:flex-start!important;justify-content:center!important;overflow-y:auto!important;
+        padding:max(10px,env(safe-area-inset-top)) 10px max(10px,env(safe-area-inset-bottom))!important;
+        box-sizing:border-box!important;overscroll-behavior:contain;-webkit-overflow-scrolling:touch;
+      }
+      .kg-mp-modal:has(#kgMpAuth){
+        width:100%!important;max-width:none!important;margin:auto 0!important;max-height:calc(100dvh - 20px)!important;
+        border-radius:18px!important;overflow-y:auto!important;overscroll-behavior:contain;-webkit-overflow-scrolling:touch;
+      }
+      .kg-mp-modal:has(#kgMpAuth) .kg-mp-head{padding:18px 16px 14px!important;gap:10px!important}
+      .kg-mp-modal:has(#kgMpAuth) .kg-mp-head h2{font-size:22px!important;line-height:1.15!important;padding-right:4px!important}
+      .kg-mp-modal:has(#kgMpAuth) .kg-mp-head p{font-size:12px!important;line-height:1.45!important;margin-top:5px!important}
+      .kg-mp-modal:has(#kgMpAuth) .kg-mp-close{width:38px!important;height:38px!important;flex:0 0 38px!important;border-radius:11px!important;touch-action:manipulation}
+      .kg-mp-modal:has(#kgMpAuth) .kg-mp-body{padding:16px!important}
+      .kg-mp-modal:has(#kgMpAuth) .kg-mp-tabs{margin-bottom:12px!important;border-radius:12px!important}
+      .kg-mp-modal:has(#kgMpAuth) .kg-mp-tab{min-height:44px!important;padding:9px 8px!important;font-size:13px!important;touch-action:manipulation}
+      .kg-mp-modal:has(#kgMpAuth) .kg-mp-note{margin-bottom:12px!important;padding:10px 11px!important;font-size:12px!important;line-height:1.45!important}
+      .kg-mp-modal:has(#kgMpAuth) .kg-mp-field{gap:7px!important;margin-bottom:11px!important}
+      .kg-mp-modal:has(#kgMpAuth) .kg-mp-field label{font-size:13px!important}
+      .kg-mp-modal:has(#kgMpAuth) .kg-mp-field input{min-height:50px!important;padding:12px 13px!important;border-radius:12px!important;font-size:16px!important;box-sizing:border-box!important}
+      .kg-mp-modal:has(#kgMpAuth) .kg-mp-field small{font-size:11px!important;line-height:1.35!important}
+      .kg-mp-modal:has(#kgMpAuth) .kg-mp-actions{display:block!important;margin-top:12px!important}
+      .kg-mp-modal:has(#kgMpAuth) .kg-mp-btn.primary{width:100%!important;min-height:50px!important;border-radius:12px!important;font-size:15px!important;touch-action:manipulation}
     }
     @media(max-width:380px){
       .kg-account-login-overlay{padding-left:8px;padding-right:8px}
@@ -65,6 +89,11 @@ function installStyle(){
       .kg-account-login-card h2{font-size:21px}
       .kg-account-login-card p{font-size:12px}
       .kg-account-google,.kg-account-submit,.kg-account-field input{min-height:48px}
+      .kg-mp-overlay:has(#kgMpAuth){padding-left:8px!important;padding-right:8px!important}
+      .kg-mp-modal:has(#kgMpAuth){border-radius:16px!important}
+      .kg-mp-modal:has(#kgMpAuth) .kg-mp-head{padding:16px 14px 12px!important}
+      .kg-mp-modal:has(#kgMpAuth) .kg-mp-body{padding:14px!important}
+      .kg-mp-modal:has(#kgMpAuth) .kg-mp-head h2{font-size:20px!important}
     }
     @media(max-width:640px) and (max-height:650px){
       .kg-account-login-card{margin:4px 0;padding-top:16px;padding-bottom:14px}
@@ -73,6 +102,12 @@ function installStyle(){
       .kg-account-field{margin-bottom:8px}
       .kg-account-google,.kg-account-submit,.kg-account-field input{min-height:46px}
       .kg-account-forgot{min-height:32px}
+      .kg-mp-modal:has(#kgMpAuth){margin:4px 0!important}
+      .kg-mp-modal:has(#kgMpAuth) .kg-mp-head{padding-top:14px!important;padding-bottom:10px!important}
+      .kg-mp-modal:has(#kgMpAuth) .kg-mp-body{padding-top:12px!important;padding-bottom:12px!important}
+      .kg-mp-modal:has(#kgMpAuth) .kg-mp-note{margin-bottom:9px!important}
+      .kg-mp-modal:has(#kgMpAuth) .kg-mp-field{margin-bottom:8px!important}
+      .kg-mp-modal:has(#kgMpAuth) .kg-mp-field input,.kg-mp-modal:has(#kgMpAuth) .kg-mp-btn.primary{min-height:46px!important}
     }
   `;
   document.head.appendChild(s);
