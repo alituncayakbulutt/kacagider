@@ -1,13 +1,16 @@
 ---
 layout: "seo"
-seo_title: "A79 256 GB Kaça Satılır? 2026 İkinci El Fiyatı | KaçaGider"
-seo_description: "A79 256 GB kaça satılır? Ekran, batarya, kamera ve cihaz durumuna göre 2026 güncel ikinci el ortalama satış değerini KaçaGider ile ücretsiz hesapla."
-seo_h1: "A79 256 GB Kaça Satılır? 2026 İkinci El Fiyatı"
-seo_intro: "A79 256 GB kaça satılır? 2026 ikinci el değeri; ekran, batarya, kamera ve cihaz durumu gibi özelliklere göre değişir. KaçaGider ile cihazınızın ortalama satış değerini ücretsiz hesaplayabilirsiniz."
-seo_context_heading: "A79 256 GB ikinci el değeri nasıl hesaplanır?"
-seo_context: "A79 256 GB ikinci el fiyatı belirlenirken ekran, batarya, kamera ve cihaz durumu birlikte değerlendirilir. Cihazın kondisyonu ve çalışan özelliklerinin durumu ortalama satış değerini doğrudan etkiler. KaçaGider üzerinden bilgilerinizi seçerek 2026 için güncel ikinci el piyasa değerini görebilirsiniz."
+seo_title: "Oppo A79 256 GB Ne Kadar Eder? İkinci El Fiyatı | KaçaGider"
+seo_description: "Oppo A79 256 GB ne kadar eder? 256 GB seçeneklerinde Oppo A79 256 GB ikinci el fiyatı ve piyasa değeri, hafıza, kondisyon ve cihaz kayıt durumu dikkate alınarak KaçaGider ile ücretsiz hesaplanır."
+seo_h1: "Oppo A79 256 GB İkinci El Fiyatı"
+seo_intro: "Oppo A79 256 GB için güncel ikinci el değerini, gerçek cihaz bilgileri ve kondisyon ayrıntılarıyla KaçaGider üzerinden inceleyin."
+seo_context_heading: "Oppo A79 256 GB için güncel değerleme"
+seo_context: "Oppo A79 256 GB değeri; hafıza, kondisyon ve cihaz kayıt durumu ile birlikte güncel piyasa koşullarına göre değişebilir."
 seo_breadcrumbs: [{"label":"Ana Sayfa","url":"/"},{"label":"Telefon","url":"/telefon/"},{"label":"Oppo","url":"/telefon/oppo/"},{"label":"A79","url":"/telefon/oppo/a79/"},{"label":"256 GB","url":"/telefon/oppo/a79/256gb/"}]
-seo_links: [{"label":"A79 ana sayfası","url":"/telefon/oppo/a79/"}]
-seo_links_heading: "A79 diğer seçenekleri"
+seo_links: [{"label":"Telefon değerleme","url":"/telefon/"},{"label":"İkinci el fiyat nasıl hesaplanır?","url":"/ikinci-el-fiyat-nasil-hesaplanir/"},{"label":"A79 ana sayfası","url":"/telefon/oppo/a79/"}]
+seo_links_heading: "Oppo A79 256 GB ilgili sayfalar"
 seo_canonical: "https://kacagider.com.tr/telefon/oppo/a79/256gb/"
+seo_cta: {"url":"/telefon/","label":"Telefon değerini hesapla"}
+seo_sections: [{"title":"Oppo A79 256 GB Kaça Satılır?","text":"Oppo A79 256 GB için tek bir sabit satış fiyatı yoktur. Cihazın kondisyonu, özellikleri ve güncel piyasa koşulları gerçek satış değerini etkiler."},{"title":"Oppo A79 256 GB İkinci El Fiyatı","text":"Oppo A79 256 GB ikinci el fiyatı, mevcut seçenekler ve cihazın kullanım durumuna göre değerlendirilir. Bu sayfada bulunan seçenekler: 256 GB."},{"title":"Oppo A79 256 GB Piyasa Değeri","text":"KaçaGider piyasa değeri, seçilen ürün bilgilerini ve hafıza, kondisyon ve cihaz kayıt durumu ayrıntılarını birlikte değerlendirerek bir başlangıç referansı sunar."},{"title":"Oppo A79 256 GB Değeri Nasıl Hesaplanır?","text":"Marka, model, hafıza ve kondisyon bilgilerini değerleme ekranında seçin. Sonuç, cihazın gerçek durumu ile piyasa koşullarına göre değişebilir."}]
+seo_faqs: [{"question":"Oppo A79 256 GB ne kadar eder?","answer":"Güncel değeri öğrenmek için Telefon değerleme ekranında model ve cihaz bilgilerini seçin."},{"question":"Oppo A79 256 GB kaça satılır?","answer":"Satış değeri; kondisyon, özellikler ve güncel piyasa koşullarına göre değişir."},{"question":"Oppo A79 256 GB ikinci el fiyatı nasıl hesaplanır?","answer":"hafıza, kondisyon ve cihaz kayıt durumu bilgileri ve seçilen ürün özellikleri birlikte değerlendirilir."},{"question":"Oppo A79 256 GB piyasa değeri neden değişir?","answer":"Piyasa hareketleri, cihaz kondisyonu ve özelliklerdeki farklılıklar değeri etkileyebilir."},{"question":"Oppo A79 256 GB hangi seçeneklerle değerlendirilir?","answer":"Bu sayfada kullanılabilen seçenekler: 256 GB."}]
 ---

@@ -1,15 +1,16 @@
 ---
 layout: "seo"
-seo_title: "OnePlus Nord 5 Kaça Satılır? 2026 İkinci El Fiyatı | KaçaGider"
-seo_description: "OnePlus Nord 5 kaça satılır? Hafıza, ekran, batarya, kamera ve cihaz durumuna göre 2026 güncel ikinci el ortalama satış değerini KaçaGider ile ücretsiz hesapla."
-seo_h1: "OnePlus Nord 5 Kaça Satılır? 2026 İkinci El Fiyatı"
-seo_intro: "OnePlus Nord 5 kaça satılır? 2026 ikinci el değeri; hafıza, ekran, batarya, kamera ve cihaz durumu gibi özelliklere göre değişir. KaçaGider ile cihazınızın ortalama satış değerini ücretsiz hesaplayabilirsiniz."
-seo_context_heading: "OnePlus Nord 5 ikinci el değeri nasıl hesaplanır?"
-seo_context: "OnePlus Nord 5 ikinci el fiyatı belirlenirken hafıza, ekran, batarya, kamera ve cihaz durumu birlikte değerlendirilir. Cihazın kondisyonu ve çalışan özelliklerinin durumu ortalama satış değerini doğrudan etkiler. KaçaGider üzerinden bilgilerinizi seçerek 2026 için güncel ikinci el piyasa değerini görebilirsiniz."
+seo_title: "OnePlus Nord 5 Ne Kadar Eder? Güncel İkinci El Fiyatı | KaçaGider"
+seo_description: "OnePlus Nord 5 ne kadar eder? 256 GB, 512 GB seçeneklerinde OnePlus Nord 5 ikinci el fiyatı ve piyasa değeri, hafıza, kondisyon ve cihaz kayıt durumu dikkate alınarak KaçaGider ile ücretsiz hesaplanır."
+seo_h1: "OnePlus Nord 5 Ne Kadar Eder?"
+seo_intro: "OnePlus Nord 5 için güncel ikinci el değerini, gerçek cihaz bilgileri ve kondisyon ayrıntılarıyla KaçaGider üzerinden inceleyin."
+seo_context_heading: "OnePlus Nord 5 için güncel değerleme"
+seo_context: "OnePlus Nord 5 değeri; hafıza, kondisyon ve cihaz kayıt durumu ile birlikte güncel piyasa koşullarına göre değişebilir."
 seo_breadcrumbs: [{"label":"Ana Sayfa","url":"/"},{"label":"Telefon","url":"/telefon/"},{"label":"OnePlus","url":"/telefon/oneplus/"},{"label":"OnePlus Nord 5","url":"/telefon/oneplus/oneplus-nord-5/"}]
-seo_links: [{"label":"256 GB","url":"/telefon/oneplus/oneplus-nord-5/256gb/"},{"label":"512 GB","url":"/telefon/oneplus/oneplus-nord-5/512gb/"}]
-seo_links_heading: "OnePlus Nord 5 seçenekleri"
+seo_links: [{"label":"Telefon değerleme","url":"/telefon/"},{"label":"İkinci el fiyat nasıl hesaplanır?","url":"/ikinci-el-fiyat-nasil-hesaplanir/"},{"label":"OnePlus 8 ikinci el fiyatı","url":"/telefon/oneplus/oneplus-8/"},{"label":"OnePlus 8 Pro ikinci el fiyatı","url":"/telefon/oneplus/oneplus-8-pro/"},{"label":"OnePlus 9 ikinci el fiyatı","url":"/telefon/oneplus/oneplus-9/"},{"label":"256 GB","url":"/telefon/oneplus/oneplus-nord-5/256gb/"},{"label":"512 GB","url":"/telefon/oneplus/oneplus-nord-5/512gb/"}]
+seo_links_heading: "OnePlus Nord 5 ilgili sayfalar"
 seo_canonical: "https://kacagider.com.tr/telefon/oneplus/oneplus-nord-5/"
-seo_guides_heading: "OnePlus Nord 5 ile ilgili sık arananlar"
-seo_guides: [{"label":"OnePlus Nord 5 nasıl sıfırlanır?","url":"/rehber/android/android-telefon-nasil-sifirlanir/"},{"label":"OnePlus Nord 5 ekran görüntüsü nasıl alınır?","url":"/rehber/android/android-ekran-goruntusu-nasil-alinir/"},{"label":"OnePlus Nord 5 IMEI nasıl öğrenilir?","url":"/rehber/android/android-imei-nasil-ogrenilir/"}]
+seo_cta: {"url":"/telefon/","label":"Telefon değerini hesapla"}
+seo_sections: [{"title":"OnePlus Nord 5 Kaça Satılır?","text":"OnePlus Nord 5 için tek bir sabit satış fiyatı yoktur. Cihazın kondisyonu, özellikleri ve güncel piyasa koşulları gerçek satış değerini etkiler."},{"title":"OnePlus Nord 5 İkinci El Fiyatı","text":"OnePlus Nord 5 ikinci el fiyatı, mevcut seçenekler ve cihazın kullanım durumuna göre değerlendirilir. Bu sayfada bulunan seçenekler: 256 GB, 512 GB."},{"title":"OnePlus Nord 5 Piyasa Değeri","text":"KaçaGider piyasa değeri, seçilen ürün bilgilerini ve hafıza, kondisyon ve cihaz kayıt durumu ayrıntılarını birlikte değerlendirerek bir başlangıç referansı sunar."},{"title":"OnePlus Nord 5 Değeri Nasıl Hesaplanır?","text":"Marka, model, hafıza ve kondisyon bilgilerini değerleme ekranında seçin. Sonuç, cihazın gerçek durumu ile piyasa koşullarına göre değişebilir."}]
+seo_faqs: [{"question":"OnePlus Nord 5 ne kadar eder?","answer":"Güncel değeri öğrenmek için Telefon değerleme ekranında model ve cihaz bilgilerini seçin."},{"question":"OnePlus Nord 5 kaça satılır?","answer":"Satış değeri; kondisyon, özellikler ve güncel piyasa koşullarına göre değişir."},{"question":"OnePlus Nord 5 ikinci el fiyatı nasıl hesaplanır?","answer":"hafıza, kondisyon ve cihaz kayıt durumu bilgileri ve seçilen ürün özellikleri birlikte değerlendirilir."},{"question":"OnePlus Nord 5 piyasa değeri neden değişir?","answer":"Piyasa hareketleri, cihaz kondisyonu ve özelliklerdeki farklılıklar değeri etkileyebilir."},{"question":"OnePlus Nord 5 hangi seçeneklerle değerlendirilir?","answer":"Bu sayfada kullanılabilen seçenekler: 256 GB, 512 GB."}]
 ---

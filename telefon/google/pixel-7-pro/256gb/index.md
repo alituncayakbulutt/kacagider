@@ -1,13 +1,16 @@
 ---
 layout: "seo"
-seo_title: "Pixel 7 Pro 256 GB Kaça Satılır? 2026 İkinci El Fiyatı | KaçaGider"
-seo_description: "Pixel 7 Pro 256 GB kaça satılır? Ekran, batarya, kamera ve cihaz durumuna göre 2026 güncel ikinci el ortalama satış değerini KaçaGider ile ücretsiz hesapla."
-seo_h1: "Pixel 7 Pro 256 GB Kaça Satılır? 2026 İkinci El Fiyatı"
-seo_intro: "Pixel 7 Pro 256 GB kaça satılır? 2026 ikinci el değeri; ekran, batarya, kamera ve cihaz durumu gibi özelliklere göre değişir. KaçaGider ile cihazınızın ortalama satış değerini ücretsiz hesaplayabilirsiniz."
-seo_context_heading: "Pixel 7 Pro 256 GB ikinci el değeri nasıl hesaplanır?"
-seo_context: "Pixel 7 Pro 256 GB ikinci el fiyatı belirlenirken ekran, batarya, kamera ve cihaz durumu birlikte değerlendirilir. Cihazın kondisyonu ve çalışan özelliklerinin durumu ortalama satış değerini doğrudan etkiler. KaçaGider üzerinden bilgilerinizi seçerek 2026 için güncel ikinci el piyasa değerini görebilirsiniz."
+seo_title: "Google Pixel 7 Pro 256 GB Ne Kadar Eder? İkinci El Fiyatı | KaçaGider"
+seo_description: "Google Pixel 7 Pro 256 GB ne kadar eder? 128 GB, 256 GB, 512 GB seçeneklerinde Google Pixel 7 Pro 256 GB ikinci el fiyatı ve piyasa değeri, hafıza, kondisyon ve cihaz kayıt durumu dikkate alınarak KaçaGider ile ücretsiz hesaplanır."
+seo_h1: "Google Pixel 7 Pro 256 GB İkinci El Fiyatı"
+seo_intro: "Google Pixel 7 Pro 256 GB için güncel ikinci el değerini, gerçek cihaz bilgileri ve kondisyon ayrıntılarıyla KaçaGider üzerinden inceleyin."
+seo_context_heading: "Google Pixel 7 Pro 256 GB için güncel değerleme"
+seo_context: "Google Pixel 7 Pro 256 GB değeri; hafıza, kondisyon ve cihaz kayıt durumu ile birlikte güncel piyasa koşullarına göre değişebilir."
 seo_breadcrumbs: [{"label":"Ana Sayfa","url":"/"},{"label":"Telefon","url":"/telefon/"},{"label":"Google","url":"/telefon/google/"},{"label":"Pixel 7 Pro","url":"/telefon/google/pixel-7-pro/"},{"label":"256 GB","url":"/telefon/google/pixel-7-pro/256gb/"}]
-seo_links: [{"label":"Pixel 7 Pro ana sayfası","url":"/telefon/google/pixel-7-pro/"},{"label":"128 GB","url":"/telefon/google/pixel-7-pro/128gb/"},{"label":"512 GB","url":"/telefon/google/pixel-7-pro/512gb/"}]
-seo_links_heading: "Pixel 7 Pro diğer seçenekleri"
+seo_links: [{"label":"Telefon değerleme","url":"/telefon/"},{"label":"İkinci el fiyat nasıl hesaplanır?","url":"/ikinci-el-fiyat-nasil-hesaplanir/"},{"label":"Pixel 7 Pro ana sayfası","url":"/telefon/google/pixel-7-pro/"},{"label":"128 GB","url":"/telefon/google/pixel-7-pro/128gb/"},{"label":"512 GB","url":"/telefon/google/pixel-7-pro/512gb/"}]
+seo_links_heading: "Google Pixel 7 Pro 256 GB ilgili sayfalar"
 seo_canonical: "https://kacagider.com.tr/telefon/google/pixel-7-pro/256gb/"
+seo_cta: {"url":"/telefon/","label":"Telefon değerini hesapla"}
+seo_sections: [{"title":"Google Pixel 7 Pro 256 GB Kaça Satılır?","text":"Google Pixel 7 Pro 256 GB için tek bir sabit satış fiyatı yoktur. Cihazın kondisyonu, özellikleri ve güncel piyasa koşulları gerçek satış değerini etkiler."},{"title":"Google Pixel 7 Pro 256 GB İkinci El Fiyatı","text":"Google Pixel 7 Pro 256 GB ikinci el fiyatı, mevcut seçenekler ve cihazın kullanım durumuna göre değerlendirilir. Bu sayfada bulunan seçenekler: 128 GB, 256 GB, 512 GB."},{"title":"Google Pixel 7 Pro 256 GB Piyasa Değeri","text":"KaçaGider piyasa değeri, seçilen ürün bilgilerini ve hafıza, kondisyon ve cihaz kayıt durumu ayrıntılarını birlikte değerlendirerek bir başlangıç referansı sunar."},{"title":"Google Pixel 7 Pro 256 GB Değeri Nasıl Hesaplanır?","text":"Marka, model, hafıza ve kondisyon bilgilerini değerleme ekranında seçin. Sonuç, cihazın gerçek durumu ile piyasa koşullarına göre değişebilir."}]
+seo_faqs: [{"question":"Google Pixel 7 Pro 256 GB ne kadar eder?","answer":"Güncel değeri öğrenmek için Telefon değerleme ekranında model ve cihaz bilgilerini seçin."},{"question":"Google Pixel 7 Pro 256 GB kaça satılır?","answer":"Satış değeri; kondisyon, özellikler ve güncel piyasa koşullarına göre değişir."},{"question":"Google Pixel 7 Pro 256 GB ikinci el fiyatı nasıl hesaplanır?","answer":"hafıza, kondisyon ve cihaz kayıt durumu bilgileri ve seçilen ürün özellikleri birlikte değerlendirilir."},{"question":"Google Pixel 7 Pro 256 GB piyasa değeri neden değişir?","answer":"Piyasa hareketleri, cihaz kondisyonu ve özelliklerdeki farklılıklar değeri etkileyebilir."},{"question":"Google Pixel 7 Pro 256 GB hangi seçeneklerle değerlendirilir?","answer":"Bu sayfada kullanılabilen seçenekler: 128 GB, 256 GB, 512 GB."}]
 ---

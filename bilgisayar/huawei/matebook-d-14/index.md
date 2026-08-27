@@ -1,15 +1,16 @@
 ---
 layout: "seo"
-seo_title: "MateBook D 14 Kaça Satılır? 2026 İkinci El Fiyatı | KaçaGider"
-seo_description: "MateBook D 14 kaça satılır? İşlemci, RAM, depolama ve cihaz durumuna göre 2026 güncel ikinci el ortalama satış değerini KaçaGider ile ücretsiz hesapla."
-seo_h1: "MateBook D 14 Kaça Satılır? 2026 İkinci El Fiyatı"
-seo_intro: "MateBook D 14 kaça satılır? 2026 ikinci el değeri; işlemci, RAM, depolama, ekran ve genel cihaz durumu gibi özelliklere göre değişir. KaçaGider ile cihazınızın ortalama satış değerini ücretsiz hesaplayabilirsiniz."
-seo_context_heading: "MateBook D 14 ikinci el değeri nasıl hesaplanır?"
-seo_context: "MateBook D 14 ikinci el fiyatı belirlenirken işlemci, RAM, depolama, ekran ve genel cihaz durumu birlikte değerlendirilir. Cihazın kondisyonu ve çalışan özelliklerinin durumu ortalama satış değerini doğrudan etkiler. KaçaGider üzerinden bilgilerinizi seçerek 2026 için güncel ikinci el piyasa değerini görebilirsiniz."
+seo_title: "Huawei MateBook D 14 Ne Kadar Eder? İkinci El Fiyatı | KaçaGider"
+seo_description: "Huawei MateBook D 14 ne kadar eder? 256 GB, 512 GB seçeneklerinde Huawei MateBook D 14 ikinci el fiyatı ve piyasa değeri, kapasite ve kondisyon dikkate alınarak KaçaGider ile ücretsiz hesaplanır."
+seo_h1: "Huawei MateBook D 14 Ne Kadar Eder?"
+seo_intro: "Huawei MateBook D 14 için güncel ikinci el değerini, gerçek cihaz bilgileri ve kondisyon ayrıntılarıyla KaçaGider üzerinden inceleyin."
+seo_context_heading: "Huawei MateBook D 14 için güncel değerleme"
+seo_context: "Huawei MateBook D 14 değeri; kapasite ve kondisyon ile birlikte güncel piyasa koşullarına göre değişebilir."
 seo_breadcrumbs: [{"label":"Ana Sayfa","url":"/"},{"label":"Bilgisayar","url":"/bilgisayar/"},{"label":"Huawei","url":"/bilgisayar/huawei/"},{"label":"MateBook D 14","url":"/bilgisayar/huawei/matebook-d-14/"}]
-seo_links: [{"label":"256 GB","url":"/bilgisayar/huawei/matebook-d-14/256gb/"},{"label":"512 GB","url":"/bilgisayar/huawei/matebook-d-14/512gb/"}]
-seo_links_heading: "MateBook D 14 seçenekleri"
+seo_links: [{"label":"Bilgisayar değerleme","url":"/bilgisayar/"},{"label":"İkinci el fiyat nasıl hesaplanır?","url":"/ikinci-el-fiyat-nasil-hesaplanir/"},{"label":"MateBook D 16 ikinci el fiyatı","url":"/bilgisayar/huawei/matebook-d-16/"},{"label":"MateBook 14 ikinci el fiyatı","url":"/bilgisayar/huawei/matebook-14/"},{"label":"MateBook X Pro ikinci el fiyatı","url":"/bilgisayar/huawei/matebook-x-pro/"},{"label":"256 GB","url":"/bilgisayar/huawei/matebook-d-14/256gb/"},{"label":"512 GB","url":"/bilgisayar/huawei/matebook-d-14/512gb/"}]
+seo_links_heading: "Huawei MateBook D 14 ilgili sayfalar"
 seo_canonical: "https://kacagider.com.tr/bilgisayar/huawei/matebook-d-14/"
-seo_guides_heading: "MateBook D 14 ile ilgili sık arananlar"
-seo_guides: [{"label":"MateBook D 14 nasıl sıfırlanır?","url":"/rehber/windows/windows-nasil-sifirlanir/"},{"label":"MateBook D 14 nasıl yedeklenir?","url":"/rehber/windows/windows-bilgisayar-yedekleme/"}]
+seo_cta: {"url":"/bilgisayar/","label":"Bilgisayar değerini hesapla"}
+seo_sections: [{"title":"Huawei MateBook D 14 Kaça Satılır?","text":"Huawei MateBook D 14 için tek bir sabit satış fiyatı yoktur. Cihazın kondisyonu, özellikleri ve güncel piyasa koşulları gerçek satış değerini etkiler."},{"title":"Huawei MateBook D 14 İkinci El Fiyatı","text":"Huawei MateBook D 14 ikinci el fiyatı, mevcut seçenekler ve cihazın kullanım durumuna göre değerlendirilir. Bu sayfada bulunan seçenekler: 256 GB, 512 GB."},{"title":"Huawei MateBook D 14 Piyasa Değeri","text":"KaçaGider piyasa değeri, seçilen ürün bilgilerini ve kapasite ve kondisyon ayrıntılarını birlikte değerlendirerek bir başlangıç referansı sunar."},{"title":"Huawei MateBook D 14 Değeri Nasıl Hesaplanır?","text":"Marka, model, kapasite ve kondisyon bilgilerini değerleme ekranında seçin. Sonuç, cihazın gerçek durumu ile piyasa koşullarına göre değişebilir."}]
+seo_faqs: [{"question":"Huawei MateBook D 14 ne kadar eder?","answer":"Güncel değeri öğrenmek için Bilgisayar değerleme ekranında model ve cihaz bilgilerini seçin."},{"question":"Huawei MateBook D 14 kaça satılır?","answer":"Satış değeri; kondisyon, özellikler ve güncel piyasa koşullarına göre değişir."},{"question":"Huawei MateBook D 14 ikinci el fiyatı nasıl hesaplanır?","answer":"kapasite ve kondisyon bilgileri ve seçilen ürün özellikleri birlikte değerlendirilir."},{"question":"Huawei MateBook D 14 piyasa değeri neden değişir?","answer":"Piyasa hareketleri, cihaz kondisyonu ve özelliklerdeki farklılıklar değeri etkileyebilir."},{"question":"Huawei MateBook D 14 hangi seçeneklerle değerlendirilir?","answer":"Bu sayfada kullanılabilen seçenekler: 256 GB, 512 GB."}]
 ---

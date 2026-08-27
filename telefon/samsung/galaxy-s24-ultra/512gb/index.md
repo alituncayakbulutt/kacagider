@@ -1,13 +1,16 @@
 ---
 layout: "seo"
-seo_title: "Galaxy S24 Ultra 512 GB Kaça Satılır? 2026 Fiyatı | KaçaGider"
-seo_description: "Galaxy S24 Ultra 512 GB ne kadar eder, kaça satılır? Ekran, batarya ve cihaz durumuna göre 2026 güncel ikinci el piyasa değerini ücretsiz hesapla."
-seo_h1: "Galaxy S24 Ultra 512 GB Kaça Satılır? 2026 İkinci El Fiyatı"
-seo_intro: "Galaxy S24 Ultra 512 GB ne kadar eder ve kaça satılır? Ekran, batarya ve genel cihaz durumunu seçerek 2026 güncel ikinci el piyasa değerini KaçaGider ile ücretsiz öğrenebilirsiniz."
-seo_context_heading: "Galaxy S24 Ultra 512 GB ikinci el değeri nasıl hesaplanır?"
-seo_context: "Galaxy S24 Ultra 512 GB ikinci el fiyatı belirlenirken ekran, batarya ve cihaz durumu birlikte değerlendirilir. Cihazın kondisyonu ve çalışan özelliklerinin durumu ortalama satış değerini doğrudan etkiler. KaçaGider üzerinden bilgilerinizi seçerek 2026 için güncel ikinci el piyasa değerini görebilirsiniz."
+seo_title: "Samsung Galaxy S24 Ultra 512 GB Ne Kadar Eder? İkinci El Fiyatı | KaçaGider"
+seo_description: "Samsung Galaxy S24 Ultra 512 GB ne kadar eder? 256 GB, 512 GB, 1 TB seçeneklerinde Samsung Galaxy S24 Ultra 512 GB ikinci el fiyatı ve piyasa değeri, hafıza, kondisyon ve cihaz kayıt durumu dikkate alınarak KaçaGider ile ücretsiz hesaplanır."
+seo_h1: "Samsung Galaxy S24 Ultra 512 GB İkinci El Fiyatı"
+seo_intro: "Samsung Galaxy S24 Ultra 512 GB için güncel ikinci el değerini, gerçek cihaz bilgileri ve kondisyon ayrıntılarıyla KaçaGider üzerinden inceleyin."
+seo_context_heading: "Samsung Galaxy S24 Ultra 512 GB için güncel değerleme"
+seo_context: "Samsung Galaxy S24 Ultra 512 GB değeri; hafıza, kondisyon ve cihaz kayıt durumu ile birlikte güncel piyasa koşullarına göre değişebilir."
 seo_breadcrumbs: [{"label":"Ana Sayfa","url":"/"},{"label":"Telefon","url":"/telefon/"},{"label":"Samsung","url":"/telefon/samsung/"},{"label":"Galaxy S24 Ultra","url":"/telefon/samsung/galaxy-s24-ultra/"},{"label":"512 GB","url":"/telefon/samsung/galaxy-s24-ultra/512gb/"}]
-seo_links: [{"label":"Galaxy S24 Ultra ana sayfası","url":"/telefon/samsung/galaxy-s24-ultra/"},{"label":"256 GB","url":"/telefon/samsung/galaxy-s24-ultra/256gb/"},{"label":"1 TB","url":"/telefon/samsung/galaxy-s24-ultra/1tb/"}]
-seo_links_heading: "Galaxy S24 Ultra diğer seçenekleri"
+seo_links: [{"label":"Telefon değerleme","url":"/telefon/"},{"label":"İkinci el fiyat nasıl hesaplanır?","url":"/ikinci-el-fiyat-nasil-hesaplanir/"},{"label":"Galaxy S24 Ultra ana sayfası","url":"/telefon/samsung/galaxy-s24-ultra/"},{"label":"256 GB","url":"/telefon/samsung/galaxy-s24-ultra/256gb/"},{"label":"1 TB","url":"/telefon/samsung/galaxy-s24-ultra/1tb/"}]
+seo_links_heading: "Samsung Galaxy S24 Ultra 512 GB ilgili sayfalar"
 seo_canonical: "https://kacagider.com.tr/telefon/samsung/galaxy-s24-ultra/512gb/"
+seo_cta: {"url":"/telefon/","label":"Telefon değerini hesapla"}
+seo_sections: [{"title":"Samsung Galaxy S24 Ultra 512 GB Kaça Satılır?","text":"Samsung Galaxy S24 Ultra 512 GB için tek bir sabit satış fiyatı yoktur. Cihazın kondisyonu, özellikleri ve güncel piyasa koşulları gerçek satış değerini etkiler."},{"title":"Samsung Galaxy S24 Ultra 512 GB İkinci El Fiyatı","text":"Samsung Galaxy S24 Ultra 512 GB ikinci el fiyatı, mevcut seçenekler ve cihazın kullanım durumuna göre değerlendirilir. Bu sayfada bulunan seçenekler: 256 GB, 512 GB, 1 TB."},{"title":"Samsung Galaxy S24 Ultra 512 GB Piyasa Değeri","text":"KaçaGider piyasa değeri, seçilen ürün bilgilerini ve hafıza, kondisyon ve cihaz kayıt durumu ayrıntılarını birlikte değerlendirerek bir başlangıç referansı sunar."},{"title":"Samsung Galaxy S24 Ultra 512 GB Değeri Nasıl Hesaplanır?","text":"Marka, model, hafıza ve kondisyon bilgilerini değerleme ekranında seçin. Sonuç, cihazın gerçek durumu ile piyasa koşullarına göre değişebilir."}]
+seo_faqs: [{"question":"Samsung Galaxy S24 Ultra 512 GB ne kadar eder?","answer":"Güncel değeri öğrenmek için Telefon değerleme ekranında model ve cihaz bilgilerini seçin."},{"question":"Samsung Galaxy S24 Ultra 512 GB kaça satılır?","answer":"Satış değeri; kondisyon, özellikler ve güncel piyasa koşullarına göre değişir."},{"question":"Samsung Galaxy S24 Ultra 512 GB ikinci el fiyatı nasıl hesaplanır?","answer":"hafıza, kondisyon ve cihaz kayıt durumu bilgileri ve seçilen ürün özellikleri birlikte değerlendirilir."},{"question":"Samsung Galaxy S24 Ultra 512 GB piyasa değeri neden değişir?","answer":"Piyasa hareketleri, cihaz kondisyonu ve özelliklerdeki farklılıklar değeri etkileyebilir."},{"question":"Samsung Galaxy S24 Ultra 512 GB hangi seçeneklerle değerlendirilir?","answer":"Bu sayfada kullanılabilen seçenekler: 256 GB, 512 GB, 1 TB."}]
 ---

@@ -1,13 +1,16 @@
 ---
 layout: "seo"
-seo_title: "Galaxy M12 64 GB Kaça Satılır? 2026 İkinci El Fiyatı | KaçaGider"
-seo_description: "Galaxy M12 64 GB kaça satılır? Ekran, batarya ve cihaz durumuna göre 2026 güncel ikinci el ortalama satış değerini KaçaGider ile ücretsiz hesapla."
-seo_h1: "Galaxy M12 64 GB Kaça Satılır? 2026 İkinci El Fiyatı"
-seo_intro: "Galaxy M12 64 GB kaça satılır? 2026 ikinci el değeri; ekran, batarya ve cihaz durumu gibi özelliklere göre değişir. KaçaGider ile cihazınızın ortalama satış değerini ücretsiz hesaplayabilirsiniz."
-seo_context_heading: "Galaxy M12 64 GB ikinci el değeri nasıl hesaplanır?"
-seo_context: "Galaxy M12 64 GB ikinci el fiyatı belirlenirken ekran, batarya ve cihaz durumu birlikte değerlendirilir. Cihazın kondisyonu ve çalışan özelliklerinin durumu ortalama satış değerini doğrudan etkiler. KaçaGider üzerinden bilgilerinizi seçerek 2026 için güncel ikinci el piyasa değerini görebilirsiniz."
+seo_title: "Samsung Galaxy M12 64 GB Ne Kadar Eder? İkinci El Fiyatı | KaçaGider"
+seo_description: "Samsung Galaxy M12 64 GB ne kadar eder? 64 GB, 128 GB seçeneklerinde Samsung Galaxy M12 64 GB ikinci el fiyatı ve piyasa değeri, hafıza, kondisyon ve cihaz kayıt durumu dikkate alınarak KaçaGider ile ücretsiz hesaplanır."
+seo_h1: "Samsung Galaxy M12 64 GB İkinci El Fiyatı"
+seo_intro: "Samsung Galaxy M12 64 GB için güncel ikinci el değerini, gerçek cihaz bilgileri ve kondisyon ayrıntılarıyla KaçaGider üzerinden inceleyin."
+seo_context_heading: "Samsung Galaxy M12 64 GB için güncel değerleme"
+seo_context: "Samsung Galaxy M12 64 GB değeri; hafıza, kondisyon ve cihaz kayıt durumu ile birlikte güncel piyasa koşullarına göre değişebilir."
 seo_breadcrumbs: [{"label":"Ana Sayfa","url":"/"},{"label":"Telefon","url":"/telefon/"},{"label":"Samsung","url":"/telefon/samsung/"},{"label":"Galaxy M12","url":"/telefon/samsung/galaxy-m12/"},{"label":"64 GB","url":"/telefon/samsung/galaxy-m12/64gb/"}]
-seo_links: [{"label":"Galaxy M12 ana sayfası","url":"/telefon/samsung/galaxy-m12/"},{"label":"128 GB","url":"/telefon/samsung/galaxy-m12/128gb/"}]
-seo_links_heading: "Galaxy M12 diğer seçenekleri"
+seo_links: [{"label":"Telefon değerleme","url":"/telefon/"},{"label":"İkinci el fiyat nasıl hesaplanır?","url":"/ikinci-el-fiyat-nasil-hesaplanir/"},{"label":"Galaxy M12 ana sayfası","url":"/telefon/samsung/galaxy-m12/"},{"label":"128 GB","url":"/telefon/samsung/galaxy-m12/128gb/"}]
+seo_links_heading: "Samsung Galaxy M12 64 GB ilgili sayfalar"
 seo_canonical: "https://kacagider.com.tr/telefon/samsung/galaxy-m12/64gb/"
+seo_cta: {"url":"/telefon/","label":"Telefon değerini hesapla"}
+seo_sections: [{"title":"Samsung Galaxy M12 64 GB Kaça Satılır?","text":"Samsung Galaxy M12 64 GB için tek bir sabit satış fiyatı yoktur. Cihazın kondisyonu, özellikleri ve güncel piyasa koşulları gerçek satış değerini etkiler."},{"title":"Samsung Galaxy M12 64 GB İkinci El Fiyatı","text":"Samsung Galaxy M12 64 GB ikinci el fiyatı, mevcut seçenekler ve cihazın kullanım durumuna göre değerlendirilir. Bu sayfada bulunan seçenekler: 64 GB, 128 GB."},{"title":"Samsung Galaxy M12 64 GB Piyasa Değeri","text":"KaçaGider piyasa değeri, seçilen ürün bilgilerini ve hafıza, kondisyon ve cihaz kayıt durumu ayrıntılarını birlikte değerlendirerek bir başlangıç referansı sunar."},{"title":"Samsung Galaxy M12 64 GB Değeri Nasıl Hesaplanır?","text":"Marka, model, hafıza ve kondisyon bilgilerini değerleme ekranında seçin. Sonuç, cihazın gerçek durumu ile piyasa koşullarına göre değişebilir."}]
+seo_faqs: [{"question":"Samsung Galaxy M12 64 GB ne kadar eder?","answer":"Güncel değeri öğrenmek için Telefon değerleme ekranında model ve cihaz bilgilerini seçin."},{"question":"Samsung Galaxy M12 64 GB kaça satılır?","answer":"Satış değeri; kondisyon, özellikler ve güncel piyasa koşullarına göre değişir."},{"question":"Samsung Galaxy M12 64 GB ikinci el fiyatı nasıl hesaplanır?","answer":"hafıza, kondisyon ve cihaz kayıt durumu bilgileri ve seçilen ürün özellikleri birlikte değerlendirilir."},{"question":"Samsung Galaxy M12 64 GB piyasa değeri neden değişir?","answer":"Piyasa hareketleri, cihaz kondisyonu ve özelliklerdeki farklılıklar değeri etkileyebilir."},{"question":"Samsung Galaxy M12 64 GB hangi seçeneklerle değerlendirilir?","answer":"Bu sayfada kullanılabilen seçenekler: 64 GB, 128 GB."}]
 ---

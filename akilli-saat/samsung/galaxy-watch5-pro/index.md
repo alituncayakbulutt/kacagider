@@ -1,15 +1,16 @@
 ---
 layout: "seo"
-seo_title: "Galaxy Watch5 Pro Kaça Satılır? 2026 İkinci El Fiyatı | KaçaGider"
-seo_description: "Galaxy Watch5 Pro kaça satılır? Kasa, ekran, batarya ve genel cihaz durumuna göre 2026 güncel ikinci el ortalama satış değerini KaçaGider ile ücretsiz hesapla."
-seo_h1: "Galaxy Watch5 Pro Kaça Satılır? 2026 İkinci El Fiyatı"
-seo_intro: "Galaxy Watch5 Pro kaça satılır? 2026 ikinci el değeri; kasa boyutu, ekran, batarya ve genel cihaz durumu gibi özelliklere göre değişir. KaçaGider ile cihazınızın ortalama satış değerini ücretsiz hesaplayabilirsiniz."
-seo_context_heading: "Galaxy Watch5 Pro ikinci el değeri nasıl hesaplanır?"
-seo_context: "Galaxy Watch5 Pro ikinci el fiyatı belirlenirken kasa boyutu, ekran, batarya ve genel cihaz durumu birlikte değerlendirilir. Cihazın kondisyonu ve çalışan özelliklerinin durumu ortalama satış değerini doğrudan etkiler. KaçaGider üzerinden bilgilerinizi seçerek 2026 için güncel ikinci el piyasa değerini görebilirsiniz."
+seo_title: "Samsung Galaxy Watch5 Pro Ne Kadar Eder? İkinci El Fiyatı | KaçaGider"
+seo_description: "Samsung Galaxy Watch5 Pro ne kadar eder? 45 mm seçeneklerinde Samsung Galaxy Watch5 Pro ikinci el fiyatı ve piyasa değeri, kasa boyutu ve kondisyon dikkate alınarak KaçaGider ile ücretsiz hesaplanır."
+seo_h1: "Samsung Galaxy Watch5 Pro Ne Kadar Eder?"
+seo_intro: "Samsung Galaxy Watch5 Pro için güncel ikinci el değerini, gerçek cihaz bilgileri ve kondisyon ayrıntılarıyla KaçaGider üzerinden inceleyin."
+seo_context_heading: "Samsung Galaxy Watch5 Pro için güncel değerleme"
+seo_context: "Samsung Galaxy Watch5 Pro değeri; kasa boyutu ve kondisyon ile birlikte güncel piyasa koşullarına göre değişebilir."
 seo_breadcrumbs: [{"label":"Ana Sayfa","url":"/"},{"label":"Akıllı Saat","url":"/akilli-saat/"},{"label":"Samsung","url":"/akilli-saat/samsung/"},{"label":"Galaxy Watch5 Pro","url":"/akilli-saat/samsung/galaxy-watch5-pro/"}]
-seo_links: [{"label":"45 mm","url":"/akilli-saat/samsung/galaxy-watch5-pro/45mm/"}]
-seo_links_heading: "Galaxy Watch5 Pro seçenekleri"
+seo_links: [{"label":"Akıllı Saat değerleme","url":"/akilli-saat/"},{"label":"İkinci el fiyat nasıl hesaplanır?","url":"/ikinci-el-fiyat-nasil-hesaplanir/"},{"label":"Galaxy Watch4 ikinci el fiyatı","url":"/akilli-saat/samsung/galaxy-watch4/"},{"label":"Galaxy Watch4 Classic ikinci el fiyatı","url":"/akilli-saat/samsung/galaxy-watch4-classic/"},{"label":"Galaxy Watch5 ikinci el fiyatı","url":"/akilli-saat/samsung/galaxy-watch5/"},{"label":"45 mm","url":"/akilli-saat/samsung/galaxy-watch5-pro/45mm/"}]
+seo_links_heading: "Samsung Galaxy Watch5 Pro ilgili sayfalar"
 seo_canonical: "https://kacagider.com.tr/akilli-saat/samsung/galaxy-watch5-pro/"
-seo_guides_heading: "Galaxy Watch5 Pro ile ilgili sık arananlar"
-seo_guides: [{"label":"Galaxy Watch5 Pro nasıl sıfırlanır?","url":"/rehber/wear-os/galaxy-watch-nasil-sifirlanir/"}]
+seo_cta: {"url":"/akilli-saat/","label":"Akıllı Saat değerini hesapla"}
+seo_sections: [{"title":"Samsung Galaxy Watch5 Pro Kaça Satılır?","text":"Samsung Galaxy Watch5 Pro için tek bir sabit satış fiyatı yoktur. Cihazın kondisyonu, özellikleri ve güncel piyasa koşulları gerçek satış değerini etkiler."},{"title":"Samsung Galaxy Watch5 Pro İkinci El Fiyatı","text":"Samsung Galaxy Watch5 Pro ikinci el fiyatı, mevcut seçenekler ve cihazın kullanım durumuna göre değerlendirilir. Bu sayfada bulunan seçenekler: 45 mm."},{"title":"Samsung Galaxy Watch5 Pro Piyasa Değeri","text":"KaçaGider piyasa değeri, seçilen ürün bilgilerini ve kasa boyutu ve kondisyon ayrıntılarını birlikte değerlendirerek bir başlangıç referansı sunar."},{"title":"Samsung Galaxy Watch5 Pro Değeri Nasıl Hesaplanır?","text":"Marka, model, kasa boyutu ve kondisyon bilgilerini değerleme ekranında seçin. Sonuç, cihazın gerçek durumu ile piyasa koşullarına göre değişebilir."}]
+seo_faqs: [{"question":"Samsung Galaxy Watch5 Pro ne kadar eder?","answer":"Güncel değeri öğrenmek için Akıllı Saat değerleme ekranında model ve cihaz bilgilerini seçin."},{"question":"Samsung Galaxy Watch5 Pro kaça satılır?","answer":"Satış değeri; kondisyon, özellikler ve güncel piyasa koşullarına göre değişir."},{"question":"Samsung Galaxy Watch5 Pro ikinci el fiyatı nasıl hesaplanır?","answer":"kasa boyutu ve kondisyon bilgileri ve seçilen ürün özellikleri birlikte değerlendirilir."},{"question":"Samsung Galaxy Watch5 Pro piyasa değeri neden değişir?","answer":"Piyasa hareketleri, cihaz kondisyonu ve özelliklerdeki farklılıklar değeri etkileyebilir."},{"question":"Samsung Galaxy Watch5 Pro hangi seçeneklerle değerlendirilir?","answer":"Bu sayfada kullanılabilen seçenekler: 45 mm."}]
 ---

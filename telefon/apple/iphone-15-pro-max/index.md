@@ -1,15 +1,16 @@
 ---
 layout: "seo"
-seo_title: "iPhone 15 Pro Max Kaça Satılır? 2026 İkinci El Fiyatı | KaçaGider"
-seo_description: "iPhone 15 Pro Max ikinci el fiyatı Türkiye 2026: pil sağlığı, ekran ve cihaz durumu dikkate alınarak güncel ortalama satış değerini KaçaGider ile ücretsiz hesapla."
-seo_h1: "iPhone 15 Pro Max Kaça Satılır? 2026 İkinci El Fiyatı"
-seo_intro: "iPhone 15 Pro Max ikinci el fiyatı Türkiye 2026 ne kadar? Pil sağlığı, ekran ve cihaz durumu birlikte değerlendirilir. Cihaz bilgilerini seçerek güncel ortalama satış değerini KaçaGider ile ücretsiz öğrenebilirsiniz."
-seo_context_heading: "iPhone 15 Pro Max ikinci el değeri nasıl hesaplanır?"
-seo_context: "iPhone 15 Pro Max ikinci el fiyatı belirlenirken hafıza, pil sağlığı, ekran ve genel cihaz durumu birlikte değerlendirilir. Cihazın kondisyonu ve çalışan özelliklerinin durumu ortalama satış değerini doğrudan etkiler. KaçaGider üzerinden bilgilerinizi seçerek 2026 için güncel ikinci el piyasa değerini görebilirsiniz."
+seo_title: "Apple iPhone 15 Pro Max Ne Kadar Eder? İkinci El Fiyatı | KaçaGider"
+seo_description: "Apple iPhone 15 Pro Max ne kadar eder? 256 GB, 512 GB, 1 TB seçeneklerinde Apple iPhone 15 Pro Max ikinci el fiyatı ve piyasa değeri, hafıza, kondisyon ve cihaz kayıt durumu dikkate alınarak KaçaGider ile ücretsiz hesaplanır."
+seo_h1: "Apple iPhone 15 Pro Max Ne Kadar Eder?"
+seo_intro: "Apple iPhone 15 Pro Max için güncel ikinci el değerini, gerçek cihaz bilgileri ve kondisyon ayrıntılarıyla KaçaGider üzerinden inceleyin."
+seo_context_heading: "Apple iPhone 15 Pro Max için güncel değerleme"
+seo_context: "Apple iPhone 15 Pro Max değeri; hafıza, kondisyon ve cihaz kayıt durumu ile birlikte güncel piyasa koşullarına göre değişebilir."
 seo_breadcrumbs: [{"label":"Ana Sayfa","url":"/"},{"label":"Telefon","url":"/telefon/"},{"label":"Apple","url":"/telefon/apple/"},{"label":"iPhone 15 Pro Max","url":"/telefon/apple/iphone-15-pro-max/"}]
-seo_links: [{"label":"256 GB","url":"/telefon/apple/iphone-15-pro-max/256gb/"},{"label":"512 GB","url":"/telefon/apple/iphone-15-pro-max/512gb/"},{"label":"1 TB","url":"/telefon/apple/iphone-15-pro-max/1tb/"}]
-seo_links_heading: "iPhone 15 Pro Max seçenekleri"
+seo_links: [{"label":"Telefon değerleme","url":"/telefon/"},{"label":"İkinci el fiyat nasıl hesaplanır?","url":"/ikinci-el-fiyat-nasil-hesaplanir/"},{"label":"iPhone 11 ikinci el fiyatı","url":"/telefon/apple/iphone-11/"},{"label":"iPhone 11 Pro ikinci el fiyatı","url":"/telefon/apple/iphone-11-pro/"},{"label":"iPhone 11 Pro Max ikinci el fiyatı","url":"/telefon/apple/iphone-11-pro-max/"},{"label":"256 GB","url":"/telefon/apple/iphone-15-pro-max/256gb/"},{"label":"512 GB","url":"/telefon/apple/iphone-15-pro-max/512gb/"},{"label":"1 TB","url":"/telefon/apple/iphone-15-pro-max/1tb/"}]
+seo_links_heading: "Apple iPhone 15 Pro Max ilgili sayfalar"
 seo_canonical: "https://kacagider.com.tr/telefon/apple/iphone-15-pro-max/"
-seo_guides_heading: "iPhone 15 Pro Max ile ilgili sık arananlar"
-seo_guides: [{"label":"iPhone 15 Pro Max nasıl sıfırlanır?","url":"/rehber/ios/iphone-nasil-sifirlanir/"},{"label":"iPhone 15 Pro Max ekran görüntüsü nasıl alınır?","url":"/rehber/ios/iphone-ekran-goruntusu-nasil-alinir/"},{"label":"iPhone 15 Pro Max pil sağlığı nasıl kontrol edilir?","url":"/rehber/ios/iphone-pil-sagligi/"}]
+seo_cta: {"url":"/telefon/","label":"Telefon değerini hesapla"}
+seo_sections: [{"title":"Apple iPhone 15 Pro Max Kaça Satılır?","text":"Apple iPhone 15 Pro Max için tek bir sabit satış fiyatı yoktur. Cihazın kondisyonu, özellikleri ve güncel piyasa koşulları gerçek satış değerini etkiler."},{"title":"Apple iPhone 15 Pro Max İkinci El Fiyatı","text":"Apple iPhone 15 Pro Max ikinci el fiyatı, mevcut seçenekler ve cihazın kullanım durumuna göre değerlendirilir. Bu sayfada bulunan seçenekler: 256 GB, 512 GB, 1 TB."},{"title":"Apple iPhone 15 Pro Max Piyasa Değeri","text":"KaçaGider piyasa değeri, seçilen ürün bilgilerini ve hafıza, kondisyon ve cihaz kayıt durumu ayrıntılarını birlikte değerlendirerek bir başlangıç referansı sunar."},{"title":"Apple iPhone 15 Pro Max Değeri Nasıl Hesaplanır?","text":"Marka, model, hafıza ve kondisyon bilgilerini değerleme ekranında seçin. Sonuç, cihazın gerçek durumu ile piyasa koşullarına göre değişebilir."}]
+seo_faqs: [{"question":"Apple iPhone 15 Pro Max ne kadar eder?","answer":"Güncel değeri öğrenmek için Telefon değerleme ekranında model ve cihaz bilgilerini seçin."},{"question":"Apple iPhone 15 Pro Max kaça satılır?","answer":"Satış değeri; kondisyon, özellikler ve güncel piyasa koşullarına göre değişir."},{"question":"Apple iPhone 15 Pro Max ikinci el fiyatı nasıl hesaplanır?","answer":"hafıza, kondisyon ve cihaz kayıt durumu bilgileri ve seçilen ürün özellikleri birlikte değerlendirilir."},{"question":"Apple iPhone 15 Pro Max piyasa değeri neden değişir?","answer":"Piyasa hareketleri, cihaz kondisyonu ve özelliklerdeki farklılıklar değeri etkileyebilir."},{"question":"Apple iPhone 15 Pro Max hangi seçeneklerle değerlendirilir?","answer":"Bu sayfada kullanılabilen seçenekler: 256 GB, 512 GB, 1 TB."}]
 ---

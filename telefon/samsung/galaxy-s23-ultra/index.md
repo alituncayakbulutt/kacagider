@@ -1,15 +1,16 @@
 ---
 layout: "seo"
-seo_title: "Galaxy S23 Ultra Kaça Satılır? 2026 İkinci El Fiyatı | KaçaGider"
-seo_description: "Galaxy S23 Ultra ikinci el fiyatı Türkiye 2026: hafıza, ekran, batarya ve cihaz durumu dikkate alınarak güncel ortalama satış değerini KaçaGider ile ücretsiz hesapla."
-seo_h1: "Galaxy S23 Ultra Kaça Satılır? 2026 İkinci El Fiyatı"
-seo_intro: "Galaxy S23 Ultra ikinci el fiyatı Türkiye 2026 ne kadar? Hafıza, ekran, batarya ve cihaz durumu birlikte değerlendirilir. Cihaz bilgilerini seçerek güncel ortalama satış değerini KaçaGider ile ücretsiz öğrenebilirsiniz."
-seo_context_heading: "Galaxy S23 Ultra ikinci el değeri nasıl hesaplanır?"
-seo_context: "Galaxy S23 Ultra ikinci el fiyatı belirlenirken hafıza, ekran, batarya ve cihaz durumu birlikte değerlendirilir. Cihazın kondisyonu ve çalışan özelliklerinin durumu ortalama satış değerini doğrudan etkiler. KaçaGider üzerinden bilgilerinizi seçerek 2026 için güncel ikinci el piyasa değerini görebilirsiniz."
+seo_title: "Samsung Galaxy S23 Ultra Ne Kadar Eder? İkinci El Fiyatı | KaçaGider"
+seo_description: "Samsung Galaxy S23 Ultra ne kadar eder? 256 GB, 512 GB, 1 TB seçeneklerinde Samsung Galaxy S23 Ultra ikinci el fiyatı ve piyasa değeri, hafıza, kondisyon ve cihaz kayıt durumu dikkate alınarak KaçaGider ile ücretsiz hesaplanır."
+seo_h1: "Samsung Galaxy S23 Ultra Ne Kadar Eder?"
+seo_intro: "Samsung Galaxy S23 Ultra için güncel ikinci el değerini, gerçek cihaz bilgileri ve kondisyon ayrıntılarıyla KaçaGider üzerinden inceleyin."
+seo_context_heading: "Samsung Galaxy S23 Ultra için güncel değerleme"
+seo_context: "Samsung Galaxy S23 Ultra değeri; hafıza, kondisyon ve cihaz kayıt durumu ile birlikte güncel piyasa koşullarına göre değişebilir."
 seo_breadcrumbs: [{"label":"Ana Sayfa","url":"/"},{"label":"Telefon","url":"/telefon/"},{"label":"Samsung","url":"/telefon/samsung/"},{"label":"Galaxy S23 Ultra","url":"/telefon/samsung/galaxy-s23-ultra/"}]
-seo_links: [{"label":"256 GB","url":"/telefon/samsung/galaxy-s23-ultra/256gb/"},{"label":"512 GB","url":"/telefon/samsung/galaxy-s23-ultra/512gb/"},{"label":"1 TB","url":"/telefon/samsung/galaxy-s23-ultra/1tb/"}]
-seo_links_heading: "Galaxy S23 Ultra seçenekleri"
+seo_links: [{"label":"Telefon değerleme","url":"/telefon/"},{"label":"İkinci el fiyat nasıl hesaplanır?","url":"/ikinci-el-fiyat-nasil-hesaplanir/"},{"label":"Galaxy S20 ikinci el fiyatı","url":"/telefon/samsung/galaxy-s20/"},{"label":"Galaxy S20+ ikinci el fiyatı","url":"/telefon/samsung/galaxy-s20-plus/"},{"label":"Galaxy S20 Ultra ikinci el fiyatı","url":"/telefon/samsung/galaxy-s20-ultra/"},{"label":"256 GB","url":"/telefon/samsung/galaxy-s23-ultra/256gb/"},{"label":"512 GB","url":"/telefon/samsung/galaxy-s23-ultra/512gb/"},{"label":"1 TB","url":"/telefon/samsung/galaxy-s23-ultra/1tb/"}]
+seo_links_heading: "Samsung Galaxy S23 Ultra ilgili sayfalar"
 seo_canonical: "https://kacagider.com.tr/telefon/samsung/galaxy-s23-ultra/"
-seo_guides_heading: "Galaxy S23 Ultra ile ilgili sık arananlar"
-seo_guides: [{"label":"Galaxy S23 Ultra nasıl sıfırlanır?","url":"/rehber/android/android-telefon-nasil-sifirlanir/"},{"label":"Galaxy S23 Ultra ekran görüntüsü nasıl alınır?","url":"/rehber/android/android-ekran-goruntusu-nasil-alinir/"},{"label":"Galaxy S23 Ultra IMEI nasıl öğrenilir?","url":"/rehber/android/android-imei-nasil-ogrenilir/"}]
+seo_cta: {"url":"/telefon/","label":"Telefon değerini hesapla"}
+seo_sections: [{"title":"Samsung Galaxy S23 Ultra Kaça Satılır?","text":"Samsung Galaxy S23 Ultra için tek bir sabit satış fiyatı yoktur. Cihazın kondisyonu, özellikleri ve güncel piyasa koşulları gerçek satış değerini etkiler."},{"title":"Samsung Galaxy S23 Ultra İkinci El Fiyatı","text":"Samsung Galaxy S23 Ultra ikinci el fiyatı, mevcut seçenekler ve cihazın kullanım durumuna göre değerlendirilir. Bu sayfada bulunan seçenekler: 256 GB, 512 GB, 1 TB."},{"title":"Samsung Galaxy S23 Ultra Piyasa Değeri","text":"KaçaGider piyasa değeri, seçilen ürün bilgilerini ve hafıza, kondisyon ve cihaz kayıt durumu ayrıntılarını birlikte değerlendirerek bir başlangıç referansı sunar."},{"title":"Samsung Galaxy S23 Ultra Değeri Nasıl Hesaplanır?","text":"Marka, model, hafıza ve kondisyon bilgilerini değerleme ekranında seçin. Sonuç, cihazın gerçek durumu ile piyasa koşullarına göre değişebilir."}]
+seo_faqs: [{"question":"Samsung Galaxy S23 Ultra ne kadar eder?","answer":"Güncel değeri öğrenmek için Telefon değerleme ekranında model ve cihaz bilgilerini seçin."},{"question":"Samsung Galaxy S23 Ultra kaça satılır?","answer":"Satış değeri; kondisyon, özellikler ve güncel piyasa koşullarına göre değişir."},{"question":"Samsung Galaxy S23 Ultra ikinci el fiyatı nasıl hesaplanır?","answer":"hafıza, kondisyon ve cihaz kayıt durumu bilgileri ve seçilen ürün özellikleri birlikte değerlendirilir."},{"question":"Samsung Galaxy S23 Ultra piyasa değeri neden değişir?","answer":"Piyasa hareketleri, cihaz kondisyonu ve özelliklerdeki farklılıklar değeri etkileyebilir."},{"question":"Samsung Galaxy S23 Ultra hangi seçeneklerle değerlendirilir?","answer":"Bu sayfada kullanılabilen seçenekler: 256 GB, 512 GB, 1 TB."}]
 ---

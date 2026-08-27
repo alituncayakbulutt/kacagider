@@ -1,15 +1,16 @@
 ---
 layout: "seo"
-seo_title: "X200 Pro Kaça Satılır? 2026 İkinci El Fiyatı | KaçaGider"
-seo_description: "X200 Pro kaça satılır? Hafıza, ekran, batarya, kamera ve cihaz durumuna göre 2026 güncel ikinci el ortalama satış değerini KaçaGider ile ücretsiz hesapla."
-seo_h1: "X200 Pro Kaça Satılır? 2026 İkinci El Fiyatı"
-seo_intro: "X200 Pro kaça satılır? 2026 ikinci el değeri; hafıza, ekran, batarya, kamera ve cihaz durumu gibi özelliklere göre değişir. KaçaGider ile cihazınızın ortalama satış değerini ücretsiz hesaplayabilirsiniz."
-seo_context_heading: "X200 Pro ikinci el değeri nasıl hesaplanır?"
-seo_context: "X200 Pro ikinci el fiyatı belirlenirken hafıza, ekran, batarya, kamera ve cihaz durumu birlikte değerlendirilir. Cihazın kondisyonu ve çalışan özelliklerinin durumu ortalama satış değerini doğrudan etkiler. KaçaGider üzerinden bilgilerinizi seçerek 2026 için güncel ikinci el piyasa değerini görebilirsiniz."
+seo_title: "Vivo X200 Pro Ne Kadar Eder? İkinci El Fiyatı | KaçaGider"
+seo_description: "Vivo X200 Pro ne kadar eder? 512 GB seçeneklerinde Vivo X200 Pro ikinci el fiyatı ve piyasa değeri, hafıza, kondisyon ve cihaz kayıt durumu dikkate alınarak KaçaGider ile ücretsiz hesaplanır."
+seo_h1: "Vivo X200 Pro Ne Kadar Eder?"
+seo_intro: "Vivo X200 Pro için güncel ikinci el değerini, gerçek cihaz bilgileri ve kondisyon ayrıntılarıyla KaçaGider üzerinden inceleyin."
+seo_context_heading: "Vivo X200 Pro için güncel değerleme"
+seo_context: "Vivo X200 Pro değeri; hafıza, kondisyon ve cihaz kayıt durumu ile birlikte güncel piyasa koşullarına göre değişebilir."
 seo_breadcrumbs: [{"label":"Ana Sayfa","url":"/"},{"label":"Telefon","url":"/telefon/"},{"label":"Vivo","url":"/telefon/vivo/"},{"label":"X200 Pro","url":"/telefon/vivo/x200-pro/"}]
-seo_links: [{"label":"512 GB","url":"/telefon/vivo/x200-pro/512gb/"}]
-seo_links_heading: "X200 Pro seçenekleri"
+seo_links: [{"label":"Telefon değerleme","url":"/telefon/"},{"label":"İkinci el fiyat nasıl hesaplanır?","url":"/ikinci-el-fiyat-nasil-hesaplanir/"},{"label":"V21 ikinci el fiyatı","url":"/telefon/vivo/v21/"},{"label":"V25 ikinci el fiyatı","url":"/telefon/vivo/v25/"},{"label":"V27 ikinci el fiyatı","url":"/telefon/vivo/v27/"},{"label":"512 GB","url":"/telefon/vivo/x200-pro/512gb/"}]
+seo_links_heading: "Vivo X200 Pro ilgili sayfalar"
 seo_canonical: "https://kacagider.com.tr/telefon/vivo/x200-pro/"
-seo_guides_heading: "X200 Pro ile ilgili sık arananlar"
-seo_guides: [{"label":"X200 Pro nasıl sıfırlanır?","url":"/rehber/android/android-telefon-nasil-sifirlanir/"},{"label":"X200 Pro ekran görüntüsü nasıl alınır?","url":"/rehber/android/android-ekran-goruntusu-nasil-alinir/"},{"label":"X200 Pro IMEI nasıl öğrenilir?","url":"/rehber/android/android-imei-nasil-ogrenilir/"}]
+seo_cta: {"url":"/telefon/","label":"Telefon değerini hesapla"}
+seo_sections: [{"title":"Vivo X200 Pro Kaça Satılır?","text":"Vivo X200 Pro için tek bir sabit satış fiyatı yoktur. Cihazın kondisyonu, özellikleri ve güncel piyasa koşulları gerçek satış değerini etkiler."},{"title":"Vivo X200 Pro İkinci El Fiyatı","text":"Vivo X200 Pro ikinci el fiyatı, mevcut seçenekler ve cihazın kullanım durumuna göre değerlendirilir. Bu sayfada bulunan seçenekler: 512 GB."},{"title":"Vivo X200 Pro Piyasa Değeri","text":"KaçaGider piyasa değeri, seçilen ürün bilgilerini ve hafıza, kondisyon ve cihaz kayıt durumu ayrıntılarını birlikte değerlendirerek bir başlangıç referansı sunar."},{"title":"Vivo X200 Pro Değeri Nasıl Hesaplanır?","text":"Marka, model, hafıza ve kondisyon bilgilerini değerleme ekranında seçin. Sonuç, cihazın gerçek durumu ile piyasa koşullarına göre değişebilir."}]
+seo_faqs: [{"question":"Vivo X200 Pro ne kadar eder?","answer":"Güncel değeri öğrenmek için Telefon değerleme ekranında model ve cihaz bilgilerini seçin."},{"question":"Vivo X200 Pro kaça satılır?","answer":"Satış değeri; kondisyon, özellikler ve güncel piyasa koşullarına göre değişir."},{"question":"Vivo X200 Pro ikinci el fiyatı nasıl hesaplanır?","answer":"hafıza, kondisyon ve cihaz kayıt durumu bilgileri ve seçilen ürün özellikleri birlikte değerlendirilir."},{"question":"Vivo X200 Pro piyasa değeri neden değişir?","answer":"Piyasa hareketleri, cihaz kondisyonu ve özelliklerdeki farklılıklar değeri etkileyebilir."},{"question":"Vivo X200 Pro hangi seçeneklerle değerlendirilir?","answer":"Bu sayfada kullanılabilen seçenekler: 512 GB."}]
 ---

@@ -1,13 +1,16 @@
 ---
 layout: "seo"
-seo_title: "Apple Watch Series 6 40 mm Kaça Satılır? 2026 Fiyatı | KaçaGider"
-seo_description: "Apple Watch Series 6 40 mm ikinci el fiyatı Türkiye 2026: kasa, ekran, batarya ve genel cihaz durumu dikkate alınarak güncel ortalama satış değerini KaçaGider ile ücretsiz hesapla."
-seo_h1: "Apple Watch Series 6 40 mm Kaça Satılır? 2026 İkinci El Fiyatı"
-seo_intro: "Apple Watch Series 6 40 mm ikinci el fiyatı Türkiye 2026 ne kadar? Kasa, ekran, batarya ve genel cihaz durumu birlikte değerlendirilir. Cihaz bilgilerini seçerek güncel ortalama satış değerini KaçaGider ile ücretsiz öğrenebilirsiniz."
-seo_context_heading: "Apple Watch Series 6 40 mm ikinci el değeri nasıl hesaplanır?"
-seo_context: "Apple Watch Series 6 40 mm ikinci el fiyatı belirlenirken kasa boyutu, ekran, batarya ve genel cihaz durumu birlikte değerlendirilir. Cihazın kondisyonu ve çalışan özelliklerinin durumu ortalama satış değerini doğrudan etkiler. KaçaGider üzerinden bilgilerinizi seçerek 2026 için güncel ikinci el piyasa değerini görebilirsiniz."
+seo_title: "Apple Watch Series 6 40 mm Ne Kadar Eder? Güncel İkinci El Fiyatı | KaçaGider"
+seo_description: "Apple Watch Series 6 40 mm ne kadar eder? 40 mm, 44 mm seçeneklerinde Apple Watch Series 6 40 mm ikinci el fiyatı ve piyasa değeri, kasa boyutu ve kondisyon dikkate alınarak KaçaGider ile ücretsiz hesaplanır."
+seo_h1: "Apple Watch Series 6 40 mm İkinci El Fiyatı"
+seo_intro: "Apple Watch Series 6 40 mm için güncel ikinci el değerini, gerçek cihaz bilgileri ve kondisyon ayrıntılarıyla KaçaGider üzerinden inceleyin."
+seo_context_heading: "Apple Watch Series 6 40 mm için güncel değerleme"
+seo_context: "Apple Watch Series 6 40 mm değeri; kasa boyutu ve kondisyon ile birlikte güncel piyasa koşullarına göre değişebilir."
 seo_breadcrumbs: [{"label":"Ana Sayfa","url":"/"},{"label":"Akıllı Saat","url":"/akilli-saat/"},{"label":"Apple","url":"/akilli-saat/apple/"},{"label":"Apple Watch Series 6","url":"/akilli-saat/apple/apple-watch-series-6/"},{"label":"40 mm","url":"/akilli-saat/apple/apple-watch-series-6/40mm/"}]
-seo_links: [{"label":"Apple Watch Series 6 ana sayfası","url":"/akilli-saat/apple/apple-watch-series-6/"},{"label":"44 mm","url":"/akilli-saat/apple/apple-watch-series-6/44mm/"}]
-seo_links_heading: "Apple Watch Series 6 diğer seçenekleri"
+seo_links: [{"label":"Akıllı Saat değerleme","url":"/akilli-saat/"},{"label":"İkinci el fiyat nasıl hesaplanır?","url":"/ikinci-el-fiyat-nasil-hesaplanir/"},{"label":"Apple Watch Series 6 ana sayfası","url":"/akilli-saat/apple/apple-watch-series-6/"},{"label":"44 mm","url":"/akilli-saat/apple/apple-watch-series-6/44mm/"}]
+seo_links_heading: "Apple Watch Series 6 40 mm ilgili sayfalar"
 seo_canonical: "https://kacagider.com.tr/akilli-saat/apple/apple-watch-series-6/40mm/"
+seo_cta: {"url":"/akilli-saat/","label":"Akıllı Saat değerini hesapla"}
+seo_sections: [{"title":"Apple Watch Series 6 40 mm Kaça Satılır?","text":"Apple Watch Series 6 40 mm için tek bir sabit satış fiyatı yoktur. Cihazın kondisyonu, özellikleri ve güncel piyasa koşulları gerçek satış değerini etkiler."},{"title":"Apple Watch Series 6 40 mm İkinci El Fiyatı","text":"Apple Watch Series 6 40 mm ikinci el fiyatı, mevcut seçenekler ve cihazın kullanım durumuna göre değerlendirilir. Bu sayfada bulunan seçenekler: 40 mm, 44 mm."},{"title":"Apple Watch Series 6 40 mm Piyasa Değeri","text":"KaçaGider piyasa değeri, seçilen ürün bilgilerini ve kasa boyutu ve kondisyon ayrıntılarını birlikte değerlendirerek bir başlangıç referansı sunar."},{"title":"Apple Watch Series 6 40 mm Değeri Nasıl Hesaplanır?","text":"Marka, model, kasa boyutu ve kondisyon bilgilerini değerleme ekranında seçin. Sonuç, cihazın gerçek durumu ile piyasa koşullarına göre değişebilir."}]
+seo_faqs: [{"question":"Apple Watch Series 6 40 mm ne kadar eder?","answer":"Güncel değeri öğrenmek için Akıllı Saat değerleme ekranında model ve cihaz bilgilerini seçin."},{"question":"Apple Watch Series 6 40 mm kaça satılır?","answer":"Satış değeri; kondisyon, özellikler ve güncel piyasa koşullarına göre değişir."},{"question":"Apple Watch Series 6 40 mm ikinci el fiyatı nasıl hesaplanır?","answer":"kasa boyutu ve kondisyon bilgileri ve seçilen ürün özellikleri birlikte değerlendirilir."},{"question":"Apple Watch Series 6 40 mm piyasa değeri neden değişir?","answer":"Piyasa hareketleri, cihaz kondisyonu ve özelliklerdeki farklılıklar değeri etkileyebilir."},{"question":"Apple Watch Series 6 40 mm hangi seçeneklerle değerlendirilir?","answer":"Bu sayfada kullanılabilen seçenekler: 40 mm, 44 mm."}]
 ---

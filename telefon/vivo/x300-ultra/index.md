@@ -1,15 +1,16 @@
 ---
 layout: "seo"
-seo_title: "X300 Ultra Kaça Satılır? 2026 İkinci El Fiyatı | KaçaGider"
-seo_description: "X300 Ultra kaça satılır? Hafıza, ekran, batarya, kamera ve cihaz durumuna göre 2026 güncel ikinci el ortalama satış değerini KaçaGider ile ücretsiz hesapla."
-seo_h1: "X300 Ultra Kaça Satılır? 2026 İkinci El Fiyatı"
-seo_intro: "X300 Ultra kaça satılır? 2026 ikinci el değeri; hafıza, ekran, batarya, kamera ve cihaz durumu gibi özelliklere göre değişir. KaçaGider ile cihazınızın ortalama satış değerini ücretsiz hesaplayabilirsiniz."
-seo_context_heading: "X300 Ultra ikinci el değeri nasıl hesaplanır?"
-seo_context: "X300 Ultra ikinci el fiyatı belirlenirken hafıza, ekran, batarya, kamera ve cihaz durumu birlikte değerlendirilir. Cihazın kondisyonu ve çalışan özelliklerinin durumu ortalama satış değerini doğrudan etkiler. KaçaGider üzerinden bilgilerinizi seçerek 2026 için güncel ikinci el piyasa değerini görebilirsiniz."
+seo_title: "Vivo X300 Ultra Ne Kadar Eder? İkinci El Fiyatı | KaçaGider"
+seo_description: "Vivo X300 Ultra ne kadar eder? 512 GB seçeneklerinde Vivo X300 Ultra ikinci el fiyatı ve piyasa değeri, hafıza, kondisyon ve cihaz kayıt durumu dikkate alınarak KaçaGider ile ücretsiz hesaplanır."
+seo_h1: "Vivo X300 Ultra Ne Kadar Eder?"
+seo_intro: "Vivo X300 Ultra için güncel ikinci el değerini, gerçek cihaz bilgileri ve kondisyon ayrıntılarıyla KaçaGider üzerinden inceleyin."
+seo_context_heading: "Vivo X300 Ultra için güncel değerleme"
+seo_context: "Vivo X300 Ultra değeri; hafıza, kondisyon ve cihaz kayıt durumu ile birlikte güncel piyasa koşullarına göre değişebilir."
 seo_breadcrumbs: [{"label":"Ana Sayfa","url":"/"},{"label":"Telefon","url":"/telefon/"},{"label":"Vivo","url":"/telefon/vivo/"},{"label":"X300 Ultra","url":"/telefon/vivo/x300-ultra/"}]
-seo_links: [{"label":"512 GB","url":"/telefon/vivo/x300-ultra/512gb/"}]
-seo_links_heading: "X300 Ultra seçenekleri"
+seo_links: [{"label":"Telefon değerleme","url":"/telefon/"},{"label":"İkinci el fiyat nasıl hesaplanır?","url":"/ikinci-el-fiyat-nasil-hesaplanir/"},{"label":"V21 ikinci el fiyatı","url":"/telefon/vivo/v21/"},{"label":"V25 ikinci el fiyatı","url":"/telefon/vivo/v25/"},{"label":"V27 ikinci el fiyatı","url":"/telefon/vivo/v27/"},{"label":"512 GB","url":"/telefon/vivo/x300-ultra/512gb/"}]
+seo_links_heading: "Vivo X300 Ultra ilgili sayfalar"
 seo_canonical: "https://kacagider.com.tr/telefon/vivo/x300-ultra/"
-seo_guides_heading: "X300 Ultra ile ilgili sık arananlar"
-seo_guides: [{"label":"X300 Ultra nasıl sıfırlanır?","url":"/rehber/android/android-telefon-nasil-sifirlanir/"},{"label":"X300 Ultra ekran görüntüsü nasıl alınır?","url":"/rehber/android/android-ekran-goruntusu-nasil-alinir/"},{"label":"X300 Ultra IMEI nasıl öğrenilir?","url":"/rehber/android/android-imei-nasil-ogrenilir/"}]
+seo_cta: {"url":"/telefon/","label":"Telefon değerini hesapla"}
+seo_sections: [{"title":"Vivo X300 Ultra Kaça Satılır?","text":"Vivo X300 Ultra için tek bir sabit satış fiyatı yoktur. Cihazın kondisyonu, özellikleri ve güncel piyasa koşulları gerçek satış değerini etkiler."},{"title":"Vivo X300 Ultra İkinci El Fiyatı","text":"Vivo X300 Ultra ikinci el fiyatı, mevcut seçenekler ve cihazın kullanım durumuna göre değerlendirilir. Bu sayfada bulunan seçenekler: 512 GB."},{"title":"Vivo X300 Ultra Piyasa Değeri","text":"KaçaGider piyasa değeri, seçilen ürün bilgilerini ve hafıza, kondisyon ve cihaz kayıt durumu ayrıntılarını birlikte değerlendirerek bir başlangıç referansı sunar."},{"title":"Vivo X300 Ultra Değeri Nasıl Hesaplanır?","text":"Marka, model, hafıza ve kondisyon bilgilerini değerleme ekranında seçin. Sonuç, cihazın gerçek durumu ile piyasa koşullarına göre değişebilir."}]
+seo_faqs: [{"question":"Vivo X300 Ultra ne kadar eder?","answer":"Güncel değeri öğrenmek için Telefon değerleme ekranında model ve cihaz bilgilerini seçin."},{"question":"Vivo X300 Ultra kaça satılır?","answer":"Satış değeri; kondisyon, özellikler ve güncel piyasa koşullarına göre değişir."},{"question":"Vivo X300 Ultra ikinci el fiyatı nasıl hesaplanır?","answer":"hafıza, kondisyon ve cihaz kayıt durumu bilgileri ve seçilen ürün özellikleri birlikte değerlendirilir."},{"question":"Vivo X300 Ultra piyasa değeri neden değişir?","answer":"Piyasa hareketleri, cihaz kondisyonu ve özelliklerdeki farklılıklar değeri etkileyebilir."},{"question":"Vivo X300 Ultra hangi seçeneklerle değerlendirilir?","answer":"Bu sayfada kullanılabilen seçenekler: 512 GB."}]
 ---

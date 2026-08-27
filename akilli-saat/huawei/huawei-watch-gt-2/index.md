@@ -1,15 +1,16 @@
 ---
 layout: "seo"
-seo_title: "Huawei Watch GT 2 Kaça Satılır? 2026 İkinci El Fiyatı | KaçaGider"
-seo_description: "Huawei Watch GT 2 kaça satılır? Kasa, ekran, batarya ve genel cihaz durumuna göre 2026 güncel ikinci el ortalama satış değerini KaçaGider ile ücretsiz hesapla."
-seo_h1: "Huawei Watch GT 2 Kaça Satılır? 2026 İkinci El Fiyatı"
-seo_intro: "Huawei Watch GT 2 kaça satılır? 2026 ikinci el değeri; kasa boyutu, ekran, batarya ve genel cihaz durumu gibi özelliklere göre değişir. KaçaGider ile cihazınızın ortalama satış değerini ücretsiz hesaplayabilirsiniz."
-seo_context_heading: "Huawei Watch GT 2 ikinci el değeri nasıl hesaplanır?"
-seo_context: "Huawei Watch GT 2 ikinci el fiyatı belirlenirken kasa boyutu, ekran, batarya ve genel cihaz durumu birlikte değerlendirilir. Cihazın kondisyonu ve çalışan özelliklerinin durumu ortalama satış değerini doğrudan etkiler. KaçaGider üzerinden bilgilerinizi seçerek 2026 için güncel ikinci el piyasa değerini görebilirsiniz."
+seo_title: "Huawei Watch GT 2 Ne Kadar Eder? Güncel İkinci El Fiyatı | KaçaGider"
+seo_description: "Huawei Watch GT 2 ne kadar eder? 42 mm, 46 mm seçeneklerinde Huawei Watch GT 2 ikinci el fiyatı ve piyasa değeri, kasa boyutu ve kondisyon dikkate alınarak KaçaGider ile ücretsiz hesaplanır."
+seo_h1: "Huawei Watch GT 2 Ne Kadar Eder?"
+seo_intro: "Huawei Watch GT 2 için güncel ikinci el değerini, gerçek cihaz bilgileri ve kondisyon ayrıntılarıyla KaçaGider üzerinden inceleyin."
+seo_context_heading: "Huawei Watch GT 2 için güncel değerleme"
+seo_context: "Huawei Watch GT 2 değeri; kasa boyutu ve kondisyon ile birlikte güncel piyasa koşullarına göre değişebilir."
 seo_breadcrumbs: [{"label":"Ana Sayfa","url":"/"},{"label":"Akıllı Saat","url":"/akilli-saat/"},{"label":"Huawei","url":"/akilli-saat/huawei/"},{"label":"Huawei Watch GT 2","url":"/akilli-saat/huawei/huawei-watch-gt-2/"}]
-seo_links: [{"label":"42 mm","url":"/akilli-saat/huawei/huawei-watch-gt-2/42mm/"},{"label":"46 mm","url":"/akilli-saat/huawei/huawei-watch-gt-2/46mm/"}]
-seo_links_heading: "Huawei Watch GT 2 seçenekleri"
+seo_links: [{"label":"Akıllı Saat değerleme","url":"/akilli-saat/"},{"label":"İkinci el fiyat nasıl hesaplanır?","url":"/ikinci-el-fiyat-nasil-hesaplanir/"},{"label":"Huawei Watch GT 2 Pro ikinci el fiyatı","url":"/akilli-saat/huawei/huawei-watch-gt-2-pro/"},{"label":"Huawei Watch GT 3 ikinci el fiyatı","url":"/akilli-saat/huawei/huawei-watch-gt-3/"},{"label":"Huawei Watch GT 3 Pro ikinci el fiyatı","url":"/akilli-saat/huawei/huawei-watch-gt-3-pro/"},{"label":"42 mm","url":"/akilli-saat/huawei/huawei-watch-gt-2/42mm/"},{"label":"46 mm","url":"/akilli-saat/huawei/huawei-watch-gt-2/46mm/"}]
+seo_links_heading: "Huawei Watch GT 2 ilgili sayfalar"
 seo_canonical: "https://kacagider.com.tr/akilli-saat/huawei/huawei-watch-gt-2/"
-seo_guides_heading: "Huawei Watch GT 2 ile ilgili sık arananlar"
-seo_guides: [{"label":"Huawei Watch GT 2 nasıl sıfırlanır?","url":"/rehber/wear-os/galaxy-watch-nasil-sifirlanir/"}]
+seo_cta: {"url":"/akilli-saat/","label":"Akıllı Saat değerini hesapla"}
+seo_sections: [{"title":"Huawei Watch GT 2 Kaça Satılır?","text":"Huawei Watch GT 2 için tek bir sabit satış fiyatı yoktur. Cihazın kondisyonu, özellikleri ve güncel piyasa koşulları gerçek satış değerini etkiler."},{"title":"Huawei Watch GT 2 İkinci El Fiyatı","text":"Huawei Watch GT 2 ikinci el fiyatı, mevcut seçenekler ve cihazın kullanım durumuna göre değerlendirilir. Bu sayfada bulunan seçenekler: 42 mm, 46 mm."},{"title":"Huawei Watch GT 2 Piyasa Değeri","text":"KaçaGider piyasa değeri, seçilen ürün bilgilerini ve kasa boyutu ve kondisyon ayrıntılarını birlikte değerlendirerek bir başlangıç referansı sunar."},{"title":"Huawei Watch GT 2 Değeri Nasıl Hesaplanır?","text":"Marka, model, kasa boyutu ve kondisyon bilgilerini değerleme ekranında seçin. Sonuç, cihazın gerçek durumu ile piyasa koşullarına göre değişebilir."}]
+seo_faqs: [{"question":"Huawei Watch GT 2 ne kadar eder?","answer":"Güncel değeri öğrenmek için Akıllı Saat değerleme ekranında model ve cihaz bilgilerini seçin."},{"question":"Huawei Watch GT 2 kaça satılır?","answer":"Satış değeri; kondisyon, özellikler ve güncel piyasa koşullarına göre değişir."},{"question":"Huawei Watch GT 2 ikinci el fiyatı nasıl hesaplanır?","answer":"kasa boyutu ve kondisyon bilgileri ve seçilen ürün özellikleri birlikte değerlendirilir."},{"question":"Huawei Watch GT 2 piyasa değeri neden değişir?","answer":"Piyasa hareketleri, cihaz kondisyonu ve özelliklerdeki farklılıklar değeri etkileyebilir."},{"question":"Huawei Watch GT 2 hangi seçeneklerle değerlendirilir?","answer":"Bu sayfada kullanılabilen seçenekler: 42 mm, 46 mm."}]
 ---

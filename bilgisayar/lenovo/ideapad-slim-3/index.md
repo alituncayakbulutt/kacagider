@@ -1,15 +1,16 @@
 ---
 layout: "seo"
-seo_title: "IdeaPad Slim 3 Kaça Satılır? 2026 İkinci El Fiyatı | KaçaGider"
-seo_description: "IdeaPad Slim 3 kaça satılır? İşlemci, RAM, depolama ve cihaz durumuna göre 2026 güncel ikinci el ortalama satış değerini KaçaGider ile ücretsiz hesapla."
-seo_h1: "IdeaPad Slim 3 Kaça Satılır? 2026 İkinci El Fiyatı"
-seo_intro: "IdeaPad Slim 3 kaça satılır? 2026 ikinci el değeri; işlemci, RAM, depolama, ekran ve genel cihaz durumu gibi özelliklere göre değişir. KaçaGider ile cihazınızın ortalama satış değerini ücretsiz hesaplayabilirsiniz."
-seo_context_heading: "IdeaPad Slim 3 ikinci el değeri nasıl hesaplanır?"
-seo_context: "IdeaPad Slim 3 ikinci el fiyatı belirlenirken işlemci, RAM, depolama, ekran ve genel cihaz durumu birlikte değerlendirilir. Cihazın kondisyonu ve çalışan özelliklerinin durumu ortalama satış değerini doğrudan etkiler. KaçaGider üzerinden bilgilerinizi seçerek 2026 için güncel ikinci el piyasa değerini görebilirsiniz."
+seo_title: "Lenovo IdeaPad Slim 3 Ne Kadar Eder? İkinci El Fiyatı | KaçaGider"
+seo_description: "Lenovo IdeaPad Slim 3 ne kadar eder? 256 GB, 512 GB seçeneklerinde Lenovo IdeaPad Slim 3 ikinci el fiyatı ve piyasa değeri, kapasite ve kondisyon dikkate alınarak KaçaGider ile ücretsiz hesaplanır."
+seo_h1: "Lenovo IdeaPad Slim 3 Ne Kadar Eder?"
+seo_intro: "Lenovo IdeaPad Slim 3 için güncel ikinci el değerini, gerçek cihaz bilgileri ve kondisyon ayrıntılarıyla KaçaGider üzerinden inceleyin."
+seo_context_heading: "Lenovo IdeaPad Slim 3 için güncel değerleme"
+seo_context: "Lenovo IdeaPad Slim 3 değeri; kapasite ve kondisyon ile birlikte güncel piyasa koşullarına göre değişebilir."
 seo_breadcrumbs: [{"label":"Ana Sayfa","url":"/"},{"label":"Bilgisayar","url":"/bilgisayar/"},{"label":"Lenovo","url":"/bilgisayar/lenovo/"},{"label":"IdeaPad Slim 3","url":"/bilgisayar/lenovo/ideapad-slim-3/"}]
-seo_links: [{"label":"256 GB","url":"/bilgisayar/lenovo/ideapad-slim-3/256gb/"},{"label":"512 GB","url":"/bilgisayar/lenovo/ideapad-slim-3/512gb/"}]
-seo_links_heading: "IdeaPad Slim 3 seçenekleri"
+seo_links: [{"label":"Bilgisayar değerleme","url":"/bilgisayar/"},{"label":"İkinci el fiyat nasıl hesaplanır?","url":"/ikinci-el-fiyat-nasil-hesaplanir/"},{"label":"ThinkPad E14 ikinci el fiyatı","url":"/bilgisayar/lenovo/thinkpad-e14/"},{"label":"LOQ 15 ikinci el fiyatı","url":"/bilgisayar/lenovo/loq-15/"},{"label":"Legion 5 ikinci el fiyatı","url":"/bilgisayar/lenovo/legion-5/"},{"label":"256 GB","url":"/bilgisayar/lenovo/ideapad-slim-3/256gb/"},{"label":"512 GB","url":"/bilgisayar/lenovo/ideapad-slim-3/512gb/"}]
+seo_links_heading: "Lenovo IdeaPad Slim 3 ilgili sayfalar"
 seo_canonical: "https://kacagider.com.tr/bilgisayar/lenovo/ideapad-slim-3/"
-seo_guides_heading: "IdeaPad Slim 3 ile ilgili sık arananlar"
-seo_guides: [{"label":"IdeaPad Slim 3 nasıl sıfırlanır?","url":"/rehber/windows/windows-nasil-sifirlanir/"},{"label":"IdeaPad Slim 3 nasıl yedeklenir?","url":"/rehber/windows/windows-bilgisayar-yedekleme/"}]
+seo_cta: {"url":"/bilgisayar/","label":"Bilgisayar değerini hesapla"}
+seo_sections: [{"title":"Lenovo IdeaPad Slim 3 Kaça Satılır?","text":"Lenovo IdeaPad Slim 3 için tek bir sabit satış fiyatı yoktur. Cihazın kondisyonu, özellikleri ve güncel piyasa koşulları gerçek satış değerini etkiler."},{"title":"Lenovo IdeaPad Slim 3 İkinci El Fiyatı","text":"Lenovo IdeaPad Slim 3 ikinci el fiyatı, mevcut seçenekler ve cihazın kullanım durumuna göre değerlendirilir. Bu sayfada bulunan seçenekler: 256 GB, 512 GB."},{"title":"Lenovo IdeaPad Slim 3 Piyasa Değeri","text":"KaçaGider piyasa değeri, seçilen ürün bilgilerini ve kapasite ve kondisyon ayrıntılarını birlikte değerlendirerek bir başlangıç referansı sunar."},{"title":"Lenovo IdeaPad Slim 3 Değeri Nasıl Hesaplanır?","text":"Marka, model, kapasite ve kondisyon bilgilerini değerleme ekranında seçin. Sonuç, cihazın gerçek durumu ile piyasa koşullarına göre değişebilir."}]
+seo_faqs: [{"question":"Lenovo IdeaPad Slim 3 ne kadar eder?","answer":"Güncel değeri öğrenmek için Bilgisayar değerleme ekranında model ve cihaz bilgilerini seçin."},{"question":"Lenovo IdeaPad Slim 3 kaça satılır?","answer":"Satış değeri; kondisyon, özellikler ve güncel piyasa koşullarına göre değişir."},{"question":"Lenovo IdeaPad Slim 3 ikinci el fiyatı nasıl hesaplanır?","answer":"kapasite ve kondisyon bilgileri ve seçilen ürün özellikleri birlikte değerlendirilir."},{"question":"Lenovo IdeaPad Slim 3 piyasa değeri neden değişir?","answer":"Piyasa hareketleri, cihaz kondisyonu ve özelliklerdeki farklılıklar değeri etkileyebilir."},{"question":"Lenovo IdeaPad Slim 3 hangi seçeneklerle değerlendirilir?","answer":"Bu sayfada kullanılabilen seçenekler: 256 GB, 512 GB."}]
 ---

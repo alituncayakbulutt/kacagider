@@ -1,15 +1,16 @@
 ---
 layout: "seo"
-seo_title: "Reno6 Kaça Satılır? 2026 İkinci El Fiyatı | KaçaGider"
-seo_description: "Reno6 kaça satılır? Hafıza, ekran, batarya, kamera ve cihaz durumuna göre 2026 güncel ikinci el ortalama satış değerini KaçaGider ile ücretsiz hesapla."
-seo_h1: "Reno6 Kaça Satılır? 2026 İkinci El Fiyatı"
-seo_intro: "Reno6 kaça satılır? 2026 ikinci el değeri; hafıza, ekran, batarya, kamera ve cihaz durumu gibi özelliklere göre değişir. KaçaGider ile cihazınızın ortalama satış değerini ücretsiz hesaplayabilirsiniz."
-seo_context_heading: "Reno6 ikinci el değeri nasıl hesaplanır?"
-seo_context: "Reno6 ikinci el fiyatı belirlenirken hafıza, ekran, batarya, kamera ve cihaz durumu birlikte değerlendirilir. Cihazın kondisyonu ve çalışan özelliklerinin durumu ortalama satış değerini doğrudan etkiler. KaçaGider üzerinden bilgilerinizi seçerek 2026 için güncel ikinci el piyasa değerini görebilirsiniz."
+seo_title: "Oppo Reno6 Ne Kadar Eder? İkinci El Fiyatı | KaçaGider"
+seo_description: "Oppo Reno6 ne kadar eder? 128 GB seçeneklerinde Oppo Reno6 ikinci el fiyatı ve piyasa değeri, hafıza, kondisyon ve cihaz kayıt durumu dikkate alınarak KaçaGider ile ücretsiz hesaplanır."
+seo_h1: "Oppo Reno6 Ne Kadar Eder?"
+seo_intro: "Oppo Reno6 için güncel ikinci el değerini, gerçek cihaz bilgileri ve kondisyon ayrıntılarıyla KaçaGider üzerinden inceleyin."
+seo_context_heading: "Oppo Reno6 için güncel değerleme"
+seo_context: "Oppo Reno6 değeri; hafıza, kondisyon ve cihaz kayıt durumu ile birlikte güncel piyasa koşullarına göre değişebilir."
 seo_breadcrumbs: [{"label":"Ana Sayfa","url":"/"},{"label":"Telefon","url":"/telefon/"},{"label":"Oppo","url":"/telefon/oppo/"},{"label":"Reno6","url":"/telefon/oppo/reno6/"}]
-seo_links: [{"label":"128 GB","url":"/telefon/oppo/reno6/128gb/"}]
-seo_links_heading: "Reno6 seçenekleri"
+seo_links: [{"label":"Telefon değerleme","url":"/telefon/"},{"label":"İkinci el fiyat nasıl hesaplanır?","url":"/ikinci-el-fiyat-nasil-hesaplanir/"},{"label":"Reno5 ikinci el fiyatı","url":"/telefon/oppo/reno5/"},{"label":"Reno5 Lite ikinci el fiyatı","url":"/telefon/oppo/reno5-lite/"},{"label":"Reno6 Pro ikinci el fiyatı","url":"/telefon/oppo/reno6-pro/"},{"label":"128 GB","url":"/telefon/oppo/reno6/128gb/"}]
+seo_links_heading: "Oppo Reno6 ilgili sayfalar"
 seo_canonical: "https://kacagider.com.tr/telefon/oppo/reno6/"
-seo_guides_heading: "Reno6 ile ilgili sık arananlar"
-seo_guides: [{"label":"Reno6 nasıl sıfırlanır?","url":"/rehber/android/android-telefon-nasil-sifirlanir/"},{"label":"Reno6 ekran görüntüsü nasıl alınır?","url":"/rehber/android/android-ekran-goruntusu-nasil-alinir/"},{"label":"Reno6 IMEI nasıl öğrenilir?","url":"/rehber/android/android-imei-nasil-ogrenilir/"}]
+seo_cta: {"url":"/telefon/","label":"Telefon değerini hesapla"}
+seo_sections: [{"title":"Oppo Reno6 Kaça Satılır?","text":"Oppo Reno6 için tek bir sabit satış fiyatı yoktur. Cihazın kondisyonu, özellikleri ve güncel piyasa koşulları gerçek satış değerini etkiler."},{"title":"Oppo Reno6 İkinci El Fiyatı","text":"Oppo Reno6 ikinci el fiyatı, mevcut seçenekler ve cihazın kullanım durumuna göre değerlendirilir. Bu sayfada bulunan seçenekler: 128 GB."},{"title":"Oppo Reno6 Piyasa Değeri","text":"KaçaGider piyasa değeri, seçilen ürün bilgilerini ve hafıza, kondisyon ve cihaz kayıt durumu ayrıntılarını birlikte değerlendirerek bir başlangıç referansı sunar."},{"title":"Oppo Reno6 Değeri Nasıl Hesaplanır?","text":"Marka, model, hafıza ve kondisyon bilgilerini değerleme ekranında seçin. Sonuç, cihazın gerçek durumu ile piyasa koşullarına göre değişebilir."}]
+seo_faqs: [{"question":"Oppo Reno6 ne kadar eder?","answer":"Güncel değeri öğrenmek için Telefon değerleme ekranında model ve cihaz bilgilerini seçin."},{"question":"Oppo Reno6 kaça satılır?","answer":"Satış değeri; kondisyon, özellikler ve güncel piyasa koşullarına göre değişir."},{"question":"Oppo Reno6 ikinci el fiyatı nasıl hesaplanır?","answer":"hafıza, kondisyon ve cihaz kayıt durumu bilgileri ve seçilen ürün özellikleri birlikte değerlendirilir."},{"question":"Oppo Reno6 piyasa değeri neden değişir?","answer":"Piyasa hareketleri, cihaz kondisyonu ve özelliklerdeki farklılıklar değeri etkileyebilir."},{"question":"Oppo Reno6 hangi seçeneklerle değerlendirilir?","answer":"Bu sayfada kullanılabilen seçenekler: 128 GB."}]
 ---

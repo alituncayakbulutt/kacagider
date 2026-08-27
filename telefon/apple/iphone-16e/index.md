@@ -1,15 +1,16 @@
 ---
 layout: "seo"
-seo_title: "iPhone 16e Kaça Satılır? 2026 İkinci El Fiyatı | KaçaGider"
-seo_description: "iPhone 16e ne kadar eder, kaça satılır? Hafıza, pil sağlığı, ekran ve cihaz durumuna göre 2026 güncel ikinci el piyasa değerini ücretsiz hesapla."
-seo_h1: "iPhone 16e Kaça Satılır? 2026 İkinci El Fiyatı"
-seo_intro: "iPhone 16e ne kadar eder ve kaça satılır? Hafıza, pil sağlığı, ekran ve genel cihaz durumunu seçerek 2026 güncel ikinci el piyasa değerini KaçaGider ile ücretsiz öğrenebilirsiniz."
-seo_context_heading: "iPhone 16e ikinci el değeri nasıl hesaplanır?"
-seo_context: "iPhone 16e ikinci el fiyatı belirlenirken hafıza, pil sağlığı, ekran ve genel cihaz durumu birlikte değerlendirilir. Cihazın kondisyonu ve çalışan özelliklerinin durumu ortalama satış değerini doğrudan etkiler. KaçaGider üzerinden bilgilerinizi seçerek 2026 için güncel ikinci el piyasa değerini görebilirsiniz."
+seo_title: "Apple iPhone 16e Ne Kadar Eder? İkinci El Fiyatı | KaçaGider"
+seo_description: "Apple iPhone 16e ne kadar eder? 128 GB, 256 GB, 512 GB seçeneklerinde Apple iPhone 16e ikinci el fiyatı ve piyasa değeri, hafıza, kondisyon ve cihaz kayıt durumu dikkate alınarak KaçaGider ile ücretsiz hesaplanır."
+seo_h1: "Apple iPhone 16e Ne Kadar Eder?"
+seo_intro: "Apple iPhone 16e için güncel ikinci el değerini, gerçek cihaz bilgileri ve kondisyon ayrıntılarıyla KaçaGider üzerinden inceleyin."
+seo_context_heading: "Apple iPhone 16e için güncel değerleme"
+seo_context: "Apple iPhone 16e değeri; hafıza, kondisyon ve cihaz kayıt durumu ile birlikte güncel piyasa koşullarına göre değişebilir."
 seo_breadcrumbs: [{"label":"Ana Sayfa","url":"/"},{"label":"Telefon","url":"/telefon/"},{"label":"Apple","url":"/telefon/apple/"},{"label":"iPhone 16e","url":"/telefon/apple/iphone-16e/"}]
-seo_links: [{"label":"128 GB","url":"/telefon/apple/iphone-16e/128gb/"},{"label":"256 GB","url":"/telefon/apple/iphone-16e/256gb/"},{"label":"512 GB","url":"/telefon/apple/iphone-16e/512gb/"}]
-seo_links_heading: "iPhone 16e seçenekleri"
+seo_links: [{"label":"Telefon değerleme","url":"/telefon/"},{"label":"İkinci el fiyat nasıl hesaplanır?","url":"/ikinci-el-fiyat-nasil-hesaplanir/"},{"label":"iPhone 11 ikinci el fiyatı","url":"/telefon/apple/iphone-11/"},{"label":"iPhone 11 Pro ikinci el fiyatı","url":"/telefon/apple/iphone-11-pro/"},{"label":"iPhone 11 Pro Max ikinci el fiyatı","url":"/telefon/apple/iphone-11-pro-max/"},{"label":"128 GB","url":"/telefon/apple/iphone-16e/128gb/"},{"label":"256 GB","url":"/telefon/apple/iphone-16e/256gb/"},{"label":"512 GB","url":"/telefon/apple/iphone-16e/512gb/"}]
+seo_links_heading: "Apple iPhone 16e ilgili sayfalar"
 seo_canonical: "https://kacagider.com.tr/telefon/apple/iphone-16e/"
-seo_guides_heading: "iPhone 16e ile ilgili sık arananlar"
-seo_guides: [{"label":"iPhone 16e nasıl sıfırlanır?","url":"/rehber/ios/iphone-nasil-sifirlanir/"},{"label":"iPhone 16e ekran görüntüsü nasıl alınır?","url":"/rehber/ios/iphone-ekran-goruntusu-nasil-alinir/"},{"label":"iPhone 16e pil sağlığı nasıl kontrol edilir?","url":"/rehber/ios/iphone-pil-sagligi/"}]
+seo_cta: {"url":"/telefon/","label":"Telefon değerini hesapla"}
+seo_sections: [{"title":"Apple iPhone 16e Kaça Satılır?","text":"Apple iPhone 16e için tek bir sabit satış fiyatı yoktur. Cihazın kondisyonu, özellikleri ve güncel piyasa koşulları gerçek satış değerini etkiler."},{"title":"Apple iPhone 16e İkinci El Fiyatı","text":"Apple iPhone 16e ikinci el fiyatı, mevcut seçenekler ve cihazın kullanım durumuna göre değerlendirilir. Bu sayfada bulunan seçenekler: 128 GB, 256 GB, 512 GB."},{"title":"Apple iPhone 16e Piyasa Değeri","text":"KaçaGider piyasa değeri, seçilen ürün bilgilerini ve hafıza, kondisyon ve cihaz kayıt durumu ayrıntılarını birlikte değerlendirerek bir başlangıç referansı sunar."},{"title":"Apple iPhone 16e Değeri Nasıl Hesaplanır?","text":"Marka, model, hafıza ve kondisyon bilgilerini değerleme ekranında seçin. Sonuç, cihazın gerçek durumu ile piyasa koşullarına göre değişebilir."}]
+seo_faqs: [{"question":"Apple iPhone 16e ne kadar eder?","answer":"Güncel değeri öğrenmek için Telefon değerleme ekranında model ve cihaz bilgilerini seçin."},{"question":"Apple iPhone 16e kaça satılır?","answer":"Satış değeri; kondisyon, özellikler ve güncel piyasa koşullarına göre değişir."},{"question":"Apple iPhone 16e ikinci el fiyatı nasıl hesaplanır?","answer":"hafıza, kondisyon ve cihaz kayıt durumu bilgileri ve seçilen ürün özellikleri birlikte değerlendirilir."},{"question":"Apple iPhone 16e piyasa değeri neden değişir?","answer":"Piyasa hareketleri, cihaz kondisyonu ve özelliklerdeki farklılıklar değeri etkileyebilir."},{"question":"Apple iPhone 16e hangi seçeneklerle değerlendirilir?","answer":"Bu sayfada kullanılabilen seçenekler: 128 GB, 256 GB, 512 GB."}]
 ---

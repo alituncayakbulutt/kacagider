@@ -1,15 +1,16 @@
 ---
 layout: "seo"
-seo_title: "V21e Kaça Satılır? 2026 İkinci El Fiyatı | KaçaGider"
-seo_description: "V21e kaça satılır? Hafıza, ekran, batarya, kamera ve cihaz durumuna göre 2026 güncel ikinci el ortalama satış değerini KaçaGider ile ücretsiz hesapla."
-seo_h1: "V21e Kaça Satılır? 2026 İkinci El Fiyatı"
-seo_intro: "V21e kaça satılır? 2026 ikinci el değeri; hafıza, ekran, batarya, kamera ve cihaz durumu gibi özelliklere göre değişir. KaçaGider ile cihazınızın ortalama satış değerini ücretsiz hesaplayabilirsiniz."
-seo_context_heading: "V21e ikinci el değeri nasıl hesaplanır?"
-seo_context: "V21e ikinci el fiyatı belirlenirken hafıza, ekran, batarya, kamera ve cihaz durumu birlikte değerlendirilir. Cihazın kondisyonu ve çalışan özelliklerinin durumu ortalama satış değerini doğrudan etkiler. KaçaGider üzerinden bilgilerinizi seçerek 2026 için güncel ikinci el piyasa değerini görebilirsiniz."
+seo_title: "Vivo V21e Ne Kadar Eder? İkinci El Fiyatı | KaçaGider"
+seo_description: "Vivo V21e ne kadar eder? 128 GB seçeneklerinde Vivo V21e ikinci el fiyatı ve piyasa değeri, hafıza, kondisyon ve cihaz kayıt durumu dikkate alınarak KaçaGider ile ücretsiz hesaplanır."
+seo_h1: "Vivo V21e Ne Kadar Eder?"
+seo_intro: "Vivo V21e için güncel ikinci el değerini, gerçek cihaz bilgileri ve kondisyon ayrıntılarıyla KaçaGider üzerinden inceleyin."
+seo_context_heading: "Vivo V21e için güncel değerleme"
+seo_context: "Vivo V21e değeri; hafıza, kondisyon ve cihaz kayıt durumu ile birlikte güncel piyasa koşullarına göre değişebilir."
 seo_breadcrumbs: [{"label":"Ana Sayfa","url":"/"},{"label":"Telefon","url":"/telefon/"},{"label":"Vivo","url":"/telefon/vivo/"},{"label":"V21e","url":"/telefon/vivo/v21e/"}]
-seo_links: [{"label":"128 GB","url":"/telefon/vivo/v21e/128gb/"}]
-seo_links_heading: "V21e seçenekleri"
+seo_links: [{"label":"Telefon değerleme","url":"/telefon/"},{"label":"İkinci el fiyat nasıl hesaplanır?","url":"/ikinci-el-fiyat-nasil-hesaplanir/"},{"label":"V21 ikinci el fiyatı","url":"/telefon/vivo/v21/"},{"label":"V25 ikinci el fiyatı","url":"/telefon/vivo/v25/"},{"label":"V27 ikinci el fiyatı","url":"/telefon/vivo/v27/"},{"label":"128 GB","url":"/telefon/vivo/v21e/128gb/"}]
+seo_links_heading: "Vivo V21e ilgili sayfalar"
 seo_canonical: "https://kacagider.com.tr/telefon/vivo/v21e/"
-seo_guides_heading: "V21e ile ilgili sık arananlar"
-seo_guides: [{"label":"V21e nasıl sıfırlanır?","url":"/rehber/android/android-telefon-nasil-sifirlanir/"},{"label":"V21e ekran görüntüsü nasıl alınır?","url":"/rehber/android/android-ekran-goruntusu-nasil-alinir/"},{"label":"V21e IMEI nasıl öğrenilir?","url":"/rehber/android/android-imei-nasil-ogrenilir/"}]
+seo_cta: {"url":"/telefon/","label":"Telefon değerini hesapla"}
+seo_sections: [{"title":"Vivo V21e Kaça Satılır?","text":"Vivo V21e için tek bir sabit satış fiyatı yoktur. Cihazın kondisyonu, özellikleri ve güncel piyasa koşulları gerçek satış değerini etkiler."},{"title":"Vivo V21e İkinci El Fiyatı","text":"Vivo V21e ikinci el fiyatı, mevcut seçenekler ve cihazın kullanım durumuna göre değerlendirilir. Bu sayfada bulunan seçenekler: 128 GB."},{"title":"Vivo V21e Piyasa Değeri","text":"KaçaGider piyasa değeri, seçilen ürün bilgilerini ve hafıza, kondisyon ve cihaz kayıt durumu ayrıntılarını birlikte değerlendirerek bir başlangıç referansı sunar."},{"title":"Vivo V21e Değeri Nasıl Hesaplanır?","text":"Marka, model, hafıza ve kondisyon bilgilerini değerleme ekranında seçin. Sonuç, cihazın gerçek durumu ile piyasa koşullarına göre değişebilir."}]
+seo_faqs: [{"question":"Vivo V21e ne kadar eder?","answer":"Güncel değeri öğrenmek için Telefon değerleme ekranında model ve cihaz bilgilerini seçin."},{"question":"Vivo V21e kaça satılır?","answer":"Satış değeri; kondisyon, özellikler ve güncel piyasa koşullarına göre değişir."},{"question":"Vivo V21e ikinci el fiyatı nasıl hesaplanır?","answer":"hafıza, kondisyon ve cihaz kayıt durumu bilgileri ve seçilen ürün özellikleri birlikte değerlendirilir."},{"question":"Vivo V21e piyasa değeri neden değişir?","answer":"Piyasa hareketleri, cihaz kondisyonu ve özelliklerdeki farklılıklar değeri etkileyebilir."},{"question":"Vivo V21e hangi seçeneklerle değerlendirilir?","answer":"Bu sayfada kullanılabilen seçenekler: 128 GB."}]
 ---
