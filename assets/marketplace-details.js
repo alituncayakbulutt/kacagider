@@ -5,7 +5,6 @@ window.__KG_MARKETPLACE_DETAILS__=true;
 
 var CATEGORY_IMAGES={phone:"/assets/categories/telefon.jpg",telefon:"/assets/categories/telefon.jpg",tablet:"/assets/categories/tablet.jpg",computer:"/assets/categories/bilgisayar.jpg",bilgisayar:"/assets/categories/bilgisayar.jpg",watch:"/assets/categories/akilli-saat.jpg","akilli-saat":"/assets/categories/akilli-saat.jpg",console:"/assets/categories/oyun-konsolu.jpg","oyun-konsolu":"/assets/categories/oyun-konsolu.jpg"};
 var CATEGORY_ALT={phone:"İkinci el telefon",telefon:"İkinci el telefon",tablet:"İkinci el tablet",computer:"İkinci el bilgisayar",bilgisayar:"İkinci el bilgisayar",watch:"İkinci el akıllı saat","akilli-saat":"İkinci el akıllı saat",console:"İkinci el oyun konsolu","oyun-konsolu":"İkinci el oyun konsolu"};
-var authWatchInstalled=false;
 
 function clean(v){return String(v||"").replace(/\s+/g," ").trim();}
 function selectedCategory(){
@@ -52,88 +51,6 @@ function applyImages(){
   Object.keys(CATEGORY_IMAGES).forEach(function(key){root.querySelectorAll('[data-category="'+key+'"]').forEach(function(card){var img=card.querySelector(".kg-product-art img,.category-image img,.category-media img");if(!img)return;var src=CATEGORY_IMAGES[key];if(img.getAttribute("data-kg-stable-src")===src)return;img.src=src;img.setAttribute("data-kg-stable-src",src);img.alt=CATEGORY_ALT[key]||"İkinci el cihaz";img.loading="eager";img.decoding="async";img.onerror=null;});});
 }
 
-function installAccountStyle(){
-  if(document.getElementById("kgAccountActionStyle"))return;
-  var s=document.createElement("style");
-  s.id="kgAccountActionStyle";
-  s.textContent=`
-  .kg-account-logout{height:46px;display:inline-flex;align-items:center;justify-content:center;padding:0 14px;border:1px solid #536278;border-radius:12px;background:rgba(255,255,255,.04);color:#fff;font-size:12px;font-weight:900;white-space:nowrap;cursor:pointer}
-  .kg-account-logout:hover{background:rgba(255,255,255,.10)}
-  .kg-account-logout:disabled{opacity:.6;cursor:wait}
-  @media(max-width:900px){.kg-account-logout{height:42px;padding:0 10px;font-size:11px}}
-  @media(max-width:600px){.kg-account-logout{padding:0 9px;font-size:10px}}
-  `;
-  document.head.appendChild(s);
-}
-function ensureAuthBackend(){
-  if(window.KGMarketplaceSupabase)return Promise.resolve(window.KGMarketplaceSupabase);
-  return new Promise(function(resolve,reject){
-    var existing=document.querySelector('script[data-kg-marketplace-backend]');
-    if(!existing){
-      existing=document.createElement("script");
-      existing.src="/assets/supabase-marketplace.js";
-      existing.async=true;
-      existing.dataset.kgMarketplaceBackend="1";
-      document.head.appendChild(existing);
-    }
-    var tries=0,t=setInterval(function(){
-      tries++;
-      if(window.KGMarketplaceSupabase){clearInterval(t);resolve(window.KGMarketplaceSupabase);}
-      else if(tries>=120){clearInterval(t);reject(new Error("Oturum bilgisi yüklenemedi."));}
-    },50);
-    existing.addEventListener("error",function(){clearInterval(t);reject(new Error("Oturum sistemi yüklenemedi."));},{once:true});
-  });
-}
-function setLogoutButton(user){
-  var actions=document.querySelector(".kg-approved-topbar .kg-topbar-actions");
-  if(!actions)return;
-  var button=document.getElementById("kgAccountLogout");
-  if(!user){if(button)button.remove();return;}
-  installAccountStyle();
-  if(button)return;
-  button=document.createElement("button");
-  button.type="button";
-  button.id="kgAccountLogout";
-  button.className="kg-account-logout";
-  button.textContent="Çıkış Yap";
-  button.setAttribute("aria-label","KaçaGider hesabından çıkış yap");
-  button.addEventListener("click",async function(){
-    button.disabled=true;
-    button.textContent="Çıkılıyor…";
-    try{
-      var api=await ensureAuthBackend();
-      await api.ready;
-      var result=await api.signOut();
-      if(result&&result.error)throw result.error;
-      try{sessionStorage.removeItem("kg-pending-listing-auth-v1");}catch(_e){}
-      window.location.assign("/");
-    }catch(error){
-      console.error("KaçaGider çıkış:",error);
-      button.disabled=false;
-      button.textContent="Çıkış Yap";
-      alert("Çıkış işlemi tamamlanamadı. Lütfen tekrar dene.");
-    }
-  });
-  var theme=actions.querySelector(".kg-theme-btn");
-  if(theme)actions.insertBefore(button,theme);else actions.appendChild(button);
-}
-async function syncLogoutButton(){
-  try{
-    var api=await ensureAuthBackend();
-    await api.ready;
-    var user=api.getSessionUser?await api.getSessionUser():await api.getUser();
-    setLogoutButton(user);
-    if(authWatchInstalled)return;
-    var client=await api.init();
-    if(client&&client.auth&&typeof client.auth.onAuthStateChange==="function"){
-      authWatchInstalled=true;
-      client.auth.onAuthStateChange(function(_event,session){setLogoutButton(session&&session.user?session.user:null);});
-    }
-  }catch(error){
-    console.warn("KaçaGider hesap durumu:",error);
-  }
-}
-
-function boot(){applyImages();requestAnimationFrame(applyImages);setTimeout(applyImages,350);syncLogoutButton();setTimeout(syncLogoutButton,500);}
+function boot(){applyImages();requestAnimationFrame(applyImages);setTimeout(applyImages,350);}
 if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",boot,{once:true});else boot();
 })();
