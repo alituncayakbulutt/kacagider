@@ -54,36 +54,62 @@ function applyImages(){
 function loadAccountSessionNav(){
   if(window.__KG_ACCOUNT_SESSION_NAV__||document.querySelector('script[data-kg-account-session-nav]'))return;
   var s=document.createElement("script");
-  s.src="/assets/account-session-nav.js?v=20260827-2258";
+  s.src="/assets/account-session-nav.js?v=20260827-2301";
   s.async=true;
   s.dataset.kgAccountSessionNav="1";
   document.head.appendChild(s);
 }
 
+function showAndPlaceAccount(button,host,sell){
+  button.style.setProperty("display","inline-flex","important");
+  button.style.setProperty("visibility","visible","important");
+  button.style.setProperty("opacity","1","important");
+  button.style.setProperty("align-items","center","important");
+  button.style.setProperty("justify-content","center","important");
+  button.style.setProperty("height","46px","important");
+  button.style.setProperty("padding","0 14px","important");
+  button.style.setProperty("border","1px solid #536278","important");
+  button.style.setProperty("border-radius","12px","important");
+  button.style.setProperty("background","rgba(255,255,255,.04)","important");
+  button.style.setProperty("color","#fff","important");
+  button.style.setProperty("font-size","13px","important");
+  button.style.setProperty("font-weight","900","important");
+  button.style.setProperty("white-space","nowrap","important");
+  if(sell)host.insertBefore(button,sell);else host.appendChild(button);
+}
+
 function ensureDirectAccountEntry(){
   var host=document.querySelector(".kg-approved-topbar .kg-topbar-actions");
   if(!host)return;
-  if(document.getElementById("kgHeaderAccountAction")||document.getElementById("kgAccountSessionAction"))return;
+  var sell=host.querySelector(".kg-v4-action.sell,.cta");
+  var headerAccount=document.getElementById("kgHeaderAccountAction");
+  if(headerAccount){
+    showAndPlaceAccount(headerAccount,host,sell);
+    return;
+  }
+  var sessionAccount=document.getElementById("kgAccountSessionAction");
+  if(sessionAccount){
+    showAndPlaceAccount(sessionAccount,host,sell);
+    return;
+  }
   var button=document.createElement("button");
   button.type="button";
   button.id="kgAccountSessionAction";
   button.className="kg-account-session";
   button.textContent="Giriş Yap";
   button.setAttribute("aria-label","KaçaGider hesabına giriş yap");
-  button.style.cssText="display:inline-flex;align-items:center;justify-content:center;height:46px;padding:0 14px;border:1px solid #536278;border-radius:12px;background:rgba(255,255,255,.04);color:#fff;font:inherit;font-size:13px;font-weight:900;white-space:nowrap;cursor:pointer";
   button.addEventListener("click",function(){
     loadAccountSessionNav();
     button.disabled=true;
     button.textContent="Giriş hazırlanıyor…";
     setTimeout(function(){
-      var current=document.getElementById("kgAccountSessionAction");
+      var current=document.getElementById("kgHeaderAccountAction")||document.getElementById("kgAccountSessionAction");
       if(current&&current!==button){current.click();return;}
       button.disabled=false;
       button.textContent="Giriş Yap";
     },650);
   });
-  var sell=host.querySelector(".kg-v4-action.sell,.cta");
-  if(sell)host.insertBefore(button,sell);else host.appendChild(button);
+  showAndPlaceAccount(button,host,sell);
 }
 
 function watchAccountEntry(){
@@ -96,8 +122,8 @@ function watchAccountEntry(){
   var tries=0,timer=setInterval(function(){
     ensureDirectAccountEntry();
     tries++;
-    if(tries>=30)clearInterval(timer);
-  },300);
+    if(tries>=40)clearInterval(timer);
+  },250);
 }
 
 function boot(){applyImages();requestAnimationFrame(applyImages);setTimeout(applyImages,350);watchAccountEntry();}
