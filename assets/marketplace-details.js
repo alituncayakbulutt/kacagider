@@ -51,15 +51,6 @@ function applyImages(){
   Object.keys(CATEGORY_IMAGES).forEach(function(key){root.querySelectorAll('[data-category="'+key+'"]').forEach(function(card){var img=card.querySelector(".kg-product-art img,.category-image img,.category-media img");if(!img)return;var src=CATEGORY_IMAGES[key];if(img.getAttribute("data-kg-stable-src")===src)return;img.src=src;img.setAttribute("data-kg-stable-src",src);img.alt=CATEGORY_ALT[key]||"İkinci el cihaz";img.loading="eager";img.decoding="async";img.onerror=null;});});
 }
 
-function loadAccountSessionNav(){
-  if(window.__KG_ACCOUNT_SESSION_NAV__||document.querySelector('script[data-kg-account-session-nav]'))return;
-  var s=document.createElement("script");
-  s.src="/assets/account-session-nav.js";
-  s.async=true;
-  s.dataset.kgAccountSessionNav="1";
-  document.head.appendChild(s);
-}
-
-function boot(){applyImages();requestAnimationFrame(applyImages);setTimeout(applyImages,350);loadAccountSessionNav();}
+function boot(){applyImages();requestAnimationFrame(applyImages);setTimeout(applyImages,350);}
 if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",boot,{once:true});else boot();
 })();
