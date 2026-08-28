@@ -13,7 +13,7 @@
 
 <base href="/">
 <script src="data/phone-prices.js"></script>
-<script src="data/screen-repair-prices.js"></script>
+<script src="data/screen-repair-prices.js?v=20260825-0025"></script>
 <script src="/assets/analytics-events.js" defer></script>
 <script>
 try{
@@ -1884,6 +1884,58 @@ html[data-theme="dark"] .kg-main-nav a:not(.active):hover{color:#d9fbe6!importan
 @media(max-width:720px){.kg-dyk-grid{grid-template-columns:1fr}.kg-dyk-category{padding:17px}.kg-dyk-category li{font-size:13px}}
 </style>
 
+<style id="kg-mobile-layout-fix">
+/* Mobilde mevcut masaüstü katmanlarının taşmasını önleyen son katman. */
+@media(max-width:760px){
+  html,body{overflow-x:hidden}
+  .page{padding:12px 10px 30px!important}
+  .kg-topbar-inner{grid-template-columns:minmax(0,1fr) auto!important;min-height:78px!important;gap:10px!important;padding:10px 14px!important}
+  .kg-brand{min-width:0;max-width:100%}
+  .kg-brand-main{font-size:29px!important;letter-spacing:-1px!important}
+  .kg-brand small{font-size:14px!important}
+  .kg-brand-tagline{font-size:8px!important;white-space:nowrap}
+  .kg-topbar-actions{gap:8px!important;justify-content:flex-end;align-items:center;align-self:center;min-width:max-content;flex-shrink:0}
+  .kg-theme-btn,.kg-mobile-nav-toggle{width:40px!important;height:40px!important}
+  .kg-mobile-nav-toggle{display:flex!important;align-items:center;justify-content:center;padding:0!important;font-size:0!important;position:relative;background:#182337!important;border-color:#33445d!important;color:#f8fafc!important}
+  .kg-mobile-nav-toggle::before{content:"";display:block;width:18px;height:2px;border-radius:2px;background:currentColor;box-shadow:0 -6px 0 currentColor,0 6px 0 currentColor}
+  .kg-approved-topbar.menu-open .kg-main-nav{z-index:30;grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:4px!important;padding:8px!important}
+  .kg-approved-topbar.menu-open .kg-main-nav a{min-width:0;padding:11px 6px!important;font-size:13px!important;text-align:center;white-space:normal}
+  .kg-main-nav a[data-nav="didYouKnow"]{margin-left:0!important}
+  .hero{padding:24px 4px 18px!important}
+  .hero h1{font-size:31px!important;line-height:1.1!important}
+  .hero p{font-size:14px!important;line-height:1.45!important}
+  #viewHome:not(.category-selected) .kg-approved-hero{margin:20px auto 18px!important}
+  #viewHome:not(.category-selected) .kg-approved-hero h1{font-size:35px!important}
+  #viewHome:not(.category-selected) .kg-category-section{padding:0 4px!important}
+  #viewHome:not(.category-selected) .kg-approved-card{height:auto!important;min-height:0!important}
+  #viewHome:not(.category-selected) .kg-product-art{height:220px!important;margin-bottom:14px!important}
+  .kg-approved-category-grid{grid-template-columns:1fr!important;gap:14px!important}
+  .selected-category-bar{margin:12px 0!important;padding:14px!important}
+  .layout{grid-template-columns:1fr!important;gap:16px!important}
+  .side{position:static!important;width:100%!important}
+  .panel,.section{min-width:0}
+  .section{padding:16px 12px!important}
+  .section-title{font-size:20px!important;line-height:1.2!important}
+  .grid3,.phone-basic-grid,.subgrid,.kasa-grid,.generic-condition-grid{grid-template-columns:1fr!important}
+  .option-row{min-width:0}
+  .option{min-width:0;white-space:normal}
+  .parts-config-row{flex-wrap:wrap!important;gap:8px!important}
+  .parts-selector{min-width:0;flex:1 1 100%}
+  .add-part-btn{width:100%!important}
+  .calc-wrap{padding:12px!important}
+  .calc-btn{min-height:54px!important;height:auto!important;padding:13px 10px!important}
+  .prices .price-line{padding-left:16px!important;padding-right:10px!important}
+  .price-line strong{font-size:15px!important}
+}
+@media(max-width:420px){
+  .kg-brand-main{font-size:25px!important}
+  .kg-brand small{font-size:12px!important}
+  .kg-brand-tagline{font-size:7px!important}
+  .hero h1,#viewHome:not(.category-selected) .kg-approved-hero h1{font-size:30px!important}
+  .option-row{grid-template-columns:1fr!important}
+  .bottom-features{grid-template-columns:1fr!important}
+}
+</style>
 </head>
 <body class="fresh-start">
 
@@ -1925,35 +1977,35 @@ html[data-theme="dark"] .kg-main-nav a:not(.active):hover{color:#d9fbe6!importan
   <section class="home-intro kg-category-section">
     <div class="category-grid kg-approved-category-grid">
       <button class="category-card kg-approved-card" data-category="phone" onclick="selectCategory('phone',this)">
-        <div class="kg-product-art"><img src="assets/categories/telefon.jpg" alt="Telefon"></div>
+        <div class="kg-product-art"><img src="assets/categories/latest/telefon-card-v2.png" alt="Telefon"></div>
         <span class="category-name">Telefon</span>
         <span class="category-sub">iPhone, Samsung, Xiaomi<br>ve daha fazlası</span>
         <span class="kg-card-cta">Hemen Değerini Öğren <b>→</b></span>
       </button>
 
       <button class="category-card kg-approved-card" data-category="tablet" onclick="selectCategory('tablet',this)">
-        <div class="kg-product-art"><img src="assets/categories/tablet.jpg" alt="Tablet"></div>
+        <div class="kg-product-art"><img src="assets/categories/latest/tablet-card-v2.png" alt="Tablet"></div>
         <span class="category-name">Tablet</span>
         <span class="category-sub">iPad, Samsung Galaxy Tab<br>ve daha fazlası</span>
         <span class="kg-card-cta">Hemen Değerini Öğren <b>→</b></span>
       </button>
 
       <button class="category-card kg-approved-card" data-category="computer" onclick="selectCategory('computer',this)">
-        <div class="kg-product-art"><img src="assets/categories/bilgisayar.jpg" alt="Bilgisayar"></div>
+        <div class="kg-product-art"><img src="assets/categories/latest/bilgisayar-card-v2.png" alt="Bilgisayar"></div>
         <span class="category-name">Bilgisayar</span>
         <span class="category-sub">MacBook, Windows Laptop<br>ve daha fazlası</span>
         <span class="kg-card-cta">Hemen Değerini Öğren <b>→</b></span>
       </button>
 
       <button class="category-card kg-approved-card" data-category="watch" onclick="selectCategory('watch',this)">
-        <div class="kg-product-art"><img src="assets/categories/akilli-saat.jpg" alt="Akıllı Saat"></div>
+        <div class="kg-product-art"><img src="assets/categories/latest/akilli-saat-card-v2.png" alt="Akıllı Saat"></div>
         <span class="category-name">Akıllı Saat</span>
         <span class="category-sub">Apple Watch<br>ve diğerleri</span>
         <span class="kg-card-cta">Hemen Değerini Öğren <b>→</b></span>
       </button>
 
       <button class="category-card kg-approved-card" data-category="console" onclick="selectCategory('console',this)">
-        <div class="kg-product-art"><img src="assets/categories/oyun-konsolu.jpg" alt="Oyun Konsolu"></div>
+        <div class="kg-product-art"><img src="assets/categories/latest/oyun-konsolu-card-v2.png" alt="Oyun Konsolu"></div>
         <span class="category-name">Oyun Konsolu</span>
         <span class="category-sub">PlayStation, Xbox<br>ve diğerleri</span>
         <span class="kg-card-cta">Hemen Değerini Öğren <b>→</b></span>

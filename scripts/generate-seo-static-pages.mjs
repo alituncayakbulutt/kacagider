@@ -75,10 +75,56 @@ const categoryConfig={
 function seoSubject({brand,model,variant}){
   const normalizedBrand=String(brand||"").toLocaleLowerCase("tr-TR");
   const normalizedModel=String(model||"").toLocaleLowerCase("tr-TR");
-  const modelWithBrand=brand&&model&&normalizedModel.startsWith(normalizedBrand)
+  const modelWithBrand=brand&&model&&normalizedModel.includes(normalizedBrand)
     ? model
     : [brand,model].filter(Boolean).join(" ");
   return [modelWithBrand,variant].filter(Boolean).join(" ");
+}
+
+const categoryLandingConfig={
+  phone:{url:"/telefonum-ne-kadar-eder/",title:"Telefonum Ne Kadar Eder? İkinci El Değerini Hesapla | KaçaGider",h1:"Telefonum Ne Kadar Eder?"},
+  tablet:{url:"/tabletim-ne-kadar-eder/",title:"Tabletim Ne Kadar Eder? İkinci El Değerini Hesapla | KaçaGider",h1:"Tabletim Ne Kadar Eder?"},
+  computer:{url:"/bilgisayarim-ne-kadar-eder/",title:"Bilgisayarım Ne Kadar Eder? İkinci El Değerini Hesapla | KaçaGider",h1:"Bilgisayarım Ne Kadar Eder?"},
+  watch:{url:"/akilli-saatim-ne-kadar-eder/",title:"Akıllı Saatim Ne Kadar Eder? İkinci El Değerini Hesapla | KaçaGider",h1:"Akıllı Saatim Ne Kadar Eder?"},
+  console:{url:"/oyun-konsolum-ne-kadar-eder/",title:"Oyun Konsolum Ne Kadar Eder? İkinci El Değerini Hesapla | KaçaGider",h1:"Oyun Konsolum Ne Kadar Eder?"}
+};
+
+function modelSeoMeta({kind,brand,model,variant,url,breadcrumbs,variants,links=[]}){
+  const config=categoryConfig[kind];
+  const normalizedBrand=String(brand||"").toLocaleLowerCase("tr-TR");
+  const normalizedModel=String(model||"").toLocaleLowerCase("tr-TR");
+  const brandInModel=Boolean(brand&&model&&normalizedModel.includes(normalizedBrand));
+  const subject=brandInModel?model:`${brand} ${model}`;
+  const displaySubject=variant?`${subject} ${variant}`:subject;
+  const optionText=[...new Set((variants||[]).map(Number))].filter(Number.isFinite).map(value=>storageLabel(value,kind)).join(", ");
+  const description=`${displaySubject} ne kadar eder? ${optionText?`${optionText} seçeneklerinde `:""}${displaySubject} ikinci el fiyatı ve piyasa değeri, ${config.context} dikkate alınarak KaçaGider ile ücretsiz hesaplanır.`;
+  const related=[{label:`${config.name} değerleme`,url:`/${config.path}/`},{label:"İkinci el fiyat nasıl hesaplanır?",url:"/ikinci-el-fiyat-nasil-hesaplanir/"},...links];
+  const uniqueLinks=[...new Map(related.map(link=>[link.url,link])).values()];
+  return {layout:"seo",seo_title:`${displaySubject} Ne Kadar Eder? ${brandInModel?"Güncel İkinci El Fiyatı":"İkinci El Fiyatı"} | KaçaGider`,seo_description:description,seo_h1:variant?`${displaySubject} İkinci El Fiyatı`:`${subject} Ne Kadar Eder?`,seo_intro:`${displaySubject} için güncel ikinci el değerini, gerçek cihaz bilgileri ve kondisyon ayrıntılarıyla KaçaGider üzerinden inceleyin.`,seo_context_heading:`${displaySubject} için güncel değerleme`,seo_context:`${displaySubject} değeri; ${config.context} ile birlikte güncel piyasa koşullarına göre değişebilir.`,seo_breadcrumbs:breadcrumbs,seo_links:uniqueLinks,seo_links_heading:`${displaySubject} ilgili sayfalar`,seo_canonical:absolute(url),seo_cta:{url:`/${config.path}/`,label:`${config.name} değerini hesapla`},seo_sections:[
+    {title:`${displaySubject} Kaça Satılır?`,text:`${displaySubject} için tek bir sabit satış fiyatı yoktur. Cihazın kondisyonu, özellikleri ve güncel piyasa koşulları gerçek satış değerini etkiler.`},
+    {title:`${displaySubject} İkinci El Fiyatı`,text:`${displaySubject} ikinci el fiyatı, mevcut seçenekler ve cihazın kullanım durumuna göre değerlendirilir.${optionText?` Bu sayfada bulunan seçenekler: ${optionText}.`:""}`},
+    {title:`${displaySubject} Piyasa Değeri`,text:`KaçaGider piyasa değeri, seçilen ürün bilgilerini ve ${config.context} ayrıntılarını birlikte değerlendirerek bir başlangıç referansı sunar.`},
+    {title:`${displaySubject} Değeri Nasıl Hesaplanır?`,text:`Marka, model, ${config.variantTerm} ve kondisyon bilgilerini değerleme ekranında seçin. Sonuç, cihazın gerçek durumu ile piyasa koşullarına göre değişebilir.`}
+  ],seo_faqs:[
+    {question:`${displaySubject} ne kadar eder?`,answer:`Güncel değeri öğrenmek için ${config.name} değerleme ekranında model ve cihaz bilgilerini seçin.`},
+    {question:`${displaySubject} kaça satılır?`,answer:`Satış değeri; kondisyon, özellikler ve güncel piyasa koşullarına göre değişir.`},
+    {question:`${displaySubject} ikinci el fiyatı nasıl hesaplanır?`,answer:`${config.context} bilgileri ve seçilen ürün özellikleri birlikte değerlendirilir.`},
+    {question:`${displaySubject} piyasa değeri neden değişir?`,answer:`Piyasa hareketleri, cihaz kondisyonu ve özelliklerdeki farklılıklar değeri etkileyebilir.`},
+    ...(optionText?[{question:`${displaySubject} hangi seçeneklerle değerlendirilir?`,answer:`Bu sayfada kullanılabilen seçenekler: ${optionText}.`}]:[])
+  ]};
+}
+
+function landingMeta({kind}){
+  const config=categoryConfig[kind];
+  const landing=categoryLandingConfig[kind];
+  const url=landing.url;
+  return {layout:"seo",seo_title:landing.title,seo_description:`${config.name} ikinci el değerini ve güncel piyasa fiyatını KaçaGider ile öğren. ${config.name} özelliklerini seçerek ücretsiz değerleme yap.`,seo_h1:landing.h1,seo_intro:`${config.name} cihazınızın güncel ikinci el değerini, gerçek ürün bilgileri ve kondisyonunu seçerek KaçaGider ile inceleyin.`,seo_context_heading:`${config.name} değerleme rehberi`,seo_context:`${config.name} piyasa değeri; model, ${config.context} ve güncel piyasa koşullarına göre değerlendirilir.`,seo_breadcrumbs:[{label:"Ana Sayfa",url:"/"},{label:config.name,url:`/${config.path}/`},{label:landing.h1,url}],seo_links:[{label:`${config.name} değerleme aracını aç`,url:`/${config.path}/`},{label:"İkinci el fiyat nasıl hesaplanır?",url:"/ikinci-el-fiyat-nasil-hesaplanir/"}],seo_links_heading:"İlgili sayfalar",seo_canonical:absolute(url),seo_cta:{url:`/${config.path}/`,label:`${config.name} değerini hesapla`},seo_sections:[{title:`${config.name} ikinci el fiyatı nasıl belirlenir?`,text:`Model, ${config.context} ve güncel piyasa koşulları birlikte değerlendirilir. KaçaGider sonucu satış garantisi değil, karar vermeye yardımcı bir piyasa referansıdır.`},{title:`${config.name} değerini hesaplarken nelere dikkat edilmeli?`,text:`Ürünün gerçek modelini ve kapasite/özellik bilgilerini doğru seçin; kondisyon ve çalışmayan özellikleri olduğu gibi belirtin.`},{title:`${config.name} satmadan önce`,text:"Kişisel verileri yedekleyin, hesaplarınızdan çıkış yapın ve cihazı teslim etmeden önce gerekli sıfırlama adımlarını kontrol edin."}],seo_faqs:[{question:`${config.name} kaç para eder?`,answer:`Model ve kondisyon bilgilerini KaçaGider değerleme aracında seçerek güncel piyasa referansını inceleyebilirsiniz.`},{question:`${config.name} değeri neye göre değişir?`,answer:`Model, kapasite veya ürün özelliği, kondisyon ve piyasa koşulları birlikte etkili olur.`}]};
+}
+
+function infoMeta(){
+  const url="/ikinci-el-fiyat-nasil-hesaplanir/";
+  const links=Object.values(categoryLandingConfig).map(landing=>({label:landing.h1,url:landing.url}));
+  return {layout:"seo",seo_title:"İkinci El Fiyat Nasıl Hesaplanır? | KaçaGider",seo_description:"İkinci el telefon, tablet, bilgisayar, akıllı saat ve oyun konsolu fiyatlarının hangi bilgilerle hesaplandığını öğrenin.",seo_h1:"İkinci El Fiyat Nasıl Hesaplanır?",seo_intro:"İkinci el piyasa değeri; ürünün modeli, kapasitesi ve gerçek kondisyonu birlikte değerlendirilerek anlaşılır.",seo_context_heading:"KaçaGider değerleme yaklaşımı",seo_context:"KaçaGider, kullanıcı tarafından seçilen ürün bilgilerini ve kondisyon ayrıntılarını güncel piyasa referansı olarak değerlendirir.",seo_breadcrumbs:[{label:"Ana Sayfa",url:"/"},{label:"İkinci El Fiyat Nasıl Hesaplanır?",url}],seo_links:links,seo_links_heading:"Kategori değerleme sayfaları",seo_canonical:absolute(url),seo_sections:[{title:"Model ve kapasite",text:"Aynı ürün ailesindeki model ve kapasite farkları ikinci el değerini değiştirebilir. Bu nedenle değerleme sırasında doğru seçenekleri seçmek önemlidir."},{title:"Kondisyon bilgileri",text:"Ekran, kasa, pil, çalışmayan özellikler ve kullanım durumu gibi gerçek bilgiler sonucu etkileyebilir."},{title:"Piyasa koşulları",text:"Gösterilen değer güncel piyasa koşullarına göre bir referanstır; gerçek satış fiyatı ürünün durumuna ve satış şartlarına göre değişebilir."}],seo_faqs:[{question:"İkinci el fiyat hangi bilgilere göre hesaplanır?",answer:"Model, kapasite veya ilgili ürün özelliği, kondisyon ve güncel piyasa koşulları birlikte değerlendirilir."},{question:"KaçaGider sonucu kesin satış fiyatı mı?",answer:"Hayır. Sonuç, gerçek satış kararına yardımcı olan güncel bir piyasa referansıdır."}]};
 }
 
 function seoCopy({kind,model,variant,brand}){
@@ -175,7 +221,7 @@ for(const [kind,config] of Object.entries(categoryConfig)){
   const catalog=kind==="phone" ? runtime.PHONE_CATALOG : runtime.STATIC_CATALOG[kind];
   const categoryUrl=`/${config.path}/`;
   const categoryBrands=Object.keys(catalog);
-  addPage(categoryUrl,pageMeta({kind,url:categoryUrl,breadcrumbs:[{label:"Ana Sayfa",url:"/"},{label:config.name,url:categoryUrl}],links:categoryBrands.map(brand=>({label:brand,url:pagePath(config.path,brand)})),linksHeading:`${config.name} markaları`}));
+  addPage(categoryUrl,pageMeta({kind,url:categoryUrl,breadcrumbs:[{label:"Ana Sayfa",url:"/"},{label:config.name,url:categoryUrl}],links:[{label:categoryLandingConfig[kind].h1,url:categoryLandingConfig[kind].url},{label:"İkinci el fiyat nasıl hesaplanır?",url:"/ikinci-el-fiyat-nasil-hesaplanir/"},...categoryBrands.map(brand=>({label:brand,url:pagePath(config.path,brand)}))],linksHeading:`${config.name} markaları`}));
 
   for(const [brand,models] of Object.entries(catalog)){
     const brandUrl=pagePath(config.path,brand);
@@ -189,16 +235,23 @@ for(const [kind,config] of Object.entries(categoryConfig)){
         : kind==="watch" ? runtime.WATCH_VARIANT_OPTIONS?.[brand]?.[model]
         : runtime.CONSOLE_STORAGE_OPTIONS?.[model]) || [];
       const variantLinks=[...new Set(variants.map(Number))].filter(Number.isFinite).map(value=>({label:storageLabel(value,kind),url:`/${config.path}/${slug(brand)}/${slug(model)}/${variantUrlPart(value,kind)}/`}));
-      addPage(modelUrl,pageMeta({kind,brand,model,url:modelUrl,breadcrumbs:[{label:"Ana Sayfa",url:"/"},{label:config.name,url:categoryUrl},{label:brand,url:brandUrl},{label:model,url:modelUrl}],links:variantLinks,linksHeading:`${model} seçenekleri`}));
+      const relatedModels=models.filter(candidate=>candidate!==model).slice(0,3).map(candidate=>({label:`${candidate} ikinci el fiyatı`,url:pagePath(config.path,brand,candidate)}));
+      addPage(modelUrl,modelSeoMeta({kind,brand,model,url:modelUrl,variants,breadcrumbs:[{label:"Ana Sayfa",url:"/"},{label:config.name,url:categoryUrl},{label:brand,url:brandUrl},{label:model,url:modelUrl}],links:[...relatedModels,...variantLinks]}));
 
       for(const value of [...new Set(variants.map(Number))].filter(Number.isFinite)){
         const variant=storageLabel(value,kind);
         const variantUrl=`/${config.path}/${slug(brand)}/${slug(model)}/${variantUrlPart(value,kind)}/`;
-        addPage(variantUrl,pageMeta({kind,brand,model,variant,url:variantUrl,breadcrumbs:[{label:"Ana Sayfa",url:"/"},{label:config.name,url:categoryUrl},{label:brand,url:brandUrl},{label:model,url:modelUrl},{label:variant,url:variantUrl}],links:[{label:`${model} ana sayfası`,url:modelUrl},...variantLinks.filter(link=>link.url!==variantUrl)],linksHeading:`${model} diğer seçenekleri`}));
+        addPage(variantUrl,modelSeoMeta({kind,brand,model,variant,url:variantUrl,variants,breadcrumbs:[{label:"Ana Sayfa",url:"/"},{label:config.name,url:categoryUrl},{label:brand,url:brandUrl},{label:model,url:modelUrl},{label:variant,url:variantUrl}],links:[{label:`${model} ana sayfası`,url:modelUrl},...variantLinks.filter(link=>link.url!==variantUrl)]}));
       }
     }
   }
 }
+
+for(const kind of Object.keys(categoryConfig)){
+  const landing=categoryLandingConfig[kind];
+  addPage(landing.url,landingMeta({kind}));
+}
+addPage("/ikinci-el-fiyat-nasil-hesaplanir/",infoMeta());
 
 const phaseOnePilotPages=[
   {
@@ -331,7 +384,8 @@ const orphanPages=pages.filter(page=>!inboundUrls.has(page.url)).length;
 const audit={generated_at:generatedAt,total_indexable_urls:pages.length+1,duplicate_title:duplicateCount("seo_title"),duplicate_description:duplicateCount("seo_description"),duplicate_h1:duplicateCount("seo_h1",phaseOnePilotUrls),intentional_shared_pilot_h1:phaseOnePilotPages.length-1,broken_canonical:brokenCanonical,broken_breadcrumb:brokenBreadcrumb,orphan_url:orphanPages,sitemap_url_count:pages.length+1};
 if(audit.duplicate_title||audit.duplicate_description||audit.duplicate_h1||audit.broken_canonical||audit.broken_breadcrumb||audit.orphan_url) throw Error(`SEO audit failed: ${JSON.stringify(audit)}`);
 
-await writeFile(path.join(root,"_layouts","seo.html"),layoutFrom(index));
+// The existing SEO layout already renders the V2 front matter; preserve it so
+// marketplace-specific changes in index.html cannot be copied into the layout.
 const generatedFiles=new Set(pages.map(page=>path.join(root,page.url,"index.md")));
 for(const categoryDirectory of Object.values(categoryConfig).map(config=>path.join(root,config.path))){
   for(const oldFile of await findGeneratedSeoDocuments(categoryDirectory)){

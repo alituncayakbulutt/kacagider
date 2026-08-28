@@ -1,15 +1,16 @@
 ---
 layout: "seo"
-seo_title: "A98 Kaça Satılır? 2026 İkinci El Fiyatı | KaçaGider"
-seo_description: "A98 kaça satılır? Hafıza, ekran, batarya, kamera ve cihaz durumuna göre 2026 güncel ikinci el tahmini satış değerini KaçaGider ile ücretsiz hesapla."
-seo_h1: "A98 Kaça Satılır? 2026 İkinci El Fiyatı"
-seo_intro: "A98 kaça satılır? 2026 ikinci el değeri; hafıza, ekran, batarya, kamera ve cihaz durumu gibi özelliklere göre değişir. KaçaGider ile cihazınızın tahmini satış değerini ücretsiz hesaplayabilirsiniz."
-seo_context_heading: "A98 ikinci el değeri nasıl hesaplanır?"
-seo_context: "A98 ikinci el fiyatı belirlenirken hafıza, ekran, batarya, kamera ve cihaz durumu birlikte değerlendirilir. Cihazın kondisyonu ve çalışan özelliklerinin durumu tahmini satış değerini doğrudan etkiler. KaçaGider üzerinden bilgilerinizi seçerek 2026 için güncel tahmini ikinci el satış değerini görebilirsiniz."
+seo_title: "Oppo A98 Ne Kadar Eder? İkinci El Fiyatı | KaçaGider"
+seo_description: "Oppo A98 ne kadar eder? 256 GB seçeneklerinde Oppo A98 ikinci el fiyatı ve piyasa değeri, hafıza, kondisyon ve cihaz kayıt durumu dikkate alınarak KaçaGider ile ücretsiz hesaplanır."
+seo_h1: "Oppo A98 Ne Kadar Eder?"
+seo_intro: "Oppo A98 için güncel ikinci el değerini, gerçek cihaz bilgileri ve kondisyon ayrıntılarıyla KaçaGider üzerinden inceleyin."
+seo_context_heading: "Oppo A98 için güncel değerleme"
+seo_context: "Oppo A98 değeri; hafıza, kondisyon ve cihaz kayıt durumu ile birlikte güncel piyasa koşullarına göre değişebilir."
 seo_breadcrumbs: [{"label":"Ana Sayfa","url":"/"},{"label":"Telefon","url":"/telefon/"},{"label":"Oppo","url":"/telefon/oppo/"},{"label":"A98","url":"/telefon/oppo/a98/"}]
-seo_links: [{"label":"256 GB","url":"/telefon/oppo/a98/256gb/"}]
-seo_links_heading: "A98 seçenekleri"
+seo_links: [{"label":"Telefon değerleme","url":"/telefon/"},{"label":"İkinci el fiyat nasıl hesaplanır?","url":"/ikinci-el-fiyat-nasil-hesaplanir/"},{"label":"Reno5 ikinci el fiyatı","url":"/telefon/oppo/reno5/"},{"label":"Reno5 Lite ikinci el fiyatı","url":"/telefon/oppo/reno5-lite/"},{"label":"Reno6 ikinci el fiyatı","url":"/telefon/oppo/reno6/"},{"label":"256 GB","url":"/telefon/oppo/a98/256gb/"}]
+seo_links_heading: "Oppo A98 ilgili sayfalar"
 seo_canonical: "https://kacagider.com.tr/telefon/oppo/a98/"
-seo_guides_heading: "A98 ile ilgili sık arananlar"
-seo_guides: [{"label":"A98 nasıl sıfırlanır?","url":"/rehber/android/android-telefon-nasil-sifirlanir/"},{"label":"A98 ekran görüntüsü nasıl alınır?","url":"/rehber/android/android-ekran-goruntusu-nasil-alinir/"},{"label":"A98 IMEI nasıl öğrenilir?","url":"/rehber/android/android-imei-nasil-ogrenilir/"}]
+seo_cta: {"url":"/telefon/","label":"Telefon değerini hesapla"}
+seo_sections: [{"title":"Oppo A98 Kaça Satılır?","text":"Oppo A98 için tek bir sabit satış fiyatı yoktur. Cihazın kondisyonu, özellikleri ve güncel piyasa koşulları gerçek satış değerini etkiler."},{"title":"Oppo A98 İkinci El Fiyatı","text":"Oppo A98 ikinci el fiyatı, mevcut seçenekler ve cihazın kullanım durumuna göre değerlendirilir. Bu sayfada bulunan seçenekler: 256 GB."},{"title":"Oppo A98 Piyasa Değeri","text":"KaçaGider piyasa değeri, seçilen ürün bilgilerini ve hafıza, kondisyon ve cihaz kayıt durumu ayrıntılarını birlikte değerlendirerek bir başlangıç referansı sunar."},{"title":"Oppo A98 Değeri Nasıl Hesaplanır?","text":"Marka, model, hafıza ve kondisyon bilgilerini değerleme ekranında seçin. Sonuç, cihazın gerçek durumu ile piyasa koşullarına göre değişebilir."}]
+seo_faqs: [{"question":"Oppo A98 ne kadar eder?","answer":"Güncel değeri öğrenmek için Telefon değerleme ekranında model ve cihaz bilgilerini seçin."},{"question":"Oppo A98 kaça satılır?","answer":"Satış değeri; kondisyon, özellikler ve güncel piyasa koşullarına göre değişir."},{"question":"Oppo A98 ikinci el fiyatı nasıl hesaplanır?","answer":"hafıza, kondisyon ve cihaz kayıt durumu bilgileri ve seçilen ürün özellikleri birlikte değerlendirilir."},{"question":"Oppo A98 piyasa değeri neden değişir?","answer":"Piyasa hareketleri, cihaz kondisyonu ve özelliklerdeki farklılıklar değeri etkileyebilir."},{"question":"Oppo A98 hangi seçeneklerle değerlendirilir?","answer":"Bu sayfada kullanılabilen seçenekler: 256 GB."}]
 ---

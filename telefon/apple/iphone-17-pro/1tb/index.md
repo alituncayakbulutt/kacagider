@@ -1,13 +1,16 @@
 ---
 layout: "seo"
-seo_title: "iPhone 17 Pro 1 TB Kaça Satılır? 2026 İkinci El Fiyatı | KaçaGider"
-seo_description: "iPhone 17 Pro 1 TB kaça satılır? Pil sağlığı ve cihaz durumuna göre 2026 güncel ikinci el tahmini satış değerini KaçaGider ile ücretsiz hesapla."
-seo_h1: "iPhone 17 Pro 1 TB Kaça Satılır? 2026 İkinci El Fiyatı"
-seo_intro: "iPhone 17 Pro 1 TB kaça satılır? 2026 ikinci el değeri; pil sağlığı, ekran ve genel cihaz durumu gibi özelliklere göre değişir. KaçaGider ile cihazınızın tahmini satış değerini ücretsiz hesaplayabilirsiniz."
-seo_context_heading: "iPhone 17 Pro 1 TB ikinci el değeri nasıl hesaplanır?"
-seo_context: "iPhone 17 Pro 1 TB ikinci el fiyatı belirlenirken pil sağlığı, ekran ve genel cihaz durumu birlikte değerlendirilir. Cihazın kondisyonu ve çalışan özelliklerinin durumu tahmini satış değerini doğrudan etkiler. KaçaGider üzerinden bilgilerinizi seçerek 2026 için güncel tahmini ikinci el satış değerini görebilirsiniz."
+seo_title: "Apple iPhone 17 Pro 1 TB Ne Kadar Eder? İkinci El Fiyatı | KaçaGider"
+seo_description: "Apple iPhone 17 Pro 1 TB ne kadar eder? 256 GB, 512 GB, 1 TB seçeneklerinde Apple iPhone 17 Pro 1 TB ikinci el fiyatı ve piyasa değeri, hafıza, kondisyon ve cihaz kayıt durumu dikkate alınarak KaçaGider ile ücretsiz hesaplanır."
+seo_h1: "Apple iPhone 17 Pro 1 TB İkinci El Fiyatı"
+seo_intro: "Apple iPhone 17 Pro 1 TB için güncel ikinci el değerini, gerçek cihaz bilgileri ve kondisyon ayrıntılarıyla KaçaGider üzerinden inceleyin."
+seo_context_heading: "Apple iPhone 17 Pro 1 TB için güncel değerleme"
+seo_context: "Apple iPhone 17 Pro 1 TB değeri; hafıza, kondisyon ve cihaz kayıt durumu ile birlikte güncel piyasa koşullarına göre değişebilir."
 seo_breadcrumbs: [{"label":"Ana Sayfa","url":"/"},{"label":"Telefon","url":"/telefon/"},{"label":"Apple","url":"/telefon/apple/"},{"label":"iPhone 17 Pro","url":"/telefon/apple/iphone-17-pro/"},{"label":"1 TB","url":"/telefon/apple/iphone-17-pro/1tb/"}]
-seo_links: [{"label":"iPhone 17 Pro ana sayfası","url":"/telefon/apple/iphone-17-pro/"},{"label":"256 GB","url":"/telefon/apple/iphone-17-pro/256gb/"},{"label":"512 GB","url":"/telefon/apple/iphone-17-pro/512gb/"}]
-seo_links_heading: "iPhone 17 Pro diğer seçenekleri"
+seo_links: [{"label":"Telefon değerleme","url":"/telefon/"},{"label":"İkinci el fiyat nasıl hesaplanır?","url":"/ikinci-el-fiyat-nasil-hesaplanir/"},{"label":"iPhone 17 Pro ana sayfası","url":"/telefon/apple/iphone-17-pro/"},{"label":"256 GB","url":"/telefon/apple/iphone-17-pro/256gb/"},{"label":"512 GB","url":"/telefon/apple/iphone-17-pro/512gb/"}]
+seo_links_heading: "Apple iPhone 17 Pro 1 TB ilgili sayfalar"
 seo_canonical: "https://kacagider.com.tr/telefon/apple/iphone-17-pro/1tb/"
+seo_cta: {"url":"/telefon/","label":"Telefon değerini hesapla"}
+seo_sections: [{"title":"Apple iPhone 17 Pro 1 TB Kaça Satılır?","text":"Apple iPhone 17 Pro 1 TB için tek bir sabit satış fiyatı yoktur. Cihazın kondisyonu, özellikleri ve güncel piyasa koşulları gerçek satış değerini etkiler."},{"title":"Apple iPhone 17 Pro 1 TB İkinci El Fiyatı","text":"Apple iPhone 17 Pro 1 TB ikinci el fiyatı, mevcut seçenekler ve cihazın kullanım durumuna göre değerlendirilir. Bu sayfada bulunan seçenekler: 256 GB, 512 GB, 1 TB."},{"title":"Apple iPhone 17 Pro 1 TB Piyasa Değeri","text":"KaçaGider piyasa değeri, seçilen ürün bilgilerini ve hafıza, kondisyon ve cihaz kayıt durumu ayrıntılarını birlikte değerlendirerek bir başlangıç referansı sunar."},{"title":"Apple iPhone 17 Pro 1 TB Değeri Nasıl Hesaplanır?","text":"Marka, model, hafıza ve kondisyon bilgilerini değerleme ekranında seçin. Sonuç, cihazın gerçek durumu ile piyasa koşullarına göre değişebilir."}]
+seo_faqs: [{"question":"Apple iPhone 17 Pro 1 TB ne kadar eder?","answer":"Güncel değeri öğrenmek için Telefon değerleme ekranında model ve cihaz bilgilerini seçin."},{"question":"Apple iPhone 17 Pro 1 TB kaça satılır?","answer":"Satış değeri; kondisyon, özellikler ve güncel piyasa koşullarına göre değişir."},{"question":"Apple iPhone 17 Pro 1 TB ikinci el fiyatı nasıl hesaplanır?","answer":"hafıza, kondisyon ve cihaz kayıt durumu bilgileri ve seçilen ürün özellikleri birlikte değerlendirilir."},{"question":"Apple iPhone 17 Pro 1 TB piyasa değeri neden değişir?","answer":"Piyasa hareketleri, cihaz kondisyonu ve özelliklerdeki farklılıklar değeri etkileyebilir."},{"question":"Apple iPhone 17 Pro 1 TB hangi seçeneklerle değerlendirilir?","answer":"Bu sayfada kullanılabilen seçenekler: 256 GB, 512 GB, 1 TB."}]
 ---

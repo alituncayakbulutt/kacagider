@@ -1,13 +1,16 @@
 ---
 layout: "seo"
-seo_title: "Galaxy A13 128 GB Kaça Satılır? 2026 İkinci El Fiyatı | KaçaGider"
-seo_description: "Galaxy A13 128 GB kaça satılır? Ekran, batarya ve cihaz durumuna göre 2026 güncel ikinci el tahmini satış değerini KaçaGider ile ücretsiz hesapla."
-seo_h1: "Galaxy A13 128 GB Kaça Satılır? 2026 İkinci El Fiyatı"
-seo_intro: "Galaxy A13 128 GB kaça satılır? 2026 ikinci el değeri; ekran, batarya ve cihaz durumu gibi özelliklere göre değişir. KaçaGider ile cihazınızın tahmini satış değerini ücretsiz hesaplayabilirsiniz."
-seo_context_heading: "Galaxy A13 128 GB ikinci el değeri nasıl hesaplanır?"
-seo_context: "Galaxy A13 128 GB ikinci el fiyatı belirlenirken ekran, batarya ve cihaz durumu birlikte değerlendirilir. Cihazın kondisyonu ve çalışan özelliklerinin durumu tahmini satış değerini doğrudan etkiler. KaçaGider üzerinden bilgilerinizi seçerek 2026 için güncel tahmini ikinci el satış değerini görebilirsiniz."
+seo_title: "Samsung Galaxy A13 128 GB Ne Kadar Eder? İkinci El Fiyatı | KaçaGider"
+seo_description: "Samsung Galaxy A13 128 GB ne kadar eder? 64 GB, 128 GB seçeneklerinde Samsung Galaxy A13 128 GB ikinci el fiyatı ve piyasa değeri, hafıza, kondisyon ve cihaz kayıt durumu dikkate alınarak KaçaGider ile ücretsiz hesaplanır."
+seo_h1: "Samsung Galaxy A13 128 GB İkinci El Fiyatı"
+seo_intro: "Samsung Galaxy A13 128 GB için güncel ikinci el değerini, gerçek cihaz bilgileri ve kondisyon ayrıntılarıyla KaçaGider üzerinden inceleyin."
+seo_context_heading: "Samsung Galaxy A13 128 GB için güncel değerleme"
+seo_context: "Samsung Galaxy A13 128 GB değeri; hafıza, kondisyon ve cihaz kayıt durumu ile birlikte güncel piyasa koşullarına göre değişebilir."
 seo_breadcrumbs: [{"label":"Ana Sayfa","url":"/"},{"label":"Telefon","url":"/telefon/"},{"label":"Samsung","url":"/telefon/samsung/"},{"label":"Galaxy A13","url":"/telefon/samsung/galaxy-a13/"},{"label":"128 GB","url":"/telefon/samsung/galaxy-a13/128gb/"}]
-seo_links: [{"label":"Galaxy A13 ana sayfası","url":"/telefon/samsung/galaxy-a13/"},{"label":"64 GB","url":"/telefon/samsung/galaxy-a13/64gb/"}]
-seo_links_heading: "Galaxy A13 diğer seçenekleri"
+seo_links: [{"label":"Telefon değerleme","url":"/telefon/"},{"label":"İkinci el fiyat nasıl hesaplanır?","url":"/ikinci-el-fiyat-nasil-hesaplanir/"},{"label":"Galaxy A13 ana sayfası","url":"/telefon/samsung/galaxy-a13/"},{"label":"64 GB","url":"/telefon/samsung/galaxy-a13/64gb/"}]
+seo_links_heading: "Samsung Galaxy A13 128 GB ilgili sayfalar"
 seo_canonical: "https://kacagider.com.tr/telefon/samsung/galaxy-a13/128gb/"
+seo_cta: {"url":"/telefon/","label":"Telefon değerini hesapla"}
+seo_sections: [{"title":"Samsung Galaxy A13 128 GB Kaça Satılır?","text":"Samsung Galaxy A13 128 GB için tek bir sabit satış fiyatı yoktur. Cihazın kondisyonu, özellikleri ve güncel piyasa koşulları gerçek satış değerini etkiler."},{"title":"Samsung Galaxy A13 128 GB İkinci El Fiyatı","text":"Samsung Galaxy A13 128 GB ikinci el fiyatı, mevcut seçenekler ve cihazın kullanım durumuna göre değerlendirilir. Bu sayfada bulunan seçenekler: 64 GB, 128 GB."},{"title":"Samsung Galaxy A13 128 GB Piyasa Değeri","text":"KaçaGider piyasa değeri, seçilen ürün bilgilerini ve hafıza, kondisyon ve cihaz kayıt durumu ayrıntılarını birlikte değerlendirerek bir başlangıç referansı sunar."},{"title":"Samsung Galaxy A13 128 GB Değeri Nasıl Hesaplanır?","text":"Marka, model, hafıza ve kondisyon bilgilerini değerleme ekranında seçin. Sonuç, cihazın gerçek durumu ile piyasa koşullarına göre değişebilir."}]
+seo_faqs: [{"question":"Samsung Galaxy A13 128 GB ne kadar eder?","answer":"Güncel değeri öğrenmek için Telefon değerleme ekranında model ve cihaz bilgilerini seçin."},{"question":"Samsung Galaxy A13 128 GB kaça satılır?","answer":"Satış değeri; kondisyon, özellikler ve güncel piyasa koşullarına göre değişir."},{"question":"Samsung Galaxy A13 128 GB ikinci el fiyatı nasıl hesaplanır?","answer":"hafıza, kondisyon ve cihaz kayıt durumu bilgileri ve seçilen ürün özellikleri birlikte değerlendirilir."},{"question":"Samsung Galaxy A13 128 GB piyasa değeri neden değişir?","answer":"Piyasa hareketleri, cihaz kondisyonu ve özelliklerdeki farklılıklar değeri etkileyebilir."},{"question":"Samsung Galaxy A13 128 GB hangi seçeneklerle değerlendirilir?","answer":"Bu sayfada kullanılabilen seçenekler: 64 GB, 128 GB."}]
 ---

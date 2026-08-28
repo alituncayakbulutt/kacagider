@@ -27,7 +27,9 @@ function installStyle(){
   document.head.appendChild(style);
 }
 
-function setText(el,text){if(el) el.textContent=text;}
+function setText(el,text){
+  if(el && el.textContent!==text) el.textContent=text;
+}
 
 function wireFreeListing(el){
   if(!el || el.dataset.kgFreeListingWired==='1') return;
@@ -83,7 +85,7 @@ function sync(){
     var second=slides[1];
     var h2=second.querySelector('h2');
     if(h2) h2.innerHTML='Değerini öğren. <span>Doğru fiyata sat.</span>';
-    setText(second.querySelector('p'),'Cihazının güncel tahmini değerini öğren, ücretsiz ilanını oluştur ve alıcını bul.');
+    setText(second.querySelector('p'),'Cihazının güncel piyasa değerini öğren, ücretsiz ilanını oluştur ve alıcını bul.');
     setText(second.querySelector('.kg-market-eyebrow'),'ÜCRETSİZ İLAN');
     var secondButtons=second.querySelectorAll('.kg-market-btn');
     if(secondButtons[0]) setText(secondButtons[0],'Ücretsiz İlan Ver →');
@@ -107,5 +109,4 @@ function boot(){
 
 if(document.readyState==='loading') document.addEventListener('DOMContentLoaded',boot,{once:true});
 else boot();
-new MutationObserver(sync).observe(document.documentElement,{subtree:true,childList:true});
 })();

@@ -1,13 +1,13 @@
 ---
 layout: "seo"
-seo_title: "iPhone Ne Kadar Eder? 2026 İkinci El Fiyatları | KaçaGider"
-seo_description: "iPhone ne kadar eder, kaça satılır? Model, hafıza, pil sağlığı ve cihaz durumuna göre 2026 güncel ikinci el iPhone değerini KaçaGider ile ücretsiz hesapla."
-seo_h1: "iPhone Ne Kadar Eder? 2026 İkinci El Fiyatları"
-seo_intro: "iPhone ne kadar eder veya kaça satılır diye merak ediyorsanız modelinizi seçin. Hafıza, pil sağlığı ve cihaz durumuna göre 2026 güncel tahmini ikinci el değerini ücretsiz hesaplayabilirsiniz."
-seo_context_heading: "iPhone ikinci el değeri nasıl belirlenir?"
-seo_context: "iPhone ikinci el fiyatı; model, depolama kapasitesi, pil sağlığı, ekran ve kasa durumu, Face ID veya Touch ID çalışması ve cihazın onarım geçmişine göre değişir. Aşağıdan iPhone modelinizi seçerek cihazınızın güncel piyasa değerini öğrenebilir ve telefonunuzu yaklaşık kaça satabileceğinizi hesaplayabilirsiniz."
+seo_title: "Apple Telefon İkinci El Fiyatları 2026 | KaçaGider"
+seo_description: "Apple Telefon modellerinin ikinci el değerini Türkiye ikinci el piyasası ve cihaz kondisyonuna göre KaçaGider ile inceleyin."
+seo_h1: "Apple Telefon İkinci El Fiyatları"
+seo_intro: "Apple Telefon modellerinin ikinci el değerini Türkiye ikinci el piyasası ve cihaz kondisyonuna göre KaçaGider ile inceleyin."
+seo_context_heading: "Apple Telefon için ikinci el değerleme"
+seo_context: "Apple Telefon modellerinin ikinci el değerini Türkiye ikinci el piyasası ve cihaz kondisyonuna göre KaçaGider ile inceleyin."
 seo_breadcrumbs: [{"label":"Ana Sayfa","url":"/"},{"label":"Telefon","url":"/telefon/"},{"label":"Apple","url":"/telefon/apple/"}]
 seo_links: [{"label":"iPhone 11","url":"/telefon/apple/iphone-11/"},{"label":"iPhone 11 Pro","url":"/telefon/apple/iphone-11-pro/"},{"label":"iPhone 11 Pro Max","url":"/telefon/apple/iphone-11-pro-max/"},{"label":"iPhone SE (2. nesil)","url":"/telefon/apple/iphone-se-2-nesil/"},{"label":"iPhone 12 mini","url":"/telefon/apple/iphone-12-mini/"},{"label":"iPhone 12","url":"/telefon/apple/iphone-12/"},{"label":"iPhone 12 Pro","url":"/telefon/apple/iphone-12-pro/"},{"label":"iPhone 12 Pro Max","url":"/telefon/apple/iphone-12-pro-max/"},{"label":"iPhone 13 mini","url":"/telefon/apple/iphone-13-mini/"},{"label":"iPhone 13","url":"/telefon/apple/iphone-13/"},{"label":"iPhone 13 Pro","url":"/telefon/apple/iphone-13-pro/"},{"label":"iPhone 13 Pro Max","url":"/telefon/apple/iphone-13-pro-max/"},{"label":"iPhone SE (3. nesil)","url":"/telefon/apple/iphone-se-3-nesil/"},{"label":"iPhone 14","url":"/telefon/apple/iphone-14/"},{"label":"iPhone 14 Plus","url":"/telefon/apple/iphone-14-plus/"},{"label":"iPhone 14 Pro","url":"/telefon/apple/iphone-14-pro/"},{"label":"iPhone 14 Pro Max","url":"/telefon/apple/iphone-14-pro-max/"},{"label":"iPhone 15","url":"/telefon/apple/iphone-15/"},{"label":"iPhone 15 Plus","url":"/telefon/apple/iphone-15-plus/"},{"label":"iPhone 15 Pro","url":"/telefon/apple/iphone-15-pro/"},{"label":"iPhone 15 Pro Max","url":"/telefon/apple/iphone-15-pro-max/"},{"label":"iPhone 16","url":"/telefon/apple/iphone-16/"},{"label":"iPhone 16 Plus","url":"/telefon/apple/iphone-16-plus/"},{"label":"iPhone 16 Pro","url":"/telefon/apple/iphone-16-pro/"},{"label":"iPhone 16 Pro Max","url":"/telefon/apple/iphone-16-pro-max/"},{"label":"iPhone 16e","url":"/telefon/apple/iphone-16e/"},{"label":"iPhone 17","url":"/telefon/apple/iphone-17/"},{"label":"iPhone 17 Pro","url":"/telefon/apple/iphone-17-pro/"},{"label":"iPhone 17 Pro Max","url":"/telefon/apple/iphone-17-pro-max/"},{"label":"iPhone Air","url":"/telefon/apple/iphone-air/"},{"label":"iPhone 17e","url":"/telefon/apple/iphone-17e/"}]
-seo_links_heading: "iPhone modelleri"
+seo_links_heading: "Apple modelleri"
 seo_canonical: "https://kacagider.com.tr/telefon/apple/"
 ---

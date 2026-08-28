@@ -1,15 +1,16 @@
 ---
 layout: "seo"
-seo_title: "Galaxy Watch6 Classic Kaça Satılır? 2026 Fiyatı | KaçaGider"
-seo_description: "Galaxy Watch6 Classic kaça satılır? Kasa, ekran, batarya ve genel cihaz durumuna göre 2026 güncel ikinci el tahmini satış değerini KaçaGider ile ücretsiz hesapla."
-seo_h1: "Galaxy Watch6 Classic Kaça Satılır? 2026 İkinci El Fiyatı"
-seo_intro: "Galaxy Watch6 Classic kaça satılır? 2026 ikinci el değeri; kasa boyutu, ekran, batarya ve genel cihaz durumu gibi özelliklere göre değişir. KaçaGider ile cihazınızın tahmini satış değerini ücretsiz hesaplayabilirsiniz."
-seo_context_heading: "Galaxy Watch6 Classic ikinci el değeri nasıl hesaplanır?"
-seo_context: "Galaxy Watch6 Classic ikinci el fiyatı belirlenirken kasa boyutu, ekran, batarya ve genel cihaz durumu birlikte değerlendirilir. Cihazın kondisyonu ve çalışan özelliklerinin durumu tahmini satış değerini doğrudan etkiler. KaçaGider üzerinden bilgilerinizi seçerek 2026 için güncel tahmini ikinci el satış değerini görebilirsiniz."
+seo_title: "Samsung Galaxy Watch6 Classic Ne Kadar Eder? İkinci El Fiyatı | KaçaGider"
+seo_description: "Samsung Galaxy Watch6 Classic ne kadar eder? 43 mm, 47 mm seçeneklerinde Samsung Galaxy Watch6 Classic ikinci el fiyatı ve piyasa değeri, kasa boyutu ve kondisyon dikkate alınarak KaçaGider ile ücretsiz hesaplanır."
+seo_h1: "Samsung Galaxy Watch6 Classic Ne Kadar Eder?"
+seo_intro: "Samsung Galaxy Watch6 Classic için güncel ikinci el değerini, gerçek cihaz bilgileri ve kondisyon ayrıntılarıyla KaçaGider üzerinden inceleyin."
+seo_context_heading: "Samsung Galaxy Watch6 Classic için güncel değerleme"
+seo_context: "Samsung Galaxy Watch6 Classic değeri; kasa boyutu ve kondisyon ile birlikte güncel piyasa koşullarına göre değişebilir."
 seo_breadcrumbs: [{"label":"Ana Sayfa","url":"/"},{"label":"Akıllı Saat","url":"/akilli-saat/"},{"label":"Samsung","url":"/akilli-saat/samsung/"},{"label":"Galaxy Watch6 Classic","url":"/akilli-saat/samsung/galaxy-watch6-classic/"}]
-seo_links: [{"label":"43 mm","url":"/akilli-saat/samsung/galaxy-watch6-classic/43mm/"},{"label":"47 mm","url":"/akilli-saat/samsung/galaxy-watch6-classic/47mm/"}]
-seo_links_heading: "Galaxy Watch6 Classic seçenekleri"
+seo_links: [{"label":"Akıllı Saat değerleme","url":"/akilli-saat/"},{"label":"İkinci el fiyat nasıl hesaplanır?","url":"/ikinci-el-fiyat-nasil-hesaplanir/"},{"label":"Galaxy Watch4 ikinci el fiyatı","url":"/akilli-saat/samsung/galaxy-watch4/"},{"label":"Galaxy Watch4 Classic ikinci el fiyatı","url":"/akilli-saat/samsung/galaxy-watch4-classic/"},{"label":"Galaxy Watch5 ikinci el fiyatı","url":"/akilli-saat/samsung/galaxy-watch5/"},{"label":"43 mm","url":"/akilli-saat/samsung/galaxy-watch6-classic/43mm/"},{"label":"47 mm","url":"/akilli-saat/samsung/galaxy-watch6-classic/47mm/"}]
+seo_links_heading: "Samsung Galaxy Watch6 Classic ilgili sayfalar"
 seo_canonical: "https://kacagider.com.tr/akilli-saat/samsung/galaxy-watch6-classic/"
-seo_guides_heading: "Galaxy Watch6 Classic ile ilgili sık arananlar"
-seo_guides: [{"label":"Galaxy Watch6 Classic nasıl sıfırlanır?","url":"/rehber/wear-os/galaxy-watch-nasil-sifirlanir/"}]
+seo_cta: {"url":"/akilli-saat/","label":"Akıllı Saat değerini hesapla"}
+seo_sections: [{"title":"Samsung Galaxy Watch6 Classic Kaça Satılır?","text":"Samsung Galaxy Watch6 Classic için tek bir sabit satış fiyatı yoktur. Cihazın kondisyonu, özellikleri ve güncel piyasa koşulları gerçek satış değerini etkiler."},{"title":"Samsung Galaxy Watch6 Classic İkinci El Fiyatı","text":"Samsung Galaxy Watch6 Classic ikinci el fiyatı, mevcut seçenekler ve cihazın kullanım durumuna göre değerlendirilir. Bu sayfada bulunan seçenekler: 43 mm, 47 mm."},{"title":"Samsung Galaxy Watch6 Classic Piyasa Değeri","text":"KaçaGider piyasa değeri, seçilen ürün bilgilerini ve kasa boyutu ve kondisyon ayrıntılarını birlikte değerlendirerek bir başlangıç referansı sunar."},{"title":"Samsung Galaxy Watch6 Classic Değeri Nasıl Hesaplanır?","text":"Marka, model, kasa boyutu ve kondisyon bilgilerini değerleme ekranında seçin. Sonuç, cihazın gerçek durumu ile piyasa koşullarına göre değişebilir."}]
+seo_faqs: [{"question":"Samsung Galaxy Watch6 Classic ne kadar eder?","answer":"Güncel değeri öğrenmek için Akıllı Saat değerleme ekranında model ve cihaz bilgilerini seçin."},{"question":"Samsung Galaxy Watch6 Classic kaça satılır?","answer":"Satış değeri; kondisyon, özellikler ve güncel piyasa koşullarına göre değişir."},{"question":"Samsung Galaxy Watch6 Classic ikinci el fiyatı nasıl hesaplanır?","answer":"kasa boyutu ve kondisyon bilgileri ve seçilen ürün özellikleri birlikte değerlendirilir."},{"question":"Samsung Galaxy Watch6 Classic piyasa değeri neden değişir?","answer":"Piyasa hareketleri, cihaz kondisyonu ve özelliklerdeki farklılıklar değeri etkileyebilir."},{"question":"Samsung Galaxy Watch6 Classic hangi seçeneklerle değerlendirilir?","answer":"Bu sayfada kullanılabilen seçenekler: 43 mm, 47 mm."}]
 ---

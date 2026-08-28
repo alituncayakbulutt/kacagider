@@ -1,15 +1,16 @@
 ---
 layout: "seo"
-seo_title: "Galaxy A52 Kaça Satılır? 2026 İkinci El Fiyatı | KaçaGider"
-seo_description: "Galaxy A52 ikinci el fiyatı Türkiye 2026: hafıza, ekran, batarya ve cihaz durumu dikkate alınarak güncel tahmini satış değerini KaçaGider ile ücretsiz hesapla."
-seo_h1: "Galaxy A52 Kaça Satılır? 2026 İkinci El Fiyatı"
-seo_intro: "Galaxy A52 ikinci el fiyatı Türkiye 2026 ne kadar? Hafıza, ekran, batarya ve cihaz durumu birlikte değerlendirilir. Cihaz bilgilerini seçerek güncel tahmini satış değerini KaçaGider ile ücretsiz öğrenebilirsiniz."
-seo_context_heading: "Galaxy A52 ikinci el değeri nasıl hesaplanır?"
-seo_context: "Galaxy A52 ikinci el fiyatı belirlenirken hafıza, ekran, batarya ve cihaz durumu birlikte değerlendirilir. Cihazın kondisyonu ve çalışan özelliklerinin durumu tahmini satış değerini doğrudan etkiler. KaçaGider üzerinden bilgilerinizi seçerek 2026 için güncel tahmini ikinci el satış değerini görebilirsiniz."
+seo_title: "Samsung Galaxy A52 Ne Kadar Eder? İkinci El Fiyatı | KaçaGider"
+seo_description: "Samsung Galaxy A52 ne kadar eder? 128 GB, 256 GB seçeneklerinde Samsung Galaxy A52 ikinci el fiyatı ve piyasa değeri, hafıza, kondisyon ve cihaz kayıt durumu dikkate alınarak KaçaGider ile ücretsiz hesaplanır."
+seo_h1: "Samsung Galaxy A52 Ne Kadar Eder?"
+seo_intro: "Samsung Galaxy A52 için güncel ikinci el değerini, gerçek cihaz bilgileri ve kondisyon ayrıntılarıyla KaçaGider üzerinden inceleyin."
+seo_context_heading: "Samsung Galaxy A52 için güncel değerleme"
+seo_context: "Samsung Galaxy A52 değeri; hafıza, kondisyon ve cihaz kayıt durumu ile birlikte güncel piyasa koşullarına göre değişebilir."
 seo_breadcrumbs: [{"label":"Ana Sayfa","url":"/"},{"label":"Telefon","url":"/telefon/"},{"label":"Samsung","url":"/telefon/samsung/"},{"label":"Galaxy A52","url":"/telefon/samsung/galaxy-a52/"}]
-seo_links: [{"label":"128 GB","url":"/telefon/samsung/galaxy-a52/128gb/"},{"label":"256 GB","url":"/telefon/samsung/galaxy-a52/256gb/"}]
-seo_links_heading: "Galaxy A52 seçenekleri"
+seo_links: [{"label":"Telefon değerleme","url":"/telefon/"},{"label":"İkinci el fiyat nasıl hesaplanır?","url":"/ikinci-el-fiyat-nasil-hesaplanir/"},{"label":"Galaxy S20 ikinci el fiyatı","url":"/telefon/samsung/galaxy-s20/"},{"label":"Galaxy S20+ ikinci el fiyatı","url":"/telefon/samsung/galaxy-s20-plus/"},{"label":"Galaxy S20 Ultra ikinci el fiyatı","url":"/telefon/samsung/galaxy-s20-ultra/"},{"label":"128 GB","url":"/telefon/samsung/galaxy-a52/128gb/"},{"label":"256 GB","url":"/telefon/samsung/galaxy-a52/256gb/"}]
+seo_links_heading: "Samsung Galaxy A52 ilgili sayfalar"
 seo_canonical: "https://kacagider.com.tr/telefon/samsung/galaxy-a52/"
-seo_guides_heading: "Galaxy A52 ile ilgili sık arananlar"
-seo_guides: [{"label":"Galaxy A52 nasıl sıfırlanır?","url":"/rehber/android/android-telefon-nasil-sifirlanir/"},{"label":"Galaxy A52 ekran görüntüsü nasıl alınır?","url":"/rehber/android/android-ekran-goruntusu-nasil-alinir/"},{"label":"Galaxy A52 IMEI nasıl öğrenilir?","url":"/rehber/android/android-imei-nasil-ogrenilir/"}]
+seo_cta: {"url":"/telefon/","label":"Telefon değerini hesapla"}
+seo_sections: [{"title":"Samsung Galaxy A52 Kaça Satılır?","text":"Samsung Galaxy A52 için tek bir sabit satış fiyatı yoktur. Cihazın kondisyonu, özellikleri ve güncel piyasa koşulları gerçek satış değerini etkiler."},{"title":"Samsung Galaxy A52 İkinci El Fiyatı","text":"Samsung Galaxy A52 ikinci el fiyatı, mevcut seçenekler ve cihazın kullanım durumuna göre değerlendirilir. Bu sayfada bulunan seçenekler: 128 GB, 256 GB."},{"title":"Samsung Galaxy A52 Piyasa Değeri","text":"KaçaGider piyasa değeri, seçilen ürün bilgilerini ve hafıza, kondisyon ve cihaz kayıt durumu ayrıntılarını birlikte değerlendirerek bir başlangıç referansı sunar."},{"title":"Samsung Galaxy A52 Değeri Nasıl Hesaplanır?","text":"Marka, model, hafıza ve kondisyon bilgilerini değerleme ekranında seçin. Sonuç, cihazın gerçek durumu ile piyasa koşullarına göre değişebilir."}]
+seo_faqs: [{"question":"Samsung Galaxy A52 ne kadar eder?","answer":"Güncel değeri öğrenmek için Telefon değerleme ekranında model ve cihaz bilgilerini seçin."},{"question":"Samsung Galaxy A52 kaça satılır?","answer":"Satış değeri; kondisyon, özellikler ve güncel piyasa koşullarına göre değişir."},{"question":"Samsung Galaxy A52 ikinci el fiyatı nasıl hesaplanır?","answer":"hafıza, kondisyon ve cihaz kayıt durumu bilgileri ve seçilen ürün özellikleri birlikte değerlendirilir."},{"question":"Samsung Galaxy A52 piyasa değeri neden değişir?","answer":"Piyasa hareketleri, cihaz kondisyonu ve özelliklerdeki farklılıklar değeri etkileyebilir."},{"question":"Samsung Galaxy A52 hangi seçeneklerle değerlendirilir?","answer":"Bu sayfada kullanılabilen seçenekler: 128 GB, 256 GB."}]
 ---

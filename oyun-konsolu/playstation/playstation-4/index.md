@@ -1,15 +1,16 @@
 ---
 layout: "seo"
-seo_title: "PlayStation 4 Kaça Satılır? 2026 İkinci El Fiyatı | KaçaGider"
-seo_description: "PlayStation 4 kaça satılır? Depolama, kozmetik durum, aksesuarlar ve çalışma durumuna göre 2026 güncel ikinci el tahmini satış değerini KaçaGider ile ücretsiz hesapla."
-seo_h1: "PlayStation 4 Kaça Satılır? 2026 İkinci El Fiyatı"
-seo_intro: "PlayStation 4 kaça satılır? 2026 ikinci el değeri; depolama, kozmetik durum, aksesuarlar ve çalışma durumu gibi özelliklere göre değişir. KaçaGider ile cihazınızın tahmini satış değerini ücretsiz hesaplayabilirsiniz."
-seo_context_heading: "PlayStation 4 ikinci el değeri nasıl hesaplanır?"
-seo_context: "PlayStation 4 ikinci el fiyatı belirlenirken depolama, kozmetik durum, aksesuarlar ve çalışma durumu birlikte değerlendirilir. Cihazın kondisyonu ve çalışan özelliklerinin durumu tahmini satış değerini doğrudan etkiler. KaçaGider üzerinden bilgilerinizi seçerek 2026 için güncel tahmini ikinci el satış değerini görebilirsiniz."
+seo_title: "PlayStation 4 Ne Kadar Eder? Güncel İkinci El Fiyatı | KaçaGider"
+seo_description: "PlayStation 4 ne kadar eder? 500 GB, 1 TB seçeneklerinde PlayStation 4 ikinci el fiyatı ve piyasa değeri, depolama ve kondisyon dikkate alınarak KaçaGider ile ücretsiz hesaplanır."
+seo_h1: "PlayStation 4 Ne Kadar Eder?"
+seo_intro: "PlayStation 4 için güncel ikinci el değerini, gerçek cihaz bilgileri ve kondisyon ayrıntılarıyla KaçaGider üzerinden inceleyin."
+seo_context_heading: "PlayStation 4 için güncel değerleme"
+seo_context: "PlayStation 4 değeri; depolama ve kondisyon ile birlikte güncel piyasa koşullarına göre değişebilir."
 seo_breadcrumbs: [{"label":"Ana Sayfa","url":"/"},{"label":"Oyun Konsolu","url":"/oyun-konsolu/"},{"label":"PlayStation","url":"/oyun-konsolu/playstation/"},{"label":"PlayStation 4","url":"/oyun-konsolu/playstation/playstation-4/"}]
-seo_links: [{"label":"500 GB","url":"/oyun-konsolu/playstation/playstation-4/500gb/"},{"label":"1 TB","url":"/oyun-konsolu/playstation/playstation-4/1tb/"}]
-seo_links_heading: "PlayStation 4 seçenekleri"
+seo_links: [{"label":"Oyun Konsolu değerleme","url":"/oyun-konsolu/"},{"label":"İkinci el fiyat nasıl hesaplanır?","url":"/ikinci-el-fiyat-nasil-hesaplanir/"},{"label":"PlayStation 5 Pro ikinci el fiyatı","url":"/oyun-konsolu/playstation/playstation-5-pro/"},{"label":"PlayStation 5 Slim Diskli ikinci el fiyatı","url":"/oyun-konsolu/playstation/playstation-5-slim-diskli/"},{"label":"PlayStation 5 Slim Digital ikinci el fiyatı","url":"/oyun-konsolu/playstation/playstation-5-slim-digital/"},{"label":"500 GB","url":"/oyun-konsolu/playstation/playstation-4/500gb/"},{"label":"1 TB","url":"/oyun-konsolu/playstation/playstation-4/1tb/"}]
+seo_links_heading: "PlayStation 4 ilgili sayfalar"
 seo_canonical: "https://kacagider.com.tr/oyun-konsolu/playstation/playstation-4/"
-seo_guides_heading: "PlayStation 4 ile ilgili sık arananlar"
-seo_guides: [{"label":"PlayStation 4 nasıl sıfırlanır?","url":"/rehber/playstation/playstation-nasil-sifirlanir/"}]
+seo_cta: {"url":"/oyun-konsolu/","label":"Oyun Konsolu değerini hesapla"}
+seo_sections: [{"title":"PlayStation 4 Kaça Satılır?","text":"PlayStation 4 için tek bir sabit satış fiyatı yoktur. Cihazın kondisyonu, özellikleri ve güncel piyasa koşulları gerçek satış değerini etkiler."},{"title":"PlayStation 4 İkinci El Fiyatı","text":"PlayStation 4 ikinci el fiyatı, mevcut seçenekler ve cihazın kullanım durumuna göre değerlendirilir. Bu sayfada bulunan seçenekler: 500 GB, 1 TB."},{"title":"PlayStation 4 Piyasa Değeri","text":"KaçaGider piyasa değeri, seçilen ürün bilgilerini ve depolama ve kondisyon ayrıntılarını birlikte değerlendirerek bir başlangıç referansı sunar."},{"title":"PlayStation 4 Değeri Nasıl Hesaplanır?","text":"Marka, model, depolama ve kondisyon bilgilerini değerleme ekranında seçin. Sonuç, cihazın gerçek durumu ile piyasa koşullarına göre değişebilir."}]
+seo_faqs: [{"question":"PlayStation 4 ne kadar eder?","answer":"Güncel değeri öğrenmek için Oyun Konsolu değerleme ekranında model ve cihaz bilgilerini seçin."},{"question":"PlayStation 4 kaça satılır?","answer":"Satış değeri; kondisyon, özellikler ve güncel piyasa koşullarına göre değişir."},{"question":"PlayStation 4 ikinci el fiyatı nasıl hesaplanır?","answer":"depolama ve kondisyon bilgileri ve seçilen ürün özellikleri birlikte değerlendirilir."},{"question":"PlayStation 4 piyasa değeri neden değişir?","answer":"Piyasa hareketleri, cihaz kondisyonu ve özelliklerdeki farklılıklar değeri etkileyebilir."},{"question":"PlayStation 4 hangi seçeneklerle değerlendirilir?","answer":"Bu sayfada kullanılabilen seçenekler: 500 GB, 1 TB."}]
 ---

@@ -1,15 +1,16 @@
 ---
 layout: "seo"
-seo_title: "P60 Pro Kaça Satılır? 2026 İkinci El Fiyatı | KaçaGider"
-seo_description: "P60 Pro kaça satılır? Hafıza, ekran, batarya, kamera ve cihaz durumuna göre 2026 güncel ikinci el tahmini satış değerini KaçaGider ile ücretsiz hesapla."
-seo_h1: "P60 Pro Kaça Satılır? 2026 İkinci El Fiyatı"
-seo_intro: "P60 Pro kaça satılır? 2026 ikinci el değeri; hafıza, ekran, batarya, kamera ve cihaz durumu gibi özelliklere göre değişir. KaçaGider ile cihazınızın tahmini satış değerini ücretsiz hesaplayabilirsiniz."
-seo_context_heading: "P60 Pro ikinci el değeri nasıl hesaplanır?"
-seo_context: "P60 Pro ikinci el fiyatı belirlenirken hafıza, ekran, batarya, kamera ve cihaz durumu birlikte değerlendirilir. Cihazın kondisyonu ve çalışan özelliklerinin durumu tahmini satış değerini doğrudan etkiler. KaçaGider üzerinden bilgilerinizi seçerek 2026 için güncel tahmini ikinci el satış değerini görebilirsiniz."
+seo_title: "Huawei P60 Pro Ne Kadar Eder? İkinci El Fiyatı | KaçaGider"
+seo_description: "Huawei P60 Pro ne kadar eder? 256 GB, 512 GB seçeneklerinde Huawei P60 Pro ikinci el fiyatı ve piyasa değeri, hafıza, kondisyon ve cihaz kayıt durumu dikkate alınarak KaçaGider ile ücretsiz hesaplanır."
+seo_h1: "Huawei P60 Pro Ne Kadar Eder?"
+seo_intro: "Huawei P60 Pro için güncel ikinci el değerini, gerçek cihaz bilgileri ve kondisyon ayrıntılarıyla KaçaGider üzerinden inceleyin."
+seo_context_heading: "Huawei P60 Pro için güncel değerleme"
+seo_context: "Huawei P60 Pro değeri; hafıza, kondisyon ve cihaz kayıt durumu ile birlikte güncel piyasa koşullarına göre değişebilir."
 seo_breadcrumbs: [{"label":"Ana Sayfa","url":"/"},{"label":"Telefon","url":"/telefon/"},{"label":"Huawei","url":"/telefon/huawei/"},{"label":"P60 Pro","url":"/telefon/huawei/p60-pro/"}]
-seo_links: [{"label":"256 GB","url":"/telefon/huawei/p60-pro/256gb/"},{"label":"512 GB","url":"/telefon/huawei/p60-pro/512gb/"}]
-seo_links_heading: "P60 Pro seçenekleri"
+seo_links: [{"label":"Telefon değerleme","url":"/telefon/"},{"label":"İkinci el fiyat nasıl hesaplanır?","url":"/ikinci-el-fiyat-nasil-hesaplanir/"},{"label":"P30 ikinci el fiyatı","url":"/telefon/huawei/p30/"},{"label":"P30 Pro ikinci el fiyatı","url":"/telefon/huawei/p30-pro/"},{"label":"P40 ikinci el fiyatı","url":"/telefon/huawei/p40/"},{"label":"256 GB","url":"/telefon/huawei/p60-pro/256gb/"},{"label":"512 GB","url":"/telefon/huawei/p60-pro/512gb/"}]
+seo_links_heading: "Huawei P60 Pro ilgili sayfalar"
 seo_canonical: "https://kacagider.com.tr/telefon/huawei/p60-pro/"
-seo_guides_heading: "P60 Pro ile ilgili sık arananlar"
-seo_guides: [{"label":"P60 Pro nasıl sıfırlanır?","url":"/rehber/android/android-telefon-nasil-sifirlanir/"},{"label":"P60 Pro ekran görüntüsü nasıl alınır?","url":"/rehber/android/android-ekran-goruntusu-nasil-alinir/"},{"label":"P60 Pro IMEI nasıl öğrenilir?","url":"/rehber/android/android-imei-nasil-ogrenilir/"}]
+seo_cta: {"url":"/telefon/","label":"Telefon değerini hesapla"}
+seo_sections: [{"title":"Huawei P60 Pro Kaça Satılır?","text":"Huawei P60 Pro için tek bir sabit satış fiyatı yoktur. Cihazın kondisyonu, özellikleri ve güncel piyasa koşulları gerçek satış değerini etkiler."},{"title":"Huawei P60 Pro İkinci El Fiyatı","text":"Huawei P60 Pro ikinci el fiyatı, mevcut seçenekler ve cihazın kullanım durumuna göre değerlendirilir. Bu sayfada bulunan seçenekler: 256 GB, 512 GB."},{"title":"Huawei P60 Pro Piyasa Değeri","text":"KaçaGider piyasa değeri, seçilen ürün bilgilerini ve hafıza, kondisyon ve cihaz kayıt durumu ayrıntılarını birlikte değerlendirerek bir başlangıç referansı sunar."},{"title":"Huawei P60 Pro Değeri Nasıl Hesaplanır?","text":"Marka, model, hafıza ve kondisyon bilgilerini değerleme ekranında seçin. Sonuç, cihazın gerçek durumu ile piyasa koşullarına göre değişebilir."}]
+seo_faqs: [{"question":"Huawei P60 Pro ne kadar eder?","answer":"Güncel değeri öğrenmek için Telefon değerleme ekranında model ve cihaz bilgilerini seçin."},{"question":"Huawei P60 Pro kaça satılır?","answer":"Satış değeri; kondisyon, özellikler ve güncel piyasa koşullarına göre değişir."},{"question":"Huawei P60 Pro ikinci el fiyatı nasıl hesaplanır?","answer":"hafıza, kondisyon ve cihaz kayıt durumu bilgileri ve seçilen ürün özellikleri birlikte değerlendirilir."},{"question":"Huawei P60 Pro piyasa değeri neden değişir?","answer":"Piyasa hareketleri, cihaz kondisyonu ve özelliklerdeki farklılıklar değeri etkileyebilir."},{"question":"Huawei P60 Pro hangi seçeneklerle değerlendirilir?","answer":"Bu sayfada kullanılabilen seçenekler: 256 GB, 512 GB."}]
 ---

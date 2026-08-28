@@ -1,15 +1,16 @@
 ---
 layout: "seo"
-seo_title: "iPhone 14 Kaça Satılır? 2026 İkinci El Fiyatı | KaçaGider"
-seo_description: "iPhone 14 ne kadar eder, kaça satılır? Hafıza, pil sağlığı, ekran ve cihaz durumuna göre 2026 güncel tahmini ikinci el satış değerini ücretsiz hesapla."
-seo_h1: "iPhone 14 Kaça Satılır? 2026 İkinci El Fiyatı"
-seo_intro: "iPhone 14 ne kadar eder ve kaça satılır? Hafıza, pil sağlığı, ekran ve genel cihaz durumunu seçerek 2026 güncel tahmini ikinci el satış değerini KaçaGider ile ücretsiz öğrenebilirsiniz."
-seo_context_heading: "iPhone 14 ikinci el değeri nasıl hesaplanır?"
-seo_context: "iPhone 14 ikinci el fiyatı belirlenirken hafıza, pil sağlığı, ekran ve genel cihaz durumu birlikte değerlendirilir. Cihazın kondisyonu ve çalışan özelliklerinin durumu tahmini satış değerini doğrudan etkiler. KaçaGider üzerinden bilgilerinizi seçerek 2026 için güncel tahmini ikinci el satış değerini görebilirsiniz."
+seo_title: "Apple iPhone 14 Ne Kadar Eder? İkinci El Fiyatı | KaçaGider"
+seo_description: "Apple iPhone 14 ne kadar eder? 128 GB, 256 GB, 512 GB seçeneklerinde Apple iPhone 14 ikinci el fiyatı ve piyasa değeri, hafıza, kondisyon ve cihaz kayıt durumu dikkate alınarak KaçaGider ile ücretsiz hesaplanır."
+seo_h1: "Apple iPhone 14 Ne Kadar Eder?"
+seo_intro: "Apple iPhone 14 için güncel ikinci el değerini, gerçek cihaz bilgileri ve kondisyon ayrıntılarıyla KaçaGider üzerinden inceleyin."
+seo_context_heading: "Apple iPhone 14 için güncel değerleme"
+seo_context: "Apple iPhone 14 değeri; hafıza, kondisyon ve cihaz kayıt durumu ile birlikte güncel piyasa koşullarına göre değişebilir."
 seo_breadcrumbs: [{"label":"Ana Sayfa","url":"/"},{"label":"Telefon","url":"/telefon/"},{"label":"Apple","url":"/telefon/apple/"},{"label":"iPhone 14","url":"/telefon/apple/iphone-14/"}]
-seo_links: [{"label":"128 GB","url":"/telefon/apple/iphone-14/128gb/"},{"label":"256 GB","url":"/telefon/apple/iphone-14/256gb/"},{"label":"512 GB","url":"/telefon/apple/iphone-14/512gb/"}]
-seo_links_heading: "iPhone 14 seçenekleri"
+seo_links: [{"label":"Telefon değerleme","url":"/telefon/"},{"label":"İkinci el fiyat nasıl hesaplanır?","url":"/ikinci-el-fiyat-nasil-hesaplanir/"},{"label":"iPhone 11 ikinci el fiyatı","url":"/telefon/apple/iphone-11/"},{"label":"iPhone 11 Pro ikinci el fiyatı","url":"/telefon/apple/iphone-11-pro/"},{"label":"iPhone 11 Pro Max ikinci el fiyatı","url":"/telefon/apple/iphone-11-pro-max/"},{"label":"128 GB","url":"/telefon/apple/iphone-14/128gb/"},{"label":"256 GB","url":"/telefon/apple/iphone-14/256gb/"},{"label":"512 GB","url":"/telefon/apple/iphone-14/512gb/"}]
+seo_links_heading: "Apple iPhone 14 ilgili sayfalar"
 seo_canonical: "https://kacagider.com.tr/telefon/apple/iphone-14/"
-seo_guides_heading: "iPhone 14 ile ilgili sık arananlar"
-seo_guides: [{"label":"iPhone 14 nasıl sıfırlanır?","url":"/rehber/ios/iphone-nasil-sifirlanir/"},{"label":"iPhone 14 ekran görüntüsü nasıl alınır?","url":"/rehber/ios/iphone-ekran-goruntusu-nasil-alinir/"},{"label":"iPhone 14 pil sağlığı nasıl kontrol edilir?","url":"/rehber/ios/iphone-pil-sagligi/"}]
+seo_cta: {"url":"/telefon/","label":"Telefon değerini hesapla"}
+seo_sections: [{"title":"Apple iPhone 14 Kaça Satılır?","text":"Apple iPhone 14 için tek bir sabit satış fiyatı yoktur. Cihazın kondisyonu, özellikleri ve güncel piyasa koşulları gerçek satış değerini etkiler."},{"title":"Apple iPhone 14 İkinci El Fiyatı","text":"Apple iPhone 14 ikinci el fiyatı, mevcut seçenekler ve cihazın kullanım durumuna göre değerlendirilir. Bu sayfada bulunan seçenekler: 128 GB, 256 GB, 512 GB."},{"title":"Apple iPhone 14 Piyasa Değeri","text":"KaçaGider piyasa değeri, seçilen ürün bilgilerini ve hafıza, kondisyon ve cihaz kayıt durumu ayrıntılarını birlikte değerlendirerek bir başlangıç referansı sunar."},{"title":"Apple iPhone 14 Değeri Nasıl Hesaplanır?","text":"Marka, model, hafıza ve kondisyon bilgilerini değerleme ekranında seçin. Sonuç, cihazın gerçek durumu ile piyasa koşullarına göre değişebilir."}]
+seo_faqs: [{"question":"Apple iPhone 14 ne kadar eder?","answer":"Güncel değeri öğrenmek için Telefon değerleme ekranında model ve cihaz bilgilerini seçin."},{"question":"Apple iPhone 14 kaça satılır?","answer":"Satış değeri; kondisyon, özellikler ve güncel piyasa koşullarına göre değişir."},{"question":"Apple iPhone 14 ikinci el fiyatı nasıl hesaplanır?","answer":"hafıza, kondisyon ve cihaz kayıt durumu bilgileri ve seçilen ürün özellikleri birlikte değerlendirilir."},{"question":"Apple iPhone 14 piyasa değeri neden değişir?","answer":"Piyasa hareketleri, cihaz kondisyonu ve özelliklerdeki farklılıklar değeri etkileyebilir."},{"question":"Apple iPhone 14 hangi seçeneklerle değerlendirilir?","answer":"Bu sayfada kullanılabilen seçenekler: 128 GB, 256 GB, 512 GB."}]
 ---

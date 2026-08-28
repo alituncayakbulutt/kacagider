@@ -87,9 +87,9 @@ function rebuildHeader(){
 }
 
 var slides=[
-  {eyebrow:'GÜNCEL PİYASA DEĞERİ',title:'Telefonun Kaç Para Eder? <span>Güncel İkinci El Telefon Değerini Öğren</span>',text:'Telefon, tablet, bilgisayar, akıllı saat ve oyun konsolları için güncel piyasa verilerini değerlendirerek ortalama satış değerini öğren.',primary:'Piyasa Değerini Hesapla',secondary:'Ücretsiz İlan Ver',image:'/assets/categories/telefon.jpg',badge:'Üyeliksiz sorgulama',stat1:'Piyasa araştırması',stat2:'Ortalama satış değeri'},
-  {eyebrow:'KAÇAGİDER PAZARYERİ',title:'Değerini öğren. <span>Doğru fiyata sat.</span>',text:'Cihazının güncel piyasa değerini öğren, ücretsiz ilanını oluştur ve alıcını bul.',primary:'Ücretsiz İlan Ver',secondary:'İlanları Gör',image:'/assets/categories/telefon.jpg',badge:'Ücretsiz ilan',stat1:'KaçaGider piyasa değeri',stat2:'Bağımsız piyasa verisi'},
-  {eyebrow:'ŞEFFAF KARŞILAŞTIRMA',title:'İlan fiyatını piyasa değeriyle karşılaştır. <span>Güvenle karar ver.</span>',text:'Satıcının ilan fiyatını KaçaGider piyasa değeriyle yan yana gör. Değerine yakın ilanları daha kolay fark et.',primary:'İlanları İncele',secondary:'Piyasa Değerini Hesapla',image:'/assets/categories/tablet.jpg',badge:'Piyasa değerine yakın',stat1:'Karşılaştırma',stat2:'Piyasa değeri + ilan fiyatı'}
+  {eyebrow:'GÜNCEL PİYASA DEĞERİ',title:'Telefonun Kaç Para Eder? <span>Güncel İkinci El Telefon Değerini Öğren</span>',text:'Telefon, tablet, bilgisayar, akıllı saat ve oyun konsolları için güncel piyasa verilerini değerlendirerek ortalama satış değerini öğren.',primary:'Piyasa Değerini Hesapla',secondary:'Ücretsiz İlan Ver',image:'/assets/categories/latest/telefon-card-v2.png',badge:'Üyeliksiz sorgulama',stat1:'Piyasa araştırması',stat2:'Ortalama satış değeri'},
+  {eyebrow:'KAÇAGİDER PAZARYERİ',title:'Değerini öğren. <span>Doğru fiyata sat.</span>',text:'Cihazının güncel piyasa değerini öğren, ücretsiz ilanını oluştur ve alıcını bul.',primary:'Ücretsiz İlan Ver',secondary:'İlanları Gör',image:'/assets/categories/latest/bilgisayar-card-v2.png',badge:'Ücretsiz ilan',stat1:'KaçaGider piyasa değeri',stat2:'Bağımsız piyasa verisi'},
+  {eyebrow:'ŞEFFAF KARŞILAŞTIRMA',title:'İlan fiyatını piyasa değeriyle karşılaştır. <span>Güvenle karar ver.</span>',text:'Satıcının ilan fiyatını KaçaGider piyasa değeriyle yan yana gör. Değerine yakın ilanları daha kolay fark et.',primary:'İlanları İncele',secondary:'Piyasa Değerini Hesapla',image:'/assets/categories/latest/tablet-card-v2.png',badge:'Piyasa değerine yakın',stat1:'Karşılaştırma',stat2:'Piyasa değeri + ilan fiyatı'}
 ];
 
 function normalizeMarketLanguage(root){
@@ -168,5 +168,4 @@ function boot(){
   setTimeout(function(){rebuildHeader();normalizeMarketLanguage(document);},900);
 }
 if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',boot,{once:true});else boot();
-new MutationObserver(function(){normalizeMarketLanguage(document);}).observe(document.documentElement,{subtree:true,childList:true});
 })();

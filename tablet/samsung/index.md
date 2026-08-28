@@ -1,13 +1,13 @@
 ---
 layout: "seo"
-seo_title: "Samsung Galaxy Tab İkinci El Fiyatları 2026 | KaçaGider"
-seo_description: "Samsung Galaxy Tab ikinci el fiyatı Türkiye 2026: hafıza, ekran, batarya ve cihaz durumu dikkate alınarak güncel tahmini satış değerini KaçaGider ile ücretsiz hesapla."
-seo_h1: "Samsung Galaxy Tab İkinci El Fiyatları"
-seo_intro: "Samsung Galaxy Tab ikinci el fiyatı Türkiye 2026 ne kadar? Hafıza, ekran, batarya ve cihaz durumu birlikte değerlendirilir. Cihaz bilgilerini seçerek güncel tahmini satış değerini KaçaGider ile ücretsiz öğrenebilirsiniz."
-seo_context_heading: "Samsung Galaxy Tab ikinci el değeri nasıl belirlenir?"
-seo_context: "Samsung tablet ikinci el fiyatı; Galaxy Tab modeli, depolama kapasitesi, ekran ve kasa durumu, pil performansı ve cihazın onarım geçmişine göre değişir. Aşağıdan modelinizi seçerek tabletinizi yaklaşık kaça satabileceğinizi hesaplayabilirsiniz."
+seo_title: "Samsung Tablet İkinci El Fiyatları 2026 | KaçaGider"
+seo_description: "Samsung Tablet modellerinin ikinci el değerini Türkiye ikinci el piyasası ve cihaz kondisyonuna göre KaçaGider ile inceleyin."
+seo_h1: "Samsung Tablet İkinci El Fiyatları"
+seo_intro: "Samsung Tablet modellerinin ikinci el değerini Türkiye ikinci el piyasası ve cihaz kondisyonuna göre KaçaGider ile inceleyin."
+seo_context_heading: "Samsung Tablet için ikinci el değerleme"
+seo_context: "Samsung Tablet modellerinin ikinci el değerini Türkiye ikinci el piyasası ve cihaz kondisyonuna göre KaçaGider ile inceleyin."
 seo_breadcrumbs: [{"label":"Ana Sayfa","url":"/"},{"label":"Tablet","url":"/tablet/"},{"label":"Samsung","url":"/tablet/samsung/"}]
 seo_links: [{"label":"Galaxy Tab A7","url":"/tablet/samsung/galaxy-tab-a7/"},{"label":"Galaxy Tab A7 Lite","url":"/tablet/samsung/galaxy-tab-a7-lite/"},{"label":"Galaxy Tab A8","url":"/tablet/samsung/galaxy-tab-a8/"},{"label":"Galaxy Tab A9","url":"/tablet/samsung/galaxy-tab-a9/"},{"label":"Galaxy Tab A9+","url":"/tablet/samsung/galaxy-tab-a9-plus/"},{"label":"Galaxy Tab S6 Lite","url":"/tablet/samsung/galaxy-tab-s6-lite/"},{"label":"Galaxy Tab S7","url":"/tablet/samsung/galaxy-tab-s7/"},{"label":"Galaxy Tab S7+","url":"/tablet/samsung/galaxy-tab-s7-plus/"},{"label":"Galaxy Tab S7 FE","url":"/tablet/samsung/galaxy-tab-s7-fe/"},{"label":"Galaxy Tab S8","url":"/tablet/samsung/galaxy-tab-s8/"},{"label":"Galaxy Tab S8+","url":"/tablet/samsung/galaxy-tab-s8-plus/"},{"label":"Galaxy Tab S8 Ultra","url":"/tablet/samsung/galaxy-tab-s8-ultra/"},{"label":"Galaxy Tab S9","url":"/tablet/samsung/galaxy-tab-s9/"},{"label":"Galaxy Tab S9+","url":"/tablet/samsung/galaxy-tab-s9-plus/"},{"label":"Galaxy Tab S9 Ultra","url":"/tablet/samsung/galaxy-tab-s9-ultra/"},{"label":"Galaxy Tab S9 FE","url":"/tablet/samsung/galaxy-tab-s9-fe/"},{"label":"Galaxy Tab S9 FE+","url":"/tablet/samsung/galaxy-tab-s9-fe-plus/"},{"label":"Galaxy Tab S10+","url":"/tablet/samsung/galaxy-tab-s10-plus/"},{"label":"Galaxy Tab S10 Ultra","url":"/tablet/samsung/galaxy-tab-s10-ultra/"},{"label":"Galaxy Tab S10 FE","url":"/tablet/samsung/galaxy-tab-s10-fe/"},{"label":"Galaxy Tab S10 FE+","url":"/tablet/samsung/galaxy-tab-s10-fe-plus/"},{"label":"Galaxy Tab S11","url":"/tablet/samsung/galaxy-tab-s11/"},{"label":"Galaxy Tab S11 Ultra","url":"/tablet/samsung/galaxy-tab-s11-ultra/"}]
-seo_links_heading: "Samsung Galaxy Tab modelleri"
+seo_links_heading: "Samsung modelleri"
 seo_canonical: "https://kacagider.com.tr/tablet/samsung/"
 ---

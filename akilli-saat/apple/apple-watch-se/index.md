@@ -1,15 +1,16 @@
 ---
 layout: "seo"
-seo_title: "Apple Watch SE Kaça Satılır? 2026 İkinci El Fiyatı | KaçaGider"
-seo_description: "Apple Watch SE kaça satılır? Kasa, ekran, batarya ve genel cihaz durumuna göre 2026 güncel ikinci el tahmini satış değerini KaçaGider ile ücretsiz hesapla."
-seo_h1: "Apple Watch SE Kaça Satılır? 2026 İkinci El Fiyatı"
-seo_intro: "Apple Watch SE kaça satılır? 2026 ikinci el değeri; kasa boyutu, ekran, batarya ve genel cihaz durumu gibi özelliklere göre değişir. KaçaGider ile cihazınızın tahmini satış değerini ücretsiz hesaplayabilirsiniz."
-seo_context_heading: "Apple Watch SE ikinci el değeri nasıl hesaplanır?"
-seo_context: "Apple Watch SE ikinci el fiyatı belirlenirken kasa boyutu, ekran, batarya ve genel cihaz durumu birlikte değerlendirilir. Cihazın kondisyonu ve çalışan özelliklerinin durumu tahmini satış değerini doğrudan etkiler. KaçaGider üzerinden bilgilerinizi seçerek 2026 için güncel tahmini ikinci el satış değerini görebilirsiniz."
+seo_title: "Apple Watch SE Ne Kadar Eder? Güncel İkinci El Fiyatı | KaçaGider"
+seo_description: "Apple Watch SE ne kadar eder? 40 mm, 44 mm seçeneklerinde Apple Watch SE ikinci el fiyatı ve piyasa değeri, kasa boyutu ve kondisyon dikkate alınarak KaçaGider ile ücretsiz hesaplanır."
+seo_h1: "Apple Watch SE Ne Kadar Eder?"
+seo_intro: "Apple Watch SE için güncel ikinci el değerini, gerçek cihaz bilgileri ve kondisyon ayrıntılarıyla KaçaGider üzerinden inceleyin."
+seo_context_heading: "Apple Watch SE için güncel değerleme"
+seo_context: "Apple Watch SE değeri; kasa boyutu ve kondisyon ile birlikte güncel piyasa koşullarına göre değişebilir."
 seo_breadcrumbs: [{"label":"Ana Sayfa","url":"/"},{"label":"Akıllı Saat","url":"/akilli-saat/"},{"label":"Apple","url":"/akilli-saat/apple/"},{"label":"Apple Watch SE","url":"/akilli-saat/apple/apple-watch-se/"}]
-seo_links: [{"label":"40 mm","url":"/akilli-saat/apple/apple-watch-se/40mm/"},{"label":"44 mm","url":"/akilli-saat/apple/apple-watch-se/44mm/"}]
-seo_links_heading: "Apple Watch SE seçenekleri"
+seo_links: [{"label":"Akıllı Saat değerleme","url":"/akilli-saat/"},{"label":"İkinci el fiyat nasıl hesaplanır?","url":"/ikinci-el-fiyat-nasil-hesaplanir/"},{"label":"Apple Watch Series 6 ikinci el fiyatı","url":"/akilli-saat/apple/apple-watch-series-6/"},{"label":"Apple Watch Series 7 ikinci el fiyatı","url":"/akilli-saat/apple/apple-watch-series-7/"},{"label":"Apple Watch Series 8 ikinci el fiyatı","url":"/akilli-saat/apple/apple-watch-series-8/"},{"label":"40 mm","url":"/akilli-saat/apple/apple-watch-se/40mm/"},{"label":"44 mm","url":"/akilli-saat/apple/apple-watch-se/44mm/"}]
+seo_links_heading: "Apple Watch SE ilgili sayfalar"
 seo_canonical: "https://kacagider.com.tr/akilli-saat/apple/apple-watch-se/"
-seo_guides_heading: "Apple Watch SE ile ilgili sık arananlar"
-seo_guides: [{"label":"Apple Watch SE nasıl sıfırlanır?","url":"/rehber/watchos/apple-watch-nasil-sifirlanir/"}]
+seo_cta: {"url":"/akilli-saat/","label":"Akıllı Saat değerini hesapla"}
+seo_sections: [{"title":"Apple Watch SE Kaça Satılır?","text":"Apple Watch SE için tek bir sabit satış fiyatı yoktur. Cihazın kondisyonu, özellikleri ve güncel piyasa koşulları gerçek satış değerini etkiler."},{"title":"Apple Watch SE İkinci El Fiyatı","text":"Apple Watch SE ikinci el fiyatı, mevcut seçenekler ve cihazın kullanım durumuna göre değerlendirilir. Bu sayfada bulunan seçenekler: 40 mm, 44 mm."},{"title":"Apple Watch SE Piyasa Değeri","text":"KaçaGider piyasa değeri, seçilen ürün bilgilerini ve kasa boyutu ve kondisyon ayrıntılarını birlikte değerlendirerek bir başlangıç referansı sunar."},{"title":"Apple Watch SE Değeri Nasıl Hesaplanır?","text":"Marka, model, kasa boyutu ve kondisyon bilgilerini değerleme ekranında seçin. Sonuç, cihazın gerçek durumu ile piyasa koşullarına göre değişebilir."}]
+seo_faqs: [{"question":"Apple Watch SE ne kadar eder?","answer":"Güncel değeri öğrenmek için Akıllı Saat değerleme ekranında model ve cihaz bilgilerini seçin."},{"question":"Apple Watch SE kaça satılır?","answer":"Satış değeri; kondisyon, özellikler ve güncel piyasa koşullarına göre değişir."},{"question":"Apple Watch SE ikinci el fiyatı nasıl hesaplanır?","answer":"kasa boyutu ve kondisyon bilgileri ve seçilen ürün özellikleri birlikte değerlendirilir."},{"question":"Apple Watch SE piyasa değeri neden değişir?","answer":"Piyasa hareketleri, cihaz kondisyonu ve özelliklerdeki farklılıklar değeri etkileyebilir."},{"question":"Apple Watch SE hangi seçeneklerle değerlendirilir?","answer":"Bu sayfada kullanılabilen seçenekler: 40 mm, 44 mm."}]
 ---

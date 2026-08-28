@@ -16,27 +16,27 @@ var GROUP_LABELS={
 
 /* Son hedef görünüm: kırmızı telefon, tek mor iPad, mor MacBook, tek Milanese saat, kutusuz PS5. */
 var LATEST_CATEGORY_IMAGES={
-  phone:"https://img.chilling.tw/images/Haley%20Ting/iphone-18-pro-dark-red-foldable-colors-a1~1.jpg",
-  telefon:"https://img.chilling.tw/images/Haley%20Ting/iphone-18-pro-dark-red-foldable-colors-a1~1.jpg",
-  tablet:"https://drpc.com.co/Tienda/upload/1722.jpg",
-  computer:"https://api.priceinkenya.com/media/130760/conversions/Apple-MacBook-Pro-2023-Series-original.webp",
-  bilgisayar:"https://api.priceinkenya.com/media/130760/conversions/Apple-MacBook-Pro-2023-Series-original.webp",
-  watch:"https://1801889e95b1f9bf.kinxzone.com/webfile/product/17/17892/r89g4co8s2w8.jpeg",
-  "akilli-saat":"https://1801889e95b1f9bf.kinxzone.com/webfile/product/17/17892/r89g4co8s2w8.jpeg",
-  console:"/assets/categories/oyun-konsolu.jpg?v=20260824f",
-  "oyun-konsolu":"/assets/categories/oyun-konsolu.jpg?v=20260824f"
+  phone:"/assets/categories/latest/telefon-card-v2.png",
+  telefon:"/assets/categories/latest/telefon-card-v2.png",
+  tablet:"/assets/categories/latest/tablet-card-v2.png",
+  computer:"/assets/categories/latest/bilgisayar-card-v2.png",
+  bilgisayar:"/assets/categories/latest/bilgisayar-card-v2.png",
+  watch:"/assets/categories/latest/akilli-saat-card-v2.png",
+  "akilli-saat":"/assets/categories/latest/akilli-saat-card-v2.png",
+  console:"/assets/categories/latest/oyun-konsolu-card-v2.png",
+  "oyun-konsolu":"/assets/categories/latest/oyun-konsolu-card-v2.png"
 };
 
 var CATEGORY_FALLBACK_IMAGES={
-  phone:"/assets/categories/latest/telefon-card.webp",
-  telefon:"/assets/categories/latest/telefon-card.webp",
-  tablet:"https://uk.static.webuy.com/product_images/Computing/Apple%20iPad/SAPPA24362TBSPGWIFA_l.jpg",
-  computer:"https://estore.jawwal.ps/storage/product/4968/3CGHOZcn3BlG6UKhFZiabuRcN7q0nqCbpup4hVCs.jpg",
-  bilgisayar:"https://estore.jawwal.ps/storage/product/4968/3CGHOZcn3BlG6UKhFZiabuRcN7q0nqCbpup4hVCs.jpg",
-  watch:"https://www.suritt.com/cdn/shop/files/milanesasilvernueva.jpg",
-  "akilli-saat":"https://www.suritt.com/cdn/shop/files/milanesasilvernueva.jpg",
-  console:"/assets/categories/oyun-konsolu.jpg",
-  "oyun-konsolu":"/assets/categories/oyun-konsolu.jpg"
+  phone:"/assets/categories/latest/telefon-card-v2.png",
+  telefon:"/assets/categories/latest/telefon-card-v2.png",
+  tablet:"/assets/categories/latest/tablet-card-v2.png",
+  computer:"/assets/categories/latest/bilgisayar-card-v2.png",
+  bilgisayar:"/assets/categories/latest/bilgisayar-card-v2.png",
+  watch:"/assets/categories/latest/akilli-saat-card-v2.png",
+  "akilli-saat":"/assets/categories/latest/akilli-saat-card-v2.png",
+  console:"/assets/categories/latest/oyun-konsolu-card-v2.png",
+  "oyun-konsolu":"/assets/categories/latest/oyun-konsolu-card-v2.png"
 };
 
 var CATEGORY_SIZE={
@@ -219,5 +219,4 @@ loadMarketplaceHeader();
 loadMarketplaceSlider();
 if(document.readyState==='loading') document.addEventListener('DOMContentLoaded',syncMarketplaceDetails,{once:true});
 else syncMarketplaceDetails();
-new MutationObserver(syncMarketplaceDetails).observe(document.documentElement,{subtree:true,childList:true});
 })();

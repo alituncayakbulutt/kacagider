@@ -1,13 +1,16 @@
 ---
 layout: "seo"
-seo_title: "Galaxy Z Fold5 1 TB Kaça Satılır? 2026 İkinci El Fiyatı | KaçaGider"
-seo_description: "Galaxy Z Fold5 1 TB kaça satılır? Ekran, batarya ve cihaz durumuna göre 2026 güncel ikinci el tahmini satış değerini KaçaGider ile ücretsiz hesapla."
-seo_h1: "Galaxy Z Fold5 1 TB Kaça Satılır? 2026 İkinci El Fiyatı"
-seo_intro: "Galaxy Z Fold5 1 TB kaça satılır? 2026 ikinci el değeri; ekran, batarya ve cihaz durumu gibi özelliklere göre değişir. KaçaGider ile cihazınızın tahmini satış değerini ücretsiz hesaplayabilirsiniz."
-seo_context_heading: "Galaxy Z Fold5 1 TB ikinci el değeri nasıl hesaplanır?"
-seo_context: "Galaxy Z Fold5 1 TB ikinci el fiyatı belirlenirken ekran, batarya ve cihaz durumu birlikte değerlendirilir. Cihazın kondisyonu ve çalışan özelliklerinin durumu tahmini satış değerini doğrudan etkiler. KaçaGider üzerinden bilgilerinizi seçerek 2026 için güncel tahmini ikinci el satış değerini görebilirsiniz."
+seo_title: "Samsung Galaxy Z Fold5 1 TB Ne Kadar Eder? İkinci El Fiyatı | KaçaGider"
+seo_description: "Samsung Galaxy Z Fold5 1 TB ne kadar eder? 256 GB, 512 GB, 1 TB seçeneklerinde Samsung Galaxy Z Fold5 1 TB ikinci el fiyatı ve piyasa değeri, hafıza, kondisyon ve cihaz kayıt durumu dikkate alınarak KaçaGider ile ücretsiz hesaplanır."
+seo_h1: "Samsung Galaxy Z Fold5 1 TB İkinci El Fiyatı"
+seo_intro: "Samsung Galaxy Z Fold5 1 TB için güncel ikinci el değerini, gerçek cihaz bilgileri ve kondisyon ayrıntılarıyla KaçaGider üzerinden inceleyin."
+seo_context_heading: "Samsung Galaxy Z Fold5 1 TB için güncel değerleme"
+seo_context: "Samsung Galaxy Z Fold5 1 TB değeri; hafıza, kondisyon ve cihaz kayıt durumu ile birlikte güncel piyasa koşullarına göre değişebilir."
 seo_breadcrumbs: [{"label":"Ana Sayfa","url":"/"},{"label":"Telefon","url":"/telefon/"},{"label":"Samsung","url":"/telefon/samsung/"},{"label":"Galaxy Z Fold5","url":"/telefon/samsung/galaxy-z-fold5/"},{"label":"1 TB","url":"/telefon/samsung/galaxy-z-fold5/1tb/"}]
-seo_links: [{"label":"Galaxy Z Fold5 ana sayfası","url":"/telefon/samsung/galaxy-z-fold5/"},{"label":"256 GB","url":"/telefon/samsung/galaxy-z-fold5/256gb/"},{"label":"512 GB","url":"/telefon/samsung/galaxy-z-fold5/512gb/"}]
-seo_links_heading: "Galaxy Z Fold5 diğer seçenekleri"
+seo_links: [{"label":"Telefon değerleme","url":"/telefon/"},{"label":"İkinci el fiyat nasıl hesaplanır?","url":"/ikinci-el-fiyat-nasil-hesaplanir/"},{"label":"Galaxy Z Fold5 ana sayfası","url":"/telefon/samsung/galaxy-z-fold5/"},{"label":"256 GB","url":"/telefon/samsung/galaxy-z-fold5/256gb/"},{"label":"512 GB","url":"/telefon/samsung/galaxy-z-fold5/512gb/"}]
+seo_links_heading: "Samsung Galaxy Z Fold5 1 TB ilgili sayfalar"
 seo_canonical: "https://kacagider.com.tr/telefon/samsung/galaxy-z-fold5/1tb/"
+seo_cta: {"url":"/telefon/","label":"Telefon değerini hesapla"}
+seo_sections: [{"title":"Samsung Galaxy Z Fold5 1 TB Kaça Satılır?","text":"Samsung Galaxy Z Fold5 1 TB için tek bir sabit satış fiyatı yoktur. Cihazın kondisyonu, özellikleri ve güncel piyasa koşulları gerçek satış değerini etkiler."},{"title":"Samsung Galaxy Z Fold5 1 TB İkinci El Fiyatı","text":"Samsung Galaxy Z Fold5 1 TB ikinci el fiyatı, mevcut seçenekler ve cihazın kullanım durumuna göre değerlendirilir. Bu sayfada bulunan seçenekler: 256 GB, 512 GB, 1 TB."},{"title":"Samsung Galaxy Z Fold5 1 TB Piyasa Değeri","text":"KaçaGider piyasa değeri, seçilen ürün bilgilerini ve hafıza, kondisyon ve cihaz kayıt durumu ayrıntılarını birlikte değerlendirerek bir başlangıç referansı sunar."},{"title":"Samsung Galaxy Z Fold5 1 TB Değeri Nasıl Hesaplanır?","text":"Marka, model, hafıza ve kondisyon bilgilerini değerleme ekranında seçin. Sonuç, cihazın gerçek durumu ile piyasa koşullarına göre değişebilir."}]
+seo_faqs: [{"question":"Samsung Galaxy Z Fold5 1 TB ne kadar eder?","answer":"Güncel değeri öğrenmek için Telefon değerleme ekranında model ve cihaz bilgilerini seçin."},{"question":"Samsung Galaxy Z Fold5 1 TB kaça satılır?","answer":"Satış değeri; kondisyon, özellikler ve güncel piyasa koşullarına göre değişir."},{"question":"Samsung Galaxy Z Fold5 1 TB ikinci el fiyatı nasıl hesaplanır?","answer":"hafıza, kondisyon ve cihaz kayıt durumu bilgileri ve seçilen ürün özellikleri birlikte değerlendirilir."},{"question":"Samsung Galaxy Z Fold5 1 TB piyasa değeri neden değişir?","answer":"Piyasa hareketleri, cihaz kondisyonu ve özelliklerdeki farklılıklar değeri etkileyebilir."},{"question":"Samsung Galaxy Z Fold5 1 TB hangi seçeneklerle değerlendirilir?","answer":"Bu sayfada kullanılabilen seçenekler: 256 GB, 512 GB, 1 TB."}]
 ---

@@ -1,13 +1,13 @@
 ---
 layout: "seo"
-seo_title: "iPad İkinci El Fiyatları 2026 | KaçaGider"
-seo_description: "iPad ikinci el fiyatlarını karşılaştırın. iPad, iPad mini, iPad Air ve iPad Pro modellerinin güncel ikinci el değerini KaçaGider ile öğrenin."
-seo_h1: "iPad İkinci El Fiyatları ve Tablet Değeri"
-seo_intro: "iPad'iniz ne kadar eder? Model, depolama kapasitesi ve cihaz durumuna göre Apple iPad'inizin tahmini ikinci el değerini KaçaGider ile öğrenin."
-seo_context_heading: "iPad ikinci el değeri nasıl belirlenir?"
-seo_context: "iPad ikinci el fiyatı; model, depolama kapasitesi, ekran ve kasa durumu, pil performansı, bağlantı tipi ve cihazın onarım geçmişine göre değişir. Aşağıdan iPad modelinizi seçerek tabletinizi yaklaşık kaça satabileceğinizi hesaplayabilirsiniz."
+seo_title: "Apple Tablet İkinci El Fiyatları 2026 | KaçaGider"
+seo_description: "Apple Tablet modellerinin ikinci el değerini Türkiye ikinci el piyasası ve cihaz kondisyonuna göre KaçaGider ile inceleyin."
+seo_h1: "Apple Tablet İkinci El Fiyatları"
+seo_intro: "Apple Tablet modellerinin ikinci el değerini Türkiye ikinci el piyasası ve cihaz kondisyonuna göre KaçaGider ile inceleyin."
+seo_context_heading: "Apple Tablet için ikinci el değerleme"
+seo_context: "Apple Tablet modellerinin ikinci el değerini Türkiye ikinci el piyasası ve cihaz kondisyonuna göre KaçaGider ile inceleyin."
 seo_breadcrumbs: [{"label":"Ana Sayfa","url":"/"},{"label":"Tablet","url":"/tablet/"},{"label":"Apple","url":"/tablet/apple/"}]
 seo_links: [{"label":"iPad (7. nesil)","url":"/tablet/apple/ipad-7-nesil/"},{"label":"iPad (8. nesil)","url":"/tablet/apple/ipad-8-nesil/"},{"label":"iPad (9. nesil)","url":"/tablet/apple/ipad-9-nesil/"},{"label":"iPad (10. nesil)","url":"/tablet/apple/ipad-10-nesil/"},{"label":"iPad (A16)","url":"/tablet/apple/ipad-a16/"},{"label":"iPad mini (5. nesil)","url":"/tablet/apple/ipad-mini-5-nesil/"},{"label":"iPad mini (6. nesil)","url":"/tablet/apple/ipad-mini-6-nesil/"},{"label":"iPad mini (A17 Pro)","url":"/tablet/apple/ipad-mini-a17-pro/"},{"label":"iPad Air (3. nesil)","url":"/tablet/apple/ipad-air-3-nesil/"},{"label":"iPad Air (4. nesil)","url":"/tablet/apple/ipad-air-4-nesil/"},{"label":"iPad Air (5. nesil)","url":"/tablet/apple/ipad-air-5-nesil/"},{"label":"iPad Air 11 inç (M2)","url":"/tablet/apple/ipad-air-11-inc-m2/"},{"label":"iPad Air 13 inç (M2)","url":"/tablet/apple/ipad-air-13-inc-m2/"},{"label":"iPad Air 11 inç (M3)","url":"/tablet/apple/ipad-air-11-inc-m3/"},{"label":"iPad Air 13 inç (M3)","url":"/tablet/apple/ipad-air-13-inc-m3/"},{"label":"iPad Air 11 inç (M4)","url":"/tablet/apple/ipad-air-11-inc-m4/"},{"label":"iPad Air 13 inç (M4)","url":"/tablet/apple/ipad-air-13-inc-m4/"},{"label":"iPad Pro 11 inç (1. nesil)","url":"/tablet/apple/ipad-pro-11-inc-1-nesil/"},{"label":"iPad Pro 11 inç (2. nesil)","url":"/tablet/apple/ipad-pro-11-inc-2-nesil/"},{"label":"iPad Pro 11 inç (3. nesil)","url":"/tablet/apple/ipad-pro-11-inc-3-nesil/"},{"label":"iPad Pro 11 inç (4. nesil)","url":"/tablet/apple/ipad-pro-11-inc-4-nesil/"},{"label":"iPad Pro 11 inç (M4)","url":"/tablet/apple/ipad-pro-11-inc-m4/"},{"label":"iPad Pro 11 inç (M5)","url":"/tablet/apple/ipad-pro-11-inc-m5/"},{"label":"iPad Pro 12.9 inç (3. nesil)","url":"/tablet/apple/ipad-pro-12-9-inc-3-nesil/"},{"label":"iPad Pro 12.9 inç (4. nesil)","url":"/tablet/apple/ipad-pro-12-9-inc-4-nesil/"},{"label":"iPad Pro 12.9 inç (5. nesil)","url":"/tablet/apple/ipad-pro-12-9-inc-5-nesil/"},{"label":"iPad Pro 12.9 inç (6. nesil)","url":"/tablet/apple/ipad-pro-12-9-inc-6-nesil/"},{"label":"iPad Pro 13 inç (M4)","url":"/tablet/apple/ipad-pro-13-inc-m4/"},{"label":"iPad Pro 13 inç (M5)","url":"/tablet/apple/ipad-pro-13-inc-m5/"}]
-seo_links_heading: "iPad modelleri"
+seo_links_heading: "Apple modelleri"
 seo_canonical: "https://kacagider.com.tr/tablet/apple/"
 ---

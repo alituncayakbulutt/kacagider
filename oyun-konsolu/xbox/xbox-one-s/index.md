@@ -1,15 +1,16 @@
 ---
 layout: "seo"
-seo_title: "Xbox One S Kaça Satılır? 2026 İkinci El Fiyatı | KaçaGider"
-seo_description: "Xbox One S ikinci el fiyatı Türkiye 2026: depolama, kozmetik durum, aksesuar ve çalışma durumu dikkate alınarak güncel tahmini satış değerini KaçaGider ile ücretsiz hesapla."
-seo_h1: "Xbox One S Kaça Satılır? 2026 İkinci El Fiyatı"
-seo_intro: "Xbox One S ikinci el fiyatı Türkiye 2026 ne kadar? Depolama, kozmetik durum, aksesuar ve çalışma durumu birlikte değerlendirilir. Cihaz bilgilerini seçerek güncel tahmini satış değerini KaçaGider ile ücretsiz öğrenebilirsiniz."
-seo_context_heading: "Xbox One S ikinci el değeri nasıl hesaplanır?"
-seo_context: "Xbox One S ikinci el fiyatı belirlenirken depolama, kozmetik durum, aksesuarlar ve çalışma durumu birlikte değerlendirilir. Cihazın kondisyonu ve çalışan özelliklerinin durumu tahmini satış değerini doğrudan etkiler. KaçaGider üzerinden bilgilerinizi seçerek 2026 için güncel tahmini ikinci el satış değerini görebilirsiniz."
+seo_title: "Xbox One S Ne Kadar Eder? Güncel İkinci El Fiyatı | KaçaGider"
+seo_description: "Xbox One S ne kadar eder? 500 GB, 1 TB, 2 TB seçeneklerinde Xbox One S ikinci el fiyatı ve piyasa değeri, depolama ve kondisyon dikkate alınarak KaçaGider ile ücretsiz hesaplanır."
+seo_h1: "Xbox One S Ne Kadar Eder?"
+seo_intro: "Xbox One S için güncel ikinci el değerini, gerçek cihaz bilgileri ve kondisyon ayrıntılarıyla KaçaGider üzerinden inceleyin."
+seo_context_heading: "Xbox One S için güncel değerleme"
+seo_context: "Xbox One S değeri; depolama ve kondisyon ile birlikte güncel piyasa koşullarına göre değişebilir."
 seo_breadcrumbs: [{"label":"Ana Sayfa","url":"/"},{"label":"Oyun Konsolu","url":"/oyun-konsolu/"},{"label":"Xbox","url":"/oyun-konsolu/xbox/"},{"label":"Xbox One S","url":"/oyun-konsolu/xbox/xbox-one-s/"}]
-seo_links: [{"label":"500 GB","url":"/oyun-konsolu/xbox/xbox-one-s/500gb/"},{"label":"1 TB","url":"/oyun-konsolu/xbox/xbox-one-s/1tb/"},{"label":"2 TB","url":"/oyun-konsolu/xbox/xbox-one-s/2tb/"}]
-seo_links_heading: "Xbox One S seçenekleri"
+seo_links: [{"label":"Oyun Konsolu değerleme","url":"/oyun-konsolu/"},{"label":"İkinci el fiyat nasıl hesaplanır?","url":"/ikinci-el-fiyat-nasil-hesaplanir/"},{"label":"Xbox Series X 2 TB ikinci el fiyatı","url":"/oyun-konsolu/xbox/xbox-series-x-2-tb/"},{"label":"Xbox Series X 1 TB ikinci el fiyatı","url":"/oyun-konsolu/xbox/xbox-series-x-1-tb/"},{"label":"Xbox Series X 1 TB Digital ikinci el fiyatı","url":"/oyun-konsolu/xbox/xbox-series-x-1-tb-digital/"},{"label":"500 GB","url":"/oyun-konsolu/xbox/xbox-one-s/500gb/"},{"label":"1 TB","url":"/oyun-konsolu/xbox/xbox-one-s/1tb/"},{"label":"2 TB","url":"/oyun-konsolu/xbox/xbox-one-s/2tb/"}]
+seo_links_heading: "Xbox One S ilgili sayfalar"
 seo_canonical: "https://kacagider.com.tr/oyun-konsolu/xbox/xbox-one-s/"
-seo_guides_heading: "Xbox One S ile ilgili sık arananlar"
-seo_guides: [{"label":"Xbox One S nasıl sıfırlanır?","url":"/rehber/xbox/xbox-nasil-sifirlanir/"}]
+seo_cta: {"url":"/oyun-konsolu/","label":"Oyun Konsolu değerini hesapla"}
+seo_sections: [{"title":"Xbox One S Kaça Satılır?","text":"Xbox One S için tek bir sabit satış fiyatı yoktur. Cihazın kondisyonu, özellikleri ve güncel piyasa koşulları gerçek satış değerini etkiler."},{"title":"Xbox One S İkinci El Fiyatı","text":"Xbox One S ikinci el fiyatı, mevcut seçenekler ve cihazın kullanım durumuna göre değerlendirilir. Bu sayfada bulunan seçenekler: 500 GB, 1 TB, 2 TB."},{"title":"Xbox One S Piyasa Değeri","text":"KaçaGider piyasa değeri, seçilen ürün bilgilerini ve depolama ve kondisyon ayrıntılarını birlikte değerlendirerek bir başlangıç referansı sunar."},{"title":"Xbox One S Değeri Nasıl Hesaplanır?","text":"Marka, model, depolama ve kondisyon bilgilerini değerleme ekranında seçin. Sonuç, cihazın gerçek durumu ile piyasa koşullarına göre değişebilir."}]
+seo_faqs: [{"question":"Xbox One S ne kadar eder?","answer":"Güncel değeri öğrenmek için Oyun Konsolu değerleme ekranında model ve cihaz bilgilerini seçin."},{"question":"Xbox One S kaça satılır?","answer":"Satış değeri; kondisyon, özellikler ve güncel piyasa koşullarına göre değişir."},{"question":"Xbox One S ikinci el fiyatı nasıl hesaplanır?","answer":"depolama ve kondisyon bilgileri ve seçilen ürün özellikleri birlikte değerlendirilir."},{"question":"Xbox One S piyasa değeri neden değişir?","answer":"Piyasa hareketleri, cihaz kondisyonu ve özelliklerdeki farklılıklar değeri etkileyebilir."},{"question":"Xbox One S hangi seçeneklerle değerlendirilir?","answer":"Bu sayfada kullanılabilen seçenekler: 500 GB, 1 TB, 2 TB."}]
 ---

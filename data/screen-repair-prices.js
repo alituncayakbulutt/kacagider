@@ -136,7 +136,7 @@
 // query so Codespaces/browser cache cannot keep an older header/slider implementation alive.
 (function(){
   if(window.location.pathname!=="/") return;
-  var V="20260823-2228";
+  var V="20260825-0025";
 
   function add(src,onload){
     var s=document.createElement("script");
@@ -150,7 +150,9 @@
     add("/assets/marketplace-details.js");
     add("/assets/marketplace-home-header.js");
     add("/assets/marketplace-home-slider.js");
+    add("/assets/marketplace-store.js");
     add("/assets/marketplace-test.js");
+    add("/assets/marketplace-production.js");
     add("/assets/marketplace-nav-test.js");
   });
 })();

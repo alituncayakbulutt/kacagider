@@ -1,15 +1,16 @@
 ---
 layout: "seo"
-seo_title: "MacBook Air M4 Kaça Satılır? 2026 İkinci El Fiyatı | KaçaGider"
-seo_description: "MacBook Air M4 kaça satılır? İşlemci, RAM, depolama ve cihaz durumuna göre 2026 güncel ikinci el tahmini satış değerini KaçaGider ile ücretsiz hesapla."
-seo_h1: "MacBook Air M4 Kaça Satılır? 2026 İkinci El Fiyatı"
-seo_intro: "MacBook Air M4 kaça satılır? 2026 ikinci el değeri; işlemci, RAM, depolama, ekran ve genel cihaz durumu gibi özelliklere göre değişir. KaçaGider ile cihazınızın tahmini satış değerini ücretsiz hesaplayabilirsiniz."
-seo_context_heading: "MacBook Air M4 ikinci el değeri nasıl hesaplanır?"
-seo_context: "MacBook Air M4 ikinci el fiyatı belirlenirken işlemci, RAM, depolama, ekran ve genel cihaz durumu birlikte değerlendirilir. Cihazın kondisyonu ve çalışan özelliklerinin durumu tahmini satış değerini doğrudan etkiler. KaçaGider üzerinden bilgilerinizi seçerek 2026 için güncel tahmini ikinci el satış değerini görebilirsiniz."
+seo_title: "Apple MacBook Air M4 Ne Kadar Eder? İkinci El Fiyatı | KaçaGider"
+seo_description: "Apple MacBook Air M4 ne kadar eder? 256 GB, 512 GB, 1 TB, 2 TB seçeneklerinde Apple MacBook Air M4 ikinci el fiyatı ve piyasa değeri, kapasite ve kondisyon dikkate alınarak KaçaGider ile ücretsiz hesaplanır."
+seo_h1: "Apple MacBook Air M4 Ne Kadar Eder?"
+seo_intro: "Apple MacBook Air M4 için güncel ikinci el değerini, gerçek cihaz bilgileri ve kondisyon ayrıntılarıyla KaçaGider üzerinden inceleyin."
+seo_context_heading: "Apple MacBook Air M4 için güncel değerleme"
+seo_context: "Apple MacBook Air M4 değeri; kapasite ve kondisyon ile birlikte güncel piyasa koşullarına göre değişebilir."
 seo_breadcrumbs: [{"label":"Ana Sayfa","url":"/"},{"label":"Bilgisayar","url":"/bilgisayar/"},{"label":"Apple","url":"/bilgisayar/apple/"},{"label":"MacBook Air M4","url":"/bilgisayar/apple/macbook-air-m4/"}]
-seo_links: [{"label":"256 GB","url":"/bilgisayar/apple/macbook-air-m4/256gb/"},{"label":"512 GB","url":"/bilgisayar/apple/macbook-air-m4/512gb/"},{"label":"1 TB","url":"/bilgisayar/apple/macbook-air-m4/1tb/"},{"label":"2 TB","url":"/bilgisayar/apple/macbook-air-m4/2tb/"}]
-seo_links_heading: "MacBook Air M4 seçenekleri"
+seo_links: [{"label":"Bilgisayar değerleme","url":"/bilgisayar/"},{"label":"İkinci el fiyat nasıl hesaplanır?","url":"/ikinci-el-fiyat-nasil-hesaplanir/"},{"label":"MacBook Air M1 ikinci el fiyatı","url":"/bilgisayar/apple/macbook-air-m1/"},{"label":"MacBook Air M2 ikinci el fiyatı","url":"/bilgisayar/apple/macbook-air-m2/"},{"label":"MacBook Air M3 ikinci el fiyatı","url":"/bilgisayar/apple/macbook-air-m3/"},{"label":"256 GB","url":"/bilgisayar/apple/macbook-air-m4/256gb/"},{"label":"512 GB","url":"/bilgisayar/apple/macbook-air-m4/512gb/"},{"label":"1 TB","url":"/bilgisayar/apple/macbook-air-m4/1tb/"},{"label":"2 TB","url":"/bilgisayar/apple/macbook-air-m4/2tb/"}]
+seo_links_heading: "Apple MacBook Air M4 ilgili sayfalar"
 seo_canonical: "https://kacagider.com.tr/bilgisayar/apple/macbook-air-m4/"
-seo_guides_heading: "MacBook Air M4 ile ilgili sık arananlar"
-seo_guides: [{"label":"MacBook Air M4 nasıl sıfırlanır?","url":"/rehber/macos/mac-nasil-sifirlanir/"},{"label":"MacBook Air M4 nasıl yedeklenir?","url":"/rehber/macos/mac-yedekleme/"}]
+seo_cta: {"url":"/bilgisayar/","label":"Bilgisayar değerini hesapla"}
+seo_sections: [{"title":"Apple MacBook Air M4 Kaça Satılır?","text":"Apple MacBook Air M4 için tek bir sabit satış fiyatı yoktur. Cihazın kondisyonu, özellikleri ve güncel piyasa koşulları gerçek satış değerini etkiler."},{"title":"Apple MacBook Air M4 İkinci El Fiyatı","text":"Apple MacBook Air M4 ikinci el fiyatı, mevcut seçenekler ve cihazın kullanım durumuna göre değerlendirilir. Bu sayfada bulunan seçenekler: 256 GB, 512 GB, 1 TB, 2 TB."},{"title":"Apple MacBook Air M4 Piyasa Değeri","text":"KaçaGider piyasa değeri, seçilen ürün bilgilerini ve kapasite ve kondisyon ayrıntılarını birlikte değerlendirerek bir başlangıç referansı sunar."},{"title":"Apple MacBook Air M4 Değeri Nasıl Hesaplanır?","text":"Marka, model, kapasite ve kondisyon bilgilerini değerleme ekranında seçin. Sonuç, cihazın gerçek durumu ile piyasa koşullarına göre değişebilir."}]
+seo_faqs: [{"question":"Apple MacBook Air M4 ne kadar eder?","answer":"Güncel değeri öğrenmek için Bilgisayar değerleme ekranında model ve cihaz bilgilerini seçin."},{"question":"Apple MacBook Air M4 kaça satılır?","answer":"Satış değeri; kondisyon, özellikler ve güncel piyasa koşullarına göre değişir."},{"question":"Apple MacBook Air M4 ikinci el fiyatı nasıl hesaplanır?","answer":"kapasite ve kondisyon bilgileri ve seçilen ürün özellikleri birlikte değerlendirilir."},{"question":"Apple MacBook Air M4 piyasa değeri neden değişir?","answer":"Piyasa hareketleri, cihaz kondisyonu ve özelliklerdeki farklılıklar değeri etkileyebilir."},{"question":"Apple MacBook Air M4 hangi seçeneklerle değerlendirilir?","answer":"Bu sayfada kullanılabilen seçenekler: 256 GB, 512 GB, 1 TB, 2 TB."}]
 ---

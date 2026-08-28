@@ -49,7 +49,80 @@
     }
   };
 
-  const DATA={Apple:APPLE};
+
+  const SAMSUNG={
+    "Galaxy S20":{
+      "Kozmik Gri":"https://images.samsung.com/is/image/samsung/assets/es/smartphones/galaxy-s20/specs/galaxy-s20_specs_design_colors_cosmic-gray.jpg?$684_547_PNG$",
+      "Bulut Mavisi":"https://images.samsung.com/is/image/samsung/assets/es/smartphones/galaxy-s20/specs/galaxy-s20_specs_design_colors_cloud-blue.jpg?$684_547_PNG$",
+      "Bulut Pembesi":"https://images.samsung.com/is/image/samsung/assets/es/smartphones/galaxy-s20/specs/galaxy-s20_specs_design_colors_cloud-pink.jpg?$684_547_PNG$"
+    },
+    "Galaxy S20+":{
+      "Kozmik Siyah":"https://images.samsung.com/is/image/samsung/assets/es/smartphones/galaxy-s20/specs/galaxy-s20-plus_specs_design_colors_cosmic-black.jpg?$684_547_PNG$",
+      "Kozmik Gri":"https://images.samsung.com/is/image/samsung/assets/es/smartphones/galaxy-s20/specs/galaxy-s20-plus_specs_design_colors_cosmic-gray.jpg?$684_547_PNG$",
+      "Bulut Mavisi":"https://images.samsung.com/is/image/samsung/assets/es/smartphones/galaxy-s20/specs/galaxy-s20-plus_specs_design_colors_cloud-blue.jpg?$684_547_PNG$",
+      "Bulut Beyazı":"https://images.samsung.com/is/image/samsung/assets/es/smartphones/galaxy-s20/specs/galaxy-s20-plus_specs_design_colors_cloud-white.jpg?$684_547_PNG$"
+    },
+    "Galaxy S20 Ultra":{
+      "Kozmik Siyah":"https://images.samsung.com/is/image/samsung/assets/es/smartphones/galaxy-s20/specs/galaxy-s20-ultra_specs_design_colors_cosmic-black.jpg?$684_547_PNG$",
+      "Kozmik Gri":"https://images.samsung.com/is/image/samsung/assets/es/smartphones/galaxy-s20/specs/galaxy-s20-ultra_specs_design_colors_cosmic-gray.jpg?$684_547_PNG$"
+    },
+    "Galaxy S20 FE":{
+      "Bulut Laciverti":"https://images.samsung.com/is/image/samsung/assets/es/smartphones/galaxy-s20/specs/galaxy-s20-fe_specs_design_colors_cloud-navy.jpg?$684_547_PNG$",
+      "Bulut Lavantası":"https://images.samsung.com/is/image/samsung/assets/es/smartphones/galaxy-s20/specs/galaxy-s20-fe_specs_design_colors_cloud-lavender.jpg?$684_547_PNG$",
+      "Bulut Nanesi":"https://images.samsung.com/is/image/samsung/assets/es/smartphones/galaxy-s20/specs/galaxy-s20-fe_specs_design_colors_cloud-mint.jpg?$684_547_PNG$",
+      "Bulut Beyazı":"https://images.samsung.com/is/image/samsung/assets/es/smartphones/galaxy-s20/specs/galaxy-s20-fe_specs_design_colors_cloud-white.jpg?$684_547_PNG$",
+      "Bulut Turuncusu":"https://images.samsung.com/is/image/samsung/assets/es/smartphones/galaxy-s20/specs/galaxy-s20-fe_specs_design_colors_cloud-orange.jpg?$684_547_PNG$",
+      "Bulut Kırmızısı":"https://images.samsung.com/is/image/samsung/assets/es/smartphones/galaxy-s20/specs/galaxy-s20-fe_specs_design_colors_cloud-red.jpg?$684_547_PNG$"
+    }
+  };
+
+  const DATA={Apple:APPLE,Samsung:SAMSUNG};
+
+  /*
+   * Marketplace varsayilan gorselleri modelden bagimsizdir:
+   * satici fotografi yoksa her urun kendi kategorisinin ortak ikonunu kullanir.
+   * Satici fotografi yuklendiginde mevcut oncelik nedeniyle ikon devreden cikar.
+   */
+  const CATEGORY_FALLBACKS={
+    "Telefon":"/assets/marketplace/icons/telefon.svg",
+    "Tablet":"/assets/marketplace/icons/tablet.svg",
+    "Bilgisayar":"/assets/marketplace/icons/bilgisayar.svg",
+    "Akıllı Saat":"/assets/marketplace/icons/akilli-saat.svg",
+    "Oyun Konsolu":"/assets/marketplace/icons/oyun-konsolu.svg"
+  };
+
+  const VERIFIED_MODEL_COLORS={
+    Xiaomi:{
+      "Xiaomi 12 Lite":["Siyah","Lite Yeşil","Lite Pembe"]
+    }
+  };
+
+  /*
+   * Exact model kaydi bulunmayan markalarda renk alani bos kalmasin.
+   * Exact DATA / VERIFIED_MODEL_COLORS kayitlari her zaman bu paletlerden once gelir.
+   */
+  const BRAND_COLOR_OPTIONS={
+    Apple:["Siyah","Beyaz","Gri","Gümüş","Mavi","Yeşil","Mor","Pembe","Kırmızı","Sarı","Altın","Diğer"],
+    Samsung:["Siyah","Beyaz","Gri","Gümüş","Mavi","Yeşil","Mor","Pembe","Kırmızı","Altın","Diğer"],
+    Xiaomi:["Siyah","Beyaz","Gri","Gümüş","Mavi","Yeşil","Mor","Pembe","Altın","Diğer"],
+    Oppo:["Siyah","Beyaz","Gri","Gümüş","Mavi","Yeşil","Mor","Altın","Diğer"],
+    Vivo:["Siyah","Beyaz","Gri","Gümüş","Mavi","Yeşil","Mor","Altın","Diğer"],
+    Huawei:["Siyah","Beyaz","Gri","Gümüş","Mavi","Yeşil","Mor","Altın","Diğer"],
+    Honor:["Siyah","Beyaz","Gri","Gümüş","Mavi","Yeşil","Mor","Altın","Diğer"],
+    Realme:["Siyah","Beyaz","Gri","Gümüş","Mavi","Yeşil","Mor","Sarı","Altın","Diğer"],
+    OnePlus:["Siyah","Beyaz","Gri","Gümüş","Mavi","Yeşil","Diğer"],
+    Google:["Siyah","Beyaz","Gri","Mavi","Yeşil","Pembe","Mor","Diğer"]
+  };
+  const GENERIC_COLOR_OPTIONS=["Siyah","Beyaz","Gri","Gümüş","Mavi","Yeşil","Kırmızı","Mor","Pembe","Altın","Diğer"];
+
+  const MODEL_COLOR_ALIASES={
+    Samsung:{
+      "Galaxy S20":{"Gri":"Kozmik Gri","Mavi":"Bulut Mavisi","Pembe":"Bulut Pembesi"},
+      "Galaxy S20+":{"Siyah":"Kozmik Siyah","Gri":"Kozmik Gri","Mavi":"Bulut Mavisi","Beyaz":"Bulut Beyazı"},
+      "Galaxy S20 Ultra":{"Siyah":"Kozmik Siyah","Gri":"Kozmik Gri"},
+      "Galaxy S20 FE":{"Lacivert":"Bulut Laciverti","Mor":"Bulut Lavantası","Yeşil":"Bulut Nanesi","Beyaz":"Bulut Beyazı","Turuncu":"Bulut Turuncusu","Kırmızı":"Bulut Kırmızısı"}
+    }
+  };
 
   const COLOR_ALIASES={
     "space gray":"Gri","space grey":"Gri","uzay grisi":"Gri","grafit":"Gri","graphite":"Gri",
@@ -72,20 +145,46 @@
     return COLOR_ALIASES[key]||raw;
   }
 
-  function getModelImage(brand,model,color){
-    brand=String(brand||"").trim();
-    model=String(model||"").trim();
-    color=normalizeColor(color);
-    const modelData=DATA[brand]&&DATA[brand][model];
-    if(!modelData||!color) return "";
-    return modelData[color]||"";
+  function normalizeCategory(category){
+    const raw=String(category||"").trim();
+    const aliases={
+      "telefon":"Telefon",
+      "phone":"Telefon",
+      "tablet":"Tablet",
+      "bilgisayar":"Bilgisayar",
+      "computer":"Bilgisayar",
+      "akıllı saat":"Akıllı Saat",
+      "akilli saat":"Akıllı Saat",
+      "akilli-saat":"Akıllı Saat",
+      "watch":"Akıllı Saat",
+      "oyun konsolu":"Oyun Konsolu",
+      "oyun-konsolu":"Oyun Konsolu",
+      "console":"Oyun Konsolu"
+    };
+    return aliases[raw.toLocaleLowerCase("tr-TR")]||raw;
+  }
+
+  function getCategoryImage(category){
+    return CATEGORY_FALLBACKS[normalizeCategory(category)]||"";
+  }
+
+  function getModelImage(brand,model,color,category){
+    return getCategoryImage(category);
   }
 
   function getModelColors(brand,model){
     brand=String(brand||"").trim();
     model=String(model||"").trim();
     const modelData=DATA[brand]&&DATA[brand][model];
-    return modelData ? Object.keys(modelData) : [];
+    if(modelData) return Object.keys(modelData);
+    const verified=VERIFIED_MODEL_COLORS[brand]&&VERIFIED_MODEL_COLORS[brand][model];
+    if(verified) return verified.slice();
+    const brandColors=BRAND_COLOR_OPTIONS[brand];
+    return (brandColors||GENERIC_COLOR_OPTIONS).slice();
+  }
+
+  function hasExactModelColors(brand,model){
+    return !!((DATA[brand]&&DATA[brand][model])||(VERIFIED_MODEL_COLORS[brand]&&VERIFIED_MODEL_COLORS[brand][model]));
   }
 
   function selectedText(id){
@@ -105,12 +204,20 @@
   }
 
   function syncListingColorSelect(){
-    const select=document.getElementById("kgColor");
+    let select=document.getElementById("kgColor")||document.getElementById("kgMpColor");
     if(!select||select.dataset.kgRealColors==="1") return;
     const info=currentBrandModel();
     const colors=getModelColors(info.brand,info.model);
     if(!colors.length) return;
     const current=String(select.value||"").trim();
+    if(select.tagName!=="SELECT"){
+      const replacement=document.createElement("select");
+      Array.from(select.attributes).forEach(function(attribute){
+        replacement.setAttribute(attribute.name,attribute.value);
+      });
+      select.replaceWith(replacement);
+      select=replacement;
+    }
     select.innerHTML='<option value="">Renk seçiniz</option>'+colors.map(function(color){return '<option value="'+color+'">'+color+'</option>';}).join('');
     if(colors.indexOf(current)!==-1) select.value=current;
     select.dataset.kgRealColors="1";
@@ -119,17 +226,13 @@
       const note=document.createElement("small");
       note.className="kg-real-color-note";
       note.style.color="#667085";
-      note.textContent="Bu model için yalnızca gerçek üretim renkleri gösterilir.";
+      note.textContent=hasExactModelColors(info.brand,info.model)
+        ? "Bu model için yalnızca doğrulanmış üretim renkleri gösterilir."
+        : "Bu marka için yaygın renk seçenekleri gösterilir; farklı bir renk için Diğer seçeneğini kullanın.";
       field.appendChild(note);
     }
   }
 
-  if(document && document.head && !document.getElementById("kg-model-image-sizing")){
-    const style=document.createElement("style");
-    style.id="kg-model-image-sizing";
-    style.textContent=".card{background:#070a0f!important;border-color:#202938!important;box-shadow:0 12px 30px rgba(7,10,15,.16)!important}.card:hover{border-color:#344054!important;box-shadow:0 16px 38px rgba(7,10,15,.24)!important}.card .body{background:#070a0f!important}.card .title,.card .asking{color:#f8fafc!important}.card .meta,.card .loc,.card .estimate span{color:#98a2b3!important}.card .estimate{border-top-color:#263244!important}.card .estimate strong{color:#22c55e!important}.card .chip{color:#d0d5dd!important;background:#111827!important;border-color:#2b3545!important}.card .detail{background:#111827!important;border:1px solid #2b3545!important}.card .detail:hover{background:#182235!important}.visual{height:300px!important;overflow:hidden!important;background:#090d13!important}.visual img.model-image{width:96%!important;height:96%!important;max-width:none!important;max-height:none!important;object-fit:contain!important;object-position:center center!important;padding:0!important;margin:auto!important;transform:none!important;background:#090d13!important}.placeholder{background:#090d13!important;color:#e5e7eb!important}@media(max-width:540px){.visual{height:315px!important}.visual img.model-image{width:95%!important;height:95%!important}}";
-    document.head.appendChild(style);
-  }
 
   if(document){
     if(document.readyState==="loading") document.addEventListener("DOMContentLoaded",syncListingColorSelect,{once:true});
@@ -138,14 +241,9 @@
   }
 
   global.KG_MODEL_IMAGE_DATA=DATA;
+  global.KG_CATEGORY_IMAGE_DATA=CATEGORY_FALLBACKS;
   global.getKgModelImage=getModelImage;
+  global.getKgCategoryImage=getCategoryImage;
   global.getKgModelColors=getModelColors;
 
-  if(window.location.pathname==="/" && !document.getElementById("kgHeroSliderSyncScript")){
-    const sync=document.createElement("script");
-    sync.id="kgHeroSliderSyncScript";
-    sync.src="/assets/marketplace-hero-slider-sync.js?v=1";
-    sync.defer=true;
-    document.head.appendChild(sync);
-  }
 })(window);

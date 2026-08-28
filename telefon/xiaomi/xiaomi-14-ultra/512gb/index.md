@@ -1,13 +1,16 @@
 ---
 layout: "seo"
-seo_title: "Xiaomi 14 Ultra 512 GB Kaça Satılır? 2026 Fiyatı | KaçaGider"
-seo_description: "Xiaomi 14 Ultra 512 GB kaça satılır? Ekran, batarya ve cihaz durumuna göre 2026 güncel ikinci el tahmini satış değerini KaçaGider ile ücretsiz hesapla."
-seo_h1: "Xiaomi 14 Ultra 512 GB Kaça Satılır? 2026 İkinci El Fiyatı"
-seo_intro: "Xiaomi 14 Ultra 512 GB kaça satılır? 2026 ikinci el değeri; ekran, batarya ve cihaz durumu gibi özelliklere göre değişir. KaçaGider ile cihazınızın tahmini satış değerini ücretsiz hesaplayabilirsiniz."
-seo_context_heading: "Xiaomi 14 Ultra 512 GB ikinci el değeri nasıl hesaplanır?"
-seo_context: "Xiaomi 14 Ultra 512 GB ikinci el fiyatı belirlenirken ekran, batarya ve cihaz durumu birlikte değerlendirilir. Cihazın kondisyonu ve çalışan özelliklerinin durumu tahmini satış değerini doğrudan etkiler. KaçaGider üzerinden bilgilerinizi seçerek 2026 için güncel tahmini ikinci el satış değerini görebilirsiniz."
+seo_title: "Xiaomi 14 Ultra 512 GB Ne Kadar Eder? Güncel İkinci El Fiyatı | KaçaGider"
+seo_description: "Xiaomi 14 Ultra 512 GB ne kadar eder? 512 GB seçeneklerinde Xiaomi 14 Ultra 512 GB ikinci el fiyatı ve piyasa değeri, hafıza, kondisyon ve cihaz kayıt durumu dikkate alınarak KaçaGider ile ücretsiz hesaplanır."
+seo_h1: "Xiaomi 14 Ultra 512 GB İkinci El Fiyatı"
+seo_intro: "Xiaomi 14 Ultra 512 GB için güncel ikinci el değerini, gerçek cihaz bilgileri ve kondisyon ayrıntılarıyla KaçaGider üzerinden inceleyin."
+seo_context_heading: "Xiaomi 14 Ultra 512 GB için güncel değerleme"
+seo_context: "Xiaomi 14 Ultra 512 GB değeri; hafıza, kondisyon ve cihaz kayıt durumu ile birlikte güncel piyasa koşullarına göre değişebilir."
 seo_breadcrumbs: [{"label":"Ana Sayfa","url":"/"},{"label":"Telefon","url":"/telefon/"},{"label":"Xiaomi","url":"/telefon/xiaomi/"},{"label":"Xiaomi 14 Ultra","url":"/telefon/xiaomi/xiaomi-14-ultra/"},{"label":"512 GB","url":"/telefon/xiaomi/xiaomi-14-ultra/512gb/"}]
-seo_links: [{"label":"Xiaomi 14 Ultra ana sayfası","url":"/telefon/xiaomi/xiaomi-14-ultra/"}]
-seo_links_heading: "Xiaomi 14 Ultra diğer seçenekleri"
+seo_links: [{"label":"Telefon değerleme","url":"/telefon/"},{"label":"İkinci el fiyat nasıl hesaplanır?","url":"/ikinci-el-fiyat-nasil-hesaplanir/"},{"label":"Xiaomi 14 Ultra ana sayfası","url":"/telefon/xiaomi/xiaomi-14-ultra/"}]
+seo_links_heading: "Xiaomi 14 Ultra 512 GB ilgili sayfalar"
 seo_canonical: "https://kacagider.com.tr/telefon/xiaomi/xiaomi-14-ultra/512gb/"
+seo_cta: {"url":"/telefon/","label":"Telefon değerini hesapla"}
+seo_sections: [{"title":"Xiaomi 14 Ultra 512 GB Kaça Satılır?","text":"Xiaomi 14 Ultra 512 GB için tek bir sabit satış fiyatı yoktur. Cihazın kondisyonu, özellikleri ve güncel piyasa koşulları gerçek satış değerini etkiler."},{"title":"Xiaomi 14 Ultra 512 GB İkinci El Fiyatı","text":"Xiaomi 14 Ultra 512 GB ikinci el fiyatı, mevcut seçenekler ve cihazın kullanım durumuna göre değerlendirilir. Bu sayfada bulunan seçenekler: 512 GB."},{"title":"Xiaomi 14 Ultra 512 GB Piyasa Değeri","text":"KaçaGider piyasa değeri, seçilen ürün bilgilerini ve hafıza, kondisyon ve cihaz kayıt durumu ayrıntılarını birlikte değerlendirerek bir başlangıç referansı sunar."},{"title":"Xiaomi 14 Ultra 512 GB Değeri Nasıl Hesaplanır?","text":"Marka, model, hafıza ve kondisyon bilgilerini değerleme ekranında seçin. Sonuç, cihazın gerçek durumu ile piyasa koşullarına göre değişebilir."}]
+seo_faqs: [{"question":"Xiaomi 14 Ultra 512 GB ne kadar eder?","answer":"Güncel değeri öğrenmek için Telefon değerleme ekranında model ve cihaz bilgilerini seçin."},{"question":"Xiaomi 14 Ultra 512 GB kaça satılır?","answer":"Satış değeri; kondisyon, özellikler ve güncel piyasa koşullarına göre değişir."},{"question":"Xiaomi 14 Ultra 512 GB ikinci el fiyatı nasıl hesaplanır?","answer":"hafıza, kondisyon ve cihaz kayıt durumu bilgileri ve seçilen ürün özellikleri birlikte değerlendirilir."},{"question":"Xiaomi 14 Ultra 512 GB piyasa değeri neden değişir?","answer":"Piyasa hareketleri, cihaz kondisyonu ve özelliklerdeki farklılıklar değeri etkileyebilir."},{"question":"Xiaomi 14 Ultra 512 GB hangi seçeneklerle değerlendirilir?","answer":"Bu sayfada kullanılabilen seçenekler: 512 GB."}]
 ---

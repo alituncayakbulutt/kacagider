@@ -1,15 +1,16 @@
 ---
 layout: "seo"
-seo_title: "X7 Kaça Satılır? 2026 İkinci El Fiyatı | KaçaGider"
-seo_description: "X7 ikinci el fiyatı Türkiye 2026: hafıza, ekran, batarya ve cihaz durumu dikkate alınarak güncel tahmini satış değerini KaçaGider ile ücretsiz hesapla."
-seo_h1: "X7 Kaça Satılır? 2026 İkinci El Fiyatı"
-seo_intro: "X7 ikinci el fiyatı Türkiye 2026 ne kadar? Hafıza, ekran, batarya ve cihaz durumu birlikte değerlendirilir. Cihaz bilgilerini seçerek güncel tahmini satış değerini KaçaGider ile ücretsiz öğrenebilirsiniz."
-seo_context_heading: "X7 ikinci el değeri nasıl hesaplanır?"
-seo_context: "X7 ikinci el fiyatı belirlenirken hafıza, ekran, batarya, kamera ve cihaz durumu birlikte değerlendirilir. Cihazın kondisyonu ve çalışan özelliklerinin durumu tahmini satış değerini doğrudan etkiler. KaçaGider üzerinden bilgilerinizi seçerek 2026 için güncel tahmini ikinci el satış değerini görebilirsiniz."
+seo_title: "Honor X7 Ne Kadar Eder? İkinci El Fiyatı | KaçaGider"
+seo_description: "Honor X7 ne kadar eder? 128 GB seçeneklerinde Honor X7 ikinci el fiyatı ve piyasa değeri, hafıza, kondisyon ve cihaz kayıt durumu dikkate alınarak KaçaGider ile ücretsiz hesaplanır."
+seo_h1: "Honor X7 Ne Kadar Eder?"
+seo_intro: "Honor X7 için güncel ikinci el değerini, gerçek cihaz bilgileri ve kondisyon ayrıntılarıyla KaçaGider üzerinden inceleyin."
+seo_context_heading: "Honor X7 için güncel değerleme"
+seo_context: "Honor X7 değeri; hafıza, kondisyon ve cihaz kayıt durumu ile birlikte güncel piyasa koşullarına göre değişebilir."
 seo_breadcrumbs: [{"label":"Ana Sayfa","url":"/"},{"label":"Telefon","url":"/telefon/"},{"label":"Honor","url":"/telefon/honor/"},{"label":"X7","url":"/telefon/honor/x7/"}]
-seo_links: [{"label":"128 GB","url":"/telefon/honor/x7/128gb/"}]
-seo_links_heading: "X7 seçenekleri"
+seo_links: [{"label":"Telefon değerleme","url":"/telefon/"},{"label":"İkinci el fiyat nasıl hesaplanır?","url":"/ikinci-el-fiyat-nasil-hesaplanir/"},{"label":"Honor 50 ikinci el fiyatı","url":"/telefon/honor/honor-50/"},{"label":"Honor 70 ikinci el fiyatı","url":"/telefon/honor/honor-70/"},{"label":"Honor 90 ikinci el fiyatı","url":"/telefon/honor/honor-90/"},{"label":"128 GB","url":"/telefon/honor/x7/128gb/"}]
+seo_links_heading: "Honor X7 ilgili sayfalar"
 seo_canonical: "https://kacagider.com.tr/telefon/honor/x7/"
-seo_guides_heading: "X7 ile ilgili sık arananlar"
-seo_guides: [{"label":"X7 nasıl sıfırlanır?","url":"/rehber/android/android-telefon-nasil-sifirlanir/"},{"label":"X7 ekran görüntüsü nasıl alınır?","url":"/rehber/android/android-ekran-goruntusu-nasil-alinir/"},{"label":"X7 IMEI nasıl öğrenilir?","url":"/rehber/android/android-imei-nasil-ogrenilir/"}]
+seo_cta: {"url":"/telefon/","label":"Telefon değerini hesapla"}
+seo_sections: [{"title":"Honor X7 Kaça Satılır?","text":"Honor X7 için tek bir sabit satış fiyatı yoktur. Cihazın kondisyonu, özellikleri ve güncel piyasa koşulları gerçek satış değerini etkiler."},{"title":"Honor X7 İkinci El Fiyatı","text":"Honor X7 ikinci el fiyatı, mevcut seçenekler ve cihazın kullanım durumuna göre değerlendirilir. Bu sayfada bulunan seçenekler: 128 GB."},{"title":"Honor X7 Piyasa Değeri","text":"KaçaGider piyasa değeri, seçilen ürün bilgilerini ve hafıza, kondisyon ve cihaz kayıt durumu ayrıntılarını birlikte değerlendirerek bir başlangıç referansı sunar."},{"title":"Honor X7 Değeri Nasıl Hesaplanır?","text":"Marka, model, hafıza ve kondisyon bilgilerini değerleme ekranında seçin. Sonuç, cihazın gerçek durumu ile piyasa koşullarına göre değişebilir."}]
+seo_faqs: [{"question":"Honor X7 ne kadar eder?","answer":"Güncel değeri öğrenmek için Telefon değerleme ekranında model ve cihaz bilgilerini seçin."},{"question":"Honor X7 kaça satılır?","answer":"Satış değeri; kondisyon, özellikler ve güncel piyasa koşullarına göre değişir."},{"question":"Honor X7 ikinci el fiyatı nasıl hesaplanır?","answer":"hafıza, kondisyon ve cihaz kayıt durumu bilgileri ve seçilen ürün özellikleri birlikte değerlendirilir."},{"question":"Honor X7 piyasa değeri neden değişir?","answer":"Piyasa hareketleri, cihaz kondisyonu ve özelliklerdeki farklılıklar değeri etkileyebilir."},{"question":"Honor X7 hangi seçeneklerle değerlendirilir?","answer":"Bu sayfada kullanılabilen seçenekler: 128 GB."}]
 ---

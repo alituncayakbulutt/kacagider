@@ -1,13 +1,16 @@
 ---
 layout: "seo"
-seo_title: "X300 Pro 512 GB Kaça Satılır? 2026 İkinci El Fiyatı | KaçaGider"
-seo_description: "X300 Pro 512 GB kaça satılır? Ekran, batarya, kamera ve cihaz durumuna göre 2026 güncel ikinci el tahmini satış değerini KaçaGider ile ücretsiz hesapla."
-seo_h1: "X300 Pro 512 GB Kaça Satılır? 2026 İkinci El Fiyatı"
-seo_intro: "X300 Pro 512 GB kaça satılır? 2026 ikinci el değeri; ekran, batarya, kamera ve cihaz durumu gibi özelliklere göre değişir. KaçaGider ile cihazınızın tahmini satış değerini ücretsiz hesaplayabilirsiniz."
-seo_context_heading: "X300 Pro 512 GB ikinci el değeri nasıl hesaplanır?"
-seo_context: "X300 Pro 512 GB ikinci el fiyatı belirlenirken ekran, batarya, kamera ve cihaz durumu birlikte değerlendirilir. Cihazın kondisyonu ve çalışan özelliklerinin durumu tahmini satış değerini doğrudan etkiler. KaçaGider üzerinden bilgilerinizi seçerek 2026 için güncel tahmini ikinci el satış değerini görebilirsiniz."
+seo_title: "Vivo X300 Pro 512 GB Ne Kadar Eder? İkinci El Fiyatı | KaçaGider"
+seo_description: "Vivo X300 Pro 512 GB ne kadar eder? 512 GB seçeneklerinde Vivo X300 Pro 512 GB ikinci el fiyatı ve piyasa değeri, hafıza, kondisyon ve cihaz kayıt durumu dikkate alınarak KaçaGider ile ücretsiz hesaplanır."
+seo_h1: "Vivo X300 Pro 512 GB İkinci El Fiyatı"
+seo_intro: "Vivo X300 Pro 512 GB için güncel ikinci el değerini, gerçek cihaz bilgileri ve kondisyon ayrıntılarıyla KaçaGider üzerinden inceleyin."
+seo_context_heading: "Vivo X300 Pro 512 GB için güncel değerleme"
+seo_context: "Vivo X300 Pro 512 GB değeri; hafıza, kondisyon ve cihaz kayıt durumu ile birlikte güncel piyasa koşullarına göre değişebilir."
 seo_breadcrumbs: [{"label":"Ana Sayfa","url":"/"},{"label":"Telefon","url":"/telefon/"},{"label":"Vivo","url":"/telefon/vivo/"},{"label":"X300 Pro","url":"/telefon/vivo/x300-pro/"},{"label":"512 GB","url":"/telefon/vivo/x300-pro/512gb/"}]
-seo_links: [{"label":"X300 Pro ana sayfası","url":"/telefon/vivo/x300-pro/"}]
-seo_links_heading: "X300 Pro diğer seçenekleri"
+seo_links: [{"label":"Telefon değerleme","url":"/telefon/"},{"label":"İkinci el fiyat nasıl hesaplanır?","url":"/ikinci-el-fiyat-nasil-hesaplanir/"},{"label":"X300 Pro ana sayfası","url":"/telefon/vivo/x300-pro/"}]
+seo_links_heading: "Vivo X300 Pro 512 GB ilgili sayfalar"
 seo_canonical: "https://kacagider.com.tr/telefon/vivo/x300-pro/512gb/"
+seo_cta: {"url":"/telefon/","label":"Telefon değerini hesapla"}
+seo_sections: [{"title":"Vivo X300 Pro 512 GB Kaça Satılır?","text":"Vivo X300 Pro 512 GB için tek bir sabit satış fiyatı yoktur. Cihazın kondisyonu, özellikleri ve güncel piyasa koşulları gerçek satış değerini etkiler."},{"title":"Vivo X300 Pro 512 GB İkinci El Fiyatı","text":"Vivo X300 Pro 512 GB ikinci el fiyatı, mevcut seçenekler ve cihazın kullanım durumuna göre değerlendirilir. Bu sayfada bulunan seçenekler: 512 GB."},{"title":"Vivo X300 Pro 512 GB Piyasa Değeri","text":"KaçaGider piyasa değeri, seçilen ürün bilgilerini ve hafıza, kondisyon ve cihaz kayıt durumu ayrıntılarını birlikte değerlendirerek bir başlangıç referansı sunar."},{"title":"Vivo X300 Pro 512 GB Değeri Nasıl Hesaplanır?","text":"Marka, model, hafıza ve kondisyon bilgilerini değerleme ekranında seçin. Sonuç, cihazın gerçek durumu ile piyasa koşullarına göre değişebilir."}]
+seo_faqs: [{"question":"Vivo X300 Pro 512 GB ne kadar eder?","answer":"Güncel değeri öğrenmek için Telefon değerleme ekranında model ve cihaz bilgilerini seçin."},{"question":"Vivo X300 Pro 512 GB kaça satılır?","answer":"Satış değeri; kondisyon, özellikler ve güncel piyasa koşullarına göre değişir."},{"question":"Vivo X300 Pro 512 GB ikinci el fiyatı nasıl hesaplanır?","answer":"hafıza, kondisyon ve cihaz kayıt durumu bilgileri ve seçilen ürün özellikleri birlikte değerlendirilir."},{"question":"Vivo X300 Pro 512 GB piyasa değeri neden değişir?","answer":"Piyasa hareketleri, cihaz kondisyonu ve özelliklerdeki farklılıklar değeri etkileyebilir."},{"question":"Vivo X300 Pro 512 GB hangi seçeneklerle değerlendirilir?","answer":"Bu sayfada kullanılabilen seçenekler: 512 GB."}]
 ---

@@ -1,15 +1,16 @@
 ---
 layout: "seo"
-seo_title: "MatePad SE 10.4 Kaça Satılır? 2026 İkinci El Fiyatı | KaçaGider"
-seo_description: "MatePad SE 10.4 kaça satılır? Hafıza, ekran, batarya ve cihaz durumuna göre 2026 güncel ikinci el tahmini satış değerini KaçaGider ile ücretsiz hesapla."
-seo_h1: "MatePad SE 10.4 Kaça Satılır? 2026 İkinci El Fiyatı"
-seo_intro: "MatePad SE 10.4 kaça satılır? 2026 ikinci el değeri; hafıza, ekran, batarya ve cihaz durumu gibi özelliklere göre değişir. KaçaGider ile cihazınızın tahmini satış değerini ücretsiz hesaplayabilirsiniz."
-seo_context_heading: "MatePad SE 10.4 ikinci el değeri nasıl hesaplanır?"
-seo_context: "MatePad SE 10.4 ikinci el fiyatı belirlenirken hafıza, ekran, batarya ve cihaz durumu birlikte değerlendirilir. Cihazın kondisyonu ve çalışan özelliklerinin durumu tahmini satış değerini doğrudan etkiler. KaçaGider üzerinden bilgilerinizi seçerek 2026 için güncel tahmini ikinci el satış değerini görebilirsiniz."
+seo_title: "Huawei MatePad SE 10.4 Ne Kadar Eder? İkinci El Fiyatı | KaçaGider"
+seo_description: "Huawei MatePad SE 10.4 ne kadar eder? 32 GB, 64 GB seçeneklerinde Huawei MatePad SE 10.4 ikinci el fiyatı ve piyasa değeri, kapasite ve kondisyon dikkate alınarak KaçaGider ile ücretsiz hesaplanır."
+seo_h1: "Huawei MatePad SE 10.4 Ne Kadar Eder?"
+seo_intro: "Huawei MatePad SE 10.4 için güncel ikinci el değerini, gerçek cihaz bilgileri ve kondisyon ayrıntılarıyla KaçaGider üzerinden inceleyin."
+seo_context_heading: "Huawei MatePad SE 10.4 için güncel değerleme"
+seo_context: "Huawei MatePad SE 10.4 değeri; kapasite ve kondisyon ile birlikte güncel piyasa koşullarına göre değişebilir."
 seo_breadcrumbs: [{"label":"Ana Sayfa","url":"/"},{"label":"Tablet","url":"/tablet/"},{"label":"Huawei","url":"/tablet/huawei/"},{"label":"MatePad SE 10.4","url":"/tablet/huawei/matepad-se-10-4/"}]
-seo_links: [{"label":"32 GB","url":"/tablet/huawei/matepad-se-10-4/32gb/"},{"label":"64 GB","url":"/tablet/huawei/matepad-se-10-4/64gb/"}]
-seo_links_heading: "MatePad SE 10.4 seçenekleri"
+seo_links: [{"label":"Tablet değerleme","url":"/tablet/"},{"label":"İkinci el fiyat nasıl hesaplanır?","url":"/ikinci-el-fiyat-nasil-hesaplanir/"},{"label":"MatePad 10.4 ikinci el fiyatı","url":"/tablet/huawei/matepad-10-4/"},{"label":"MatePad 11 ikinci el fiyatı","url":"/tablet/huawei/matepad-11/"},{"label":"MatePad 11.5 ikinci el fiyatı","url":"/tablet/huawei/matepad-11-5/"},{"label":"32 GB","url":"/tablet/huawei/matepad-se-10-4/32gb/"},{"label":"64 GB","url":"/tablet/huawei/matepad-se-10-4/64gb/"}]
+seo_links_heading: "Huawei MatePad SE 10.4 ilgili sayfalar"
 seo_canonical: "https://kacagider.com.tr/tablet/huawei/matepad-se-10-4/"
-seo_guides_heading: "MatePad SE 10.4 ile ilgili sık arananlar"
-seo_guides: [{"label":"MatePad SE 10.4 nasıl sıfırlanır?","url":"/rehber/android/android-tablet-nasil-sifirlanir/"},{"label":"MatePad SE 10.4 ekran görüntüsü nasıl alınır?","url":"/rehber/android/android-tablet-ekran-goruntusu/"}]
+seo_cta: {"url":"/tablet/","label":"Tablet değerini hesapla"}
+seo_sections: [{"title":"Huawei MatePad SE 10.4 Kaça Satılır?","text":"Huawei MatePad SE 10.4 için tek bir sabit satış fiyatı yoktur. Cihazın kondisyonu, özellikleri ve güncel piyasa koşulları gerçek satış değerini etkiler."},{"title":"Huawei MatePad SE 10.4 İkinci El Fiyatı","text":"Huawei MatePad SE 10.4 ikinci el fiyatı, mevcut seçenekler ve cihazın kullanım durumuna göre değerlendirilir. Bu sayfada bulunan seçenekler: 32 GB, 64 GB."},{"title":"Huawei MatePad SE 10.4 Piyasa Değeri","text":"KaçaGider piyasa değeri, seçilen ürün bilgilerini ve kapasite ve kondisyon ayrıntılarını birlikte değerlendirerek bir başlangıç referansı sunar."},{"title":"Huawei MatePad SE 10.4 Değeri Nasıl Hesaplanır?","text":"Marka, model, kapasite ve kondisyon bilgilerini değerleme ekranında seçin. Sonuç, cihazın gerçek durumu ile piyasa koşullarına göre değişebilir."}]
+seo_faqs: [{"question":"Huawei MatePad SE 10.4 ne kadar eder?","answer":"Güncel değeri öğrenmek için Tablet değerleme ekranında model ve cihaz bilgilerini seçin."},{"question":"Huawei MatePad SE 10.4 kaça satılır?","answer":"Satış değeri; kondisyon, özellikler ve güncel piyasa koşullarına göre değişir."},{"question":"Huawei MatePad SE 10.4 ikinci el fiyatı nasıl hesaplanır?","answer":"kapasite ve kondisyon bilgileri ve seçilen ürün özellikleri birlikte değerlendirilir."},{"question":"Huawei MatePad SE 10.4 piyasa değeri neden değişir?","answer":"Piyasa hareketleri, cihaz kondisyonu ve özelliklerdeki farklılıklar değeri etkileyebilir."},{"question":"Huawei MatePad SE 10.4 hangi seçeneklerle değerlendirilir?","answer":"Bu sayfada kullanılabilen seçenekler: 32 GB, 64 GB."}]
 ---
