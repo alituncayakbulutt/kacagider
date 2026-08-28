@@ -135,7 +135,7 @@ function loadMobileHomeResponsive(){
     if(!style){style=document.createElement("style");style.id="kgMobileHomeResponsiveInline";document.head.appendChild(style);}
     style.textContent=css+"\n"+fallback;
   }
-  fetch("/assets/mobile-home-responsive.css?v=20260828-inline-1-"+Date.now(),{cache:"no-store"})
+  fetch("/assets/mobile-home-responsive.css?v=20260829-3-"+Date.now(),{cache:"no-store"})
     .then(function(r){if(!r.ok)throw new Error("mobile css "+r.status);return r.text();})
     .then(apply)
     .catch(function(){apply(fallback);});
