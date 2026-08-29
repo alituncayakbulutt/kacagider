@@ -243,6 +243,15 @@ function normalizeListing(client,row){
 async function listPublished(){const client=await init();const {data,error}=await client.from("listings").select("*, listing_photos(object_path,sort_order)").eq("status","published").order("published_at",{ascending:false});if(error)throw error;return(data||[]).map(row=>normalizeListing(client,row));}
 async function getListing(id){if(!/^[0-9a-f-]{36}$/i.test(String(id||"")))return null;const client=await init();const {data,error}=await client.from("listings").select("*, listing_photos(object_path,sort_order)").eq("id",id).eq("status","published").maybeSingle();if(error)throw error;return data?normalizeListing(client,data):null;}
 
+async function isAdmin(){const client=await init();const {data,error}=await client.rpc("is_admin");if(error)throw error;return data===true;}
+async function adminListListings(){const client=await init();const {data,error}=await client.from("listings").select("*").order("created_at",{ascending:false});if(error)throw error;return data||[];}
+async function adminListListingPhotos(listingIds){const client=await init();const ids=(Array.isArray(listingIds)?listingIds:[]).filter(Boolean);if(!ids.length)return[];const {data,error}=await client.from("listing_photos").select("listing_id,object_path,sort_order").in("listing_id",ids).order("sort_order");if(error)throw error;return data||[];}
+async function adminListUsers(){const client=await init();const {data,error}=await client.rpc("admin_list_users");if(error)throw error;return data||[];}
+async function adminListAuditLogs(){const client=await init();const {data,error}=await client.rpc("admin_list_audit_logs");if(error)throw error;return data||[];}
+async function adminSetListingStatus(id,status){const client=await init();const {data,error}=await client.rpc("admin_set_listing_status",{p_listing_id:id,p_status:status});if(error)throw error;return data;}
+async function adminDeleteListing(id){const client=await init();const {data,error}=await client.rpc("admin_delete_listing",{p_listing_id:id});if(error)throw error;return data;}
+async function adminRemovePhotos(paths){const client=await init();const clean=(Array.isArray(paths)?paths:[]).filter(Boolean);if(!clean.length)return {data:[],error:null};return client.storage.from(BUCKET).remove(clean);}
+
 const ready=init().then(client=>{installAuthLifecycle(client).catch(error=>console.warn("KaçaGider auth:",error));return client;});
-window.KGMarketplaceSupabase={ready,init,getUser,getSessionUser,isVerifiedUser,signUp,signIn,signInWithGoogle,resendVerification,resetPassword,updatePassword,signOut,publishListing,listPublished,getListing,categoryKey,categoryLabel,config:{url:SUPABASE_URL,redirectUrl:authRedirectUrl()}};
+window.KGMarketplaceSupabase={ready,init,getUser,getSessionUser,isVerifiedUser,signUp,signIn,signInWithGoogle,resendVerification,resetPassword,updatePassword,signOut,publishListing,listPublished,getListing,isAdmin,adminListListings,adminListListingPhotos,adminListUsers,adminListAuditLogs,adminSetListingStatus,adminDeleteListing,adminRemovePhotos,categoryKey,categoryLabel,config:{url:SUPABASE_URL,redirectUrl:authRedirectUrl()}};
 })();
