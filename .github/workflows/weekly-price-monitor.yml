@@ -7,6 +7,7 @@ on:
   push:
     paths:
       - 'scripts/weekly-price-monitor.py'
+      - 'scripts/fetch-supabase-market-observations.py'
       - 'scripts/market-price-observation-engine.py'
       - 'config/weekly-price-monitor.json'
       - 'config/market-price-engine.json'
@@ -38,10 +39,14 @@ jobs:
       - name: Validate pricing scripts
         run: |
           python -m py_compile scripts/weekly-price-monitor.py
+          python -m py_compile scripts/fetch-supabase-market-observations.py
           python -m py_compile scripts/market-price-observation-engine.py
 
       - name: Run weekly catalog monitor
         run: python scripts/weekly-price-monitor.py
+
+      - name: Fetch sanitized Supabase observations
+        run: python scripts/fetch-supabase-market-observations.py
 
       - name: Run Phase 2 market observation engine
         run: python scripts/market-price-observation-engine.py
