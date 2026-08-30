@@ -1,5 +1,5 @@
 {
-  "version": 2,
+  "version": 3,
   "mode": "dry-run",
   "respect_robots_txt": true,
   "request": {
@@ -27,9 +27,11 @@
       "enabled": true,
       "role": "retail_anchor",
       "observation_type": "refurbished_retail",
-      "max_observations": 120,
+      "max_observations": 160,
       "urls": [
-        "https://easycep.com/kategori/cep-telefonu-1"
+        "https://easycep.com/kategori/cep-telefonu-1",
+        "https://easycep.com/kategori/apple-2",
+        "https://easycep.com/kategori/iphone-6-2"
       ]
     },
     "getmobil_refurbished": {
@@ -37,10 +39,10 @@
       "enabled": true,
       "role": "retail_anchor",
       "observation_type": "refurbished_retail",
-      "max_observations": 120,
+      "max_observations": 160,
       "urls": [
-        "https://getmobil.com/",
-        "https://getmobil.com/magazalarimiz/yenilenmis-teknoloji-1545/"
+        "https://getmobil.com/satin-al/cep-telefonu/iphone-ios-telefonlar/apple/iphone-13/",
+        "https://getmobil.com/satin-al/cep-telefonu/iphone-ios-telefonlar/apple/iphone-14/"
       ]
     },
     "sahibinden_yepy": {
@@ -50,7 +52,8 @@
       "observation_type": "refurbished_retail",
       "max_observations": 120,
       "urls": [
-        "https://www.sahibinden.com/yepy/yenilenmis-telefonlar?sorting=bm"
+        "https://www.sahibinden.com/yepy/yenilenmis-telefonlar/iphone-13?sorting=bm",
+        "https://www.sahibinden.com/yepy/yenilenmis-telefonlar/iphone-14?sorting=bm"
       ]
     }
   }
