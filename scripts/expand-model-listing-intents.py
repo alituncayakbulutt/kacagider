@@ -8,6 +8,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 DEVICE_ROOTS = ("telefon", "tablet", "bilgisayar", "akilli-saat", "oyun-konsolu")
 CLUSTER_MARKER = "listing-intent-v1"
+LISTING_HUB_URL = "/ucretsiz-ilan-ver/"
 MAX_NEW_INTENTS = 6
 
 CATEGORY_PROFILES = {
@@ -177,7 +178,7 @@ def process(path: Path):
     new_links = list(base_links)
     new_links.append({
         "label": "Değerini öğren ve ücretsiz ilan ver",
-        "url": "/",
+        "url": LISTING_HUB_URL,
         "kg_listing_link": CLUSTER_MARKER,
     })
 
