@@ -10,6 +10,7 @@ ROOT = Path(__file__).resolve().parents[1]
 DEVICE_ROOTS = ("telefon", "tablet", "bilgisayar", "akilli-saat", "oyun-konsolu")
 CLUSTER_MARKER = "listing-intent-v1"
 LEGACY_PRICE_CLUSTER = "model-intent-v1"
+LISTING_HUB_URL = "/ucretsiz-ilan-ver/"
 
 
 def normalize(value: str) -> str:
@@ -104,8 +105,8 @@ def main():
         listing_links = [l for l in links if isinstance(l, dict) and l.get("kg_listing_link") == CLUSTER_MARKER]
         if len(listing_links) != 1:
             errors.append(f"{rel}: expected exactly one listing internal link, found {len(listing_links)}")
-        elif listing_links[0].get("url") != "/":
-            errors.append(f"{rel}: listing internal link must point to homepage entry flow")
+        elif listing_links[0].get("url") != LISTING_HUB_URL:
+            errors.append(f"{rel}: listing internal link must point to {LISTING_HUB_URL}")
 
         old_clusters = [s for s in sections if isinstance(s, dict) and s.get("kg_intent_cluster") == LEGACY_PRICE_CLUSTER]
         if len(old_clusters) != 1:
