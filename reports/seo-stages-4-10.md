@@ -2,7 +2,7 @@
 
 Tarih: 2026-08-30
 
-- Aşama 4 Kapasite SEO: 1200 gerçek kapasite sayfası denetlendi/güçlendirildi.
+- Aşama 4 Kapasite SEO: 1133 gerçek GB/TB kapasite sayfası denetlendi/güçlendirildi; 67 kapasite dışı varyant sayfası kapasite sinyalinden ayrıştırıldı.
 - Aşama 5 Satılık/İlan SEO: model ve kapasite sayfalarında ücretsiz ilan niyeti korundu veya eklendi.
 - Aşama 6 Fiyat geçmişi: 1 tarihli snapshot mevcut; son snapshot 2026-08-30.
 - Aşama 7 Search Console fırsat motoru: `scripts/search-console-opportunity-engine.py` tarafından ayrıca üretilir.
