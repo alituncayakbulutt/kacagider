@@ -1,0 +1,22 @@
+# KaçaGider
+
+KaçaGider, Türkiye'de telefon, tablet, bilgisayar, akıllı saat ve oyun konsolları için ikinci el piyasa değeri hesaplama ve ücretsiz ilan akışı sunar.
+
+Canonical site: https://kacagider.com.tr/
+Primary language: tr-TR
+
+## Core resources
+- Device valuation: https://kacagider.com.tr/
+- Free listing: https://kacagider.com.tr/ucretsiz-ilan-ver/
+- Valuation methodology: https://kacagider.com.tr/veri-metodolojisi/
+- Market data and price history: https://kacagider.com.tr/piyasa-verisi/
+- Model comparison guide: https://kacagider.com.tr/model-karsilastirma/
+- Sitemap: https://kacagider.com.tr/sitemap.xml
+
+## Data principles
+- Capacity pages are created only for catalog-supported capacities.
+- Valuation results are market references, not guaranteed transaction prices.
+- Price history begins with real dated snapshots; historical values are not backfilled.
+- Fake ratings, reviews, offers or unsupported prices are not generated.
+
+Latest captured phone catalog snapshot: 2026-08-30
