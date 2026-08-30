@@ -1,0 +1,37 @@
+{
+  "version": 2,
+  "mode": "dry-run",
+  "catalog": "data/phone-prices.js",
+  "observation_glob": "data/market-observations/inbox/*.json",
+  "safety": {
+    "allow_live_price_write": false,
+    "allow_supabase_write": false,
+    "allow_git_commit": false,
+    "preserve_current_price_when_data_missing": true
+  },
+  "sources": {
+    "verified_sale": {"weight": 1.0, "enabled": true},
+    "kacagider_marketplace": {"weight": 0.65, "enabled": true},
+    "manual_import": {"weight": 0.8, "enabled": true},
+    "external_listing": {"weight": 0.55, "enabled": false},
+    "corporate_buy": {"weight": 0.45, "enabled": false}
+  },
+  "aggregation": {
+    "minimum_observations": 5,
+    "minimum_independent_sources": 3,
+    "maximum_observation_age_days": 21,
+    "minimum_price_tl": 500,
+    "maximum_price_tl": 500000,
+    "outlier_iqr_multiplier": 1.5,
+    "round_to_tl": 100
+  },
+  "change_thresholds_percent": {
+    "normal": 5,
+    "verify": 10,
+    "review": 15
+  },
+  "confidence": {
+    "review_below": 55,
+    "healthy_from": 75
+  }
+}
