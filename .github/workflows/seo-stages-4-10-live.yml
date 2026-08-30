@@ -1,0 +1,69 @@
+name: SEO Stages 4-10 Live
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - "scripts/apply-seo-stages-4-10.py"
+      - "scripts/search-console-opportunity-engine.py"
+      - "data/phone-prices.js"
+      - "data/search-console/**"
+      - ".github/workflows/seo-stages-4-10-live.yml"
+  schedule:
+    - cron: "17 4 * * 1"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: seo-stages-4-10-live
+  cancel-in-progress: false
+
+jobs:
+  apply-and-publish:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout main
+        uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Apply SEO stages 4-10
+        run: python3 scripts/apply-seo-stages-4-10.py
+
+      - name: Build Search Console opportunity report
+        run: python3 scripts/search-console-opportunity-engine.py
+
+      - name: Validate Python engines
+        run: python3 -m py_compile scripts/apply-seo-stages-4-10.py scripts/search-console-opportunity-engine.py
+
+      - name: Full SEO audit
+        run: python3 scripts/seo-site-audit.py
+
+      - name: Model intent audit
+        run: python3 scripts/seo-model-intent-audit.py
+
+      - name: Listing intent audit
+        run: python3 scripts/seo-model-listing-intent-audit.py
+
+      - name: Commit generated production SEO changes
+        shell: bash
+        run: |
+          if git diff --quiet && [ -z "$(git status --porcelain)" ]; then
+            echo "No generated SEO changes."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git commit -m "SEO: publish stages 4-10 generated assets"
+          git pull --rebase origin main
+          git push origin HEAD:main
