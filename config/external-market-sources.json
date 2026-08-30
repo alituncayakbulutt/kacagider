@@ -1,0 +1,55 @@
+{
+  "version": 1,
+  "mode": "dry-run",
+  "respect_robots_txt": true,
+  "request": {
+    "timeout_seconds": 20,
+    "max_bytes": 5000000,
+    "delay_between_requests_seconds": 1.5,
+    "user_agent": "KaçaGiderMarketMonitor/1.0 (+https://kacagider.com.tr/)"
+  },
+  "sources": {
+    "letgo_peer": {
+      "label": "Letgo ikinci el telefon ilanları",
+      "enabled": true,
+      "role": "peer_asking",
+      "observation_type": "asking",
+      "max_observations": 160,
+      "urls": [
+        "https://www.letgo.com/iphone-ios-telefon_c15001?cuzdanim_guvende=1&user_rating=4.5",
+        "https://www.letgo.com/android-telefon_c15002?cuzdanim_guvende=1&user_rating=4.5"
+      ]
+    },
+    "easycep_refurbished": {
+      "label": "EasyCep yenilenmiş telefon satışları",
+      "enabled": true,
+      "role": "retail_anchor",
+      "observation_type": "refurbished_retail",
+      "max_observations": 120,
+      "urls": [
+        "https://easycep.com/kategori/cep-telefonu-1"
+      ]
+    },
+    "getmobil_refurbished": {
+      "label": "Getmobil yenilenmiş telefon satışları",
+      "enabled": true,
+      "role": "retail_anchor",
+      "observation_type": "refurbished_retail",
+      "max_observations": 120,
+      "urls": [
+        "https://getmobil.com/",
+        "https://getmobil.com/magazalarimiz/yenilenmis-teknoloji-1545/"
+      ]
+    },
+    "sahibinden_yepy": {
+      "label": "Sahibinden Yepy yenilenmiş telefon satışları",
+      "enabled": true,
+      "role": "retail_anchor",
+      "observation_type": "refurbished_retail",
+      "max_observations": 120,
+      "urls": [
+        "https://www.sahibinden.com/yepy/yenilenmis-telefonlar?sorting=bm"
+      ]
+    }
+  }
+}
