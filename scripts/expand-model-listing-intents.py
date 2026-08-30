@@ -82,32 +82,32 @@ def candidate_intents(subject: str, category: str):
         (
             f"{subject} ücretsiz ilan ver",
             f"{subject} için ücretsiz ilan verebilir miyim?",
-            f"Evet. KaçaGider'de önce {factors} bilgileriyle güncel piyasa değerini hesaplayabilir, ardından {label} için ücretsiz ilan oluşturabilirsin. İlan yayınlamak için üyelik gerekir.",
+            f"Evet. KaçaGider'de önce {factors} bilgileriyle güncel piyasa değerini hesaplayabilir, ardından ana sayfadaki ücretsiz ilan akışından {label} ilanını oluşturabilirsin. İlan yayınlamak için üyelik gerekir.",
         ),
         (
             f"{subject} ilan ver",
             f"{subject} ilanı nasıl verilir?",
-            "Önce cihazın piyasa değerini hesapla. Sonuç ekranındaki ücretsiz ilan oluşturma adımıyla satış fiyatını belirleyip ilan bilgilerini tamamlayabilirsin.",
+            "Önce cihazın piyasa değerini hesapla. Ardından KaçaGider ana sayfasındaki Ücretsiz İlan Ver akışına geçerek satış fiyatını ve ilan bilgilerini tamamlayabilirsin.",
         ),
         (
             f"{subject} ikinci el ilan ver",
             f"{subject} ikinci el ilanı nasıl oluşturulur?",
-            "Model, kapasite ve kondisyon bilgilerini seçip piyasa değerini gördükten sonra ücretsiz ilan akışına geçebilirsin.",
+            "Model, kapasite ve kondisyon bilgilerini seçip piyasa değerini gördükten sonra KaçaGider ana sayfasındaki ücretsiz ilan akışına geçebilirsin.",
         ),
         (
             f"{subject} satmak istiyorum",
             f"{subject} satmak istiyorum; nereden başlamalıyım?",
-            "İlk adım güncel piyasa değerini öğrenmektir. KaçaGider ile değerini hesapladıktan sonra aynı satış sürecinde ücretsiz ilan oluşturmaya geçebilirsin.",
+            "İlk adım güncel piyasa değerini öğrenmektir. Değerini kontrol ettikten sonra KaçaGider ana sayfasındaki ücretsiz ilan akışından satış sürecine devam edebilirsin.",
         ),
         (
             f"{subject} fiyatını öğren ilan ver",
             f"{subject} fiyatını öğrenip ilan verebilir miyim?",
-            "Evet. KaçaGider'in değerleme aracıyla cihazın güncel piyasa referansını gördükten sonra ücretsiz ilan oluşturma adımına devam edebilirsin.",
+            "Evet. KaçaGider'in değerleme aracıyla cihazın güncel piyasa referansını gördükten sonra ana sayfadaki ücretsiz ilan verme akışına devam edebilirsin.",
         ),
         (
             f"{subject} piyasa değerini öğren sat",
             f"{subject} piyasa değerini öğrenip satışa çıkarabilir miyim?",
-            "Evet. Önce güncel piyasa değerini kontrol ederek satış fiyatını daha bilinçli belirleyebilir, ardından KaçaGider üzerinden ücretsiz ilan oluşturabilirsin.",
+            "Evet. Önce güncel piyasa değerini kontrol ederek satış fiyatını daha bilinçli belirleyebilir, ardından KaçaGider ana sayfasından ücretsiz ilan oluşturabilirsin.",
         ),
         (
             f"{subject} satış ilanı ver",
@@ -169,7 +169,7 @@ def process(path: Path):
     if selected:
         new_sections.append({
             "title": f"{subject} fiyatını öğren ve ücretsiz ilan ver",
-            "text": "KaçaGider'de ikinci el satış süreci iki adımdır: önce cihazın güncel piyasa değerini öğren, ardından satış fiyatını belirleyip ücretsiz ilan oluştur. Piyasa değeri sorgulaması ücretsizdir; ilan yayınlamak için üyelik gerekir.",
+            "text": "KaçaGider'de ikinci el satış süreci iki adımdır: önce cihazın güncel piyasa değerini öğren, ardından ana sayfadaki ücretsiz ilan akışına geçerek satış fiyatını belirle ve ilanını oluştur. Piyasa değeri sorgulaması ücretsizdir; ilan yayınlamak için üyelik gerekir.",
             "items": [f"{question} {answer}" for _phrase, question, answer in selected],
             "kg_intent_cluster": CLUSTER_MARKER,
         })
