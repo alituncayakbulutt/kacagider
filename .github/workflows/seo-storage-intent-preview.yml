@@ -1,0 +1,80 @@
+name: SEO Storage Intent Preview
+
+on:
+  push:
+    branches:
+      - seo-storage-intent-preview
+    paths:
+      - 'scripts/expand-storage-query-intents.py'
+      - 'scripts/seo-storage-intent-audit.py'
+      - 'scripts/write-storage-intent-preview-report.py'
+      - '.github/workflows/seo-storage-intent-preview.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  preview:
+    if: github.actor != 'github-actions[bot]'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+
+      - name: Expand real storage query intents without duplicates
+        run: python scripts/expand-storage-query-intents.py
+
+      - name: Verify generator only changed existing storage pages
+        run: |
+          unexpected="$(git diff --name-only | grep -Ev '^(telefon|tablet|bilgisayar|akilli-saat|oyun-konsolu)/[^/]+/[^/]+/[0-9]+(gb|tb)/index\.md$' || true)"
+          if [ -n "$unexpected" ]; then
+            echo "Unexpected file(s) changed by storage intent generator:"
+            echo "$unexpected"
+            exit 1
+          fi
+          git diff --check
+
+      - name: Audit storage intent coverage
+        run: python scripts/seo-storage-intent-audit.py
+
+      - name: Protect SEO 1 model intent coverage
+        run: python scripts/seo-model-intent-audit.py
+
+      - name: Protect SEO 2 listing intent coverage
+        run: python scripts/seo-model-listing-intent-audit.py
+
+      - name: Protect SEO 3 brand and series hubs
+        run: python scripts/seo-brand-series-hub-audit.py
+
+      - name: Run full SEO site audit
+        run: python scripts/seo-site-audit.py
+
+      - name: Write preview report
+        run: python scripts/write-storage-intent-preview-report.py
+
+      - name: Verify final preview scope
+        run: |
+          unexpected="$(git status --porcelain | sed -E 's/^.. //' | grep -Ev '^((telefon|tablet|bilgisayar|akilli-saat|oyun-konsolu)/[^/]+/[^/]+/[0-9]+(gb|tb)/index\.md|SEO_STORAGE_INTENT_PREVIEW_REPORT\.md)$' || true)"
+          if [ -n "$unexpected" ]; then
+            echo "Unexpected preview file(s):"
+            echo "$unexpected"
+            exit 1
+          fi
+          git diff --check
+
+      - name: Commit storage SEO preview
+        run: |
+          if [ -z "$(git status --porcelain)" ]; then
+            echo "No storage intent changes needed."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add telefon tablet bilgisayar akilli-saat oyun-konsolu SEO_STORAGE_INTENT_PREVIEW_REPORT.md
+          git commit -m "SEO preview: expand real storage search intents"
+          git push
