@@ -6,6 +6,7 @@ on:
       - main
     paths:
       - "scripts/apply-seo-stages-4-10.py"
+      - "scripts/seo-stages-4-10-cleanup.py"
       - "scripts/search-console-opportunity-engine.py"
       - "data/phone-prices.js"
       - "data/search-console/**"
@@ -39,11 +40,14 @@ jobs:
       - name: Apply SEO stages 4-10
         run: python3 scripts/apply-seo-stages-4-10.py
 
+      - name: Separate real storage from other variants
+        run: python3 scripts/seo-stages-4-10-cleanup.py
+
       - name: Build Search Console opportunity report
         run: python3 scripts/search-console-opportunity-engine.py
 
       - name: Validate Python engines
-        run: python3 -m py_compile scripts/apply-seo-stages-4-10.py scripts/search-console-opportunity-engine.py
+        run: python3 -m py_compile scripts/apply-seo-stages-4-10.py scripts/seo-stages-4-10-cleanup.py scripts/search-console-opportunity-engine.py
 
       - name: Full SEO audit
         run: python3 scripts/seo-site-audit.py
