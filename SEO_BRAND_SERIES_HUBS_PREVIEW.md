@@ -3,7 +3,7 @@
 Generated: 2026-08-30
 Branch: `seo-brand-series-hubs-preview`
 Base merge point: `main` @ `cf9ca1cf32654b511e60f7f183e99d7272a0a0ea`
-Preview HEAD when report was generated: `b8c8b1aa1b6f66eb81e74e237af4b8feb4146a87`
+Preview HEAD when report was generated: `653b6b0031485d0453d3ddd5abe1a7cd893e7048`
 
 ## Goal
 
@@ -36,7 +36,7 @@ A series hub is generated only when a curated series rule matches at least **3 r
 
 | Category | Brand | Series | Models | Canonical |
 | --- | --- | --- | ---: | --- |
-| akilli-saat | Apple | Apple Watch SE Serisi | 9 | `https://kacagider.com.tr/akilli-saat/apple/apple-watch-se-serisi/` |
+| akilli-saat | Apple | Apple Watch SE Serisi | 3 | `https://kacagider.com.tr/akilli-saat/apple/apple-watch-se-serisi/` |
 | akilli-saat | Apple | Apple Watch Series | 6 | `https://kacagider.com.tr/akilli-saat/apple/apple-watch-series-serisi/` |
 | akilli-saat | Apple | Apple Watch Ultra Serisi | 3 | `https://kacagider.com.tr/akilli-saat/apple/apple-watch-ultra-serisi/` |
 | akilli-saat | Huawei | Watch Fit Serisi | 4 | `https://kacagider.com.tr/akilli-saat/huawei/watch-fit-serisi/` |

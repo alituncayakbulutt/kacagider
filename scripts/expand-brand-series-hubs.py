@@ -117,7 +117,7 @@ SERIES_RULES = {
     ("akilli-saat", "apple"): [
         ("apple-watch-series-serisi", "Apple Watch Series", r"^Apple Watch Series"),
         ("apple-watch-ultra-serisi", "Apple Watch Ultra Serisi", r"^Apple Watch Ultra"),
-        ("apple-watch-se-serisi", "Apple Watch SE Serisi", r"^Apple Watch SE"),
+        ("apple-watch-se-serisi", "Apple Watch SE Serisi", r"^Apple Watch SE(?:\s|$)"),
     ],
     ("akilli-saat", "huawei"): [
         ("watch-gt-serisi", "Watch GT Serisi", r"^(?:Huawei )?Watch GT"),
@@ -263,7 +263,7 @@ def enrich_brand_page(path: Path, category: str, brand_slug: str):
     guides = [g for g in guides if not (isinstance(g, dict) and g.get("kg_brand_series") == MARKER)]
     for item in series:
         guides.append({
-            "label": f"{brand} {item['label']} ikinci el fiyatları",
+            "label": f"{item['label'] if item['label'].casefold().startswith(brand.casefold()) else brand + ' ' + item['label']} ikinci el fiyatları",
             "url": f"/{category}/{brand_slug}/{item['slug']}/",
             "kg_brand_series": MARKER,
         })
@@ -286,7 +286,8 @@ def enrich_brand_page(path: Path, category: str, brand_slug: str):
 
 def series_page_content(category: str, brand_slug: str, brand: str, series: dict) -> str:
     profile = category_text(category)
-    series_name = f"{brand} {series['label']}"
+    series_label = series["label"]
+    series_name = series_label if series_label.casefold().startswith(brand.casefold()) else f"{brand} {series_label}"
     url = f"/{category}/{brand_slug}/{series['slug']}/"
     members = series["members"]
     breadcrumbs = [
@@ -364,7 +365,7 @@ def add_model_series_link(model_url: str, category: str, brand_slug: str, brand:
     links = meta.get("seo_links") if isinstance(meta.get("seo_links"), list) else []
     base = [l for l in links if not (isinstance(l, dict) and l.get("kg_series_link") == MARKER)]
     series_link = {
-        "label": f"{brand} {series['label']} fiyatlarını karşılaştır",
+        "label": f"{series['label'] if series['label'].casefold().startswith(brand.casefold()) else brand + ' ' + series['label']} fiyatlarını karşılaştır",
         "url": f"/{category}/{brand_slug}/{series['slug']}/",
         "kg_series_link": MARKER,
     }
