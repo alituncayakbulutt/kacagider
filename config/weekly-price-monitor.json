@@ -1,5 +1,5 @@
 {
-  "version": 1,
+  "version": 2,
   "mode": "dry-run",
   "schedule": "weekly",
   "timezone_note": "GitHub Actions cron UTC kullanir; Pazartesi 04:17 UTC = Turkiye saatiyle 07:17.",
@@ -26,9 +26,12 @@
     "critical_after": 60
   },
   "future_market_collection": {
-    "enabled": false,
+    "enabled": true,
+    "phase": 2,
+    "engine_config": "config/market-price-engine.json",
     "minimum_independent_sources": 3,
-    "minimum_observations_for_auto_update": 5,
-    "note": "Piyasa kaynaklari Faz 2'de baglanacak. Bu surum yalnizca mevcut katalog ve gercek snapshot'lari analiz eder."
+    "minimum_observations_for_candidate": 5,
+    "allow_candidate_to_live_write": false,
+    "note": "Faz 2 piyasa gozlemlerini temizleyip aday fiyat raporu uretir. Canli fiyat yazimi halen kapali."
   }
 }
