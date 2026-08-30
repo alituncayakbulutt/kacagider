@@ -14,27 +14,27 @@ STORAGE_RE = re.compile(r"^\d+(?:gb|tb)$", re.I)
 CATEGORY_PROFILES = {
     "telefon": {
         "factors": "ekran, batarya, cihaz kayıt durumu ve genel kondisyon",
-        "short": "cihazın kondisyonu ve güncel talep",
+        "sales_basis": "cihazın kondisyonu, teknik durumu ve güncel piyasa talebi",
         "noun": "telefonun",
     },
     "tablet": {
         "factors": "ekran, batarya, bağlantı özellikleri ve genel kondisyon",
-        "short": "kondisyon ve güncel talep",
+        "sales_basis": "kondisyon, batarya durumu ve güncel piyasa talebi",
         "noun": "tabletin",
     },
     "bilgisayar": {
         "factors": "işlemci, RAM, pil ve genel kondisyon",
-        "short": "donanım, pil ve kondisyon",
+        "sales_basis": "donanım, pil durumu, kondisyon ve güncel piyasa talebi",
         "noun": "bilgisayarın",
     },
     "akilli-saat": {
         "factors": "kasa boyutu, ekran, batarya ve genel kondisyon",
-        "short": "kasa, batarya ve kondisyon",
+        "sales_basis": "kasa, batarya durumu, kondisyon ve güncel piyasa talebi",
         "noun": "saatin",
     },
     "oyun-konsolu": {
         "factors": "kozmetik durum, aksesuarlar ve çalışma durumu",
-        "short": "aksesuar, çalışma durumu ve kondisyon",
+        "sales_basis": "aksesuarlar, çalışma durumu, kondisyon ve güncel piyasa talebi",
         "noun": "konsolun",
     },
 }
@@ -118,19 +118,19 @@ def display_subject(meta: dict, path: Path) -> str:
 def candidate_intents(subject: str, category: str):
     profile = CATEGORY_PROFILES[category]
     factors = profile["factors"]
-    short = profile["short"]
+    sales_basis = profile["sales_basis"]
     noun = profile["noun"]
     return [
         (f"{subject} ne kadar eder", f"{subject} ne kadar eder?", f"Bu kapasite için güncel değer hesaplanırken {factors} ile piyasa koşulları birlikte değerlendirilir."),
-        (f"{subject} kaça satılır", f"{subject} kaça satılır?", f"Tek bir sabit satış fiyatı yoktur; {short} satış aralığını etkiler."),
+        (f"{subject} kaça satılır", f"{subject} kaça satılır?", f"Tek bir sabit satış fiyatı yoktur; {sales_basis} satış aralığını etkiler."),
         (f"{subject} piyasa değeri", f"{subject} piyasa değeri ne kadar?", f"Piyasa değeri bu kapasiteye ek olarak {factors} bilgilerine göre değişen bir referanstır."),
         (f"{subject} ikinci el fiyatı", f"{subject} ikinci el fiyatı ne kadar?", f"İkinci el fiyatı belirlenirken bu kapasiteyle birlikte {factors} ve güncel piyasa koşulları dikkate alınmalıdır."),
-        (f"{subject} kaç para eder", f"{subject} kaç para eder?", f"Tahmini değeri görmek için kapasitenin yanında {factors} bilgilerini doğru seçmek gerekir."),
-        (f"{subject} kaça satarım", f"{subject} kaça satarım?", f"Uygun satış aralığı {short} ve piyasadaki güncel talebe göre değişebilir."),
+        (f"{subject} kaç para eder", f"{subject} kaç para eder?", f"Tahmini değeri görmek için bu kapasitenin yanında {factors} bilgilerini doğru seçmek gerekir."),
+        (f"{subject} kaça satarım", f"{subject} kaça satarım?", f"Uygun satış aralığı {sales_basis} dikkate alınarak belirlenir."),
         (f"{subject} kaça satabilirim", f"{subject} kaça satabilirim?", f"Satılabilecek tutar tek bir rakam değildir; bu kapasiteyle birlikte {factors} bilgileri {noun} güncel piyasa referansını etkiler."),
-        (f"{subject} satsam ne kadar eder", f"{subject} satsam ne kadar eder?", f"Satış öncesinde kapasite, {factors} bilgilerini doğru seçerek tahmini ikinci el piyasa değerini kontrol edebilirsiniz."),
-        (f"{subject} ikinci el fiyatları", f"{subject} ikinci el fiyatları ne kadar?", f"İkinci el fiyatları aynı kapasitede bile {short} ve piyasa hareketlerine göre farklılaşabilir."),
-        (f"{subject} güncel ikinci el fiyatı", f"{subject} güncel ikinci el fiyatı ne kadar?", f"Güncel ikinci el fiyatını değerlendirirken kapasiteyi, {factors} ve mevcut piyasa koşullarını birlikte dikkate almak gerekir."),
+        (f"{subject} satsam ne kadar eder", f"{subject} satsam ne kadar eder?", f"Satış öncesinde bu kapasiteye ek olarak {factors} bilgilerini doğru seçerek tahmini ikinci el piyasa değerini kontrol edebilirsiniz."),
+        (f"{subject} ikinci el fiyatları", f"{subject} ikinci el fiyatları ne kadar?", f"İkinci el fiyatları aynı kapasitede bile {sales_basis} nedeniyle farklılaşabilir."),
+        (f"{subject} güncel ikinci el fiyatı", f"{subject} güncel ikinci el fiyatı ne kadar?", f"Güncel ikinci el fiyatını değerlendirirken bu kapasiteyle birlikte {factors} bilgilerini ve mevcut piyasa koşullarını dikkate almak gerekir."),
     ]
 
 
@@ -168,7 +168,7 @@ def process(path: Path):
     if selected:
         cluster = {
             "title": f"{subject} için sık aranan fiyat soruları",
-            "text": "Bu kapasitenin ikinci el değeri farklı arama ifadeleriyle sorgulanabilir. Aşağıdaki kısa yanıtlar, yalnızca mevcut gerçek kapasite sayfasını güçlendirir; yeni veya katalogda olmayan bir varyant oluşturmaz.",
+            "text": "Bu kapasitenin ikinci el değeri farklı arama ifadeleriyle sorgulanabilir. Aşağıdaki kısa yanıtlar yalnızca katalogda bulunan mevcut kapasite sayfasını güçlendirir; yeni bir varyant oluşturmaz.",
             "items": [f"{question} {answer}" for _phrase, question, answer in selected],
             "kg_intent_cluster": CLUSTER_MARKER,
         }
