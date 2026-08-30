@@ -7,6 +7,7 @@ on:
     paths:
       - 'scripts/expand-brand-series-hubs.py'
       - 'scripts/seo-brand-series-hub-audit.py'
+      - 'scripts/write-brand-series-preview-report.py'
       - '.github/workflows/seo-brand-series-hubs-preview.yml'
   workflow_dispatch:
 
@@ -26,14 +27,17 @@ jobs:
           python-version: '3.x'
 
       - name: Compile brand-series tooling
-        run: python -m py_compile scripts/expand-brand-series-hubs.py scripts/seo-brand-series-hub-audit.py
+        run: python -m py_compile scripts/expand-brand-series-hubs.py scripts/seo-brand-series-hub-audit.py scripts/write-brand-series-preview-report.py
 
       - name: Enrich existing brand hubs and generate qualified series hubs
         run: python scripts/expand-brand-series-hubs.py
 
+      - name: Write preview coverage report
+        run: python scripts/write-brand-series-preview-report.py
+
       - name: Verify generated scope
         run: |
-          unexpected="$(git diff --name-only | grep -Ev '^(telefon|tablet|bilgisayar|akilli-saat|oyun-konsolu)/[^/]+/index\.md$|^(telefon|tablet|bilgisayar|akilli-saat|oyun-konsolu)/[^/]+/[^/]+/index\.md$|^sitemap\.xml$' || true)"
+          unexpected="$(git diff --name-only | grep -Ev '^(telefon|tablet|bilgisayar|akilli-saat|oyun-konsolu)/[^/]+/index\.md$|^(telefon|tablet|bilgisayar|akilli-saat|oyun-konsolu)/[^/]+/[^/]+/index\.md$|^sitemap\.xml$|^SEO_BRAND_SERIES_HUBS_PREVIEW\.md$' || true)"
           if [ -n "$unexpected" ]; then
             echo "Unexpected file(s) changed by brand-series SEO preview:"
             echo "$unexpected"
@@ -55,6 +59,6 @@ jobs:
           fi
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add telefon tablet bilgisayar akilli-saat oyun-konsolu sitemap.xml
-          git commit -m "SEO preview: strengthen brand hubs and add series hubs"
+          git add telefon tablet bilgisayar akilli-saat oyun-konsolu sitemap.xml SEO_BRAND_SERIES_HUBS_PREVIEW.md
+          git commit -m "SEO preview: refresh brand and series hub report"
           git push
