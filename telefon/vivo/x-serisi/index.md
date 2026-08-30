@@ -1,0 +1,19 @@
+---
+layout: "seo"
+seo_page_type: "series_hub"
+seo_hub_version: "brand-series-v1"
+seo_title: "Vivo X Serisi İkinci El Fiyatları ve Piyasa Değeri | KaçaGider"
+seo_description: "Vivo X Serisi ikinci el fiyatları ve piyasa değeri için gerçek modelinizi seçin; cihaz durumuna göre güncel satış değeri referansını KaçaGider ile ücretsiz kontrol edin."
+seo_h1: "Vivo X Serisi İkinci El Fiyatları ve Piyasa Değeri"
+seo_intro: "Vivo X Serisi modellerinin ne kadar ettiğini, kaça satılabileceğini ve güncel ikinci el piyasa değerini öğrenmek için modelinizi seçin. Değerleme cihazın gerçek özellikleri ve kondisyonuna göre yapılır."
+seo_context_heading: "Vivo X Serisi için ikinci el değerleme"
+seo_context: "Vivo X Serisi ailesindeki 8 gerçek modeli tek merkezde inceleyin. Modelinizi seçerek güncel ikinci el piyasa değerini kontrol edin ve isterseniz ücretsiz ilan verme akışına devam edin."
+seo_breadcrumbs: [{"label":"Ana Sayfa","url":"/"},{"label":"Telefon","url":"/telefon/"},{"label":"Vivo","url":"/telefon/vivo/"},{"label":"X Serisi","url":"/telefon/vivo/x-serisi/"}]
+seo_links: [{"label":"X80 Pro","url":"/telefon/vivo/x80-pro/"},{"label":"X90 Pro","url":"/telefon/vivo/x90-pro/"},{"label":"X100 Pro","url":"/telefon/vivo/x100-pro/"},{"label":"X200 Pro","url":"/telefon/vivo/x200-pro/"},{"label":"X200 FE","url":"/telefon/vivo/x200-fe/"},{"label":"X300","url":"/telefon/vivo/x300/"},{"label":"X300 Pro","url":"/telefon/vivo/x300-pro/"},{"label":"X300 Ultra","url":"/telefon/vivo/x300-ultra/"}]
+seo_links_heading: "Vivo X Serisi modelleri"
+seo_guides: [{"label":"Tüm Vivo modelleri","url":"/telefon/vivo/"},{"label":"Değerini öğren ve ücretsiz ilan ver","url":"/ucretsiz-ilan-ver/"}]
+seo_guides_heading: "Vivo X Serisi rehberi"
+seo_sections: [{"title":"Vivo X Serisi ne kadar eder?","text":"Vivo X Serisi modellerinin ikinci el değeri tek bir rakam değildir. Model, hafıza, ekran, batarya, cihaz kayıt durumu ve genel kondisyon ile güncel piyasa koşulları birlikte değerlendirilir. Aşağıdaki gerçek modellerden cihazınızı seçerek model bazlı değerleme sayfasına geçebilirsiniz."},{"title":"Vivo X Serisi kaça satılır?","text":"Aynı seride model yılı, donanım ve kondisyon farkları satış değerini değiştirebilir. Bu merkezde 8 gerçek X Serisi modeli bulunur; doğru modeli seçerek güncel piyasa değeri referansını kontrol edebilirsiniz."},{"title":"Vivo X Serisi ikinci el fiyatları ve piyasa değeri","text":"İkinci el fiyatlarını karşılaştırırken yalnızca seri adına bakmak yerine model ve cihaz durumunu birlikte değerlendirmek gerekir. KaçaGider, seri merkezinden doğru modele geçişi kolaylaştırır; sabit veya gerçeğe aykırı bir fiyat vaadi vermez."}]
+seo_faqs: [{"question":"Vivo X Serisi ikinci el fiyatları ne kadar?","answer":"Fiyatlar modele ve cihaz durumuna göre değişir. Bu sayfadaki 8 gerçek modelden cihazınızı seçerek güncel ikinci el piyasa değeri referansını kontrol edebilirsiniz."},{"question":"Vivo X Serisi piyasa değeri nasıl hesaplanır?","answer":"Değerleme sırasında model, hafıza, ekran, batarya, cihaz kayıt durumu ve genel kondisyon ve güncel piyasa koşulları birlikte dikkate alınır."},{"question":"Vivo X Serisi satmadan önce ne yapmalıyım?","answer":"Önce gerçek modelinizi seçip piyasa değerini kontrol edin. Ardından satış fiyatınızı belirleyebilir ve KaçaGider'deki ücretsiz ilan akışına geçebilirsiniz."}]
+seo_canonical: "https://kacagider.com.tr/telefon/vivo/x-serisi/"
+---
