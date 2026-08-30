@@ -1,0 +1,153 @@
+{
+  "phase": 3,
+  "mode": "dry-run",
+  "generated_at": "2026-08-30",
+  "origin": "curated_public_web",
+  "notes": "Yalnizca herkese acik sayfalarda gorulen marka/model/hafiza/fiyat/tarih bilgileri tutulur. Kisisel satici verisi tutulmaz. Canli fiyat yazimi yapilmaz.",
+  "observations": [
+    {
+      "source_id": "letgo_peer",
+      "source_item_id": "1723002459",
+      "source_url": "https://www.letgo.com/item/iphone-13-128gb-turkiye-garantili-iid-1723002459",
+      "observation_type": "asking",
+      "category": "phone",
+      "brand": "Apple",
+      "model": "iPhone 13",
+      "storage": "128 GB",
+      "price": 25999,
+      "observed_at": "2026-08-18"
+    },
+    {
+      "source_id": "letgo_peer",
+      "source_item_id": "1729519548",
+      "source_url": "https://www.letgo.com/item/iphone-13-128-gb-tr-pil-86-hatasz-uygun-fiyat-iid-1729519548",
+      "observation_type": "asking",
+      "category": "phone",
+      "brand": "Apple",
+      "model": "iPhone 13",
+      "storage": "128 GB",
+      "price": 25999,
+      "observed_at": "2026-08-22"
+    },
+    {
+      "source_id": "letgo_peer",
+      "source_item_id": "1729519026",
+      "source_url": "https://www.letgo.com/item/iphone-13-128-gb-pil-86-hatasz-degisensiz-uygun-fiyat-iid-1729519026",
+      "observation_type": "asking",
+      "category": "phone",
+      "brand": "Apple",
+      "model": "iPhone 13",
+      "storage": "128 GB",
+      "price": 16999,
+      "observed_at": "2026-08-22"
+    },
+    {
+      "source_id": "letgo_peer",
+      "source_item_id": "1730131213",
+      "source_url": "https://www.letgo.com/item/iphone-13-128-gb-iid-1730131213",
+      "observation_type": "asking",
+      "category": "phone",
+      "brand": "Apple",
+      "model": "iPhone 13",
+      "storage": "128 GB",
+      "price": 27500,
+      "observed_at": "2026-08-09"
+    },
+    {
+      "source_id": "letgo_peer",
+      "source_item_id": "1726730008",
+      "source_url": "https://www.letgo.com/item/iphone-13-128-gb-iid-1726730008",
+      "observation_type": "asking",
+      "category": "phone",
+      "brand": "Apple",
+      "model": "iPhone 13",
+      "storage": "128 GB",
+      "price": 32500,
+      "observed_at": "2026-08-22"
+    },
+    {
+      "source_id": "letgo_peer",
+      "source_item_id": "1729520423",
+      "source_url": "https://www.letgo.com/item/iphone-14-128-gb-pil-85-hatasz-uygun-fiyat-iid-1729520423",
+      "observation_type": "asking",
+      "category": "phone",
+      "brand": "Apple",
+      "model": "iPhone 14",
+      "storage": "128 GB",
+      "price": 20499,
+      "observed_at": "2026-08-22"
+    },
+    {
+      "source_id": "letgo_peer",
+      "source_item_id": "1729624171",
+      "source_url": "https://www.letgo.com/item/iphone-14-128gb-pil-85-iid-1729624171",
+      "observation_type": "asking",
+      "category": "phone",
+      "brand": "Apple",
+      "model": "iPhone 14",
+      "storage": "128 GB",
+      "price": 33000,
+      "observed_at": "2026-08-26"
+    },
+    {
+      "source_id": "letgo_peer",
+      "source_item_id": "1722390526",
+      "source_url": "https://www.letgo.com/item/yurt-ici-ilk-sahibinden-iphone-14-iid-1722390526",
+      "observation_type": "asking",
+      "category": "phone",
+      "brand": "Apple",
+      "model": "iPhone 14",
+      "storage": "128 GB",
+      "price": 35000,
+      "observed_at": "2026-08-09"
+    },
+    {
+      "source_id": "sahibinden_yepy",
+      "source_item_id": "iphone-13-siyah-128-gb",
+      "source_url": "https://www.sahibinden.com/yepy/yenilenmis-telefonlar/detay/iphone-13-siyah-128-gb",
+      "observation_type": "refurbished_retail",
+      "category": "phone",
+      "brand": "Apple",
+      "model": "iPhone 13",
+      "storage": "128 GB",
+      "price": 27299,
+      "observed_at": "2026-08-30"
+    },
+    {
+      "source_id": "sahibinden_yepy",
+      "source_item_id": "iphone-13-mavi-128-gb",
+      "source_url": "https://www.sahibinden.com/yepy/yenilenmis-telefonlar/detay/iphone-13-mavi-128-gb",
+      "observation_type": "refurbished_retail",
+      "category": "phone",
+      "brand": "Apple",
+      "model": "iPhone 13",
+      "storage": "128 GB",
+      "price": 27299,
+      "observed_at": "2026-08-30"
+    },
+    {
+      "source_id": "sahibinden_yepy",
+      "source_item_id": "iphone-13-yesil-128-gb",
+      "source_url": "https://www.sahibinden.com/yepy/yenilenmis-telefonlar/detay/iphone-13-yesil-128-gb",
+      "observation_type": "refurbished_retail",
+      "category": "phone",
+      "brand": "Apple",
+      "model": "iPhone 13",
+      "storage": "128 GB",
+      "price": 27299,
+      "observed_at": "2026-08-30"
+    },
+    {
+      "source_id": "sahibinden_yepy",
+      "source_item_id": "iphone-13-kirmizi-128-gb",
+      "source_url": "https://www.sahibinden.com/yepy/yenilenmis-telefonlar/detay/iphone-13-kirmizi-128-gb",
+      "observation_type": "refurbished_retail",
+      "category": "phone",
+      "brand": "Apple",
+      "model": "iPhone 13",
+      "storage": "128 GB",
+      "price": 28399,
+      "observed_at": "2026-08-30"
+    }
+  ]
+}
