@@ -99,6 +99,8 @@ def main() -> int:
             if not meta:
                 failures.append(f"frontmatter okunamadı: {path.relative_to(ROOT)}")
                 continue
+            if meta.get("seo_page_type") == "series_hub":
+                continue
             breadcrumbs = meta.get("seo_breadcrumbs")
             if isinstance(breadcrumbs, list) and len(breadcrumbs) != 4:
                 continue

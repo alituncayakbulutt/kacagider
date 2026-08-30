@@ -131,6 +131,8 @@ def is_model_page(path: Path, meta: dict) -> bool:
         rel = path.relative_to(ROOT)
     except ValueError:
         return False
+    if meta.get("seo_page_type") == "series_hub":
+        return False
     if len(rel.parts) != 4 or rel.parts[-1] != "index.md" or rel.parts[0] not in DEVICE_ROOTS:
         return False
     breadcrumbs = meta.get("seo_breadcrumbs")

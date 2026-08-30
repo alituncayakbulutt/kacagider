@@ -58,6 +58,8 @@ def model_files():
             continue
         for path in sorted(base.glob("*/*/index.md")):
             data = meta(path)
+            if data.get("seo_page_type") == "series_hub":
+                continue
             crumbs = data.get("seo_breadcrumbs")
             if data and (not crumbs or (isinstance(crumbs, list) and len(crumbs) == 4)):
                 yield path, data
