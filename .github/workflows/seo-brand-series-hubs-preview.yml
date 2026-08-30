@@ -37,7 +37,7 @@ jobs:
 
       - name: Verify generated scope
         run: |
-          unexpected="$(git diff --name-only | grep -Ev '^(telefon|tablet|bilgisayar|akilli-saat|oyun-konsolu)/[^/]+/index\.md$|^(telefon|tablet|bilgisayar|akilli-saat|oyun-konsolu)/[^/]+/[^/]+/index\.md$|^sitemap\.xml$|^SEO_BRAND_SERIES_HUBS_PREVIEW\.md$' || true)"
+          unexpected="$(git status --porcelain | sed -E 's/^.. //' | grep -Ev '^(telefon|tablet|bilgisayar|akilli-saat|oyun-konsolu)/[^/]+/index\.md$|^(telefon|tablet|bilgisayar|akilli-saat|oyun-konsolu)/[^/]+/[^/]+/index\.md$|^sitemap\.xml$|^SEO_BRAND_SERIES_HUBS_PREVIEW\.md$' || true)"
           if [ -n "$unexpected" ]; then
             echo "Unexpected file(s) changed by brand-series SEO preview:"
             echo "$unexpected"
@@ -53,7 +53,7 @@ jobs:
 
       - name: Commit preview changes
         run: |
-          if git diff --quiet; then
+          if [ -z "$(git status --porcelain)" ]; then
             echo "No brand-series SEO changes needed."
             exit 0
           fi
