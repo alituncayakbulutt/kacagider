@@ -3,7 +3,7 @@
 Generated: 2026-08-30
 Branch: `seo-brand-series-hubs-preview`
 Base merge point: `main` @ `cf9ca1cf32654b511e60f7f183e99d7272a0a0ea`
-Preview HEAD when report was generated: `653b6b0031485d0453d3ddd5abe1a7cd893e7048`
+Preview HEAD when report was generated: `51dc3199e5f2f85690ebdffbbe94352a62482150`
 
 ## Goal
 
