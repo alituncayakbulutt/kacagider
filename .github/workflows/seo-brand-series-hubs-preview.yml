@@ -1,0 +1,60 @@
+name: SEO Brand and Series Hubs Preview
+
+on:
+  push:
+    branches:
+      - seo-brand-series-hubs-preview
+    paths:
+      - 'scripts/expand-brand-series-hubs.py'
+      - 'scripts/seo-brand-series-hub-audit.py'
+      - '.github/workflows/seo-brand-series-hubs-preview.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  preview:
+    if: github.actor != 'github-actions[bot]'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+
+      - name: Compile brand-series tooling
+        run: python -m py_compile scripts/expand-brand-series-hubs.py scripts/seo-brand-series-hub-audit.py
+
+      - name: Enrich existing brand hubs and generate qualified series hubs
+        run: python scripts/expand-brand-series-hubs.py
+
+      - name: Verify generated scope
+        run: |
+          unexpected="$(git diff --name-only | grep -Ev '^(telefon|tablet|bilgisayar|akilli-saat|oyun-konsolu)/[^/]+/index\.md$|^(telefon|tablet|bilgisayar|akilli-saat|oyun-konsolu)/[^/]+/[^/]+/index\.md$|^sitemap\.xml$' || true)"
+          if [ -n "$unexpected" ]; then
+            echo "Unexpected file(s) changed by brand-series SEO preview:"
+            echo "$unexpected"
+            exit 1
+          fi
+          git diff --check
+
+      - name: Audit brand and series hubs
+        run: python scripts/seo-brand-series-hub-audit.py
+
+      - name: Run existing SEO site audit read-only
+        run: python scripts/seo-site-audit.py
+
+      - name: Commit preview changes
+        run: |
+          if git diff --quiet; then
+            echo "No brand-series SEO changes needed."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add telefon tablet bilgisayar akilli-saat oyun-konsolu sitemap.xml
+          git commit -m "SEO preview: strengthen brand hubs and add series hubs"
+          git push
