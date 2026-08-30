@@ -1,0 +1,20 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "KaçaGider Market Price Observation",
+  "type": "object",
+  "required": ["source_id", "category", "brand", "model", "price", "observation_type", "observed_at"],
+  "properties": {
+    "source_id": {"type": "string"},
+    "source_item_id": {"type": ["string", "null"]},
+    "category": {"enum": ["phone", "tablet", "computer", "watch", "console"]},
+    "brand": {"type": "string"},
+    "model": {"type": "string"},
+    "storage": {"type": ["string", "number", "null"]},
+    "price": {"type": "number", "exclusiveMinimum": 0},
+    "observation_type": {"enum": ["sold", "asking", "buy_offer", "manual"]},
+    "source_url": {"type": ["string", "null"]},
+    "observed_at": {"type": "string"},
+    "verified": {"type": "boolean", "default": false}
+  },
+  "additionalProperties": true
+}
