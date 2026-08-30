@@ -8,6 +8,7 @@ on:
       - 'scripts/expand-brand-series-hubs.py'
       - 'scripts/seo-brand-series-hub-audit.py'
       - 'scripts/write-brand-series-preview-report.py'
+      - 'scripts/harden-brand-series-generator.py'
       - 'scripts/harden-model-seo-for-series-hubs.py'
       - 'scripts/sanitize-brand-series-visible-copy.py'
       - '.github/workflows/seo-brand-series-hubs-preview.yml'
@@ -28,9 +29,12 @@ jobs:
         with:
           python-version: '3.x'
 
+      - name: Harden SEO3 series matching and naming
+        run: python scripts/harden-brand-series-generator.py
+
       - name: Compile SEO3 tooling
         run: |
-          python -m py_compile scripts/expand-brand-series-hubs.py scripts/seo-brand-series-hub-audit.py scripts/write-brand-series-preview-report.py scripts/harden-model-seo-for-series-hubs.py scripts/sanitize-brand-series-visible-copy.py
+          python -m py_compile scripts/expand-brand-series-hubs.py scripts/seo-brand-series-hub-audit.py scripts/write-brand-series-preview-report.py scripts/harden-brand-series-generator.py scripts/harden-model-seo-for-series-hubs.py scripts/sanitize-brand-series-visible-copy.py
           find scripts -type d -name '__pycache__' -prune -exec rm -rf {} +
 
       - name: Harden legacy model SEO tooling for series pages
@@ -48,7 +52,7 @@ jobs:
       - name: Verify generated scope
         run: |
           changed="$(git status --porcelain=v1 -uall | cut -c4-)"
-          unexpected="$(printf '%s\n' "$changed" | grep -Ev '^(telefon|tablet|bilgisayar|akilli-saat|oyun-konsolu)/[^/]+/index\.md$|^(telefon|tablet|bilgisayar|akilli-saat|oyun-konsolu)/[^/]+/[^/]+/index\.md$|^sitemap\.xml$|^SEO_BRAND_SERIES_HUBS_PREVIEW\.md$|^scripts/expand-model-query-intents\.py$|^scripts/seo-model-intent-audit\.py$|^scripts/expand-model-listing-intents\.py$|^scripts/seo-model-listing-intent-audit\.py$' || true)"
+          unexpected="$(printf '%s\n' "$changed" | grep -Ev '^(telefon|tablet|bilgisayar|akilli-saat|oyun-konsolu)/[^/]+/index\.md$|^(telefon|tablet|bilgisayar|akilli-saat|oyun-konsolu)/[^/]+/[^/]+/index\.md$|^sitemap\.xml$|^SEO_BRAND_SERIES_HUBS_PREVIEW\.md$|^scripts/expand-brand-series-hubs\.py$|^scripts/expand-model-query-intents\.py$|^scripts/seo-model-intent-audit\.py$|^scripts/expand-model-listing-intents\.py$|^scripts/seo-model-listing-intent-audit\.py$' || true)"
           if [ -n "$unexpected" ]; then
             echo "Unexpected file(s) changed by brand-series SEO preview:"
             echo "$unexpected"
@@ -76,6 +80,6 @@ jobs:
           fi
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add telefon tablet bilgisayar akilli-saat oyun-konsolu sitemap.xml SEO_BRAND_SERIES_HUBS_PREVIEW.md scripts/expand-model-query-intents.py scripts/seo-model-intent-audit.py scripts/expand-model-listing-intents.py scripts/seo-model-listing-intent-audit.py
-          git commit -m "SEO preview: harden brand and series hubs"
+          git add telefon tablet bilgisayar akilli-saat oyun-konsolu sitemap.xml SEO_BRAND_SERIES_HUBS_PREVIEW.md scripts/expand-brand-series-hubs.py scripts/expand-model-query-intents.py scripts/seo-model-intent-audit.py scripts/expand-model-listing-intents.py scripts/seo-model-listing-intent-audit.py
+          git commit -m "SEO preview: refine brand and series hubs"
           git push
