@@ -1,5 +1,5 @@
 {
-  "version": 1,
+  "version": 2,
   "mode": "dry-run",
   "respect_robots_txt": true,
   "request": {
@@ -14,10 +14,12 @@
       "enabled": true,
       "role": "peer_asking",
       "observation_type": "asking",
-      "max_observations": 160,
+      "max_observations": 200,
       "urls": [
-        "https://www.letgo.com/iphone-ios-telefon_c15001?cuzdanim_guvende=1&user_rating=4.5",
-        "https://www.letgo.com/android-telefon_c15002?cuzdanim_guvende=1&user_rating=4.5"
+        "https://www.letgo.com/iphone-ios-telefon_c15001?filter=model%3Aiphone-13",
+        "https://www.letgo.com/iphone-ios-telefon_c15001?filter=model%3Aiphone-14",
+        "https://www.letgo.com/iphone-ios-telefon_c15001?filter=model%3Aiphone-15",
+        "https://www.letgo.com/android-telefon_c15002"
       ]
     },
     "easycep_refurbished": {
