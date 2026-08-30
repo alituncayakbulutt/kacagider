@@ -148,6 +148,54 @@
       "storage": "128 GB",
       "price": 28399,
       "observed_at": "2026-08-30"
+    },
+    {
+      "source_id": "sahibinden_yepy",
+      "source_item_id": "iphone-14-beyaz-128-gb",
+      "source_url": "https://www.sahibinden.com/yepy/yenilenmis-telefonlar/detay/iphone-14-beyaz-128-gb",
+      "observation_type": "refurbished_retail",
+      "category": "phone",
+      "brand": "Apple",
+      "model": "iPhone 14",
+      "storage": "128 GB",
+      "price": 35899,
+      "observed_at": "2026-08-30"
+    },
+    {
+      "source_id": "sahibinden_yepy",
+      "source_item_id": "iphone-14-mor-128-gb",
+      "source_url": "https://www.sahibinden.com/yepy/yenilenmis-telefonlar/detay/iphone-14-mor-128-gb",
+      "observation_type": "refurbished_retail",
+      "category": "phone",
+      "brand": "Apple",
+      "model": "iPhone 14",
+      "storage": "128 GB",
+      "price": 41999,
+      "observed_at": "2026-08-30"
+    },
+    {
+      "source_id": "sahibinden_yepy",
+      "source_item_id": "iphone-14-mavi-128-gb",
+      "source_url": "https://www.sahibinden.com/yepy/yenilenmis-telefonlar/detay/iphone-14-mavi-128-gb",
+      "observation_type": "refurbished_retail",
+      "category": "phone",
+      "brand": "Apple",
+      "model": "iPhone 14",
+      "storage": "128 GB",
+      "price": 36290,
+      "observed_at": "2026-08-30"
+    },
+    {
+      "source_id": "sahibinden_yepy",
+      "source_item_id": "iphone-14-kirmizi-128-gb",
+      "source_url": "https://www.sahibinden.com/yepy/yenilenmis-telefonlar/detay/iphone-14-kirmizi-128-gb",
+      "observation_type": "refurbished_retail",
+      "category": "phone",
+      "brand": "Apple",
+      "model": "iPhone 14",
+      "storage": "128 GB",
+      "price": 34499,
+      "observed_at": "2026-08-30"
     }
   ]
 }
