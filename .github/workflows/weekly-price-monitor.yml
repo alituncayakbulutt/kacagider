@@ -1,0 +1,60 @@
+name: Weekly Price Monitor (Dry Run)
+
+on:
+  schedule:
+    - cron: '17 4 * * 1'
+  workflow_dispatch:
+  push:
+    paths:
+      - 'scripts/weekly-price-monitor.py'
+      - 'config/weekly-price-monitor.json'
+      - '.github/workflows/weekly-price-monitor.yml'
+      - 'data/phone-prices.js'
+      - 'data/price-history/**'
+
+permissions:
+  contents: read
+
+jobs:
+  monitor:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - name: Validate monitor script
+        run: python -m py_compile scripts/weekly-price-monitor.py
+
+      - name: Run weekly price monitor
+        run: python scripts/weekly-price-monitor.py
+
+      - name: Safety check — protected live files unchanged
+        run: |
+          if ! git diff --quiet -- data/phone-prices.js index.html assets/; then
+            echo 'ERROR: Dry-run attempted to change a protected live file.'
+            git diff -- data/phone-prices.js index.html assets/
+            exit 1
+          fi
+          echo 'Protected live files are unchanged.'
+
+      - name: Add report to job summary
+        run: cat reports/price-monitor/weekly-latest.md >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Upload dry-run report
+        uses: actions/upload-artifact@v4
+        with:
+          name: weekly-price-monitor-${{ github.run_number }}
+          path: |
+            reports/price-monitor/weekly-latest.json
+            reports/price-monitor/weekly-latest.md
+          retention-days: 30
