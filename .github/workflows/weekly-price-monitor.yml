@@ -7,10 +7,13 @@ on:
   push:
     paths:
       - 'scripts/weekly-price-monitor.py'
+      - 'scripts/market-price-observation-engine.py'
       - 'config/weekly-price-monitor.json'
+      - 'config/market-price-engine.json'
       - '.github/workflows/weekly-price-monitor.yml'
       - 'data/phone-prices.js'
       - 'data/price-history/**'
+      - 'data/market-observations/**'
 
 permissions:
   contents: read
@@ -32,11 +35,16 @@ jobs:
         with:
           node-version: '22'
 
-      - name: Validate monitor script
-        run: python -m py_compile scripts/weekly-price-monitor.py
+      - name: Validate pricing scripts
+        run: |
+          python -m py_compile scripts/weekly-price-monitor.py
+          python -m py_compile scripts/market-price-observation-engine.py
 
-      - name: Run weekly price monitor
+      - name: Run weekly catalog monitor
         run: python scripts/weekly-price-monitor.py
+
+      - name: Run Phase 2 market observation engine
+        run: python scripts/market-price-observation-engine.py
 
       - name: Safety check — protected live files unchanged
         run: |
@@ -47,14 +55,19 @@ jobs:
           fi
           echo 'Protected live files are unchanged.'
 
-      - name: Add report to job summary
-        run: cat reports/price-monitor/weekly-latest.md >> "$GITHUB_STEP_SUMMARY"
+      - name: Add reports to job summary
+        run: |
+          cat reports/price-monitor/weekly-latest.md >> "$GITHUB_STEP_SUMMARY"
+          printf '\n\n---\n\n' >> "$GITHUB_STEP_SUMMARY"
+          cat reports/price-monitor/market-candidates-latest.md >> "$GITHUB_STEP_SUMMARY"
 
-      - name: Upload dry-run report
+      - name: Upload dry-run reports
         uses: actions/upload-artifact@v4
         with:
           name: weekly-price-monitor-${{ github.run_number }}
           path: |
             reports/price-monitor/weekly-latest.json
             reports/price-monitor/weekly-latest.md
+            reports/price-monitor/market-candidates-latest.json
+            reports/price-monitor/market-candidates-latest.md
           retention-days: 30
