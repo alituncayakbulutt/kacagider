@@ -11,6 +11,14 @@ REPLACEMENTS = [
     (re.compile(r"Bu merkezde \d+ gerçek ([^;\"]+?) modeli bulunur;"), r"Bu merkezde gerçek \1 modelleri birlikte incelenebilir;"),
     (re.compile(r"ailesindeki \d+ gerçek modeli"), "ailesindeki gerçek modelleri"),
     (re.compile(r"Bu sayfadaki \d+ gerçek modelden"), "Bu sayfadaki gerçek modellerden"),
+    (
+        re.compile(r"Piyasa değeri; ([^\"]+?) ve güncel ikinci el talebine göre değişir\."),
+        r"Piyasa değeri; \1 gibi cihaz özellikleri ile güncel ikinci el talebine göre değişir.",
+    ),
+    (
+        re.compile(r"Değerleme sırasında ([^\"]+?) ve güncel piyasa koşulları birlikte dikkate alınır\."),
+        r"Değerleme sırasında \1 gibi cihaz özellikleri ile güncel piyasa koşulları birlikte dikkate alınır.",
+    ),
 ]
 
 
