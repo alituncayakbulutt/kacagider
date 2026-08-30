@@ -227,7 +227,7 @@ def main():
     cfg = load_json(CONFIG_PATH)
     safety = cfg.get("safety", {})
     if cfg.get("mode") != "dry-run" or any(safety.get(k) for k in ("allow_live_price_write", "allow_supabase_write", "allow_git_commit")):
-        raise SystemExit("Guvenlik: Faz 2 yalnizca dry-run ve yazma izinleri kapali iken calisabilir.")
+        raise SystemExit("Guvenlik: Faz 3 yalnizca dry-run ve yazma izinleri kapali iken calisabilir.")
 
     catalog, by_model = flatten_catalog(extract_phone_prices())
     observations, input_files = load_observations(cfg["observation_glob"])
@@ -235,6 +235,7 @@ def main():
     agg = cfg["aggregation"]
     source_cfg = cfg["sources"]
     thresholds = cfg["change_thresholds_percent"]
+    candidate_roles = set(agg.get("candidate_price_roles", []))
 
     accepted = []
     rejected = []
@@ -278,9 +279,16 @@ def main():
             continue
         seen.add(fp)
         accepted.append({
-            "catalog_key": match["key"], "source_id": source_id, "source_item_id": raw.get("source_item_id"),
-            "observation_type": raw.get("observation_type"), "price": price, "weight": float(source["weight"]),
-            "observed_at": observed.isoformat(), "observed_at_dt": observed, "fingerprint": fp,
+            "catalog_key": match["key"],
+            "source_id": source_id,
+            "source_item_id": raw.get("source_item_id"),
+            "observation_type": raw.get("observation_type"),
+            "role": source.get("role") or raw.get("source_role") or "unknown",
+            "price": price,
+            "weight": float(source["weight"]),
+            "observed_at": observed.isoformat(),
+            "observed_at_dt": observed,
+            "fingerprint": fp,
         })
 
     grouped = defaultdict(list)
@@ -294,16 +302,42 @@ def main():
         filtered, removed = filter_outliers(items, float(agg["outlier_iqr_multiplier"]))
         outlier_count += len(removed)
         sources = sorted({x["source_id"] for x in filtered})
-        if len(filtered) < agg["minimum_observations"] or len(sources) < agg["minimum_independent_sources"]:
-            insufficient.append({"catalog_key": key, "observations": len(filtered), "sources": len(sources), "source_ids": sources})
+        pricing_items = [x for x in filtered if x["role"] in candidate_roles]
+        pricing_sources = sorted({x["source_id"] for x in pricing_items})
+        anchor_items = [x for x in filtered if x["role"] not in candidate_roles]
+        anchor_sources = sorted({x["source_id"] for x in anchor_items})
+
+        reasons = []
+        if len(filtered) < agg["minimum_observations"]:
+            reasons.append("minimum_observations")
+        if len(sources) < agg["minimum_independent_sources"]:
+            reasons.append("minimum_independent_sources")
+        if len(pricing_sources) < agg["minimum_peer_or_transaction_sources"]:
+            reasons.append("minimum_peer_or_transaction_sources")
+        if not pricing_items:
+            reasons.append("no_candidate_price_role")
+        if reasons:
+            insufficient.append({
+                "catalog_key": key,
+                "observations": len(filtered),
+                "sources": len(sources),
+                "source_ids": sources,
+                "pricing_observations": len(pricing_items),
+                "pricing_sources": len(pricing_sources),
+                "pricing_source_ids": pricing_sources,
+                "anchor_sources": anchor_sources,
+                "reasons": reasons,
+            })
             continue
+
         current = catalog[key]
-        candidate = round_price(weighted_quantile(filtered, 0.50), agg["round_to_tl"])
-        quick = round_price(weighted_quantile(filtered, 0.25), agg["round_to_tl"])
-        listing = round_price(weighted_quantile(filtered, 0.75), agg["round_to_tl"])
+        candidate = round_price(weighted_quantile(pricing_items, 0.50), agg["round_to_tl"])
+        quick = round_price(weighted_quantile(pricing_items, 0.25), agg["round_to_tl"])
+        listing = round_price(weighted_quantile(pricing_items, 0.75), agg["round_to_tl"])
+        retail_anchor = round_price(weighted_quantile(anchor_items, 0.50), agg["round_to_tl"]) if anchor_items else None
         current_price = float(current.get("estimated_price") or 0)
         change_pct = ((candidate - current_price) / current_price * 100.0) if current_price else 0.0
-        confidence = confidence_score(filtered, len(sources), now)
+        confidence = confidence_score(pricing_items, len(pricing_sources), now)
         decision = classify(abs(change_pct), thresholds, confidence, cfg["confidence"]["review_below"])
         candidates.append({
             "catalog_key": key,
@@ -311,10 +345,16 @@ def main():
             "candidate_price": candidate,
             "quick_sale_candidate": quick,
             "listing_price_candidate": listing,
+            "retail_anchor_price": retail_anchor,
             "change_percent": round(change_pct, 2),
             "observation_count": len(filtered),
             "source_count": len(sources),
             "source_ids": sources,
+            "pricing_observation_count": len(pricing_items),
+            "pricing_source_count": len(pricing_sources),
+            "pricing_source_ids": pricing_sources,
+            "anchor_source_count": len(anchor_sources),
+            "anchor_source_ids": anchor_sources,
             "confidence_score": confidence,
             "decision": decision,
             "outliers_removed": len(removed),
@@ -326,7 +366,7 @@ def main():
         decisions[row["decision"]] += 1
 
     report = {
-        "engine": "KaçaGider Market Observation Engine V2",
+        "engine": "KaçaGider Market Observation Engine V3",
         "mode": "dry-run",
         "generated_at_utc": now.replace(microsecond=0).isoformat().replace("+00:00", "Z"),
         "safety": {"live_price_mutation": False, "supabase_mutation": False, "git_commit": False},
@@ -344,8 +384,11 @@ def main():
         "policy": {
             "minimum_observations": agg["minimum_observations"],
             "minimum_independent_sources": agg["minimum_independent_sources"],
+            "minimum_peer_or_transaction_sources": agg["minimum_peer_or_transaction_sources"],
+            "candidate_price_roles": sorted(candidate_roles),
             "maximum_observation_age_days": agg["maximum_observation_age_days"],
             "change_thresholds_percent": thresholds,
+            "retail_anchors_do_not_set_candidate_price": True,
             "preserve_current_price_when_data_missing": True,
         },
         "candidates": candidates[:500],
@@ -359,7 +402,7 @@ def main():
     json_path.write_text(json.dumps(report, ensure_ascii=False, indent=2, default=str) + "\n", encoding="utf-8")
 
     md = [
-        "# KaçaGider Faz 2 — Piyasa Gözlem Raporu", "",
+        "# KaçaGider Faz 3 — Piyasa Gözlem ve Aday Fiyat Raporu", "",
         "- Mod: **dry-run / canlı fiyat yazımı kapalı**",
         f"- Katalog varyantı: **{len(catalog)}**",
         f"- Ham gözlem: **{len(observations)}**",
@@ -369,12 +412,17 @@ def main():
         f"- Aday fiyat üretilebilen varyant: **{len(candidates)}**",
         f"- Veri yetersiz grup: **{len(insufficient)}**", "",
         "## Güvenlik", "",
-        "En az 5 geçerli gözlem ve 3 bağımsız kaynak olmadan aday fiyat üretilmez. Aday üretilse bile Faz 2 canlı `phone-prices.js` dosyasına veya Supabase fiyat alanlarına yazmaz.",
+        "En az 5 geçerli gözlem, 3 bağımsız kaynak ve en az 2 kullanıcı piyasası/doğrulanmış işlem kaynağı olmadan aday fiyat üretilmez. Yenilenmiş/perakende kaynaklar yalnızca piyasa çıpasıdır ve aday fiyatı doğrudan belirlemez. Faz 3 canlı `phone-prices.js` dosyasına veya Supabase fiyat alanlarına yazmaz.",
     ]
     if candidates:
         md += ["", "## En büyük aday değişimleri", ""]
         for row in candidates[:25]:
-            md.append(f"- `{row['catalog_key']}`: {row['current_price']} → {row['candidate_price']} TL ({row['change_percent']:+.2f}%) · güven {row['confidence_score']}/100 · **{row['decision']}**")
+            anchor = f" · perakende çıpası {row['retail_anchor_price']} TL" if row.get("retail_anchor_price") else ""
+            md.append(
+                f"- `{row['catalog_key']}`: {row['current_price']} → {row['candidate_price']} TL "
+                f"({row['change_percent']:+.2f}%) · piyasa kaynağı {row['pricing_source_count']} · "
+                f"güven {row['confidence_score']}/100 · **{row['decision']}**{anchor}"
+            )
     md_path.write_text("\n".join(md) + "\n", encoding="utf-8")
 
     print(json.dumps(report["summary"], ensure_ascii=False, indent=2))
