@@ -1,6 +1,16 @@
 (function(){
   "use strict";
 
+  function ensureMobileV2Styles(){
+    if(document.querySelector('link[data-kg-mobile-v2="1"]'))return;
+    var link=document.createElement("link");
+    link.rel="stylesheet";
+    link.href="/assets/mobile-v2.css?v=20260830-m1";
+    link.setAttribute("data-kg-mobile-v2","1");
+    document.head.appendChild(link);
+  }
+  ensureMobileV2Styles();
+
   var KG_GA_MEASUREMENT_ID="G-078JHH25LH";
   if(typeof window.gtag==="function")window.gtag("config",KG_GA_MEASUREMENT_ID);
 
