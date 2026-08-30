@@ -1,0 +1,55 @@
+name: SEO Model Intent Expansion Preview
+
+on:
+  push:
+    paths:
+      - 'scripts/expand-model-query-intents.py'
+      - 'scripts/seo-model-intent-audit.py'
+      - '.github/workflows/seo-model-intent-preview.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  preview:
+    if: github.actor != 'github-actions[bot]'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+
+      - name: Expand model query intents without duplicates
+        run: python scripts/expand-model-query-intents.py
+
+      - name: Verify only model pages changed
+        run: |
+          unexpected="$(git diff --name-only | grep -Ev '^(telefon|tablet|bilgisayar|akilli-saat|oyun-konsolu)/[^/]+/[^/]+/index\.md$' || true)"
+          if [ -n "$unexpected" ]; then
+            echo "Unexpected file(s) changed by model intent preview:"
+            echo "$unexpected"
+            exit 1
+          fi
+          git diff --check
+
+      - name: Audit model query intent coverage
+        run: python scripts/seo-model-intent-audit.py
+
+      - name: Run existing SEO site audit read-only
+        run: python scripts/seo-site-audit.py
+
+      - name: Commit preview model-page changes
+        run: |
+          if git diff --quiet; then
+            echo "No model intent changes needed."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add telefon tablet bilgisayar akilli-saat oyun-konsolu
+          git commit -m "SEO preview: expand model search intents without duplicates"
+          git push
