@@ -1,0 +1,34 @@
+{
+  "version": 1,
+  "mode": "dry-run",
+  "schedule": "weekly",
+  "timezone_note": "GitHub Actions cron UTC kullanir; Pazartesi 04:17 UTC = Turkiye saatiyle 07:17.",
+  "source_catalog": "data/phone-prices.js",
+  "history_manifest": "data/price-history/index.json",
+  "safety": {
+    "allow_live_price_write": false,
+    "allow_supabase_write": false,
+    "allow_git_commit": false,
+    "preserve_current_price_when_data_missing": true
+  },
+  "change_thresholds_percent": {
+    "normal": 5,
+    "verify": 10,
+    "review": 15
+  },
+  "confidence": {
+    "low_below": 50,
+    "healthy_from": 70
+  },
+  "freshness_days": {
+    "watch_after": 14,
+    "review_after": 28,
+    "critical_after": 60
+  },
+  "future_market_collection": {
+    "enabled": false,
+    "minimum_independent_sources": 3,
+    "minimum_observations_for_auto_update": 5,
+    "note": "Piyasa kaynaklari Faz 2'de baglanacak. Bu surum yalnizca mevcut katalog ve gercek snapshot'lari analiz eder."
+  }
+}
