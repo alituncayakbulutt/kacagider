@@ -53,9 +53,9 @@ It links to all five valuation categories and the public listings page. It is al
 
 Every model page receives one internal seller-flow link:
 
-**Değerini öğren ve ücretsiz ilan ver → /**
+**Değerini öğren ve ücretsiz ilan ver → /ucretsiz-ilan-ver/**
 
-This sends users to the existing homepage marketplace entry flow without introducing a second model URL.
+The listing hub explains the value-to-listing flow and its main CTA then sends the user to the existing homepage marketplace entry flow. This strengthens one seller-intent SEO hub without introducing a second model URL.
 
 ## Validation
 
