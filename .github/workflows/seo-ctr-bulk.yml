@@ -20,6 +20,8 @@ on:
       - 'scripts/apply-seo-2026-strategy.py'
       - 'scripts/apply-marketplace-seo-final.py'
       - 'scripts/normalize-seo-meta.py'
+      - 'scripts/expand-model-query-intents.py'
+      - 'scripts/seo-model-intent-audit.py'
       - 'scripts/ensure-marketplace-live.py'
       - 'favicon.svg'
       - 'rehber/**'
@@ -75,6 +77,8 @@ jobs:
         run: python scripts/apply-marketplace-seo-final.py
       - name: Normalize long device SEO metadata
         run: python scripts/normalize-seo-meta.py
+      - name: Expand model query intents without duplicates
+        run: python scripts/expand-model-query-intents.py
       - name: Ensure marketplace production scripts stay connected
         run: python scripts/ensure-marketplace-live.py
       - name: Protect marketplace, pricing and Analytics
@@ -94,6 +98,8 @@ jobs:
           test "$(grep -c 'src="/assets/marketplace-nav-test.js"' index.html)" -eq 1
           test "$(grep -c 'src="/assets/marketplace-test.js"' index.html)" -eq 1
           git diff --check
+      - name: Audit model query intent coverage
+        run: python scripts/seo-model-intent-audit.py
       - name: Run SEO site audit
         run: python scripts/seo-site-audit.py
       - name: Commit changes
