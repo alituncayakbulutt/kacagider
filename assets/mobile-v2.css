@@ -1,184 +1,444 @@
-/* KaçaGider Mobile V2 — M1 ana ekran
-   Sadece mobil ana sayfa ve mobil ust bar gorunumunu etkiler.
-   Masaustu, kategori secim mantigi, degerleme ve SEO akislarina dokunmaz. */
+/* KaçaGider Mobile V2 — marketplace ana ekran duzeltmesi
+   Bu katman yalnizca mobil/tablet dar gorunumde calisir.
+   Desktop, degerleme motoru, marketplace ve SEO davranislarini degistirmez. */
 
-@media (max-width: 760px) {
+@media (max-width: 900px) {
   html,
-  body,
-  #viewHome:not(.category-selected) {
+  body {
+    width: 100% !important;
+    max-width: 100% !important;
     overflow-x: hidden !important;
   }
 
-  /* Mobil ust bar: 64px, sade ve dokunmasi kolay */
-  .kg-approved-topbar .kg-topbar-inner {
-    min-height: 64px !important;
-    height: 64px !important;
-    grid-template-columns: minmax(0, 1fr) auto !important;
-    gap: 10px !important;
-    padding: 0 12px !important;
+  /* UST BAR — tek kompakt aksiyon satiri + arama */
+  html body .kg-approved-topbar .kg-topbar-inner {
+    width: 100% !important;
+    max-width: none !important;
+    min-height: 0 !important;
+    margin: 0 !important;
+    padding: 8px 12px 9px !important;
+    display: grid !important;
+    grid-template-columns: 118px minmax(0, 1fr) !important;
+    grid-template-areas:
+      "brand actions"
+      "search search" !important;
+    gap: 7px 8px !important;
+    align-items: center !important;
   }
 
-  .kg-approved-topbar .kg-brand {
-    min-width: 0 !important;
-    max-width: calc(100vw - 124px) !important;
+  html body .kg-approved-topbar .kg-brand {
+    grid-area: brand !important;
+    width: 118px !important;
+    min-width: 118px !important;
+    max-width: 118px !important;
     padding: 0 !important;
-    border-right: 0 !important;
+    border: 0 !important;
+    overflow: visible !important;
+  }
+
+  html body .kg-approved-topbar .kg-brand-main {
+    font-size: 24px !important;
+    line-height: .92 !important;
+    letter-spacing: -.85px !important;
+    white-space: nowrap !important;
+  }
+
+  html body .kg-approved-topbar .kg-brand small {
+    display: block !important;
+    margin-top: 1px !important;
+    font-size: 10.5px !important;
     line-height: 1 !important;
   }
 
-  .kg-approved-topbar .kg-brand-main {
-    font-size: 26px !important;
-    line-height: 1 !important;
-    letter-spacing: -1px !important;
-  }
-
-  .kg-approved-topbar .kg-brand small {
-    font-size: 12px !important;
-    line-height: 1 !important;
-  }
-
-  .kg-approved-topbar .kg-brand-tagline {
+  html body .kg-approved-topbar .kg-brand-tagline {
     display: none !important;
   }
 
-  .kg-approved-topbar .kg-topbar-actions {
+  html body .kg-approved-topbar .kg-topbar-actions {
+    grid-area: actions !important;
+    width: 100% !important;
+    min-width: 0 !important;
+    display: grid !important;
+    grid-template-columns: minmax(82px, .95fr) minmax(86px, 1fr) 40px !important;
+    grid-template-rows: 40px !important;
+    grid-template-areas: "sell account menu" !important;
+    gap: 6px !important;
+    align-items: stretch !important;
+    justify-items: stretch !important;
+  }
+
+  html body .kg-approved-topbar .kg-v4-action.listings,
+  html body .kg-approved-topbar .kg-theme-btn,
+  html body .kg-theme-btn {
+    display: none !important;
+  }
+
+  html body .kg-approved-topbar .kg-v4-action.sell {
+    grid-area: sell !important;
+    display: inline-flex !important;
+    width: 100% !important;
+    min-width: 0 !important;
+    height: 40px !important;
+    min-height: 40px !important;
+    padding: 0 7px !important;
+    border-radius: 11px !important;
+    font-size: 10.5px !important;
+    line-height: 1.05 !important;
+    white-space: nowrap !important;
+    overflow: hidden !important;
+  }
+
+  html body .kg-approved-topbar #kgHeaderAccountAction,
+  html body .kg-approved-topbar .kg-v4-action.account,
+  html body .kg-approved-topbar .kg-account-session {
+    grid-area: account !important;
+    display: inline-flex !important;
+    width: 100% !important;
+    min-width: 0 !important;
+    height: 40px !important;
+    min-height: 40px !important;
+    padding: 0 7px !important;
+    border-radius: 11px !important;
+    font-size: 10.5px !important;
+    line-height: 1 !important;
+    gap: 5px !important;
+    white-space: nowrap !important;
+    overflow: hidden !important;
+  }
+
+  html body .kg-approved-topbar #kgHeaderAccountAction::before,
+  html body .kg-approved-topbar .kg-v4-action.account::before,
+  html body .kg-approved-topbar .kg-account-session::before {
+    width: 14px !important;
+    height: 14px !important;
+    flex: 0 0 14px !important;
+  }
+
+  html body .kg-approved-topbar .kg-mobile-nav-toggle {
+    grid-area: menu !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    width: 40px !important;
+    min-width: 40px !important;
+    height: 40px !important;
+    min-height: 40px !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    border-radius: 11px !important;
+    font-size: 20px !important;
+  }
+
+  html body .kg-approved-topbar .kg-v4-search {
+    grid-area: search !important;
+    width: 100% !important;
+    min-width: 0 !important;
+    height: 44px !important;
+    min-height: 44px !important;
+    margin: 0 !important;
+    padding: 0 12px !important;
     gap: 8px !important;
+    border-radius: 13px !important;
+    box-shadow: none !important;
   }
 
-  .kg-approved-topbar .kg-theme-btn,
-  .kg-approved-topbar .kg-mobile-nav-toggle {
-    width: 42px !important;
+  html body .kg-approved-topbar .kg-v4-search input {
+    width: 100% !important;
+    min-width: 0 !important;
     height: 42px !important;
-    min-width: 42px !important;
-    border-radius: 12px !important;
+    padding: 0 !important;
+    font-size: 16px !important;
+    line-height: 1 !important;
   }
 
-  /* Mobil ana mesaj: ilk ekranda daha hizli anlasilir */
-  #viewHome:not(.category-selected) .kg-approved-hero {
-    max-width: none !important;
-    margin: 0 auto !important;
-    padding: 24px 18px 18px !important;
+  html body .kg-approved-topbar .kg-v4-search span {
+    font-size: 15px !important;
+  }
+
+  html body .kg-approved-topbar .kg-v4-search button {
+    display: none !important;
+  }
+
+  html body .kg-approved-topbar.menu-open .kg-v4-subbar .kg-main-nav {
+    grid-template-columns: 1fr !important;
+    padding: 8px 12px 12px !important;
+  }
+
+  html body .kg-approved-topbar.menu-open .kg-v4-subbar .kg-main-nav a {
+    min-height: 44px !important;
+    padding: 12px !important;
     text-align: left !important;
   }
 
-  #viewHome:not(.category-selected) .kg-approved-hero h1 {
-    margin: 0 0 9px !important;
-    max-width: 330px !important;
-    font-size: 32px !important;
-    line-height: 1.08 !important;
-    letter-spacing: -1.25px !important;
-  }
-
-  #viewHome:not(.category-selected) .kg-approved-hero p {
-    margin: 0 !important;
-    max-width: 355px !important;
-    font-size: 14px !important;
-    line-height: 1.5 !important;
-    font-weight: 600 !important;
-  }
-
-  /* Kategori alani artik uzun masaustu kartlari degil, kompakt mobil secim listesi */
-  #viewHome:not(.category-selected) .kg-category-section {
+  /* HERO — mobilde daha kisa ve ilk ekranda daha fazla icerik */
+  html body #viewHome#viewHome:not(.category-selected) #kgV4Slider {
     width: 100% !important;
     max-width: none !important;
-    margin: 0 auto 18px !important;
+    margin: 10px auto 14px !important;
     padding: 0 12px !important;
   }
 
-  #viewHome:not(.category-selected) .kg-approved-category-grid {
-    display: grid !important;
-    grid-template-columns: 1fr !important;
-    gap: 10px !important;
+  html body #viewHome#viewHome:not(.category-selected) #kgV4Slider .kg-v4-shell {
+    width: 100% !important;
+    height: 350px !important;
+    min-height: 350px !important;
+    max-height: 350px !important;
+    border-radius: 18px !important;
+    overflow: hidden !important;
   }
 
-  #viewHome:not(.category-selected) .kg-approved-card,
-  #viewHome:not(.category-selected) .kg-approved-card.active,
-  #viewHome:not(.category-selected) .kg-approved-card[data-category] {
-    width: 100% !important;
-    height: auto !important;
-    min-height: 92px !important;
-    margin: 0 !important;
-    padding: 10px 11px !important;
+  html body #viewHome#viewHome:not(.category-selected) #kgV4Slider .kg-v4-slide {
+    inset: 0 !important;
     display: grid !important;
-    grid-template-columns: 70px minmax(0, 1fr) 34px !important;
+    grid-template-columns: 1fr !important;
+    grid-template-rows: auto 108px !important;
+    align-content: start !important;
+    align-items: start !important;
+    gap: 8px !important;
+    padding: 15px 15px 30px !important;
+  }
+
+  html body #viewHome#viewHome:not(.category-selected) #kgV4Slider .kg-v4-copy {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 !important;
+    text-align: center !important;
+  }
+
+  html body #viewHome#viewHome:not(.category-selected) #kgV4Slider .kg-v4-eyebrow {
+    margin: 0 auto 7px !important;
+    padding: 5px 9px !important;
+    font-size: 8.5px !important;
+    line-height: 1 !important;
+  }
+
+  html body #viewHome#viewHome:not(.category-selected) #kgV4Slider .kg-v4-copy h1,
+  html body #viewHome#viewHome:not(.category-selected) #kgV4Slider .kg-v4-copy h2 {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 !important;
+    font-size: 27px !important;
+    line-height: 1.06 !important;
+    letter-spacing: -.65px !important;
+    text-align: center !important;
+    text-wrap: balance !important;
+  }
+
+  html body #viewHome#viewHome:not(.category-selected) #kgV4Slider .kg-v4-copy p {
+    width: 100% !important;
+    max-width: 96% !important;
+    margin: 8px auto 0 !important;
+    font-size: 12.5px !important;
+    line-height: 1.38 !important;
+    text-align: center !important;
+  }
+
+  html body #viewHome#viewHome:not(.category-selected) #kgV4Slider .kg-v4-actions {
+    width: 100% !important;
+    margin-top: 10px !important;
+    display: grid !important;
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    gap: 8px !important;
+  }
+
+  html body #viewHome#viewHome:not(.category-selected) #kgV4Slider .kg-v4-btn {
+    width: 100% !important;
+    min-width: 0 !important;
+    height: 40px !important;
+    min-height: 40px !important;
+    padding: 0 8px !important;
+    border-radius: 11px !important;
+    font-size: 11.5px !important;
+    line-height: 1.1 !important;
+  }
+
+  html body #viewHome#viewHome:not(.category-selected) #kgV4Slider .kg-v4-visual {
+    width: 100% !important;
+    height: 108px !important;
+    min-height: 108px !important;
+    margin: 0 !important;
+    position: relative !important;
+  }
+
+  html body #viewHome#viewHome:not(.category-selected) #kgV4Slider .kg-v4-card {
+    width: 175px !important;
+    max-width: 52vw !important;
+    height: 103px !important;
+    border-radius: 15px !important;
+  }
+
+  html body #viewHome#viewHome:not(.category-selected) #kgV4Slider .kg-v4-card img {
+    width: 72% !important;
+    height: 72% !important;
+    object-fit: contain !important;
+  }
+
+  html body #viewHome#viewHome:not(.category-selected) #kgV4Slider .kg-v4-badge {
+    right: 3% !important;
+    top: 1px !important;
+    padding: 5px 7px !important;
+    font-size: 7.5px !important;
+  }
+
+  html body #viewHome#viewHome:not(.category-selected) #kgV4Slider .kg-v4-stat {
+    left: 5% !important;
+    bottom: 1px !important;
+    min-width: 128px !important;
+    max-width: 49vw !important;
+    padding: 7px 9px !important;
+    border-radius: 11px !important;
+  }
+
+  html body #viewHome#viewHome:not(.category-selected) #kgV4Slider .kg-v4-stat small {
+    font-size: 7px !important;
+  }
+
+  html body #viewHome#viewHome:not(.category-selected) #kgV4Slider .kg-v4-stat strong {
+    font-size: 10.5px !important;
+    line-height: 1.15 !important;
+  }
+
+  html body #viewHome#viewHome:not(.category-selected) #kgV4Slider .kg-v4-arrow {
+    top: auto !important;
+    bottom: 39px !important;
+    width: 32px !important;
+    height: 32px !important;
+    margin: 0 !important;
+    font-size: 19px !important;
+  }
+
+  html body #viewHome#viewHome:not(.category-selected) #kgV4Slider .kg-v4-arrow.prev {
+    left: 7px !important;
+  }
+
+  html body #viewHome#viewHome:not(.category-selected) #kgV4Slider .kg-v4-arrow.next {
+    right: 7px !important;
+  }
+
+  html body #viewHome#viewHome:not(.category-selected) #kgV4Slider .kg-v4-dots {
+    bottom: 8px !important;
+  }
+
+  /* KATEGORILER — tek sutun yatay mobil kart */
+  html body #viewHome#viewHome:not(.category-selected) .home-intro,
+  html body #viewHome#viewHome:not(.category-selected) .kg-category-section {
+    width: 100% !important;
+    max-width: none !important;
+    margin: 0 !important;
+    padding: 0 12px 18px !important;
+  }
+
+  html body #viewHome#viewHome:not(.category-selected) .kg-approved-category-grid,
+  html body #viewHome#viewHome:not(.category-selected) .category-grid {
+    width: 100% !important;
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+    grid-auto-flow: row !important;
+    grid-auto-columns: unset !important;
+    gap: 9px !important;
+    padding: 0 !important;
+    overflow: visible !important;
+  }
+
+  html body #viewHome#viewHome:not(.category-selected) .kg-approved-card,
+  html body #viewHome#viewHome:not(.category-selected) .category-card,
+  html body #viewHome#viewHome:not(.category-selected) .kg-approved-card.kg-mp-card-ready,
+  html body #viewHome#viewHome:not(.category-selected) .category-card.kg-mp-card-ready {
+    width: 100% !important;
+    min-width: 0 !important;
+    height: 96px !important;
+    min-height: 96px !important;
+    max-height: 96px !important;
+    margin: 0 !important;
+    padding: 9px 10px !important;
+    display: grid !important;
+    grid-template-columns: 70px minmax(0, 1fr) 36px !important;
     grid-template-rows: auto auto !important;
     grid-template-areas:
       "art name cta"
       "art sub cta" !important;
-    column-gap: 11px !important;
+    column-gap: 10px !important;
     row-gap: 3px !important;
     align-items: center !important;
     text-align: left !important;
-    border: 1px solid #e4e9ef !important;
-    border-radius: 17px !important;
-    background: #fff !important;
-    box-shadow: 0 5px 14px rgba(15, 23, 42, .045) !important;
+    border-radius: 16px !important;
     overflow: hidden !important;
-    transform: none !important;
   }
 
-  #viewHome:not(.category-selected) .kg-approved-card:active {
-    border-color: #86dba5 !important;
-    background: #f8fffa !important;
-    transform: scale(.992) !important;
+  /* Marketplace'in karta enjekte ettigi ikinci ilan butonu mobilde gereksiz. */
+  html body #viewHome#viewHome:not(.category-selected) .kg-approved-card .kg-mp-card-action,
+  html body #viewHome#viewHome:not(.category-selected) .category-card .kg-mp-card-action {
+    display: none !important;
   }
 
-  #viewHome:not(.category-selected) .kg-product-art {
+  html body #viewHome#viewHome:not(.category-selected) .kg-product-art,
+  html body #viewHome#viewHome:not(.category-selected) .category-image,
+  html body #viewHome#viewHome:not(.category-selected) .category-media {
     grid-area: art !important;
     width: 70px !important;
-    height: 70px !important;
     min-width: 70px !important;
+    height: 70px !important;
+    min-height: 70px !important;
     margin: 0 !important;
     padding: 3px !important;
     display: flex !important;
     align-items: center !important;
     justify-content: center !important;
-    border-radius: 14px !important;
+    border-radius: 13px !important;
     background: #f8fafc !important;
   }
 
-  #viewHome:not(.category-selected) .kg-product-art img {
-    width: 100% !important;
-    height: 100% !important;
-    max-width: 64px !important;
-    max-height: 64px !important;
+  html body #viewHome#viewHome:not(.category-selected) .kg-product-art img,
+  html body #viewHome#viewHome:not(.category-selected) .category-image img,
+  html body #viewHome#viewHome:not(.category-selected) .category-media img {
+    width: 62px !important;
+    max-width: 62px !important;
+    height: 62px !important;
+    max-height: 62px !important;
     object-fit: contain !important;
     background: transparent !important;
   }
 
-  #viewHome:not(.category-selected) .kg-approved-card .category-name {
+  html body #viewHome#viewHome:not(.category-selected) .kg-approved-card .category-name,
+  html body #viewHome#viewHome:not(.category-selected) .category-card .category-name {
     grid-area: name !important;
     align-self: end !important;
     min-width: 0 !important;
     margin: 0 !important;
     font-size: 17px !important;
-    line-height: 1.18 !important;
+    line-height: 1.15 !important;
     font-weight: 950 !important;
-    color: #101828 !important;
+    text-align: left !important;
+    white-space: normal !important;
   }
 
-  #viewHome:not(.category-selected) .kg-approved-card .category-sub {
+  html body #viewHome#viewHome:not(.category-selected) .kg-approved-card .category-sub,
+  html body #viewHome#viewHome:not(.category-selected) .category-card .category-sub {
     grid-area: sub !important;
     align-self: start !important;
     min-width: 0 !important;
     min-height: 0 !important;
-    max-width: 100% !important;
     margin: 0 !important;
-    font-size: 11.5px !important;
-    line-height: 1.35 !important;
+    font-size: 11px !important;
+    line-height: 1.3 !important;
     font-weight: 600 !important;
-    color: #667085 !important;
+    text-align: left !important;
+    display: block !important;
     white-space: nowrap !important;
     overflow: hidden !important;
     text-overflow: ellipsis !important;
   }
 
-  #viewHome:not(.category-selected) .kg-card-cta {
+  html body #viewHome#viewHome:not(.category-selected) .kg-approved-card .kg-card-cta,
+  html body #viewHome#viewHome:not(.category-selected) .category-card .kg-card-cta {
     grid-area: cta !important;
-    width: 34px !important;
-    min-width: 34px !important;
-    height: 34px !important;
-    min-height: 34px !important;
+    position: static !important;
+    transform: none !important;
+    width: 36px !important;
+    min-width: 36px !important;
+    max-width: 36px !important;
+    height: 36px !important;
+    min-height: 36px !important;
     margin: 0 !important;
     padding: 0 !important;
     display: flex !important;
@@ -194,99 +454,136 @@
     overflow: hidden !important;
   }
 
-  #viewHome:not(.category-selected) .kg-card-cta b {
+  html body #viewHome#viewHome:not(.category-selected) .kg-approved-card .kg-card-cta b,
+  html body #viewHome#viewHome:not(.category-selected) .category-card .kg-card-cta b {
     display: block !important;
     margin: 0 !important;
-    font-size: 21px !important;
+    font-size: 20px !important;
     line-height: 1 !important;
   }
 
-  /* Guven alani mobilde daha kisa ve taranabilir */
-  #viewHome:not(.category-selected) .trustbar {
+  /* Alt guven/ozellik alani */
+  html body #viewHome#viewHome:not(.category-selected) .trustbar,
+  html body #viewHome#viewHome:not(.category-selected) .bottom-features {
     width: calc(100% - 24px) !important;
     max-width: none !important;
-    margin: 0 12px 22px !important;
-    padding: 13px !important;
-    display: grid !important;
+    margin: 0 12px 20px !important;
+    padding: 12px !important;
     grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
     gap: 0 !important;
     border-radius: 16px !important;
   }
 
-  #viewHome:not(.category-selected) .trustbar .trust-item,
-  #viewHome:not(.category-selected) .trustbar > * {
-    min-height: 52px !important;
-    padding: 8px 9px !important;
-    border: 0 !important;
+  /* Dark mode */
+  html[data-theme="dark"] body #viewHome#viewHome:not(.category-selected) .kg-approved-card,
+  html[data-theme="dark"] body #viewHome#viewHome:not(.category-selected) .category-card {
+    background: #172235 !important;
+    border-color: #2d3c52 !important;
   }
 
-  #viewHome:not(.category-selected) .trustbar .trust-item:nth-child(odd) {
-    border-right: 1px solid #edf0f3 !important;
+  html[data-theme="dark"] body #viewHome#viewHome:not(.category-selected) .category-name {
+    color: #eef4fb !important;
   }
 
-  #viewHome:not(.category-selected) .trustbar .trust-item:nth-child(n+3) {
-    border-top: 1px solid #edf0f3 !important;
+  html[data-theme="dark"] body #viewHome#viewHome:not(.category-selected) .category-sub {
+    color: #aab7c6 !important;
   }
 
-  #viewHome:not(.category-selected) .trustbar .trust-item strong {
-    font-size: 12px !important;
-    line-height: 1.25 !important;
-  }
-
-  #viewHome:not(.category-selected) .trustbar .trust-item small {
-    margin-top: 2px !important;
-    font-size: 10px !important;
-    line-height: 1.3 !important;
-  }
-
-  /* Acilan mobil menu tek sutun, parmakla rahat secim */
-  .kg-approved-topbar.menu-open .kg-main-nav {
-    grid-template-columns: 1fr !important;
-    padding: 8px 12px 14px !important;
-  }
-
-  .kg-approved-topbar.menu-open .kg-main-nav a {
-    min-height: 46px !important;
-    padding: 13px 12px !important;
-    border-bottom: 1px solid rgba(255, 255, 255, .08) !important;
-    font-size: 14px !important;
-  }
-
-  .kg-approved-topbar.menu-open .kg-main-nav a:last-child {
-    border-bottom: 0 !important;
+  html[data-theme="dark"] body #viewHome#viewHome:not(.category-selected) .kg-card-cta {
+    background: #123b2b !important;
+    color: #63e69a !important;
   }
 }
 
 @media (max-width: 390px) {
-  #viewHome:not(.category-selected) .kg-approved-hero h1 {
-    font-size: 30px !important;
+  html body .kg-approved-topbar .kg-topbar-inner {
+    grid-template-columns: 104px minmax(0, 1fr) !important;
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+    gap: 7px 6px !important;
   }
 
-  #viewHome:not(.category-selected) .kg-approved-card,
-  #viewHome:not(.category-selected) .kg-approved-card.active,
-  #viewHome:not(.category-selected) .kg-approved-card[data-category] {
+  html body .kg-approved-topbar .kg-brand {
+    width: 104px !important;
+    min-width: 104px !important;
+    max-width: 104px !important;
+  }
+
+  html body .kg-approved-topbar .kg-brand-main {
+    font-size: 22px !important;
+  }
+
+  html body .kg-approved-topbar .kg-topbar-actions {
+    grid-template-columns: minmax(75px, .9fr) minmax(79px, 1fr) 38px !important;
+    gap: 4px !important;
+  }
+
+  html body .kg-approved-topbar .kg-v4-action.sell,
+  html body .kg-approved-topbar #kgHeaderAccountAction,
+  html body .kg-approved-topbar .kg-v4-action.account,
+  html body .kg-approved-topbar .kg-account-session {
+    padding-left: 4px !important;
+    padding-right: 4px !important;
+    font-size: 9.3px !important;
+  }
+
+  html body #viewHome#viewHome:not(.category-selected) #kgV4Slider .kg-v4-shell {
+    height: 342px !important;
+    min-height: 342px !important;
+    max-height: 342px !important;
+  }
+
+  html body #viewHome#viewHome:not(.category-selected) #kgV4Slider .kg-v4-copy h1,
+  html body #viewHome#viewHome:not(.category-selected) #kgV4Slider .kg-v4-copy h2 {
+    font-size: 25px !important;
+  }
+
+  html body #viewHome#viewHome:not(.category-selected) .kg-approved-card,
+  html body #viewHome#viewHome:not(.category-selected) .category-card,
+  html body #viewHome#viewHome:not(.category-selected) .kg-approved-card.kg-mp-card-ready,
+  html body #viewHome#viewHome:not(.category-selected) .category-card.kg-mp-card-ready {
+    height: 90px !important;
+    min-height: 90px !important;
+    max-height: 90px !important;
     grid-template-columns: 62px minmax(0, 1fr) 32px !important;
-    min-height: 84px !important;
     column-gap: 9px !important;
-    padding: 9px 10px !important;
+    padding: 8px 9px !important;
   }
 
-  #viewHome:not(.category-selected) .kg-product-art {
+  html body #viewHome#viewHome:not(.category-selected) .kg-product-art,
+  html body #viewHome#viewHome:not(.category-selected) .category-image,
+  html body #viewHome#viewHome:not(.category-selected) .category-media {
     width: 62px !important;
-    height: 62px !important;
     min-width: 62px !important;
+    height: 62px !important;
+    min-height: 62px !important;
   }
 
-  #viewHome:not(.category-selected) .kg-product-art img {
+  html body #viewHome#viewHome:not(.category-selected) .kg-product-art img,
+  html body #viewHome#viewHome:not(.category-selected) .category-image img,
+  html body #viewHome#viewHome:not(.category-selected) .category-media img {
+    width: 56px !important;
     max-width: 56px !important;
+    height: 56px !important;
     max-height: 56px !important;
   }
 
-  #viewHome:not(.category-selected) .kg-approved-card .category-name {
+  html body #viewHome#viewHome:not(.category-selected) .kg-approved-card .category-name,
+  html body #viewHome#viewHome:not(.category-selected) .category-card .category-name {
     font-size: 16px !important;
   }
 
-  #viewHome:not(.category-selected) .kg-approved-card .category-sub {
-    font-size: 10.5px !important;
+  html body #viewHome#viewHome:not(.category-selected) .kg-approved-card .category-sub,
+  html body #viewHome#viewHome:not(.category-selected) .category-card .category-sub {
+    font-size: 10px !important;
+  }
+
+  html body #viewHome#viewHome:not(.category-selected) .kg-approved-card .kg-card-cta,
+  html body #viewHome#viewHome:not(.category-selected) .category-card .kg-card-cta {
+    width: 32px !important;
+    min-width: 32px !important;
+    max-width: 32px !important;
+    height: 32px !important;
+    min-height: 32px !important;
   }
 }
