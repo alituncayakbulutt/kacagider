@@ -10,6 +10,34 @@ DEVICE_ROOTS = ("telefon", "tablet", "bilgisayar", "akilli-saat", "oyun-konsolu"
 CLUSTER_MARKER = "model-intent-v1"
 MAX_NEW_INTENTS = 6
 
+CATEGORY_PROFILES = {
+    "telefon": {
+        "factors": "hafıza, ekran, batarya, cihaz kayıt durumu ve genel kondisyon",
+        "short": "hafıza ve kondisyon",
+        "noun": "telefonun",
+    },
+    "tablet": {
+        "factors": "kapasite, ekran, batarya ve genel kondisyon",
+        "short": "kapasite ve kondisyon",
+        "noun": "tabletin",
+    },
+    "bilgisayar": {
+        "factors": "işlemci, RAM, depolama, pil ve genel kondisyon",
+        "short": "donanım, depolama ve kondisyon",
+        "noun": "bilgisayarın",
+    },
+    "akilli-saat": {
+        "factors": "kasa boyutu, ekran, batarya ve genel kondisyon",
+        "short": "kasa boyutu ve kondisyon",
+        "noun": "saatin",
+    },
+    "oyun-konsolu": {
+        "factors": "depolama, kozmetik durum, aksesuarlar ve çalışma durumu",
+        "short": "depolama, aksesuar ve kondisyon",
+        "noun": "konsolun",
+    },
+}
+
 
 def normalize(value: str) -> str:
     value = str(value or "").lower()
@@ -61,7 +89,6 @@ def display_subject(meta: dict, path: Path) -> str:
             return model if normalize(brand) in normalize(model) else f"{brand} {model}"
         return model or brand
 
-    # Fallback: model sayfalarının H1'i genelde "... Ne Kadar Eder?" ile başlar.
     h1 = str(meta.get("seo_h1", "")).strip()
     for marker in (" Ne Kadar Eder?", " İkinci El Fiyatı", " İkinci El Fiyatları"):
         if marker in h1:
@@ -69,22 +96,26 @@ def display_subject(meta: dict, path: Path) -> str:
     return path.parent.name.replace("-", " ").strip().title()
 
 
-def candidate_intents(subject: str):
+def candidate_intents(subject: str, category: str):
+    profile = CATEGORY_PROFILES[category]
+    factors = profile["factors"]
+    short = profile["short"]
+    noun = profile["noun"]
     return [
-        (f"{subject} ne kadar eder", "Bu sorgu için değer; cihazın gerçek özellikleri, kondisyonu ve güncel piyasa koşulları birlikte değerlendirilerek hesaplanır."),
-        (f"{subject} kaça satılır", "Tek bir sabit satış fiyatı yoktur; cihazın durumu ve güncel ikinci el piyasası satış aralığını etkiler."),
-        (f"{subject} piyasa değeri", "Piyasa değeri, cihazın özellikleri ve kondisyonuna göre değişen bir referanstır; KaçaGider bu bilgileri birlikte değerlendirir."),
-        (f"{subject} ikinci el fiyatı", "İkinci el fiyatı, ürünün gerçek durumu ve güncel piyasa koşulları dikkate alınarak değerlendirilmelidir."),
-        (f"{subject} kaç para eder", "Tahmini değeri görmek için cihazın model, kapasite veya varyant ve kondisyon bilgilerini doğru seçmek gerekir."),
-        (f"{subject} kaça satarım", "Uygun satış fiyatı; cihazın kondisyonu, özellikleri ve piyasadaki güncel talebe göre değişebilir."),
-        (f"{subject} kaça satabilirim", "Satılabilecek tutar tek bir rakam değildir; KaçaGider cihaz bilgilerine göre güncel bir piyasa referansı sunar."),
-        (f"{subject} satsam ne kadar eder", "Satış öncesinde cihazın gerçek durumunu seçerek tahmini ikinci el piyasa değerini kontrol edebilirsiniz."),
-        (f"{subject} ikinci el fiyatları", "İkinci el fiyatları kondisyon, kapasite veya varyant ve piyasa hareketlerine göre farklılaşabilir."),
-        (f"{subject} güncel ikinci el fiyatı", "Güncel ikinci el fiyatını değerlendirirken cihazın özellikleriyle birlikte mevcut piyasa koşullarını da dikkate almak gerekir."),
-        (f"{subject} ikinci el piyasa değeri", "İkinci el piyasa değeri, cihazın özellikleri ve kondisyonuna göre hesaplanan satış referansını ifade eder."),
-        (f"{subject} piyasa fiyatı", "Piyasa fiyatı zaman içinde değişebilir; bu nedenle cihazın güncel özellik ve kondisyon bilgileriyle yeniden kontrol edilmelidir."),
-        (f"{subject} fiyat sorgulama", "Fiyat sorgulama için cihaz bilgilerini değerleme aracında seçerek güncel tahmini değeri görüntüleyebilirsiniz."),
-        (f"{subject} değer sorgulama", "Değer sorgulama sonucunun daha anlamlı olması için model ve kondisyon bilgilerinin doğru girilmesi önemlidir."),
+        (f"{subject} ne kadar eder", f"{subject} ne kadar eder?", f"Değer hesaplanırken {factors} ile güncel piyasa koşulları birlikte değerlendirilir."),
+        (f"{subject} kaça satılır", f"{subject} kaça satılır?", f"Tek bir sabit satış fiyatı yoktur; {short} ile güncel ikinci el talebi satış aralığını etkiler."),
+        (f"{subject} piyasa değeri", f"{subject} piyasa değeri ne kadar?", f"Piyasa değeri {factors} bilgilerine göre değişen bir referanstır; KaçaGider bu verileri birlikte değerlendirir."),
+        (f"{subject} ikinci el fiyatı", f"{subject} ikinci el fiyatı ne kadar?", f"İkinci el fiyatı {factors} ve güncel piyasa koşulları dikkate alınarak değerlendirilmelidir."),
+        (f"{subject} kaç para eder", f"{subject} kaç para eder?", f"Tahmini değeri görmek için {factors} bilgilerini doğru seçmek gerekir."),
+        (f"{subject} kaça satarım", f"{subject} kaça satarım?", f"Uygun satış aralığı {short}, cihazın gerçek durumu ve piyasadaki güncel talebe göre değişebilir."),
+        (f"{subject} kaça satabilirim", f"{subject} kaça satabilirim?", f"Satılabilecek tutar tek bir rakam değildir; {factors} bilgileri {noun} güncel piyasa referansını etkiler."),
+        (f"{subject} satsam ne kadar eder", f"{subject} satsam ne kadar eder?", f"Satış öncesinde {factors} bilgilerini doğru seçerek tahmini ikinci el piyasa değerini kontrol edebilirsiniz."),
+        (f"{subject} ikinci el fiyatları", f"{subject} ikinci el fiyatları ne kadar?", f"İkinci el fiyatları {short}, ürünün kullanım durumu ve piyasa hareketlerine göre farklılaşabilir."),
+        (f"{subject} güncel ikinci el fiyatı", f"{subject} güncel ikinci el fiyatı ne kadar?", f"Güncel ikinci el fiyatını değerlendirirken {factors} ile mevcut piyasa koşullarını birlikte dikkate almak gerekir."),
+        (f"{subject} ikinci el piyasa değeri", f"{subject} ikinci el piyasa değeri ne kadar?", f"İkinci el piyasa değeri {short} temelinde oluşan güncel satış referansını ifade eder."),
+        (f"{subject} piyasa fiyatı", f"{subject} piyasa fiyatı ne kadar?", f"Piyasa fiyatı zaman içinde değişebilir; bu nedenle {factors} bilgileriyle güncel sonucu yeniden kontrol etmek gerekir."),
+        (f"{subject} fiyat sorgulama", f"{subject} fiyat sorgulama nasıl yapılır?", f"Fiyat sorgulamak için model ve {short} bilgilerini değerleme aracında seçerek güncel tahmini değeri görüntüleyebilirsiniz."),
+        (f"{subject} değer sorgulama", f"{subject} değer sorgulama nasıl yapılır?", f"Değer sorgulama sonucunun anlamlı olması için {factors} bilgilerinin doğru girilmesi önemlidir."),
     ]
 
 
@@ -105,7 +136,6 @@ def is_model_page(path: Path, meta: dict) -> bool:
         rel = path.relative_to(ROOT)
     except ValueError:
         return False
-    # kategori / marka / model / index.md
     if len(rel.parts) != 4 or rel.parts[-1] != "index.md" or rel.parts[0] not in DEVICE_ROOTS:
         return False
     breadcrumbs = meta.get("seo_breadcrumbs")
@@ -121,7 +151,6 @@ def process(path: Path):
     if not isinstance(sections, list):
         sections = []
 
-    # Önceki çalıştırmadaki kümeyi kaldır; böylece tekrar çalıştırma yeni kopya üretmez.
     base_sections = [
         section for section in sections
         if not (isinstance(section, dict) and section.get("kg_intent_cluster") == CLUSTER_MARKER)
@@ -129,20 +158,19 @@ def process(path: Path):
     meta_without_cluster = dict(meta)
     meta_without_cluster["seo_sections"] = base_sections
 
+    rel = path.relative_to(ROOT)
+    category = rel.parts[0]
     subject = display_subject(meta_without_cluster, path)
     existing = normalize(visible_meta_text(meta_without_cluster))
-    candidates = candidate_intents(subject)
-    missing = [(phrase, answer) for phrase, answer in candidates if normalize(phrase) not in existing]
+    candidates = candidate_intents(subject, category)
+    missing = [(phrase, question, answer) for phrase, question, answer in candidates if normalize(phrase) not in existing]
     selected = missing[:MAX_NEW_INTENTS]
 
     if selected:
-        items = []
-        for phrase, answer in selected:
-            punctuated = phrase if phrase.endswith(("?", ".", ":")) else phrase + "?"
-            items.append(f"{punctuated} {answer}")
+        items = [f"{question} {answer}" for _phrase, question, answer in selected]
         cluster = {
             "title": f"{subject} için sık aranan fiyat soruları",
-            "text": "Aynı ikinci el fiyat niyeti farklı arama ifadeleriyle sorulabilir. Aşağıdaki kısa yanıtlar, cihazın değerini tek bir sabit rakam yerine gerçek özellikleri ve kondisyonuyla değerlendirmeye yardımcı olur.",
+            "text": "Aynı ikinci el fiyat ihtiyacı farklı arama ifadeleriyle sorulabilir. Aşağıdaki kısa yanıtlar, cihazın gerçek özellikleri ve kondisyonuyla daha bilinçli bir satış değeri değerlendirmesi yapmanıza yardımcı olur.",
             "items": items,
             "kg_intent_cluster": CLUSTER_MARKER,
         }
@@ -155,14 +183,14 @@ def process(path: Path):
     if changed:
         path.write_text(updated, encoding="utf-8")
 
-    core = [normalize(phrase) for phrase, _ in candidates[:4]]
-    expanded = [normalize(phrase) for phrase, _ in candidates[4:]]
+    core = [normalize(phrase) for phrase, _question, _answer in candidates[:4]]
+    expanded = [normalize(phrase) for phrase, _question, _answer in candidates[4:]]
     final_meta = dict(meta_without_cluster)
     final_meta["seo_sections"] = new_sections
     final_text = normalize(visible_meta_text(final_meta))
     return {
-        "path": str(path.relative_to(ROOT)),
-        "category": path.relative_to(ROOT).parts[0],
+        "path": str(rel),
+        "category": category,
         "subject": subject,
         "changed": changed,
         "core_covered": sum(1 for phrase in core if phrase in final_text),
