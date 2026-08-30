@@ -9,6 +9,7 @@ import re
 import subprocess
 import time
 import unicodedata
+import urllib.error
 import urllib.parse
 import urllib.request
 import urllib.robotparser
@@ -33,6 +34,12 @@ PRICE_RE = re.compile(
     re.IGNORECASE,
 )
 STORAGE_RE = re.compile(r"(?<!\d)(\d+(?:[.,]\d+)?)\s*(TB|GB)\b", re.IGNORECASE)
+SCRIPT_RE = re.compile(r"<script(?P<attrs>[^>]*)>(?P<body>.*?)</script>", re.IGNORECASE | re.DOTALL)
+PRICE_KEY_HINTS = ("price", "amount", "saleprice", "currentprice", "listprice", "discountedprice")
+NAME_KEYS = ("title", "name", "subject", "productName", "displayName", "heading")
+DETAIL_KEYS = ("attributes", "properties", "parameters", "details", "specs", "specifications", "features")
+ID_KEYS = ("id", "itemId", "listingId", "adId", "productId", "externalId")
+URL_KEYS = ("url", "webUrl", "canonicalUrl", "seoUrl", "productUrl")
 
 
 class TextCollector(HTMLParser):
@@ -136,6 +143,9 @@ def flatten_models(data):
 
 
 def parse_price(token):
+    if isinstance(token, (int, float)):
+        value = float(token)
+        return value if 500 <= value <= 500000 else None
     value = str(token or "").replace("\xa0", " ").strip().replace(" ", "")
     if not value:
         return None
@@ -146,16 +156,17 @@ def parse_price(token):
         if len(parts) > 1 and all(len(p) == 3 for p in parts[1:]):
             value = "".join(parts)
     try:
-        return float(value)
+        number = float(value)
     except ValueError:
         return None
+    return number if 500 <= number <= 500000 else None
 
 
 def extract_prices(text):
     values = []
     for match in PRICE_RE.finditer(str(text or "")):
         price = parse_price(match.group(1))
-        if price is not None and 500 <= price <= 500000:
+        if price is not None:
             values.append(price)
     return values
 
@@ -213,14 +224,9 @@ def extract_jsonld_products(raw_html):
                 if not isinstance(offer, dict):
                     continue
                 raw_price = offer.get("price") or offer.get("lowPrice") or offer.get("highPrice")
-                if raw_price is not None:
-                    try:
-                        token = str(raw_price)
-                        price = float(token.replace(".", "").replace(",", ".")) if "," in token else float(token)
-                        if 500 <= price <= 500000:
-                            prices.append(price)
-                    except (TypeError, ValueError):
-                        pass
+                price = parse_price(raw_price)
+                if price is not None:
+                    prices.append(price)
                 if offer.get("url"):
                     urls.append(str(offer["url"]))
             out.append({
@@ -240,6 +246,88 @@ def extract_jsonld_products(raw_html):
             continue
         walk(payload)
     return out
+
+
+def embedded_json_payloads(raw_html):
+    payloads = []
+    for match in SCRIPT_RE.finditer(raw_html):
+        attrs = match.group("attrs") or ""
+        attrs_n = attrs.casefold()
+        if "application/json" not in attrs_n and "__next_data__" not in attrs_n and "nuxt" not in attrs_n:
+            continue
+        body = html.unescape(match.group("body")).strip()
+        if not body or body[0] not in "[{":
+            continue
+        try:
+            payloads.append(json.loads(body))
+        except Exception:
+            continue
+    return payloads
+
+
+def scalar_text(node, depth=0, limit=80):
+    if limit <= 0 or depth > 3:
+        return []
+    if isinstance(node, (str, int, float, bool)):
+        return [str(node)]
+    out = []
+    if isinstance(node, list):
+        for item in node[:20]:
+            part = scalar_text(item, depth + 1, limit - len(out))
+            out.extend(part)
+            if len(out) >= limit:
+                break
+        return out
+    if isinstance(node, dict):
+        for key, value in list(node.items())[:40]:
+            if isinstance(value, (str, int, float, bool)):
+                out.append(str(value))
+            elif key in DETAIL_KEYS:
+                out.extend(scalar_text(value, depth + 1, limit - len(out)))
+            if len(out) >= limit:
+                break
+    return out
+
+
+def price_values_from_node(node, depth=0):
+    if depth > 3:
+        return []
+    out = []
+    if isinstance(node, dict):
+        for key, value in node.items():
+            key_n = normalize_text(key).replace(" ", "")
+            if any(hint in key_n for hint in PRICE_KEY_HINTS):
+                if isinstance(value, dict):
+                    for nested_key in ("value", "amount", "price"):
+                        if nested_key in value:
+                            price = parse_price(value[nested_key])
+                            if price is not None:
+                                out.append(price)
+                elif isinstance(value, list):
+                    for item in value[:10]:
+                        price = parse_price(item)
+                        if price is not None:
+                            out.append(price)
+                else:
+                    price = parse_price(value)
+                    if price is not None:
+                        out.append(price)
+            elif isinstance(value, (dict, list)) and key in DETAIL_KEYS:
+                out.extend(price_values_from_node(value, depth + 1))
+    elif isinstance(node, list):
+        for item in node[:20]:
+            out.extend(price_values_from_node(item, depth + 1))
+    return out
+
+
+def first_scalar(mapping, keys):
+    if not isinstance(mapping, dict):
+        return None
+    for key in keys:
+        value = mapping.get(key)
+        if isinstance(value, (str, int, float)) and str(value).strip():
+            return str(value)
+    return None
 
 
 def make_observation(source_id, source_cfg, model, storage, price, source_url, item_token, observed_at):
@@ -283,6 +371,59 @@ def observations_from_jsonld(source_id, source_cfg, raw_html, page_url, signatur
             f"jsonld:{index}",
             observed_at,
         ))
+    return out
+
+
+def observations_from_embedded_json(source_id, source_cfg, raw_html, page_url, signatures, observed_at):
+    out = []
+    seen_nodes = set()
+
+    def walk(node, path="root", depth=0):
+        if depth > 12:
+            return
+        if isinstance(node, list):
+            for index, item in enumerate(node[:500]):
+                walk(item, f"{path}.{index}", depth + 1)
+            return
+        if not isinstance(node, dict):
+            return
+
+        name = first_scalar(node, NAME_KEYS)
+        details = []
+        if name:
+            details.append(name)
+        for key in DETAIL_KEYS:
+            if key in node:
+                details.extend(scalar_text(node[key]))
+        combined = " ".join(details)
+        if combined:
+            model = exact_model_for_text(combined, signatures)
+            if model:
+                storages = [s for s in storage_candidates(combined) if s in model["storages"]]
+                prices = price_values_from_node(node)
+                if storages and prices:
+                    item_id = first_scalar(node, ID_KEYS) or path
+                    item_url = first_scalar(node, URL_KEYS) or page_url
+                    node_key = (model["brand"], model["model"], storages[0], int(round(max(prices))), str(item_id))
+                    if node_key not in seen_nodes:
+                        seen_nodes.add(node_key)
+                        out.append(make_observation(
+                            source_id,
+                            source_cfg,
+                            model,
+                            storages[0],
+                            max(prices),
+                            item_url,
+                            f"embedded:{item_id}",
+                            observed_at,
+                        ))
+
+        for key, value in node.items():
+            if isinstance(value, (dict, list)):
+                walk(value, f"{path}.{key}", depth + 1)
+
+    for payload_index, payload in enumerate(embedded_json_payloads(raw_html)):
+        walk(payload, f"payload{payload_index}")
     return out
 
 
@@ -373,6 +514,10 @@ def robots_allowed(url, request_cfg):
     robots_url = urllib.parse.urlunsplit((parsed.scheme, parsed.netloc, "/robots.txt", "", ""))
     try:
         robots_text, _ = fetch_text(robots_url, request_cfg)
+    except urllib.error.HTTPError as exc:
+        if exc.code in (404, 410):
+            return True, f"robots_missing_{exc.code}"
+        return False, f"robots_http_{exc.code}"
     except Exception as exc:
         return False, f"robots_unavailable:{type(exc).__name__}"
     parser = urllib.robotparser.RobotFileParser()
@@ -380,7 +525,7 @@ def robots_allowed(url, request_cfg):
     parser.parse(robots_text.splitlines())
     if not parser.can_fetch(request_cfg["user_agent"], url):
         return False, "robots_disallow"
-    return True, None
+    return True, "robots_allow"
 
 
 def main():
@@ -407,10 +552,11 @@ def main():
             "status": "ok",
         }
         for url_index, url in enumerate(source_cfg.get("urls", [])):
-            url_report = {"url": url, "status": "pending", "http_status": None, "observations": 0}
+            url_report = {"url": url, "status": "pending", "robots_status": None, "http_status": None, "observations": 0}
             try:
                 if cfg.get("respect_robots_txt", True):
                     allowed, reason = robots_allowed(url, request_cfg)
+                    url_report["robots_status"] = reason
                     if not allowed:
                         url_report["status"] = reason
                         source_report["urls"].append(url_report)
@@ -419,6 +565,7 @@ def main():
                 raw_html, status = fetch_text(url, request_cfg)
                 url_report["http_status"] = status
                 extracted = observations_from_jsonld(source_id, source_cfg, raw_html, url, signatures, observed_at)
+                extracted += observations_from_embedded_json(source_id, source_cfg, raw_html, url, signatures, observed_at)
                 extracted += observations_from_text(source_id, source_cfg, raw_html, url, signatures, observed_at)
                 extracted = dedupe_observations(extracted, int(source_cfg["max_observations"]))
                 source_obs.extend(extracted)
@@ -494,7 +641,8 @@ def main():
             f"{source['observations']} gözlem · durum `{source['status']}`"
         )
         for row in source["urls"]:
-            md.append(f"  - {row['status']} · {row.get('observations', 0)} gözlem · {row['url']}")
+            robots = f" · robots `{row.get('robots_status')}`" if row.get("robots_status") else ""
+            md.append(f"  - {row['status']} · {row.get('observations', 0)} gözlem{robots} · {row['url']}")
     md_path.write_text("\n".join(md) + "\n", encoding="utf-8")
 
     print(json.dumps(report["summary"], ensure_ascii=False, indent=2))
