@@ -29,7 +29,9 @@ jobs:
           python-version: '3.x'
 
       - name: Compile SEO3 tooling
-        run: python -m py_compile scripts/expand-brand-series-hubs.py scripts/seo-brand-series-hub-audit.py scripts/write-brand-series-preview-report.py scripts/harden-model-seo-for-series-hubs.py scripts/sanitize-brand-series-visible-copy.py
+        run: |
+          python -m py_compile scripts/expand-brand-series-hubs.py scripts/seo-brand-series-hub-audit.py scripts/write-brand-series-preview-report.py scripts/harden-model-seo-for-series-hubs.py scripts/sanitize-brand-series-visible-copy.py
+          find scripts -type d -name '__pycache__' -prune -exec rm -rf {} +
 
       - name: Harden legacy model SEO tooling for series pages
         run: python scripts/harden-model-seo-for-series-hubs.py
