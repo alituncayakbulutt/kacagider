@@ -1,0 +1,207 @@
+from __future__ import annotations
+
+import json
+import re
+import unicodedata
+from pathlib import Path
+
+ROOT = Path(__file__).resolve().parents[1]
+DEVICE_ROOTS = ("telefon", "tablet", "bilgisayar", "akilli-saat", "oyun-konsolu")
+CLUSTER_MARKER = "model-intent-v1"
+MAX_NEW_INTENTS = 6
+
+
+def normalize(value: str) -> str:
+    value = str(value or "").lower()
+    value = value.translate(str.maketrans({"ı": "i", "ğ": "g", "ü": "u", "ş": "s", "ö": "o", "ç": "c"}))
+    value = unicodedata.normalize("NFKD", value)
+    value = "".join(ch for ch in value if not unicodedata.combining(ch))
+    value = re.sub(r"[^a-z0-9]+", " ", value)
+    return re.sub(r"\s+", " ", value).strip()
+
+
+def read_frontmatter(path: Path):
+    text = path.read_text(encoding="utf-8")
+    if not text.startswith("---\n"):
+        return text, {}, []
+    end = text.find("\n---\n", 4)
+    if end == -1:
+        return text, {}, []
+    lines = text[4:end].splitlines()
+    meta = {}
+    for line in lines:
+        if ": " not in line:
+            continue
+        key, raw = line.split(": ", 1)
+        try:
+            meta[key] = json.loads(raw)
+        except json.JSONDecodeError:
+            meta[key] = raw.strip('"')
+    return text, meta, lines
+
+
+def replace_json_field(text: str, key: str, value) -> str:
+    encoded = json.dumps(value, ensure_ascii=False, separators=(",", ":"))
+    pattern = re.compile(rf"^{re.escape(key)}:\s*.*$", re.MULTILINE)
+    replacement = f"{key}: {encoded}"
+    if pattern.search(text):
+        return pattern.sub(replacement, text, count=1)
+    end = text.find("\n---\n", 4)
+    if end == -1:
+        return text
+    return text[:end] + "\n" + replacement + text[end:]
+
+
+def display_subject(meta: dict, path: Path) -> str:
+    breadcrumbs = meta.get("seo_breadcrumbs")
+    if isinstance(breadcrumbs, list) and len(breadcrumbs) >= 4:
+        brand = str(breadcrumbs[-2].get("label", "")).strip()
+        model = str(breadcrumbs[-1].get("label", "")).strip()
+        if model and brand:
+            return model if normalize(brand) in normalize(model) else f"{brand} {model}"
+        return model or brand
+
+    # Fallback: model sayfalarının H1'i genelde "... Ne Kadar Eder?" ile başlar.
+    h1 = str(meta.get("seo_h1", "")).strip()
+    for marker in (" Ne Kadar Eder?", " İkinci El Fiyatı", " İkinci El Fiyatları"):
+        if marker in h1:
+            return h1.split(marker, 1)[0].strip()
+    return path.parent.name.replace("-", " ").strip().title()
+
+
+def candidate_intents(subject: str):
+    return [
+        (f"{subject} ne kadar eder", "Bu sorgu için değer; cihazın gerçek özellikleri, kondisyonu ve güncel piyasa koşulları birlikte değerlendirilerek hesaplanır."),
+        (f"{subject} kaça satılır", "Tek bir sabit satış fiyatı yoktur; cihazın durumu ve güncel ikinci el piyasası satış aralığını etkiler."),
+        (f"{subject} piyasa değeri", "Piyasa değeri, cihazın özellikleri ve kondisyonuna göre değişen bir referanstır; KaçaGider bu bilgileri birlikte değerlendirir."),
+        (f"{subject} ikinci el fiyatı", "İkinci el fiyatı, ürünün gerçek durumu ve güncel piyasa koşulları dikkate alınarak değerlendirilmelidir."),
+        (f"{subject} kaç para eder", "Tahmini değeri görmek için cihazın model, kapasite veya varyant ve kondisyon bilgilerini doğru seçmek gerekir."),
+        (f"{subject} kaça satarım", "Uygun satış fiyatı; cihazın kondisyonu, özellikleri ve piyasadaki güncel talebe göre değişebilir."),
+        (f"{subject} kaça satabilirim", "Satılabilecek tutar tek bir rakam değildir; KaçaGider cihaz bilgilerine göre güncel bir piyasa referansı sunar."),
+        (f"{subject} satsam ne kadar eder", "Satış öncesinde cihazın gerçek durumunu seçerek tahmini ikinci el piyasa değerini kontrol edebilirsiniz."),
+        (f"{subject} ikinci el fiyatları", "İkinci el fiyatları kondisyon, kapasite veya varyant ve piyasa hareketlerine göre farklılaşabilir."),
+        (f"{subject} güncel ikinci el fiyatı", "Güncel ikinci el fiyatını değerlendirirken cihazın özellikleriyle birlikte mevcut piyasa koşullarını da dikkate almak gerekir."),
+        (f"{subject} ikinci el piyasa değeri", "İkinci el piyasa değeri, cihazın özellikleri ve kondisyonuna göre hesaplanan satış referansını ifade eder."),
+        (f"{subject} piyasa fiyatı", "Piyasa fiyatı zaman içinde değişebilir; bu nedenle cihazın güncel özellik ve kondisyon bilgileriyle yeniden kontrol edilmelidir."),
+        (f"{subject} fiyat sorgulama", "Fiyat sorgulama için cihaz bilgilerini değerleme aracında seçerek güncel tahmini değeri görüntüleyebilirsiniz."),
+        (f"{subject} değer sorgulama", "Değer sorgulama sonucunun daha anlamlı olması için model ve kondisyon bilgilerinin doğru girilmesi önemlidir."),
+    ]
+
+
+def visible_meta_text(meta: dict) -> str:
+    keys = (
+        "seo_title", "seo_description", "seo_h1", "seo_intro", "seo_context_heading",
+        "seo_context", "seo_sections", "seo_faqs", "seo_links_heading",
+    )
+    parts = []
+    for key in keys:
+        if key in meta:
+            parts.append(json.dumps(meta[key], ensure_ascii=False))
+    return " ".join(parts)
+
+
+def is_model_page(path: Path, meta: dict) -> bool:
+    try:
+        rel = path.relative_to(ROOT)
+    except ValueError:
+        return False
+    # kategori / marka / model / index.md
+    if len(rel.parts) != 4 or rel.parts[-1] != "index.md" or rel.parts[0] not in DEVICE_ROOTS:
+        return False
+    breadcrumbs = meta.get("seo_breadcrumbs")
+    return not breadcrumbs or (isinstance(breadcrumbs, list) and len(breadcrumbs) == 4)
+
+
+def process(path: Path):
+    text, meta, _ = read_frontmatter(path)
+    if not meta or not is_model_page(path, meta):
+        return None
+
+    sections = meta.get("seo_sections")
+    if not isinstance(sections, list):
+        sections = []
+
+    # Önceki çalıştırmadaki kümeyi kaldır; böylece tekrar çalıştırma yeni kopya üretmez.
+    base_sections = [
+        section for section in sections
+        if not (isinstance(section, dict) and section.get("kg_intent_cluster") == CLUSTER_MARKER)
+    ]
+    meta_without_cluster = dict(meta)
+    meta_without_cluster["seo_sections"] = base_sections
+
+    subject = display_subject(meta_without_cluster, path)
+    existing = normalize(visible_meta_text(meta_without_cluster))
+    candidates = candidate_intents(subject)
+    missing = [(phrase, answer) for phrase, answer in candidates if normalize(phrase) not in existing]
+    selected = missing[:MAX_NEW_INTENTS]
+
+    if selected:
+        items = []
+        for phrase, answer in selected:
+            punctuated = phrase if phrase.endswith(("?", ".", ":")) else phrase + "?"
+            items.append(f"{punctuated} {answer}")
+        cluster = {
+            "title": f"{subject} için sık aranan fiyat soruları",
+            "text": "Aynı ikinci el fiyat niyeti farklı arama ifadeleriyle sorulabilir. Aşağıdaki kısa yanıtlar, cihazın değerini tek bir sabit rakam yerine gerçek özellikleri ve kondisyonuyla değerlendirmeye yardımcı olur.",
+            "items": items,
+            "kg_intent_cluster": CLUSTER_MARKER,
+        }
+        new_sections = base_sections + [cluster]
+    else:
+        new_sections = base_sections
+
+    updated = replace_json_field(text, "seo_sections", new_sections)
+    changed = updated != text
+    if changed:
+        path.write_text(updated, encoding="utf-8")
+
+    core = [normalize(phrase) for phrase, _ in candidates[:4]]
+    expanded = [normalize(phrase) for phrase, _ in candidates[4:]]
+    final_meta = dict(meta_without_cluster)
+    final_meta["seo_sections"] = new_sections
+    final_text = normalize(visible_meta_text(final_meta))
+    return {
+        "path": str(path.relative_to(ROOT)),
+        "category": path.relative_to(ROOT).parts[0],
+        "subject": subject,
+        "changed": changed,
+        "core_covered": sum(1 for phrase in core if phrase in final_text),
+        "core_total": len(core),
+        "expanded_covered": sum(1 for phrase in expanded if phrase in final_text),
+        "expanded_total": len(expanded),
+        "added": len(selected),
+        "skipped_existing": len(candidates) - len(missing),
+    }
+
+
+def main():
+    results = []
+    for root_name in DEVICE_ROOTS:
+        base = ROOT / root_name
+        if not base.exists():
+            continue
+        for path in sorted(base.glob("*/*/index.md")):
+            result = process(path)
+            if result:
+                results.append(result)
+
+    changed = sum(1 for item in results if item["changed"])
+    added = sum(item["added"] for item in results)
+    skipped = sum(item["skipped_existing"] for item in results)
+    print(
+        "Model intent expansion: "
+        f"{len(results)} model page(s) scanned; {changed} file(s) updated; "
+        f"{added} missing intent phrase(s) added; {skipped} already-covered phrase(s) skipped."
+    )
+    for category in DEVICE_ROOTS:
+        category_rows = [row for row in results if row["category"] == category]
+        if category_rows:
+            print(
+                f"  {category}: {len(category_rows)} model; "
+                f"{sum(row['added'] for row in category_rows)} added; "
+                f"{sum(row['skipped_existing'] for row in category_rows)} skipped-existing"
+            )
+
+
+if __name__ == "__main__":
+    main()
