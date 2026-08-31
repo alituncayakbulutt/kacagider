@@ -9,10 +9,12 @@ on:
       - 'scripts/weekly-price-monitor.py'
       - 'scripts/fetch-supabase-market-observations.py'
       - 'scripts/fetch-external-market-sources.py'
+      - 'scripts/fetch-donanimhaber-market-source.py'
       - 'scripts/market-price-observation-engine.py'
       - 'config/weekly-price-monitor.json'
       - 'config/market-price-engine.json'
       - 'config/external-market-sources.json'
+      - 'config/donanimhaber-market-source.json'
       - '.github/workflows/weekly-price-monitor.yml'
       - 'data/phone-prices.js'
       - 'data/price-history/**'
@@ -43,6 +45,7 @@ jobs:
           python -m py_compile scripts/weekly-price-monitor.py
           python -m py_compile scripts/fetch-supabase-market-observations.py
           python -m py_compile scripts/fetch-external-market-sources.py
+          python -m py_compile scripts/fetch-donanimhaber-market-source.py
           python -m py_compile scripts/market-price-observation-engine.py
 
       - name: Run weekly catalog monitor
@@ -53,6 +56,9 @@ jobs:
 
       - name: Fetch Phase 3 external market sources
         run: python scripts/fetch-external-market-sources.py
+
+      - name: Fetch Phase 3B DonanimHaber peer source
+        run: python scripts/fetch-donanimhaber-market-source.py
 
       - name: Run Phase 3 market observation engine
         run: python scripts/market-price-observation-engine.py
@@ -72,6 +78,8 @@ jobs:
           printf '\n\n---\n\n' >> "$GITHUB_STEP_SUMMARY"
           cat reports/price-monitor/external-sources-latest.md >> "$GITHUB_STEP_SUMMARY"
           printf '\n\n---\n\n' >> "$GITHUB_STEP_SUMMARY"
+          cat reports/price-monitor/donanimhaber-source-latest.md >> "$GITHUB_STEP_SUMMARY"
+          printf '\n\n---\n\n' >> "$GITHUB_STEP_SUMMARY"
           cat reports/price-monitor/market-candidates-latest.md >> "$GITHUB_STEP_SUMMARY"
 
       - name: Upload dry-run reports
@@ -83,6 +91,8 @@ jobs:
             reports/price-monitor/weekly-latest.md
             reports/price-monitor/external-sources-latest.json
             reports/price-monitor/external-sources-latest.md
+            reports/price-monitor/donanimhaber-source-latest.json
+            reports/price-monitor/donanimhaber-source-latest.md
             reports/price-monitor/market-candidates-latest.json
             reports/price-monitor/market-candidates-latest.md
           retention-days: 30
