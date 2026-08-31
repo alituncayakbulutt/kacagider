@@ -1,0 +1,27 @@
+{
+  "version": 1,
+  "mode": "dry-run",
+  "source_id": "donanimhaber_peer",
+  "category_urls": [
+    "https://forum.donanimhaber.com/ikinci-el-apple-iphone--f528"
+  ],
+  "request": {
+    "timeout_seconds": 20,
+    "max_bytes": 4000000,
+    "delay_between_requests_seconds": 0.8,
+    "user_agent": "KaçaGiderMarketMonitor/1.0 (+https://kacagider.com.tr/)"
+  },
+  "collection": {
+    "maximum_detail_pages": 30,
+    "maximum_observations": 60,
+    "minimum_price_tl": 1000,
+    "maximum_price_tl": 500000
+  },
+  "safety": {
+    "respect_robots_txt": true,
+    "allow_login": false,
+    "allow_captcha_bypass": false,
+    "allow_live_price_write": false,
+    "allow_supabase_write": false
+  }
+}
