@@ -1,6 +1,17 @@
 (function(){
   "use strict";
 
+  function disableDarkMode(){
+    try{
+      localStorage.removeItem("kg-theme");
+      localStorage.removeItem("kg-dark");
+    }catch(_e){}
+    document.documentElement.removeAttribute("data-theme");
+    var toggle=document.getElementById("themeToggle");
+    if(toggle)toggle.remove();
+    document.querySelectorAll(".kg-theme-btn,.theme-toggle").forEach(function(el){el.remove();});
+  }
+
   function ensureMobileV2Styles(){
     if(document.querySelector('link[data-kg-mobile-v2="1"]'))return;
     var link=document.createElement("link");
@@ -23,6 +34,10 @@
 
   ensureMobileV2Styles();
   removeVerifiedLegacyInlineStyles();
+  disableDarkMode();
+  window.setTimeout(disableDarkMode,0);
+  window.setTimeout(disableDarkMode,500);
+  window.setTimeout(disableDarkMode,1500);
 
   var KG_GA_MEASUREMENT_ID="G-078JHH25LH";
   if(typeof window.gtag==="function")window.gtag("config",KG_GA_MEASUREMENT_ID);
@@ -59,6 +74,6 @@
 
   function setupImeiOfficialLink(){var input=document.getElementById("didYouKnowImeiInput"),button=document.getElementById("didYouKnowImeiButton");if(!button||button.dataset.kgImeiOfficial==="1")return;button.dataset.kgImeiOfficial="1";var label=input?document.querySelector('label[for="didYouKnowImeiInput"]'):null;if(label)label.remove();if(input)input.remove();var oldNote=document.getElementById("didYouKnowImeiTransferNote");if(oldNote)oldNote.remove();button.textContent="BTK / e-Devlet’te IMEI Sorgula";button.href="https://www.turkiye.gov.tr/imei-sorgulama";button.target="_blank";button.rel="noopener noreferrer";button.classList.remove("is-disabled");button.removeAttribute("aria-disabled");button.tabIndex=0;var helper=document.getElementById("didYouKnowImeiHint");if(helper)helper.textContent="IMEI numaranızı öğrenmek için telefonunuzun arama ekranına *#06# yazabilirsiniz. Butona bastığınızda resmi BTK / e-Devlet IMEI Sorgulama sayfası açılır; IMEI numaranızı orada girerek sorgulayabilirsiniz.";button.addEventListener("click",function(){kgGaEvent("imei_official_query_clicked",{destination_path:"/imei-sorgulama"});});}
 
-  function ready(){ensureResultProductName();renderResultProductName();document.addEventListener("change",function(event){onChange(event.target);},true);document.addEventListener("click",onClick,true);watchValuationCompletion();watchSaleSubmission();setupContactForm();setupImeiOfficialLink();var attempts=0;var timer=window.setInterval(function(){renderResultProductName();attempts++;if(attempts>=30)window.clearInterval(timer);},500);}
+  function ready(){disableDarkMode();ensureResultProductName();renderResultProductName();document.addEventListener("change",function(event){onChange(event.target);},true);document.addEventListener("click",onClick,true);watchValuationCompletion();watchSaleSubmission();setupContactForm();setupImeiOfficialLink();var attempts=0;var timer=window.setInterval(function(){renderResultProductName();attempts++;if(attempts>=30)window.clearInterval(timer);},500);}
   if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",ready,{once:true});else ready();
 })();
