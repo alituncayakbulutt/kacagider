@@ -5,11 +5,24 @@
     if(document.querySelector('link[data-kg-mobile-v2="1"]'))return;
     var link=document.createElement("link");
     link.rel="stylesheet";
-    link.href="/assets/mobile-v2.css?v=20260831-clean1";
+    link.href="/assets/mobile-v2.css?v=20260831-clean2";
     link.setAttribute("data-kg-mobile-v2","1");
     document.head.appendChild(link);
   }
+
+  function removeVerifiedLegacyInlineStyles(){
+    ["bottom-proofbar-proportion-fix","kg-final-card-nav-fix"].forEach(function(id){
+      var style=document.getElementById(id);
+      if(style)style.remove();
+    });
+    document.querySelectorAll("head > style:not([id])").forEach(function(style){
+      var css=String(style.textContent||"");
+      if(css.indexOf(".ks-purpose{")!==-1)style.remove();
+    });
+  }
+
   ensureMobileV2Styles();
+  removeVerifiedLegacyInlineStyles();
 
   var KG_GA_MEASUREMENT_ID="G-078JHH25LH";
   if(typeof window.gtag==="function")window.gtag("config",KG_GA_MEASUREMENT_ID);
