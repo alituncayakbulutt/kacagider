@@ -78,6 +78,9 @@
 }
 
 .kg-account-direct-tab{
+  display:block!important;
+  visibility:visible!important;
+  opacity:1!important;
   min-height:42px!important;
   padding:0 14px!important;
   border:0!important;
@@ -105,6 +108,8 @@
   width:100%!important;
   min-height:50px!important;
   display:flex!important;
+  visibility:visible!important;
+  opacity:1!important;
   align-items:center!important;
   justify-content:center!important;
   gap:10px!important;
@@ -196,6 +201,9 @@
 .kg-account-direct-submit{
   width:100%!important;
   min-height:50px!important;
+  display:block!important;
+  visibility:visible!important;
+  opacity:1!important;
   margin-top:2px!important;
   border:0!important;
   border-radius:12px!important;
@@ -221,6 +229,8 @@
 }
 
 .kg-account-direct-forgot{
+  display:inline-block!important;
+  visibility:visible!important;
   margin-top:12px!important;
   padding:0!important;
   border:0!important;
@@ -251,6 +261,120 @@
   border-color:#fecdd3!important;
   background:#fff1f2!important;
   color:#b42318!important;
+}
+
+/* Modal light ve dark moddan bagimsiz olarak ayni okunabilir tasarimi korur. */
+html[data-theme="dark"] #kgAccountDirectOverlay .kg-account-direct-card{
+  background:#fff!important;
+  color:#101828!important;
+  border-color:#e4e7ec!important;
+}
+
+html[data-theme="dark"] #kgAccountDirectOverlay .kg-account-direct-card h2{
+  color:#0b1628!important;
+}
+
+html[data-theme="dark"] #kgAccountDirectOverlay .kg-account-direct-card > p{
+  color:#667085!important;
+}
+
+html[data-theme="dark"] #kgAccountDirectOverlay .kg-account-direct-tabs{
+  display:grid!important;
+  visibility:visible!important;
+  opacity:1!important;
+  grid-template-columns:1fr 1fr!important;
+  background:#f5f7f9!important;
+  border-color:#e4e7ec!important;
+}
+
+html[data-theme="dark"] #kgAccountDirectOverlay .kg-account-direct-tab{
+  display:block!important;
+  visibility:visible!important;
+  opacity:1!important;
+  background:transparent!important;
+  color:#667085!important;
+}
+
+html[data-theme="dark"] #kgAccountDirectOverlay .kg-account-direct-tab.active{
+  display:block!important;
+  visibility:visible!important;
+  opacity:1!important;
+  background:#0b1628!important;
+  color:#fff!important;
+}
+
+html[data-theme="dark"] #kgAccountDirectOverlay .kg-account-direct-tab:not(.active):hover{
+  background:#fff!important;
+  color:#0b1628!important;
+}
+
+html[data-theme="dark"] #kgAccountDirectOverlay .kg-account-direct-google{
+  display:flex!important;
+  visibility:visible!important;
+  opacity:1!important;
+  background:#fff!important;
+  color:#1d2939!important;
+  border-color:#d0d5dd!important;
+}
+
+html[data-theme="dark"] #kgAccountDirectOverlay .kg-account-direct-google b{
+  background:#fff!important;
+  color:#4285f4!important;
+  border-color:#e4e7ec!important;
+}
+
+html[data-theme="dark"] #kgAccountDirectOverlay .kg-account-direct-divider{
+  color:#98a2b3!important;
+}
+
+html[data-theme="dark"] #kgAccountDirectOverlay .kg-account-direct-divider:before,
+html[data-theme="dark"] #kgAccountDirectOverlay .kg-account-direct-divider:after{
+  background:#e4e7ec!important;
+}
+
+html[data-theme="dark"] #kgAccountDirectOverlay .kg-account-direct-field label{
+  color:#344054!important;
+}
+
+html[data-theme="dark"] #kgAccountDirectOverlay .kg-account-direct-field input{
+  background:#fff!important;
+  color:#101828!important;
+  border-color:#d0d5dd!important;
+}
+
+html[data-theme="dark"] #kgAccountDirectOverlay .kg-account-direct-field input:focus{
+  border-color:#16a34a!important;
+  box-shadow:0 0 0 4px rgba(22,163,74,.10)!important;
+}
+
+html[data-theme="dark"] #kgAccountDirectOverlay .kg-account-direct-field small{
+  color:#667085!important;
+}
+
+html[data-theme="dark"] #kgAccountDirectOverlay .kg-account-direct-submit{
+  display:block!important;
+  visibility:visible!important;
+  opacity:1!important;
+  background:#16a34a!important;
+  color:#fff!important;
+}
+
+html[data-theme="dark"] #kgAccountDirectOverlay .kg-account-direct-submit:disabled,
+html[data-theme="dark"] #kgAccountDirectOverlay .kg-account-direct-google:disabled{
+  opacity:.6!important;
+}
+
+html[data-theme="dark"] #kgAccountDirectOverlay .kg-account-direct-forgot{
+  display:inline-block!important;
+  visibility:visible!important;
+  color:#15803d!important;
+}
+
+html[data-theme="dark"] #kgAccountDirectOverlay .kg-account-direct-close{
+  display:flex!important;
+  visibility:visible!important;
+  background:#f2f4f7!important;
+  color:#344054!important;
 }
 
 @media(max-width:600px){
