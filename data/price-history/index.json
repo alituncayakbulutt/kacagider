@@ -1,8 +1,9 @@
 {
   "description": "KaçaGider tarihli telefon fiyat kataloğu snapshot listesi.",
   "first_snapshot": "2026-08-30",
-  "latest_snapshot": "2026-08-30",
+  "latest_snapshot": "2026-08-31",
   "snapshots": [
-    "2026-08-30.json"
+    "2026-08-30.json",
+    "2026-08-31.json"
   ]
 }
