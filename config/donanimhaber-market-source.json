@@ -1,9 +1,9 @@
 {
-  "version": 1,
+  "version": 2,
   "mode": "dry-run",
   "source_id": "donanimhaber_peer",
   "category_urls": [
-    "https://forum.donanimhaber.com/ikinci-el-apple-iphone--f528"
+    "https://mini.donanimhaber.com/ikinci-el-apple-iphone--f528"
   ],
   "request": {
     "timeout_seconds": 20,
