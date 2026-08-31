@@ -1,11 +1,14 @@
 {
-  "version": 4,
+  "version": 5,
   "mode": "dry-run",
   "source_id": "donanimhaber_peer",
   "category_urls": [
     "https://mini.donanimhaber.com/ikinci-el-apple-iphone--f528",
-    "https://mini.donanimhaber.com/forumid_528/filt_16151/tt.htm",
-    "https://mini.donanimhaber.com/forumid_528/filt_16166/tt.htm"
+    "https://mini.donanimhaber.com/ikinci-el-apple-iphone--f528?sayfa=2",
+    "https://mini.donanimhaber.com/ikinci-el-apple-iphone--f528?sayfa=3",
+    "https://mini.donanimhaber.com/ikinci-el-apple-iphone--f528?sayfa=4",
+    "https://mini.donanimhaber.com/ikinci-el-apple-iphone--f528?sayfa=5",
+    "https://mini.donanimhaber.com/ikinci-el-apple-iphone--f528?sayfa=6"
   ],
   "request": {
     "timeout_seconds": 20,
@@ -14,8 +17,8 @@
     "user_agent": "KaçaGiderMarketMonitor/1.0 (+https://kacagider.com.tr/)"
   },
   "collection": {
-    "maximum_detail_pages": 30,
-    "maximum_observations": 60,
+    "maximum_detail_pages": 20,
+    "maximum_observations": 100,
     "minimum_price_tl": 1000,
     "maximum_price_tl": 500000
   },
