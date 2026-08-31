@@ -5,7 +5,7 @@
     if(document.querySelector('link[data-kg-mobile-v2="1"]'))return;
     var link=document.createElement("link");
     link.rel="stylesheet";
-    link.href="/assets/mobile-v2.css?v=20260830-m1";
+    link.href="/assets/mobile-v2.css?v=20260831-clean1";
     link.setAttribute("data-kg-mobile-v2","1");
     document.head.appendChild(link);
   }
