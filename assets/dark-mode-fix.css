@@ -6,7 +6,6 @@ html[data-theme="dark"] body {
   color:#e5e7eb !important;
 }
 
-/* ÜST BAR */
 html[data-theme="dark"] .kg-approved-topbar {
   background:#071426 !important;
   border-bottom:1px solid #223148 !important;
@@ -32,7 +31,6 @@ html[data-theme="dark"] .kg-v4-search button {
   color:#4ade80 !important;
 }
 
-/* ALT MENÜ */
 html[data-theme="dark"] .kg-v4-subbar {
   background:#0f1c2f !important;
   border-color:#26364d !important;
@@ -52,14 +50,12 @@ html[data-theme="dark"] .kg-v4-subbar .kg-main-nav a.active::after {
   background:#22c55e !important;
 }
 
-/* ANA SAYFA */
 html[data-theme="dark"] #viewHome,
 html[data-theme="dark"] .page,
 html[data-theme="dark"] main {
   background:#0b1628 !important;
 }
 
-/* HERO / SLIDER */
 html[data-theme="dark"] .kg-v4-shell {
   background:
     radial-gradient(circle at 80% 20%, rgba(22,163,74,.08), transparent 35%),
@@ -104,7 +100,6 @@ html[data-theme="dark"] .kg-v4-stat {
   border:1px solid #24344a !important;
 }
 
-/* BUTONLAR */
 html[data-theme="dark"] .kg-v4-btn {
   background:#111f33 !important;
   border-color:#34445c !important;
@@ -121,7 +116,6 @@ html[data-theme="dark"] .kg-v4-btn.primary {
   color:#fff !important;
 }
 
-/* KATEGORİ KARTLARI */
 html[data-theme="dark"] .category-card,
 html[data-theme="dark"] .kg-approved-category-card,
 html[data-theme="dark"] .panel {
@@ -155,39 +149,26 @@ html[data-theme="dark"] .muted {
   color:#94a3b8 !important;
 }
 
-/* FORM ALANLARI - hesap modalini bilerek hariç tutuyoruz */
-html[data-theme="dark"] body:not(:has(#kgAccountDirectOverlay)) select,
-html[data-theme="dark"] body:not(:has(#kgAccountDirectOverlay)) input[type="text"],
-html[data-theme="dark"] body:not(:has(#kgAccountDirectOverlay)) input[type="number"],
-html[data-theme="dark"] body:not(:has(#kgAccountDirectOverlay)) input[type="email"],
-html[data-theme="dark"] body:not(:has(#kgAccountDirectOverlay)) input[type="password"] {
+html[data-theme="dark"] select,
+html[data-theme="dark"] input[type="text"],
+html[data-theme="dark"] input[type="number"],
+html[data-theme="dark"] input[type="email"],
+html[data-theme="dark"] input[type="password"] {
   background:#0e1a2b !important;
   color:#e5e7eb !important;
   border-color:#34445c !important;
 }
 
-/* Modal acikken de modal disindaki formlari dark tut. */
-html[data-theme="dark"] select:not(#kgAccountDirectOverlay select),
-html[data-theme="dark"] input[type="text"]:not(#kgAccountDirectOverlay input),
-html[data-theme="dark"] input[type="number"]:not(#kgAccountDirectOverlay input),
-html[data-theme="dark"] input[type="email"]:not(#kgAccountDirectOverlay input),
-html[data-theme="dark"] input[type="password"]:not(#kgAccountDirectOverlay input) {
-  background:#0e1a2b !important;
-  color:#e5e7eb !important;
-  border-color:#34445c !important;
-}
-
-html[data-theme="dark"] select:focus:not(#kgAccountDirectOverlay select),
-html[data-theme="dark"] input:focus:not(#kgAccountDirectOverlay input) {
+html[data-theme="dark"] select:focus,
+html[data-theme="dark"] input:focus {
   border-color:#22c55e !important;
   box-shadow:0 0 0 3px rgba(34,197,94,.12) !important;
 }
 
-html[data-theme="dark"] label:not(#kgAccountDirectOverlay label) {
+html[data-theme="dark"] label {
   color:#cbd5e1 !important;
 }
 
-/* OPTION BUTONLARI */
 html[data-theme="dark"] .option {
   background:#111e31 !important;
   color:#cbd5e1 !important;
@@ -200,7 +181,6 @@ html[data-theme="dark"] .option.active {
   border-color:#22c55e !important;
 }
 
-/* FİYAT / YAN KARTLAR */
 html[data-theme="dark"] .price-card {
   background:linear-gradient(145deg,#071426,#0d1b2f) !important;
   border:1px solid #26364d !important;
@@ -222,7 +202,6 @@ html[data-theme="dark"] .sell-card p {
   color:#9fb0c5 !important;
 }
 
-/* ALT ÖZELLİKLER */
 html[data-theme="dark"] .bottom-features {
   background:#111e31 !important;
   border-color:#293a52 !important;
@@ -237,14 +216,12 @@ html[data-theme="dark"] .feature small {
   color:#94a3b8 !important;
 }
 
-/* OKLAR */
 html[data-theme="dark"] .kg-v4-arrow {
   background:#111e31 !important;
   color:#e5e7eb !important;
   border-color:#34445c !important;
 }
 
-/* DARK MODE BUTONU */
 html[data-theme="dark"] .kg-theme-btn {
   background:#111e31 !important;
   color:#facc15 !important;
