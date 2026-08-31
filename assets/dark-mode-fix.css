@@ -1,4 +1,4 @@
-@import url("/assets/account-modal.css?v=20260831-a1");
+@import url("/assets/account-modal.css?v=20260831-a2");
 
 html[data-theme="dark"],
 html[data-theme="dark"] body {
@@ -32,7 +32,7 @@ html[data-theme="dark"] .kg-v4-search button {
   color:#4ade80 !important;
 }
 
-/* ALT MENÜ - EN ÖNEMLİ DÜZELTME */
+/* ALT MENÜ */
 html[data-theme="dark"] .kg-v4-subbar {
   background:#0f1c2f !important;
   border-color:#26364d !important;
@@ -155,24 +155,35 @@ html[data-theme="dark"] .muted {
   color:#94a3b8 !important;
 }
 
-/* FORM ALANLARI */
-html[data-theme="dark"] select,
-html[data-theme="dark"] input[type="text"],
-html[data-theme="dark"] input[type="number"],
-html[data-theme="dark"] input[type="email"],
-html[data-theme="dark"] input[type="password"] {
+/* FORM ALANLARI - hesap modalini bilerek hariç tutuyoruz */
+html[data-theme="dark"] body:not(:has(#kgAccountDirectOverlay)) select,
+html[data-theme="dark"] body:not(:has(#kgAccountDirectOverlay)) input[type="text"],
+html[data-theme="dark"] body:not(:has(#kgAccountDirectOverlay)) input[type="number"],
+html[data-theme="dark"] body:not(:has(#kgAccountDirectOverlay)) input[type="email"],
+html[data-theme="dark"] body:not(:has(#kgAccountDirectOverlay)) input[type="password"] {
   background:#0e1a2b !important;
   color:#e5e7eb !important;
   border-color:#34445c !important;
 }
 
-html[data-theme="dark"] select:focus,
-html[data-theme="dark"] input:focus {
+/* Modal acikken de modal disindaki formlari dark tut. */
+html[data-theme="dark"] select:not(#kgAccountDirectOverlay select),
+html[data-theme="dark"] input[type="text"]:not(#kgAccountDirectOverlay input),
+html[data-theme="dark"] input[type="number"]:not(#kgAccountDirectOverlay input),
+html[data-theme="dark"] input[type="email"]:not(#kgAccountDirectOverlay input),
+html[data-theme="dark"] input[type="password"]:not(#kgAccountDirectOverlay input) {
+  background:#0e1a2b !important;
+  color:#e5e7eb !important;
+  border-color:#34445c !important;
+}
+
+html[data-theme="dark"] select:focus:not(#kgAccountDirectOverlay select),
+html[data-theme="dark"] input:focus:not(#kgAccountDirectOverlay input) {
   border-color:#22c55e !important;
   box-shadow:0 0 0 3px rgba(34,197,94,.12) !important;
 }
 
-html[data-theme="dark"] label {
+html[data-theme="dark"] label:not(#kgAccountDirectOverlay label) {
   color:#cbd5e1 !important;
 }
 
@@ -238,22 +249,6 @@ html[data-theme="dark"] .kg-theme-btn {
   background:#111e31 !important;
   color:#facc15 !important;
   border-color:#34445c !important;
-}
-
-/* LOGIN MODALI DARK MODE'DA BEYAZ KALSIN */
-html[data-theme="dark"] .kg-account-direct-card {
-  background:#fff !important;
-  color:#101828 !important;
-}
-
-html[data-theme="dark"] .kg-account-direct-card h2,
-html[data-theme="dark"] .kg-account-direct-card label {
-  color:#101828 !important;
-}
-
-html[data-theme="dark"] .kg-account-direct-card input {
-  background:#fff !important;
-  color:#101828 !important;
 }
 
 @media(max-width:900px){
