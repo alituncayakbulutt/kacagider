@@ -11,6 +11,7 @@ on:
       - 'scripts/fetch-external-market-sources.py'
       - 'scripts/fetch-donanimhaber-market-source.py'
       - 'scripts/fetch-donanimhaber-market-source-v2.py'
+      - 'scripts/fetch-donanimhaber-market-source-v3.py'
       - 'scripts/market-price-observation-engine.py'
       - 'config/weekly-price-monitor.json'
       - 'config/market-price-engine.json'
@@ -47,6 +48,7 @@ jobs:
           python -m py_compile scripts/fetch-supabase-market-observations.py
           python -m py_compile scripts/fetch-external-market-sources.py
           python -m py_compile scripts/fetch-donanimhaber-market-source-v2.py
+          python -m py_compile scripts/fetch-donanimhaber-market-source-v3.py
           python -m py_compile scripts/market-price-observation-engine.py
 
       - name: Run weekly catalog monitor
@@ -59,7 +61,7 @@ jobs:
         run: python scripts/fetch-external-market-sources.py
 
       - name: Fetch Phase 3B DonanimHaber peer source
-        run: python scripts/fetch-donanimhaber-market-source-v2.py
+        run: python scripts/fetch-donanimhaber-market-source-v3.py
 
       - name: Run Phase 3 market observation engine
         run: python scripts/market-price-observation-engine.py
