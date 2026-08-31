@@ -1,5 +1,5 @@
 {
-  "version": 3,
+  "version": 4,
   "mode": "dry-run",
   "catalog": "data/phone-prices.js",
   "observation_glob": "data/market-observations/inbox/*.json",
@@ -14,6 +14,7 @@
     "kacagider_marketplace": {"weight": 0.65, "enabled": true, "role": "peer_asking"},
     "manual_import": {"weight": 0.8, "enabled": true, "role": "manual_verified"},
     "letgo_peer": {"weight": 0.8, "enabled": true, "role": "peer_asking"},
+    "donanimhaber_peer": {"weight": 0.85, "enabled": true, "role": "peer_asking"},
     "easycep_refurbished": {"weight": 0.25, "enabled": true, "role": "retail_anchor"},
     "getmobil_refurbished": {"weight": 0.25, "enabled": true, "role": "retail_anchor"},
     "sahibinden_yepy": {"weight": 0.25, "enabled": true, "role": "retail_anchor"},
