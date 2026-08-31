@@ -33,6 +33,32 @@ async function init(){
   }
   return window.__KG_SUPABASE_CLIENT__;
 }
+function authErrorMessage(error,fallback){
+  const raw=String(error&&error.message||error||"").trim();
+  const code=String(error&&error.code||"").trim().toLowerCase();
+  const text=raw.toLowerCase();
+  if(!raw)return fallback||"İşlem tamamlanamadı. Lütfen tekrar dene.";
+  if(code==="invalid_credentials"||text.includes("invalid login credentials"))return "E-posta adresi veya şifre hatalı.";
+  if(code==="email_not_confirmed"||text.includes("email not confirmed"))return "E-posta adresin henüz doğrulanmamış. Gelen kutundaki doğrulama bağlantısını aç.";
+  if(code==="user_already_exists"||text.includes("user already registered")||text.includes("already been registered"))return "Bu e-posta adresiyle daha önce üyelik oluşturulmuş. Giriş yapabilir veya şifreni yenileyebilirsin.";
+  if(text.includes("password should be at least")||text.includes("password is too short")||text.includes("weak password"))return "Şifre en az 8 karakter olmalı.";
+  if(text.includes("email rate limit exceeded")||text.includes("rate limit"))return "Çok kısa sürede fazla e-posta isteği gönderildi. Birkaç dakika sonra tekrar dene.";
+  if(text.includes("signup is disabled"))return "Yeni üyelik oluşturma şu anda geçici olarak kullanılamıyor.";
+  if(text.includes("email address")&&text.includes("invalid"))return "Geçerli bir e-posta adresi gir.";
+  if(text.includes("unable to validate email address"))return "E-posta adresi doğrulanamadı. Adresi kontrol edip tekrar dene.";
+  if(text.includes("token has expired")||text.includes("otp_expired")||text.includes("expired"))return "Bu bağlantının süresi dolmuş. Yeni bir doğrulama veya şifre yenileme e-postası iste.";
+  if(text.includes("same password"))return "Yeni şifre eski şifrenle aynı olamaz.";
+  if(text.includes("network")||text.includes("fetch"))return "Bağlantı hatası oluştu. İnternet bağlantını kontrol edip tekrar dene.";
+  return fallback||"İşlem tamamlanamadı. Lütfen bilgilerini kontrol edip tekrar dene.";
+}
+function localizeAuthResult(result,fallback){
+  if(result&&result.error){
+    const localized=new Error(authErrorMessage(result.error,fallback));
+    localized.code=result.error.code||"";
+    return Object.assign({},result,{error:localized});
+  }
+  return result;
+}
 function categoryKey(value){if(CATEGORY_LABELS[value])return value;return CATEGORY_KEYS[value]||String(value||"").trim().toLowerCase();}
 function categoryLabel(value){return CATEGORY_LABELS[categoryKey(value)]||value||"";}
 function dataUrlToFile(dataUrl,index){
@@ -49,17 +75,18 @@ function isVerifiedUser(user){
 async function getSessionUser(){
   const client=await init();
   const {data,error}=await client.auth.getUser();
-  if(error&&error.name!=="AuthSessionMissingError"&&error.message!=="Auth session missing!")throw error;
+  if(error&&error.name!=="AuthSessionMissingError"&&error.message!=="Auth session missing!")throw new Error(authErrorMessage(error,"Oturum bilgisi alınamadı. Lütfen tekrar giriş yap."));
   return data&&data.user?data.user:null;
 }
 async function getUser(){const user=await getSessionUser();return isVerifiedUser(user)?user:null;}
 async function signUp({fullName,email,password}){
   const client=await init();
-  return client.auth.signUp({email,password,options:{data:{full_name:String(fullName||"").trim()},emailRedirectTo:authRedirectUrl()}});
+  const result=await client.auth.signUp({email,password,options:{data:{full_name:String(fullName||"").trim()},emailRedirectTo:authRedirectUrl()}});
+  return localizeAuthResult(result,"Üyelik oluşturulamadı. Bilgilerini kontrol edip tekrar dene.");
 }
 async function signIn({email,password}){
   const client=await init();
-  const result=await client.auth.signInWithPassword({email,password});
+  const result=localizeAuthResult(await client.auth.signInWithPassword({email,password}),"Giriş yapılamadı. E-posta adresini ve şifreni kontrol et.");
   if(result&&result.data&&result.data.user&&!isVerifiedUser(result.data.user)){
     await client.auth.signOut();
     return {data:{user:null,session:null},error:new Error("E-posta adresini doğrulamadan giriş yapamazsın. Gelen kutundaki doğrulama bağlantısını aç.")};
@@ -68,27 +95,27 @@ async function signIn({email,password}){
 }
 async function signInWithGoogle(){
   const client=await init();
-  return client.auth.signInWithOAuth({provider:"google",options:{redirectTo:authRedirectUrl(),queryParams:{prompt:"select_account"}}});
+  return localizeAuthResult(await client.auth.signInWithOAuth({provider:"google",options:{redirectTo:authRedirectUrl(),queryParams:{prompt:"select_account"}}}),"Google ile giriş başlatılamadı. Lütfen tekrar dene.");
 }
 async function resendVerification(email){
   const clean=String(email||"").trim();
   if(!clean)throw new Error("Önce e-posta adresini gir.");
   const client=await init();
-  return client.auth.resend({type:"signup",email:clean,options:{emailRedirectTo:authRedirectUrl()}});
+  return localizeAuthResult(await client.auth.resend({type:"signup",email:clean,options:{emailRedirectTo:authRedirectUrl()}}),"Doğrulama e-postası gönderilemedi. Lütfen biraz sonra tekrar dene.");
 }
 async function resetPassword(email){
   const clean=String(email||"").trim();
   if(!clean)throw new Error("Önce e-posta adresini gir.");
   const client=await init();
-  return client.auth.resetPasswordForEmail(clean,{redirectTo:authRedirectUrl()});
+  return localizeAuthResult(await client.auth.resetPasswordForEmail(clean,{redirectTo:authRedirectUrl()}),"Şifre yenileme e-postası gönderilemedi. Lütfen biraz sonra tekrar dene.");
 }
 async function updatePassword(password){
   const clean=String(password||"");
   if(clean.length<8)throw new Error("Yeni şifre en az 8 karakter olmalı.");
   const client=await init();
-  return client.auth.updateUser({password:clean});
+  return localizeAuthResult(await client.auth.updateUser({password:clean}),"Şifre güncellenemedi. Lütfen tekrar dene.");
 }
-async function signOut(){const client=await init();return client.auth.signOut();}
+async function signOut(){const client=await init();return localizeAuthResult(await client.auth.signOut(),"Çıkış işlemi tamamlanamadı. Lütfen tekrar dene.");}
 
 function selectedValue(id){
   const el=document.getElementById(id);
@@ -141,7 +168,7 @@ function authNote(message,isError){
 async function runGoogleSignIn(button){
   button.disabled=true;
   try{capturePendingListing();const result=await signInWithGoogle();if(result&&result.error)throw result.error;}
-  catch(error){authNote(error.message||"Google ile giriş başlatılamadı.",true);button.disabled=false;}
+  catch(error){authNote(authErrorMessage(error,"Google ile giriş başlatılamadı. Lütfen tekrar dene."),true);button.disabled=false;}
 }
 function enhanceMarketplaceAuth(){
   const form=document.getElementById("kgMpAuth");if(!form||form.dataset.kgAuthUpgrade==="1")return;
@@ -161,11 +188,11 @@ function enhanceMarketplaceAuth(){
   const links=document.createElement("div");links.className="kg-auth-links";links.innerHTML=(register?"":'<button type="button" class="kg-auth-link" data-kg-auth="forgot">Şifremi unuttum</button>')+'<button type="button" class="kg-auth-link" data-kg-auth="resend">Doğrulama e-postasını tekrar gönder</button>';form.appendChild(links);
   const forgot=links.querySelector('[data-kg-auth="forgot"]');
   if(forgot)forgot.addEventListener("click",async function(){
-    forgot.disabled=true;try{const result=await resetPassword(selectedValue("kgAuthEmail"));if(result&&result.error)throw result.error;authNote("Şifre yenileme bağlantısını e-posta adresine gönderdik.",false);}catch(error){authNote(error.message||"Şifre yenileme e-postası gönderilemedi.",true);}forgot.disabled=false;
+    forgot.disabled=true;try{const result=await resetPassword(selectedValue("kgAuthEmail"));if(result&&result.error)throw result.error;authNote("Şifre yenileme bağlantısını e-posta adresine gönderdik.",false);}catch(error){authNote(authErrorMessage(error,"Şifre yenileme e-postası gönderilemedi. Lütfen biraz sonra tekrar dene."),true);}forgot.disabled=false;
   });
   const resend=links.querySelector('[data-kg-auth="resend"]');
   if(resend)resend.addEventListener("click",async function(){
-    resend.disabled=true;try{const result=await resendVerification(selectedValue("kgAuthEmail"));if(result&&result.error)throw result.error;authNote("Doğrulama e-postasını tekrar gönderdik. Gelen kutusu ve spam klasörünü kontrol et.",false);}catch(error){authNote(error.message||"Doğrulama e-postası gönderilemedi.",true);}resend.disabled=false;
+    resend.disabled=true;try{const result=await resendVerification(selectedValue("kgAuthEmail"));if(result&&result.error)throw result.error;authNote("Doğrulama e-postasını tekrar gönderdik. Gelen kutusu ve spam klasörünü kontrol et.",false);}catch(error){authNote(authErrorMessage(error,"Doğrulama e-postası gönderilemedi. Lütfen biraz sonra tekrar dene."),true);}resend.disabled=false;
   });
 }
 function installAuthObserver(){
@@ -193,7 +220,7 @@ function showPasswordRecovery(client){
     e.preventDefault();const p=document.getElementById("kgRecoveryPassword").value,c=document.getElementById("kgRecoveryPasswordConfirm").value,n=document.getElementById("kgRecoveryNote"),b=form.querySelector('button[type="submit"]');n.className="";n.textContent="";
     if(p!==c){n.className="kg-auth-recovery-note error";n.textContent="Şifreler aynı olmalı.";return;}b.disabled=true;
     try{const result=await client.auth.updateUser({password:p});if(result&&result.error)throw result.error;n.className="kg-auth-recovery-note";n.textContent="Şifren güncellendi. Devam Et butonuna basabilirsin.";b.type="button";b.textContent="Devam Et";b.disabled=false;b.onclick=function(){overlay.remove();document.body.style.overflow="";cleanAuthUrl();};}
-    catch(error){n.className="kg-auth-recovery-note error";n.textContent=error.message||"Şifre güncellenemedi.";b.disabled=false;}
+    catch(error){n.className="kg-auth-recovery-note error";n.textContent=authErrorMessage(error,"Şifre güncellenemedi. Lütfen tekrar dene.");b.disabled=false;}
   });
 }
 async function installAuthLifecycle(client){
@@ -253,5 +280,5 @@ async function adminDeleteListing(id){const client=await init();const {data,erro
 async function adminRemovePhotos(paths){const client=await init();const clean=(Array.isArray(paths)?paths:[]).filter(Boolean);if(!clean.length)return {data:[],error:null};return client.storage.from(BUCKET).remove(clean);}
 
 const ready=init().then(client=>{installAuthLifecycle(client).catch(error=>console.warn("KaçaGider auth:",error));return client;});
-window.KGMarketplaceSupabase={ready,init,getUser,getSessionUser,isVerifiedUser,signUp,signIn,signInWithGoogle,resendVerification,resetPassword,updatePassword,signOut,publishListing,listPublished,getListing,isAdmin,adminListListings,adminListListingPhotos,adminListUsers,adminListAuditLogs,adminSetListingStatus,adminDeleteListing,adminRemovePhotos,categoryKey,categoryLabel,config:{url:SUPABASE_URL,redirectUrl:authRedirectUrl()}};
+window.KGMarketplaceSupabase={ready,init,getUser,getSessionUser,isVerifiedUser,signUp,signIn,signInWithGoogle,resendVerification,resetPassword,updatePassword,signOut,publishListing,listPublished,getListing,isAdmin,adminListListings,adminListListingPhotos,adminListUsers,adminListAuditLogs,adminSetListingStatus,adminDeleteListing,adminRemovePhotos,categoryKey,categoryLabel,authErrorMessage,config:{url:SUPABASE_URL,redirectUrl:authRedirectUrl()}};
 })();
