@@ -33,14 +33,18 @@ function installStyle(){
   .kg-v4-subbar .kg-main-nav a{padding:20px 0 18px!important;color:#253047!important;font-size:14px!important;font-weight:800!important;text-decoration:none!important;position:relative!important}
   .kg-v4-subbar .kg-main-nav a:hover,.kg-v4-subbar .kg-main-nav a.active{color:#15803d!important}
   .kg-v4-subbar .kg-main-nav a.active:after{content:"";position:absolute;left:0;right:0;bottom:9px;height:3px;border-radius:9px;background:#16a34a}
-  .kg-account-direct-overlay{position:fixed;inset:0;z-index:1000005;background:rgba(7,20,38,.74);display:flex;align-items:center;justify-content:center;padding:18px}
-  .kg-account-direct-card{width:min(430px,100%);background:#fff;color:#101828;border-radius:18px;padding:22px;box-shadow:0 28px 80px rgba(2,6,23,.35);position:relative}
+  .kg-account-direct-overlay{position:fixed;inset:0;z-index:1000005;background:rgba(7,20,38,.74);display:flex;align-items:center;justify-content:center;padding:18px;overflow-y:auto}
+  .kg-account-direct-card{width:min(430px,100%);background:#fff;color:#101828;border-radius:18px;padding:22px;box-shadow:0 28px 80px rgba(2,6,23,.35);position:relative;box-sizing:border-box}
   .kg-account-direct-card h2{margin:0 0 6px;font-size:24px}.kg-account-direct-card p{margin:0 0 16px;color:#667085;font-size:13px;line-height:1.5}
   .kg-account-direct-close{position:absolute;right:14px;top:14px;width:34px;height:34px;border:0;border-radius:9px;background:#f2f4f7;font-size:20px;cursor:pointer}
+  .kg-account-direct-tabs{display:grid;grid-template-columns:1fr 1fr;background:#f2f4f7;border-radius:11px;padding:4px;margin:0 0 14px}
+  .kg-account-direct-tab{border:0;background:transparent;border-radius:8px;padding:10px;font-weight:850;color:#667085;cursor:pointer}
+  .kg-account-direct-tab.active{background:#fff;color:#111827;box-shadow:0 1px 3px rgba(15,23,42,.08)}
   .kg-account-direct-google{width:100%;min-height:46px;border:1px solid #d0d5dd;border-radius:10px;background:#fff;color:#1d2939;font-weight:850;cursor:pointer;display:flex;align-items:center;justify-content:center;gap:10px}
   .kg-account-direct-google b{width:24px;height:24px;border-radius:50%;display:inline-flex;align-items:center;justify-content:center;border:1px solid #e5e7eb;color:#4285f4;background:#fff;font-family:Arial,sans-serif}
   .kg-account-direct-divider{display:flex;align-items:center;gap:10px;color:#98a2b3;font-size:11px;font-weight:750;margin:14px 0}.kg-account-direct-divider:before,.kg-account-direct-divider:after{content:"";height:1px;background:#e5e7eb;flex:1}
-  .kg-account-direct-field{display:grid;gap:6px;margin-bottom:12px}.kg-account-direct-field label{font-size:12px;font-weight:850;color:#475467}.kg-account-direct-field input{width:100%;min-height:44px;border:1px solid #d0d5dd;border-radius:10px;padding:10px 12px;font:inherit}
+  .kg-account-direct-field{display:grid;gap:6px;margin-bottom:12px}.kg-account-direct-field label{font-size:12px;font-weight:850;color:#475467}.kg-account-direct-field input{width:100%;min-height:44px;border:1px solid #d0d5dd;border-radius:10px;padding:10px 12px;font:inherit;box-sizing:border-box}
+  .kg-account-direct-field small{font-size:11px;color:#667085}
   .kg-account-direct-submit{width:100%;min-height:46px;border:0;border-radius:10px;background:#16a34a;color:#fff;font-weight:900;cursor:pointer}.kg-account-direct-submit:disabled,.kg-account-direct-google:disabled{opacity:.6;cursor:wait}
   .kg-account-direct-note{display:none;margin:0 0 12px;padding:10px 12px;border-radius:10px;background:#f0fdf4;color:#166534;font-size:12px}.kg-account-direct-note.show{display:block}.kg-account-direct-note.error{background:#fff1f2;color:#b42318}
   .kg-account-direct-forgot{margin-top:10px;border:0;background:transparent;padding:0;color:#087a37;font-size:11px;font-weight:850;cursor:pointer}
@@ -61,7 +65,7 @@ function installStyle(){
   @media(max-width:900px){.kg-approved-topbar .kg-topbar-inner{grid-template-columns:1fr auto!important;grid-template-areas:"brand actions" "search search"!important;gap:10px!important;padding:10px 14px!important}.kg-approved-topbar .kg-brand{grid-area:brand}.kg-v4-search{grid-area:search;height:48px}.kg-approved-topbar .kg-topbar-actions{grid-area:actions}.kg-v4-action.listings{display:none}.kg-v4-action.account,.kg-v4-action.sell{height:42px;padding:0 11px;font-size:11px}.kg-v4-subbar{display:none}.kg-approved-topbar.menu-open .kg-v4-subbar{display:block!important;position:absolute;left:0;right:0;top:100%}.kg-approved-topbar.menu-open .kg-v4-subbar .kg-main-nav{display:grid!important;grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:0!important;padding:8px 12px!important}.kg-approved-topbar.menu-open .kg-v4-subbar .kg-main-nav a{padding:13px 10px!important}.kg-v4-shell{height:570px}.kg-v4-slide{grid-template-columns:1fr;padding:30px 42px 48px;gap:18px}.kg-v4-copy{text-align:center;margin:auto}.kg-v4-copy h1,.kg-v4-copy h2,.kg-v4-copy p{text-align:center!important}.kg-v4-actions{justify-content:center}.kg-v4-visual{height:205px}.kg-v4-card{height:200px}.kg-v4-copy h1,.kg-v4-copy h2{font-size:35px!important}}
   @media(max-width:600px){#kgV4Slider{padding:0 10px;margin:15px auto 20px}.kg-v4-shell{height:590px;border-radius:20px}.kg-v4-slide{padding:26px 24px 48px}.kg-v4-copy h1,.kg-v4-copy h2{font-size:30px!important}.kg-v4-copy p{font-size:14px!important}.kg-v4-actions{display:grid;grid-template-columns:1fr}.kg-v4-btn{width:100%}.kg-v4-visual{height:185px}.kg-v4-card{width:255px;height:180px}.kg-v4-stat{left:1%;min-width:155px}.kg-v4-arrow{width:36px;height:36px;margin-top:-18px}}
   @media(max-width:900px){.kg-approved-topbar .kg-topbar-actions{display:grid!important;grid-template-columns:128px 42px!important;grid-template-rows:42px 42px!important;grid-template-areas:"sell sell" "menu theme"!important;gap:8px!important;width:178px!important;min-width:0!important;align-items:center!important;justify-items:stretch!important;flex-shrink:0!important}.kg-approved-topbar .kg-v4-action.listings{display:none!important}.kg-approved-topbar .kg-v4-action.sell{grid-area:sell!important;display:inline-flex!important;width:auto!important;height:42px!important;padding:0 10px!important;font-size:11px!important;box-sizing:border-box!important}.kg-approved-topbar .kg-mobile-nav-toggle{grid-area:menu!important;display:flex!important;align-items:center!important;justify-content:center!important;width:42px!important;height:42px!important;padding:0!important;margin:0!important}.kg-approved-topbar .kg-theme-btn{grid-area:theme!important;display:flex!important;align-items:center!important;justify-content:center!important;width:42px!important;height:42px!important;padding:0!important;margin:0!important;font-size:21px!important;line-height:1!important;overflow:visible!important}.kg-v4-shell{height:620px!important}.kg-v4-visual{height:225px!important}.kg-v4-card{height:220px!important}}
-  @media(max-width:600px){.kg-approved-topbar .kg-v4-action.sell{width:100%!important}.kg-v4-shell{height:640px!important}.kg-v4-slide{padding:30px 24px 52px!important}.kg-v4-visual{height:235px!important}.kg-v4-card{width:280px!important;height:225px!important}}
+  @media(max-width:600px){.kg-approved-topbar .kg-v4-action.sell{width:100%!important}.kg-v4-shell{height:640px!important}.kg-v4-slide{padding:30px 24px 52px!important}.kg-v4-visual{height:235px!important}.kg-v4-card{width:280px!important;height:225px!important}.kg-account-direct-card{max-height:calc(100dvh - 20px);overflow-y:auto}.kg-account-direct-field input,.kg-account-direct-submit,.kg-account-direct-google{min-height:48px}}
   `;
   document.head.appendChild(s);
 }
@@ -97,16 +101,19 @@ function closeAccountLogin(){
   var overlay=document.getElementById("kgAccountDirectOverlay");
   if(overlay) overlay.remove();
 }
-function openAccountLogin(api){
+function openAccountLogin(api,mode){
   installStyle();
-  if(document.getElementById("kgAccountDirectOverlay")) return;
+  var register=mode==="register";
+  var old=document.getElementById("kgAccountDirectOverlay");
+  if(old) old.remove();
   var overlay=document.createElement("div");
   overlay.id="kgAccountDirectOverlay";
   overlay.className="kg-account-direct-overlay";
-  overlay.innerHTML='<section class="kg-account-direct-card" role="dialog" aria-modal="true" aria-labelledby="kgAccountDirectTitle"><button type="button" class="kg-account-direct-close" aria-label="Kapat">×</button><h2 id="kgAccountDirectTitle">Giriş Yap</h2><p>KaçaGider hesabına Google veya e-posta ile giriş yap.</p><div id="kgAccountDirectNote" class="kg-account-direct-note"></div><button type="button" class="kg-account-direct-google" id="kgAccountDirectGoogle"><b>G</b><span>Google ile devam et</span></button><div class="kg-account-direct-divider">veya e-posta ile</div><form id="kgAccountDirectForm"><div class="kg-account-direct-field"><label>E-posta</label><input id="kgAccountDirectEmail" type="email" autocomplete="email" required></div><div class="kg-account-direct-field"><label>Şifre</label><input id="kgAccountDirectPassword" type="password" minlength="8" autocomplete="current-password" required></div><button type="submit" class="kg-account-direct-submit" id="kgAccountDirectSubmit">Giriş Yap</button></form><button type="button" class="kg-account-direct-forgot" id="kgAccountDirectForgot">Şifremi unuttum</button></section>';
+  overlay.innerHTML='<section class="kg-account-direct-card" role="dialog" aria-modal="true" aria-labelledby="kgAccountDirectTitle"><button type="button" class="kg-account-direct-close" aria-label="Kapat">×</button><h2 id="kgAccountDirectTitle">'+(register?'Üye Ol':'Giriş Yap')+'</h2><p>'+(register?'KaçaGider hesabını ücretsiz oluştur.':'KaçaGider hesabına Google veya e-posta ile giriş yap.')+'</p><div class="kg-account-direct-tabs"><button type="button" class="kg-account-direct-tab '+(!register?'active':'')+'" data-account-mode="login">Giriş Yap</button><button type="button" class="kg-account-direct-tab '+(register?'active':'')+'" data-account-mode="register">Üye Ol</button></div><div id="kgAccountDirectNote" class="kg-account-direct-note"></div><button type="button" class="kg-account-direct-google" id="kgAccountDirectGoogle"><b>G</b><span>Google ile devam et</span></button><div class="kg-account-direct-divider">veya e-posta ile</div><form id="kgAccountDirectForm">'+(register?'<div class="kg-account-direct-field"><label>Ad Soyad</label><input id="kgAccountDirectName" type="text" autocomplete="name" required></div>':'')+'<div class="kg-account-direct-field"><label>E-posta</label><input id="kgAccountDirectEmail" type="email" autocomplete="email" required></div><div class="kg-account-direct-field"><label>Şifre</label><input id="kgAccountDirectPassword" type="password" minlength="8" autocomplete="'+(register?'new-password':'current-password')+'" required><small>En az 8 karakter.</small></div>'+(register?'<div class="kg-account-direct-field"><label>Şifre Tekrarı</label><input id="kgAccountDirectPasswordConfirm" type="password" minlength="8" autocomplete="new-password" required></div>':'')+'<button type="submit" class="kg-account-direct-submit" id="kgAccountDirectSubmit">'+(register?'Ücretsiz Üye Ol':'Giriş Yap')+'</button></form>'+(register?'':'<button type="button" class="kg-account-direct-forgot" id="kgAccountDirectForgot">Şifremi unuttum</button>')+'</section>';
   document.body.appendChild(overlay);
   overlay.querySelector(".kg-account-direct-close").onclick=closeAccountLogin;
   overlay.addEventListener("click",function(e){if(e.target===overlay)closeAccountLogin();});
+  overlay.querySelectorAll("[data-account-mode]").forEach(function(b){b.onclick=function(){openAccountLogin(api,b.dataset.accountMode);};});
   document.getElementById("kgAccountDirectGoogle").onclick=async function(){
     var button=this;button.disabled=true;
     try{var result=await api.signInWithGoogle();if(result&&result.error)throw result.error;}
@@ -116,13 +123,29 @@ function openAccountLogin(api){
     e.preventDefault();
     var submit=document.getElementById("kgAccountDirectSubmit");submit.disabled=true;
     try{
-      var result=await api.signIn({email:document.getElementById("kgAccountDirectEmail").value,password:document.getElementById("kgAccountDirectPassword").value});
-      if(result&&result.error)throw result.error;
+      var email=document.getElementById("kgAccountDirectEmail").value;
+      var password=document.getElementById("kgAccountDirectPassword").value;
+      var result;
+      if(register){
+        var confirm=document.getElementById("kgAccountDirectPasswordConfirm").value;
+        if(password!==confirm){showAccountNote("Şifreler aynı olmalı.",true);submit.disabled=false;return;}
+        result=await api.signUp({fullName:document.getElementById("kgAccountDirectName").value,email:email,password:password});
+        if(result&&result.error)throw result.error;
+        if(!(result.data&&result.data.session)){
+          showAccountNote("Üyeliğin oluşturuldu. E-posta adresine gönderdiğimiz doğrulama bağlantısını aç, ardından Giriş Yap sekmesinden devam et.",false);
+          submit.disabled=false;
+          return;
+        }
+      }else{
+        result=await api.signIn({email:email,password:password});
+        if(result&&result.error)throw result.error;
+      }
       closeAccountLogin();
       syncAccountAction();
-    }catch(error){showAccountNote(error.message||"Giriş yapılamadı.",true);submit.disabled=false;}
+    }catch(error){showAccountNote(error.message||(register?"Üyelik oluşturulamadı.":"Giriş yapılamadı."),true);submit.disabled=false;}
   };
-  document.getElementById("kgAccountDirectForgot").onclick=async function(){
+  var forgot=document.getElementById("kgAccountDirectForgot");
+  if(forgot) forgot.onclick=async function(){
     var email=document.getElementById("kgAccountDirectEmail").value.trim();
     if(!email){showAccountNote("Önce e-posta adresini gir.",true);return;}
     try{var result=await api.resetPassword(email);if(result&&result.error)throw result.error;showAccountNote("Şifre yenileme bağlantısını e-posta adresine gönderdik.",false);}
@@ -176,7 +199,7 @@ async function handleAccountAction(){
       return;
     }
     button.disabled=false;
-    openAccountLogin(api);
+    openAccountLogin(api,"login");
   }catch(error){
     console.error("KaçaGider hesap işlemi:",error);
     button.disabled=false;
