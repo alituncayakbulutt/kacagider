@@ -18,21 +18,18 @@
     flex: 0 0 100% !important;
     width: 100% !important;
     min-width: 0 !important;
-    display: flex !important;
-    align-items: stretch !important;
-    justify-content: stretch !important;
+    display: grid !important;
+    grid-template-columns: minmax(0,1fr) minmax(0,1fr) !important;
     gap: 7px !important;
-    flex-wrap: nowrap !important;
+    align-items: stretch !important;
   }
 
-  body > .top > nav > a,
-  body > .top > nav > .kg-account-session,
-  body > .top > nav > .kg-v4-action.account {
+  body > .top > nav > a:not(.kg-account-session):not(.account) {
     min-width: 0 !important;
-    flex: 1 1 0 !important;
+    width: 100% !important;
     min-height: 40px !important;
     height: 40px !important;
-    padding: 0 7px !important;
+    padding: 0 8px !important;
     display: inline-flex !important;
     align-items: center !important;
     justify-content: center !important;
@@ -40,29 +37,50 @@
     font-size: 10.5px !important;
     line-height: 1 !important;
     white-space: nowrap !important;
+  }
+
+  body > .top > nav > .kg-account-session,
+  body > .top > nav > .kg-v4-action.account {
+    grid-column: 1 / -1 !important;
+    width: 100% !important;
+    min-width: 100% !important;
+    max-width: 100% !important;
+    min-height: 42px !important;
+    height: 42px !important;
+    padding: 0 14px !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 8px !important;
+    border-radius: 10px !important;
+    font-size: 12px !important;
+    line-height: 1 !important;
+    white-space: nowrap !important;
     overflow: visible !important;
     text-overflow: clip !important;
+    flex: none !important;
+    transform: none !important;
+    margin: 0 !important;
   }
 
   body > .top > nav > .kg-account-session::before,
   body > .top > nav > .kg-v4-action.account::before {
-    width: 14px !important;
-    height: 14px !important;
-    flex: 0 0 14px !important;
+    width: 16px !important;
+    height: 16px !important;
+    flex: 0 0 16px !important;
     margin: 0 !important;
   }
 }
 
 @media (max-width: 380px) {
-  body > .top > nav {
-    gap: 5px !important;
-  }
-
-  body > .top > nav > a,
-  body > .top > nav > .kg-account-session,
-  body > .top > nav > .kg-v4-action.account {
+  body > .top > nav { gap: 5px !important; }
+  body > .top > nav > a:not(.kg-account-session):not(.account) {
     padding-left: 5px !important;
     padding-right: 5px !important;
-    font-size: 9.6px !important;
+    font-size: 9.8px !important;
+  }
+  body > .top > nav > .kg-account-session,
+  body > .top > nav > .kg-v4-action.account {
+    font-size: 11px !important;
   }
 }
