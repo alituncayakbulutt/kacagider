@@ -1,0 +1,68 @@
+/* KaçaGider ilan liste/detay mobil üst bar düzeltmesi.
+   Yalnızca eski .top header yapısını hedefler; ana sayfayı etkilemez. */
+@media (max-width: 640px) {
+  body > .top {
+    flex-wrap: wrap !important;
+    align-items: center !important;
+    padding: 12px 14px !important;
+    gap: 10px !important;
+  }
+
+  body > .top > .brand {
+    flex: 0 0 100% !important;
+    width: 100% !important;
+    min-width: 0 !important;
+  }
+
+  body > .top > nav {
+    flex: 0 0 100% !important;
+    width: 100% !important;
+    min-width: 0 !important;
+    display: flex !important;
+    align-items: stretch !important;
+    justify-content: stretch !important;
+    gap: 7px !important;
+    flex-wrap: nowrap !important;
+  }
+
+  body > .top > nav > a,
+  body > .top > nav > .kg-account-session,
+  body > .top > nav > .kg-v4-action.account {
+    min-width: 0 !important;
+    flex: 1 1 0 !important;
+    min-height: 40px !important;
+    height: 40px !important;
+    padding: 0 7px !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    border-radius: 10px !important;
+    font-size: 10.5px !important;
+    line-height: 1 !important;
+    white-space: nowrap !important;
+    overflow: visible !important;
+    text-overflow: clip !important;
+  }
+
+  body > .top > nav > .kg-account-session::before,
+  body > .top > nav > .kg-v4-action.account::before {
+    width: 14px !important;
+    height: 14px !important;
+    flex: 0 0 14px !important;
+    margin: 0 !important;
+  }
+}
+
+@media (max-width: 380px) {
+  body > .top > nav {
+    gap: 5px !important;
+  }
+
+  body > .top > nav > a,
+  body > .top > nav > .kg-account-session,
+  body > .top > nav > .kg-v4-action.account {
+    padding-left: 5px !important;
+    padding-right: 5px !important;
+    font-size: 9.6px !important;
+  }
+}
