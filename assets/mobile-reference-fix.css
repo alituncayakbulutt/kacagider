@@ -1,0 +1,241 @@
+/* KaçaGider mobil referans görünüm katmanı
+   Yalnızca telefon genişliklerinde çalışır. Masaüstü ve işlevsel akışlara dokunmaz. */
+
+@media (max-width: 600px) {
+  html body .kg-approved-topbar.kg-approved-topbar .kg-topbar-inner {
+    grid-template-columns: 112px minmax(0, 1fr) !important;
+    grid-template-areas:
+      "brand actions"
+      "search search" !important;
+    padding: 7px 7px 9px !important;
+    gap: 7px 6px !important;
+  }
+
+  html body .kg-approved-topbar.kg-approved-topbar .kg-brand {
+    width: 112px !important;
+    min-width: 112px !important;
+    max-width: 112px !important;
+  }
+
+  html body .kg-approved-topbar.kg-approved-topbar .kg-brand-main {
+    font-size: 23px !important;
+    line-height: .9 !important;
+    letter-spacing: -.9px !important;
+  }
+
+  html body .kg-approved-topbar.kg-approved-topbar .kg-brand small {
+    font-size: 10px !important;
+  }
+
+  html body .kg-approved-topbar.kg-approved-topbar .kg-topbar-actions {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1.05fr) 39px !important;
+    grid-template-rows: 39px !important;
+    gap: 5px !important;
+  }
+
+  html body .kg-approved-topbar.kg-approved-topbar .kg-v4-action.sell,
+  html body .kg-approved-topbar.kg-approved-topbar #kgHeaderAccountAction,
+  html body .kg-approved-topbar.kg-approved-topbar .kg-v4-action.account,
+  html body .kg-approved-topbar.kg-approved-topbar .kg-account-session {
+    height: 39px !important;
+    min-height: 39px !important;
+    padding: 0 6px !important;
+    border-radius: 11px !important;
+    font-size: 10.2px !important;
+    font-weight: 850 !important;
+  }
+
+  html body .kg-approved-topbar.kg-approved-topbar .kg-mobile-nav-toggle {
+    width: 39px !important;
+    min-width: 39px !important;
+    height: 39px !important;
+    min-height: 39px !important;
+    border-radius: 11px !important;
+  }
+
+  html body .kg-approved-topbar.kg-approved-topbar .kg-v4-search {
+    height: 45px !important;
+    min-height: 45px !important;
+    padding: 0 12px !important;
+    border-radius: 13px !important;
+  }
+
+  html body .kg-approved-topbar.kg-approved-topbar .kg-v4-search input {
+    height: 43px !important;
+    font-size: 15px !important;
+    font-weight: 650 !important;
+  }
+
+  /* Referanstaki gibi hero: tam genişlik, ortalı ve daha dengeli. */
+  html body #viewHome#viewHome#viewHome:not(.category-selected) #kgV4Slider {
+    margin: 14px auto 10px !important;
+    padding: 0 10px !important;
+  }
+
+  html body #viewHome#viewHome#viewHome:not(.category-selected) #kgV4Slider .kg-v4-shell {
+    height: 318px !important;
+    min-height: 318px !important;
+    max-height: 318px !important;
+    border-radius: 17px !important;
+  }
+
+  html body #viewHome#viewHome#viewHome:not(.category-selected) #kgV4Slider .kg-v4-slide {
+    grid-template-rows: auto 92px !important;
+    gap: 6px !important;
+    padding: 15px 14px 29px !important;
+  }
+
+  html body #viewHome#viewHome#viewHome:not(.category-selected) #kgV4Slider .kg-v4-eyebrow {
+    margin-bottom: 7px !important;
+    padding: 5px 9px !important;
+    font-size: 8px !important;
+  }
+
+  html body #viewHome#viewHome#viewHome:not(.category-selected) #kgV4Slider .kg-v4-copy h1,
+  html body #viewHome#viewHome#viewHome:not(.category-selected) #kgV4Slider .kg-v4-copy h2 {
+    font-size: 23px !important;
+    line-height: 1.04 !important;
+    letter-spacing: -.65px !important;
+    text-wrap: balance !important;
+  }
+
+  html body #viewHome#viewHome#viewHome:not(.category-selected) #kgV4Slider .kg-v4-copy p {
+    max-width: 98% !important;
+    margin-top: 7px !important;
+    font-size: 11.3px !important;
+    line-height: 1.33 !important;
+  }
+
+  html body #viewHome#viewHome#viewHome:not(.category-selected) #kgV4Slider .kg-v4-actions {
+    margin-top: 9px !important;
+    gap: 7px !important;
+  }
+
+  html body #viewHome#viewHome#viewHome:not(.category-selected) #kgV4Slider .kg-v4-btn {
+    height: 37px !important;
+    min-height: 37px !important;
+    border-radius: 10px !important;
+    font-size: 10.7px !important;
+    font-weight: 850 !important;
+  }
+
+  html body #viewHome#viewHome#viewHome:not(.category-selected) #kgV4Slider .kg-v4-visual {
+    height: 92px !important;
+    min-height: 92px !important;
+  }
+
+  html body #viewHome#viewHome#viewHome:not(.category-selected) #kgV4Slider .kg-v4-card {
+    width: 154px !important;
+    max-width: 48vw !important;
+    height: 88px !important;
+    border-radius: 14px !important;
+  }
+
+  html body #viewHome#viewHome#viewHome:not(.category-selected) #kgV4Slider .kg-v4-stat {
+    left: 6% !important;
+    bottom: 0 !important;
+    min-width: 118px !important;
+    max-width: 43vw !important;
+    padding: 6px 8px !important;
+  }
+
+  html body #viewHome#viewHome#viewHome:not(.category-selected) #kgV4Slider .kg-v4-badge {
+    right: 4% !important;
+    top: 1px !important;
+  }
+
+  html body #viewHome#viewHome#viewHome:not(.category-selected) #kgV4Slider .kg-v4-arrow {
+    bottom: 32px !important;
+    width: 31px !important;
+    height: 31px !important;
+  }
+
+  /* Referanstaki tek sütun kategori kartları. */
+  html body #viewHome#viewHome#viewHome:not(.category-selected) .home-intro,
+  html body #viewHome#viewHome#viewHome:not(.category-selected) .kg-category-section {
+    padding: 0 10px 16px !important;
+  }
+
+  html body #viewHome#viewHome#viewHome:not(.category-selected) .kg-approved-category-grid,
+  html body #viewHome#viewHome#viewHome:not(.category-selected) .category-grid {
+    gap: 9px !important;
+  }
+
+  html body #viewHome#viewHome#viewHome:not(.category-selected) .kg-approved-card,
+  html body #viewHome#viewHome#viewHome:not(.category-selected) .category-card,
+  html body #viewHome#viewHome#viewHome:not(.category-selected) .kg-approved-card.kg-mp-card-ready,
+  html body #viewHome#viewHome#viewHome:not(.category-selected) .category-card.kg-mp-card-ready {
+    height: 92px !important;
+    min-height: 92px !important;
+    max-height: 92px !important;
+    grid-template-columns: 64px minmax(0, 1fr) 34px !important;
+    column-gap: 10px !important;
+    padding: 9px 10px !important;
+    border-radius: 16px !important;
+  }
+
+  html body #viewHome#viewHome#viewHome:not(.category-selected) .kg-product-art,
+  html body #viewHome#viewHome#viewHome:not(.category-selected) .category-image,
+  html body #viewHome#viewHome#viewHome:not(.category-selected) .category-media {
+    width: 64px !important;
+    min-width: 64px !important;
+    height: 64px !important;
+    min-height: 64px !important;
+    border-radius: 12px !important;
+  }
+
+  html body #viewHome#viewHome#viewHome:not(.category-selected) .kg-product-art img,
+  html body #viewHome#viewHome#viewHome:not(.category-selected) .category-image img,
+  html body #viewHome#viewHome#viewHome:not(.category-selected) .category-media img {
+    width: 58px !important;
+    max-width: 58px !important;
+    height: 58px !important;
+    max-height: 58px !important;
+  }
+
+  html body #viewHome#viewHome#viewHome:not(.category-selected) .kg-approved-card .category-name,
+  html body #viewHome#viewHome#viewHome:not(.category-selected) .category-card .category-name {
+    font-size: 17px !important;
+    line-height: 1.12 !important;
+  }
+
+  html body #viewHome#viewHome#viewHome:not(.category-selected) .kg-approved-card .category-sub,
+  html body #viewHome#viewHome#viewHome:not(.category-selected) .category-card .category-sub {
+    font-size: 10.5px !important;
+    line-height: 1.25 !important;
+    white-space: normal !important;
+    display: -webkit-box !important;
+    -webkit-line-clamp: 2 !important;
+    -webkit-box-orient: vertical !important;
+  }
+
+  html body #viewHome#viewHome#viewHome:not(.category-selected) .kg-approved-card .kg-card-cta,
+  html body #viewHome#viewHome#viewHome:not(.category-selected) .category-card .kg-card-cta {
+    width: 34px !important;
+    min-width: 34px !important;
+    max-width: 34px !important;
+    height: 34px !important;
+    min-height: 34px !important;
+  }
+}
+
+@media (max-width: 360px) {
+  html body .kg-approved-topbar.kg-approved-topbar .kg-topbar-inner {
+    grid-template-columns: 102px minmax(0, 1fr) !important;
+  }
+
+  html body .kg-approved-topbar.kg-approved-topbar .kg-brand {
+    width: 102px !important;
+    min-width: 102px !important;
+    max-width: 102px !important;
+  }
+
+  html body .kg-approved-topbar.kg-approved-topbar .kg-brand-main {
+    font-size: 21px !important;
+  }
+
+  html body #viewHome#viewHome#viewHome:not(.category-selected) #kgV4Slider .kg-v4-copy h1,
+  html body #viewHome#viewHome#viewHome:not(.category-selected) #kgV4Slider .kg-v4-copy h2 {
+    font-size: 21px !important;
+  }
+}
