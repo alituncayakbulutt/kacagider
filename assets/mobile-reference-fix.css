@@ -66,17 +66,32 @@
     font-weight: 650 !important;
   }
 
-  /* Hamburger menü: açıkken beyaz panel + koyu, net linkler. */
+  /* Hamburger menü: açıkken panel ve tüm iç katmanlar beyaz, yazılar koyu. */
+  html body .kg-approved-topbar.kg-approved-topbar.menu-open .kg-v4-subbar,
+  html body .kg-approved-topbar.kg-approved-topbar.menu-open .kg-v4-subbar .kg-v4-subbar-inner,
+  html body .kg-approved-topbar.kg-approved-topbar.menu-open .kg-v4-subbar .kg-main-nav {
+    background: #ffffff !important;
+    color: #0f172a !important;
+  }
+
   html body .kg-approved-topbar.kg-approved-topbar.menu-open .kg-v4-subbar {
     display: block !important;
-    background: #ffffff !important;
     border-top: 1px solid #e5e7eb !important;
     border-bottom: 1px solid #e5e7eb !important;
     box-shadow: 0 12px 28px rgba(15, 23, 42, .12) !important;
   }
 
+  html body .kg-approved-topbar.kg-approved-topbar.menu-open .kg-v4-subbar .kg-v4-subbar-inner {
+    width: 100% !important;
+    max-width: none !important;
+    min-height: 0 !important;
+    padding: 0 !important;
+  }
+
   html body .kg-approved-topbar.kg-approved-topbar.menu-open .kg-v4-subbar .kg-main-nav {
-    background: #ffffff !important;
+    width: 100% !important;
+    display: grid !important;
+    grid-template-columns: 1fr !important;
     padding: 8px 10px 10px !important;
     gap: 4px !important;
   }
@@ -85,6 +100,7 @@
   html body .kg-approved-topbar.kg-approved-topbar.menu-open .kg-v4-subbar .kg-main-nav button {
     display: flex !important;
     align-items: center !important;
+    width: 100% !important;
     min-height: 44px !important;
     padding: 11px 12px !important;
     border: 0 !important;
@@ -95,6 +111,7 @@
     font-weight: 800 !important;
     text-align: left !important;
     opacity: 1 !important;
+    text-shadow: none !important;
     -webkit-text-fill-color: #0f172a !important;
   }
 
