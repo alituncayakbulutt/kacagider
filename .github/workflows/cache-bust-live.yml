@@ -27,10 +27,7 @@ jobs:
           p = Path('index.html')
           s = p.read_text(encoding='utf-8')
           changes = {
-              '<script src="/assets/analytics-events.js" defer></script>': '<script src="/assets/analytics-events.js?v=20260901-live2" defer></script>',
-              '<script src="/assets/marketplace-nav-test.js" defer></script>': '<script src="/assets/marketplace-nav-test.js?v=20260901-nav2" defer></script>',
-              '<script src="/assets/marketplace-test.js" defer></script>': '<script src="/assets/marketplace-test.js?v=20260901-market2" defer></script>',
-              '<script src="/assets/marketplace-details.js" defer></script>': '<script src="/assets/marketplace-details.js?v=20260901-details2" defer></script>',
+              '<script src="/assets/analytics-events.js?v=20260901-live2" defer></script>': '<script src="/assets/analytics-events.js?v=20260901-live3" defer></script>',
           }
           changed = False
           for old, new in changes.items():
@@ -38,14 +35,13 @@ jobs:
                   s = s.replace(old, new)
                   changed = True
           if not changed:
-              raise SystemExit('Beklenen asset satirlari bulunamadi; index.html degistirilmedi.')
+              raise SystemExit('Beklenen analytics asset satiri bulunamadi; index.html degistirilmedi.')
           p.write_text(s, encoding='utf-8')
           PY
 
       - name: Verify cache bust
         run: |
-          grep -F '/assets/analytics-events.js?v=20260901-live2' index.html
-          grep -F '/assets/marketplace-nav-test.js?v=20260901-nav2' index.html
+          grep -F '/assets/analytics-events.js?v=20260901-live3' index.html
 
       - name: Commit index only
         shell: bash
@@ -57,5 +53,5 @@ jobs:
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
           git add index.html
-          git commit -m 'Aktif asset URLlerini surumlendir'
+          git commit -m 'Analytics asset surumunu yenile'
           git push origin HEAD:main
