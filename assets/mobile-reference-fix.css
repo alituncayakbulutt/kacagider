@@ -29,8 +29,53 @@
 
   html body .kg-approved-topbar.kg-approved-topbar .kg-topbar-actions {
     grid-template-columns: minmax(0, 1fr) minmax(0, 1.05fr) 39px !important;
-    grid-template-rows: 39px !important;
+    grid-template-rows: 39px 34px !important;
+    grid-template-areas:
+      "sell account menu"
+      "listings listings listings" !important;
     gap: 5px !important;
+  }
+
+  html body .kg-approved-topbar.kg-approved-topbar .kg-v4-action.sell {
+    grid-area: sell !important;
+  }
+
+  html body .kg-approved-topbar.kg-approved-topbar #kgHeaderAccountAction,
+  html body .kg-approved-topbar.kg-approved-topbar .kg-v4-action.account,
+  html body .kg-approved-topbar.kg-approved-topbar .kg-account-session {
+    grid-area: account !important;
+  }
+
+  html body .kg-approved-topbar.kg-approved-topbar .kg-mobile-nav-toggle {
+    grid-area: menu !important;
+  }
+
+  /* Mobilde daha önce gizlenen İlanlar butonunu geri getir. */
+  html body .kg-approved-topbar.kg-approved-topbar .kg-v4-action.listings {
+    grid-area: listings !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    width: 100% !important;
+    min-width: 0 !important;
+    height: 34px !important;
+    min-height: 34px !important;
+    padding: 0 10px !important;
+    border: 1px solid #536278 !important;
+    border-radius: 10px !important;
+    background: rgba(255,255,255,.06) !important;
+    color: #ffffff !important;
+    font-size: 10.5px !important;
+    font-weight: 850 !important;
+    line-height: 1 !important;
+    text-decoration: none !important;
+    white-space: nowrap !important;
+  }
+
+  html body .kg-approved-topbar.kg-approved-topbar .kg-v4-action.listings:hover,
+  html body .kg-approved-topbar.kg-approved-topbar .kg-v4-action.listings:focus {
+    background: rgba(255,255,255,.12) !important;
+    color: #ffffff !important;
   }
 
   html body .kg-approved-topbar.kg-approved-topbar .kg-v4-action.sell,
