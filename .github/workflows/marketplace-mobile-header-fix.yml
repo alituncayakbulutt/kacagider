@@ -19,28 +19,26 @@ jobs:
           ref: main
           fetch-depth: 0
 
-      - name: Attach mobile header fix only to listing pages
+      - name: Refresh mobile header fix version only on listing pages
         shell: bash
         run: |
           python3 - <<'PY'
           from pathlib import Path
-          marker = '<link rel="stylesheet" href="/assets/marketplace-mobile-header-fix.css?v=20260901-1">'
+          old = '/assets/marketplace-mobile-header-fix.css?v=20260901-1'
+          new = '/assets/marketplace-mobile-header-fix.css?v=20260901-2'
           for name in ['ilanlar/index.html','ilan/index.html']:
               p=Path(name)
               s=p.read_text(encoding='utf-8')
-              if marker in s:
-                  continue
-              needle='<link rel="icon" href="/favicon.svg" type="image/svg+xml">'
-              if needle not in s:
-                  raise SystemExit(f'{name}: favicon satiri bulunamadi; dosya degistirilmedi')
-              s=s.replace(needle, needle+'\n'+marker, 1)
+              if old not in s:
+                  raise SystemExit(f'{name}: eski mobil header CSS surumu bulunamadi; dosya degistirilmedi')
+              s=s.replace(old,new,1)
               p.write_text(s, encoding='utf-8')
           PY
 
       - name: Verify scoped stylesheet links
         run: |
-          grep -F '/assets/marketplace-mobile-header-fix.css?v=20260901-1' ilanlar/index.html
-          grep -F '/assets/marketplace-mobile-header-fix.css?v=20260901-1' ilan/index.html
+          grep -F '/assets/marketplace-mobile-header-fix.css?v=20260901-2' ilanlar/index.html
+          grep -F '/assets/marketplace-mobile-header-fix.css?v=20260901-2' ilan/index.html
 
       - name: Commit only listing pages
         shell: bash
@@ -52,5 +50,5 @@ jobs:
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
           git add ilanlar/index.html ilan/index.html
-          git commit -m 'Ilan sayfalarinda mobil ust bari duzelt'
+          git commit -m 'Ilan mobil header CSS surumunu yenile'
           git push origin HEAD:main
