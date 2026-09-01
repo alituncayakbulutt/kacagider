@@ -13,12 +13,40 @@
   }
 
   function ensureMobileV2Styles(){
-    if(document.querySelector('link[data-kg-mobile-v2="1"]'))return;
+    var existing=document.querySelector('link[data-kg-mobile-v2="1"]');
+    if(existing){
+      existing.href="/assets/mobile-v2.css?v=20260901-clean3";
+      return;
+    }
     var link=document.createElement("link");
     link.rel="stylesheet";
-    link.href="/assets/mobile-v2.css?v=20260831-clean2";
+    link.href="/assets/mobile-v2.css?v=20260901-clean3";
     link.setAttribute("data-kg-mobile-v2","1");
     document.head.appendChild(link);
+  }
+
+  function ensureMobileListingsAction(){
+    var style=document.getElementById("kgMobileListingsVisibilityFix");
+    if(!style){
+      style=document.createElement("style");
+      style.id="kgMobileListingsVisibilityFix";
+      style.textContent='@media(max-width:900px){html body .kg-approved-topbar .kg-v4-action.listings{display:inline-flex!important;align-items:center!important;justify-content:center!important;width:100%!important;min-height:38px!important;height:38px!important;margin:0!important;padding:0 10px!important;border:1px solid #536278!important;border-radius:10px!important;background:rgba(255,255,255,.06)!important;color:#fff!important;font-size:11px!important;font-weight:900!important;text-decoration:none!important;visibility:visible!important;opacity:1!important;position:static!important;transform:none!important}html body .kg-approved-topbar .kg-topbar-actions{grid-template-columns:minmax(0,1fr) minmax(0,1fr) minmax(0,.9fr) 40px!important;grid-template-areas:"sell listings account menu"!important}html body .kg-approved-topbar .kg-v4-action.listings{grid-area:listings!important}}@media(max-width:390px){html body .kg-approved-topbar .kg-v4-action.listings{font-size:9.5px!important;padding:0 4px!important}}';
+      document.head.appendChild(style);
+    }
+    var actions=document.querySelector(".kg-approved-topbar .kg-topbar-actions");
+    if(!actions)return;
+    var listing=actions.querySelector(".kg-v4-action.listings");
+    if(!listing){
+      listing=document.createElement("a");
+      listing.className="kg-v4-action listings";
+      listing.href="/ilanlar/";
+      listing.textContent="İlanlar";
+      var account=actions.querySelector("#kgHeaderAccountAction,.kg-v4-action.account,.kg-account-session");
+      if(account)actions.insertBefore(listing,account);else actions.appendChild(listing);
+    }
+    listing.style.setProperty("display","inline-flex","important");
+    listing.style.setProperty("visibility","visible","important");
+    listing.style.setProperty("opacity","1","important");
   }
 
   function removeVerifiedLegacyInlineStyles(){
@@ -35,9 +63,14 @@
   ensureMobileV2Styles();
   removeVerifiedLegacyInlineStyles();
   disableDarkMode();
+  ensureMobileListingsAction();
   window.setTimeout(disableDarkMode,0);
   window.setTimeout(disableDarkMode,500);
   window.setTimeout(disableDarkMode,1500);
+  window.setTimeout(ensureMobileListingsAction,0);
+  window.setTimeout(ensureMobileListingsAction,300);
+  window.setTimeout(ensureMobileListingsAction,1000);
+  window.setTimeout(ensureMobileListingsAction,2000);
 
   var KG_GA_MEASUREMENT_ID="G-078JHH25LH";
   if(typeof window.gtag==="function")window.gtag("config",KG_GA_MEASUREMENT_ID);
@@ -74,6 +107,6 @@
 
   function setupImeiOfficialLink(){var input=document.getElementById("didYouKnowImeiInput"),button=document.getElementById("didYouKnowImeiButton");if(!button||button.dataset.kgImeiOfficial==="1")return;button.dataset.kgImeiOfficial="1";var label=input?document.querySelector('label[for="didYouKnowImeiInput"]'):null;if(label)label.remove();if(input)input.remove();var oldNote=document.getElementById("didYouKnowImeiTransferNote");if(oldNote)oldNote.remove();button.textContent="BTK / e-Devlet’te IMEI Sorgula";button.href="https://www.turkiye.gov.tr/imei-sorgulama";button.target="_blank";button.rel="noopener noreferrer";button.classList.remove("is-disabled");button.removeAttribute("aria-disabled");button.tabIndex=0;var helper=document.getElementById("didYouKnowImeiHint");if(helper)helper.textContent="IMEI numaranızı öğrenmek için telefonunuzun arama ekranına *#06# yazabilirsiniz. Butona bastığınızda resmi BTK / e-Devlet IMEI Sorgulama sayfası açılır; IMEI numaranızı orada girerek sorgulayabilirsiniz.";button.addEventListener("click",function(){kgGaEvent("imei_official_query_clicked",{destination_path:"/imei-sorgulama"});});}
 
-  function ready(){disableDarkMode();ensureResultProductName();renderResultProductName();document.addEventListener("change",function(event){onChange(event.target);},true);document.addEventListener("click",onClick,true);watchValuationCompletion();watchSaleSubmission();setupContactForm();setupImeiOfficialLink();var attempts=0;var timer=window.setInterval(function(){renderResultProductName();attempts++;if(attempts>=30)window.clearInterval(timer);},500);}
+  function ready(){disableDarkMode();ensureMobileListingsAction();ensureResultProductName();renderResultProductName();document.addEventListener("change",function(event){onChange(event.target);},true);document.addEventListener("click",onClick,true);watchValuationCompletion();watchSaleSubmission();setupContactForm();setupImeiOfficialLink();var attempts=0;var timer=window.setInterval(function(){renderResultProductName();ensureMobileListingsAction();attempts++;if(attempts>=30)window.clearInterval(timer);},500);}
   if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",ready,{once:true});else ready();
 })();
