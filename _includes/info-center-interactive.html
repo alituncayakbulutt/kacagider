@@ -1,0 +1,114 @@
+<section class="kg-help" aria-labelledby="kgHelpTitle">
+  <div class="kg-help-hero">
+    <div class="kg-help-kicker">KaçaGider Yardım Asistanı</div>
+    <h2 id="kgHelpTitle">Sorunun ne? Hızlıca çözümü bul.</h2>
+    <p>Fiyat hesaplama, ilan verme, hesap işlemleri, cihaz kondisyonu ve güvenli satışla ilgili en sık karşılaşılan konularda adım adım yardım al.</p>
+    <label class="kg-help-search" for="kgHelpSearch">
+      <span aria-hidden="true">⌕</span>
+      <input id="kgHelpSearch" type="search" autocomplete="off" placeholder="Örn. doğrulama e-postası gelmedi, fiyat neden düşük, ilanım görünmüyor…" aria-label="Bilgi Merkezi'nde ara">
+    </label>
+    <div class="kg-help-popular" aria-label="Popüler sorunlar">
+      <button type="button" data-help-query="fiyat neden farklı">Fiyat neden farklı?</button>
+      <button type="button" data-help-query="doğrulama e-postası">E-posta gelmedi</button>
+      <button type="button" data-help-query="ilan görünmüyor">İlanım görünmüyor</button>
+      <button type="button" data-help-query="şifremi unuttum">Şifremi unuttum</button>
+    </div>
+  </div>
+
+  <div class="kg-help-layout">
+    <aside class="kg-help-side" aria-label="Sorun kategorileri">
+      <h3>Konuyu seç</h3>
+      <button class="kg-help-filter active" type="button" data-help-filter="all">Tüm sorunlar <span>12</span></button>
+      <button class="kg-help-filter" type="button" data-help-filter="degerleme">💰 Fiyat & Değerleme</button>
+      <button class="kg-help-filter" type="button" data-help-filter="ilan">🏷️ İlan & Satış</button>
+      <button class="kg-help-filter" type="button" data-help-filter="hesap">👤 Hesap & Giriş</button>
+      <button class="kg-help-filter" type="button" data-help-filter="kondisyon">📱 Cihaz & Kondisyon</button>
+      <button class="kg-help-filter" type="button" data-help-filter="guvenlik">🛡️ IMEI & Güvenlik</button>
+      <div class="kg-help-mini">
+        <strong>Nereden başlayacağını bilmiyor musun?</strong>
+        <p>Sorununu birkaç seçimle daralt.</p>
+        <button type="button" id="kgHelpStart">Sorunumu seç</button>
+      </div>
+    </aside>
+
+    <div class="kg-help-main">
+      <div class="kg-help-head">
+        <div><span class="kg-help-label">Hızlı çözümler</span><h3>En sık yaşanan sorunlar</h3></div>
+        <span id="kgHelpCount" class="kg-help-count">12 sonuç</span>
+      </div>
+
+      <div class="kg-help-wizard" id="kgHelpWizard" hidden>
+        <div class="kg-help-wizard-top"><strong>Sana uygun çözümü bulalım</strong><button type="button" id="kgHelpWizardClose" aria-label="Yardım asistanını kapat">×</button></div>
+        <p>En yakın konuyu seç; ilgili çözümleri hemen göstereceğiz.</p>
+        <div class="kg-help-wizard-grid">
+          <button type="button" data-wizard-filter="degerleme">Fiyat / değerleme</button>
+          <button type="button" data-wizard-filter="ilan">İlan / satış</button>
+          <button type="button" data-wizard-filter="hesap">Hesap / giriş</button>
+          <button type="button" data-wizard-filter="kondisyon">Cihaz kondisyonu</button>
+          <button type="button" data-wizard-filter="guvenlik">IMEI / güvenlik</button>
+        </div>
+      </div>
+
+      <div class="kg-help-list" id="kgHelpList">
+        <article class="kg-help-item" data-help-category="degerleme" data-help-keywords="fiyat piyasa değer ilan fiyatı farklı neden düşük yüksek kaça gider">
+          <button class="kg-help-question" type="button" aria-expanded="false"><span><b>💰</b> KaçaGider piyasa değeri ile ilan fiyatı neden farklı?</span><i>+</i></button>
+          <div class="kg-help-answer"><p>İlan fiyatı satıcının istediği rakamdır; KaçaGider piyasa değeri ise cihazın model, kapasite, kondisyon ve güncel piyasa sinyallerine göre oluşturulan bağımsız bir referanstır.</p><ol><li>Model ve kapasitenin doğru seçildiğini kontrol et.</li><li>Ekran, kasa, pil ve değişen parça durumunu gerçeğe uygun işaretle.</li><li>İlan fiyatını tek başına piyasa değeri olarak kabul etme.</li></ol><a href="/">Değerimi yeniden hesapla →</a></div>
+        </article>
+        <article class="kg-help-item" data-help-category="degerleme" data-help-keywords="model kapasite hafıza listede yok fiyat hesaplama seçenek yok">
+          <button class="kg-help-question" type="button" aria-expanded="false"><span><b>🔎</b> Modelim veya kapasitem listede yok, ne yapmalıyım?</span><i>+</i></button>
+          <div class="kg-help-answer"><p>KaçaGider yalnızca tanımlı model ve gerçek kapasite seçeneklerinde fiyat üretir. Yanlış bir kapasite üretmek yerine eksik varyantın sisteme eklenmesi gerekir.</p><ol><li>Marka ve model adını tekrar kontrol et.</li><li>Aynı modelin farklı adlandırılmış varyantı olup olmadığına bak.</li><li>Bulamıyorsan Bilgi Merkezi rehberlerinden cihaz ailesini kontrol et.</li></ol><a href="/bilgi-merkezi/degerleme/">Değerleme rehberine git →</a></div>
+        </article>
+        <article class="kg-help-item" data-help-category="degerleme" data-help-keywords="fiyat düşük çıktı yüksek çıktı kondisyon değişen parça ekran pil">
+          <button class="kg-help-question" type="button" aria-expanded="false"><span><b>📉</b> Hesaplanan fiyat beklediğimden düşük veya yüksek çıktı</span><i>+</i></button>
+          <div class="kg-help-answer"><p>Sonucu en çok cihazın doğru varyantı ve kondisyon cevapları etkiler. Özellikle ekran, kasa, çalışmayan özellikler ve değişen parçalar fiyatı belirgin biçimde değiştirebilir.</p><ol><li>Model/kapasiteyi doğrula.</li><li>Kondisyon cevaplarını yeniden gözden geçir.</li><li>Sonucu ilanlardaki istenen fiyatlarla değil, piyasa referansı olarak değerlendir.</li></ol><a href="/">Tekrar hesapla →</a></div>
+        </article>
+
+        <article class="kg-help-item" data-help-category="ilan" data-help-keywords="ücretsiz ilan nasıl verilir ilan oluştur satış yayınla">
+          <button class="kg-help-question" type="button" aria-expanded="false"><span><b>🏷️</b> Ücretsiz ilan nasıl verilir?</span><i>+</i></button>
+          <div class="kg-help-answer"><p>Ana sayfadaki “Ücretsiz İlan Ver” akışıyla cihaz bilgilerini, satış fiyatını ve iletişim bilgilerini girerek ilan oluşturabilirsin.</p><ol><li>Cihazını seç ve bilgilerini doldur.</li><li>Satış fiyatını ve ilan detaylarını gir.</li><li>Hesabın gerekiyorsa e-postanı doğrula ve ilanı yayınla.</li></ol><a href="/">Ücretsiz ilan ver →</a></div>
+        </article>
+        <article class="kg-help-item" data-help-category="ilan" data-help-keywords="ilan görünmüyor yayınlanmadı aktif değil liste ilanlar">
+          <button class="kg-help-question" type="button" aria-expanded="false"><span><b>👁️</b> İlanım neden görünmüyor?</span><i>+</i></button>
+          <div class="kg-help-answer"><p>İlanın listeye çıkabilmesi için yayın durumunun aktif olması ve zorunlu ilan bilgilerinin kaydedilmiş olması gerekir. Hesap doğrulaması bekleyen akışlarda yayın işlemi tamamlanmayabilir.</p><ol><li>Hesabında oturum açtığını kontrol et.</li><li>E-posta doğrulaması gerekiyorsa tamamla.</li><li>İlanlar sayfasında marka/model ile arama yap.</li></ol><a href="/ilanlar/">Aktif ilanlara bak →</a></div>
+        </article>
+        <article class="kg-help-item" data-help-category="ilan" data-help-keywords="ilan tarihi nerede tarih yayın tarihi ne zaman">
+          <button class="kg-help-question" type="button" aria-expanded="false"><span><b>🗓️</b> İlan tarihi nerede görünür?</span><i>+</i></button>
+          <div class="kg-help-answer"><p>İlan tarihi, ilan kartında konum bilgisinin altında ve ilan detayında cihaz bilgileri arasında gösterilir. Tarih, ilan kaydının oluşturulma/yayın zamanından alınır.</p><a href="/ilanlar/">İlanlara git →</a></div>
+        </article>
+
+        <article class="kg-help-item" data-help-category="hesap" data-help-keywords="giriş yapamıyorum oturum email parola hata">
+          <button class="kg-help-question" type="button" aria-expanded="false"><span><b>👤</b> Hesabıma giriş yapamıyorum</span><i>+</i></button>
+          <div class="kg-help-answer"><p>Önce e-posta adresinin doğru yazıldığından ve hesabın doğrulandığından emin ol. E-posta/parola ile girişte kayıt sırasında kullandığın adresi kullanmalısın.</p><ol><li>E-posta yazımını kontrol et.</li><li>Hesabın doğrulanmadıysa doğrulama bağlantısını kullan.</li><li>Parolanı hatırlamıyorsan sıfırlama seçeneğini kullan.</li></ol><a href="/">Ana sayfaya dön →</a></div>
+        </article>
+        <article class="kg-help-item" data-help-category="hesap" data-help-keywords="doğrulama e-postası gelmedi mail doğrulama spam tekrar gönder">
+          <button class="kg-help-question" type="button" aria-expanded="false"><span><b>✉️</b> Doğrulama e-postası gelmedi</span><i>+</i></button>
+          <div class="kg-help-answer"><p>Mesaj birkaç dakika gecikebilir. Spam / Gereksiz klasörünü kontrol et ve kayıt sırasında kullandığın e-posta adresinin doğru olduğundan emin ol.</p><ol><li>Gelen kutusu ve spam klasörünü kontrol et.</li><li>E-posta adresindeki yazım hatasını kontrol et.</li><li>Giriş ekranındaki doğrulama e-postasını yeniden gönder seçeneğini kullan.</li></ol></div>
+        </article>
+        <article class="kg-help-item" data-help-category="hesap" data-help-keywords="şifremi unuttum parola sıfırla reset password">
+          <button class="kg-help-question" type="button" aria-expanded="false"><span><b>🔑</b> Şifremi unuttum, nasıl yenilerim?</span><i>+</i></button>
+          <div class="kg-help-answer"><p>Giriş penceresindeki “Şifremi unuttum” seçeneğiyle kayıtlı e-posta adresine parola yenileme bağlantısı gönderebilirsin.</p><ol><li>Giriş Yap penceresini aç.</li><li>“Şifremi unuttum” seçeneğine bas.</li><li>E-postadaki bağlantıdan yeni parolanı belirle.</li></ol><a href="/">Giriş ekranına git →</a></div>
+        </article>
+
+        <article class="kg-help-item" data-help-category="kondisyon" data-help-keywords="ekran değişti değişen parça fiyat kondisyon kırık çizik pil">
+          <button class="kg-help-question" type="button" aria-expanded="false"><span><b>🛠️</b> Değişen parça veya hasar fiyatı nasıl etkiler?</span><i>+</i></button>
+          <div class="kg-help-answer"><p>Orijinal olmayan veya değişmiş parçalar, ekran/kasa hasarı ve çalışmayan özellikler ikinci el değerini etkileyebilir. Etki cihaz modeline ve parçanın önemine göre değişir.</p><ol><li>Değişen parçayı doğru seç.</li><li>Fiziksel durumu olduğundan iyi göstermemeye dikkat et.</li><li>Satış ilanında önemli onarım bilgisini açıkça belirt.</li></ol><a href="/bilgi-merkezi/degerleme/">Kondisyon ve değerleme rehberi →</a></div>
+        </article>
+        <article class="kg-help-item" data-help-category="kondisyon" data-help-keywords="iphone android pil sağlığı batarya ekran kasa kondisyon satış öncesi">
+          <button class="kg-help-question" type="button" aria-expanded="false"><span><b>🔋</b> Satıştan önce cihazda neleri kontrol etmeliyim?</span><i>+</i></button>
+          <div class="kg-help-answer"><p>Ekran, kasa, kamera, hoparlör, mikrofon, şarj, bağlantılar ve pil gibi temel işlevleri kontrol etmek hem doğru değerleme hem de şeffaf ilan için önemlidir.</p><ol><li>Temel donanım işlevlerini test et.</li><li>Hesaplarından çıkış ve veri yedeği planını yap.</li><li>Kutu/aksesuar ve onarım geçmişini hazırla.</li></ol><a href="/bilgi-merkezi/satis-oncesi/">Satış öncesi rehberleri →</a></div>
+        </article>
+
+        <article class="kg-help-item" data-help-category="guvenlik" data-help-keywords="imei sorgulama çalıntı kayıtlı cihaz güvenlik e devlet btk">
+          <button class="kg-help-question" type="button" aria-expanded="false"><span><b>🛡️</b> IMEI nasıl sorgulanır ve neden önemlidir?</span><i>+</i></button>
+          <div class="kg-help-answer"><p>Telefonun IMEI numarasını arama ekranında <strong>*#06#</strong> yazarak öğrenebilirsin. Cihaz durumunu resmi BTK / e-Devlet IMEI Sorgulama hizmetinden kontrol etmek güvenli alışveriş için önemlidir.</p><ol><li>IMEI numarasını cihazdan öğren.</li><li>Resmi sorgulama hizmetini kullan.</li><li>IMEI bilgisini herkese açık ilan açıklamasında paylaşma.</li></ol><a href="/imei-sorgulama/">IMEI sorgulama rehberine git →</a></div>
+        </article>
+      </div>
+
+      <div class="kg-help-empty" id="kgHelpEmpty" hidden>
+        <strong>Bu aramayla eşleşen hazır çözüm bulamadık.</strong>
+        <p>Daha kısa bir kelimeyle tekrar ara veya kategori seç. Bilgi Merkezi rehberlerini de inceleyebilirsin.</p>
+        <a href="/bilgi-merkezi/">Tüm rehberlere dön</a>
+      </div>
+    </div>
+  </div>
+</section>
