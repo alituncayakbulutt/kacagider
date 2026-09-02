@@ -1,0 +1,77 @@
+name: Information Center Interactive
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/info-center-interactive.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  patch-seo-layout:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+
+      - name: Attach Information Center assets conditionally
+        shell: bash
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          p = Path('_layouts/seo.html')
+          s = p.read_text(encoding='utf-8')
+
+          head_marker = '<link rel="icon" href="/favicon.svg" type="image/svg+xml" sizes="any">'
+          head_block = '''<link rel="icon" href="/favicon.svg" type="image/svg+xml" sizes="any">
+{% if page.info_center_interactive %}<link rel="stylesheet" href="/assets/info-center.css?v=20260902-1">{% endif %}'''
+          if '/assets/info-center.css?v=20260902-1' not in s:
+              if head_marker not in s:
+                  raise SystemExit('favicon marker bulunamadi')
+              s = s.replace(head_marker, head_block, 1)
+
+          content_marker = '{% if page.seo_context %}<section class="kg-seo-context"'
+          include_block = '''{% if page.info_center_interactive %}
+{% include info-center-interactive.html %}
+{% endif %}
+
+{% if page.seo_context %}<section class="kg-seo-context"'''
+          if '{% include info-center-interactive.html %}' not in s:
+              if content_marker not in s:
+                  raise SystemExit('seo_context marker bulunamadi')
+              s = s.replace(content_marker, include_block, 1)
+
+          script_block = '''{% if page.info_center_interactive %}<script src="/assets/info-center.js?v=20260902-1" defer></script>{% endif %}
+</body>'''
+          if '/assets/info-center.js?v=20260902-1' not in s:
+              if '</body>' not in s:
+                  raise SystemExit('body kapanis etiketi bulunamadi')
+              s = s.replace('</body>', script_block, 1)
+
+          p.write_text(s, encoding='utf-8')
+          PY
+
+      - name: Verify scoped integration
+        run: |
+          grep -F 'page.info_center_interactive' _layouts/seo.html
+          grep -F '/assets/info-center.css?v=20260902-1' _layouts/seo.html
+          grep -F '{% include info-center-interactive.html %}' _layouts/seo.html
+          grep -F '/assets/info-center.js?v=20260902-1' _layouts/seo.html
+
+      - name: Commit layout only
+        shell: bash
+        run: |
+          if git diff --quiet -- _layouts/seo.html; then
+            echo 'SEO layout zaten guncel.'
+            exit 0
+          fi
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add _layouts/seo.html
+          git commit -m 'Bilgi Merkezini interaktif hale getir'
+          git push origin HEAD:main
