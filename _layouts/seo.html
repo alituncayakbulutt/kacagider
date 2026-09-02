@@ -50,6 +50,7 @@ try{
 <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
 <link rel="canonical" href="{{ page.seo_canonical }}">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml" sizes="any">
+{% if page.info_center_interactive %}<link rel="stylesheet" href="/assets/info-center.css?v=20260902-1">{% endif %}
 
 {% assign kg_share_image = page.seo_image %}
 {% unless kg_share_image %}
@@ -2211,6 +2212,10 @@ html[data-theme="dark"] .kg-main-nav a:not(.active):hover{color:#d9fbe6!importan
     <div class="feature">🎁 %100 ücretsiz<small>Kayıt olmadan kullan</small></div>
   </div>
 
+{% if page.info_center_interactive %}
+{% include info-center-interactive.html %}
+{% endif %}
+
 {% if page.seo_context %}<section class="kg-seo-context" aria-label="Sayfa bilgisi"><h2>{{ page.seo_context_heading }}</h2><p>{{ page.seo_context }}</p>{% if page.seo_links %}<div class="kg-seo-links" aria-label="İlgili sayfalar">{% for link in page.seo_links %}<a href="{{ link.url }}">{{ link.label }}</a>{% endfor %}</div>{% endif %}</section>{% endif %}
 {% if page.seo_guides %}<section class="kg-seo-guide" aria-labelledby="seoGuideTitle"><h2 id="seoGuideTitle">{{ page.seo_guides_heading | default: "Sık Arananlar" }}</h2><ul class="kg-seo-guide-list">{% for guide in page.seo_guides %}<li><a href="{{ guide.url }}">{{ guide.label }}</a></li>{% endfor %}</ul></section>{% endif %}
 {% if page.seo_sections %}<section class="kg-seo-article" aria-label="Sayfa rehberi">{% for section in page.seo_sections %}<article class="kg-seo-article-section"><h2>{{ section.title }}</h2><p>{{ section.text }}</p>{% if section.items %}<ul>{% for item in section.items %}<li>{{ item }}</li>{% endfor %}</ul>{% endif %}</article>{% endfor %}</section>{% endif %}
@@ -3863,5 +3868,6 @@ document.addEventListener("DOMContentLoaded", function(){
 })();
 </script>{% endif %}
 
+{% if page.info_center_interactive %}<script src="/assets/info-center.js?v=20260902-1" defer></script>{% endif %}
 </body>
 </html>
