@@ -26,33 +26,23 @@ jobs:
           from pathlib import Path
           p = Path('_layouts/seo.html')
           s = p.read_text(encoding='utf-8')
-
           head_marker = '<link rel="icon" href="/favicon.svg" type="image/svg+xml" sizes="any">'
-          head_block = '''<link rel="icon" href="/favicon.svg" type="image/svg+xml" sizes="any">
-{% if page.info_center_interactive %}<link rel="stylesheet" href="/assets/info-center.css?v=20260902-1">{% endif %}'''
+          head_block = head_marker + '\n{% if page.info_center_interactive %}<link rel="stylesheet" href="/assets/info-center.css?v=20260902-1">{% endif %}'
           if '/assets/info-center.css?v=20260902-1' not in s:
               if head_marker not in s:
                   raise SystemExit('favicon marker bulunamadi')
               s = s.replace(head_marker, head_block, 1)
-
           content_marker = '{% if page.seo_context %}<section class="kg-seo-context"'
-          include_block = '''{% if page.info_center_interactive %}
-{% include info-center-interactive.html %}
-{% endif %}
-
-{% if page.seo_context %}<section class="kg-seo-context"'''
+          include_block = '{% if page.info_center_interactive %}\n{% include info-center-interactive.html %}\n{% endif %}\n\n' + content_marker
           if '{% include info-center-interactive.html %}' not in s:
               if content_marker not in s:
                   raise SystemExit('seo_context marker bulunamadi')
               s = s.replace(content_marker, include_block, 1)
-
-          script_block = '''{% if page.info_center_interactive %}<script src="/assets/info-center.js?v=20260902-1" defer></script>{% endif %}
-</body>'''
           if '/assets/info-center.js?v=20260902-1' not in s:
               if '</body>' not in s:
                   raise SystemExit('body kapanis etiketi bulunamadi')
+              script_block = '{% if page.info_center_interactive %}<script src="/assets/info-center.js?v=20260902-1" defer></script>{% endif %}\n</body>'
               s = s.replace('</body>', script_block, 1)
-
           p.write_text(s, encoding='utf-8')
           PY
 
