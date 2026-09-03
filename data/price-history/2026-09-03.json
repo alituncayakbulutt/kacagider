@@ -1,0 +1,6455 @@
+{
+  "captured_at_utc": "2026-09-03T21:09:28Z",
+  "data": {
+    "Apple": {
+      "iPhone 11": {
+        "128": {
+          "confidence_score": 80,
+          "estimated_price": 13500,
+          "listing_price": 14700,
+          "observation_count": 0,
+          "quick_sale_price": 12300,
+          "updated_at": "2026-08-18"
+        },
+        "256": {
+          "confidence_score": 80,
+          "estimated_price": 15500,
+          "listing_price": 16900,
+          "observation_count": 0,
+          "quick_sale_price": 14100,
+          "updated_at": "2026-08-18"
+        },
+        "64": {
+          "confidence_score": 80,
+          "estimated_price": 11500,
+          "listing_price": 12500,
+          "observation_count": 0,
+          "quick_sale_price": 10500,
+          "updated_at": "2026-08-18"
+        }
+      },
+      "iPhone 11 Pro": {
+        "256": {
+          "confidence_score": 80,
+          "estimated_price": 15500,
+          "listing_price": 16900,
+          "observation_count": 0,
+          "quick_sale_price": 14100,
+          "updated_at": "2026-08-18"
+        },
+        "512": {
+          "confidence_score": 75,
+          "estimated_price": 17500,
+          "listing_price": 19100,
+          "observation_count": 0,
+          "quick_sale_price": 15900,
+          "updated_at": "2026-08-18"
+        },
+        "64": {
+          "confidence_score": 80,
+          "estimated_price": 13500,
+          "listing_price": 14700,
+          "observation_count": 0,
+          "quick_sale_price": 12300,
+          "updated_at": "2026-08-18"
+        }
+      },
+      "iPhone 11 Pro Max": {
+        "256": {
+          "confidence_score": 80,
+          "estimated_price": 18000,
+          "listing_price": 19600,
+          "observation_count": 0,
+          "quick_sale_price": 16400,
+          "updated_at": "2026-08-18"
+        },
+        "512": {
+          "confidence_score": 75,
+          "estimated_price": 20000,
+          "listing_price": 21800,
+          "observation_count": 0,
+          "quick_sale_price": 18200,
+          "updated_at": "2026-08-18"
+        },
+        "64": {
+          "confidence_score": 80,
+          "estimated_price": 16000,
+          "listing_price": 17400,
+          "observation_count": 0,
+          "quick_sale_price": 14600,
+          "updated_at": "2026-08-18"
+        }
+      },
+      "iPhone 12": {
+        "128": {
+          "confidence_score": 80,
+          "estimated_price": 20500,
+          "listing_price": 22300,
+          "observation_count": 0,
+          "quick_sale_price": 18700,
+          "updated_at": "2026-08-18"
+        },
+        "256": {
+          "confidence_score": 80,
+          "estimated_price": 23000,
+          "listing_price": 25100,
+          "observation_count": 0,
+          "quick_sale_price": 20900,
+          "updated_at": "2026-08-18"
+        },
+        "64": {
+          "confidence_score": 80,
+          "estimated_price": 18000,
+          "listing_price": 19600,
+          "observation_count": 0,
+          "quick_sale_price": 16400,
+          "updated_at": "2026-08-18"
+        }
+      },
+      "iPhone 12 Pro": {
+        "128": {
+          "confidence_score": 80,
+          "estimated_price": 24000,
+          "listing_price": 26200,
+          "observation_count": 0,
+          "quick_sale_price": 21800,
+          "updated_at": "2026-08-18"
+        },
+        "256": {
+          "confidence_score": 80,
+          "estimated_price": 26000,
+          "listing_price": 28300,
+          "observation_count": 0,
+          "quick_sale_price": 23700,
+          "updated_at": "2026-08-18"
+        },
+        "512": {
+          "confidence_score": 75,
+          "estimated_price": 28500,
+          "listing_price": 31100,
+          "observation_count": 0,
+          "quick_sale_price": 25900,
+          "updated_at": "2026-08-18"
+        }
+      },
+      "iPhone 12 Pro Max": {
+        "128": {
+          "confidence_score": 80,
+          "estimated_price": 27000,
+          "listing_price": 29400,
+          "observation_count": 0,
+          "quick_sale_price": 24600,
+          "updated_at": "2026-08-18"
+        },
+        "256": {
+          "confidence_score": 80,
+          "estimated_price": 29000,
+          "listing_price": 31600,
+          "observation_count": 0,
+          "quick_sale_price": 26400,
+          "updated_at": "2026-08-18"
+        },
+        "512": {
+          "confidence_score": 75,
+          "estimated_price": 31500,
+          "listing_price": 34300,
+          "observation_count": 0,
+          "quick_sale_price": 28700,
+          "updated_at": "2026-08-18"
+        }
+      },
+      "iPhone 12 mini": {
+        "128": {
+          "confidence_score": 80,
+          "estimated_price": 17000,
+          "listing_price": 18500,
+          "observation_count": 0,
+          "quick_sale_price": 15500,
+          "updated_at": "2026-08-18"
+        },
+        "256": {
+          "confidence_score": 80,
+          "estimated_price": 19000,
+          "listing_price": 20700,
+          "observation_count": 0,
+          "quick_sale_price": 17300,
+          "updated_at": "2026-08-18"
+        },
+        "64": {
+          "confidence_score": 80,
+          "estimated_price": 15000,
+          "listing_price": 16400,
+          "observation_count": 0,
+          "quick_sale_price": 13700,
+          "updated_at": "2026-08-18"
+        }
+      },
+      "iPhone 13": {
+        "128": {
+          "confidence_score": 85,
+          "estimated_price": 28000,
+          "listing_price": 30500,
+          "observation_count": 0,
+          "quick_sale_price": 25500,
+          "updated_at": "2026-08-18"
+        },
+        "256": {
+          "confidence_score": 85,
+          "estimated_price": 31000,
+          "listing_price": 33800,
+          "observation_count": 0,
+          "quick_sale_price": 28200,
+          "updated_at": "2026-08-18"
+        },
+        "512": {
+          "confidence_score": 80,
+          "estimated_price": 34500,
+          "listing_price": 37600,
+          "observation_count": 0,
+          "quick_sale_price": 31400,
+          "updated_at": "2026-08-18"
+        }
+      },
+      "iPhone 13 Pro": {
+        "1024": {
+          "confidence_score": 70,
+          "estimated_price": 46000,
+          "listing_price": 50100,
+          "observation_count": 0,
+          "quick_sale_price": 41900,
+          "updated_at": "2026-08-18"
+        },
+        "128": {
+          "confidence_score": 80,
+          "estimated_price": 35000,
+          "listing_price": 38200,
+          "observation_count": 0,
+          "quick_sale_price": 31900,
+          "updated_at": "2026-08-18"
+        },
+        "256": {
+          "confidence_score": 80,
+          "estimated_price": 38000,
+          "listing_price": 41400,
+          "observation_count": 0,
+          "quick_sale_price": 34600,
+          "updated_at": "2026-08-18"
+        },
+        "512": {
+          "confidence_score": 75,
+          "estimated_price": 42000,
+          "listing_price": 45800,
+          "observation_count": 0,
+          "quick_sale_price": 38200,
+          "updated_at": "2026-08-18"
+        }
+      },
+      "iPhone 13 Pro Max": {
+        "1024": {
+          "confidence_score": 70,
+          "estimated_price": 49000,
+          "listing_price": 53400,
+          "observation_count": 0,
+          "quick_sale_price": 44600,
+          "updated_at": "2026-08-18"
+        },
+        "128": {
+          "confidence_score": 80,
+          "estimated_price": 37000,
+          "listing_price": 40300,
+          "observation_count": 0,
+          "quick_sale_price": 33700,
+          "updated_at": "2026-08-18"
+        },
+        "256": {
+          "confidence_score": 80,
+          "estimated_price": 40000,
+          "listing_price": 43600,
+          "observation_count": 0,
+          "quick_sale_price": 36400,
+          "updated_at": "2026-08-18"
+        },
+        "512": {
+          "confidence_score": 75,
+          "estimated_price": 44500,
+          "listing_price": 48500,
+          "observation_count": 0,
+          "quick_sale_price": 40500,
+          "updated_at": "2026-08-18"
+        }
+      },
+      "iPhone 13 mini": {
+        "128": {
+          "confidence_score": 80,
+          "estimated_price": 23000,
+          "listing_price": 25100,
+          "observation_count": 0,
+          "quick_sale_price": 20900,
+          "updated_at": "2026-08-18"
+        },
+        "256": {
+          "confidence_score": 80,
+          "estimated_price": 25000,
+          "listing_price": 27300,
+          "observation_count": 0,
+          "quick_sale_price": 22800,
+          "updated_at": "2026-08-18"
+        },
+        "512": {
+          "confidence_score": 75,
+          "estimated_price": 28000,
+          "listing_price": 30500,
+          "observation_count": 0,
+          "quick_sale_price": 25500,
+          "updated_at": "2026-08-18"
+        }
+      },
+      "iPhone 14": {
+        "128": {
+          "confidence_score": 85,
+          "estimated_price": 34000,
+          "listing_price": 37100,
+          "observation_count": 0,
+          "quick_sale_price": 30900,
+          "updated_at": "2026-08-18"
+        },
+        "256": {
+          "confidence_score": 85,
+          "estimated_price": 37000,
+          "listing_price": 40300,
+          "observation_count": 0,
+          "quick_sale_price": 33700,
+          "updated_at": "2026-08-18"
+        },
+        "512": {
+          "confidence_score": 80,
+          "estimated_price": 41000,
+          "listing_price": 44700,
+          "observation_count": 0,
+          "quick_sale_price": 37300,
+          "updated_at": "2026-08-18"
+        }
+      },
+      "iPhone 14 Plus": {
+        "128": {
+          "confidence_score": 80,
+          "estimated_price": 36000,
+          "listing_price": 39200,
+          "observation_count": 0,
+          "quick_sale_price": 32800,
+          "updated_at": "2026-08-18"
+        },
+        "256": {
+          "confidence_score": 80,
+          "estimated_price": 40000,
+          "listing_price": 43600,
+          "observation_count": 0,
+          "quick_sale_price": 36400,
+          "updated_at": "2026-08-18"
+        },
+        "512": {
+          "confidence_score": 75,
+          "estimated_price": 44000,
+          "listing_price": 48000,
+          "observation_count": 0,
+          "quick_sale_price": 40000,
+          "updated_at": "2026-08-18"
+        }
+      },
+      "iPhone 14 Pro": {
+        "1024": {
+          "confidence_score": 70,
+          "estimated_price": 55000,
+          "listing_price": 60000,
+          "observation_count": 0,
+          "quick_sale_price": 50100,
+          "updated_at": "2026-08-18"
+        },
+        "128": {
+          "confidence_score": 80,
+          "estimated_price": 42000,
+          "listing_price": 45800,
+          "observation_count": 0,
+          "quick_sale_price": 38200,
+          "updated_at": "2026-08-18"
+        },
+        "256": {
+          "confidence_score": 80,
+          "estimated_price": 45500,
+          "listing_price": 49600,
+          "observation_count": 0,
+          "quick_sale_price": 41400,
+          "updated_at": "2026-08-18"
+        },
+        "512": {
+          "confidence_score": 75,
+          "estimated_price": 50000,
+          "listing_price": 54500,
+          "observation_count": 0,
+          "quick_sale_price": 45500,
+          "updated_at": "2026-08-18"
+        }
+      },
+      "iPhone 14 Pro Max": {
+        "1024": {
+          "confidence_score": 70,
+          "estimated_price": 62500,
+          "listing_price": 68100,
+          "observation_count": 0,
+          "quick_sale_price": 56900,
+          "updated_at": "2026-08-18"
+        },
+        "128": {
+          "confidence_score": 80,
+          "estimated_price": 48000,
+          "listing_price": 52300,
+          "observation_count": 0,
+          "quick_sale_price": 43700,
+          "updated_at": "2026-08-18"
+        },
+        "256": {
+          "confidence_score": 80,
+          "estimated_price": 52000,
+          "listing_price": 56700,
+          "observation_count": 0,
+          "quick_sale_price": 47300,
+          "updated_at": "2026-08-18"
+        },
+        "512": {
+          "confidence_score": 75,
+          "estimated_price": 57000,
+          "listing_price": 62100,
+          "observation_count": 0,
+          "quick_sale_price": 51900,
+          "updated_at": "2026-08-18"
+        }
+      },
+      "iPhone 15": {
+        "128": {
+          "confidence_score": 85,
+          "estimated_price": 41000,
+          "listing_price": 44700,
+          "observation_count": 0,
+          "quick_sale_price": 37300,
+          "updated_at": "2026-08-18"
+        },
+        "256": {
+          "confidence_score": 85,
+          "estimated_price": 45500,
+          "listing_price": 49600,
+          "observation_count": 0,
+          "quick_sale_price": 41400,
+          "updated_at": "2026-08-18"
+        },
+        "512": {
+          "confidence_score": 80,
+          "estimated_price": 51000,
+          "listing_price": 55600,
+          "observation_count": 0,
+          "quick_sale_price": 46400,
+          "updated_at": "2026-08-18"
+        }
+      },
+      "iPhone 15 Plus": {
+        "128": {
+          "confidence_score": 80,
+          "estimated_price": 47000,
+          "listing_price": 51200,
+          "observation_count": 0,
+          "quick_sale_price": 42800,
+          "updated_at": "2026-08-18"
+        },
+        "256": {
+          "confidence_score": 80,
+          "estimated_price": 51000,
+          "listing_price": 55600,
+          "observation_count": 0,
+          "quick_sale_price": 46400,
+          "updated_at": "2026-08-18"
+        },
+        "512": {
+          "confidence_score": 75,
+          "estimated_price": 58000,
+          "listing_price": 63200,
+          "observation_count": 0,
+          "quick_sale_price": 52800,
+          "updated_at": "2026-08-18"
+        }
+      },
+      "iPhone 15 Pro": {
+        "1024": {
+          "confidence_score": 75,
+          "estimated_price": 76000,
+          "listing_price": 82800,
+          "observation_count": 0,
+          "quick_sale_price": 69200,
+          "updated_at": "2026-08-18"
+        },
+        "128": {
+          "confidence_score": 85,
+          "estimated_price": 58000,
+          "listing_price": 63200,
+          "observation_count": 0,
+          "quick_sale_price": 52800,
+          "updated_at": "2026-08-18"
+        },
+        "256": {
+          "confidence_score": 85,
+          "estimated_price": 63000,
+          "listing_price": 68700,
+          "observation_count": 0,
+          "quick_sale_price": 57300,
+          "updated_at": "2026-08-18"
+        },
+        "512": {
+          "confidence_score": 80,
+          "estimated_price": 69000,
+          "listing_price": 75200,
+          "observation_count": 0,
+          "quick_sale_price": 62800,
+          "updated_at": "2026-08-18"
+        }
+      },
+      "iPhone 15 Pro Max": {
+        "1024": {
+          "confidence_score": 75,
+          "estimated_price": 83000,
+          "listing_price": 90500,
+          "observation_count": 0,
+          "quick_sale_price": 75500,
+          "updated_at": "2026-08-18"
+        },
+        "256": {
+          "confidence_score": 85,
+          "estimated_price": 68000,
+          "listing_price": 74100,
+          "observation_count": 0,
+          "quick_sale_price": 61900,
+          "updated_at": "2026-08-18"
+        },
+        "512": {
+          "confidence_score": 80,
+          "estimated_price": 75000,
+          "listing_price": 81800,
+          "observation_count": 0,
+          "quick_sale_price": 68300,
+          "updated_at": "2026-08-18"
+        }
+      },
+      "iPhone 16": {
+        "128": {
+          "confidence_score": 85,
+          "estimated_price": 52000,
+          "listing_price": 56700,
+          "observation_count": 0,
+          "quick_sale_price": 47300,
+          "updated_at": "2026-08-18"
+        },
+        "256": {
+          "confidence_score": 85,
+          "estimated_price": 57000,
+          "listing_price": 62100,
+          "observation_count": 0,
+          "quick_sale_price": 51900,
+          "updated_at": "2026-08-18"
+        },
+        "512": {
+          "confidence_score": 80,
+          "estimated_price": 63000,
+          "listing_price": 68700,
+          "observation_count": 0,
+          "quick_sale_price": 57300,
+          "updated_at": "2026-08-18"
+        }
+      },
+      "iPhone 16 Plus": {
+        "128": {
+          "confidence_score": 80,
+          "estimated_price": 57000,
+          "listing_price": 62100,
+          "observation_count": 0,
+          "quick_sale_price": 51900,
+          "updated_at": "2026-08-18"
+        },
+        "256": {
+          "confidence_score": 80,
+          "estimated_price": 62000,
+          "listing_price": 67600,
+          "observation_count": 0,
+          "quick_sale_price": 56400,
+          "updated_at": "2026-08-18"
+        },
+        "512": {
+          "confidence_score": 75,
+          "estimated_price": 69000,
+          "listing_price": 75200,
+          "observation_count": 0,
+          "quick_sale_price": 62800,
+          "updated_at": "2026-08-18"
+        }
+      },
+      "iPhone 16 Pro": {
+        "1024": {
+          "confidence_score": 75,
+          "estimated_price": 93000,
+          "listing_price": 101400,
+          "observation_count": 0,
+          "quick_sale_price": 84600,
+          "updated_at": "2026-08-18"
+        },
+        "128": {
+          "confidence_score": 85,
+          "estimated_price": 72000,
+          "listing_price": 78500,
+          "observation_count": 0,
+          "quick_sale_price": 65500,
+          "updated_at": "2026-08-18"
+        },
+        "256": {
+          "confidence_score": 85,
+          "estimated_price": 78000,
+          "listing_price": 85000,
+          "observation_count": 0,
+          "quick_sale_price": 71000,
+          "updated_at": "2026-08-18"
+        },
+        "512": {
+          "confidence_score": 80,
+          "estimated_price": 85000,
+          "listing_price": 92700,
+          "observation_count": 0,
+          "quick_sale_price": 77400,
+          "updated_at": "2026-08-18"
+        }
+      },
+      "iPhone 16 Pro Max": {
+        "1024": {
+          "confidence_score": 75,
+          "estimated_price": 103000,
+          "listing_price": 112300,
+          "observation_count": 0,
+          "quick_sale_price": 93700,
+          "updated_at": "2026-08-18"
+        },
+        "256": {
+          "confidence_score": 85,
+          "estimated_price": 82000,
+          "listing_price": 89400,
+          "observation_count": 0,
+          "quick_sale_price": 74600,
+          "updated_at": "2026-08-18"
+        },
+        "512": {
+          "confidence_score": 80,
+          "estimated_price": 92000,
+          "listing_price": 100300,
+          "observation_count": 0,
+          "quick_sale_price": 83700,
+          "updated_at": "2026-08-18"
+        }
+      },
+      "iPhone 16e": {
+        "128": {
+          "confidence_score": 80,
+          "estimated_price": 37000,
+          "listing_price": 40300,
+          "observation_count": 0,
+          "quick_sale_price": 33700,
+          "updated_at": "2026-08-18"
+        },
+        "256": {
+          "confidence_score": 80,
+          "estimated_price": 42000,
+          "listing_price": 45800,
+          "observation_count": 0,
+          "quick_sale_price": 38200,
+          "updated_at": "2026-08-18"
+        },
+        "512": {
+          "confidence_score": 75,
+          "estimated_price": 48000,
+          "listing_price": 52300,
+          "observation_count": 0,
+          "quick_sale_price": 43700,
+          "updated_at": "2026-08-18"
+        }
+      },
+      "iPhone 17": {
+        "256": {
+          "confidence_score": 75,
+          "estimated_price": 70000,
+          "listing_price": 76300,
+          "observation_count": 0,
+          "quick_sale_price": 63700,
+          "updated_at": "2026-08-18"
+        },
+        "512": {
+          "confidence_score": 70,
+          "estimated_price": 80000,
+          "listing_price": 87200,
+          "observation_count": 0,
+          "quick_sale_price": 72800,
+          "updated_at": "2026-08-18"
+        }
+      },
+      "iPhone 17 Pro": {
+        "1024": {
+          "confidence_score": 65,
+          "estimated_price": 118000,
+          "listing_price": 128600,
+          "observation_count": 0,
+          "quick_sale_price": 107400,
+          "updated_at": "2026-08-18"
+        },
+        "256": {
+          "confidence_score": 75,
+          "estimated_price": 96000,
+          "listing_price": 104600,
+          "observation_count": 0,
+          "quick_sale_price": 87400,
+          "updated_at": "2026-08-18"
+        },
+        "512": {
+          "confidence_score": 70,
+          "estimated_price": 106000,
+          "listing_price": 115500,
+          "observation_count": 0,
+          "quick_sale_price": 96500,
+          "updated_at": "2026-08-18"
+        }
+      },
+      "iPhone 17 Pro Max": {
+        "1024": {
+          "confidence_score": 65,
+          "estimated_price": 136000,
+          "listing_price": 148200,
+          "observation_count": 0,
+          "quick_sale_price": 123800,
+          "updated_at": "2026-08-18"
+        },
+        "2048": {
+          "confidence_score": 65,
+          "estimated_price": 151000,
+          "listing_price": 164600,
+          "observation_count": 0,
+          "quick_sale_price": 137400,
+          "updated_at": "2026-08-18"
+        },
+        "256": {
+          "confidence_score": 75,
+          "estimated_price": 112000,
+          "listing_price": 122100,
+          "observation_count": 0,
+          "quick_sale_price": 101900,
+          "updated_at": "2026-08-18"
+        },
+        "512": {
+          "confidence_score": 70,
+          "estimated_price": 123000,
+          "listing_price": 134100,
+          "observation_count": 0,
+          "quick_sale_price": 111900,
+          "updated_at": "2026-08-18"
+        }
+      },
+      "iPhone 17e": {
+        "256": {
+          "confidence_score": 75,
+          "estimated_price": 52000,
+          "listing_price": 56700,
+          "observation_count": 0,
+          "quick_sale_price": 47300,
+          "updated_at": "2026-08-18"
+        },
+        "512": {
+          "confidence_score": 70,
+          "estimated_price": 60000,
+          "listing_price": 65400,
+          "observation_count": 0,
+          "quick_sale_price": 54600,
+          "updated_at": "2026-08-18"
+        }
+      },
+      "iPhone Air": {
+        "1024": {
+          "confidence_score": 65,
+          "estimated_price": 90000,
+          "listing_price": 98100,
+          "observation_count": 0,
+          "quick_sale_price": 81900,
+          "updated_at": "2026-08-18"
+        },
+        "256": {
+          "confidence_score": 75,
+          "estimated_price": 68000,
+          "listing_price": 74100,
+          "observation_count": 0,
+          "quick_sale_price": 61900,
+          "updated_at": "2026-08-18"
+        },
+        "512": {
+          "confidence_score": 70,
+          "estimated_price": 78000,
+          "listing_price": 85000,
+          "observation_count": 0,
+          "quick_sale_price": 71000,
+          "updated_at": "2026-08-18"
+        }
+      },
+      "iPhone SE (2. nesil)": {
+        "128": {
+          "confidence_score": 80,
+          "estimated_price": 7500,
+          "listing_price": 8200,
+          "observation_count": 0,
+          "quick_sale_price": 6800,
+          "updated_at": "2026-08-18"
+        },
+        "256": {
+          "confidence_score": 80,
+          "estimated_price": 9000,
+          "listing_price": 9800,
+          "observation_count": 0,
+          "quick_sale_price": 8200,
+          "updated_at": "2026-08-18"
+        },
+        "64": {
+          "confidence_score": 80,
+          "estimated_price": 6000,
+          "listing_price": 6500,
+          "observation_count": 0,
+          "quick_sale_price": 5500,
+          "updated_at": "2026-08-18"
+        }
+      },
+      "iPhone SE (3. nesil)": {
+        "128": {
+          "confidence_score": 80,
+          "estimated_price": 10000,
+          "listing_price": 10900,
+          "observation_count": 0,
+          "quick_sale_price": 9100,
+          "updated_at": "2026-08-18"
+        },
+        "256": {
+          "confidence_score": 80,
+          "estimated_price": 12000,
+          "listing_price": 13100,
+          "observation_count": 0,
+          "quick_sale_price": 10900,
+          "updated_at": "2026-08-18"
+        },
+        "64": {
+          "confidence_score": 80,
+          "estimated_price": 8500,
+          "listing_price": 9300,
+          "observation_count": 0,
+          "quick_sale_price": 7700,
+          "updated_at": "2026-08-18"
+        }
+      }
+    },
+    "Google": {
+      "Pixel 10": {
+        "128": {
+          "confidence_score": 45,
+          "estimated_price": 26000,
+          "listing_price": 28300,
+          "observation_count": 0,
+          "quick_sale_price": 23700,
+          "updated_at": "2026-08-18"
+        },
+        "256": {
+          "confidence_score": 48,
+          "estimated_price": 29500,
+          "listing_price": 32200,
+          "observation_count": 0,
+          "quick_sale_price": 26800,
+          "updated_at": "2026-08-18"
+        }
+      },
+      "Pixel 10 Pro": {
+        "1024": {
+          "confidence_score": 30,
+          "estimated_price": 46000,
+          "listing_price": 50100,
+          "observation_count": 0,
+          "quick_sale_price": 41900,
+          "updated_at": "2026-08-18"
+        },
+        "128": {
+          "confidence_score": 40,
+          "estimated_price": 32000,
+          "listing_price": 34900,
+          "observation_count": 0,
+          "quick_sale_price": 29100,
+          "updated_at": "2026-08-18"
+        },
+        "256": {
+          "confidence_score": 45,
+          "estimated_price": 36000,
+          "listing_price": 39200,
+          "observation_count": 0,
+          "quick_sale_price": 32800,
+          "updated_at": "2026-08-18"
+        },
+        "512": {
+          "confidence_score": 38,
+          "estimated_price": 41000,
+          "listing_price": 44700,
+          "observation_count": 0,
+          "quick_sale_price": 37300,
+          "updated_at": "2026-08-18"
+        }
+      },
+      "Pixel 10 Pro Fold": {
+        "1024": {
+          "confidence_score": 25,
+          "estimated_price": 60000,
+          "listing_price": 65400,
+          "observation_count": 0,
+          "quick_sale_price": 54600,
+          "updated_at": "2026-08-18"
+        },
+        "256": {
+          "confidence_score": 35,
+          "estimated_price": 48000,
+          "listing_price": 52300,
+          "observation_count": 0,
+          "quick_sale_price": 43700,
+          "updated_at": "2026-08-18"
+        },
+        "512": {
+          "confidence_score": 30,
+          "estimated_price": 54000,
+          "listing_price": 58900,
+          "observation_count": 0,
+          "quick_sale_price": 49100,
+          "updated_at": "2026-08-18"
+        }
+      },
+      "Pixel 10 Pro XL": {
+        "1024": {
+          "confidence_score": 28,
+          "estimated_price": 49000,
+          "listing_price": 53400,
+          "observation_count": 0,
+          "quick_sale_price": 44600,
+          "updated_at": "2026-08-18"
+        },
+        "256": {
+          "confidence_score": 42,
+          "estimated_price": 39000,
+          "listing_price": 42500,
+          "observation_count": 0,
+          "quick_sale_price": 35500,
+          "updated_at": "2026-08-18"
+        },
+        "512": {
+          "confidence_score": 35,
+          "estimated_price": 44000,
+          "listing_price": 48000,
+          "observation_count": 0,
+          "quick_sale_price": 40000,
+          "updated_at": "2026-08-18"
+        }
+      },
+      "Pixel 6": {
+        "128": {
+          "confidence_score": 72,
+          "estimated_price": 8500,
+          "listing_price": 9300,
+          "observation_count": 0,
+          "quick_sale_price": 7700,
+          "updated_at": "2026-08-18"
+        },
+        "256": {
+          "confidence_score": 60,
+          "estimated_price": 10000,
+          "listing_price": 10900,
+          "observation_count": 0,
+          "quick_sale_price": 9100,
+          "updated_at": "2026-08-18"
+        }
+      },
+      "Pixel 6 Pro": {
+        "128": {
+          "confidence_score": 68,
+          "estimated_price": 10500,
+          "listing_price": 11500,
+          "observation_count": 0,
+          "quick_sale_price": 9500,
+          "updated_at": "2026-08-18"
+        },
+        "256": {
+          "confidence_score": 65,
+          "estimated_price": 12000,
+          "listing_price": 13100,
+          "observation_count": 0,
+          "quick_sale_price": 10900,
+          "updated_at": "2026-08-18"
+        },
+        "512": {
+          "confidence_score": 50,
+          "estimated_price": 14000,
+          "listing_price": 15300,
+          "observation_count": 0,
+          "quick_sale_price": 12700,
+          "updated_at": "2026-08-18"
+        }
+      },
+      "Pixel 6a": {
+        "128": {
+          "confidence_score": 70,
+          "estimated_price": 7500,
+          "listing_price": 8200,
+          "observation_count": 0,
+          "quick_sale_price": 6800,
+          "updated_at": "2026-08-18"
+        }
+      },
+      "Pixel 7": {
+        "128": {
+          "confidence_score": 72,
+          "estimated_price": 11000,
+          "listing_price": 12000,
+          "observation_count": 0,
+          "quick_sale_price": 10000,
+          "updated_at": "2026-08-18"
+        },
+        "256": {
+          "confidence_score": 62,
+          "estimated_price": 12500,
+          "listing_price": 13600,
+          "observation_count": 0,
+          "quick_sale_price": 11400,
+          "updated_at": "2026-08-18"
+        }
+      },
+      "Pixel 7 Pro": {
+        "128": {
+          "confidence_score": 70,
+          "estimated_price": 14000,
+          "listing_price": 15300,
+          "observation_count": 0,
+          "quick_sale_price": 12700,
+          "updated_at": "2026-08-18"
+        },
+        "256": {
+          "confidence_score": 68,
+          "estimated_price": 16000,
+          "listing_price": 17400,
+          "observation_count": 0,
+          "quick_sale_price": 14600,
+          "updated_at": "2026-08-18"
+        },
+        "512": {
+          "confidence_score": 52,
+          "estimated_price": 18500,
+          "listing_price": 20200,
+          "observation_count": 0,
+          "quick_sale_price": 16800,
+          "updated_at": "2026-08-18"
+        }
+      },
+      "Pixel 7a": {
+        "128": {
+          "confidence_score": 72,
+          "estimated_price": 10500,
+          "listing_price": 11500,
+          "observation_count": 0,
+          "quick_sale_price": 9500,
+          "updated_at": "2026-08-18"
+        }
+      },
+      "Pixel 8": {
+        "128": {
+          "confidence_score": 72,
+          "estimated_price": 15000,
+          "listing_price": 16400,
+          "observation_count": 0,
+          "quick_sale_price": 13600,
+          "updated_at": "2026-08-18"
+        },
+        "256": {
+          "confidence_score": 65,
+          "estimated_price": 17000,
+          "listing_price": 18500,
+          "observation_count": 0,
+          "quick_sale_price": 15500,
+          "updated_at": "2026-08-18"
+        }
+      },
+      "Pixel 8 Pro": {
+        "1024": {
+          "confidence_score": 45,
+          "estimated_price": 28000,
+          "listing_price": 30500,
+          "observation_count": 0,
+          "quick_sale_price": 25500,
+          "updated_at": "2026-08-18"
+        },
+        "128": {
+          "confidence_score": 70,
+          "estimated_price": 19000,
+          "listing_price": 20700,
+          "observation_count": 0,
+          "quick_sale_price": 17300,
+          "updated_at": "2026-08-18"
+        },
+        "256": {
+          "confidence_score": 70,
+          "estimated_price": 21500,
+          "listing_price": 23400,
+          "observation_count": 0,
+          "quick_sale_price": 19600,
+          "updated_at": "2026-08-18"
+        },
+        "512": {
+          "confidence_score": 58,
+          "estimated_price": 24500,
+          "listing_price": 26700,
+          "observation_count": 0,
+          "quick_sale_price": 22300,
+          "updated_at": "2026-08-18"
+        }
+      },
+      "Pixel 8a": {
+        "128": {
+          "confidence_score": 68,
+          "estimated_price": 14000,
+          "listing_price": 15300,
+          "observation_count": 0,
+          "quick_sale_price": 12700,
+          "updated_at": "2026-08-18"
+        },
+        "256": {
+          "confidence_score": 58,
+          "estimated_price": 16000,
+          "listing_price": 17400,
+          "observation_count": 0,
+          "quick_sale_price": 14600,
+          "updated_at": "2026-08-18"
+        }
+      },
+      "Pixel 9": {
+        "128": {
+          "confidence_score": 62,
+          "estimated_price": 21000,
+          "listing_price": 22900,
+          "observation_count": 0,
+          "quick_sale_price": 19100,
+          "updated_at": "2026-08-18"
+        },
+        "256": {
+          "confidence_score": 60,
+          "estimated_price": 24000,
+          "listing_price": 26200,
+          "observation_count": 0,
+          "quick_sale_price": 21800,
+          "updated_at": "2026-08-18"
+        }
+      },
+      "Pixel 9 Pro": {
+        "1024": {
+          "confidence_score": 40,
+          "estimated_price": 37000,
+          "listing_price": 40300,
+          "observation_count": 0,
+          "quick_sale_price": 33700,
+          "updated_at": "2026-08-18"
+        },
+        "128": {
+          "confidence_score": 55,
+          "estimated_price": 26000,
+          "listing_price": 28300,
+          "observation_count": 0,
+          "quick_sale_price": 23700,
+          "updated_at": "2026-08-18"
+        },
+        "256": {
+          "confidence_score": 60,
+          "estimated_price": 29000,
+          "listing_price": 31600,
+          "observation_count": 0,
+          "quick_sale_price": 26400,
+          "updated_at": "2026-08-18"
+        },
+        "512": {
+          "confidence_score": 50,
+          "estimated_price": 33000,
+          "listing_price": 36000,
+          "observation_count": 0,
+          "quick_sale_price": 30000,
+          "updated_at": "2026-08-18"
+        }
+      },
+      "Pixel 9 Pro Fold": {
+        "256": {
+          "confidence_score": 48,
+          "estimated_price": 40000,
+          "listing_price": 43600,
+          "observation_count": 0,
+          "quick_sale_price": 36400,
+          "updated_at": "2026-08-18"
+        },
+        "512": {
+          "confidence_score": 42,
+          "estimated_price": 45000,
+          "listing_price": 49000,
+          "observation_count": 0,
+          "quick_sale_price": 41000,
+          "updated_at": "2026-08-18"
+        }
+      },
+      "Pixel 9 Pro XL": {
+        "1024": {
+          "confidence_score": 38,
+          "estimated_price": 40000,
+          "listing_price": 43600,
+          "observation_count": 0,
+          "quick_sale_price": 36400,
+          "updated_at": "2026-08-18"
+        },
+        "128": {
+          "confidence_score": 50,
+          "estimated_price": 28000,
+          "listing_price": 30500,
+          "observation_count": 0,
+          "quick_sale_price": 25500,
+          "updated_at": "2026-08-18"
+        },
+        "256": {
+          "confidence_score": 60,
+          "estimated_price": 32000,
+          "listing_price": 34900,
+          "observation_count": 0,
+          "quick_sale_price": 29100,
+          "updated_at": "2026-08-18"
+        },
+        "512": {
+          "confidence_score": 48,
+          "estimated_price": 36000,
+          "listing_price": 39200,
+          "observation_count": 0,
+          "quick_sale_price": 32800,
+          "updated_at": "2026-08-18"
+        }
+      },
+      "Pixel 9a": {
+        "128": {
+          "confidence_score": 55,
+          "estimated_price": 18000,
+          "listing_price": 19600,
+          "observation_count": 0,
+          "quick_sale_price": 16400,
+          "updated_at": "2026-08-18"
+        },
+        "256": {
+          "confidence_score": 50,
+          "estimated_price": 20500,
+          "listing_price": 22300,
+          "observation_count": 0,
+          "quick_sale_price": 18700,
+          "updated_at": "2026-08-18"
+        }
+      }
+    },
+    "Honor": {
+      "Honor 200": {
+        "256": {
+          "confidence_score": 80,
+          "estimated_price": 16500,
+          "listing_price": 18000,
+          "observation_count": 0,
+          "quick_sale_price": 15000,
+          "updated_at": "2026-08-18"
+        },
+        "512": {
+          "confidence_score": 82,
+          "estimated_price": 17500,
+          "listing_price": 19100,
+          "observation_count": 0,
+          "quick_sale_price": 15900,
+          "updated_at": "2026-08-18"
+        }
+      },
+      "Honor 200 Lite": {
+        "256": {
+          "confidence_score": 70,
+          "estimated_price": 11000,
+          "listing_price": 12000,
+          "observation_count": 0,
+          "quick_sale_price": 10000,
+          "updated_at": "2026-08-18"
+        }
+      },
+      "Honor 200 Pro": {
+        "512": {
+          "confidence_score": 75,
+          "estimated_price": 24000,
+          "listing_price": 26200,
+          "observation_count": 0,
+          "quick_sale_price": 21800,
+          "updated_at": "2026-08-18"
+        }
+      },
+      "Honor 400": {
+        "256": {
+          "confidence_score": 72,
+          "estimated_price": 20000,
+          "listing_price": 21800,
+          "observation_count": 0,
+          "quick_sale_price": 18200,
+          "updated_at": "2026-08-18"
+        },
+        "512": {
+          "confidence_score": 75,
+          "estimated_price": 22500,
+          "listing_price": 24500,
+          "observation_count": 0,
+          "quick_sale_price": 20500,
+          "updated_at": "2026-08-18"
+        }
+      },
+      "Honor 400 Lite": {
+        "256": {
+          "confidence_score": 68,
+          "estimated_price": 15000,
+          "listing_price": 16300,
+          "observation_count": 0,
+          "quick_sale_price": 13700,
+          "updated_at": "2026-08-18"
+        }
+      },
+      "Honor 400 Pro": {
+        "512": {
+          "confidence_score": 70,
+          "estimated_price": 30000,
+          "listing_price": 32700,
+          "observation_count": 0,
+          "quick_sale_price": 27300,
+          "updated_at": "2026-08-18"
+        }
+      },
+      "Honor 50": {
+        "128": {
+          "confidence_score": 70,
+          "estimated_price": 6500,
+          "listing_price": 7100,
+          "observation_count": 0,
+          "quick_sale_price": 5900,
+          "updated_at": "2026-08-18"
+        },
+        "256": {
+          "confidence_score": 65,
+          "estimated_price": 7500,
+          "listing_price": 8200,
+          "observation_count": 0,
+          "quick_sale_price": 6800,
+          "updated_at": "2026-08-18"
+        }
+      },
+      "Honor 70": {
+        "128": {
+          "confidence_score": 68,
+          "estimated_price": 8000,
+          "listing_price": 8700,
+          "observation_count": 0,
+          "quick_sale_price": 7300,
+          "updated_at": "2026-08-18"
+        },
+        "256": {
+          "confidence_score": 72,
+          "estimated_price": 9500,
+          "listing_price": 10400,
+          "observation_count": 0,
+          "quick_sale_price": 8600,
+          "updated_at": "2026-08-18"
+        }
+      },
+      "Honor 90": {
+        "256": {
+          "confidence_score": 70,
+          "estimated_price": 11500,
+          "listing_price": 12500,
+          "observation_count": 0,
+          "quick_sale_price": 10500,
+          "updated_at": "2026-08-18"
+        },
+        "512": {
+          "confidence_score": 75,
+          "estimated_price": 13500,
+          "listing_price": 14700,
+          "observation_count": 0,
+          "quick_sale_price": 12300,
+          "updated_at": "2026-08-18"
+        }
+      },
+      "Honor 90 Lite": {
+        "256": {
+          "confidence_score": 72,
+          "estimated_price": 9000,
+          "listing_price": 9800,
+          "observation_count": 0,
+          "quick_sale_price": 8200,
+          "updated_at": "2026-08-18"
+        }
+      },
+      "Magic V2": {
+        "512": {
+          "confidence_score": 70,
+          "estimated_price": 38000,
+          "listing_price": 41400,
+          "observation_count": 0,
+          "quick_sale_price": 34600,
+          "updated_at": "2026-08-18"
+        }
+      },
+      "Magic V3": {
+        "512": {
+          "confidence_score": 68,
+          "estimated_price": 50000,
+          "listing_price": 54500,
+          "observation_count": 0,
+          "quick_sale_price": 45500,
+          "updated_at": "2026-08-18"
+        }
+      },
+      "Magic4 Pro": {
+        "256": {
+          "confidence_score": 60,
+          "estimated_price": 16000,
+          "listing_price": 17400,
+          "observation_count": 0,
+          "quick_sale_price": 14600,
+          "updated_at": "2026-08-18"
+        }
+      },
+      "Magic5 Pro": {
+        "512": {
+          "confidence_score": 68,
+          "estimated_price": 24000,
+          "listing_price": 26200,
+          "observation_count": 0,
+          "quick_sale_price": 21800,
+          "updated_at": "2026-08-18"
+        }
+      },
+      "Magic6 Pro": {
+        "512": {
+          "confidence_score": 75,
+          "estimated_price": 34000,
+          "listing_price": 37100,
+          "observation_count": 0,
+          "quick_sale_price": 30900,
+          "updated_at": "2026-08-18"
+        }
+      },
+      "Magic7 Pro": {
+        "512": {
+          "confidence_score": 70,
+          "estimated_price": 48000,
+          "listing_price": 52300,
+          "observation_count": 0,
+          "quick_sale_price": 43700,
+          "updated_at": "2026-08-18"
+        }
+      },
+      "X7": {
+        "128": {
+          "confidence_score": 65,
+          "estimated_price": 5000,
+          "listing_price": 5450,
+          "observation_count": 0,
+          "quick_sale_price": 4550,
+          "updated_at": "2026-08-18"
+        }
+      },
+      "X7a": {
+        "128": {
+          "confidence_score": 70,
+          "estimated_price": 6000,
+          "listing_price": 6500,
+          "observation_count": 0,
+          "quick_sale_price": 5500,
+          "updated_at": "2026-08-18"
+        }
+      },
+      "X7b": {
+        "256": {
+          "confidence_score": 60,
+          "estimated_price": 8500,
+          "listing_price": 9300,
+          "observation_count": 0,
+          "quick_sale_price": 7700,
+          "updated_at": "2026-08-18"
+        }
+      },
+      "X8": {
+        "128": {
+          "confidence_score": 70,
+          "estimated_price": 7000,
+          "listing_price": 7600,
+          "observation_count": 0,
+          "quick_sale_price": 6400,
+          "updated_at": "2026-08-18"
+        }
+      },
+      "X8a": {
+        "128": {
+          "confidence_score": 65,
+          "estimated_price": 9000,
+          "listing_price": 9800,
+          "observation_count": 0,
+          "quick_sale_price": 8200,
+          "updated_at": "2026-08-18"
+        }
+      },
+      "X8b": {
+        "256": {
+          "confidence_score": 55,
+          "estimated_price": 11500,
+          "listing_price": 12500,
+          "observation_count": 0,
+          "quick_sale_price": 10500,
+          "updated_at": "2026-08-18"
+        }
+      },
+      "X9": {
+        "128": {
+          "confidence_score": 60,
+          "estimated_price": 7500,
+          "listing_price": 8200,
+          "observation_count": 0,
+          "quick_sale_price": 6800,
+          "updated_at": "2026-08-18"
+        }
+      },
+      "X9a": {
+        "128": {
+          "confidence_score": 75,
+          "estimated_price": 9500,
+          "listing_price": 10400,
+          "observation_count": 0,
+          "quick_sale_price": 8600,
+          "updated_at": "2026-08-18"
+        },
+        "256": {
+          "confidence_score": 65,
+          "estimated_price": 11500,
+          "listing_price": 12500,
+          "observation_count": 0,
+          "quick_sale_price": 10500,
+          "updated_at": "2026-08-18"
+        }
+      },
+      "X9b": {
+        "256": {
+          "confidence_score": 78,
+          "estimated_price": 14000,
+          "listing_price": 15300,
+          "observation_count": 0,
+          "quick_sale_price": 12700,
+          "updated_at": "2026-08-18"
+        }
+      },
+      "X9c": {
+        "256": {
+          "confidence_score": 65,
+          "estimated_price": 16500,
+          "listing_price": 18000,
+          "observation_count": 0,
+          "quick_sale_price": 15000,
+          "updated_at": "2026-08-18"
+        },
+        "512": {
+          "confidence_score": 55,
+          "estimated_price": 19000,
+          "listing_price": 20700,
+          "observation_count": 0,
+          "quick_sale_price": 17300,
+          "updated_at": "2026-08-18"
+        }
+      }
+    },
+    "Huawei": {
+      "Mate 40 Pro": {
+        "256": {
+          "confidence_score": 65,
+          "estimated_price": 13000,
+          "listing_price": 14200,
+          "observation_count": 0,
+          "quick_sale_price": 11800,
+          "updated_at": "2026-08-18"
+        }
+      },
+      "Mate 50 Pro": {
+        "256": {
+          "confidence_score": 78,
+          "estimated_price": 20000,
+          "listing_price": 21800,
+          "observation_count": 0,
+          "quick_sale_price": 18200,
+          "updated_at": "2026-08-18"
+        },
+        "512": {
+          "confidence_score": 70,
+          "estimated_price": 24000,
+          "listing_price": 26200,
+          "observation_count": 0,
+          "quick_sale_price": 21800,
+          "updated_at": "2026-08-18"
+        }
+      },
+      "Mate 60 Pro": {
+        "1024": {
+          "confidence_score": 50,
+          "estimated_price": 35000,
+          "listing_price": 38200,
+          "observation_count": 0,
+          "quick_sale_price": 31900,
+          "updated_at": "2026-08-18"
+        },
+        "256": {
+          "confidence_score": 55,
+          "estimated_price": 27000,
+          "listing_price": 29400,
+          "observation_count": 0,
+          "quick_sale_price": 24600,
+          "updated_at": "2026-08-18"
+        },
+        "512": {
+          "confidence_score": 55,
+          "estimated_price": 31000,
+          "listing_price": 33800,
+          "observation_count": 0,
+          "quick_sale_price": 28200,
+          "updated_at": "2026-08-18"
+        }
+      },
+      "Mate 70 Pro": {
+        "1024": {
+          "confidence_score": 45,
+          "estimated_price": 48000,
+          "listing_price": 52300,
+          "observation_count": 0,
+          "quick_sale_price": 43700,
+          "updated_at": "2026-08-18"
+        },
+        "256": {
+          "confidence_score": 50,
+          "estimated_price": 38000,
+          "listing_price": 41400,
+          "observation_count": 0,
+          "quick_sale_price": 34600,
+          "updated_at": "2026-08-18"
+        },
+        "512": {
+          "confidence_score": 50,
+          "estimated_price": 43000,
+          "listing_price": 46900,
+          "observation_count": 0,
+          "quick_sale_price": 39100,
+          "updated_at": "2026-08-18"
+        }
+      },
+      "Nova 10": {
+        "256": {
+          "confidence_score": 70,
+          "estimated_price": 10000,
+          "listing_price": 10900,
+          "observation_count": 0,
+          "quick_sale_price": 9100,
+          "updated_at": "2026-08-18"
+        }
+      },
+      "Nova 10 Pro": {
+        "256": {
+          "confidence_score": 68,
+          "estimated_price": 12000,
+          "listing_price": 13100,
+          "observation_count": 0,
+          "quick_sale_price": 10900,
+          "updated_at": "2026-08-18"
+        }
+      },
+      "Nova 11": {
+        "256": {
+          "confidence_score": 75,
+          "estimated_price": 13500,
+          "listing_price": 14700,
+          "observation_count": 0,
+          "quick_sale_price": 12300,
+          "updated_at": "2026-08-18"
+        }
+      },
+      "Nova 11 Pro": {
+        "256": {
+          "confidence_score": 70,
+          "estimated_price": 16000,
+          "listing_price": 17400,
+          "observation_count": 0,
+          "quick_sale_price": 14600,
+          "updated_at": "2026-08-18"
+        }
+      },
+      "Nova 12": {
+        "256": {
+          "confidence_score": 60,
+          "estimated_price": 14000,
+          "listing_price": 15300,
+          "observation_count": 0,
+          "quick_sale_price": 12700,
+          "updated_at": "2026-08-18"
+        }
+      },
+      "Nova 12 SE": {
+        "256": {
+          "confidence_score": 65,
+          "estimated_price": 12000,
+          "listing_price": 13100,
+          "observation_count": 0,
+          "quick_sale_price": 10900,
+          "updated_at": "2026-08-18"
+        }
+      },
+      "Nova 13": {
+        "256": {
+          "confidence_score": 78,
+          "estimated_price": 14000,
+          "listing_price": 15300,
+          "observation_count": 0,
+          "quick_sale_price": 12700,
+          "updated_at": "2026-08-18"
+        }
+      },
+      "Nova 13 Pro": {
+        "512": {
+          "confidence_score": 75,
+          "estimated_price": 19000,
+          "listing_price": 20700,
+          "observation_count": 0,
+          "quick_sale_price": 17300,
+          "updated_at": "2026-08-18"
+        }
+      },
+      "Nova 9": {
+        "128": {
+          "confidence_score": 72,
+          "estimated_price": 7000,
+          "listing_price": 7600,
+          "observation_count": 0,
+          "quick_sale_price": 6400,
+          "updated_at": "2026-08-18"
+        }
+      },
+      "Nova Y70": {
+        "128": {
+          "confidence_score": 72,
+          "estimated_price": 5000,
+          "listing_price": 5450,
+          "observation_count": 0,
+          "quick_sale_price": 4550,
+          "updated_at": "2026-08-18"
+        }
+      },
+      "Nova Y90": {
+        "128": {
+          "confidence_score": 72,
+          "estimated_price": 5500,
+          "listing_price": 6000,
+          "observation_count": 0,
+          "quick_sale_price": 5000,
+          "updated_at": "2026-08-18"
+        }
+      },
+      "Nova Y91": {
+        "256": {
+          "confidence_score": 70,
+          "estimated_price": 7500,
+          "listing_price": 8200,
+          "observation_count": 0,
+          "quick_sale_price": 6800,
+          "updated_at": "2026-08-18"
+        }
+      },
+      "P30": {
+        "128": {
+          "confidence_score": 78,
+          "estimated_price": 6500,
+          "listing_price": 7100,
+          "observation_count": 0,
+          "quick_sale_price": 5900,
+          "updated_at": "2026-08-18"
+        }
+      },
+      "P30 Pro": {
+        "128": {
+          "confidence_score": 70,
+          "estimated_price": 9000,
+          "listing_price": 9800,
+          "observation_count": 0,
+          "quick_sale_price": 8200,
+          "updated_at": "2026-08-18"
+        },
+        "256": {
+          "confidence_score": 78,
+          "estimated_price": 11000,
+          "listing_price": 12000,
+          "observation_count": 0,
+          "quick_sale_price": 10000,
+          "updated_at": "2026-08-18"
+        }
+      },
+      "P40": {
+        "128": {
+          "confidence_score": 70,
+          "estimated_price": 7500,
+          "listing_price": 8200,
+          "observation_count": 0,
+          "quick_sale_price": 6800,
+          "updated_at": "2026-08-18"
+        }
+      },
+      "P40 Pro": {
+        "256": {
+          "confidence_score": 78,
+          "estimated_price": 12500,
+          "listing_price": 13600,
+          "observation_count": 0,
+          "quick_sale_price": 11400,
+          "updated_at": "2026-08-18"
+        }
+      },
+      "P50 Pro": {
+        "256": {
+          "confidence_score": 78,
+          "estimated_price": 17500,
+          "listing_price": 19100,
+          "observation_count": 0,
+          "quick_sale_price": 15900,
+          "updated_at": "2026-08-18"
+        }
+      },
+      "P60 Pro": {
+        "256": {
+          "confidence_score": 78,
+          "estimated_price": 22000,
+          "listing_price": 24000,
+          "observation_count": 0,
+          "quick_sale_price": 20000,
+          "updated_at": "2026-08-18"
+        },
+        "512": {
+          "confidence_score": 68,
+          "estimated_price": 26000,
+          "listing_price": 28300,
+          "observation_count": 0,
+          "quick_sale_price": 23700,
+          "updated_at": "2026-08-18"
+        }
+      },
+      "Pura 70": {
+        "256": {
+          "confidence_score": 70,
+          "estimated_price": 33000,
+          "listing_price": 36000,
+          "observation_count": 0,
+          "quick_sale_price": 30000,
+          "updated_at": "2026-08-18"
+        }
+      },
+      "Pura 70 Pro": {
+        "512": {
+          "confidence_score": 72,
+          "estimated_price": 30000,
+          "listing_price": 32700,
+          "observation_count": 0,
+          "quick_sale_price": 27300,
+          "updated_at": "2026-08-18"
+        }
+      },
+      "Pura 70 Ultra": {
+        "512": {
+          "confidence_score": 75,
+          "estimated_price": 38000,
+          "listing_price": 41400,
+          "observation_count": 0,
+          "quick_sale_price": 34600,
+          "updated_at": "2026-08-18"
+        }
+      },
+      "Pura 80": {
+        "256": {
+          "confidence_score": 60,
+          "estimated_price": 42000,
+          "listing_price": 45800,
+          "observation_count": 0,
+          "quick_sale_price": 38200,
+          "updated_at": "2026-08-18"
+        }
+      },
+      "Pura 80 Pro": {
+        "512": {
+          "confidence_score": 60,
+          "estimated_price": 55000,
+          "listing_price": 60000,
+          "observation_count": 0,
+          "quick_sale_price": 50000,
+          "updated_at": "2026-08-18"
+        }
+      },
+      "Pura 80 Ultra": {
+        "512": {
+          "confidence_score": 55,
+          "estimated_price": 70000,
+          "listing_price": 76300,
+          "observation_count": 0,
+          "quick_sale_price": 63700,
+          "updated_at": "2026-08-18"
+        }
+      }
+    },
+    "OnePlus": {
+      "OnePlus 10 Pro": {
+        "128": {
+          "confidence_score": 65,
+          "estimated_price": 12500,
+          "listing_price": 13600,
+          "observation_count": 0,
+          "quick_sale_price": 11400,
+          "updated_at": "2026-08-18"
+        },
+        "256": {
+          "confidence_score": 80,
+          "estimated_price": 15000,
+          "listing_price": 16400,
+          "observation_count": 0,
+          "quick_sale_price": 13600,
+          "updated_at": "2026-08-18"
+        }
+      },
+      "OnePlus 10T": {
+        "128": {
+          "confidence_score": 62,
+          "estimated_price": 13000,
+          "listing_price": 14200,
+          "observation_count": 0,
+          "quick_sale_price": 11800,
+          "updated_at": "2026-08-18"
+        },
+        "256": {
+          "confidence_score": 65,
+          "estimated_price": 15000,
+          "listing_price": 16400,
+          "observation_count": 0,
+          "quick_sale_price": 13600,
+          "updated_at": "2026-08-18"
+        }
+      },
+      "OnePlus 11": {
+        "128": {
+          "confidence_score": 55,
+          "estimated_price": 15000,
+          "listing_price": 16400,
+          "observation_count": 0,
+          "quick_sale_price": 13600,
+          "updated_at": "2026-08-18"
+        },
+        "256": {
+          "confidence_score": 68,
+          "estimated_price": 18000,
+          "listing_price": 19600,
+          "observation_count": 0,
+          "quick_sale_price": 16400,
+          "updated_at": "2026-08-18"
+        },
+        "512": {
+          "confidence_score": 55,
+          "estimated_price": 21000,
+          "listing_price": 22900,
+          "observation_count": 0,
+          "quick_sale_price": 19100,
+          "updated_at": "2026-08-18"
+        }
+      },
+      "OnePlus 11R": {
+        "128": {
+          "confidence_score": 55,
+          "estimated_price": 13500,
+          "listing_price": 14700,
+          "observation_count": 0,
+          "quick_sale_price": 12300,
+          "updated_at": "2026-08-18"
+        },
+        "256": {
+          "confidence_score": 58,
+          "estimated_price": 15500,
+          "listing_price": 16900,
+          "observation_count": 0,
+          "quick_sale_price": 14100,
+          "updated_at": "2026-08-18"
+        }
+      },
+      "OnePlus 12": {
+        "256": {
+          "confidence_score": 68,
+          "estimated_price": 21000,
+          "listing_price": 22900,
+          "observation_count": 0,
+          "quick_sale_price": 19100,
+          "updated_at": "2026-08-18"
+        },
+        "512": {
+          "confidence_score": 78,
+          "estimated_price": 23500,
+          "listing_price": 25600,
+          "observation_count": 0,
+          "quick_sale_price": 21400,
+          "updated_at": "2026-08-18"
+        }
+      },
+      "OnePlus 12R": {
+        "256": {
+          "confidence_score": 78,
+          "estimated_price": 23000,
+          "listing_price": 25100,
+          "observation_count": 0,
+          "quick_sale_price": 20900,
+          "updated_at": "2026-08-18"
+        }
+      },
+      "OnePlus 13": {
+        "256": {
+          "confidence_score": 60,
+          "estimated_price": 28000,
+          "listing_price": 30500,
+          "observation_count": 0,
+          "quick_sale_price": 25500,
+          "updated_at": "2026-08-18"
+        },
+        "512": {
+          "confidence_score": 65,
+          "estimated_price": 33000,
+          "listing_price": 36000,
+          "observation_count": 0,
+          "quick_sale_price": 30000,
+          "updated_at": "2026-08-18"
+        }
+      },
+      "OnePlus 13R": {
+        "256": {
+          "confidence_score": 60,
+          "estimated_price": 23000,
+          "listing_price": 25100,
+          "observation_count": 0,
+          "quick_sale_price": 20900,
+          "updated_at": "2026-08-18"
+        }
+      },
+      "OnePlus 15": {
+        "256": {
+          "confidence_score": 65,
+          "estimated_price": 35000,
+          "listing_price": 38200,
+          "observation_count": 0,
+          "quick_sale_price": 31900,
+          "updated_at": "2026-08-18"
+        },
+        "512": {
+          "confidence_score": 55,
+          "estimated_price": 41000,
+          "listing_price": 44700,
+          "observation_count": 0,
+          "quick_sale_price": 37300,
+          "updated_at": "2026-08-18"
+        }
+      },
+      "OnePlus 8": {
+        "128": {
+          "confidence_score": 75,
+          "estimated_price": 7000,
+          "listing_price": 7600,
+          "observation_count": 0,
+          "quick_sale_price": 6400,
+          "updated_at": "2026-08-18"
+        },
+        "256": {
+          "confidence_score": 65,
+          "estimated_price": 8500,
+          "listing_price": 9300,
+          "observation_count": 0,
+          "quick_sale_price": 7700,
+          "updated_at": "2026-08-18"
+        }
+      },
+      "OnePlus 8 Pro": {
+        "128": {
+          "confidence_score": 68,
+          "estimated_price": 8500,
+          "listing_price": 9300,
+          "observation_count": 0,
+          "quick_sale_price": 7700,
+          "updated_at": "2026-08-18"
+        },
+        "256": {
+          "confidence_score": 68,
+          "estimated_price": 10000,
+          "listing_price": 10900,
+          "observation_count": 0,
+          "quick_sale_price": 9100,
+          "updated_at": "2026-08-18"
+        }
+      },
+      "OnePlus 9": {
+        "128": {
+          "confidence_score": 78,
+          "estimated_price": 7500,
+          "listing_price": 8200,
+          "observation_count": 0,
+          "quick_sale_price": 6800,
+          "updated_at": "2026-08-18"
+        },
+        "256": {
+          "confidence_score": 70,
+          "estimated_price": 9000,
+          "listing_price": 9800,
+          "observation_count": 0,
+          "quick_sale_price": 8200,
+          "updated_at": "2026-08-18"
+        }
+      },
+      "OnePlus 9 Pro": {
+        "128": {
+          "confidence_score": 72,
+          "estimated_price": 11000,
+          "listing_price": 12000,
+          "observation_count": 0,
+          "quick_sale_price": 10000,
+          "updated_at": "2026-08-18"
+        },
+        "256": {
+          "confidence_score": 78,
+          "estimated_price": 12500,
+          "listing_price": 13600,
+          "observation_count": 0,
+          "quick_sale_price": 11400,
+          "updated_at": "2026-08-18"
+        }
+      },
+      "OnePlus Nord": {
+        "128": {
+          "confidence_score": 65,
+          "estimated_price": 6500,
+          "listing_price": 7100,
+          "observation_count": 0,
+          "quick_sale_price": 5900,
+          "updated_at": "2026-08-18"
+        },
+        "256": {
+          "confidence_score": 60,
+          "estimated_price": 7500,
+          "listing_price": 8200,
+          "observation_count": 0,
+          "quick_sale_price": 6800,
+          "updated_at": "2026-08-18"
+        }
+      },
+      "OnePlus Nord 2": {
+        "128": {
+          "confidence_score": 68,
+          "estimated_price": 7500,
+          "listing_price": 8200,
+          "observation_count": 0,
+          "quick_sale_price": 6800,
+          "updated_at": "2026-08-18"
+        },
+        "256": {
+          "confidence_score": 65,
+          "estimated_price": 8500,
+          "listing_price": 9300,
+          "observation_count": 0,
+          "quick_sale_price": 7700,
+          "updated_at": "2026-08-18"
+        }
+      },
+      "OnePlus Nord 2T": {
+        "128": {
+          "confidence_score": 62,
+          "estimated_price": 8500,
+          "listing_price": 9300,
+          "observation_count": 0,
+          "quick_sale_price": 7700,
+          "updated_at": "2026-08-18"
+        },
+        "256": {
+          "confidence_score": 60,
+          "estimated_price": 9500,
+          "listing_price": 10400,
+          "observation_count": 0,
+          "quick_sale_price": 8600,
+          "updated_at": "2026-08-18"
+        }
+      },
+      "OnePlus Nord 3": {
+        "128": {
+          "confidence_score": 60,
+          "estimated_price": 10500,
+          "listing_price": 11500,
+          "observation_count": 0,
+          "quick_sale_price": 9500,
+          "updated_at": "2026-08-18"
+        },
+        "256": {
+          "confidence_score": 65,
+          "estimated_price": 12000,
+          "listing_price": 13100,
+          "observation_count": 0,
+          "quick_sale_price": 10900,
+          "updated_at": "2026-08-18"
+        }
+      },
+      "OnePlus Nord 4": {
+        "256": {
+          "confidence_score": 62,
+          "estimated_price": 15000,
+          "listing_price": 16400,
+          "observation_count": 0,
+          "quick_sale_price": 13600,
+          "updated_at": "2026-08-18"
+        },
+        "512": {
+          "confidence_score": 58,
+          "estimated_price": 17500,
+          "listing_price": 19100,
+          "observation_count": 0,
+          "quick_sale_price": 15900,
+          "updated_at": "2026-08-18"
+        }
+      },
+      "OnePlus Nord 5": {
+        "256": {
+          "confidence_score": 50,
+          "estimated_price": 18000,
+          "listing_price": 19600,
+          "observation_count": 0,
+          "quick_sale_price": 16400,
+          "updated_at": "2026-08-18"
+        },
+        "512": {
+          "confidence_score": 45,
+          "estimated_price": 20500,
+          "listing_price": 22300,
+          "observation_count": 0,
+          "quick_sale_price": 18700,
+          "updated_at": "2026-08-18"
+        }
+      },
+      "OnePlus Nord CE 2": {
+        "128": {
+          "confidence_score": 65,
+          "estimated_price": 7000,
+          "listing_price": 7600,
+          "observation_count": 0,
+          "quick_sale_price": 6400,
+          "updated_at": "2026-08-18"
+        }
+      },
+      "OnePlus Nord CE 3 Lite": {
+        "128": {
+          "confidence_score": 65,
+          "estimated_price": 8000,
+          "listing_price": 8700,
+          "observation_count": 0,
+          "quick_sale_price": 7300,
+          "updated_at": "2026-08-18"
+        },
+        "256": {
+          "confidence_score": 60,
+          "estimated_price": 9000,
+          "listing_price": 9800,
+          "observation_count": 0,
+          "quick_sale_price": 8200,
+          "updated_at": "2026-08-18"
+        }
+      },
+      "OnePlus Nord CE 4": {
+        "128": {
+          "confidence_score": 55,
+          "estimated_price": 10000,
+          "listing_price": 10900,
+          "observation_count": 0,
+          "quick_sale_price": 9100,
+          "updated_at": "2026-08-18"
+        },
+        "256": {
+          "confidence_score": 58,
+          "estimated_price": 11500,
+          "listing_price": 12500,
+          "observation_count": 0,
+          "quick_sale_price": 10500,
+          "updated_at": "2026-08-18"
+        }
+      },
+      "OnePlus Nord CE 4 Lite": {
+        "256": {
+          "confidence_score": 58,
+          "estimated_price": 10000,
+          "listing_price": 10900,
+          "observation_count": 0,
+          "quick_sale_price": 9100,
+          "updated_at": "2026-08-18"
+        }
+      }
+    },
+    "Oppo": {
+      "A16": {
+        "64": {
+          "confidence_score": 70,
+          "estimated_price": 3500,
+          "listing_price": 3800,
+          "observation_count": 0,
+          "quick_sale_price": 3200,
+          "updated_at": "2026-08-18"
+        }
+      },
+      "A17": {
+        "64": {
+          "confidence_score": 60,
+          "estimated_price": 4000,
+          "listing_price": 4350,
+          "observation_count": 0,
+          "quick_sale_price": 3650,
+          "updated_at": "2026-08-18"
+        }
+      },
+      "A18": {
+        "128": {
+          "confidence_score": 60,
+          "estimated_price": 5500,
+          "listing_price": 6000,
+          "observation_count": 0,
+          "quick_sale_price": 5000,
+          "updated_at": "2026-08-18"
+        }
+      },
+      "A38": {
+        "128": {
+          "confidence_score": 70,
+          "estimated_price": 6500,
+          "listing_price": 7100,
+          "observation_count": 0,
+          "quick_sale_price": 5900,
+          "updated_at": "2026-08-18"
+        }
+      },
+      "A54": {
+        "128": {
+          "confidence_score": 70,
+          "estimated_price": 4500,
+          "listing_price": 4900,
+          "observation_count": 0,
+          "quick_sale_price": 4100,
+          "updated_at": "2026-08-18"
+        }
+      },
+      "A55": {
+        "128": {
+          "confidence_score": 70,
+          "estimated_price": 5000,
+          "listing_price": 5450,
+          "observation_count": 0,
+          "quick_sale_price": 4550,
+          "updated_at": "2026-08-18"
+        }
+      },
+      "A57": {
+        "128": {
+          "confidence_score": 55,
+          "estimated_price": 5500,
+          "listing_price": 6000,
+          "observation_count": 0,
+          "quick_sale_price": 5000,
+          "updated_at": "2026-08-18"
+        }
+      },
+      "A58": {
+        "128": {
+          "confidence_score": 60,
+          "estimated_price": 6500,
+          "listing_price": 7100,
+          "observation_count": 0,
+          "quick_sale_price": 5900,
+          "updated_at": "2026-08-18"
+        }
+      },
+      "A60": {
+        "128": {
+          "confidence_score": 70,
+          "estimated_price": 8500,
+          "listing_price": 9300,
+          "observation_count": 0,
+          "quick_sale_price": 7700,
+          "updated_at": "2026-08-18"
+        },
+        "256": {
+          "confidence_score": 70,
+          "estimated_price": 10000,
+          "listing_price": 10900,
+          "observation_count": 0,
+          "quick_sale_price": 9100,
+          "updated_at": "2026-08-18"
+        }
+      },
+      "A74": {
+        "128": {
+          "confidence_score": 70,
+          "estimated_price": 5000,
+          "listing_price": 5450,
+          "observation_count": 0,
+          "quick_sale_price": 4550,
+          "updated_at": "2026-08-18"
+        }
+      },
+      "A76": {
+        "128": {
+          "confidence_score": 55,
+          "estimated_price": 5500,
+          "listing_price": 6000,
+          "observation_count": 0,
+          "quick_sale_price": 5000,
+          "updated_at": "2026-08-18"
+        }
+      },
+      "A77": {
+        "128": {
+          "confidence_score": 55,
+          "estimated_price": 5000,
+          "listing_price": 5450,
+          "observation_count": 0,
+          "quick_sale_price": 4550,
+          "updated_at": "2026-08-18"
+        }
+      },
+      "A78": {
+        "128": {
+          "confidence_score": 60,
+          "estimated_price": 6500,
+          "listing_price": 7100,
+          "observation_count": 0,
+          "quick_sale_price": 5900,
+          "updated_at": "2026-08-18"
+        }
+      },
+      "A79": {
+        "256": {
+          "confidence_score": 60,
+          "estimated_price": 9000,
+          "listing_price": 9800,
+          "observation_count": 0,
+          "quick_sale_price": 8200,
+          "updated_at": "2026-08-18"
+        }
+      },
+      "A96": {
+        "128": {
+          "confidence_score": 70,
+          "estimated_price": 7000,
+          "listing_price": 7600,
+          "observation_count": 0,
+          "quick_sale_price": 6400,
+          "updated_at": "2026-08-18"
+        }
+      },
+      "A98": {
+        "256": {
+          "confidence_score": 60,
+          "estimated_price": 11000,
+          "listing_price": 12000,
+          "observation_count": 0,
+          "quick_sale_price": 10000,
+          "updated_at": "2026-08-18"
+        }
+      },
+      "Find X3 Pro": {
+        "256": {
+          "confidence_score": 72,
+          "estimated_price": 14000,
+          "listing_price": 15300,
+          "observation_count": 0,
+          "quick_sale_price": 12700,
+          "updated_at": "2026-08-18"
+        }
+      },
+      "Find X5": {
+        "128": {
+          "confidence_score": 65,
+          "estimated_price": 15000,
+          "listing_price": 16400,
+          "observation_count": 0,
+          "quick_sale_price": 13600,
+          "updated_at": "2026-08-18"
+        },
+        "256": {
+          "confidence_score": 65,
+          "estimated_price": 17000,
+          "listing_price": 18500,
+          "observation_count": 0,
+          "quick_sale_price": 15500,
+          "updated_at": "2026-08-18"
+        }
+      },
+      "Find X5 Pro": {
+        "256": {
+          "confidence_score": 75,
+          "estimated_price": 18500,
+          "listing_price": 20200,
+          "observation_count": 0,
+          "quick_sale_price": 16800,
+          "updated_at": "2026-08-18"
+        }
+      },
+      "Find X6 Pro": {
+        "256": {
+          "confidence_score": 70,
+          "estimated_price": 16000,
+          "listing_price": 17400,
+          "observation_count": 0,
+          "quick_sale_price": 14600,
+          "updated_at": "2026-08-18"
+        },
+        "512": {
+          "confidence_score": 65,
+          "estimated_price": 19000,
+          "listing_price": 20700,
+          "observation_count": 0,
+          "quick_sale_price": 17300,
+          "updated_at": "2026-08-18"
+        }
+      },
+      "Reno11 F 5G": {
+        "256": {
+          "confidence_score": 75,
+          "estimated_price": 15000,
+          "listing_price": 16400,
+          "observation_count": 0,
+          "quick_sale_price": 13600,
+          "updated_at": "2026-08-18"
+        }
+      },
+      "Reno11 FS": {
+        "256": {
+          "confidence_score": 78,
+          "estimated_price": 12000,
+          "listing_price": 13100,
+          "observation_count": 0,
+          "quick_sale_price": 10900,
+          "updated_at": "2026-08-18"
+        }
+      },
+      "Reno13 F": {
+        "256": {
+          "confidence_score": 75,
+          "estimated_price": 13500,
+          "listing_price": 14700,
+          "observation_count": 0,
+          "quick_sale_price": 12300,
+          "updated_at": "2026-08-18"
+        }
+      },
+      "Reno13 F 5G": {
+        "256": {
+          "confidence_score": 78,
+          "estimated_price": 15500,
+          "listing_price": 16900,
+          "observation_count": 0,
+          "quick_sale_price": 14100,
+          "updated_at": "2026-08-18"
+        }
+      },
+      "Reno13 Pro 5G": {
+        "512": {
+          "confidence_score": 72,
+          "estimated_price": 26500,
+          "listing_price": 28900,
+          "observation_count": 0,
+          "quick_sale_price": 24100,
+          "updated_at": "2026-08-18"
+        }
+      },
+      "Reno14": {
+        "256": {
+          "confidence_score": 75,
+          "estimated_price": 26000,
+          "listing_price": 28300,
+          "observation_count": 0,
+          "quick_sale_price": 23700,
+          "updated_at": "2026-08-18"
+        }
+      },
+      "Reno14 F 5G": {
+        "256": {
+          "confidence_score": 75,
+          "estimated_price": 24000,
+          "listing_price": 26200,
+          "observation_count": 0,
+          "quick_sale_price": 21800,
+          "updated_at": "2026-08-18"
+        }
+      },
+      "Reno14 Pro 5G": {
+        "512": {
+          "confidence_score": 75,
+          "estimated_price": 30000,
+          "listing_price": 32700,
+          "observation_count": 0,
+          "quick_sale_price": 27300,
+          "updated_at": "2026-08-18"
+        }
+      },
+      "Reno5": {
+        "128": {
+          "confidence_score": 75,
+          "estimated_price": 6000,
+          "listing_price": 6500,
+          "observation_count": 0,
+          "quick_sale_price": 5500,
+          "updated_at": "2026-08-18"
+        }
+      },
+      "Reno5 Lite": {
+        "128": {
+          "confidence_score": 78,
+          "estimated_price": 6000,
+          "listing_price": 6500,
+          "observation_count": 0,
+          "quick_sale_price": 5500,
+          "updated_at": "2026-08-18"
+        }
+      },
+      "Reno6": {
+        "128": {
+          "confidence_score": 65,
+          "estimated_price": 8000,
+          "listing_price": 8700,
+          "observation_count": 0,
+          "quick_sale_price": 7300,
+          "updated_at": "2026-08-18"
+        }
+      },
+      "Reno7": {
+        "128": {
+          "confidence_score": 70,
+          "estimated_price": 10000,
+          "listing_price": 10900,
+          "observation_count": 0,
+          "quick_sale_price": 9100,
+          "updated_at": "2026-08-18"
+        }
+      }
+    },
+    "Realme": {
+      "Realme 10": {
+        "128": {
+          "confidence_score": 72,
+          "estimated_price": 7500,
+          "listing_price": 8200,
+          "observation_count": 0,
+          "quick_sale_price": 6800,
+          "updated_at": "2026-08-18"
+        },
+        "256": {
+          "confidence_score": 65,
+          "estimated_price": 8500,
+          "listing_price": 9300,
+          "observation_count": 0,
+          "quick_sale_price": 7700,
+          "updated_at": "2026-08-18"
+        }
+      },
+      "Realme 10 Pro": {
+        "128": {
+          "confidence_score": 68,
+          "estimated_price": 8500,
+          "listing_price": 9300,
+          "observation_count": 0,
+          "quick_sale_price": 7700,
+          "updated_at": "2026-08-18"
+        },
+        "256": {
+          "confidence_score": 70,
+          "estimated_price": 10000,
+          "listing_price": 10900,
+          "observation_count": 0,
+          "quick_sale_price": 9100,
+          "updated_at": "2026-08-18"
+        }
+      },
+      "Realme 11": {
+        "128": {
+          "confidence_score": 68,
+          "estimated_price": 8500,
+          "listing_price": 9300,
+          "observation_count": 0,
+          "quick_sale_price": 7700,
+          "updated_at": "2026-08-18"
+        },
+        "256": {
+          "confidence_score": 70,
+          "estimated_price": 10000,
+          "listing_price": 10900,
+          "observation_count": 0,
+          "quick_sale_price": 9100,
+          "updated_at": "2026-08-18"
+        }
+      },
+      "Realme 11 Pro": {
+        "128": {
+          "confidence_score": 65,
+          "estimated_price": 10500,
+          "listing_price": 11500,
+          "observation_count": 0,
+          "quick_sale_price": 9500,
+          "updated_at": "2026-08-18"
+        },
+        "256": {
+          "confidence_score": 75,
+          "estimated_price": 12500,
+          "listing_price": 13600,
+          "observation_count": 0,
+          "quick_sale_price": 11400,
+          "updated_at": "2026-08-18"
+        }
+      },
+      "Realme 11 Pro+": {
+        "128": {
+          "confidence_score": 60,
+          "estimated_price": 12000,
+          "listing_price": 13100,
+          "observation_count": 0,
+          "quick_sale_price": 10900,
+          "updated_at": "2026-08-18"
+        },
+        "256": {
+          "confidence_score": 70,
+          "estimated_price": 14000,
+          "listing_price": 15300,
+          "observation_count": 0,
+          "quick_sale_price": 12700,
+          "updated_at": "2026-08-18"
+        },
+        "512": {
+          "confidence_score": 60,
+          "estimated_price": 16000,
+          "listing_price": 17400,
+          "observation_count": 0,
+          "quick_sale_price": 14600,
+          "updated_at": "2026-08-18"
+        }
+      },
+      "Realme 12": {
+        "128": {
+          "confidence_score": 65,
+          "estimated_price": 9000,
+          "listing_price": 9800,
+          "observation_count": 0,
+          "quick_sale_price": 8200,
+          "updated_at": "2026-08-18"
+        },
+        "256": {
+          "confidence_score": 72,
+          "estimated_price": 10500,
+          "listing_price": 11500,
+          "observation_count": 0,
+          "quick_sale_price": 9500,
+          "updated_at": "2026-08-18"
+        }
+      },
+      "Realme 12 Pro": {
+        "256": {
+          "confidence_score": 82,
+          "estimated_price": 14500,
+          "listing_price": 15800,
+          "observation_count": 0,
+          "quick_sale_price": 13200,
+          "updated_at": "2026-08-18"
+        }
+      },
+      "Realme 12 Pro+": {
+        "256": {
+          "confidence_score": 72,
+          "estimated_price": 15500,
+          "listing_price": 16900,
+          "observation_count": 0,
+          "quick_sale_price": 14100,
+          "updated_at": "2026-08-18"
+        },
+        "512": {
+          "confidence_score": 75,
+          "estimated_price": 17500,
+          "listing_price": 19100,
+          "observation_count": 0,
+          "quick_sale_price": 15900,
+          "updated_at": "2026-08-18"
+        }
+      },
+      "Realme 13": {
+        "128": {
+          "confidence_score": 65,
+          "estimated_price": 10500,
+          "listing_price": 11500,
+          "observation_count": 0,
+          "quick_sale_price": 9500,
+          "updated_at": "2026-08-18"
+        },
+        "256": {
+          "confidence_score": 68,
+          "estimated_price": 12000,
+          "listing_price": 13100,
+          "observation_count": 0,
+          "quick_sale_price": 10900,
+          "updated_at": "2026-08-18"
+        }
+      },
+      "Realme 13 Pro": {
+        "256": {
+          "confidence_score": 65,
+          "estimated_price": 15000,
+          "listing_price": 16400,
+          "observation_count": 0,
+          "quick_sale_price": 13600,
+          "updated_at": "2026-08-18"
+        },
+        "512": {
+          "confidence_score": 60,
+          "estimated_price": 17500,
+          "listing_price": 19100,
+          "observation_count": 0,
+          "quick_sale_price": 15900,
+          "updated_at": "2026-08-18"
+        }
+      },
+      "Realme 14 Pro": {
+        "256": {
+          "confidence_score": 68,
+          "estimated_price": 17000,
+          "listing_price": 18500,
+          "observation_count": 0,
+          "quick_sale_price": 15500,
+          "updated_at": "2026-08-18"
+        },
+        "512": {
+          "confidence_score": 58,
+          "estimated_price": 19500,
+          "listing_price": 21300,
+          "observation_count": 0,
+          "quick_sale_price": 17700,
+          "updated_at": "2026-08-18"
+        }
+      },
+      "Realme 8": {
+        "128": {
+          "confidence_score": 75,
+          "estimated_price": 6000,
+          "listing_price": 6500,
+          "observation_count": 0,
+          "quick_sale_price": 5500,
+          "updated_at": "2026-08-18"
+        }
+      },
+      "Realme 8 Pro": {
+        "128": {
+          "confidence_score": 75,
+          "estimated_price": 7000,
+          "listing_price": 7600,
+          "observation_count": 0,
+          "quick_sale_price": 6400,
+          "updated_at": "2026-08-18"
+        }
+      },
+      "Realme 9": {
+        "128": {
+          "confidence_score": 72,
+          "estimated_price": 7000,
+          "listing_price": 7600,
+          "observation_count": 0,
+          "quick_sale_price": 6400,
+          "updated_at": "2026-08-18"
+        }
+      },
+      "Realme 9 Pro": {
+        "128": {
+          "confidence_score": 72,
+          "estimated_price": 8000,
+          "listing_price": 8700,
+          "observation_count": 0,
+          "quick_sale_price": 7300,
+          "updated_at": "2026-08-18"
+        }
+      },
+      "Realme C33": {
+        "128": {
+          "confidence_score": 65,
+          "estimated_price": 4500,
+          "listing_price": 4900,
+          "observation_count": 0,
+          "quick_sale_price": 4100,
+          "updated_at": "2026-08-18"
+        }
+      },
+      "Realme C53": {
+        "128": {
+          "confidence_score": 78,
+          "estimated_price": 5000,
+          "listing_price": 5450,
+          "observation_count": 0,
+          "quick_sale_price": 4550,
+          "updated_at": "2026-08-18"
+        },
+        "256": {
+          "confidence_score": 72,
+          "estimated_price": 6000,
+          "listing_price": 6500,
+          "observation_count": 0,
+          "quick_sale_price": 5500,
+          "updated_at": "2026-08-18"
+        }
+      },
+      "Realme C55": {
+        "128": {
+          "confidence_score": 80,
+          "estimated_price": 5000,
+          "listing_price": 5450,
+          "observation_count": 0,
+          "quick_sale_price": 4550,
+          "updated_at": "2026-08-18"
+        },
+        "256": {
+          "confidence_score": 80,
+          "estimated_price": 6000,
+          "listing_price": 6500,
+          "observation_count": 0,
+          "quick_sale_price": 5500,
+          "updated_at": "2026-08-18"
+        }
+      },
+      "Realme C61": {
+        "128": {
+          "confidence_score": 75,
+          "estimated_price": 6000,
+          "listing_price": 6500,
+          "observation_count": 0,
+          "quick_sale_price": 5500,
+          "updated_at": "2026-08-18"
+        },
+        "256": {
+          "confidence_score": 65,
+          "estimated_price": 8000,
+          "listing_price": 8700,
+          "observation_count": 0,
+          "quick_sale_price": 7300,
+          "updated_at": "2026-08-18"
+        }
+      },
+      "Realme C65": {
+        "128": {
+          "confidence_score": 72,
+          "estimated_price": 6000,
+          "listing_price": 6500,
+          "observation_count": 0,
+          "quick_sale_price": 5500,
+          "updated_at": "2026-08-18"
+        },
+        "256": {
+          "confidence_score": 68,
+          "estimated_price": 7500,
+          "listing_price": 8200,
+          "observation_count": 0,
+          "quick_sale_price": 6800,
+          "updated_at": "2026-08-18"
+        }
+      },
+      "Realme C67": {
+        "128": {
+          "confidence_score": 65,
+          "estimated_price": 7000,
+          "listing_price": 7600,
+          "observation_count": 0,
+          "quick_sale_price": 6400,
+          "updated_at": "2026-08-18"
+        },
+        "256": {
+          "confidence_score": 65,
+          "estimated_price": 8500,
+          "listing_price": 9300,
+          "observation_count": 0,
+          "quick_sale_price": 7700,
+          "updated_at": "2026-08-18"
+        }
+      },
+      "Realme C75": {
+        "128": {
+          "confidence_score": 68,
+          "estimated_price": 8000,
+          "listing_price": 8700,
+          "observation_count": 0,
+          "quick_sale_price": 7300,
+          "updated_at": "2026-08-18"
+        },
+        "256": {
+          "confidence_score": 82,
+          "estimated_price": 9500,
+          "listing_price": 10400,
+          "observation_count": 0,
+          "quick_sale_price": 8600,
+          "updated_at": "2026-08-18"
+        }
+      },
+      "Realme GT 2": {
+        "128": {
+          "confidence_score": 78,
+          "estimated_price": 10000,
+          "listing_price": 10900,
+          "observation_count": 0,
+          "quick_sale_price": 9100,
+          "updated_at": "2026-08-18"
+        },
+        "256": {
+          "confidence_score": 78,
+          "estimated_price": 11000,
+          "listing_price": 12000,
+          "observation_count": 0,
+          "quick_sale_price": 10000,
+          "updated_at": "2026-08-18"
+        }
+      },
+      "Realme GT 2 Pro": {
+        "128": {
+          "confidence_score": 70,
+          "estimated_price": 12000,
+          "listing_price": 13100,
+          "observation_count": 0,
+          "quick_sale_price": 10900,
+          "updated_at": "2026-08-18"
+        },
+        "256": {
+          "confidence_score": 78,
+          "estimated_price": 16000,
+          "listing_price": 17400,
+          "observation_count": 0,
+          "quick_sale_price": 14600,
+          "updated_at": "2026-08-18"
+        }
+      },
+      "Realme GT 5": {
+        "256": {
+          "confidence_score": 55,
+          "estimated_price": 16000,
+          "listing_price": 17400,
+          "observation_count": 0,
+          "quick_sale_price": 14600,
+          "updated_at": "2026-08-18"
+        },
+        "512": {
+          "confidence_score": 50,
+          "estimated_price": 18500,
+          "listing_price": 20200,
+          "observation_count": 0,
+          "quick_sale_price": 16800,
+          "updated_at": "2026-08-18"
+        }
+      },
+      "Realme GT 6": {
+        "256": {
+          "confidence_score": 65,
+          "estimated_price": 21000,
+          "listing_price": 22900,
+          "observation_count": 0,
+          "quick_sale_price": 19100,
+          "updated_at": "2026-08-18"
+        },
+        "512": {
+          "confidence_score": 80,
+          "estimated_price": 24500,
+          "listing_price": 26700,
+          "observation_count": 0,
+          "quick_sale_price": 22300,
+          "updated_at": "2026-08-18"
+        }
+      },
+      "Realme GT 6T": {
+        "256": {
+          "confidence_score": 82,
+          "estimated_price": 20000,
+          "listing_price": 21800,
+          "observation_count": 0,
+          "quick_sale_price": 18200,
+          "updated_at": "2026-08-18"
+        }
+      },
+      "Realme GT 7": {
+        "256": {
+          "confidence_score": 65,
+          "estimated_price": 24000,
+          "listing_price": 26200,
+          "observation_count": 0,
+          "quick_sale_price": 21800,
+          "updated_at": "2026-08-18"
+        },
+        "512": {
+          "confidence_score": 55,
+          "estimated_price": 27500,
+          "listing_price": 30000,
+          "observation_count": 0,
+          "quick_sale_price": 25000,
+          "updated_at": "2026-08-18"
+        }
+      },
+      "Realme GT 7 Pro": {
+        "256": {
+          "confidence_score": 60,
+          "estimated_price": 30000,
+          "listing_price": 32700,
+          "observation_count": 0,
+          "quick_sale_price": 27300,
+          "updated_at": "2026-08-18"
+        },
+        "512": {
+          "confidence_score": 72,
+          "estimated_price": 35000,
+          "listing_price": 38200,
+          "observation_count": 0,
+          "quick_sale_price": 31900,
+          "updated_at": "2026-08-18"
+        }
+      }
+    },
+    "Samsung": {
+      "Galaxy A12": {
+        "128": {
+          "confidence_score": 80,
+          "estimated_price": 4000,
+          "listing_price": 4500,
+          "observation_count": 0,
+          "quick_sale_price": 3500,
+          "updated_at": "2026-08-17"
+        },
+        "64": {
+          "confidence_score": 80,
+          "estimated_price": 3500,
+          "listing_price": 4000,
+          "observation_count": 0,
+          "quick_sale_price": 3000,
+          "updated_at": "2026-08-17"
+        }
+      },
+      "Galaxy A13": {
+        "128": {
+          "confidence_score": 80,
+          "estimated_price": 4500,
+          "listing_price": 5000,
+          "observation_count": 0,
+          "quick_sale_price": 4000,
+          "updated_at": "2026-08-17"
+        },
+        "64": {
+          "confidence_score": 80,
+          "estimated_price": 4000,
+          "listing_price": 4500,
+          "observation_count": 0,
+          "quick_sale_price": 3500,
+          "updated_at": "2026-08-17"
+        }
+      },
+      "Galaxy A14": {
+        "128": {
+          "confidence_score": 80,
+          "estimated_price": 5500,
+          "listing_price": 6000,
+          "observation_count": 0,
+          "quick_sale_price": 5000,
+          "updated_at": "2026-08-17"
+        },
+        "64": {
+          "confidence_score": 80,
+          "estimated_price": 5000,
+          "listing_price": 5500,
+          "observation_count": 0,
+          "quick_sale_price": 4500,
+          "updated_at": "2026-08-17"
+        }
+      },
+      "Galaxy A15": {
+        "128": {
+          "confidence_score": 80,
+          "estimated_price": 7000,
+          "listing_price": 7500,
+          "observation_count": 0,
+          "quick_sale_price": 6500,
+          "updated_at": "2026-08-17"
+        },
+        "256": {
+          "confidence_score": 80,
+          "estimated_price": 8000,
+          "listing_price": 8500,
+          "observation_count": 0,
+          "quick_sale_price": 7500,
+          "updated_at": "2026-08-17"
+        }
+      },
+      "Galaxy A16": {
+        "128": {
+          "confidence_score": 80,
+          "estimated_price": 8500,
+          "listing_price": 9000,
+          "observation_count": 0,
+          "quick_sale_price": 7500,
+          "updated_at": "2026-08-17"
+        },
+        "256": {
+          "confidence_score": 80,
+          "estimated_price": 9500,
+          "listing_price": 10500,
+          "observation_count": 0,
+          "quick_sale_price": 8500,
+          "updated_at": "2026-08-17"
+        }
+      },
+      "Galaxy A17": {
+        "128": {
+          "confidence_score": 60,
+          "estimated_price": 10500,
+          "listing_price": 11500,
+          "observation_count": 0,
+          "quick_sale_price": 9500,
+          "updated_at": "2026-08-17"
+        },
+        "256": {
+          "confidence_score": 60,
+          "estimated_price": 12000,
+          "listing_price": 13000,
+          "observation_count": 0,
+          "quick_sale_price": 11000,
+          "updated_at": "2026-08-17"
+        }
+      },
+      "Galaxy A22": {
+        "128": {
+          "confidence_score": 80,
+          "estimated_price": 5000,
+          "listing_price": 5500,
+          "observation_count": 0,
+          "quick_sale_price": 4500,
+          "updated_at": "2026-08-17"
+        },
+        "64": {
+          "confidence_score": 80,
+          "estimated_price": 4500,
+          "listing_price": 5000,
+          "observation_count": 0,
+          "quick_sale_price": 4000,
+          "updated_at": "2026-08-17"
+        }
+      },
+      "Galaxy A23": {
+        "128": {
+          "confidence_score": 80,
+          "estimated_price": 6000,
+          "listing_price": 6500,
+          "observation_count": 0,
+          "quick_sale_price": 5500,
+          "updated_at": "2026-08-17"
+        },
+        "64": {
+          "confidence_score": 80,
+          "estimated_price": 5500,
+          "listing_price": 6000,
+          "observation_count": 0,
+          "quick_sale_price": 5000,
+          "updated_at": "2026-08-17"
+        }
+      },
+      "Galaxy A24": {
+        "128": {
+          "confidence_score": 80,
+          "estimated_price": 8000,
+          "listing_price": 8500,
+          "observation_count": 0,
+          "quick_sale_price": 7500,
+          "updated_at": "2026-08-17"
+        }
+      },
+      "Galaxy A25": {
+        "128": {
+          "confidence_score": 80,
+          "estimated_price": 11000,
+          "listing_price": 12000,
+          "observation_count": 0,
+          "quick_sale_price": 10000,
+          "updated_at": "2026-08-17"
+        },
+        "256": {
+          "confidence_score": 80,
+          "estimated_price": 12500,
+          "listing_price": 13500,
+          "observation_count": 0,
+          "quick_sale_price": 11500,
+          "updated_at": "2026-08-17"
+        }
+      },
+      "Galaxy A26": {
+        "128": {
+          "confidence_score": 60,
+          "estimated_price": 14000,
+          "listing_price": 15000,
+          "observation_count": 0,
+          "quick_sale_price": 12500,
+          "updated_at": "2026-08-17"
+        },
+        "256": {
+          "confidence_score": 60,
+          "estimated_price": 16000,
+          "listing_price": 17500,
+          "observation_count": 0,
+          "quick_sale_price": 14500,
+          "updated_at": "2026-08-17"
+        }
+      },
+      "Galaxy A32": {
+        "128": {
+          "confidence_score": 80,
+          "estimated_price": 6000,
+          "listing_price": 6500,
+          "observation_count": 0,
+          "quick_sale_price": 5500,
+          "updated_at": "2026-08-17"
+        },
+        "64": {
+          "confidence_score": 80,
+          "estimated_price": 5500,
+          "listing_price": 6000,
+          "observation_count": 0,
+          "quick_sale_price": 5000,
+          "updated_at": "2026-08-17"
+        }
+      },
+      "Galaxy A33 5G": {
+        "128": {
+          "confidence_score": 80,
+          "estimated_price": 7500,
+          "listing_price": 8000,
+          "observation_count": 0,
+          "quick_sale_price": 7000,
+          "updated_at": "2026-08-17"
+        },
+        "256": {
+          "confidence_score": 80,
+          "estimated_price": 8500,
+          "listing_price": 9000,
+          "observation_count": 0,
+          "quick_sale_price": 7500,
+          "updated_at": "2026-08-17"
+        }
+      },
+      "Galaxy A34 5G": {
+        "128": {
+          "confidence_score": 80,
+          "estimated_price": 10000,
+          "listing_price": 11000,
+          "observation_count": 0,
+          "quick_sale_price": 9000,
+          "updated_at": "2026-08-17"
+        },
+        "256": {
+          "confidence_score": 80,
+          "estimated_price": 11500,
+          "listing_price": 12500,
+          "observation_count": 0,
+          "quick_sale_price": 10500,
+          "updated_at": "2026-08-17"
+        }
+      },
+      "Galaxy A35 5G": {
+        "128": {
+          "confidence_score": 80,
+          "estimated_price": 13500,
+          "listing_price": 14500,
+          "observation_count": 0,
+          "quick_sale_price": 12500,
+          "updated_at": "2026-08-17"
+        },
+        "256": {
+          "confidence_score": 80,
+          "estimated_price": 15500,
+          "listing_price": 16500,
+          "observation_count": 0,
+          "quick_sale_price": 14000,
+          "updated_at": "2026-08-17"
+        }
+      },
+      "Galaxy A36 5G": {
+        "128": {
+          "confidence_score": 60,
+          "estimated_price": 18000,
+          "listing_price": 19500,
+          "observation_count": 0,
+          "quick_sale_price": 16500,
+          "updated_at": "2026-08-17"
+        },
+        "256": {
+          "confidence_score": 60,
+          "estimated_price": 20500,
+          "listing_price": 22000,
+          "observation_count": 0,
+          "quick_sale_price": 18500,
+          "updated_at": "2026-08-17"
+        }
+      },
+      "Galaxy A52": {
+        "128": {
+          "confidence_score": 80,
+          "estimated_price": 7000,
+          "listing_price": 7500,
+          "observation_count": 0,
+          "quick_sale_price": 6500,
+          "updated_at": "2026-08-17"
+        },
+        "256": {
+          "confidence_score": 80,
+          "estimated_price": 8000,
+          "listing_price": 8500,
+          "observation_count": 0,
+          "quick_sale_price": 7500,
+          "updated_at": "2026-08-17"
+        }
+      },
+      "Galaxy A52s 5G": {
+        "128": {
+          "confidence_score": 80,
+          "estimated_price": 8500,
+          "listing_price": 9000,
+          "observation_count": 0,
+          "quick_sale_price": 7500,
+          "updated_at": "2026-08-17"
+        },
+        "256": {
+          "confidence_score": 80,
+          "estimated_price": 9500,
+          "listing_price": 10500,
+          "observation_count": 0,
+          "quick_sale_price": 8500,
+          "updated_at": "2026-08-17"
+        }
+      },
+      "Galaxy A53 5G": {
+        "128": {
+          "confidence_score": 80,
+          "estimated_price": 9500,
+          "listing_price": 10500,
+          "observation_count": 0,
+          "quick_sale_price": 8500,
+          "updated_at": "2026-08-17"
+        },
+        "256": {
+          "confidence_score": 80,
+          "estimated_price": 11000,
+          "listing_price": 12000,
+          "observation_count": 0,
+          "quick_sale_price": 10000,
+          "updated_at": "2026-08-17"
+        }
+      },
+      "Galaxy A54 5G": {
+        "128": {
+          "confidence_score": 80,
+          "estimated_price": 12000,
+          "listing_price": 13000,
+          "observation_count": 0,
+          "quick_sale_price": 11000,
+          "updated_at": "2026-08-17"
+        },
+        "256": {
+          "confidence_score": 80,
+          "estimated_price": 13500,
+          "listing_price": 14500,
+          "observation_count": 0,
+          "quick_sale_price": 12500,
+          "updated_at": "2026-08-17"
+        }
+      },
+      "Galaxy A55 5G": {
+        "128": {
+          "confidence_score": 80,
+          "estimated_price": 16000,
+          "listing_price": 17500,
+          "observation_count": 0,
+          "quick_sale_price": 14500,
+          "updated_at": "2026-08-17"
+        },
+        "256": {
+          "confidence_score": 80,
+          "estimated_price": 18000,
+          "listing_price": 19500,
+          "observation_count": 0,
+          "quick_sale_price": 16500,
+          "updated_at": "2026-08-17"
+        }
+      },
+      "Galaxy A56 5G": {
+        "128": {
+          "confidence_score": 60,
+          "estimated_price": 20000,
+          "listing_price": 21500,
+          "observation_count": 0,
+          "quick_sale_price": 18000,
+          "updated_at": "2026-08-17"
+        },
+        "256": {
+          "confidence_score": 60,
+          "estimated_price": 22500,
+          "listing_price": 24500,
+          "observation_count": 0,
+          "quick_sale_price": 20500,
+          "updated_at": "2026-08-17"
+        }
+      },
+      "Galaxy A57 5G": {
+        "128": {
+          "confidence_score": 60,
+          "estimated_price": 25000,
+          "listing_price": 27000,
+          "observation_count": 0,
+          "quick_sale_price": 23000,
+          "updated_at": "2026-08-17"
+        },
+        "256": {
+          "confidence_score": 60,
+          "estimated_price": 28000,
+          "listing_price": 30000,
+          "observation_count": 0,
+          "quick_sale_price": 25500,
+          "updated_at": "2026-08-17"
+        }
+      },
+      "Galaxy A72": {
+        "128": {
+          "confidence_score": 72,
+          "estimated_price": 8000,
+          "listing_price": 8500,
+          "observation_count": 0,
+          "quick_sale_price": 7500,
+          "updated_at": "2026-08-17"
+        },
+        "256": {
+          "confidence_score": 72,
+          "estimated_price": 9000,
+          "listing_price": 9500,
+          "observation_count": 0,
+          "quick_sale_price": 8000,
+          "updated_at": "2026-08-17"
+        }
+      },
+      "Galaxy A73 5G": {
+        "128": {
+          "confidence_score": 72,
+          "estimated_price": 10500,
+          "listing_price": 11500,
+          "observation_count": 0,
+          "quick_sale_price": 9500,
+          "updated_at": "2026-08-17"
+        },
+        "256": {
+          "confidence_score": 72,
+          "estimated_price": 12000,
+          "listing_price": 13000,
+          "observation_count": 0,
+          "quick_sale_price": 11000,
+          "updated_at": "2026-08-17"
+        }
+      },
+      "Galaxy M12": {
+        "128": {
+          "confidence_score": 80,
+          "estimated_price": 4000,
+          "listing_price": 4500,
+          "observation_count": 0,
+          "quick_sale_price": 3500,
+          "updated_at": "2026-08-17"
+        },
+        "64": {
+          "confidence_score": 80,
+          "estimated_price": 3500,
+          "listing_price": 4000,
+          "observation_count": 0,
+          "quick_sale_price": 3000,
+          "updated_at": "2026-08-17"
+        }
+      },
+      "Galaxy M13": {
+        "128": {
+          "confidence_score": 80,
+          "estimated_price": 4500,
+          "listing_price": 5000,
+          "observation_count": 0,
+          "quick_sale_price": 4000,
+          "updated_at": "2026-08-17"
+        },
+        "64": {
+          "confidence_score": 80,
+          "estimated_price": 4000,
+          "listing_price": 4500,
+          "observation_count": 0,
+          "quick_sale_price": 3500,
+          "updated_at": "2026-08-17"
+        }
+      },
+      "Galaxy M14 5G": {
+        "128": {
+          "confidence_score": 80,
+          "estimated_price": 5500,
+          "listing_price": 6000,
+          "observation_count": 0,
+          "quick_sale_price": 5000,
+          "updated_at": "2026-08-17"
+        },
+        "64": {
+          "confidence_score": 80,
+          "estimated_price": 5000,
+          "listing_price": 5500,
+          "observation_count": 0,
+          "quick_sale_price": 4500,
+          "updated_at": "2026-08-17"
+        }
+      },
+      "Galaxy M15 5G": {
+        "128": {
+          "confidence_score": 80,
+          "estimated_price": 7500,
+          "listing_price": 8000,
+          "observation_count": 0,
+          "quick_sale_price": 7000,
+          "updated_at": "2026-08-17"
+        },
+        "256": {
+          "confidence_score": 80,
+          "estimated_price": 8500,
+          "listing_price": 9000,
+          "observation_count": 0,
+          "quick_sale_price": 7500,
+          "updated_at": "2026-08-17"
+        }
+      },
+      "Galaxy M23 5G": {
+        "128": {
+          "confidence_score": 80,
+          "estimated_price": 6000,
+          "listing_price": 6500,
+          "observation_count": 0,
+          "quick_sale_price": 5500,
+          "updated_at": "2026-08-17"
+        },
+        "256": {
+          "confidence_score": 80,
+          "estimated_price": 7000,
+          "listing_price": 7500,
+          "observation_count": 0,
+          "quick_sale_price": 6500,
+          "updated_at": "2026-08-17"
+        }
+      },
+      "Galaxy M33 5G": {
+        "128": {
+          "confidence_score": 80,
+          "estimated_price": 7000,
+          "listing_price": 7500,
+          "observation_count": 0,
+          "quick_sale_price": 6500,
+          "updated_at": "2026-08-17"
+        },
+        "256": {
+          "confidence_score": 80,
+          "estimated_price": 8000,
+          "listing_price": 8500,
+          "observation_count": 0,
+          "quick_sale_price": 7500,
+          "updated_at": "2026-08-17"
+        }
+      },
+      "Galaxy M34 5G": {
+        "128": {
+          "confidence_score": 80,
+          "estimated_price": 8500,
+          "listing_price": 9000,
+          "observation_count": 0,
+          "quick_sale_price": 7500,
+          "updated_at": "2026-08-17"
+        },
+        "256": {
+          "confidence_score": 80,
+          "estimated_price": 9500,
+          "listing_price": 10500,
+          "observation_count": 0,
+          "quick_sale_price": 8500,
+          "updated_at": "2026-08-17"
+        }
+      },
+      "Galaxy M35 5G": {
+        "128": {
+          "confidence_score": 80,
+          "estimated_price": 10500,
+          "listing_price": 11500,
+          "observation_count": 0,
+          "quick_sale_price": 9500,
+          "updated_at": "2026-08-17"
+        },
+        "256": {
+          "confidence_score": 80,
+          "estimated_price": 12000,
+          "listing_price": 13000,
+          "observation_count": 0,
+          "quick_sale_price": 11000,
+          "updated_at": "2026-08-17"
+        }
+      },
+      "Galaxy M52 5G": {
+        "128": {
+          "confidence_score": 72,
+          "estimated_price": 7500,
+          "listing_price": 8000,
+          "observation_count": 0,
+          "quick_sale_price": 7000,
+          "updated_at": "2026-08-17"
+        },
+        "256": {
+          "confidence_score": 72,
+          "estimated_price": 8500,
+          "listing_price": 9000,
+          "observation_count": 0,
+          "quick_sale_price": 7500,
+          "updated_at": "2026-08-17"
+        }
+      },
+      "Galaxy M53 5G": {
+        "128": {
+          "confidence_score": 72,
+          "estimated_price": 8500,
+          "listing_price": 9000,
+          "observation_count": 0,
+          "quick_sale_price": 7500,
+          "updated_at": "2026-08-17"
+        },
+        "256": {
+          "confidence_score": 72,
+          "estimated_price": 9500,
+          "listing_price": 10500,
+          "observation_count": 0,
+          "quick_sale_price": 8500,
+          "updated_at": "2026-08-17"
+        }
+      },
+      "Galaxy M54 5G": {
+        "128": {
+          "confidence_score": 72,
+          "estimated_price": 10500,
+          "listing_price": 11500,
+          "observation_count": 0,
+          "quick_sale_price": 9500,
+          "updated_at": "2026-08-17"
+        },
+        "256": {
+          "confidence_score": 72,
+          "estimated_price": 12000,
+          "listing_price": 13000,
+          "observation_count": 0,
+          "quick_sale_price": 11000,
+          "updated_at": "2026-08-17"
+        }
+      },
+      "Galaxy M55 5G": {
+        "128": {
+          "confidence_score": 72,
+          "estimated_price": 14000,
+          "listing_price": 15000,
+          "observation_count": 0,
+          "quick_sale_price": 12500,
+          "updated_at": "2026-08-17"
+        },
+        "256": {
+          "confidence_score": 72,
+          "estimated_price": 16000,
+          "listing_price": 17500,
+          "observation_count": 0,
+          "quick_sale_price": 14500,
+          "updated_at": "2026-08-17"
+        }
+      },
+      "Galaxy S20": {
+        "128": {
+          "confidence_score": 80,
+          "estimated_price": 7000,
+          "listing_price": 7700,
+          "observation_count": 0,
+          "quick_sale_price": 6300,
+          "updated_at": "2026-08-17"
+        }
+      },
+      "Galaxy S20 FE": {
+        "128": {
+          "confidence_score": 78,
+          "estimated_price": 9000,
+          "listing_price": 9900,
+          "observation_count": 0,
+          "quick_sale_price": 8100,
+          "updated_at": "2026-08-17"
+        },
+        "256": {
+          "confidence_score": 72,
+          "estimated_price": 10000,
+          "listing_price": 11000,
+          "observation_count": 0,
+          "quick_sale_price": 9000,
+          "updated_at": "2026-08-17"
+        }
+      },
+      "Galaxy S20 Ultra": {
+        "128": {
+          "confidence_score": 80,
+          "estimated_price": 12500,
+          "listing_price": 14000,
+          "observation_count": 0,
+          "quick_sale_price": 11000,
+          "updated_at": "2026-08-17"
+        }
+      },
+      "Galaxy S20+": {
+        "128": {
+          "confidence_score": 80,
+          "estimated_price": 9500,
+          "listing_price": 10500,
+          "observation_count": 0,
+          "quick_sale_price": 8500,
+          "updated_at": "2026-08-17"
+        }
+      },
+      "Galaxy S21": {
+        "128": {
+          "confidence_score": 82,
+          "estimated_price": 10000,
+          "listing_price": 11000,
+          "observation_count": 0,
+          "quick_sale_price": 9000,
+          "updated_at": "2026-08-17"
+        },
+        "256": {
+          "confidence_score": 72,
+          "estimated_price": 11000,
+          "listing_price": 12000,
+          "observation_count": 0,
+          "quick_sale_price": 10000,
+          "updated_at": "2026-08-17"
+        }
+      },
+      "Galaxy S21 FE": {
+        "128": {
+          "confidence_score": 80,
+          "estimated_price": 11500,
+          "listing_price": 12500,
+          "observation_count": 0,
+          "quick_sale_price": 10500,
+          "updated_at": "2026-08-17"
+        },
+        "256": {
+          "confidence_score": 72,
+          "estimated_price": 13000,
+          "listing_price": 14250,
+          "observation_count": 0,
+          "quick_sale_price": 11750,
+          "updated_at": "2026-08-17"
+        }
+      },
+      "Galaxy S21 Ultra": {
+        "128": {
+          "confidence_score": 76,
+          "estimated_price": 17500,
+          "listing_price": 19000,
+          "observation_count": 0,
+          "quick_sale_price": 16000,
+          "updated_at": "2026-08-17"
+        },
+        "256": {
+          "confidence_score": 82,
+          "estimated_price": 20000,
+          "listing_price": 22000,
+          "observation_count": 0,
+          "quick_sale_price": 18000,
+          "updated_at": "2026-08-17"
+        },
+        "512": {
+          "confidence_score": 68,
+          "estimated_price": 22000,
+          "listing_price": 24000,
+          "observation_count": 0,
+          "quick_sale_price": 20000,
+          "updated_at": "2026-08-17"
+        }
+      },
+      "Galaxy S21+": {
+        "128": {
+          "confidence_score": 78,
+          "estimated_price": 13500,
+          "listing_price": 15000,
+          "observation_count": 0,
+          "quick_sale_price": 12000,
+          "updated_at": "2026-08-17"
+        },
+        "256": {
+          "confidence_score": 76,
+          "estimated_price": 15000,
+          "listing_price": 16500,
+          "observation_count": 0,
+          "quick_sale_price": 13500,
+          "updated_at": "2026-08-17"
+        }
+      },
+      "Galaxy S22": {
+        "128": {
+          "confidence_score": 80,
+          "estimated_price": 15000,
+          "listing_price": 16250,
+          "observation_count": 0,
+          "quick_sale_price": 13750,
+          "updated_at": "2026-08-17"
+        },
+        "256": {
+          "confidence_score": 80,
+          "estimated_price": 16500,
+          "listing_price": 18000,
+          "observation_count": 0,
+          "quick_sale_price": 15000,
+          "updated_at": "2026-08-17"
+        }
+      },
+      "Galaxy S22 Ultra": {
+        "1024": {
+          "confidence_score": 72,
+          "estimated_price": 33000,
+          "listing_price": 36000,
+          "observation_count": 0,
+          "quick_sale_price": 30000,
+          "updated_at": "2026-08-17"
+        },
+        "128": {
+          "confidence_score": 72,
+          "estimated_price": 24000,
+          "listing_price": 26000,
+          "observation_count": 0,
+          "quick_sale_price": 22000,
+          "updated_at": "2026-08-17"
+        },
+        "256": {
+          "confidence_score": 72,
+          "estimated_price": 27000,
+          "listing_price": 29500,
+          "observation_count": 0,
+          "quick_sale_price": 24500,
+          "updated_at": "2026-08-17"
+        },
+        "512": {
+          "confidence_score": 72,
+          "estimated_price": 30000,
+          "listing_price": 33000,
+          "observation_count": 0,
+          "quick_sale_price": 27500,
+          "updated_at": "2026-08-17"
+        }
+      },
+      "Galaxy S22+": {
+        "128": {
+          "confidence_score": 72,
+          "estimated_price": 17000,
+          "listing_price": 18500,
+          "observation_count": 0,
+          "quick_sale_price": 15500,
+          "updated_at": "2026-08-17"
+        },
+        "256": {
+          "confidence_score": 72,
+          "estimated_price": 18500,
+          "listing_price": 20000,
+          "observation_count": 0,
+          "quick_sale_price": 17000,
+          "updated_at": "2026-08-17"
+        }
+      },
+      "Galaxy S23": {
+        "128": {
+          "confidence_score": 80,
+          "estimated_price": 23000,
+          "listing_price": 25000,
+          "observation_count": 0,
+          "quick_sale_price": 21000,
+          "updated_at": "2026-08-17"
+        },
+        "256": {
+          "confidence_score": 80,
+          "estimated_price": 25000,
+          "listing_price": 27000,
+          "observation_count": 0,
+          "quick_sale_price": 23000,
+          "updated_at": "2026-08-17"
+        }
+      },
+      "Galaxy S23 FE": {
+        "128": {
+          "confidence_score": 72,
+          "estimated_price": 22000,
+          "listing_price": 24000,
+          "observation_count": 0,
+          "quick_sale_price": 20000,
+          "updated_at": "2026-08-17"
+        },
+        "256": {
+          "confidence_score": 72,
+          "estimated_price": 24000,
+          "listing_price": 26000,
+          "observation_count": 0,
+          "quick_sale_price": 22000,
+          "updated_at": "2026-08-17"
+        }
+      },
+      "Galaxy S23 Ultra": {
+        "1024": {
+          "confidence_score": 72,
+          "estimated_price": 43000,
+          "listing_price": 47000,
+          "observation_count": 0,
+          "quick_sale_price": 39000,
+          "updated_at": "2026-08-17"
+        },
+        "256": {
+          "confidence_score": 72,
+          "estimated_price": 36000,
+          "listing_price": 39000,
+          "observation_count": 0,
+          "quick_sale_price": 33000,
+          "updated_at": "2026-08-17"
+        },
+        "512": {
+          "confidence_score": 72,
+          "estimated_price": 39000,
+          "listing_price": 42500,
+          "observation_count": 0,
+          "quick_sale_price": 35500,
+          "updated_at": "2026-08-17"
+        }
+      },
+      "Galaxy S23+": {
+        "256": {
+          "confidence_score": 72,
+          "estimated_price": 28000,
+          "listing_price": 30500,
+          "observation_count": 0,
+          "quick_sale_price": 25500,
+          "updated_at": "2026-08-17"
+        },
+        "512": {
+          "confidence_score": 72,
+          "estimated_price": 31000,
+          "listing_price": 34000,
+          "observation_count": 0,
+          "quick_sale_price": 28000,
+          "updated_at": "2026-08-17"
+        }
+      },
+      "Galaxy S24": {
+        "128": {
+          "confidence_score": 80,
+          "estimated_price": 28000,
+          "listing_price": 30500,
+          "observation_count": 0,
+          "quick_sale_price": 25500,
+          "updated_at": "2026-08-17"
+        },
+        "256": {
+          "confidence_score": 80,
+          "estimated_price": 31000,
+          "listing_price": 33500,
+          "observation_count": 0,
+          "quick_sale_price": 28500,
+          "updated_at": "2026-08-17"
+        }
+      },
+      "Galaxy S24 FE": {
+        "128": {
+          "confidence_score": 72,
+          "estimated_price": 25000,
+          "listing_price": 27000,
+          "observation_count": 0,
+          "quick_sale_price": 23000,
+          "updated_at": "2026-08-17"
+        },
+        "256": {
+          "confidence_score": 72,
+          "estimated_price": 28000,
+          "listing_price": 30500,
+          "observation_count": 0,
+          "quick_sale_price": 25500,
+          "updated_at": "2026-08-17"
+        },
+        "512": {
+          "confidence_score": 72,
+          "estimated_price": 31000,
+          "listing_price": 34000,
+          "observation_count": 0,
+          "quick_sale_price": 28000,
+          "updated_at": "2026-08-17"
+        }
+      },
+      "Galaxy S24 Ultra": {
+        "1024": {
+          "confidence_score": 72,
+          "estimated_price": 59000,
+          "listing_price": 64500,
+          "observation_count": 0,
+          "quick_sale_price": 53500,
+          "updated_at": "2026-08-17"
+        },
+        "256": {
+          "confidence_score": 72,
+          "estimated_price": 50000,
+          "listing_price": 54500,
+          "observation_count": 0,
+          "quick_sale_price": 45500,
+          "updated_at": "2026-08-17"
+        },
+        "512": {
+          "confidence_score": 72,
+          "estimated_price": 54000,
+          "listing_price": 59000,
+          "observation_count": 0,
+          "quick_sale_price": 49000,
+          "updated_at": "2026-08-17"
+        }
+      },
+      "Galaxy S24+": {
+        "256": {
+          "confidence_score": 72,
+          "estimated_price": 34000,
+          "listing_price": 37000,
+          "observation_count": 0,
+          "quick_sale_price": 31000,
+          "updated_at": "2026-08-17"
+        },
+        "512": {
+          "confidence_score": 72,
+          "estimated_price": 38000,
+          "listing_price": 41500,
+          "observation_count": 0,
+          "quick_sale_price": 34500,
+          "updated_at": "2026-08-17"
+        }
+      },
+      "Galaxy S25": {
+        "128": {
+          "confidence_score": 80,
+          "estimated_price": 37000,
+          "listing_price": 40000,
+          "observation_count": 0,
+          "quick_sale_price": 34000,
+          "updated_at": "2026-08-17"
+        },
+        "256": {
+          "confidence_score": 80,
+          "estimated_price": 41000,
+          "listing_price": 44500,
+          "observation_count": 0,
+          "quick_sale_price": 37500,
+          "updated_at": "2026-08-17"
+        },
+        "512": {
+          "confidence_score": 80,
+          "estimated_price": 45000,
+          "listing_price": 49000,
+          "observation_count": 0,
+          "quick_sale_price": 41000,
+          "updated_at": "2026-08-17"
+        }
+      },
+      "Galaxy S25 Edge": {
+        "256": {
+          "confidence_score": 60,
+          "estimated_price": 40000,
+          "listing_price": 43500,
+          "observation_count": 0,
+          "quick_sale_price": 36500,
+          "updated_at": "2026-08-17"
+        },
+        "512": {
+          "confidence_score": 60,
+          "estimated_price": 44000,
+          "listing_price": 48000,
+          "observation_count": 0,
+          "quick_sale_price": 40000,
+          "updated_at": "2026-08-17"
+        }
+      },
+      "Galaxy S25 FE": {
+        "128": {
+          "confidence_score": 60,
+          "estimated_price": 30000,
+          "listing_price": 32500,
+          "observation_count": 0,
+          "quick_sale_price": 27500,
+          "updated_at": "2026-08-17"
+        },
+        "256": {
+          "confidence_score": 60,
+          "estimated_price": 33000,
+          "listing_price": 36000,
+          "observation_count": 0,
+          "quick_sale_price": 30000,
+          "updated_at": "2026-08-17"
+        },
+        "512": {
+          "confidence_score": 60,
+          "estimated_price": 36000,
+          "listing_price": 39500,
+          "observation_count": 0,
+          "quick_sale_price": 33000,
+          "updated_at": "2026-08-17"
+        }
+      },
+      "Galaxy S25 Ultra": {
+        "1024": {
+          "confidence_score": 72,
+          "estimated_price": 72000,
+          "listing_price": 78500,
+          "observation_count": 0,
+          "quick_sale_price": 65500,
+          "updated_at": "2026-08-17"
+        },
+        "256": {
+          "confidence_score": 72,
+          "estimated_price": 62000,
+          "listing_price": 67500,
+          "observation_count": 0,
+          "quick_sale_price": 56500,
+          "updated_at": "2026-08-17"
+        },
+        "512": {
+          "confidence_score": 72,
+          "estimated_price": 66000,
+          "listing_price": 72000,
+          "observation_count": 0,
+          "quick_sale_price": 60000,
+          "updated_at": "2026-08-17"
+        }
+      },
+      "Galaxy S25+": {
+        "256": {
+          "confidence_score": 72,
+          "estimated_price": 43000,
+          "listing_price": 47000,
+          "observation_count": 0,
+          "quick_sale_price": 39000,
+          "updated_at": "2026-08-17"
+        },
+        "512": {
+          "confidence_score": 72,
+          "estimated_price": 48000,
+          "listing_price": 52500,
+          "observation_count": 0,
+          "quick_sale_price": 43500,
+          "updated_at": "2026-08-17"
+        }
+      },
+      "Galaxy S26": {
+        "256": {
+          "confidence_score": 60,
+          "estimated_price": 48000,
+          "listing_price": 52000,
+          "observation_count": 0,
+          "quick_sale_price": 44000,
+          "updated_at": "2026-08-17"
+        },
+        "512": {
+          "confidence_score": 60,
+          "estimated_price": 53000,
+          "listing_price": 57500,
+          "observation_count": 0,
+          "quick_sale_price": 48500,
+          "updated_at": "2026-08-17"
+        }
+      },
+      "Galaxy S26 Ultra": {
+        "1024": {
+          "confidence_score": 60,
+          "estimated_price": 90000,
+          "listing_price": 98000,
+          "observation_count": 0,
+          "quick_sale_price": 82000,
+          "updated_at": "2026-08-17"
+        },
+        "256": {
+          "confidence_score": 60,
+          "estimated_price": 73000,
+          "listing_price": 79500,
+          "observation_count": 0,
+          "quick_sale_price": 66500,
+          "updated_at": "2026-08-17"
+        },
+        "512": {
+          "confidence_score": 60,
+          "estimated_price": 82000,
+          "listing_price": 89500,
+          "observation_count": 0,
+          "quick_sale_price": 74500,
+          "updated_at": "2026-08-17"
+        }
+      },
+      "Galaxy S26+": {
+        "256": {
+          "confidence_score": 60,
+          "estimated_price": 56000,
+          "listing_price": 61000,
+          "observation_count": 0,
+          "quick_sale_price": 51000,
+          "updated_at": "2026-08-17"
+        },
+        "512": {
+          "confidence_score": 60,
+          "estimated_price": 61000,
+          "listing_price": 66500,
+          "observation_count": 0,
+          "quick_sale_price": 55500,
+          "updated_at": "2026-08-17"
+        }
+      },
+      "Galaxy Z Flip3": {
+        "128": {
+          "confidence_score": 72,
+          "estimated_price": 8500,
+          "listing_price": 9000,
+          "observation_count": 0,
+          "quick_sale_price": 7500,
+          "updated_at": "2026-08-17"
+        },
+        "256": {
+          "confidence_score": 72,
+          "estimated_price": 9500,
+          "listing_price": 10500,
+          "observation_count": 0,
+          "quick_sale_price": 8500,
+          "updated_at": "2026-08-17"
+        }
+      },
+      "Galaxy Z Flip4": {
+        "128": {
+          "confidence_score": 72,
+          "estimated_price": 12000,
+          "listing_price": 13000,
+          "observation_count": 0,
+          "quick_sale_price": 11000,
+          "updated_at": "2026-08-17"
+        },
+        "256": {
+          "confidence_score": 72,
+          "estimated_price": 14000,
+          "listing_price": 15000,
+          "observation_count": 0,
+          "quick_sale_price": 12500,
+          "updated_at": "2026-08-17"
+        },
+        "512": {
+          "confidence_score": 72,
+          "estimated_price": 15500,
+          "listing_price": 16500,
+          "observation_count": 0,
+          "quick_sale_price": 14000,
+          "updated_at": "2026-08-17"
+        }
+      },
+      "Galaxy Z Flip5": {
+        "256": {
+          "confidence_score": 72,
+          "estimated_price": 24000,
+          "listing_price": 26000,
+          "observation_count": 0,
+          "quick_sale_price": 22000,
+          "updated_at": "2026-08-17"
+        },
+        "512": {
+          "confidence_score": 72,
+          "estimated_price": 27000,
+          "listing_price": 29000,
+          "observation_count": 0,
+          "quick_sale_price": 24500,
+          "updated_at": "2026-08-17"
+        }
+      },
+      "Galaxy Z Flip6": {
+        "256": {
+          "confidence_score": 60,
+          "estimated_price": 34000,
+          "listing_price": 36500,
+          "observation_count": 0,
+          "quick_sale_price": 31000,
+          "updated_at": "2026-08-17"
+        },
+        "512": {
+          "confidence_score": 60,
+          "estimated_price": 38000,
+          "listing_price": 41000,
+          "observation_count": 0,
+          "quick_sale_price": 34500,
+          "updated_at": "2026-08-17"
+        }
+      },
+      "Galaxy Z Flip7": {
+        "256": {
+          "confidence_score": 60,
+          "estimated_price": 42000,
+          "listing_price": 45500,
+          "observation_count": 0,
+          "quick_sale_price": 38000,
+          "updated_at": "2026-08-17"
+        },
+        "512": {
+          "confidence_score": 60,
+          "estimated_price": 47000,
+          "listing_price": 51000,
+          "observation_count": 0,
+          "quick_sale_price": 43000,
+          "updated_at": "2026-08-17"
+        }
+      },
+      "Galaxy Z Flip8": {
+        "256": {
+          "confidence_score": 60,
+          "estimated_price": 50000,
+          "listing_price": 54000,
+          "observation_count": 0,
+          "quick_sale_price": 45500,
+          "updated_at": "2026-08-17"
+        },
+        "512": {
+          "confidence_score": 60,
+          "estimated_price": 56000,
+          "listing_price": 60500,
+          "observation_count": 0,
+          "quick_sale_price": 51000,
+          "updated_at": "2026-08-17"
+        }
+      },
+      "Galaxy Z Fold3": {
+        "256": {
+          "confidence_score": 72,
+          "estimated_price": 15000,
+          "listing_price": 16000,
+          "observation_count": 0,
+          "quick_sale_price": 13500,
+          "updated_at": "2026-08-17"
+        },
+        "512": {
+          "confidence_score": 72,
+          "estimated_price": 17000,
+          "listing_price": 18500,
+          "observation_count": 0,
+          "quick_sale_price": 15500,
+          "updated_at": "2026-08-17"
+        }
+      },
+      "Galaxy Z Fold4": {
+        "256": {
+          "confidence_score": 72,
+          "estimated_price": 21000,
+          "listing_price": 22500,
+          "observation_count": 0,
+          "quick_sale_price": 19000,
+          "updated_at": "2026-08-17"
+        },
+        "512": {
+          "confidence_score": 72,
+          "estimated_price": 24000,
+          "listing_price": 26000,
+          "observation_count": 0,
+          "quick_sale_price": 22000,
+          "updated_at": "2026-08-17"
+        }
+      },
+      "Galaxy Z Fold5": {
+        "1024": {
+          "confidence_score": 72,
+          "estimated_price": 39000,
+          "listing_price": 42000,
+          "observation_count": 0,
+          "quick_sale_price": 35500,
+          "updated_at": "2026-08-17"
+        },
+        "256": {
+          "confidence_score": 72,
+          "estimated_price": 30000,
+          "listing_price": 32500,
+          "observation_count": 0,
+          "quick_sale_price": 27500,
+          "updated_at": "2026-08-17"
+        },
+        "512": {
+          "confidence_score": 72,
+          "estimated_price": 35000,
+          "listing_price": 38000,
+          "observation_count": 0,
+          "quick_sale_price": 32000,
+          "updated_at": "2026-08-17"
+        }
+      },
+      "Galaxy Z Fold6": {
+        "1024": {
+          "confidence_score": 60,
+          "estimated_price": 58000,
+          "listing_price": 62500,
+          "observation_count": 0,
+          "quick_sale_price": 53000,
+          "updated_at": "2026-08-17"
+        },
+        "256": {
+          "confidence_score": 60,
+          "estimated_price": 46000,
+          "listing_price": 49500,
+          "observation_count": 0,
+          "quick_sale_price": 42000,
+          "updated_at": "2026-08-17"
+        },
+        "512": {
+          "confidence_score": 60,
+          "estimated_price": 52000,
+          "listing_price": 56000,
+          "observation_count": 0,
+          "quick_sale_price": 47500,
+          "updated_at": "2026-08-17"
+        }
+      },
+      "Galaxy Z Fold7": {
+        "1024": {
+          "confidence_score": 60,
+          "estimated_price": 72000,
+          "listing_price": 78000,
+          "observation_count": 0,
+          "quick_sale_price": 65500,
+          "updated_at": "2026-08-17"
+        },
+        "256": {
+          "confidence_score": 60,
+          "estimated_price": 58000,
+          "listing_price": 62500,
+          "observation_count": 0,
+          "quick_sale_price": 53000,
+          "updated_at": "2026-08-17"
+        },
+        "512": {
+          "confidence_score": 60,
+          "estimated_price": 65000,
+          "listing_price": 70000,
+          "observation_count": 0,
+          "quick_sale_price": 59000,
+          "updated_at": "2026-08-17"
+        }
+      },
+      "Galaxy Z Fold8": {
+        "1024": {
+          "confidence_score": 60,
+          "estimated_price": 86000,
+          "listing_price": 93000,
+          "observation_count": 0,
+          "quick_sale_price": 78500,
+          "updated_at": "2026-08-17"
+        },
+        "256": {
+          "confidence_score": 60,
+          "estimated_price": 70000,
+          "listing_price": 75500,
+          "observation_count": 0,
+          "quick_sale_price": 63500,
+          "updated_at": "2026-08-17"
+        },
+        "512": {
+          "confidence_score": 60,
+          "estimated_price": 78000,
+          "listing_price": 84000,
+          "observation_count": 0,
+          "quick_sale_price": 71000,
+          "updated_at": "2026-08-17"
+        }
+      },
+      "Galaxy Z Fold8 Ultra": {
+        "1024": {
+          "confidence_score": 60,
+          "estimated_price": 100000,
+          "listing_price": 108000,
+          "observation_count": 0,
+          "quick_sale_price": 91000,
+          "updated_at": "2026-08-17"
+        },
+        "512": {
+          "confidence_score": 60,
+          "estimated_price": 90000,
+          "listing_price": 97000,
+          "observation_count": 0,
+          "quick_sale_price": 82000,
+          "updated_at": "2026-08-17"
+        }
+      }
+    },
+    "Vivo": {
+      "V21": {
+        "128": {
+          "confidence_score": 75,
+          "estimated_price": 7500,
+          "listing_price": 8200,
+          "observation_count": 0,
+          "quick_sale_price": 6800,
+          "updated_at": "2026-08-18"
+        }
+      },
+      "V21e": {
+        "128": {
+          "confidence_score": 70,
+          "estimated_price": 6500,
+          "listing_price": 7100,
+          "observation_count": 0,
+          "quick_sale_price": 5900,
+          "updated_at": "2026-08-18"
+        }
+      },
+      "V23 5G": {
+        "128": {
+          "confidence_score": 70,
+          "estimated_price": 8500,
+          "listing_price": 9300,
+          "observation_count": 0,
+          "quick_sale_price": 7700,
+          "updated_at": "2026-08-18"
+        }
+      },
+      "V25": {
+        "128": {
+          "confidence_score": 70,
+          "estimated_price": 9500,
+          "listing_price": 10400,
+          "observation_count": 0,
+          "quick_sale_price": 8600,
+          "updated_at": "2026-08-18"
+        }
+      },
+      "V29": {
+        "256": {
+          "confidence_score": 75,
+          "estimated_price": 15000,
+          "listing_price": 16400,
+          "observation_count": 0,
+          "quick_sale_price": 13600,
+          "updated_at": "2026-08-18"
+        }
+      },
+      "V29 Lite 5G": {
+        "256": {
+          "confidence_score": 75,
+          "estimated_price": 12000,
+          "listing_price": 13100,
+          "observation_count": 0,
+          "quick_sale_price": 10900,
+          "updated_at": "2026-08-18"
+        }
+      },
+      "V30": {
+        "256": {
+          "confidence_score": 70,
+          "estimated_price": 17500,
+          "listing_price": 19100,
+          "observation_count": 0,
+          "quick_sale_price": 15900,
+          "updated_at": "2026-08-18"
+        }
+      },
+      "V30 Lite": {
+        "256": {
+          "confidence_score": 75,
+          "estimated_price": 12000,
+          "listing_price": 13100,
+          "observation_count": 0,
+          "quick_sale_price": 10900,
+          "updated_at": "2026-08-18"
+        }
+      },
+      "V40 5G": {
+        "256": {
+          "confidence_score": 75,
+          "estimated_price": 21000,
+          "listing_price": 22900,
+          "observation_count": 0,
+          "quick_sale_price": 19100,
+          "updated_at": "2026-08-18"
+        }
+      },
+      "V40 Lite": {
+        "256": {
+          "confidence_score": 70,
+          "estimated_price": 13000,
+          "listing_price": 14200,
+          "observation_count": 0,
+          "quick_sale_price": 11800,
+          "updated_at": "2026-08-18"
+        }
+      },
+      "V50 5G": {
+        "256": {
+          "confidence_score": 70,
+          "estimated_price": 22000,
+          "listing_price": 24000,
+          "observation_count": 0,
+          "quick_sale_price": 20000,
+          "updated_at": "2026-08-18"
+        }
+      },
+      "V50 Lite": {
+        "256": {
+          "confidence_score": 70,
+          "estimated_price": 13500,
+          "listing_price": 14700,
+          "observation_count": 0,
+          "quick_sale_price": 12300,
+          "updated_at": "2026-08-18"
+        }
+      },
+      "V50 Lite 5G": {
+        "256": {
+          "confidence_score": 70,
+          "estimated_price": 16500,
+          "listing_price": 18000,
+          "observation_count": 0,
+          "quick_sale_price": 15000,
+          "updated_at": "2026-08-18"
+        }
+      },
+      "V60 5G": {
+        "256": {
+          "confidence_score": 65,
+          "estimated_price": 25000,
+          "listing_price": 27300,
+          "observation_count": 0,
+          "quick_sale_price": 22800,
+          "updated_at": "2026-08-18"
+        }
+      },
+      "V60 Lite": {
+        "256": {
+          "confidence_score": 70,
+          "estimated_price": 20000,
+          "listing_price": 21800,
+          "observation_count": 0,
+          "quick_sale_price": 18200,
+          "updated_at": "2026-08-18"
+        }
+      },
+      "V60 Lite 5G": {
+        "256": {
+          "confidence_score": 75,
+          "estimated_price": 23500,
+          "listing_price": 25600,
+          "observation_count": 0,
+          "quick_sale_price": 21400,
+          "updated_at": "2026-08-18"
+        }
+      },
+      "V70": {
+        "256": {
+          "confidence_score": 60,
+          "estimated_price": 28000,
+          "listing_price": 30500,
+          "observation_count": 0,
+          "quick_sale_price": 25500,
+          "updated_at": "2026-08-18"
+        }
+      },
+      "V70 FE": {
+        "256": {
+          "confidence_score": 70,
+          "estimated_price": 23000,
+          "listing_price": 25100,
+          "observation_count": 0,
+          "quick_sale_price": 20900,
+          "updated_at": "2026-08-18"
+        },
+        "512": {
+          "confidence_score": 60,
+          "estimated_price": 27000,
+          "listing_price": 29400,
+          "observation_count": 0,
+          "quick_sale_price": 24600,
+          "updated_at": "2026-08-18"
+        }
+      },
+      "X200 FE": {
+        "256": {
+          "confidence_score": 75,
+          "estimated_price": 36000,
+          "listing_price": 39200,
+          "observation_count": 0,
+          "quick_sale_price": 32800,
+          "updated_at": "2026-08-18"
+        }
+      },
+      "X300": {
+        "512": {
+          "confidence_score": 60,
+          "estimated_price": 52000,
+          "listing_price": 56700,
+          "observation_count": 0,
+          "quick_sale_price": 47300,
+          "updated_at": "2026-08-18"
+        }
+      },
+      "X300 Pro": {
+        "512": {
+          "confidence_score": 65,
+          "estimated_price": 62000,
+          "listing_price": 67600,
+          "observation_count": 0,
+          "quick_sale_price": 56400,
+          "updated_at": "2026-08-18"
+        }
+      },
+      "X300 Ultra": {
+        "512": {
+          "confidence_score": 60,
+          "estimated_price": 75000,
+          "listing_price": 81800,
+          "observation_count": 0,
+          "quick_sale_price": 68300,
+          "updated_at": "2026-08-18"
+        }
+      },
+      "Y04": {
+        "128": {
+          "confidence_score": 65,
+          "estimated_price": 7000,
+          "listing_price": 7600,
+          "observation_count": 0,
+          "quick_sale_price": 6400,
+          "updated_at": "2026-08-18"
+        },
+        "64": {
+          "confidence_score": 65,
+          "estimated_price": 6000,
+          "listing_price": 6500,
+          "observation_count": 0,
+          "quick_sale_price": 5500,
+          "updated_at": "2026-08-18"
+        }
+      },
+      "Y05": {
+        "128": {
+          "confidence_score": 60,
+          "estimated_price": 7500,
+          "listing_price": 8200,
+          "observation_count": 0,
+          "quick_sale_price": 6800,
+          "updated_at": "2026-08-18"
+        },
+        "64": {
+          "confidence_score": 60,
+          "estimated_price": 6500,
+          "listing_price": 7100,
+          "observation_count": 0,
+          "quick_sale_price": 5900,
+          "updated_at": "2026-08-18"
+        }
+      },
+      "Y11d": {
+        "128": {
+          "confidence_score": 60,
+          "estimated_price": 7000,
+          "listing_price": 7600,
+          "observation_count": 0,
+          "quick_sale_price": 6400,
+          "updated_at": "2026-08-18"
+        }
+      },
+      "Y11s": {
+        "32": {
+          "confidence_score": 70,
+          "estimated_price": 3000,
+          "listing_price": 3300,
+          "observation_count": 0,
+          "quick_sale_price": 2700,
+          "updated_at": "2026-08-18"
+        }
+      },
+      "Y15s": {
+        "32": {
+          "confidence_score": 70,
+          "estimated_price": 3000,
+          "listing_price": 3300,
+          "observation_count": 0,
+          "quick_sale_price": 2700,
+          "updated_at": "2026-08-18"
+        }
+      },
+      "Y16": {
+        "128": {
+          "confidence_score": 70,
+          "estimated_price": 4250,
+          "listing_price": 4600,
+          "observation_count": 0,
+          "quick_sale_price": 3900,
+          "updated_at": "2026-08-18"
+        },
+        "64": {
+          "confidence_score": 70,
+          "estimated_price": 3500,
+          "listing_price": 3800,
+          "observation_count": 0,
+          "quick_sale_price": 3200,
+          "updated_at": "2026-08-18"
+        }
+      },
+      "Y17s": {
+        "128": {
+          "confidence_score": 65,
+          "estimated_price": 6000,
+          "listing_price": 6500,
+          "observation_count": 0,
+          "quick_sale_price": 5500,
+          "updated_at": "2026-08-18"
+        }
+      },
+      "Y18": {
+        "128": {
+          "confidence_score": 65,
+          "estimated_price": 6500,
+          "listing_price": 7100,
+          "observation_count": 0,
+          "quick_sale_price": 5900,
+          "updated_at": "2026-08-18"
+        },
+        "256": {
+          "confidence_score": 65,
+          "estimated_price": 7500,
+          "listing_price": 8200,
+          "observation_count": 0,
+          "quick_sale_price": 6800,
+          "updated_at": "2026-08-18"
+        }
+      },
+      "Y19s": {
+        "128": {
+          "confidence_score": 65,
+          "estimated_price": 6750,
+          "listing_price": 7350,
+          "observation_count": 0,
+          "quick_sale_price": 6150,
+          "updated_at": "2026-08-18"
+        }
+      },
+      "Y20": {
+        "64": {
+          "confidence_score": 70,
+          "estimated_price": 3500,
+          "listing_price": 3800,
+          "observation_count": 0,
+          "quick_sale_price": 3200,
+          "updated_at": "2026-08-18"
+        }
+      },
+      "Y20s": {
+        "128": {
+          "confidence_score": 70,
+          "estimated_price": 4000,
+          "listing_price": 4350,
+          "observation_count": 0,
+          "quick_sale_price": 3650,
+          "updated_at": "2026-08-18"
+        }
+      },
+      "Y21": {
+        "64": {
+          "confidence_score": 70,
+          "estimated_price": 4000,
+          "listing_price": 4350,
+          "observation_count": 0,
+          "quick_sale_price": 3650,
+          "updated_at": "2026-08-18"
+        }
+      },
+      "Y21 5G": {
+        "128": {
+          "confidence_score": 60,
+          "estimated_price": 8500,
+          "listing_price": 9300,
+          "observation_count": 0,
+          "quick_sale_price": 7700,
+          "updated_at": "2026-08-18"
+        }
+      },
+      "Y21s": {
+        "128": {
+          "confidence_score": 70,
+          "estimated_price": 5000,
+          "listing_price": 5450,
+          "observation_count": 0,
+          "quick_sale_price": 4550,
+          "updated_at": "2026-08-18"
+        }
+      },
+      "Y22s": {
+        "128": {
+          "confidence_score": 70,
+          "estimated_price": 5500,
+          "listing_price": 6000,
+          "observation_count": 0,
+          "quick_sale_price": 5000,
+          "updated_at": "2026-08-18"
+        }
+      },
+      "Y27": {
+        "128": {
+          "confidence_score": 65,
+          "estimated_price": 6500,
+          "listing_price": 7100,
+          "observation_count": 0,
+          "quick_sale_price": 5900,
+          "updated_at": "2026-08-18"
+        }
+      },
+      "Y28": {
+        "256": {
+          "confidence_score": 65,
+          "estimated_price": 8000,
+          "listing_price": 8700,
+          "observation_count": 0,
+          "quick_sale_price": 7300,
+          "updated_at": "2026-08-18"
+        }
+      },
+      "Y29": {
+        "256": {
+          "confidence_score": 65,
+          "estimated_price": 10000,
+          "listing_price": 10900,
+          "observation_count": 0,
+          "quick_sale_price": 9100,
+          "updated_at": "2026-08-18"
+        }
+      },
+      "Y29s 5G": {
+        "128": {
+          "confidence_score": 60,
+          "estimated_price": 9000,
+          "listing_price": 9800,
+          "observation_count": 0,
+          "quick_sale_price": 8200,
+          "updated_at": "2026-08-18"
+        },
+        "256": {
+          "confidence_score": 60,
+          "estimated_price": 10500,
+          "listing_price": 11500,
+          "observation_count": 0,
+          "quick_sale_price": 9500,
+          "updated_at": "2026-08-18"
+        }
+      },
+      "Y31 5G": {
+        "256": {
+          "confidence_score": 60,
+          "estimated_price": 11000,
+          "listing_price": 12000,
+          "observation_count": 0,
+          "quick_sale_price": 10000,
+          "updated_at": "2026-08-18"
+        }
+      },
+      "Y31d": {
+        "256": {
+          "confidence_score": 60,
+          "estimated_price": 12000,
+          "listing_price": 13100,
+          "observation_count": 0,
+          "quick_sale_price": 10900,
+          "updated_at": "2026-08-18"
+        }
+      },
+      "Y33s": {
+        "128": {
+          "confidence_score": 70,
+          "estimated_price": 5500,
+          "listing_price": 6000,
+          "observation_count": 0,
+          "quick_sale_price": 5000,
+          "updated_at": "2026-08-18"
+        }
+      },
+      "Y35": {
+        "128": {
+          "confidence_score": 70,
+          "estimated_price": 5500,
+          "listing_price": 6000,
+          "observation_count": 0,
+          "quick_sale_price": 5000,
+          "updated_at": "2026-08-18"
+        }
+      },
+      "Y36": {
+        "128": {
+          "confidence_score": 65,
+          "estimated_price": 6500,
+          "listing_price": 7100,
+          "observation_count": 0,
+          "quick_sale_price": 5900,
+          "updated_at": "2026-08-18"
+        },
+        "256": {
+          "confidence_score": 65,
+          "estimated_price": 7500,
+          "listing_price": 8200,
+          "observation_count": 0,
+          "quick_sale_price": 6800,
+          "updated_at": "2026-08-18"
+        }
+      },
+      "Y51": {
+        "128": {
+          "confidence_score": 70,
+          "estimated_price": 4500,
+          "listing_price": 4900,
+          "observation_count": 0,
+          "quick_sale_price": 4100,
+          "updated_at": "2026-08-18"
+        }
+      },
+      "Y53s": {
+        "128": {
+          "confidence_score": 70,
+          "estimated_price": 5000,
+          "listing_price": 5450,
+          "observation_count": 0,
+          "quick_sale_price": 4550,
+          "updated_at": "2026-08-18"
+        }
+      }
+    },
+    "Xiaomi": {
+      "POCO F5": {
+        "256": {
+          "confidence_score": 72,
+          "estimated_price": 13500,
+          "listing_price": 14700,
+          "observation_count": 0,
+          "quick_sale_price": 12300,
+          "updated_at": "2026-08-17"
+        }
+      },
+      "POCO F5 Pro": {
+        "256": {
+          "confidence_score": 72,
+          "estimated_price": 16000,
+          "listing_price": 17500,
+          "observation_count": 0,
+          "quick_sale_price": 14500,
+          "updated_at": "2026-08-17"
+        },
+        "512": {
+          "confidence_score": 72,
+          "estimated_price": 18000,
+          "listing_price": 19600,
+          "observation_count": 0,
+          "quick_sale_price": 16400,
+          "updated_at": "2026-08-17"
+        }
+      },
+      "POCO F6": {
+        "256": {
+          "confidence_score": 72,
+          "estimated_price": 17500,
+          "listing_price": 19100,
+          "observation_count": 0,
+          "quick_sale_price": 15900,
+          "updated_at": "2026-08-17"
+        },
+        "512": {
+          "confidence_score": 72,
+          "estimated_price": 20000,
+          "listing_price": 21800,
+          "observation_count": 0,
+          "quick_sale_price": 18200,
+          "updated_at": "2026-08-17"
+        }
+      },
+      "POCO F6 Pro": {
+        "256": {
+          "confidence_score": 72,
+          "estimated_price": 21000,
+          "listing_price": 22900,
+          "observation_count": 0,
+          "quick_sale_price": 19100,
+          "updated_at": "2026-08-17"
+        },
+        "512": {
+          "confidence_score": 72,
+          "estimated_price": 24000,
+          "listing_price": 26200,
+          "observation_count": 0,
+          "quick_sale_price": 21800,
+          "updated_at": "2026-08-17"
+        }
+      },
+      "POCO F7": {
+        "256": {
+          "confidence_score": 72,
+          "estimated_price": 22000,
+          "listing_price": 24000,
+          "observation_count": 0,
+          "quick_sale_price": 20000,
+          "updated_at": "2026-08-17"
+        },
+        "512": {
+          "confidence_score": 72,
+          "estimated_price": 25000,
+          "listing_price": 27300,
+          "observation_count": 0,
+          "quick_sale_price": 22700,
+          "updated_at": "2026-08-17"
+        }
+      },
+      "POCO F7 Pro": {
+        "256": {
+          "confidence_score": 72,
+          "estimated_price": 27000,
+          "listing_price": 29400,
+          "observation_count": 0,
+          "quick_sale_price": 24600,
+          "updated_at": "2026-08-17"
+        },
+        "512": {
+          "confidence_score": 72,
+          "estimated_price": 30000,
+          "listing_price": 32700,
+          "observation_count": 0,
+          "quick_sale_price": 27300,
+          "updated_at": "2026-08-17"
+        }
+      },
+      "POCO F7 Ultra": {
+        "256": {
+          "confidence_score": 72,
+          "estimated_price": 32000,
+          "listing_price": 34900,
+          "observation_count": 0,
+          "quick_sale_price": 29100,
+          "updated_at": "2026-08-17"
+        },
+        "512": {
+          "confidence_score": 72,
+          "estimated_price": 36000,
+          "listing_price": 39200,
+          "observation_count": 0,
+          "quick_sale_price": 32800,
+          "updated_at": "2026-08-17"
+        }
+      },
+      "POCO F8 Pro": {
+        "256": {
+          "confidence_score": 60,
+          "estimated_price": 34000,
+          "listing_price": 37100,
+          "observation_count": 0,
+          "quick_sale_price": 30900,
+          "updated_at": "2026-08-17"
+        },
+        "512": {
+          "confidence_score": 60,
+          "estimated_price": 38000,
+          "listing_price": 41400,
+          "observation_count": 0,
+          "quick_sale_price": 34600,
+          "updated_at": "2026-08-17"
+        }
+      },
+      "POCO F8 Ultra": {
+        "256": {
+          "confidence_score": 60,
+          "estimated_price": 40000,
+          "listing_price": 43600,
+          "observation_count": 0,
+          "quick_sale_price": 36400,
+          "updated_at": "2026-08-17"
+        },
+        "512": {
+          "confidence_score": 60,
+          "estimated_price": 45000,
+          "listing_price": 49000,
+          "observation_count": 0,
+          "quick_sale_price": 41000,
+          "updated_at": "2026-08-17"
+        }
+      },
+      "POCO M5": {
+        "128": {
+          "confidence_score": 78,
+          "estimated_price": 6000,
+          "listing_price": 6500,
+          "observation_count": 0,
+          "quick_sale_price": 5500,
+          "updated_at": "2026-08-17"
+        },
+        "64": {
+          "confidence_score": 78,
+          "estimated_price": 5000,
+          "listing_price": 5450,
+          "observation_count": 0,
+          "quick_sale_price": 4550,
+          "updated_at": "2026-08-17"
+        }
+      },
+      "POCO M6 Pro": {
+        "256": {
+          "confidence_score": 72,
+          "estimated_price": 8500,
+          "listing_price": 9300,
+          "observation_count": 0,
+          "quick_sale_price": 7700,
+          "updated_at": "2026-08-17"
+        },
+        "512": {
+          "confidence_score": 72,
+          "estimated_price": 10000,
+          "listing_price": 10900,
+          "observation_count": 0,
+          "quick_sale_price": 9100,
+          "updated_at": "2026-08-17"
+        }
+      },
+      "POCO M7 Pro": {
+        "256": {
+          "confidence_score": 72,
+          "estimated_price": 11000,
+          "listing_price": 12000,
+          "observation_count": 0,
+          "quick_sale_price": 10000,
+          "updated_at": "2026-08-17"
+        },
+        "512": {
+          "confidence_score": 72,
+          "estimated_price": 12500,
+          "listing_price": 13600,
+          "observation_count": 0,
+          "quick_sale_price": 11400,
+          "updated_at": "2026-08-17"
+        }
+      },
+      "POCO M8 5G": {
+        "128": {
+          "confidence_score": 60,
+          "estimated_price": 12000,
+          "listing_price": 13100,
+          "observation_count": 0,
+          "quick_sale_price": 10900,
+          "updated_at": "2026-08-17"
+        },
+        "256": {
+          "confidence_score": 60,
+          "estimated_price": 13500,
+          "listing_price": 14700,
+          "observation_count": 0,
+          "quick_sale_price": 12300,
+          "updated_at": "2026-08-17"
+        }
+      },
+      "POCO M8 Pro 5G": {
+        "256": {
+          "confidence_score": 60,
+          "estimated_price": 15500,
+          "listing_price": 16900,
+          "observation_count": 0,
+          "quick_sale_price": 14100,
+          "updated_at": "2026-08-17"
+        },
+        "512": {
+          "confidence_score": 60,
+          "estimated_price": 17500,
+          "listing_price": 19100,
+          "observation_count": 0,
+          "quick_sale_price": 15900,
+          "updated_at": "2026-08-17"
+        }
+      },
+      "POCO X5": {
+        "128": {
+          "confidence_score": 72,
+          "estimated_price": 8500,
+          "listing_price": 9300,
+          "observation_count": 0,
+          "quick_sale_price": 7700,
+          "updated_at": "2026-08-17"
+        },
+        "256": {
+          "confidence_score": 72,
+          "estimated_price": 10000,
+          "listing_price": 10900,
+          "observation_count": 0,
+          "quick_sale_price": 9100,
+          "updated_at": "2026-08-17"
+        }
+      },
+      "POCO X5 Pro": {
+        "128": {
+          "confidence_score": 72,
+          "estimated_price": 10500,
+          "listing_price": 11500,
+          "observation_count": 0,
+          "quick_sale_price": 9500,
+          "updated_at": "2026-08-17"
+        },
+        "256": {
+          "confidence_score": 72,
+          "estimated_price": 12000,
+          "listing_price": 13100,
+          "observation_count": 0,
+          "quick_sale_price": 10900,
+          "updated_at": "2026-08-17"
+        }
+      },
+      "POCO X6": {
+        "256": {
+          "confidence_score": 72,
+          "estimated_price": 12500,
+          "listing_price": 13600,
+          "observation_count": 0,
+          "quick_sale_price": 11400,
+          "updated_at": "2026-08-17"
+        },
+        "512": {
+          "confidence_score": 72,
+          "estimated_price": 14500,
+          "listing_price": 15800,
+          "observation_count": 0,
+          "quick_sale_price": 13200,
+          "updated_at": "2026-08-17"
+        }
+      },
+      "POCO X6 Pro": {
+        "256": {
+          "confidence_score": 72,
+          "estimated_price": 14000,
+          "listing_price": 15300,
+          "observation_count": 0,
+          "quick_sale_price": 12700,
+          "updated_at": "2026-08-17"
+        },
+        "512": {
+          "confidence_score": 72,
+          "estimated_price": 16000,
+          "listing_price": 17500,
+          "observation_count": 0,
+          "quick_sale_price": 14500,
+          "updated_at": "2026-08-17"
+        }
+      },
+      "POCO X7": {
+        "256": {
+          "confidence_score": 72,
+          "estimated_price": 15000,
+          "listing_price": 16400,
+          "observation_count": 0,
+          "quick_sale_price": 13600,
+          "updated_at": "2026-08-17"
+        },
+        "512": {
+          "confidence_score": 72,
+          "estimated_price": 17000,
+          "listing_price": 18500,
+          "observation_count": 0,
+          "quick_sale_price": 15500,
+          "updated_at": "2026-08-17"
+        }
+      },
+      "POCO X7 Pro": {
+        "256": {
+          "confidence_score": 72,
+          "estimated_price": 19000,
+          "listing_price": 20700,
+          "observation_count": 0,
+          "quick_sale_price": 17300,
+          "updated_at": "2026-08-17"
+        },
+        "512": {
+          "confidence_score": 72,
+          "estimated_price": 22000,
+          "listing_price": 24000,
+          "observation_count": 0,
+          "quick_sale_price": 20000,
+          "updated_at": "2026-08-17"
+        }
+      },
+      "POCO X8 Pro": {
+        "256": {
+          "confidence_score": 60,
+          "estimated_price": 24000,
+          "listing_price": 26200,
+          "observation_count": 0,
+          "quick_sale_price": 21800,
+          "updated_at": "2026-08-17"
+        },
+        "512": {
+          "confidence_score": 60,
+          "estimated_price": 27000,
+          "listing_price": 29400,
+          "observation_count": 0,
+          "quick_sale_price": 24600,
+          "updated_at": "2026-08-17"
+        }
+      },
+      "POCO X8 Pro Max": {
+        "256": {
+          "confidence_score": 60,
+          "estimated_price": 28000,
+          "listing_price": 30500,
+          "observation_count": 0,
+          "quick_sale_price": 25500,
+          "updated_at": "2026-08-17"
+        },
+        "512": {
+          "confidence_score": 60,
+          "estimated_price": 32000,
+          "listing_price": 34900,
+          "observation_count": 0,
+          "quick_sale_price": 29100,
+          "updated_at": "2026-08-17"
+        }
+      },
+      "Redmi 10": {
+        "128": {
+          "confidence_score": 78,
+          "estimated_price": 5500,
+          "listing_price": 6000,
+          "observation_count": 0,
+          "quick_sale_price": 5000,
+          "updated_at": "2026-08-17"
+        },
+        "64": {
+          "confidence_score": 78,
+          "estimated_price": 4500,
+          "listing_price": 4900,
+          "observation_count": 0,
+          "quick_sale_price": 4100,
+          "updated_at": "2026-08-17"
+        }
+      },
+      "Redmi 10C": {
+        "128": {
+          "confidence_score": 78,
+          "estimated_price": 4750,
+          "listing_price": 5200,
+          "observation_count": 0,
+          "quick_sale_price": 4300,
+          "updated_at": "2026-08-17"
+        },
+        "64": {
+          "confidence_score": 78,
+          "estimated_price": 4000,
+          "listing_price": 4400,
+          "observation_count": 0,
+          "quick_sale_price": 3600,
+          "updated_at": "2026-08-17"
+        }
+      },
+      "Redmi 12": {
+        "128": {
+          "confidence_score": 78,
+          "estimated_price": 6000,
+          "listing_price": 6500,
+          "observation_count": 0,
+          "quick_sale_price": 5500,
+          "updated_at": "2026-08-17"
+        },
+        "256": {
+          "confidence_score": 78,
+          "estimated_price": 7000,
+          "listing_price": 7600,
+          "observation_count": 0,
+          "quick_sale_price": 6400,
+          "updated_at": "2026-08-17"
+        }
+      },
+      "Redmi 12C": {
+        "128": {
+          "confidence_score": 78,
+          "estimated_price": 5250,
+          "listing_price": 5700,
+          "observation_count": 0,
+          "quick_sale_price": 4800,
+          "updated_at": "2026-08-17"
+        },
+        "64": {
+          "confidence_score": 78,
+          "estimated_price": 4500,
+          "listing_price": 4900,
+          "observation_count": 0,
+          "quick_sale_price": 4100,
+          "updated_at": "2026-08-17"
+        }
+      },
+      "Redmi 13": {
+        "128": {
+          "confidence_score": 72,
+          "estimated_price": 6500,
+          "listing_price": 7100,
+          "observation_count": 0,
+          "quick_sale_price": 5900,
+          "updated_at": "2026-08-17"
+        },
+        "256": {
+          "confidence_score": 72,
+          "estimated_price": 7500,
+          "listing_price": 8200,
+          "observation_count": 0,
+          "quick_sale_price": 6800,
+          "updated_at": "2026-08-17"
+        }
+      },
+      "Redmi 13C": {
+        "128": {
+          "confidence_score": 72,
+          "estimated_price": 6000,
+          "listing_price": 6500,
+          "observation_count": 0,
+          "quick_sale_price": 5500,
+          "updated_at": "2026-08-17"
+        },
+        "256": {
+          "confidence_score": 72,
+          "estimated_price": 7000,
+          "listing_price": 7600,
+          "observation_count": 0,
+          "quick_sale_price": 6400,
+          "updated_at": "2026-08-17"
+        }
+      },
+      "Redmi 15": {
+        "128": {
+          "confidence_score": 60,
+          "estimated_price": 9000,
+          "listing_price": 9800,
+          "observation_count": 0,
+          "quick_sale_price": 8200,
+          "updated_at": "2026-08-17"
+        },
+        "256": {
+          "confidence_score": 60,
+          "estimated_price": 10500,
+          "listing_price": 11500,
+          "observation_count": 0,
+          "quick_sale_price": 9500,
+          "updated_at": "2026-08-17"
+        }
+      },
+      "Redmi 15 5G": {
+        "128": {
+          "confidence_score": 60,
+          "estimated_price": 11000,
+          "listing_price": 12000,
+          "observation_count": 0,
+          "quick_sale_price": 10000,
+          "updated_at": "2026-08-17"
+        },
+        "256": {
+          "confidence_score": 60,
+          "estimated_price": 12500,
+          "listing_price": 13600,
+          "observation_count": 0,
+          "quick_sale_price": 11400,
+          "updated_at": "2026-08-17"
+        }
+      },
+      "Redmi 15C": {
+        "128": {
+          "confidence_score": 60,
+          "estimated_price": 7500,
+          "listing_price": 8200,
+          "observation_count": 0,
+          "quick_sale_price": 6800,
+          "updated_at": "2026-08-17"
+        },
+        "256": {
+          "confidence_score": 60,
+          "estimated_price": 8500,
+          "listing_price": 9300,
+          "observation_count": 0,
+          "quick_sale_price": 7700,
+          "updated_at": "2026-08-17"
+        }
+      },
+      "Redmi 15C 5G": {
+        "128": {
+          "confidence_score": 60,
+          "estimated_price": 9000,
+          "listing_price": 9800,
+          "observation_count": 0,
+          "quick_sale_price": 8200,
+          "updated_at": "2026-08-17"
+        },
+        "256": {
+          "confidence_score": 60,
+          "estimated_price": 10000,
+          "listing_price": 10900,
+          "observation_count": 0,
+          "quick_sale_price": 9100,
+          "updated_at": "2026-08-17"
+        }
+      },
+      "Redmi Note 10": {
+        "128": {
+          "confidence_score": 78,
+          "estimated_price": 6500,
+          "listing_price": 7100,
+          "observation_count": 0,
+          "quick_sale_price": 5900,
+          "updated_at": "2026-08-17"
+        },
+        "64": {
+          "confidence_score": 78,
+          "estimated_price": 5500,
+          "listing_price": 6000,
+          "observation_count": 0,
+          "quick_sale_price": 5000,
+          "updated_at": "2026-08-17"
+        }
+      },
+      "Redmi Note 10 Pro": {
+        "128": {
+          "confidence_score": 78,
+          "estimated_price": 7500,
+          "listing_price": 8200,
+          "observation_count": 0,
+          "quick_sale_price": 6800,
+          "updated_at": "2026-08-17"
+        },
+        "64": {
+          "confidence_score": 78,
+          "estimated_price": 6500,
+          "listing_price": 7100,
+          "observation_count": 0,
+          "quick_sale_price": 5900,
+          "updated_at": "2026-08-17"
+        }
+      },
+      "Redmi Note 11": {
+        "128": {
+          "confidence_score": 78,
+          "estimated_price": 7500,
+          "listing_price": 8200,
+          "observation_count": 0,
+          "quick_sale_price": 6800,
+          "updated_at": "2026-08-17"
+        },
+        "64": {
+          "confidence_score": 78,
+          "estimated_price": 6500,
+          "listing_price": 7100,
+          "observation_count": 0,
+          "quick_sale_price": 5900,
+          "updated_at": "2026-08-17"
+        }
+      },
+      "Redmi Note 11 Pro": {
+        "128": {
+          "confidence_score": 78,
+          "estimated_price": 8500,
+          "listing_price": 9300,
+          "observation_count": 0,
+          "quick_sale_price": 7700,
+          "updated_at": "2026-08-17"
+        }
+      },
+      "Redmi Note 11 Pro+ 5G": {
+        "256": {
+          "confidence_score": 72,
+          "estimated_price": 10500,
+          "listing_price": 11500,
+          "observation_count": 0,
+          "quick_sale_price": 9500,
+          "updated_at": "2026-08-17"
+        }
+      },
+      "Redmi Note 12": {
+        "128": {
+          "confidence_score": 78,
+          "estimated_price": 8000,
+          "listing_price": 8700,
+          "observation_count": 0,
+          "quick_sale_price": 7300,
+          "updated_at": "2026-08-17"
+        },
+        "256": {
+          "confidence_score": 78,
+          "estimated_price": 9000,
+          "listing_price": 9800,
+          "observation_count": 0,
+          "quick_sale_price": 8200,
+          "updated_at": "2026-08-17"
+        }
+      },
+      "Redmi Note 12 5G": {
+        "128": {
+          "confidence_score": 72,
+          "estimated_price": 9000,
+          "listing_price": 9800,
+          "observation_count": 0,
+          "quick_sale_price": 8200,
+          "updated_at": "2026-08-17"
+        },
+        "256": {
+          "confidence_score": 72,
+          "estimated_price": 10000,
+          "listing_price": 10900,
+          "observation_count": 0,
+          "quick_sale_price": 9100,
+          "updated_at": "2026-08-17"
+        }
+      },
+      "Redmi Note 12 Pro": {
+        "256": {
+          "confidence_score": 72,
+          "estimated_price": 11000,
+          "listing_price": 12000,
+          "observation_count": 0,
+          "quick_sale_price": 10000,
+          "updated_at": "2026-08-17"
+        }
+      },
+      "Redmi Note 12 Pro 5G": {
+        "128": {
+          "confidence_score": 72,
+          "estimated_price": 11500,
+          "listing_price": 12500,
+          "observation_count": 0,
+          "quick_sale_price": 10500,
+          "updated_at": "2026-08-17"
+        },
+        "256": {
+          "confidence_score": 72,
+          "estimated_price": 13000,
+          "listing_price": 14200,
+          "observation_count": 0,
+          "quick_sale_price": 11800,
+          "updated_at": "2026-08-17"
+        }
+      },
+      "Redmi Note 12S": {
+        "128": {
+          "confidence_score": 72,
+          "estimated_price": 8500,
+          "listing_price": 9300,
+          "observation_count": 0,
+          "quick_sale_price": 7700,
+          "updated_at": "2026-08-17"
+        },
+        "256": {
+          "confidence_score": 72,
+          "estimated_price": 9500,
+          "listing_price": 10400,
+          "observation_count": 0,
+          "quick_sale_price": 8600,
+          "updated_at": "2026-08-17"
+        }
+      },
+      "Redmi Note 13": {
+        "128": {
+          "confidence_score": 72,
+          "estimated_price": 9000,
+          "listing_price": 9800,
+          "observation_count": 0,
+          "quick_sale_price": 8200,
+          "updated_at": "2026-08-17"
+        },
+        "256": {
+          "confidence_score": 72,
+          "estimated_price": 10500,
+          "listing_price": 11500,
+          "observation_count": 0,
+          "quick_sale_price": 9500,
+          "updated_at": "2026-08-17"
+        }
+      },
+      "Redmi Note 13 5G": {
+        "128": {
+          "confidence_score": 72,
+          "estimated_price": 10000,
+          "listing_price": 10900,
+          "observation_count": 0,
+          "quick_sale_price": 9100,
+          "updated_at": "2026-08-17"
+        },
+        "256": {
+          "confidence_score": 72,
+          "estimated_price": 11500,
+          "listing_price": 12500,
+          "observation_count": 0,
+          "quick_sale_price": 10500,
+          "updated_at": "2026-08-17"
+        }
+      },
+      "Redmi Note 13 Pro": {
+        "256": {
+          "confidence_score": 72,
+          "estimated_price": 13000,
+          "listing_price": 14200,
+          "observation_count": 0,
+          "quick_sale_price": 11800,
+          "updated_at": "2026-08-17"
+        },
+        "512": {
+          "confidence_score": 72,
+          "estimated_price": 14500,
+          "listing_price": 15800,
+          "observation_count": 0,
+          "quick_sale_price": 13200,
+          "updated_at": "2026-08-17"
+        }
+      },
+      "Redmi Note 13 Pro 5G": {
+        "256": {
+          "confidence_score": 72,
+          "estimated_price": 14000,
+          "listing_price": 15300,
+          "observation_count": 0,
+          "quick_sale_price": 12700,
+          "updated_at": "2026-08-17"
+        },
+        "512": {
+          "confidence_score": 72,
+          "estimated_price": 16000,
+          "listing_price": 17500,
+          "observation_count": 0,
+          "quick_sale_price": 14500,
+          "updated_at": "2026-08-17"
+        }
+      },
+      "Redmi Note 13 Pro+ 5G": {
+        "256": {
+          "confidence_score": 72,
+          "estimated_price": 16500,
+          "listing_price": 18000,
+          "observation_count": 0,
+          "quick_sale_price": 15000,
+          "updated_at": "2026-08-17"
+        },
+        "512": {
+          "confidence_score": 72,
+          "estimated_price": 18500,
+          "listing_price": 20200,
+          "observation_count": 0,
+          "quick_sale_price": 16800,
+          "updated_at": "2026-08-17"
+        }
+      },
+      "Redmi Note 14": {
+        "128": {
+          "confidence_score": 72,
+          "estimated_price": 10000,
+          "listing_price": 10900,
+          "observation_count": 0,
+          "quick_sale_price": 9100,
+          "updated_at": "2026-08-17"
+        },
+        "256": {
+          "confidence_score": 72,
+          "estimated_price": 12000,
+          "listing_price": 13100,
+          "observation_count": 0,
+          "quick_sale_price": 10900,
+          "updated_at": "2026-08-17"
+        }
+      },
+      "Redmi Note 14 5G": {
+        "128": {
+          "confidence_score": 72,
+          "estimated_price": 11500,
+          "listing_price": 12500,
+          "observation_count": 0,
+          "quick_sale_price": 10500,
+          "updated_at": "2026-08-17"
+        },
+        "256": {
+          "confidence_score": 72,
+          "estimated_price": 13500,
+          "listing_price": 14700,
+          "observation_count": 0,
+          "quick_sale_price": 12300,
+          "updated_at": "2026-08-17"
+        }
+      },
+      "Redmi Note 14 Pro": {
+        "256": {
+          "confidence_score": 72,
+          "estimated_price": 15000,
+          "listing_price": 16400,
+          "observation_count": 0,
+          "quick_sale_price": 13600,
+          "updated_at": "2026-08-17"
+        },
+        "512": {
+          "confidence_score": 72,
+          "estimated_price": 17000,
+          "listing_price": 18500,
+          "observation_count": 0,
+          "quick_sale_price": 15500,
+          "updated_at": "2026-08-17"
+        }
+      },
+      "Redmi Note 14 Pro 5G": {
+        "256": {
+          "confidence_score": 72,
+          "estimated_price": 16500,
+          "listing_price": 18000,
+          "observation_count": 0,
+          "quick_sale_price": 15000,
+          "updated_at": "2026-08-17"
+        },
+        "512": {
+          "confidence_score": 72,
+          "estimated_price": 18500,
+          "listing_price": 20200,
+          "observation_count": 0,
+          "quick_sale_price": 16800,
+          "updated_at": "2026-08-17"
+        }
+      },
+      "Redmi Note 14 Pro+ 5G": {
+        "256": {
+          "confidence_score": 72,
+          "estimated_price": 19000,
+          "listing_price": 20700,
+          "observation_count": 0,
+          "quick_sale_price": 17300,
+          "updated_at": "2026-08-17"
+        },
+        "512": {
+          "confidence_score": 72,
+          "estimated_price": 21500,
+          "listing_price": 23400,
+          "observation_count": 0,
+          "quick_sale_price": 19600,
+          "updated_at": "2026-08-17"
+        }
+      },
+      "Redmi Note 15": {
+        "256": {
+          "confidence_score": 60,
+          "estimated_price": 12500,
+          "listing_price": 13600,
+          "observation_count": 0,
+          "quick_sale_price": 11400,
+          "updated_at": "2026-08-17"
+        }
+      },
+      "Redmi Note 15 Pro": {
+        "256": {
+          "confidence_score": 60,
+          "estimated_price": 16500,
+          "listing_price": 18000,
+          "observation_count": 0,
+          "quick_sale_price": 15000,
+          "updated_at": "2026-08-17"
+        }
+      },
+      "Redmi Note 15 Pro 5G": {
+        "256": {
+          "confidence_score": 60,
+          "estimated_price": 21500,
+          "listing_price": 23400,
+          "observation_count": 0,
+          "quick_sale_price": 19600,
+          "updated_at": "2026-08-17"
+        },
+        "512": {
+          "confidence_score": 60,
+          "estimated_price": 24000,
+          "listing_price": 26200,
+          "observation_count": 0,
+          "quick_sale_price": 21800,
+          "updated_at": "2026-08-17"
+        }
+      },
+      "Redmi Note 15 Pro+ 5G": {
+        "256": {
+          "confidence_score": 60,
+          "estimated_price": 26000,
+          "listing_price": 28300,
+          "observation_count": 0,
+          "quick_sale_price": 23700,
+          "updated_at": "2026-08-17"
+        },
+        "512": {
+          "confidence_score": 60,
+          "estimated_price": 29000,
+          "listing_price": 31600,
+          "observation_count": 0,
+          "quick_sale_price": 26400,
+          "updated_at": "2026-08-17"
+        }
+      },
+      "Xiaomi 11 Lite 5G NE": {
+        "128": {
+          "confidence_score": 75,
+          "estimated_price": 10000,
+          "listing_price": 10900,
+          "observation_count": 0,
+          "quick_sale_price": 9100,
+          "updated_at": "2026-08-18"
+        },
+        "256": {
+          "confidence_score": 70,
+          "estimated_price": 11000,
+          "listing_price": 12000,
+          "observation_count": 0,
+          "quick_sale_price": 10000,
+          "updated_at": "2026-08-18"
+        }
+      },
+      "Xiaomi 11T": {
+        "128": {
+          "confidence_score": 75,
+          "estimated_price": 8000,
+          "listing_price": 8700,
+          "observation_count": 0,
+          "quick_sale_price": 7300,
+          "updated_at": "2026-08-18"
+        },
+        "256": {
+          "confidence_score": 70,
+          "estimated_price": 10000,
+          "listing_price": 10900,
+          "observation_count": 0,
+          "quick_sale_price": 9100,
+          "updated_at": "2026-08-18"
+        }
+      },
+      "Xiaomi 11T Pro": {
+        "128": {
+          "confidence_score": 65,
+          "estimated_price": 10000,
+          "listing_price": 10900,
+          "observation_count": 0,
+          "quick_sale_price": 9100,
+          "updated_at": "2026-08-18"
+        },
+        "256": {
+          "confidence_score": 70,
+          "estimated_price": 11000,
+          "listing_price": 12000,
+          "observation_count": 0,
+          "quick_sale_price": 10000,
+          "updated_at": "2026-08-18"
+        }
+      },
+      "Xiaomi 12": {
+        "128": {
+          "confidence_score": 65,
+          "estimated_price": 14000,
+          "listing_price": 15300,
+          "observation_count": 0,
+          "quick_sale_price": 12700,
+          "updated_at": "2026-08-18"
+        },
+        "256": {
+          "confidence_score": 75,
+          "estimated_price": 15500,
+          "listing_price": 16900,
+          "observation_count": 0,
+          "quick_sale_price": 14100,
+          "updated_at": "2026-08-18"
+        }
+      },
+      "Xiaomi 12 Lite": {
+        "128": {
+          "confidence_score": 70,
+          "estimated_price": 10000,
+          "listing_price": 10900,
+          "observation_count": 0,
+          "quick_sale_price": 9100,
+          "updated_at": "2026-08-18"
+        },
+        "256": {
+          "confidence_score": 70,
+          "estimated_price": 11500,
+          "listing_price": 12500,
+          "observation_count": 0,
+          "quick_sale_price": 10500,
+          "updated_at": "2026-08-18"
+        }
+      },
+      "Xiaomi 12 Pro": {
+        "256": {
+          "confidence_score": 70,
+          "estimated_price": 17000,
+          "listing_price": 18500,
+          "observation_count": 0,
+          "quick_sale_price": 15500,
+          "updated_at": "2026-08-18"
+        }
+      },
+      "Xiaomi 12T": {
+        "128": {
+          "confidence_score": 65,
+          "estimated_price": 12000,
+          "listing_price": 13100,
+          "observation_count": 0,
+          "quick_sale_price": 10900,
+          "updated_at": "2026-08-18"
+        },
+        "256": {
+          "confidence_score": 70,
+          "estimated_price": 13500,
+          "listing_price": 14700,
+          "observation_count": 0,
+          "quick_sale_price": 12300,
+          "updated_at": "2026-08-18"
+        }
+      },
+      "Xiaomi 12T Pro": {
+        "256": {
+          "confidence_score": 70,
+          "estimated_price": 16000,
+          "listing_price": 17400,
+          "observation_count": 0,
+          "quick_sale_price": 14600,
+          "updated_at": "2026-08-18"
+        }
+      },
+      "Xiaomi 13": {
+        "256": {
+          "confidence_score": 70,
+          "estimated_price": 19000,
+          "listing_price": 20700,
+          "observation_count": 0,
+          "quick_sale_price": 17300,
+          "updated_at": "2026-08-18"
+        }
+      },
+      "Xiaomi 13 Lite": {
+        "128": {
+          "confidence_score": 70,
+          "estimated_price": 12000,
+          "listing_price": 13100,
+          "observation_count": 0,
+          "quick_sale_price": 10900,
+          "updated_at": "2026-08-18"
+        },
+        "256": {
+          "confidence_score": 70,
+          "estimated_price": 13500,
+          "listing_price": 14700,
+          "observation_count": 0,
+          "quick_sale_price": 12300,
+          "updated_at": "2026-08-18"
+        }
+      },
+      "Xiaomi 13 Pro": {
+        "256": {
+          "confidence_score": 70,
+          "estimated_price": 23000,
+          "listing_price": 25100,
+          "observation_count": 0,
+          "quick_sale_price": 20900,
+          "updated_at": "2026-08-18"
+        },
+        "512": {
+          "confidence_score": 65,
+          "estimated_price": 26000,
+          "listing_price": 28300,
+          "observation_count": 0,
+          "quick_sale_price": 23700,
+          "updated_at": "2026-08-18"
+        }
+      },
+      "Xiaomi 13T": {
+        "256": {
+          "confidence_score": 75,
+          "estimated_price": 17000,
+          "listing_price": 18500,
+          "observation_count": 0,
+          "quick_sale_price": 15500,
+          "updated_at": "2026-08-18"
+        }
+      },
+      "Xiaomi 13T Pro": {
+        "1024": {
+          "confidence_score": 60,
+          "estimated_price": 25000,
+          "listing_price": 27300,
+          "observation_count": 0,
+          "quick_sale_price": 22800,
+          "updated_at": "2026-08-18"
+        },
+        "512": {
+          "confidence_score": 70,
+          "estimated_price": 22000,
+          "listing_price": 24000,
+          "observation_count": 0,
+          "quick_sale_price": 20000,
+          "updated_at": "2026-08-18"
+        }
+      },
+      "Xiaomi 14": {
+        "256": {
+          "confidence_score": 75,
+          "estimated_price": 30000,
+          "listing_price": 32700,
+          "observation_count": 0,
+          "quick_sale_price": 27300,
+          "updated_at": "2026-08-18"
+        },
+        "512": {
+          "confidence_score": 65,
+          "estimated_price": 32000,
+          "listing_price": 34900,
+          "observation_count": 0,
+          "quick_sale_price": 29100,
+          "updated_at": "2026-08-18"
+        }
+      },
+      "Xiaomi 14 Ultra": {
+        "512": {
+          "confidence_score": 75,
+          "estimated_price": 45500,
+          "listing_price": 49600,
+          "observation_count": 0,
+          "quick_sale_price": 41400,
+          "updated_at": "2026-08-18"
+        }
+      },
+      "Xiaomi 14T": {
+        "256": {
+          "confidence_score": 75,
+          "estimated_price": 21000,
+          "listing_price": 22900,
+          "observation_count": 0,
+          "quick_sale_price": 19100,
+          "updated_at": "2026-08-18"
+        },
+        "512": {
+          "confidence_score": 65,
+          "estimated_price": 24000,
+          "listing_price": 26200,
+          "observation_count": 0,
+          "quick_sale_price": 21800,
+          "updated_at": "2026-08-18"
+        }
+      },
+      "Xiaomi 14T Pro": {
+        "1024": {
+          "confidence_score": 60,
+          "estimated_price": 33000,
+          "listing_price": 36000,
+          "observation_count": 0,
+          "quick_sale_price": 30000,
+          "updated_at": "2026-08-18"
+        },
+        "512": {
+          "confidence_score": 70,
+          "estimated_price": 29000,
+          "listing_price": 31600,
+          "observation_count": 0,
+          "quick_sale_price": 26400,
+          "updated_at": "2026-08-18"
+        }
+      },
+      "Xiaomi 15": {
+        "256": {
+          "confidence_score": 70,
+          "estimated_price": 31500,
+          "listing_price": 34300,
+          "observation_count": 0,
+          "quick_sale_price": 28700,
+          "updated_at": "2026-08-18"
+        },
+        "512": {
+          "confidence_score": 60,
+          "estimated_price": 35000,
+          "listing_price": 38200,
+          "observation_count": 0,
+          "quick_sale_price": 31900,
+          "updated_at": "2026-08-18"
+        }
+      },
+      "Xiaomi 15 Ultra": {
+        "1024": {
+          "confidence_score": 60,
+          "estimated_price": 59000,
+          "listing_price": 64300,
+          "observation_count": 0,
+          "quick_sale_price": 53700,
+          "updated_at": "2026-08-18"
+        },
+        "512": {
+          "confidence_score": 65,
+          "estimated_price": 53000,
+          "listing_price": 57800,
+          "observation_count": 0,
+          "quick_sale_price": 48200,
+          "updated_at": "2026-08-18"
+        }
+      },
+      "Xiaomi 15T": {
+        "256": {
+          "confidence_score": 70,
+          "estimated_price": 25000,
+          "listing_price": 27300,
+          "observation_count": 0,
+          "quick_sale_price": 22800,
+          "updated_at": "2026-08-18"
+        },
+        "512": {
+          "confidence_score": 60,
+          "estimated_price": 28000,
+          "listing_price": 30500,
+          "observation_count": 0,
+          "quick_sale_price": 25500,
+          "updated_at": "2026-08-18"
+        }
+      },
+      "Xiaomi 15T Pro": {
+        "1024": {
+          "confidence_score": 55,
+          "estimated_price": 36000,
+          "listing_price": 39200,
+          "observation_count": 0,
+          "quick_sale_price": 32800,
+          "updated_at": "2026-08-18"
+        },
+        "256": {
+          "confidence_score": 60,
+          "estimated_price": 29000,
+          "listing_price": 31600,
+          "observation_count": 0,
+          "quick_sale_price": 26400,
+          "updated_at": "2026-08-18"
+        },
+        "512": {
+          "confidence_score": 65,
+          "estimated_price": 32000,
+          "listing_price": 34900,
+          "observation_count": 0,
+          "quick_sale_price": 29100,
+          "updated_at": "2026-08-18"
+        }
+      }
+    }
+  },
+  "note": "Bu dosya KaçaGider'de o tarihte kullanılan fiyat kataloğunun değiştirilemez tarihli snapshot'ıdır. Geçmişe dönük veri üretilmez; tarihçe yalnızca gerçek çalışma günlerinde birikir.",
+  "scope": "KaçaGider telefon fiyat kataloğu",
+  "snapshot_date": "2026-09-03",
+  "source": "data/phone-prices.js"
+}
