@@ -5,6 +5,18 @@
 
   function norm(v){var x=String(v||'').toLocaleLowerCase('tr-TR').replace(/ı/g,'i').replace(/ğ/g,'g').replace(/ü/g,'u').replace(/ş/g,'s').replace(/ö/g,'o').replace(/ç/g,'c');x=x.replace(/acilmiyo[r]?/g,'acilmiyor').replace(/kapandi/g,'kapandi acilmiyor').replace(/tepki vermiyo[r]?/g,'tepki vermiyor acilmiyor').replace(/siyah ekran/g,'siyah ekran acilmiyor').replace(/sarj(i|ı)? da oldugu halde/g,'sarjda oldugu halde acilmiyor');return x.trim();}
   function ga(name,params){if(typeof window.gtag==='function')window.gtag('event',name,Object.assign({page_path:location.pathname},params||{}));}
+  var KG_AI_SUPPORT_ENDPOINT='https://cfkrmzoghpoddkvzplyq.supabase.co/functions/v1/kg-support-ai';
+  var kgSupportHistory=[];
+  function escapeHtml(v){return String(v||'').replace(/[&<>"']/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','\"':'&quot;',"'":'&#39;'}[c]||c;});}
+  async function getAiSupportReply(text){
+    try{
+      var res=await fetch(KG_AI_SUPPORT_ENDPOINT,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({message:text,history:kgSupportHistory.slice(-6)})});
+      if(!res.ok)return null;
+      var data=await res.json();
+      var reply=String(data&&data.reply||'').trim();
+      return reply||null;
+    }catch(_e){return null;}
+  }
 
   var techKnowledge=[
     {icon:'⚫',q:'Telefon kapandı ve açılmıyor',keys:'telefon açılmıyor acilmiyor cihaz açılmıyor kapandı açılmıyor siyah ekran tepki vermiyor güç gelmiyor iphone açılmıyor samsung açılmıyor android açılmıyor şarjda olduğu halde açılmıyor sarjda oldugu halde acilmiyor',answer:'Telefon şarjı olduğu halde kapandı ve hiç açılmıyorsa önce zorla yeniden başlatmayı dene. Bu işlem verileri silmez. iPhone 8 ve daha yeni modellerde Ses Aç tuşuna kısa bas, Ses Kıs tuşuna kısa bas, ardından yan tuşa Apple logosu görünene kadar basılı tut. Android cihazlarda çoğu modelde güç tuşuna 15-30 saniye basılı tutmak veya güç + ses kısma kombinasyonu işe yarayabilir.',steps:['Cihazı sağlam bir kablo ve adaptörle en az 30 dakika şarjda bırak.','iPhone 8 ve sonrası: Ses Aç → Ses Kıs → yan tuşa Apple logosuna kadar basılı tut.','Android: güç tuşunu 15-30 saniye basılı tut; olmazsa güç + ses kısma kombinasyonunu dene.','Cihaz aşırı ısınıyorsa, şişme/yanık kokusu varsa veya sıvı teması olduysa kullanmayı bırak ve servise başvur.']},
@@ -140,7 +152,22 @@
     var launch=wrap.querySelector('.kg-support-launch'),panel=wrap.querySelector('.kg-support-panel'),closer=wrap.querySelector('.kg-support-close'),form=wrap.querySelector('.kg-support-form'),input=form.querySelector('input'),messages=wrap.querySelector('.kg-support-messages');
     function toggle(open){panel.hidden=!open;launch.setAttribute('aria-expanded',open?'true':'false');if(open){setTimeout(function(){input.focus();},50);ga('support_assistant_opened');}}
     launch.addEventListener('click',function(){toggle(panel.hidden);});closer.addEventListener('click',function(){toggle(false);});
-    function send(text){text=String(text||'').trim();if(!text)return;var u=document.createElement('div');u.className='kg-support-msg user';u.innerHTML='<p></p>';u.querySelector('p').textContent=text;messages.appendChild(u);var reply=getSupportReply(text);var b=document.createElement('div');b.className='kg-support-msg bot';var html='<b>'+reply.title+'</b><p>'+reply.body+'</p>';if(reply.steps&&reply.steps.length)html+='<ol>'+reply.steps.map(function(s){return '<li>'+s+'</li>';}).join('')+'</ol>';if(reply.siteItem)html+='<button class="kg-support-show" type="button">Bilgi Merkezi’nde göster</button>';b.innerHTML=html;messages.appendChild(b);if(reply.siteItem){b.querySelector('.kg-support-show').addEventListener('click',function(){toggle(false);if(search)search.value='';chooseFilter('all');items.forEach(function(x){x.hidden=x!==reply.siteItem;});if(count)count.textContent='1 sonuç';reply.siteItem.classList.add('open');reply.siteItem.querySelector('.kg-help-question').setAttribute('aria-expanded','true');reply.siteItem.scrollIntoView({behavior:'smooth',block:'center'});});}messages.scrollTop=messages.scrollHeight;ga('support_assistant_question',{question:text.slice(0,100)});}
+    async function send(text){
+      text=String(text||'').trim();if(!text)return;
+      var u=document.createElement('div');u.className='kg-support-msg user';u.innerHTML='<p></p>';u.querySelector('p').textContent=text;messages.appendChild(u);
+      var pending=document.createElement('div');pending.className='kg-support-msg bot';pending.innerHTML='<b>KaçaGider AI Destek</b><p>Yanıt hazırlanıyor…</p>';messages.appendChild(pending);messages.scrollTop=messages.scrollHeight;
+      var localReply=getSupportReply(text);
+      var aiText=await getAiSupportReply(text);
+      var reply=aiText?{title:'KaçaGider AI Destek',body:aiText}:localReply;
+      var html='<b>'+escapeHtml(reply.title)+'</b><p>'+escapeHtml(reply.body).replace(/\n/g,'<br>')+'</p>';
+      if(reply.steps&&reply.steps.length)html+='<ol>'+reply.steps.map(function(step){return '<li>'+escapeHtml(step)+'</li>';}).join('')+'</ol>';
+      if(reply.siteItem)html+='<button class="kg-support-show" type="button">Bilgi Merkezi’nde göster</button>';
+      pending.innerHTML=html;
+      if(reply.siteItem){pending.querySelector('.kg-support-show').addEventListener('click',function(){toggle(false);if(search)search.value='';chooseFilter('all');items.forEach(function(x){x.hidden=x!==reply.siteItem;});if(count)count.textContent='1 sonuç';reply.siteItem.classList.add('open');reply.siteItem.querySelector('.kg-help-question').setAttribute('aria-expanded','true');reply.siteItem.scrollIntoView({behavior:'smooth',block:'center'});});}
+      kgSupportHistory.push({role:'user',content:text},{role:'assistant',content:String(reply.body||'').slice(0,1200)});
+      if(kgSupportHistory.length>8)kgSupportHistory=kgSupportHistory.slice(-8);
+      messages.scrollTop=messages.scrollHeight;ga('support_assistant_question',{question:text.slice(0,100),ai_used:!!aiText});
+    }
     form.addEventListener('submit',function(e){e.preventDefault();var v=input.value;input.value='';send(v);});
     [].slice.call(wrap.querySelectorAll('.kg-support-suggestions button')).forEach(function(b){b.addEventListener('click',function(){send(b.textContent);});});
     root.addEventListener('click',function(e){var b=e.target.closest&&e.target.closest('.kg-help-chat-this');if(!b)return;var k=techKnowledge[Number(b.getAttribute('data-chat-index'))];if(!k)return;toggle(true);send(k.q);});
