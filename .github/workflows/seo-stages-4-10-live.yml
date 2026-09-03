@@ -8,8 +8,10 @@ on:
       - "scripts/apply-seo-stages-4-10.py"
       - "scripts/seo-stages-4-10-cleanup.py"
       - "scripts/search-console-opportunity-engine.py"
+      - "scripts/update-sitemap-lastmod.py"
       - "data/phone-prices.js"
       - "data/search-console/**"
+      - "bilgi-merkezi/**"
       - ".github/workflows/seo-stages-4-10-live.yml"
   schedule:
     - cron: "17 4 * * 1"
@@ -43,11 +45,14 @@ jobs:
       - name: Separate real storage from other variants
         run: python3 scripts/seo-stages-4-10-cleanup.py
 
+      - name: Sync sitemap canonical pages and lastmod
+        run: python3 scripts/update-sitemap-lastmod.py
+
       - name: Build Search Console opportunity report
         run: python3 scripts/search-console-opportunity-engine.py
 
       - name: Validate Python engines
-        run: python3 -m py_compile scripts/apply-seo-stages-4-10.py scripts/seo-stages-4-10-cleanup.py scripts/search-console-opportunity-engine.py
+        run: python3 -m py_compile scripts/apply-seo-stages-4-10.py scripts/seo-stages-4-10-cleanup.py scripts/search-console-opportunity-engine.py scripts/update-sitemap-lastmod.py
 
       - name: Full SEO audit
         run: python3 scripts/seo-site-audit.py
