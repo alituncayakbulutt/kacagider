@@ -1,0 +1,64 @@
+name: Information Center AI Connect
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/info-center-ai-connect.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  patch-ai-support:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+      - name: Connect support widget to Supabase AI function
+        shell: bash
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+
+          p=Path('assets/info-center.js')
+          s=p.read_text(encoding='utf-8')
+
+          if 'var KG_AI_SUPPORT_ENDPOINT=' not in s:
+              marker="  function ga(name,params){if(typeof window.gtag==='function')window.gtag('event',name,Object.assign({page_path:location.pathname},params||{}));}\n"
+              block="""  var KG_AI_SUPPORT_ENDPOINT='https://cfkrmzoghpoddkvzplyq.supabase.co/functions/v1/kg-support-ai';\n  var kgSupportHistory=[];\n  function escapeHtml(v){return String(v||'').replace(/[&<>\"']/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','\\\"':'&quot;',\"'\":'&#39;'}[c]||c;});}\n  async function getAiSupportReply(text){\n    try{\n      var res=await fetch(KG_AI_SUPPORT_ENDPOINT,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({message:text,history:kgSupportHistory.slice(-6)})});\n      if(!res.ok)return null;\n      var data=await res.json();\n      var reply=String(data&&data.reply||'').trim();\n      return reply||null;\n    }catch(_e){return null;}\n  }\n"""
+              if marker not in s: raise SystemExit('ga marker not found')
+              s=s.replace(marker,marker+block,1)
+
+          old="""    function send(text){text=String(text||'').trim();if(!text)return;var u=document.createElement('div');u.className='kg-support-msg user';u.innerHTML='<p></p>';u.querySelector('p').textContent=text;messages.appendChild(u);var reply=getSupportReply(text);var b=document.createElement('div');b.className='kg-support-msg bot';var html='<b>'+reply.title+'</b><p>'+reply.body+'</p>';if(reply.steps&&reply.steps.length)html+='<ol>'+reply.steps.map(function(s){return '<li>'+s+'</li>';}).join('')+'</ol>';if(reply.siteItem)html+='<button class=\"kg-support-show\" type=\"button\">Bilgi Merkezi’nde göster</button>';b.innerHTML=html;messages.appendChild(b);if(reply.siteItem){b.querySelector('.kg-support-show').addEventListener('click',function(){toggle(false);if(search)search.value='';chooseFilter('all');items.forEach(function(x){x.hidden=x!==reply.siteItem;});if(count)count.textContent='1 sonuç';reply.siteItem.classList.add('open');reply.siteItem.querySelector('.kg-help-question').setAttribute('aria-expanded','true');reply.siteItem.scrollIntoView({behavior:'smooth',block:'center'});});}messages.scrollTop=messages.scrollHeight;ga('support_assistant_question',{question:text.slice(0,100)});}\n"""
+
+          new="""    async function send(text){\n      text=String(text||'').trim();if(!text)return;\n      var u=document.createElement('div');u.className='kg-support-msg user';u.innerHTML='<p></p>';u.querySelector('p').textContent=text;messages.appendChild(u);\n      var pending=document.createElement('div');pending.className='kg-support-msg bot';pending.innerHTML='<b>KaçaGider AI Destek</b><p>Yanıt hazırlanıyor…</p>';messages.appendChild(pending);messages.scrollTop=messages.scrollHeight;\n      var localReply=getSupportReply(text);\n      var aiText=await getAiSupportReply(text);\n      var reply=aiText?{title:'KaçaGider AI Destek',body:aiText}:localReply;\n      var html='<b>'+escapeHtml(reply.title)+'</b><p>'+escapeHtml(reply.body).replace(/\\n/g,'<br>')+'</p>';\n      if(reply.steps&&reply.steps.length)html+='<ol>'+reply.steps.map(function(step){return '<li>'+escapeHtml(step)+'</li>';}).join('')+'</ol>';\n      if(reply.siteItem)html+='<button class=\"kg-support-show\" type=\"button\">Bilgi Merkezi’nde göster</button>';\n      pending.innerHTML=html;\n      if(reply.siteItem){pending.querySelector('.kg-support-show').addEventListener('click',function(){toggle(false);if(search)search.value='';chooseFilter('all');items.forEach(function(x){x.hidden=x!==reply.siteItem;});if(count)count.textContent='1 sonuç';reply.siteItem.classList.add('open');reply.siteItem.querySelector('.kg-help-question').setAttribute('aria-expanded','true');reply.siteItem.scrollIntoView({behavior:'smooth',block:'center'});});}\n      kgSupportHistory.push({role:'user',content:text},{role:'assistant',content:String(reply.body||'').slice(0,1200)});\n      if(kgSupportHistory.length>8)kgSupportHistory=kgSupportHistory.slice(-8);\n      messages.scrollTop=messages.scrollHeight;ga('support_assistant_question',{question:text.slice(0,100),ai_used:!!aiText});\n    }\n"""
+
+          if old not in s:
+              raise SystemExit('send function marker not found')
+          s=s.replace(old,new,1)
+          p.write_text(s,encoding='utf-8')
+
+          layout=Path('_layouts/seo.html')
+          h=layout.read_text(encoding='utf-8')
+          import re
+          h=re.sub(r'/assets/info-center\.js\?v=[^\"\']+', '/assets/info-center.js?v=20260903-ai1', h)
+          layout.write_text(h,encoding='utf-8')
+          PY
+          grep -F 'KG_AI_SUPPORT_ENDPOINT' assets/info-center.js
+          grep -F 'KaçaGider AI Destek' assets/info-center.js
+          grep -F '/assets/info-center.js?v=20260903-ai1' _layouts/seo.html
+      - name: Commit AI support connection
+        shell: bash
+        run: |
+          if git diff --quiet -- assets/info-center.js _layouts/seo.html; then
+            echo 'AI support connection already current.'
+            exit 0
+          fi
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add assets/info-center.js _layouts/seo.html
+          git commit -m 'Bilgi Merkezi destek asistanını AI servisine bağla'
+          git push origin HEAD:main
