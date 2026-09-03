@@ -1,0 +1,70 @@
+name: Info Center Phone Wont Start Fix
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/info-center-phone-wont-start.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  patch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+
+      - name: Add phone wont start knowledge and improve matching
+        shell: bash
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          p=Path('assets/info-center.js')
+          s=p.read_text(encoding='utf-8')
+
+          marker="  var techKnowledge=[\n"
+          entry="""  var techKnowledge=[\n    {icon:'⚫',q:'Telefon kapandı ve açılmıyor',keys:'telefon açılmıyor acilmiyor cihaz açılmıyor kapandı açılmıyor siyah ekran tepki vermiyor güç gelmiyor iphone açılmıyor samsung açılmıyor android açılmıyor şarjda olduğu halde açılmıyor sarjda oldugu halde acilmiyor',answer:'Telefon şarjı olduğu halde kapandı ve hiç açılmıyorsa önce zorla yeniden başlatmayı dene. Bu işlem verileri silmez. iPhone 8 ve daha yeni modellerde Ses Aç tuşuna kısa bas, Ses Kıs tuşuna kısa bas, ardından yan tuşa Apple logosu görünene kadar basılı tut. Android cihazlarda çoğu modelde güç tuşuna 15-30 saniye basılı tutmak veya güç + ses kısma kombinasyonu işe yarayabilir.',steps:['Cihazı sağlam bir kablo ve adaptörle en az 30 dakika şarjda bırak.','iPhone 8 ve sonrası: Ses Aç → Ses Kıs → yan tuşa Apple logosuna kadar basılı tut.','Android: güç tuşunu 15-30 saniye basılı tut; olmazsa güç + ses kısma kombinasyonunu dene.','Cihaz aşırı ısınıyorsa, şişme/yanık kokusu varsa veya sıvı teması olduysa kullanmayı bırak ve servise başvur.']},\n"""
+          if "q:'Telefon kapandı ve açılmıyor'" not in s:
+              if marker not in s:
+                  raise SystemExit('techKnowledge marker bulunamadi')
+              s=s.replace(marker,entry,1)
+
+          # Normalize common natural-language variants so the current matcher sees the same intent.
+          old="function norm(v){return String(v||'').toLocaleLowerCase('tr-TR').replace(/ı/g,'i').replace(/ğ/g,'g').replace(/ü/g,'u').replace(/ş/g,'s').replace(/ö/g,'o').replace(/ç/g,'c').trim();}"
+          new="function norm(v){var x=String(v||'').toLocaleLowerCase('tr-TR').replace(/ı/g,'i').replace(/ğ/g,'g').replace(/ü/g,'u').replace(/ş/g,'s').replace(/ö/g,'o').replace(/ç/g,'c');x=x.replace(/acilmiyo[r]?/g,'acilmiyor').replace(/kapandi/g,'kapandi acilmiyor').replace(/tepki vermiyo[r]?/g,'tepki vermiyor acilmiyor').replace(/siyah ekran/g,'siyah ekran acilmiyor').replace(/sarj(i|ı)? da oldugu halde/g,'sarjda oldugu halde acilmiyor');return x.trim();}"
+          if old in s:
+              s=s.replace(old,new,1)
+
+          p.write_text(s,encoding='utf-8')
+          PY
+
+      - name: Bump info center asset version
+        shell: bash
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          p=Path('_layouts/seo.html')
+          s=p.read_text(encoding='utf-8')
+          s=s.replace('/assets/info-center.js?v=20260903-2','/assets/info-center.js?v=20260903-3')
+          s=s.replace('/assets/info-center.js?v=20260902-1','/assets/info-center.js?v=20260903-3')
+          p.write_text(s,encoding='utf-8')
+          PY
+
+      - name: Verify
+        run: |
+          grep -F "Telefon kapandı ve açılmıyor" assets/info-center.js
+          grep -F '/assets/info-center.js?v=20260903-3' _layouts/seo.html
+
+      - name: Commit
+        shell: bash
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add assets/info-center.js _layouts/seo.html
+          if git diff --cached --quiet; then exit 0; fi
+          git commit -m 'Destek asistanına telefon açılmıyor çözümü ekle'
+          git push origin HEAD:main
