@@ -1,0 +1,48 @@
+name: Trust Footer Live
+
+on:
+  push:
+    paths:
+      - '.github/workflows/trust-footer-live.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - name: Connect global footer
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+
+          tag = '<script src="/assets/site-footer.js?v=20260904-1" defer></script>'
+          targets = [Path('index.html'), Path('_layouts/seo.html'), Path('ilanlar/index.html')]
+
+          for path in targets:
+              text = path.read_text(encoding='utf-8')
+              if '/assets/site-footer.js?' in text:
+                  import re
+                  text = re.sub(r'<script src="/assets/site-footer\.js\?v=[^"]+" defer></script>', tag, text)
+              elif '</head>' in text:
+                  text = text.replace('</head>', tag + '\n</head>', 1)
+              else:
+                  raise SystemExit(f'head closing tag not found: {path}')
+              path.write_text(text, encoding='utf-8')
+              print('connected', path)
+          PY
+      - name: Commit changes
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add index.html _layouts/seo.html ilanlar/index.html
+          if git diff --cached --quiet; then
+            echo "No changes"
+          else
+            git commit -m "Trust: publish global footer across site"
+            git push origin main
+          fi
