@@ -1,6 +1,14 @@
 (function(){
   'use strict';
 
+  if(!document.querySelector('script[data-kg-member-phase3]')){
+    var memberScript=document.createElement('script');
+    memberScript.src='/assets/member-value-phase3.js?v=20260904-1';
+    memberScript.defer=true;
+    memberScript.dataset.kgMemberPhase3='1';
+    document.head.appendChild(memberScript);
+  }
+
   function addStyles(){
     if(document.getElementById('kgHomeInfoCenterCtaStyle')) return;
     var style=document.createElement('style');
