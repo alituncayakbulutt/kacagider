@@ -48,8 +48,8 @@
         +'<div class="kg-result-v2-head"><strong>Sonuç Özeti</strong><span class="kg-result-v2-badge">V2</span></div>'
         +'<div class="kg-result-v2-range"><span>Tahmini satış aralığı</span><strong id="kgResultRange">—</strong></div>'
         +'<div class="kg-result-v2-grid">'
-        +'<div class="kg-result-v2-cell"><span>Sonuç güncellendi</span><strong id="kgResultUpdated">—</strong></div>'
-        +'<div class="kg-result-v2-cell"><span>Veri / analiz kapsamı</span><strong id="kgResultDataCount">—</strong></div>'
+        +'<div class="kg-result-v2-cell"><span>Hesaplama zamanı</span><strong id="kgResultUpdated">—</strong></div>'
+        +'<div class="kg-result-v2-cell"><span>Veri kapsamı</span><strong id="kgResultDataCount">—</strong></div>'
         +'</div>'
         +'<div class="kg-result-v2-confidence" id="kgResultConfidence"><strong>Güven skoru</strong><br>Fiyat hesaplandığında güven seviyesi burada açıklanacak.</div>'
         +'<div class="kg-result-v2-actions">'
@@ -81,7 +81,7 @@
     var match=text.match(/([0-9]+)\s+doğrulanmış piyasa gözlemi/i);
     if(match&&Number(match[1])>0) return Number(match[1]).toLocaleString('tr-TR')+' doğrulanmış gözlem';
     if(/Türkiye ikinci el piyasası/i.test(text)) return 'Türkiye 2. el piyasa analizi';
-    return 'Piyasa + kondisyon analizi';
+    return 'Piyasa verisi + cihaz kondisyonu';
   }
 
   function confidenceExplanation(score){
