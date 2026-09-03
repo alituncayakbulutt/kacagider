@@ -1,0 +1,46 @@
+name: Result V2 Transparency
+
+on:
+  push:
+    paths:
+      - '.github/workflows/result-v2-transparency.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - name: Improve result transparency
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          import re
+
+          p=Path('assets/result-v2.js')
+          s=p.read_text(encoding='utf-8')
+          s=s.replace('<span>Sonuç güncellendi</span><strong id="kgResultUpdated">—</strong>', '<span>Hesaplama zamanı</span><strong id="kgResultUpdated">—</strong>')
+          s=s.replace('<span>Veri / analiz kapsamı</span><strong id="kgResultDataCount">—</strong>', '<span>Veri kapsamı</span><strong id="kgResultDataCount">—</strong>')
+          s=s.replace("return 'Piyasa + kondisyon analizi';", "return 'Piyasa verisi + cihaz kondisyonu';")
+          p.write_text(s,encoding='utf-8')
+
+          i=Path('index.html')
+          html=i.read_text(encoding='utf-8')
+          html=re.sub(r'/assets/result-v2\.js\?v=[^\"\']+', '/assets/result-v2.js?v=20260904-2', html)
+          i.write_text(html,encoding='utf-8')
+          PY
+      - name: Commit changes
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/result-v2.js index.html
+          if git diff --cached --quiet; then
+            echo "No changes"
+          else
+            git commit -m "FAZ 2: clarify result timing and data labels"
+            git push origin main
+          fi
