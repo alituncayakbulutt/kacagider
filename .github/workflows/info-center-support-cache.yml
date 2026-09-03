@@ -1,0 +1,44 @@
+name: Information Center Support Cache Bust
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/info-center-support-cache.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  patch-assets:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+      - name: Bump Information Center asset versions
+        shell: bash
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          p=Path('_layouts/seo.html')
+          s=p.read_text(encoding='utf-8')
+          s=s.replace('/assets/info-center.css?v=20260902-1','/assets/info-center.css?v=20260903-2')
+          s=s.replace('/assets/info-center.js?v=20260902-1','/assets/info-center.js?v=20260903-2')
+          p.write_text(s,encoding='utf-8')
+          PY
+          grep -F '/assets/info-center.css?v=20260903-2' _layouts/seo.html
+          grep -F '/assets/info-center.js?v=20260903-2' _layouts/seo.html
+      - name: Commit version bump
+        shell: bash
+        run: |
+          if git diff --quiet -- _layouts/seo.html; then
+            echo 'Asset versions already current.'
+            exit 0
+          fi
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add _layouts/seo.html
+          git commit -m 'Bilgi Merkezi destek assetlerini yenile'
+          git push origin HEAD:main
