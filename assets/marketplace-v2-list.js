@@ -4,7 +4,7 @@ const LOCAL_FAV='kg_marketplace_favorites_v1';
 const icon={Telefon:'📱',Tablet:'▣',Bilgisayar:'💻','Akıllı Saat':'⌚','Oyun Konsolu':'🎮'};
 const state={all:[],favs:new Set(),user:null,client:null,category:'all'};
 const els={grid:document.getElementById('grid'),count:document.getElementById('count'),search:document.getElementById('search'),sort:document.getElementById('sort'),brand:document.getElementById('brandFilter'),storage:document.getElementById('storageFilter'),city:document.getElementById('cityFilter'),min:document.getElementById('minPrice'),max:document.getElementById('maxPrice'),fit:document.getElementById('priceFit'),verified:document.getElementById('verifiedOnly'),reset:document.getElementById('resetFilters'),filters:document.getElementById('filters')};
-function esc(s){return String(s||'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot',"'":'&#039;'}[c]))}
+function esc(s){return String(s||'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#039;'}[c]))}
 function money(v){return Number(v||0).toLocaleString('tr-TR')+' TL'}
 function dateText(v){if(!v)return'—';const d=new Date(v);if(Number.isNaN(d.getTime()))return'—';return new Intl.DateTimeFormat('tr-TR',{day:'2-digit',month:'short',year:'numeric',timeZone:'Europe/Istanbul'}).format(d)}
 function title(x){const b=String(x.brand||'').trim(),m=String(x.model||'').trim();if(!b)return m;if(!m)return b;return m.toLocaleLowerCase('tr-TR').startsWith(b.toLocaleLowerCase('tr-TR')+' ')?m:b+' '+m}
