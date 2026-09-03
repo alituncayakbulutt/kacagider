@@ -1,11 +1,11 @@
 ---
 layout: "seo"
-seo_title: "Samsung Galaxy Watch8 Classic 46 mm Ne Kadar Eder? | KaçaGider"
-seo_description: "Samsung Galaxy Watch8 Classic 46 mm ne kadar eder? İkinci el fiyatı ve piyasa değerini cihaz özellikleri ve kondisyonuna göre KaçaGider ile öğren."
-seo_h1: "Samsung Galaxy Watch8 Classic 46 mm Ne Kadar Eder? Kaça Satılır? 2026 İkinci El Fiyatı"
-seo_intro: "Samsung Galaxy Watch8 Classic 46 mm Ne Kadar Eder? kaça satılır? 2026 ikinci el değeri; kasa boyutu, ekran, batarya ve genel cihaz durumu gibi özelliklere göre değişir. KaçaGider ile cihazınızın ortalama satış değerini ücretsiz hesaplayabilirsiniz."
-seo_context_heading: "Samsung Galaxy Watch8 Classic 46 mm Ne Kadar Eder? ikinci el değeri nasıl hesaplanır?"
-seo_context: "Samsung Galaxy Watch8 Classic 46 mm Ne Kadar Eder? ikinci el fiyatı belirlenirken kasa boyutu, ekran, batarya ve genel cihaz durumu birlikte değerlendirilir. Cihazın kondisyonu ve çalışan özelliklerinin durumu ortalama satış değerini doğrudan etkiler. KaçaGider üzerinden bilgilerinizi seçerek 2026 için güncel ikinci el piyasa değerini görebilirsiniz."
+seo_title: "Samsung Galaxy Watch8 Classic 46 mm Kaça Satılır? 2026 | KaçaGider"
+seo_description: "Samsung Galaxy Watch8 Classic 46 mm kaça satılır? Kasa, ekran, batarya ve genel cihaz durumuna göre 2026 güncel ikinci el ortalama satış değerini KaçaGider ile ücretsiz hesapla."
+seo_h1: "Samsung Galaxy Watch8 Classic 46 mm Kaça Satılır? 2026 İkinci El Fiyatı"
+seo_intro: "Samsung Galaxy Watch8 Classic 46 mm kaça satılır? 2026 ikinci el değeri; kasa boyutu, ekran, batarya ve genel cihaz durumu gibi özelliklere göre değişir. KaçaGider ile cihazınızın ortalama satış değerini ücretsiz hesaplayabilirsiniz."
+seo_context_heading: "Samsung Galaxy Watch8 Classic 46 mm ikinci el değeri nasıl hesaplanır?"
+seo_context: "Samsung Galaxy Watch8 Classic 46 mm ikinci el fiyatı belirlenirken kasa boyutu, ekran, batarya ve genel cihaz durumu birlikte değerlendirilir. Cihazın kondisyonu ve çalışan özelliklerinin durumu ortalama satış değerini doğrudan etkiler. KaçaGider üzerinden bilgilerinizi seçerek 2026 için güncel ikinci el piyasa değerini görebilirsiniz."
 seo_breadcrumbs: [{"label":"Ana Sayfa","url":"/"},{"label":"Akıllı Saat","url":"/akilli-saat/"},{"label":"Samsung","url":"/akilli-saat/samsung/"},{"label":"Galaxy Watch8 Classic","url":"/akilli-saat/samsung/galaxy-watch8-classic/"},{"label":"46 mm","url":"/akilli-saat/samsung/galaxy-watch8-classic/46mm/"}]
 seo_links: [{"label":"Akıllı Saat değerleme","url":"/akilli-saat/"},{"label":"İkinci el fiyat nasıl hesaplanır?","url":"/ikinci-el-fiyat-nasil-hesaplanir/"},{"label":"Galaxy Watch8 Classic ana sayfası","url":"/akilli-saat/samsung/galaxy-watch8-classic/"},{"label":"Değerini öğren ve ücretsiz ilan ver","url":"/ucretsiz-ilan-ver/","kg_link_cluster":"listing-intent-v2"},{"label":"KaçaGider piyasa verisi ve fiyat geçmişi","url":"/piyasa-verisi/","kg_link_cluster":"market-data-v1"},{"label":"Model karşılaştırma rehberi","url":"/model-karsilastirma/","kg_link_cluster":"comparison-intent-v1"}]
 seo_links_heading: "Samsung Galaxy Watch8 Classic 46 mm ilgili sayfalar"

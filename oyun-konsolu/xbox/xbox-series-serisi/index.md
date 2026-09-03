@@ -2,12 +2,12 @@
 layout: "seo"
 seo_page_type: "series_hub"
 seo_hub_version: "brand-series-v1"
-seo_title: "Xbox Series Serisi İkinci El Fiyatları ve Piyasa Değeri | KaçaGider"
-seo_description: "Xbox Series Serisi ikinci el fiyatları ve piyasa değeri için gerçek modelinizi seçin; cihaz durumuna göre güncel satış değeri referansını KaçaGider ile ücretsiz kontrol edin."
-seo_h1: "Xbox Series Serisi İkinci El Fiyatları ve Piyasa Değeri"
-seo_intro: "Xbox Series Serisi modellerinin ne kadar ettiğini, kaça satılabileceğini ve güncel ikinci el piyasa değerini öğrenmek için modelinizi seçin. Değerleme cihazın gerçek özellikleri ve kondisyonuna göre yapılır."
-seo_context_heading: "Xbox Series Serisi için ikinci el değerleme"
-seo_context: "Xbox Series Serisi ailesindeki gerçek modelleri tek merkezde inceleyin. Modelinizi seçerek güncel ikinci el piyasa değerini kontrol edin ve isterseniz ücretsiz ilan verme akışına devam edin."
+seo_title: "Xbox Series Serisi İkinci El Fiyatları | KaçaGider"
+seo_description: "Xbox Series Serisi İkinci El Fiyatları ve Piyasa Değeri Kaça Satılır? ne kadar eder? İkinci el fiyatı ve piyasa değerini cihaz özellikleri ve kondisyonuna göre KaçaGider ile öğren."
+seo_h1: "Xbox Series Serisi İkinci El Fiyatları ve Piyasa Değeri Kaça Satılır? 2026 İkinci El Fiyatı"
+seo_intro: "Xbox Series Serisi İkinci El Fiyatları ve Piyasa Değeri kaça satılır? 2026 ikinci el değeri; depolama, kozmetik durum, aksesuarlar ve çalışma durumu gibi özelliklere göre değişir. KaçaGider ile cihazınızın ortalama satış değerini ücretsiz hesaplayabilirsiniz."
+seo_context_heading: "Xbox Series Serisi İkinci El Fiyatları ve Piyasa Değeri ikinci el değeri nasıl hesaplanır?"
+seo_context: "Xbox Series Serisi İkinci El Fiyatları ve Piyasa Değeri ikinci el fiyatı belirlenirken depolama, kozmetik durum, aksesuarlar ve çalışma durumu birlikte değerlendirilir. Cihazın kondisyonu ve çalışan özelliklerinin durumu ortalama satış değerini doğrudan etkiler. KaçaGider üzerinden bilgilerinizi seçerek 2026 için güncel ikinci el piyasa değerini görebilirsiniz."
 seo_breadcrumbs: [{"label":"Ana Sayfa","url":"/"},{"label":"Oyun Konsolu","url":"/oyun-konsolu/"},{"label":"Xbox","url":"/oyun-konsolu/xbox/"},{"label":"Xbox Series Serisi","url":"/oyun-konsolu/xbox/xbox-series-serisi/"}]
 seo_links: [{"label":"Xbox Series X 2 TB","url":"/oyun-konsolu/xbox/xbox-series-x-2-tb/"},{"label":"Xbox Series X 1 TB","url":"/oyun-konsolu/xbox/xbox-series-x-1-tb/"},{"label":"Xbox Series X 1 TB Digital","url":"/oyun-konsolu/xbox/xbox-series-x-1-tb-digital/"},{"label":"Xbox Series S 1 TB","url":"/oyun-konsolu/xbox/xbox-series-s-1-tb/"},{"label":"Xbox Series S 512 GB","url":"/oyun-konsolu/xbox/xbox-series-s-512-gb/"},{"label":"Model karşılaştırma rehberi","url":"/model-karsilastirma/","kg_link_cluster":"comparison-intent-v1"},{"label":"KaçaGider piyasa verisi ve fiyat geçmişi","url":"/piyasa-verisi/","kg_link_cluster":"market-data-v1"},{"label":"Değerleme ve veri metodolojisi","url":"/veri-metodolojisi/","kg_link_cluster":"authority-v1"}]
 seo_links_heading: "Xbox Series Serisi modelleri"

@@ -2,12 +2,12 @@
 layout: "seo"
 seo_page_type: "series_hub"
 seo_hub_version: "brand-series-v1"
-seo_title: "Apple MacBook Pro Serisi İkinci El Fiyatları ve Piyasa Değeri | KaçaGider"
-seo_description: "Apple MacBook Pro Serisi ikinci el fiyatları ve piyasa değeri için gerçek modelinizi seçin; cihaz durumuna göre güncel satış değeri referansını KaçaGider ile ücretsiz kontrol edin."
-seo_h1: "Apple MacBook Pro Serisi İkinci El Fiyatları ve Piyasa Değeri"
-seo_intro: "Apple MacBook Pro Serisi modellerinin ne kadar ettiğini, kaça satılabileceğini ve güncel ikinci el piyasa değerini öğrenmek için modelinizi seçin. Değerleme cihazın gerçek özellikleri ve kondisyonuna göre yapılır."
-seo_context_heading: "Apple MacBook Pro Serisi için ikinci el değerleme"
-seo_context: "Apple MacBook Pro Serisi ailesindeki gerçek modelleri tek merkezde inceleyin. Modelinizi seçerek güncel ikinci el piyasa değerini kontrol edin ve isterseniz ücretsiz ilan verme akışına devam edin."
+seo_title: "Apple MacBook Pro Serisi İkinci El Fiyatları | KaçaGider"
+seo_description: "Apple MacBook Pro Serisi İkinci El Fiyatları ve Piyasa Değeri kaça satılır? İşlemci, RAM, depolama ve cihaz durumuna göre 2026 güncel ikinci el ortalama satış değerini KaçaGider ile ücretsiz hesapla."
+seo_h1: "Apple MacBook Pro Serisi İkinci El Fiyatları ve Piyasa Değeri Kaça Satılır? 2026 İkinci El Fiyatı"
+seo_intro: "Apple MacBook Pro Serisi İkinci El Fiyatları ve Piyasa Değeri kaça satılır? 2026 ikinci el değeri; işlemci, RAM, depolama, ekran ve genel cihaz durumu gibi özelliklere göre değişir. KaçaGider ile cihazınızın ortalama satış değerini ücretsiz hesaplayabilirsiniz."
+seo_context_heading: "Apple MacBook Pro Serisi İkinci El Fiyatları ve Piyasa Değeri ikinci el değeri nasıl hesaplanır?"
+seo_context: "Apple MacBook Pro Serisi İkinci El Fiyatları ve Piyasa Değeri ikinci el fiyatı belirlenirken işlemci, RAM, depolama, ekran ve genel cihaz durumu birlikte değerlendirilir. Cihazın kondisyonu ve çalışan özelliklerinin durumu ortalama satış değerini doğrudan etkiler. KaçaGider üzerinden bilgilerinizi seçerek 2026 için güncel ikinci el piyasa değerini görebilirsiniz."
 seo_breadcrumbs: [{"label":"Ana Sayfa","url":"/"},{"label":"Bilgisayar","url":"/bilgisayar/"},{"label":"Apple","url":"/bilgisayar/apple/"},{"label":"MacBook Pro Serisi","url":"/bilgisayar/apple/macbook-pro-serisi/"}]
 seo_links: [{"label":"MacBook Pro M1","url":"/bilgisayar/apple/macbook-pro-m1/"},{"label":"MacBook Pro M1 Pro","url":"/bilgisayar/apple/macbook-pro-m1-pro/"},{"label":"MacBook Pro M1 Max","url":"/bilgisayar/apple/macbook-pro-m1-max/"},{"label":"MacBook Pro M2","url":"/bilgisayar/apple/macbook-pro-m2/"},{"label":"MacBook Pro M2 Pro","url":"/bilgisayar/apple/macbook-pro-m2-pro/"},{"label":"MacBook Pro M2 Max","url":"/bilgisayar/apple/macbook-pro-m2-max/"},{"label":"MacBook Pro M3","url":"/bilgisayar/apple/macbook-pro-m3/"},{"label":"MacBook Pro M3 Pro","url":"/bilgisayar/apple/macbook-pro-m3-pro/"},{"label":"MacBook Pro M3 Max","url":"/bilgisayar/apple/macbook-pro-m3-max/"},{"label":"MacBook Pro M4","url":"/bilgisayar/apple/macbook-pro-m4/"},{"label":"MacBook Pro M4 Pro","url":"/bilgisayar/apple/macbook-pro-m4-pro/"},{"label":"MacBook Pro M4 Max","url":"/bilgisayar/apple/macbook-pro-m4-max/"},{"label":"Model karşılaştırma rehberi","url":"/model-karsilastirma/","kg_link_cluster":"comparison-intent-v1"},{"label":"KaçaGider piyasa verisi ve fiyat geçmişi","url":"/piyasa-verisi/","kg_link_cluster":"market-data-v1"},{"label":"Değerleme ve veri metodolojisi","url":"/veri-metodolojisi/","kg_link_cluster":"authority-v1"}]
 seo_links_heading: "Apple MacBook Pro Serisi modelleri"

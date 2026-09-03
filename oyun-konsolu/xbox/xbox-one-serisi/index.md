@@ -2,12 +2,12 @@
 layout: "seo"
 seo_page_type: "series_hub"
 seo_hub_version: "brand-series-v1"
-seo_title: "Xbox One Serisi İkinci El Fiyatları ve Piyasa Değeri | KaçaGider"
-seo_description: "Xbox One Serisi ikinci el fiyatları ve piyasa değeri için gerçek modelinizi seçin; cihaz durumuna göre güncel satış değeri referansını KaçaGider ile ücretsiz kontrol edin."
-seo_h1: "Xbox One Serisi İkinci El Fiyatları ve Piyasa Değeri"
-seo_intro: "Xbox One Serisi modellerinin ne kadar ettiğini, kaça satılabileceğini ve güncel ikinci el piyasa değerini öğrenmek için modelinizi seçin. Değerleme cihazın gerçek özellikleri ve kondisyonuna göre yapılır."
-seo_context_heading: "Xbox One Serisi için ikinci el değerleme"
-seo_context: "Xbox One Serisi ailesindeki gerçek modelleri tek merkezde inceleyin. Modelinizi seçerek güncel ikinci el piyasa değerini kontrol edin ve isterseniz ücretsiz ilan verme akışına devam edin."
+seo_title: "Xbox One Serisi İkinci El Fiyatları | KaçaGider"
+seo_description: "Xbox One Serisi İkinci El Fiyatları ve Piyasa Değeri Kaça Satılır? ne kadar eder? İkinci el fiyatı ve piyasa değerini cihaz özellikleri ve kondisyonuna göre KaçaGider ile öğren."
+seo_h1: "Xbox One Serisi İkinci El Fiyatları ve Piyasa Değeri Kaça Satılır? 2026 İkinci El Fiyatı"
+seo_intro: "Xbox One Serisi İkinci El Fiyatları ve Piyasa Değeri kaça satılır? 2026 ikinci el değeri; depolama, kozmetik durum, aksesuarlar ve çalışma durumu gibi özelliklere göre değişir. KaçaGider ile cihazınızın ortalama satış değerini ücretsiz hesaplayabilirsiniz."
+seo_context_heading: "Xbox One Serisi İkinci El Fiyatları ve Piyasa Değeri ikinci el değeri nasıl hesaplanır?"
+seo_context: "Xbox One Serisi İkinci El Fiyatları ve Piyasa Değeri ikinci el fiyatı belirlenirken depolama, kozmetik durum, aksesuarlar ve çalışma durumu birlikte değerlendirilir. Cihazın kondisyonu ve çalışan özelliklerinin durumu ortalama satış değerini doğrudan etkiler. KaçaGider üzerinden bilgilerinizi seçerek 2026 için güncel ikinci el piyasa değerini görebilirsiniz."
 seo_breadcrumbs: [{"label":"Ana Sayfa","url":"/"},{"label":"Oyun Konsolu","url":"/oyun-konsolu/"},{"label":"Xbox","url":"/oyun-konsolu/xbox/"},{"label":"Xbox One Serisi","url":"/oyun-konsolu/xbox/xbox-one-serisi/"}]
 seo_links: [{"label":"Xbox One X","url":"/oyun-konsolu/xbox/xbox-one-x/"},{"label":"Xbox One S","url":"/oyun-konsolu/xbox/xbox-one-s/"},{"label":"Xbox One","url":"/oyun-konsolu/xbox/xbox-one/"},{"label":"Model karşılaştırma rehberi","url":"/model-karsilastirma/","kg_link_cluster":"comparison-intent-v1"},{"label":"KaçaGider piyasa verisi ve fiyat geçmişi","url":"/piyasa-verisi/","kg_link_cluster":"market-data-v1"},{"label":"Değerleme ve veri metodolojisi","url":"/veri-metodolojisi/","kg_link_cluster":"authority-v1"}]
 seo_links_heading: "Xbox One Serisi modelleri"

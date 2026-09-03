@@ -2,12 +2,12 @@
 layout: "seo"
 seo_page_type: "series_hub"
 seo_hub_version: "brand-series-v1"
-seo_title: "Huawei Nova Serisi İkinci El Fiyatları ve Piyasa Değeri | KaçaGider"
-seo_description: "Huawei Nova Serisi ikinci el fiyatları ve piyasa değeri için gerçek modelinizi seçin; cihaz durumuna göre güncel satış değeri referansını KaçaGider ile ücretsiz kontrol edin."
-seo_h1: "Huawei Nova Serisi İkinci El Fiyatları ve Piyasa Değeri"
-seo_intro: "Huawei Nova Serisi modellerinin ne kadar ettiğini, kaça satılabileceğini ve güncel ikinci el piyasa değerini öğrenmek için modelinizi seçin. Değerleme cihazın gerçek özellikleri ve kondisyonuna göre yapılır."
-seo_context_heading: "Huawei Nova Serisi için ikinci el değerleme"
-seo_context: "Huawei Nova Serisi ailesindeki gerçek modelleri tek merkezde inceleyin. Modelinizi seçerek güncel ikinci el piyasa değerini kontrol edin ve isterseniz ücretsiz ilan verme akışına devam edin."
+seo_title: "Huawei Nova Serisi İkinci El Fiyatları | KaçaGider"
+seo_description: "Huawei Nova Serisi İkinci El Fiyatları ve Piyasa Değeri Kaça Satılır? ne kadar eder? İkinci el fiyatı ve piyasa değerini cihaz özellikleri ve kondisyonuna göre KaçaGider ile öğren."
+seo_h1: "Huawei Nova Serisi İkinci El Fiyatları ve Piyasa Değeri Kaça Satılır? 2026 İkinci El Fiyatı"
+seo_intro: "Huawei Nova Serisi İkinci El Fiyatları ve Piyasa Değeri kaça satılır? 2026 ikinci el değeri; hafıza, ekran, batarya, kamera ve cihaz durumu gibi özelliklere göre değişir. KaçaGider ile cihazınızın ortalama satış değerini ücretsiz hesaplayabilirsiniz."
+seo_context_heading: "Huawei Nova Serisi İkinci El Fiyatları ve Piyasa Değeri ikinci el değeri nasıl hesaplanır?"
+seo_context: "Huawei Nova Serisi İkinci El Fiyatları ve Piyasa Değeri ikinci el fiyatı belirlenirken hafıza, ekran, batarya, kamera ve cihaz durumu birlikte değerlendirilir. Cihazın kondisyonu ve çalışan özelliklerinin durumu ortalama satış değerini doğrudan etkiler. KaçaGider üzerinden bilgilerinizi seçerek 2026 için güncel ikinci el piyasa değerini görebilirsiniz."
 seo_breadcrumbs: [{"label":"Ana Sayfa","url":"/"},{"label":"Telefon","url":"/telefon/"},{"label":"Huawei","url":"/telefon/huawei/"},{"label":"Nova Serisi","url":"/telefon/huawei/nova-serisi/"}]
 seo_links: [{"label":"Nova 9","url":"/telefon/huawei/nova-9/"},{"label":"Nova 10","url":"/telefon/huawei/nova-10/"},{"label":"Nova 10 Pro","url":"/telefon/huawei/nova-10-pro/"},{"label":"Nova 11","url":"/telefon/huawei/nova-11/"},{"label":"Nova 11 Pro","url":"/telefon/huawei/nova-11-pro/"},{"label":"Nova 12","url":"/telefon/huawei/nova-12/"},{"label":"Nova 12 SE","url":"/telefon/huawei/nova-12-se/"},{"label":"Nova 13","url":"/telefon/huawei/nova-13/"},{"label":"Nova 13 Pro","url":"/telefon/huawei/nova-13-pro/"},{"label":"Nova Y70","url":"/telefon/huawei/nova-y70/"},{"label":"Nova Y90","url":"/telefon/huawei/nova-y90/"},{"label":"Nova Y91","url":"/telefon/huawei/nova-y91/"},{"label":"Model karşılaştırma rehberi","url":"/model-karsilastirma/","kg_link_cluster":"comparison-intent-v1"},{"label":"KaçaGider piyasa verisi ve fiyat geçmişi","url":"/piyasa-verisi/","kg_link_cluster":"market-data-v1"},{"label":"Değerleme ve veri metodolojisi","url":"/veri-metodolojisi/","kg_link_cluster":"authority-v1"}]
 seo_links_heading: "Huawei Nova Serisi modelleri"

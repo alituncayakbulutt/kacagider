@@ -2,12 +2,12 @@
 layout: "seo"
 seo_page_type: "series_hub"
 seo_hub_version: "brand-series-v1"
-seo_title: "Vivo V Serisi İkinci El Fiyatları ve Piyasa Değeri | KaçaGider"
-seo_description: "Vivo V Serisi ikinci el fiyatları ve piyasa değeri için gerçek modelinizi seçin; cihaz durumuna göre güncel satış değeri referansını KaçaGider ile ücretsiz kontrol edin."
-seo_h1: "Vivo V Serisi İkinci El Fiyatları ve Piyasa Değeri"
-seo_intro: "Vivo V Serisi modellerinin ne kadar ettiğini, kaça satılabileceğini ve güncel ikinci el piyasa değerini öğrenmek için modelinizi seçin. Değerleme cihazın gerçek özellikleri ve kondisyonuna göre yapılır."
-seo_context_heading: "Vivo V Serisi için ikinci el değerleme"
-seo_context: "Vivo V Serisi ailesindeki gerçek modelleri tek merkezde inceleyin. Modelinizi seçerek güncel ikinci el piyasa değerini kontrol edin ve isterseniz ücretsiz ilan verme akışına devam edin."
+seo_title: "Vivo V Serisi İkinci El Fiyatları | KaçaGider"
+seo_description: "Vivo V Serisi İkinci El Fiyatları ve Piyasa Değeri Kaça Satılır? ne kadar eder? İkinci el fiyatı ve piyasa değerini cihaz özellikleri ve kondisyonuna göre KaçaGider ile öğren."
+seo_h1: "Vivo V Serisi İkinci El Fiyatları ve Piyasa Değeri Kaça Satılır? 2026 İkinci El Fiyatı"
+seo_intro: "Vivo V Serisi İkinci El Fiyatları ve Piyasa Değeri kaça satılır? 2026 ikinci el değeri; hafıza, ekran, batarya, kamera ve cihaz durumu gibi özelliklere göre değişir. KaçaGider ile cihazınızın ortalama satış değerini ücretsiz hesaplayabilirsiniz."
+seo_context_heading: "Vivo V Serisi İkinci El Fiyatları ve Piyasa Değeri ikinci el değeri nasıl hesaplanır?"
+seo_context: "Vivo V Serisi İkinci El Fiyatları ve Piyasa Değeri ikinci el fiyatı belirlenirken hafıza, ekran, batarya, kamera ve cihaz durumu birlikte değerlendirilir. Cihazın kondisyonu ve çalışan özelliklerinin durumu ortalama satış değerini doğrudan etkiler. KaçaGider üzerinden bilgilerinizi seçerek 2026 için güncel ikinci el piyasa değerini görebilirsiniz."
 seo_breadcrumbs: [{"label":"Ana Sayfa","url":"/"},{"label":"Telefon","url":"/telefon/"},{"label":"Vivo","url":"/telefon/vivo/"},{"label":"V Serisi","url":"/telefon/vivo/v-serisi/"}]
 seo_links: [{"label":"V21","url":"/telefon/vivo/v21/"},{"label":"V25","url":"/telefon/vivo/v25/"},{"label":"V27","url":"/telefon/vivo/v27/"},{"label":"V29","url":"/telefon/vivo/v29/"},{"label":"V30","url":"/telefon/vivo/v30/"},{"label":"V30 Lite","url":"/telefon/vivo/v30-lite/"},{"label":"V40","url":"/telefon/vivo/v40/"},{"label":"V40 Lite","url":"/telefon/vivo/v40-lite/"},{"label":"V50","url":"/telefon/vivo/v50/"},{"label":"V50 Lite","url":"/telefon/vivo/v50-lite/"},{"label":"V21e","url":"/telefon/vivo/v21e/"},{"label":"V23 5G","url":"/telefon/vivo/v23-5g/"},{"label":"V29 Lite 5G","url":"/telefon/vivo/v29-lite-5g/"},{"label":"V40 5G","url":"/telefon/vivo/v40-5g/"},{"label":"V50 5G","url":"/telefon/vivo/v50-5g/"},{"label":"V50 Lite 5G","url":"/telefon/vivo/v50-lite-5g/"},{"label":"V60 5G","url":"/telefon/vivo/v60-5g/"},{"label":"V60 Lite","url":"/telefon/vivo/v60-lite/"},{"label":"V60 Lite 5G","url":"/telefon/vivo/v60-lite-5g/"},{"label":"V70","url":"/telefon/vivo/v70/"},{"label":"V70 FE","url":"/telefon/vivo/v70-fe/"},{"label":"Model karşılaştırma rehberi","url":"/model-karsilastirma/","kg_link_cluster":"comparison-intent-v1"},{"label":"KaçaGider piyasa verisi ve fiyat geçmişi","url":"/piyasa-verisi/","kg_link_cluster":"market-data-v1"},{"label":"Değerleme ve veri metodolojisi","url":"/veri-metodolojisi/","kg_link_cluster":"authority-v1"}]
 seo_links_heading: "Vivo V Serisi modelleri"

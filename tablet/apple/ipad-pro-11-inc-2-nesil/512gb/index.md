@@ -1,11 +1,11 @@
 ---
 layout: "seo"
-seo_title: "Apple iPad Pro 11 inç (2. nesil) 512 GB Ne Kadar Eder? | KaçaGider"
-seo_description: "Apple iPad Pro 11 inç (2. nesil) 512 GB ne kadar eder? İkinci el fiyatı ve piyasa değerini cihaz özellikleri ve kondisyonuna göre KaçaGider ile öğren."
-seo_h1: "Apple iPad Pro 11 inç (2. nesil) 512 GB Ne Kadar Eder? Kaça Satılır? 2026 İkinci El Fiyatı"
-seo_intro: "Apple iPad Pro 11 inç (2. nesil) 512 GB Ne Kadar Eder? kaça satılır? 2026 ikinci el değeri; ekran, batarya ve cihaz durumu gibi özelliklere göre değişir. KaçaGider ile cihazınızın ortalama satış değerini ücretsiz hesaplayabilirsiniz."
-seo_context_heading: "Apple iPad Pro 11 inç (2. nesil) 512 GB Ne Kadar Eder? ikinci el değeri nasıl hesaplanır?"
-seo_context: "Apple iPad Pro 11 inç (2. nesil) 512 GB Ne Kadar Eder? ikinci el fiyatı belirlenirken ekran, batarya ve cihaz durumu birlikte değerlendirilir. Cihazın kondisyonu ve çalışan özelliklerinin durumu ortalama satış değerini doğrudan etkiler. KaçaGider üzerinden bilgilerinizi seçerek 2026 için güncel ikinci el piyasa değerini görebilirsiniz."
+seo_title: "Apple iPad Pro 11 inç (2. nesil) 512 GB Kaça Satılır? | KaçaGider"
+seo_description: "Apple iPad Pro 11 inç (2. nesil) 512 GB kaça satılır? Ekran, batarya ve cihaz durumuna göre 2026 güncel ikinci el ortalama satış değerini KaçaGider ile ücretsiz hesapla."
+seo_h1: "Apple iPad Pro 11 inç (2. nesil) 512 GB Kaça Satılır? 2026 İkinci El Fiyatı"
+seo_intro: "Apple iPad Pro 11 inç (2. nesil) 512 GB kaça satılır? 2026 ikinci el değeri; ekran, batarya ve cihaz durumu gibi özelliklere göre değişir. KaçaGider ile cihazınızın ortalama satış değerini ücretsiz hesaplayabilirsiniz."
+seo_context_heading: "Apple iPad Pro 11 inç (2. nesil) 512 GB ikinci el değeri nasıl hesaplanır?"
+seo_context: "Apple iPad Pro 11 inç (2. nesil) 512 GB ikinci el fiyatı belirlenirken ekran, batarya ve cihaz durumu birlikte değerlendirilir. Cihazın kondisyonu ve çalışan özelliklerinin durumu ortalama satış değerini doğrudan etkiler. KaçaGider üzerinden bilgilerinizi seçerek 2026 için güncel ikinci el piyasa değerini görebilirsiniz."
 seo_breadcrumbs: [{"label":"Ana Sayfa","url":"/"},{"label":"Tablet","url":"/tablet/"},{"label":"Apple","url":"/tablet/apple/"},{"label":"iPad Pro 11 inç (2. nesil)","url":"/tablet/apple/ipad-pro-11-inc-2-nesil/"},{"label":"512 GB","url":"/tablet/apple/ipad-pro-11-inc-2-nesil/512gb/"}]
 seo_links: [{"label":"Tablet değerleme","url":"/tablet/"},{"label":"İkinci el fiyat nasıl hesaplanır?","url":"/ikinci-el-fiyat-nasil-hesaplanir/"},{"label":"iPad Pro 11 inç (2. nesil) ana sayfası","url":"/tablet/apple/ipad-pro-11-inc-2-nesil/"},{"label":"128 GB","url":"/tablet/apple/ipad-pro-11-inc-2-nesil/128gb/"},{"label":"256 GB","url":"/tablet/apple/ipad-pro-11-inc-2-nesil/256gb/"},{"label":"1 TB","url":"/tablet/apple/ipad-pro-11-inc-2-nesil/1tb/"},{"label":"Değerini öğren ve ücretsiz ilan ver","url":"/ucretsiz-ilan-ver/","kg_link_cluster":"listing-intent-v2"},{"label":"KaçaGider piyasa verisi ve fiyat geçmişi","url":"/piyasa-verisi/","kg_link_cluster":"market-data-v1"},{"label":"Model karşılaştırma rehberi","url":"/model-karsilastirma/","kg_link_cluster":"comparison-intent-v1"}]
 seo_links_heading: "Apple iPad Pro 11 inç (2. nesil) 512 GB ilgili sayfalar"

@@ -1,11 +1,11 @@
 ---
 layout: "seo"
-seo_title: "PlayStation 5 Digital 825 GB Ne Kadar Eder? | KaçaGider"
-seo_description: "PlayStation 5 Digital 825 GB ne kadar eder? İkinci el fiyatı ve piyasa değerini cihaz özellikleri ve kondisyonuna göre KaçaGider ile öğren."
-seo_h1: "PlayStation 5 Digital 825 GB Ne Kadar Eder? Güncel Kaça Satılır? 2026 İkinci El Fiyatı"
-seo_intro: "PlayStation 5 Digital 825 GB Ne Kadar Eder? Güncel kaça satılır? 2026 ikinci el değeri; kozmetik durum, aksesuarlar ve çalışma durumu gibi özelliklere göre değişir. KaçaGider ile cihazınızın ortalama satış değerini ücretsiz hesaplayabilirsiniz."
-seo_context_heading: "PlayStation 5 Digital 825 GB Ne Kadar Eder? Güncel ikinci el değeri nasıl hesaplanır?"
-seo_context: "PlayStation 5 Digital 825 GB Ne Kadar Eder? Güncel ikinci el fiyatı belirlenirken kozmetik durum, aksesuarlar ve çalışma durumu birlikte değerlendirilir. Cihazın kondisyonu ve çalışan özelliklerinin durumu ortalama satış değerini doğrudan etkiler. KaçaGider üzerinden bilgilerinizi seçerek 2026 için güncel ikinci el piyasa değerini görebilirsiniz."
+seo_title: "PlayStation 5 Digital 825 GB Kaça Satılır? 2026 Fiyatı | KaçaGider"
+seo_description: "PlayStation 5 Digital 825 GB Kaça Satılır? ne kadar eder? İkinci el fiyatı ve piyasa değerini cihaz özellikleri ve kondisyonuna göre KaçaGider ile öğren."
+seo_h1: "PlayStation 5 Digital 825 GB Kaça Satılır? 2026 İkinci El Fiyatı"
+seo_intro: "PlayStation 5 Digital 825 GB kaça satılır? 2026 ikinci el değeri; kozmetik durum, aksesuarlar ve çalışma durumu gibi özelliklere göre değişir. KaçaGider ile cihazınızın ortalama satış değerini ücretsiz hesaplayabilirsiniz."
+seo_context_heading: "PlayStation 5 Digital 825 GB ikinci el değeri nasıl hesaplanır?"
+seo_context: "PlayStation 5 Digital 825 GB ikinci el fiyatı belirlenirken kozmetik durum, aksesuarlar ve çalışma durumu birlikte değerlendirilir. Cihazın kondisyonu ve çalışan özelliklerinin durumu ortalama satış değerini doğrudan etkiler. KaçaGider üzerinden bilgilerinizi seçerek 2026 için güncel ikinci el piyasa değerini görebilirsiniz."
 seo_breadcrumbs: [{"label":"Ana Sayfa","url":"/"},{"label":"Oyun Konsolu","url":"/oyun-konsolu/"},{"label":"PlayStation","url":"/oyun-konsolu/playstation/"},{"label":"PlayStation 5 Digital","url":"/oyun-konsolu/playstation/playstation-5-digital/"},{"label":"825 GB","url":"/oyun-konsolu/playstation/playstation-5-digital/825gb/"}]
 seo_links: [{"label":"Oyun Konsolu değerleme","url":"/oyun-konsolu/"},{"label":"İkinci el fiyat nasıl hesaplanır?","url":"/ikinci-el-fiyat-nasil-hesaplanir/"},{"label":"PlayStation 5 Digital ana sayfası","url":"/oyun-konsolu/playstation/playstation-5-digital/"},{"label":"Değerini öğren ve ücretsiz ilan ver","url":"/ucretsiz-ilan-ver/","kg_link_cluster":"listing-intent-v2"},{"label":"KaçaGider piyasa verisi ve fiyat geçmişi","url":"/piyasa-verisi/","kg_link_cluster":"market-data-v1"},{"label":"Model karşılaştırma rehberi","url":"/model-karsilastirma/","kg_link_cluster":"comparison-intent-v1"}]
 seo_links_heading: "PlayStation 5 Digital 825 GB ilgili sayfalar"

@@ -2,12 +2,12 @@
 layout: "seo"
 seo_page_type: "series_hub"
 seo_hub_version: "brand-series-v1"
-seo_title: "Apple Watch Ultra Serisi İkinci El Fiyatları ve Piyasa Değeri | KaçaGider"
-seo_description: "Apple Watch Ultra Serisi ikinci el fiyatları ve piyasa değeri için gerçek modelinizi seçin; cihaz durumuna göre güncel satış değeri referansını KaçaGider ile ücretsiz kontrol edin."
-seo_h1: "Apple Watch Ultra Serisi İkinci El Fiyatları ve Piyasa Değeri"
-seo_intro: "Apple Watch Ultra Serisi modellerinin ne kadar ettiğini, kaça satılabileceğini ve güncel ikinci el piyasa değerini öğrenmek için modelinizi seçin. Değerleme cihazın gerçek özellikleri ve kondisyonuna göre yapılır."
-seo_context_heading: "Apple Watch Ultra Serisi için ikinci el değerleme"
-seo_context: "Apple Watch Ultra Serisi ailesindeki gerçek modelleri tek merkezde inceleyin. Modelinizi seçerek güncel ikinci el piyasa değerini kontrol edin ve isterseniz ücretsiz ilan verme akışına devam edin."
+seo_title: "Apple Watch Ultra Serisi İkinci El Fiyatları | KaçaGider"
+seo_description: "Apple Watch Ultra Serisi İkinci El Fiyatları ve Piyasa Değeri kaça satılır? Kasa, ekran, batarya ve genel cihaz durumuna göre 2026 güncel ikinci el ortalama satış değerini KaçaGider ile ücretsiz hesapla."
+seo_h1: "Apple Watch Ultra Serisi İkinci El Fiyatları ve Piyasa Değeri Kaça Satılır? 2026 İkinci El Fiyatı"
+seo_intro: "Apple Watch Ultra Serisi İkinci El Fiyatları ve Piyasa Değeri kaça satılır? 2026 ikinci el değeri; kasa boyutu, ekran, batarya ve genel cihaz durumu gibi özelliklere göre değişir. KaçaGider ile cihazınızın ortalama satış değerini ücretsiz hesaplayabilirsiniz."
+seo_context_heading: "Apple Watch Ultra Serisi İkinci El Fiyatları ve Piyasa Değeri ikinci el değeri nasıl hesaplanır?"
+seo_context: "Apple Watch Ultra Serisi İkinci El Fiyatları ve Piyasa Değeri ikinci el fiyatı belirlenirken kasa boyutu, ekran, batarya ve genel cihaz durumu birlikte değerlendirilir. Cihazın kondisyonu ve çalışan özelliklerinin durumu ortalama satış değerini doğrudan etkiler. KaçaGider üzerinden bilgilerinizi seçerek 2026 için güncel ikinci el piyasa değerini görebilirsiniz."
 seo_breadcrumbs: [{"label":"Ana Sayfa","url":"/"},{"label":"Akıllı Saat","url":"/akilli-saat/"},{"label":"Apple","url":"/akilli-saat/apple/"},{"label":"Apple Watch Ultra Serisi","url":"/akilli-saat/apple/apple-watch-ultra-serisi/"}]
 seo_links: [{"label":"Apple Watch Ultra","url":"/akilli-saat/apple/apple-watch-ultra/"},{"label":"Apple Watch Ultra 2","url":"/akilli-saat/apple/apple-watch-ultra-2/"},{"label":"Apple Watch Ultra 3","url":"/akilli-saat/apple/apple-watch-ultra-3/"},{"label":"Model karşılaştırma rehberi","url":"/model-karsilastirma/","kg_link_cluster":"comparison-intent-v1"},{"label":"KaçaGider piyasa verisi ve fiyat geçmişi","url":"/piyasa-verisi/","kg_link_cluster":"market-data-v1"},{"label":"Değerleme ve veri metodolojisi","url":"/veri-metodolojisi/","kg_link_cluster":"authority-v1"}]
 seo_links_heading: "Apple Watch Ultra Serisi modelleri"
