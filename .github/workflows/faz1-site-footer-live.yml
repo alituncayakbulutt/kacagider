@@ -1,0 +1,51 @@
+name: FAZ1 Site Footer Live
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - 'assets/site-trust-footer.js'
+      - '.github/workflows/faz1-site-footer-live.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - name: Connect shared footer asset
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          targets=[Path('index.html'),Path('_layouts/seo.html')]
+          tag='<script src="/assets/site-trust-footer.js?v=20260904-1" defer></script>'
+          for p in targets:
+              s=p.read_text()
+              import re
+              s=re.sub(r'\n?<script src="/assets/site-trust-footer\.js\?v=[^"]+" defer></script>', '', s)
+              marker='<script src="/assets/analytics-events.js'
+              i=s.find(marker)
+              if i < 0:
+                  raise SystemExit(f'analytics marker missing: {p}')
+              end=s.find('</script>', i)
+              if end < 0:
+                  raise SystemExit(f'script end missing: {p}')
+              end += len('</script>')
+              s=s[:end]+'\n'+tag+s[end:]
+              p.write_text(s)
+          PY
+      - name: Commit live footer connection
+        run: |
+          if git diff --quiet -- index.html _layouts/seo.html; then
+            echo 'No footer connection change needed.'
+            exit 0
+          fi
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add index.html _layouts/seo.html
+          git commit -m 'FAZ1: connect trust footer sitewide'
+          git push origin main
