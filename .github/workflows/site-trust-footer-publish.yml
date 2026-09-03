@@ -20,7 +20,7 @@ jobs:
           python3 - <<'PY'
           from pathlib import Path
           targets=[Path('index.html'),Path('_layouts/seo.html')]
-          tag='<script src="/assets/site-trust-footer.js?v=20260904-2" defer></script>'
+          tag='<script src="/assets/site-trust-footer.js?v=20260904-3" defer></script>'
           for p in targets:
               if not p.exists():
                   continue
