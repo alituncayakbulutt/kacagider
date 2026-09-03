@@ -1,0 +1,52 @@
+name: Information Center Nav Fix
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/info-center-nav-fix.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  patch-nav:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+      - name: Patch Bilgi Merkezi nav link
+        shell: bash
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          p=Path('index.html')
+          s=p.read_text(encoding='utf-8')
+          old='<a href="#" data-nav="didYouKnow" onclick="showView(\'didYouKnow\'); return false;">BİLGİ MERKEZİ</a>'
+          new='<a href="/bilgi-merkezi/" data-nav="didYouKnow">BİLGİ MERKEZİ</a>'
+          if old not in s:
+              if new in s:
+                  print('Bilgi Merkezi baglantisi zaten guncel.')
+              else:
+                  raise SystemExit('Bilgi Merkezi nav satiri bulunamadi')
+          else:
+              s=s.replace(old,new,1)
+              p.write_text(s,encoding='utf-8')
+          PY
+      - name: Verify
+        run: |
+          grep -F '<a href="/bilgi-merkezi/" data-nav="didYouKnow">BİLGİ MERKEZİ</a>' index.html
+      - name: Commit
+        shell: bash
+        run: |
+          if git diff --quiet -- index.html; then
+            echo 'Degisiklik yok.'
+            exit 0
+          fi
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add index.html
+          git commit -m 'Bilgi Merkezi menüsünü yeni merkeze yönlendir'
+          git push origin HEAD:main
