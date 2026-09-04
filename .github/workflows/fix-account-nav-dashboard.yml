@@ -1,0 +1,49 @@
+name: Fix Account Dashboard Navigation
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/fix-account-nav-dashboard.py'
+      - '.github/workflows/fix-account-nav-dashboard.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  fix-account-nav:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+      - name: Apply account nav fix
+        run: python scripts/fix-account-nav-dashboard.py
+      - name: Validate JavaScript
+        run: node --check assets/account-session-nav.js
+      - name: Preserve security quality gate
+        run: python scripts/security-audit.py
+      - name: Preserve performance quality gate
+        run: python scripts/performance-audit.py
+      - name: Preserve Mobile V3 quality gate
+        run: python scripts/mobile-v3-audit.py
+      - name: Preserve SEO quality gate
+        run: python scripts/seo-site-audit.py
+      - name: Commit account nav fix
+        run: |
+          if git diff --quiet; then
+            echo "Account navigation already fixed and validated."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -- assets/account-session-nav.js '*.html' '*.md' assets ilan ilanlar hesabim bilgi-merkezi _layouts 2>/dev/null || true
+          git add -u
+          git commit -m "Fix logged-in Hesabım navigation"
+          git push
