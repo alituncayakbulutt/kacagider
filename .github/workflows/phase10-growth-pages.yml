@@ -1,0 +1,56 @@
+name: Phase 10 Growth Pages
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/phase10-growth-pages-wire.py'
+      - '.github/workflows/phase10-growth-pages.yml'
+      - 'fiyat-alarmi/**'
+      - 'is-ortakligi/**'
+      - 'kurumsal-api/**'
+      - '_layouts/growth.html'
+      - 'assets/growth.css'
+      - 'assets/growth-leads.js'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  growth-pages:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+      - name: Wire sitemap, footer and performance guard
+        run: python scripts/phase10-growth-pages-wire.py
+      - name: Validate growth JavaScript
+        run: |
+          node --check assets/growth-leads.js
+          node --check assets/site-trust-footer.js
+      - name: Security quality gate
+        run: python scripts/security-audit.py
+      - name: Performance quality gate
+        run: python scripts/performance-audit.py
+      - name: Mobile V3 quality gate
+        run: python scripts/mobile-v3-audit.py
+      - name: SEO quality gate
+        run: python scripts/seo-site-audit.py
+      - name: Commit Phase 10 growth page wiring
+        run: |
+          if git diff --quiet; then
+            echo "Growth page wiring already applied and validated."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -- sitemap.xml assets/site-trust-footer.js _layouts/seo.html
+          git commit -m "Phase 10: connect growth pages sitewide"
+          git push
