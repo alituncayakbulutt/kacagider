@@ -21,10 +21,12 @@ jobs:
           python-version: '3.x'
       - name: Wire Mobile V3 stylesheet
         run: python scripts/mobile-v3-wire.py
+      - name: Validate SEO and site integrity
+        run: python scripts/seo-site-audit.py
       - name: Commit Mobile V3 wiring
         run: |
           if git diff --quiet; then
-            echo "Mobile V3 already wired."
+            echo "Mobile V3 already wired and validated."
             exit 0
           fi
           git config user.name "github-actions[bot]"
