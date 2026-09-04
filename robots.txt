@@ -2,3 +2,4 @@ User-agent: *
 Allow: /
 
 Sitemap: https://kacagider.com.tr/sitemap.xml
+Sitemap: https://kacagider.com.tr/sitemap-bilgi.xml
