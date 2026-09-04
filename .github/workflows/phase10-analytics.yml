@@ -1,0 +1,63 @@
+name: Phase 10 Analytics
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/phase10-analytics-fix.py'
+      - 'scripts/analytics-audit.py'
+      - '.github/workflows/phase10-analytics.yml'
+      - 'assets/analytics-events.js'
+      - 'assets/marketplace-v2-list.js'
+      - 'assets/marketplace-v2-detail.js'
+      - 'assets/marketplace-test.js'
+      - 'assets/result-v2.js'
+      - 'assets/growth-leads.js'
+      - 'index.html'
+      - '_layouts/seo.html'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  analytics-cleanup:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+      - name: Apply analytics cleanup
+        run: python scripts/phase10-analytics-fix.py
+      - name: Validate JavaScript syntax
+        run: |
+          node --check assets/analytics-events.js
+          node --check assets/marketplace-v2-list.js
+          node --check assets/marketplace-v2-detail.js
+          node --check assets/marketplace-test.js
+      - name: Analytics quality gate
+        run: python scripts/analytics-audit.py
+      - name: Preserve security quality gate
+        run: python scripts/security-audit.py
+      - name: Preserve performance quality gate
+        run: python scripts/performance-audit.py
+      - name: Preserve Mobile V3 quality gate
+        run: python scripts/mobile-v3-audit.py
+      - name: Preserve SEO quality gate
+        run: python scripts/seo-site-audit.py
+      - name: Commit analytics cleanup
+        run: |
+          if git diff --quiet; then
+            echo "Analytics cleanup already applied and validated."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -- assets/analytics-events.js assets/marketplace-v2-list.js assets/marketplace-v2-detail.js assets/marketplace-test.js index.html _layouts/seo.html
+          git commit -m "Phase 10: clean GA4 page views and funnel events"
+          git push
