@@ -20,6 +20,12 @@ function installStyle(){
       box-shadow:none!important;transition:background .18s ease,border-color .18s ease!important;
     }
     .kg-account-session:hover,.kg-v4-action.account:hover{background:rgba(255,255,255,.11)!important;border-color:#718198!important}
+    .kg-account-session.dashboard{background:rgba(255,255,255,.075)!important;border-color:#64748b!important;text-decoration:none!important}
+    .kg-account-session.dashboard:hover{background:rgba(255,255,255,.14)!important;border-color:#8492a6!important}
+    .kg-account-session.logout::before{
+      -webkit-mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='none' stroke='%23000' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' d='M9 18H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4m7 8 4-4-4-4m4 4H9'/%3E%3C/svg%3E") center/contain no-repeat;
+      mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='none' stroke='%23000' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' d='M9 18H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4m7 8 4-4-4-4m4 4H9'/%3E%3C/svg%3E") center/contain no-repeat;
+    }
     .kg-account-session:disabled,.kg-v4-action.account:disabled{opacity:.62!important;cursor:wait!important}
     .kg-account-session::before,.kg-v4-action.account::before{
       content:"";display:block;width:18px;height:18px;flex:0 0 18px;background:currentColor;
@@ -43,6 +49,8 @@ function installStyle(){
     .kg-account-forgot{margin-top:10px;border:0;background:transparent;padding:0;color:#087a37;font-size:11px;font-weight:850;cursor:pointer;touch-action:manipulation}
     @media(max-width:900px){.kg-account-session,.kg-v4-action.account{min-height:42px!important;padding:0 10px!important;font-size:11px!important;gap:7px!important}.kg-account-session::before,.kg-v4-action.account::before{width:16px;height:16px;flex-basis:16px}}
     @media(max-width:640px){
+      .kg-account-session.logout{width:42px!important;min-width:42px!important;padding:0!important;font-size:0!important;gap:0!important}
+      .kg-account-session.logout::before{width:17px!important;height:17px!important;flex-basis:17px!important}
       .kg-account-login-overlay{align-items:flex-start;justify-content:center;padding:max(10px,env(safe-area-inset-top)) 10px max(10px,env(safe-area-inset-bottom))}
       .kg-account-login-card{width:100%;max-width:none;margin:auto 0;border-radius:18px;padding:20px 16px 18px;max-height:calc(100dvh - 20px);overflow-y:auto;overscroll-behavior:contain;-webkit-overflow-scrolling:touch}
       .kg-account-login-card h2{font-size:23px;line-height:1.15;padding-right:44px;margin-bottom:7px}
@@ -78,6 +86,25 @@ function installStyle(){
 
 function actionsHost(){return document.querySelector(".kg-approved-topbar .kg-topbar-actions") || document.querySelector(".top nav");}
 function placeAfterSell(button){var host=actionsHost();if(!host||!button)return;var sell=host.querySelector(".kg-v4-action.sell,.cta");var theme=host.querySelector(".kg-theme-btn,#themeToggle");if(sell){if(sell.nextSibling!==button)host.insertBefore(button,sell.nextSibling);}else if(theme){if(theme.previousSibling!==button)host.insertBefore(button,theme);}else if(button.parentNode!==host){host.appendChild(button);}}
+function ensureDashboardAction(user){
+  var old=document.getElementById("kgAccountDashboardAction");
+  if(!user){if(old)old.remove();return null;}
+  var host=actionsHost();if(!host)return null;
+  var button=old;
+  if(!button){button=document.createElement("button");button.type="button";button.id="kgAccountDashboardAction";button.className="kg-account-session dashboard";}
+  button.textContent="Hesabım";button.setAttribute("aria-label","KaçaGider hesabımı aç");button.onclick=function(){window.location.href="/hesabim/";};button.disabled=false;
+  if(button.parentNode!==host)host.appendChild(button);
+  placeAfterSell(button);
+  return button;
+}
+function placeLoggedInActions(dashboard,logout){
+  var host=actionsHost();if(!host)return;
+  if(dashboard)placeAfterSell(dashboard);
+  if(logout){
+    if(dashboard&&dashboard.parentNode===host){if(dashboard.nextSibling!==logout)host.insertBefore(logout,dashboard.nextSibling);}
+    else placeAfterSell(logout);
+  }
+}
 function waitForBackend(tries){tries=tries||0;if(window.KGMarketplaceSupabase)return Promise.resolve(window.KGMarketplaceSupabase);if(tries>=120)return Promise.reject(new Error("Oturum sistemi yüklenemedi."));return new Promise(function(resolve,reject){setTimeout(function(){waitForBackend(tries+1).then(resolve,reject);},50);});}
 function showNote(message,isError){var note=document.getElementById("kgAccountLoginNote");if(!note)return;note.textContent=message||"";note.className="kg-account-note show"+(isError?" error":"");}
 function closeLogin(){var overlay=document.getElementById("kgAccountLoginOverlay");if(overlay)overlay.remove();}
@@ -109,11 +136,16 @@ function openLogin(api,mode){
   var forgot=document.getElementById("kgAccountForgot");if(forgot)forgot.onclick=async function(){var email=document.getElementById("kgAccountEmail").value.trim();if(!email){showNote("Önce e-posta adresini gir.",true);return;}try{var result=await api.resetPassword(email);if(result&&result.error)throw result.error;showNote("Şifre yenileme bağlantısını e-posta adresine gönderdik.",false);}catch(error){showNote(error.message||"Şifre yenileme e-postası gönderilemedi.",true);}};
 }
 
-function useHeaderOwnedButton(){var headerButton=document.getElementById("kgHeaderAccountAction");if(!headerButton)return false;var fallback=document.getElementById("kgAccountSessionAction");if(fallback)fallback.remove();headerButton.classList.add("account");installStyle();placeAfterSell(headerButton);return true;}
+function useHeaderOwnedButton(){var headerButton=document.getElementById("kgHeaderAccountAction");if(!headerButton)return false;var fallback=document.getElementById("kgAccountSessionAction");if(fallback)fallback.remove();var dashboard=document.getElementById("kgAccountDashboardAction");if(dashboard)dashboard.remove();headerButton.classList.add("account");installStyle();placeAfterSell(headerButton);return true;}
 function renderFallback(user,api){
   if(useHeaderOwnedButton())return;var host=actionsHost();if(!host)return;installStyle();var button=document.getElementById("kgAccountSessionAction");if(!button){button=document.createElement("button");button.type="button";button.id="kgAccountSessionAction";button.className="kg-account-session";}
-  if(user){button.textContent="Çıkış Yap";button.setAttribute("aria-label","KaçaGider hesabından çıkış yap");button.onclick=async function(){button.disabled=true;button.textContent="Çıkılıyor…";try{var result=await api.signOut();if(result&&result.error)throw result.error;try{sessionStorage.removeItem("kg-pending-listing-auth-v1");}catch(_e){}cachedUser=null;renderFallback(null,api);}catch(error){console.error("KaçaGider çıkış:",error);button.disabled=false;button.textContent="Çıkış Yap";alert("Çıkış işlemi tamamlanamadı. Lütfen tekrar dene.");}};}else{button.textContent="Giriş Yap";button.setAttribute("aria-label","KaçaGider hesabına giriş yap veya üye ol");button.onclick=function(){openLogin(api,"login");};}
-  button.disabled=false;if(button.parentNode!==host)host.appendChild(button);placeAfterSell(button);
+  if(user){
+    var dashboard=ensureDashboardAction(user);button.className="kg-account-session logout";button.textContent="Çıkış Yap";button.setAttribute("aria-label","KaçaGider hesabından çıkış yap");
+    button.onclick=async function(){button.disabled=true;button.textContent="Çıkılıyor…";try{var result=await api.signOut();if(result&&result.error)throw result.error;try{sessionStorage.removeItem("kg-pending-listing-auth-v1");}catch(_e){}cachedUser=null;renderFallback(null,api);}catch(error){console.error("KaçaGider çıkış:",error);button.disabled=false;button.textContent="Çıkış Yap";alert("Çıkış işlemi tamamlanamadı. Lütfen tekrar dene.");}};
+    button.disabled=false;if(button.parentNode!==host)host.appendChild(button);placeLoggedInActions(dashboard,button);
+  }else{
+    ensureDashboardAction(null);button.className="kg-account-session";button.textContent="Giriş Yap";button.setAttribute("aria-label","KaçaGider hesabına giriş yap veya üye ol");button.onclick=function(){openLogin(api,"login");};button.disabled=false;if(button.parentNode!==host)host.appendChild(button);placeAfterSell(button);
+  }
 }
 async function sync(){try{var api=await waitForBackend(0);await api.ready;cachedApi=api;cachedUser=api.getSessionUser?await api.getSessionUser():await api.getUser();renderFallback(cachedUser,api);return api;}catch(error){console.warn("KaçaGider hesap menüsü:",error);return null;}}
 function observeHeader(){var host=actionsHost();if(!host||typeof MutationObserver==="undefined"||hostObserver)return;hostObserver=new MutationObserver(function(){if(useHeaderOwnedButton())return;if(cachedApi)renderFallback(cachedUser,cachedApi);});hostObserver.observe(host,{childList:true,subtree:false});}

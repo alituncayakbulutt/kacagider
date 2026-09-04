@@ -36,7 +36,7 @@
 
   function ensureAccountNav(){
     if(window.__KG_ACCOUNT_SESSION_NAV__)return;
-    loadFixedScript('/assets/account-session-nav.js?v=20260904-phase3','kgPhase3AccountNav').then(function(){setTimeout(enhanceAccountButton,500);setTimeout(enhanceAccountButton,1400);}).catch(function(){});
+    loadFixedScript('/assets/account-session-nav.js?v=20260904-account-dashboard-fix1','kgPhase3AccountNav').then(function(){setTimeout(enhanceAccountButton,500);setTimeout(enhanceAccountButton,1400);}).catch(function(){});
   }
 
   async function enhanceAccountButton(){
