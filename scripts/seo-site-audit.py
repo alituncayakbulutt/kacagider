@@ -37,6 +37,28 @@ def local_target_exists(url: str):
     return (Path(rel) / 'index.md').exists() or (Path(rel) / 'index.html').exists() or Path(rel).exists()
 
 
+def warning_category(item: str):
+    if ': long title (' in item:
+        return 'long_title'
+    if ': very short title (' in item:
+        return 'short_title'
+    if ': long description (' in item:
+        return 'long_description'
+    if ': short description (' in item:
+        return 'short_description'
+    if item.startswith('duplicate title '):
+        return 'duplicate_title'
+    if item.startswith('duplicate description '):
+        return 'duplicate_description'
+    if item.startswith('sitemap.xml: URL has no local source'):
+        return 'stale_sitemap_source'
+    if 'legacy valuation wording still present' in item:
+        return 'legacy_wording'
+    if item == 'index.html: Twitter large image card missing':
+        return 'twitter_card'
+    return 'other'
+
+
 # Full-site scope: every index.md that declares an SEO canonical.
 pages = []
 for path in Path('.').rglob('index.md'):
@@ -157,6 +179,13 @@ for url in re.findall(r'<loc>(https://kacagider\.com\.tr/[^<]*)</loc>', sitemap)
 
 print(f'SEO AUDIT: {len(set(pages))} canonical SEO pages checked')
 if warnings:
+    category_counts = {}
+    for item in warnings:
+        key = warning_category(item)
+        category_counts[key] = category_counts.get(key, 0) + 1
+    print('WARNING SUMMARY:')
+    for key in sorted(category_counts):
+        print(f' - {key}: {category_counts[key]}')
     print(f'WARNINGS ({len(warnings)}):')
     for item in warnings[:100]:
         print(' -', item)
