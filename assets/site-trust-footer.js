@@ -11,9 +11,10 @@
   function watchLegacyFooter(){
     removeLegacyFooter();
     if(!document.body || typeof MutationObserver==='undefined') return;
+    if(window.__kgLegacyFooterObserver) return;
     var observer=new MutationObserver(function(){ removeLegacyFooter(); });
-    observer.observe(document.body,{childList:true});
-    setTimeout(function(){ removeLegacyFooter(); observer.disconnect(); },4000);
+    observer.observe(document.body,{childList:true,subtree:false});
+    window.__kgLegacyFooterObserver=observer;
   }
 
   function addFooter(){
