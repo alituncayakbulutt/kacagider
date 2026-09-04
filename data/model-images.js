@@ -189,7 +189,7 @@
 (function(){
   if(document.querySelector('script[data-kg-account-session-nav]'))return;
   var s=document.createElement('script');
-  s.src='/assets/account-session-nav.js?v=20260904-account-dashboard-fix1';
+  s.src='/assets/account-session-nav.js?v=20260904-account-only-fix2';
   s.async=true;
   s.dataset.kgAccountSessionNav='1';
   document.head.appendChild(s);

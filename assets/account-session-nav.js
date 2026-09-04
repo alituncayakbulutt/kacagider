@@ -138,14 +138,16 @@ function openLogin(api,mode){
 
 function useHeaderOwnedButton(){var headerButton=document.getElementById("kgHeaderAccountAction");if(!headerButton)return false;var fallback=document.getElementById("kgAccountSessionAction");if(fallback)fallback.remove();var dashboard=document.getElementById("kgAccountDashboardAction");if(dashboard)dashboard.remove();headerButton.classList.add("account");installStyle();placeAfterSell(headerButton);return true;}
 function renderFallback(user,api){
-  if(useHeaderOwnedButton())return;var host=actionsHost();if(!host)return;installStyle();var button=document.getElementById("kgAccountSessionAction");if(!button){button=document.createElement("button");button.type="button";button.id="kgAccountSessionAction";button.className="kg-account-session";}
+  if(useHeaderOwnedButton())return;var host=actionsHost();if(!host)return;installStyle();var button=document.getElementById("kgAccountSessionAction");
   if(user){
-    var dashboard=ensureDashboardAction(user);button.className="kg-account-session logout";button.textContent="Çıkış Yap";button.setAttribute("aria-label","KaçaGider hesabından çıkış yap");
-    button.onclick=async function(){button.disabled=true;button.textContent="Çıkılıyor…";try{var result=await api.signOut();if(result&&result.error)throw result.error;try{sessionStorage.removeItem("kg-pending-listing-auth-v1");}catch(_e){}cachedUser=null;renderFallback(null,api);}catch(error){console.error("KaçaGider çıkış:",error);button.disabled=false;button.textContent="Çıkış Yap";alert("Çıkış işlemi tamamlanamadı. Lütfen tekrar dene.");}};
-    button.disabled=false;if(button.parentNode!==host)host.appendChild(button);placeLoggedInActions(dashboard,button);
-  }else{
-    ensureDashboardAction(null);button.className="kg-account-session";button.textContent="Giriş Yap";button.setAttribute("aria-label","KaçaGider hesabına giriş yap veya üye ol");button.onclick=function(){openLogin(api,"login");};button.disabled=false;if(button.parentNode!==host)host.appendChild(button);placeAfterSell(button);
+    if(button)button.remove();
+    var dashboard=ensureDashboardAction(user);
+    if(dashboard)placeAfterSell(dashboard);
+    return;
   }
+  ensureDashboardAction(null);
+  if(!button){button=document.createElement("button");button.type="button";button.id="kgAccountSessionAction";button.className="kg-account-session";}
+  button.className="kg-account-session";button.textContent="Giriş Yap";button.setAttribute("aria-label","KaçaGider hesabına giriş yap veya üye ol");button.onclick=function(){openLogin(api,"login");};button.disabled=false;if(button.parentNode!==host)host.appendChild(button);placeAfterSell(button);
 }
 async function sync(){try{var api=await waitForBackend(0);await api.ready;cachedApi=api;cachedUser=api.getSessionUser?await api.getSessionUser():await api.getUser();renderFallback(cachedUser,api);return api;}catch(error){console.warn("KaçaGider hesap menüsü:",error);return null;}}
 function observeHeader(){var host=actionsHost();if(!host||typeof MutationObserver==="undefined"||hostObserver)return;hostObserver=new MutationObserver(function(){if(useHeaderOwnedButton())return;if(cachedApi)renderFallback(cachedUser,cachedApi);});hostObserver.observe(host,{childList:true,subtree:false});}
