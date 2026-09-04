@@ -1,7 +1,7 @@
 ---
 layout: "seo"
 seo_title: "Android Rehberleri | KaçaGider"
-seo_description: "Android cihazlar için kısa ve uygulanabilir rehberler."
+seo_description: "Android cihazlar için kısa ve uygulanabilir rehberler. Adımları, önemli uyarıları ve ilgili cihaz kontrollerini KaçaGider'da inceleyin."
 seo_h1: "Android Rehberleri"
 seo_intro: "Android cihazlarda sık kullanılan işlemler için rehberler."
 seo_context_heading: "Android rehberleri"

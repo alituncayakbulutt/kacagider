@@ -1,7 +1,7 @@
 ---
 layout: "seo"
 seo_title: "iPhone Satmadan Önce Ne Yapılmalı? | KaçaGider"
-seo_description: "iPhone Satmadan Önce Ne Yapılmalı? için kısa, uygulanabilir adımlar ve önemli uyarılar."
+seo_description: "iPhone Satmadan Önce Ne Yapılmalı? için kısa, uygulanabilir adımlar ve önemli uyarılar. Adımları, önemli uyarıları ve ilgili cihaz kontrollerini KaçaGider'da inceleyin."
 seo_h1: "iPhone Satmadan Önce Ne Yapılmalı?"
 seo_intro: "Yedek alın, hesaplardan çıkış yapın ve kişisel verileri güvenli şekilde silin."
 seo_context_heading: "Kısa cevap"

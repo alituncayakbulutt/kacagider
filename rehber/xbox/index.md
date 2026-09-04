@@ -1,7 +1,7 @@
 ---
 layout: "seo"
 seo_title: "Xbox Rehberleri | KaçaGider"
-seo_description: "Xbox cihazlar için kısa ve uygulanabilir rehberler."
+seo_description: "Xbox cihazlar için kısa ve uygulanabilir rehberler. Adımları, önemli uyarıları ve ilgili cihaz kontrollerini KaçaGider'da inceleyin."
 seo_h1: "Xbox Rehberleri"
 seo_intro: "Xbox cihazlarda sık kullanılan işlemler için rehberler."
 seo_context_heading: "Xbox rehberleri"

@@ -1,7 +1,7 @@
 ---
 layout: "seo"
 seo_title: "Android Tablet Nasıl Sıfırlanır? | KaçaGider"
-seo_description: "Android Tablet Nasıl Sıfırlanır? için kısa, uygulanabilir adımlar ve önemli uyarılar."
+seo_description: "Android Tablet Nasıl Sıfırlanır? için kısa, uygulanabilir adımlar ve önemli uyarılar. Adımları, önemli uyarıları ve ilgili cihaz kontrollerini KaçaGider'da inceleyin."
 seo_h1: "Android Tablet Nasıl Sıfırlanır?"
 seo_intro: "Ayarlar veya Sistem menüsündeki sıfırlama seçeneğini kullanın. İşlem kişisel verileri silebilir; başlamadan önce yedek alın."
 seo_context_heading: "Kısa cevap"

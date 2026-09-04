@@ -1,7 +1,7 @@
 ---
 layout: "seo"
 seo_title: "Face ID Nasıl Sıfırlanır? | KaçaGider"
-seo_description: "Face ID Nasıl Sıfırlanır? için kısa, uygulanabilir adımlar ve önemli uyarılar."
+seo_description: "Face ID Nasıl Sıfırlanır? için kısa, uygulanabilir adımlar ve önemli uyarılar. Adımları, önemli uyarıları ve ilgili cihaz kontrollerini KaçaGider'da inceleyin."
 seo_h1: "Face ID Nasıl Sıfırlanır?"
 seo_intro: "Ayarlar içindeki Face ID ayarlarından yüz verisini sıfırlayıp yeniden tanımlayın."
 seo_context_heading: "Kısa cevap"

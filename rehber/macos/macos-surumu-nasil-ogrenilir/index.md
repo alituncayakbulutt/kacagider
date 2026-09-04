@@ -1,7 +1,7 @@
 ---
 layout: "seo"
 seo_title: "macOS Sürümü Nasıl Öğrenilir? | KaçaGider"
-seo_description: "macOS Sürümü Nasıl Öğrenilir? için kısa, uygulanabilir adımlar ve önemli uyarılar."
+seo_description: "macOS Sürümü Nasıl Öğrenilir? için kısa, uygulanabilir adımlar ve önemli uyarılar. Adımları, önemli uyarıları ve ilgili cihaz kontrollerini KaçaGider'da inceleyin."
 seo_h1: "macOS Sürümü Nasıl Öğrenilir?"
 seo_intro: "Ayarlar içindeki Sistem veya Hakkında bölümünden işletim sistemi sürümünü görüntüleyin."
 seo_context_heading: "Kısa cevap"

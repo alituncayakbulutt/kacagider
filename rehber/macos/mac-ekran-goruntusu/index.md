@@ -1,7 +1,7 @@
 ---
 layout: "seo"
 seo_title: "Mac Ekran Görüntüsü Nasıl Alınır? | KaçaGider"
-seo_description: "Mac Ekran Görüntüsü Nasıl Alınır? için kısa, uygulanabilir adımlar ve önemli uyarılar."
+seo_description: "Mac Ekran Görüntüsü Nasıl Alınır? için kısa, uygulanabilir adımlar ve önemli uyarılar. Adımları, önemli uyarıları ve ilgili cihaz kontrollerini KaçaGider'da inceleyin."
 seo_h1: "Mac Ekran Görüntüsü Nasıl Alınır?"
 seo_intro: "Cihazınızın desteklediği tuş kombinasyonunu veya ekran kısayolunu kullanın. Kombinasyon platform ve modele göre değişebilir."
 seo_context_heading: "Kısa cevap"

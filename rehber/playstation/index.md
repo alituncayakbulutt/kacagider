@@ -1,7 +1,7 @@
 ---
 layout: "seo"
 seo_title: "PlayStation Rehberleri | KaçaGider"
-seo_description: "PlayStation cihazlar için kısa ve uygulanabilir rehberler."
+seo_description: "PlayStation cihazlar için kısa ve uygulanabilir rehberler. Adımları, önemli uyarıları ve ilgili cihaz kontrollerini KaçaGider'da inceleyin."
 seo_h1: "PlayStation Rehberleri"
 seo_intro: "PlayStation cihazlarda sık kullanılan işlemler için rehberler."
 seo_context_heading: "PlayStation rehberleri"

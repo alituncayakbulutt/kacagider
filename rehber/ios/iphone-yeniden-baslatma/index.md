@@ -1,7 +1,7 @@
 ---
 layout: "seo"
 seo_title: "iPhone Nasıl Yeniden Başlatılır? | KaçaGider"
-seo_description: "iPhone Nasıl Yeniden Başlatılır? için kısa, uygulanabilir adımlar ve önemli uyarılar."
+seo_description: "iPhone Nasıl Yeniden Başlatılır? için kısa, uygulanabilir adımlar ve önemli uyarılar. Adımları, önemli uyarıları ve ilgili cihaz kontrollerini KaçaGider'da inceleyin."
 seo_h1: "iPhone Nasıl Yeniden Başlatılır?"
 seo_intro: "Güç menüsünden yeniden başlatma seçeneğini kullanın. Cihaz yanıt vermiyorsa üreticinin zorla yeniden başlatma yönergesini kontrol edin."
 seo_context_heading: "Kısa cevap"

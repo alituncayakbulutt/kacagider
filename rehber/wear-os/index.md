@@ -1,7 +1,7 @@
 ---
 layout: "seo"
 seo_title: "Wear OS Rehberleri | KaçaGider"
-seo_description: "Wear OS cihazlar için kısa ve uygulanabilir rehberler."
+seo_description: "Wear OS cihazlar için kısa ve uygulanabilir rehberler. Adımları, önemli uyarıları ve ilgili cihaz kontrollerini KaçaGider'da inceleyin."
 seo_h1: "Wear OS Rehberleri"
 seo_intro: "Wear OS cihazlarda sık kullanılan işlemler için rehberler."
 seo_context_heading: "Wear OS rehberleri"

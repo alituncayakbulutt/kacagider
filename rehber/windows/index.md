@@ -1,7 +1,7 @@
 ---
 layout: "seo"
 seo_title: "Windows Rehberleri | KaçaGider"
-seo_description: "Windows cihazlar için kısa ve uygulanabilir rehberler."
+seo_description: "Windows cihazlar için kısa ve uygulanabilir rehberler. Adımları, önemli uyarıları ve ilgili cihaz kontrollerini KaçaGider'da inceleyin."
 seo_h1: "Windows Rehberleri"
 seo_intro: "Windows cihazlarda sık kullanılan işlemler için rehberler."
 seo_context_heading: "Windows rehberleri"

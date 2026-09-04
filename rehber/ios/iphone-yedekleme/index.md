@@ -1,7 +1,7 @@
 ---
 layout: "seo"
 seo_title: "iPhone Nasıl Yedeklenir? | KaçaGider"
-seo_description: "iPhone Nasıl Yedeklenir? için kısa, uygulanabilir adımlar ve önemli uyarılar."
+seo_description: "iPhone Nasıl Yedeklenir? için kısa, uygulanabilir adımlar ve önemli uyarılar. Adımları, önemli uyarıları ve ilgili cihaz kontrollerini KaçaGider'da inceleyin."
 seo_h1: "iPhone Nasıl Yedeklenir?"
 seo_intro: "Verilerinizi bulut hesabına veya bilgisayara yedekleyin. Kullanılan uygulama ve menü adları platforma göre değişebilir."
 seo_context_heading: "Kısa cevap"

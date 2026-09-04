@@ -1,7 +1,7 @@
 ---
 layout: "seo"
 seo_title: "macOS Rehberleri | KaçaGider"
-seo_description: "macOS cihazlar için kısa ve uygulanabilir rehberler."
+seo_description: "macOS cihazlar için kısa ve uygulanabilir rehberler. Adımları, önemli uyarıları ve ilgili cihaz kontrollerini KaçaGider'da inceleyin."
 seo_h1: "macOS Rehberleri"
 seo_intro: "macOS cihazlarda sık kullanılan işlemler için rehberler."
 seo_context_heading: "macOS rehberleri"

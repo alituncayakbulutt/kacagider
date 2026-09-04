@@ -1,7 +1,7 @@
 ---
 layout: "seo"
 seo_title: "PlayStation Kolu Nasıl Eşleştirilir? | KaçaGider"
-seo_description: "PlayStation Kolu Nasıl Eşleştirilir? için kısa, uygulanabilir adımlar ve önemli uyarılar."
+seo_description: "PlayStation Kolu Nasıl Eşleştirilir? için kısa, uygulanabilir adımlar ve önemli uyarılar. Adımları, önemli uyarıları ve ilgili cihaz kontrollerini KaçaGider'da inceleyin."
 seo_h1: "PlayStation Kolu Nasıl Eşleştirilir?"
 seo_intro: "Cihazları yakın tutun, Bluetooth bağlantısını açın ve ilgili uygulamadaki eşleştirme adımlarını izleyin."
 seo_context_heading: "Kısa cevap"

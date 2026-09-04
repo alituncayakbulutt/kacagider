@@ -1,7 +1,7 @@
 ---
 layout: "seo"
 seo_title: "Mac Depolama Alanı Nasıl Boşaltılır? | KaçaGider"
-seo_description: "Mac Depolama Alanı Nasıl Boşaltılır? için kısa, uygulanabilir adımlar ve önemli uyarılar."
+seo_description: "Mac Depolama Alanı Nasıl Boşaltılır? için kısa, uygulanabilir adımlar ve önemli uyarılar. Adımları, önemli uyarıları ve ilgili cihaz kontrollerini KaçaGider'da inceleyin."
 seo_h1: "Mac Depolama Alanı Nasıl Boşaltılır?"
 seo_intro: "Kullanmadığınız uygulamaları ve büyük dosyaları kaldırarak alan açın."
 seo_context_heading: "Kısa cevap"

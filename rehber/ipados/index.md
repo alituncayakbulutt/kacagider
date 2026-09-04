@@ -1,7 +1,7 @@
 ---
 layout: "seo"
 seo_title: "iPadOS Rehberleri | KaçaGider"
-seo_description: "iPadOS cihazlar için kısa ve uygulanabilir rehberler."
+seo_description: "iPadOS cihazlar için kısa ve uygulanabilir rehberler. Adımları, önemli uyarıları ve ilgili cihaz kontrollerini KaçaGider'da inceleyin."
 seo_h1: "iPadOS Rehberleri"
 seo_intro: "iPadOS cihazlarda sık kullanılan işlemler için rehberler."
 seo_context_heading: "iPadOS rehberleri"

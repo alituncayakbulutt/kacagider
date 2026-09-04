@@ -1,7 +1,7 @@
 ---
 layout: "seo"
 seo_title: "iOS Rehberleri | KaçaGider"
-seo_description: "iOS cihazlar için kısa ve uygulanabilir rehberler."
+seo_description: "iOS cihazlar için kısa ve uygulanabilir rehberler. Adımları, önemli uyarıları ve ilgili cihaz kontrollerini KaçaGider'da inceleyin."
 seo_h1: "iOS Rehberleri"
 seo_intro: "iOS cihazlarda sık kullanılan işlemler için rehberler."
 seo_context_heading: "iOS rehberleri"

@@ -1,7 +1,7 @@
 ---
 layout: "seo"
 seo_title: "Nintendo Rehberleri | KaçaGider"
-seo_description: "Nintendo cihazlar için kısa ve uygulanabilir rehberler."
+seo_description: "Nintendo cihazlar için kısa ve uygulanabilir rehberler. Adımları, önemli uyarıları ve ilgili cihaz kontrollerini KaçaGider'da inceleyin."
 seo_h1: "Nintendo Rehberleri"
 seo_intro: "Nintendo cihazlarda sık kullanılan işlemler için rehberler."
 seo_context_heading: "Nintendo rehberleri"
