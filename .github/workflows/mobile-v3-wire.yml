@@ -5,6 +5,7 @@ on:
     paths:
       - 'assets/mobile-v3.css'
       - 'scripts/mobile-v3-wire.py'
+      - 'scripts/mobile-v3-audit.py'
       - '.github/workflows/mobile-v3-wire.yml'
   workflow_dispatch:
 
@@ -21,6 +22,8 @@ jobs:
           python-version: '3.x'
       - name: Wire Mobile V3 stylesheet
         run: python scripts/mobile-v3-wire.py
+      - name: Validate Mobile V3 quality
+        run: python scripts/mobile-v3-audit.py
       - name: Validate SEO and site integrity
         run: python scripts/seo-site-audit.py
       - name: Commit Mobile V3 wiring
