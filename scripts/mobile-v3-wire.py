@@ -7,6 +7,7 @@ TARGETS = [
     Path('index.html'),
     Path('_layouts/seo.html'),
     Path('ilanlar/index.html'),
+    Path('ilan/index.html'),
     Path('hesabim/index.html'),
 ]
 
@@ -34,7 +35,14 @@ def normalize_mobile_head(text: str, path: Path) -> str:
         raise SystemExit(f'{path}: valid </head> not found after repair')
 
     insertion = MARKER + '\n' + LINK + '\n</head>'
-    return text[:match.start()] + insertion + text[match.end():]
+    wired = text[:match.start()] + insertion + text[match.end():]
+
+    # Structural guard: one marker, one stylesheet and one valid closing head.
+    if wired.count(MARKER) != 1 or wired.count(LINK) != 1:
+        raise SystemExit(f'{path}: Mobile V3 marker/link count invalid')
+    if len(re.findall(r'</head\s*>', wired, flags=re.IGNORECASE)) != 1:
+        raise SystemExit(f'{path}: closing head count invalid')
+    return wired
 
 
 updated = []
