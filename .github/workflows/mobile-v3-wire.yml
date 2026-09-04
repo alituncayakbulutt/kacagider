@@ -1,0 +1,34 @@
+name: Mobile V3 Wiring
+
+on:
+  push:
+    paths:
+      - 'assets/mobile-v3.css'
+      - 'scripts/mobile-v3-wire.py'
+      - '.github/workflows/mobile-v3-wire.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  wire:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+      - name: Wire Mobile V3 stylesheet
+        run: python scripts/mobile-v3-wire.py
+      - name: Commit Mobile V3 wiring
+        run: |
+          if git diff --quiet; then
+            echo "Mobile V3 already wired."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -- index.html _layouts/seo.html ilanlar/index.html hesabim/index.html
+          git commit -m "Phase 7: enable mobile V3 across core flows"
+          git push
