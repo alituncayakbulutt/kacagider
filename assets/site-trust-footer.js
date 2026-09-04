@@ -1,7 +1,27 @@
 (function(){
   'use strict';
+
+  function removeLegacyFooter(){
+    var legacy=document.getElementById('kgGlobalFooter');
+    if(legacy) legacy.remove();
+    var legacyStyle=document.getElementById('kgGlobalFooterStyle');
+    if(legacyStyle) legacyStyle.remove();
+  }
+
+  function watchLegacyFooter(){
+    removeLegacyFooter();
+    if(!document.body || typeof MutationObserver==='undefined') return;
+    var observer=new MutationObserver(function(){ removeLegacyFooter(); });
+    observer.observe(document.body,{childList:true});
+    setTimeout(function(){ removeLegacyFooter(); observer.disconnect(); },4000);
+  }
+
   function addFooter(){
-    if(document.getElementById('kgSiteTrustFooter')) return;
+    removeLegacyFooter();
+    if(document.getElementById('kgSiteTrustFooter')){
+      watchLegacyFooter();
+      return;
+    }
     var blocked=['/admin/'];
     if(blocked.some(function(p){return location.pathname.indexOf(p)===0;})) return;
 
@@ -36,6 +56,7 @@
     footer.setAttribute('aria-label','KaçaGider kurumsal ve güven bağlantıları');
     footer.innerHTML='<div class="kg-site-footer-wrap"><div class="kg-site-footer-grid"><div class="kg-site-footer-brandbox"><div class="kg-site-footer-brand">Kaça<span>Gider</span></div><p class="kg-site-footer-intro">İkinci el telefon, tablet, bilgisayar, akıllı saat ve oyun konsolları için tahmini piyasa değerini anlamana yardımcı olan bağımsız fiyat rehberi ve ilan platformu.</p><div class="kg-site-footer-badges"><span class="kg-site-footer-badge">Ücretsiz değerleme</span><span class="kg-site-footer-badge">Şeffaf metodoloji</span><span class="kg-site-footer-badge">Güvenli kullanım rehberleri</span></div></div><div><h3>KaçaGider</h3><div class="kg-site-footer-links"><a href="/hakkimizda/">Hakkımızda</a><a href="/veri-metodolojisi/">Veri Metodolojisi</a><a href="/bilgi-merkezi/">Bilgi Merkezi</a><a href="/iletisim/">İletişim</a></div></div><div><h3>Güven</h3><div class="kg-site-footer-links"><a href="/guven-merkezi/">Güven Merkezi</a><a href="/ilan-guvenligi/">İlan Güvenliği</a><a href="/gizlilik-politikasi/">Gizlilik Politikası</a><a href="/kvkk/">KVKK Aydınlatma</a></div></div><div><h3>Yasal</h3><div class="kg-site-footer-links"><a href="/kullanim-kosullari/">Kullanım Koşulları</a><a href="/cerez-politikasi/">Çerez Politikası</a><a href="mailto:info@kacagider.com.tr">info@kacagider.com.tr</a></div><p class="kg-site-footer-note">KaçaGider tarafından gösterilen değerler tahminidir; kesin alım veya satış garantisi değildir.</p></div></div><div class="kg-site-footer-bottom"><span>© '+new Date().getFullYear()+' KaçaGider. Tüm hakları saklıdır.</span><span>Satmadan veya satın almadan önce piyasa değerini kontrol et.</span></div></div>';
     document.body.appendChild(footer);
+    watchLegacyFooter();
 
     footer.addEventListener('click',function(e){
       var a=e.target.closest('a');
