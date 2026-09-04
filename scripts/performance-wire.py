@@ -54,15 +54,16 @@ for filename in [
             f'<script src="data/screen-repair-prices.js?v={PERF_VERSION}"></script>',
         )
 
-        # Remove the legacy full-page cache bypass that forced ?fresh=<timestamp>
-        # on every manual reload. Versioned assets are the cache invalidation path.
-        after = re.sub(
-            r'\n<script>\s*\(function \(\) \{\s*try\{\s*var entries = performance\.getEntriesByType.*?\?fresh=.*?\}\s*catch \(e\) \{\}\s*\}\)\(\);\s*</script>\s*\n',
-            "\n",
-            after,
-            count=1,
-            flags=re.DOTALL,
-        )
+        # Remove the legacy full-page reload cache bypass exactly from its unique
+        # navigation timing block. Do not touch the unrelated fresh-start UI state.
+        cache_start = after.find('<script>\n(function () {\n  try{\n    var entries = performance.getEntriesByType')
+        if cache_start < 0:
+            cache_start = after.find('<script>\r\n(function () {\r\n  try{\r\n    var entries = performance.getEntriesByType')
+        if cache_start >= 0:
+            cache_end = after.find('</script>', cache_start)
+            if cache_end < 0:
+                raise SystemExit('index.html: legacy reload script closing tag bulunamadi')
+            after = after[:cache_start] + after[cache_end + len('</script>'):]
 
         # The first category image is a cheap, above-the-fold candidate; prioritize it.
         after = after.replace(
