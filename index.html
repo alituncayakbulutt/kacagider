@@ -1,6 +1,13 @@
 <!DOCTYPE html>
 <html lang="tr">
 <head>
+<!-- KaçaGider FAZ 8: Performance resource hints -->
+<link rel="preconnect" href="https://www.googletagmanager.com">
+<link rel="dns-prefetch" href="//www.googletagmanager.com">
+<link rel="dns-prefetch" href="//cdn.jsdelivr.net">
+<link rel="dns-prefetch" href="//cfkrmzoghpoddkvzplyq.supabase.co">
+<link rel="preload" as="image" href="/assets/categories/telefon.jpg" fetchpriority="high">
+
 
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-078JHH25LH"></script>
@@ -12,8 +19,8 @@
 </script>
 
 <base href="/">
-<script src="data/phone-prices.js"></script>
-<script src="data/screen-repair-prices.js"></script>
+<script src="data/phone-prices.js?v=20260904-p8"></script>
+<script src="data/screen-repair-prices.js?v=20260904-p8"></script>
 <script src="/assets/analytics-events.js?v=20260901-live3" defer></script>
 <script src="/assets/site-trust-footer.js?v=20260904-1" defer></script>
 <script src="/assets/home-info-center-cta.js?v=20260904-2" defer></script>
@@ -24,25 +31,7 @@ try{
 }catch(e){}
 </script>
 
-<script>
-(function () {
-  try {
-    var entries = performance.getEntriesByType ? performance.getEntriesByType("navigation") : [];
-    var reload = entries.length && entries[0].type === "reload";
-    if (!reload && performance.navigation) reload = performance.navigation.type === 1;
 
-    if (reload && window.location.pathname === "/") {
-      window.location.replace("/?fresh=" + Date.now());
-      return;
-    }
-
-    // Clean the temporary URL without another navigation.
-    if (window.location.pathname === "/" && new URL(window.location.href).searchParams.has("fresh")) {
-      history.replaceState(null, "", "/");
-    }
-  } catch (e) {}
-})();
-</script>
 
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -1947,35 +1936,35 @@ html[data-theme="dark"] .kg-main-nav a:not(.active):hover{color:#d9fbe6!importan
   <section class="home-intro kg-category-section">
     <div class="category-grid kg-approved-category-grid">
       <button class="category-card kg-approved-card" data-category="phone" onclick="selectCategory('phone',this)">
-        <div class="kg-product-art"><img src="assets/categories/telefon.jpg" alt="Telefon"></div>
+        <div class="kg-product-art"><img src="assets/categories/telefon.jpg" alt="Telefon" decoding="async" fetchpriority="high"></div>
         <span class="category-name">Telefon</span>
         <span class="category-sub">iPhone, Samsung, Xiaomi<br>ve daha fazlası</span>
         <span class="kg-card-cta">Hemen Değerini Öğren <b>→</b></span>
       </button>
 
       <button class="category-card kg-approved-card" data-category="tablet" onclick="selectCategory('tablet',this)">
-        <div class="kg-product-art"><img src="assets/categories/tablet.jpg" alt="Tablet"></div>
+        <div class="kg-product-art"><img src="assets/categories/tablet.jpg" alt="Tablet" decoding="async"></div>
         <span class="category-name">Tablet</span>
         <span class="category-sub">iPad, Samsung Galaxy Tab<br>ve daha fazlası</span>
         <span class="kg-card-cta">Hemen Değerini Öğren <b>→</b></span>
       </button>
 
       <button class="category-card kg-approved-card" data-category="computer" onclick="selectCategory('computer',this)">
-        <div class="kg-product-art"><img src="assets/categories/bilgisayar.jpg" alt="Bilgisayar"></div>
+        <div class="kg-product-art"><img src="assets/categories/bilgisayar.jpg" alt="Bilgisayar" decoding="async"></div>
         <span class="category-name">Bilgisayar</span>
         <span class="category-sub">MacBook, Windows Laptop<br>ve daha fazlası</span>
         <span class="kg-card-cta">Hemen Değerini Öğren <b>→</b></span>
       </button>
 
       <button class="category-card kg-approved-card" data-category="watch" onclick="selectCategory('watch',this)">
-        <div class="kg-product-art"><img src="assets/categories/akilli-saat.jpg" alt="Akıllı Saat"></div>
+        <div class="kg-product-art"><img src="assets/categories/akilli-saat.jpg" alt="Akıllı Saat" decoding="async"></div>
         <span class="category-name">Akıllı Saat</span>
         <span class="category-sub">Apple Watch<br>ve diğerleri</span>
         <span class="kg-card-cta">Hemen Değerini Öğren <b>→</b></span>
       </button>
 
       <button class="category-card kg-approved-card" data-category="console" onclick="selectCategory('console',this)">
-        <div class="kg-product-art"><img src="assets/categories/oyun-konsolu.jpg" alt="Oyun Konsolu"></div>
+        <div class="kg-product-art"><img src="assets/categories/oyun-konsolu.jpg" alt="Oyun Konsolu" decoding="async"></div>
         <span class="category-name">Oyun Konsolu</span>
         <span class="category-sub">PlayStation, Xbox<br>ve diğerleri</span>
         <span class="kg-card-cta">Hemen Değerini Öğren <b>→</b></span>
