@@ -72,9 +72,6 @@
   window.setTimeout(ensureMobileListingsAction,1000);
   window.setTimeout(ensureMobileListingsAction,2000);
 
-  var KG_GA_MEASUREMENT_ID="G-078JHH25LH";
-  if(typeof window.gtag==="function")window.gtag("config",KG_GA_MEASUREMENT_ID);
-
   var CATEGORY_LABELS={phone:"Telefon",tablet:"Tablet",computer:"Bilgisayar",watch:"Akıllı Saat",console:"Oyun Konsolu"};
   var PATH_CATEGORY_LABELS={telefon:"Telefon",tablet:"Tablet",bilgisayar:"Bilgisayar","akilli-saat":"Akıllı Saat","oyun-konsolu":"Oyun Konsolu"};
 
