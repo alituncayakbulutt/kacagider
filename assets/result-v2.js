@@ -141,6 +141,16 @@
   function selectedText(id){var el=document.getElementById(id);if(!el)return '';if(el.tagName==='SELECT'){var o=el.options[el.selectedIndex];return o?String(o.textContent||'').trim():'';}return String(el.value||'').trim();}
   function currentCategory(){var active=document.querySelector('.category-card.active[data-category],.kg-approved-card.active[data-category],[data-category].active'),raw=active&&active.dataset?active.dataset.category:'';var map={phone:'phone',telefon:'phone',tablet:'tablet',computer:'computer',bilgisayar:'computer',watch:'watch','akilli-saat':'watch',console:'console','oyun-konsolu':'console'};if(map[raw])return map[raw];var n=document.getElementById('selectedCategoryName'),t=String(n&&n.textContent||'').trim();return {'Telefon':'phone','Tablet':'tablet','Bilgisayar':'computer','Akıllı Saat':'watch','Oyun Konsolu':'console'}[t]||'phone';}
   function valuationPayload(snap,user){var cat=currentCategory(),generic=cat!=='phone',details=[];try{if(typeof window.KGMarketplaceCollectDetails==='function')details=window.KGMarketplaceCollectDetails()||[];}catch(_e){}return {user_id:user.id,category:cat,brand:selectedText(generic?'genericBrand':'phoneBrand'),model:selectedText(generic?'genericModel':'model'),storage:selectedText(generic?'genericStorage':'storage')||null,estimated_price:snap.main||null,quick_sale_price:snap.quick||null,listing_price:snap.listing||null,confidence_score:snap.score?Math.min(100,Math.round(snap.score)):null,details:{conditions:Array.isArray(details)?details:[]}};}
+  function priceAlertReference(payload){
+    if(!payload||payload.category!=='phone'||typeof PHONE_PRICE_DATA==='undefined')return 0;
+    try{
+      var brands=PHONE_PRICE_DATA||{},bk=Object.keys(brands).find(function(k){return String(k).toLocaleLowerCase('tr-TR')===String(payload.brand||'').toLocaleLowerCase('tr-TR');});if(!bk)return 0;
+      var models=brands[bk]||{},mk=Object.keys(models).find(function(k){return String(k).toLocaleLowerCase('tr-TR')===String(payload.model||'').toLocaleLowerCase('tr-TR');});if(!mk)return 0;
+      var variants=models[mk]||{},m=String(payload.storage||'').match(/\d+/),key=m?m[0]:String(payload.storage||'').trim(),row=variants[key];
+      if(!row&&Object.keys(variants).length===1)row=variants[Object.keys(variants)[0]];
+      return Number(row&&row.estimated_price||0)||0;
+    }catch(_e){return 0;}
+  }
   function payloadValid(p){return !!(p&&p.brand&&p.model&&p.estimated_price);}
   function cloudSignature(p){return [p.category,p.brand,p.model,p.storage||'',p.estimated_price,p.quick_sale_price||'',p.listing_price||'',p.confidence_score||''].join('|');}
 
@@ -171,8 +181,8 @@
     try{
       var api=await membershipApi(),user=await api.getUser();if(!user){setStatus('Fiyat alarmı için önce giriş yap.');ensureAccountNav();return;}
       var payload=valuationPayload(snap,user);if(!payloadValid(payload)){setStatus('Cihaz bilgileri tamamlanmadı.');return;}
-      var client=await api.init(),r=await client.from('price_alerts').upsert({user_id:user.id,category:payload.category,brand:payload.brand,model:payload.model,storage:payload.storage,baseline_price:payload.estimated_price,target_price:payload.estimated_price,is_active:true,updated_at:new Date().toISOString()},{onConflict:'user_id,category,brand,model,storage'});if(r.error)throw r.error;
-      setStatus('Fiyat alarmı açıldı. Hesabım bölümünden yönetebilirsin.');if(typeof window.gtag==='function')window.gtag('event','price_alert_created',{category:payload.category,brand:payload.brand,model:payload.model});
+      var ref=priceAlertReference(payload),factor=ref&&payload.estimated_price?payload.estimated_price/ref:null;var client=await api.init(),r=await client.from('price_alerts').upsert({user_id:user.id,category:payload.category,brand:payload.brand,model:payload.model,storage:payload.storage,baseline_price:payload.estimated_price,target_price:payload.estimated_price,current_price:payload.estimated_price,source_reference_price:ref||null,condition_factor:factor||null,notification_mode:'significant',threshold_pct:5,is_active:true,last_checked_at:null,last_status:'waiting',last_error:null,updated_at:new Date().toISOString()},{onConflict:'user_id,category,brand,model,storage'});if(r.error)throw r.error;
+      setStatus('Fiyat alarmı açıldı. %5 ve üzeri değişimleri Hesabım bölümünden takip edebilirsin.');if(typeof window.gtag==='function')window.gtag('event','price_alert_created',{category:payload.category,brand:payload.brand,model:payload.model,notification_mode:'significant',threshold_pct:5});
     }catch(_e){setStatus('Fiyat alarmı oluşturulamadı.');}
   }
 
