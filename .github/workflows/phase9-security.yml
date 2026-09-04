@@ -1,0 +1,35 @@
+name: Phase 9 Security
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  security-audit:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+
+      - name: Repository security audit
+        run: python scripts/security-audit.py
+
+      - name: Preserve performance quality gate
+        run: python scripts/performance-audit.py
+
+      - name: Preserve Mobile V3 quality gate
+        run: python scripts/mobile-v3-audit.py
+
+      - name: Preserve SEO quality gate
+        run: python scripts/seo-site-audit.py
