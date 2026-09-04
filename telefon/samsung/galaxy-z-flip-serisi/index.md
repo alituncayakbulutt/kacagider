@@ -2,12 +2,12 @@
 layout: "seo"
 seo_page_type: "series_hub"
 seo_hub_version: "brand-series-v1"
-seo_title: "Samsung Galaxy Z Flip Serisi İkinci El Fiyatları | KaçaGider"
-seo_description: "Samsung Galaxy Z Flip Serisi İkinci El Fiyatları ve Piyasa Değeri kaça satılır? Hafıza, ekran, batarya ve cihaz durumuna göre 2026 güncel ikinci el ortalama satış değerini KaçaGider ile ücretsiz hesapla."
-seo_h1: "Samsung Galaxy Z Flip Serisi İkinci El Fiyatları ve Piyasa Değeri Kaça Satılır? 2026 İkinci El Fiyatı"
-seo_intro: "Samsung Galaxy Z Flip Serisi İkinci El Fiyatları ve Piyasa Değeri kaça satılır? 2026 ikinci el değeri; hafıza, ekran, batarya ve cihaz durumu gibi özelliklere göre değişir. KaçaGider ile cihazınızın ortalama satış değerini ücretsiz hesaplayabilirsiniz."
-seo_context_heading: "Samsung Galaxy Z Flip Serisi İkinci El Fiyatları ve Piyasa Değeri ikinci el değeri nasıl hesaplanır?"
-seo_context: "Samsung Galaxy Z Flip Serisi İkinci El Fiyatları ve Piyasa Değeri ikinci el fiyatı belirlenirken hafıza, ekran, batarya ve cihaz durumu birlikte değerlendirilir. Cihazın kondisyonu ve çalışan özelliklerinin durumu ortalama satış değerini doğrudan etkiler. KaçaGider üzerinden bilgilerinizi seçerek 2026 için güncel ikinci el piyasa değerini görebilirsiniz."
+seo_title: "Samsung Galaxy Z Flip Serisi İkinci El Fiyatları Kaça Satılır? | KaçaGider"
+seo_description: "Samsung Galaxy Z Flip Serisi İkinci El Fiyatları Kaça Satılır? ne kadar eder? İkinci el fiyatı ve piyasa değerini cihaz özellikleri ve kondisyonuna göre KaçaGider ile öğren."
+seo_h1: "Samsung Galaxy Z Flip Serisi İkinci El Fiyatları Kaça Satılır? 2026 İkinci El Fiyatı"
+seo_intro: "Samsung Galaxy Z Flip Serisi İkinci El Fiyatları kaça satılır? 2026 ikinci el değeri; hafıza, ekran, batarya ve cihaz durumu gibi özelliklere göre değişir. KaçaGider ile cihazınızın ortalama satış değerini ücretsiz hesaplayabilirsiniz."
+seo_context_heading: "Samsung Galaxy Z Flip Serisi İkinci El Fiyatları ikinci el değeri nasıl hesaplanır?"
+seo_context: "Samsung Galaxy Z Flip Serisi İkinci El Fiyatları ikinci el fiyatı belirlenirken hafıza, ekran, batarya ve cihaz durumu birlikte değerlendirilir. Cihazın kondisyonu ve çalışan özelliklerinin durumu ortalama satış değerini doğrudan etkiler. KaçaGider üzerinden bilgilerinizi seçerek 2026 için güncel ikinci el piyasa değerini görebilirsiniz."
 seo_breadcrumbs: [{"label":"Ana Sayfa","url":"/"},{"label":"Telefon","url":"/telefon/"},{"label":"Samsung","url":"/telefon/samsung/"},{"label":"Galaxy Z Flip Serisi","url":"/telefon/samsung/galaxy-z-flip-serisi/"}]
 seo_links: [{"label":"Galaxy Z Flip3","url":"/telefon/samsung/galaxy-z-flip3/"},{"label":"Galaxy Z Flip4","url":"/telefon/samsung/galaxy-z-flip4/"},{"label":"Galaxy Z Flip5","url":"/telefon/samsung/galaxy-z-flip5/"},{"label":"Galaxy Z Flip6","url":"/telefon/samsung/galaxy-z-flip6/"},{"label":"Galaxy Z Flip7","url":"/telefon/samsung/galaxy-z-flip7/"},{"label":"Galaxy Z Flip8","url":"/telefon/samsung/galaxy-z-flip8/"},{"label":"Model karşılaştırma rehberi","url":"/model-karsilastirma/","kg_link_cluster":"comparison-intent-v1"},{"label":"KaçaGider piyasa verisi ve fiyat geçmişi","url":"/piyasa-verisi/","kg_link_cluster":"market-data-v1"},{"label":"Değerleme ve veri metodolojisi","url":"/veri-metodolojisi/","kg_link_cluster":"authority-v1"}]
 seo_links_heading: "Samsung Galaxy Z Flip Serisi modelleri"

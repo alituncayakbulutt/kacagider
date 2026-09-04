@@ -2,12 +2,12 @@
 layout: "seo"
 seo_page_type: "series_hub"
 seo_hub_version: "brand-series-v1"
-seo_title: "Honor X Serisi İkinci El Fiyatları | KaçaGider"
-seo_description: "Honor X Serisi İkinci El Fiyatları ve Piyasa Değeri Kaça Satılır? ne kadar eder? İkinci el fiyatı ve piyasa değerini cihaz özellikleri ve kondisyonuna göre KaçaGider ile öğren."
-seo_h1: "Honor X Serisi İkinci El Fiyatları ve Piyasa Değeri Kaça Satılır? 2026 İkinci El Fiyatı"
-seo_intro: "Honor X Serisi İkinci El Fiyatları ve Piyasa Değeri kaça satılır? 2026 ikinci el değeri; hafıza, ekran, batarya, kamera ve cihaz durumu gibi özelliklere göre değişir. KaçaGider ile cihazınızın ortalama satış değerini ücretsiz hesaplayabilirsiniz."
-seo_context_heading: "Honor X Serisi İkinci El Fiyatları ve Piyasa Değeri ikinci el değeri nasıl hesaplanır?"
-seo_context: "Honor X Serisi İkinci El Fiyatları ve Piyasa Değeri ikinci el fiyatı belirlenirken hafıza, ekran, batarya, kamera ve cihaz durumu birlikte değerlendirilir. Cihazın kondisyonu ve çalışan özelliklerinin durumu ortalama satış değerini doğrudan etkiler. KaçaGider üzerinden bilgilerinizi seçerek 2026 için güncel ikinci el piyasa değerini görebilirsiniz."
+seo_title: "Honor X Serisi İkinci El Fiyatları Kaça Satılır? 2026 | KaçaGider"
+seo_description: "Honor X Serisi İkinci El Fiyatları kaça satılır? Hafıza, ekran, batarya, kamera ve cihaz durumuna göre 2026 güncel ikinci el ortalama satış değerini KaçaGider ile ücretsiz hesapla."
+seo_h1: "Honor X Serisi İkinci El Fiyatları Kaça Satılır? 2026 İkinci El Fiyatı"
+seo_intro: "Honor X Serisi İkinci El Fiyatları kaça satılır? 2026 ikinci el değeri; hafıza, ekran, batarya, kamera ve cihaz durumu gibi özelliklere göre değişir. KaçaGider ile cihazınızın ortalama satış değerini ücretsiz hesaplayabilirsiniz."
+seo_context_heading: "Honor X Serisi İkinci El Fiyatları ikinci el değeri nasıl hesaplanır?"
+seo_context: "Honor X Serisi İkinci El Fiyatları ikinci el fiyatı belirlenirken hafıza, ekran, batarya, kamera ve cihaz durumu birlikte değerlendirilir. Cihazın kondisyonu ve çalışan özelliklerinin durumu ortalama satış değerini doğrudan etkiler. KaçaGider üzerinden bilgilerinizi seçerek 2026 için güncel ikinci el piyasa değerini görebilirsiniz."
 seo_breadcrumbs: [{"label":"Ana Sayfa","url":"/"},{"label":"Telefon","url":"/telefon/"},{"label":"Honor","url":"/telefon/honor/"},{"label":"X Serisi","url":"/telefon/honor/x-serisi/"}]
 seo_links: [{"label":"X7","url":"/telefon/honor/x7/"},{"label":"X7a","url":"/telefon/honor/x7a/"},{"label":"X7b","url":"/telefon/honor/x7b/"},{"label":"X8","url":"/telefon/honor/x8/"},{"label":"X8a","url":"/telefon/honor/x8a/"},{"label":"X8b","url":"/telefon/honor/x8b/"},{"label":"X9","url":"/telefon/honor/x9/"},{"label":"X9a","url":"/telefon/honor/x9a/"},{"label":"X9b","url":"/telefon/honor/x9b/"},{"label":"X9c","url":"/telefon/honor/x9c/"},{"label":"Model karşılaştırma rehberi","url":"/model-karsilastirma/","kg_link_cluster":"comparison-intent-v1"},{"label":"KaçaGider piyasa verisi ve fiyat geçmişi","url":"/piyasa-verisi/","kg_link_cluster":"market-data-v1"},{"label":"Değerleme ve veri metodolojisi","url":"/veri-metodolojisi/","kg_link_cluster":"authority-v1"}]
 seo_links_heading: "Honor X Serisi modelleri"

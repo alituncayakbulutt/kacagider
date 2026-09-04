@@ -2,12 +2,12 @@
 layout: "seo"
 seo_page_type: "series_hub"
 seo_hub_version: "brand-series-v1"
-seo_title: "Samsung Galaxy Tab A Serisi İkinci El Fiyatları | KaçaGider"
-seo_description: "Samsung Galaxy Tab A Serisi İkinci El Fiyatları ve Piyasa Değeri ikinci el fiyatı Türkiye 2026: hafıza, ekran, batarya ve cihaz durumu dikkate alınarak güncel ortalama satış değerini KaçaGider ile ücretsiz hesapla."
-seo_h1: "Samsung Galaxy Tab A Serisi İkinci El Fiyatları ve Piyasa Değeri Kaça Satılır? 2026 İkinci El Fiyatı"
-seo_intro: "Samsung Galaxy Tab A Serisi İkinci El Fiyatları ve Piyasa Değeri ikinci el fiyatı Türkiye 2026 ne kadar? Hafıza, ekran, batarya ve cihaz durumu birlikte değerlendirilir. Cihaz bilgilerini seçerek güncel ortalama satış değerini KaçaGider ile ücretsiz öğrenebilirsiniz."
-seo_context_heading: "Samsung Galaxy Tab A Serisi İkinci El Fiyatları ve Piyasa Değeri ikinci el değeri nasıl hesaplanır?"
-seo_context: "Samsung Galaxy Tab A Serisi İkinci El Fiyatları ve Piyasa Değeri ikinci el fiyatı belirlenirken hafıza, ekran, batarya ve cihaz durumu birlikte değerlendirilir. Cihazın kondisyonu ve çalışan özelliklerinin durumu ortalama satış değerini doğrudan etkiler. KaçaGider üzerinden bilgilerinizi seçerek 2026 için güncel ikinci el piyasa değerini görebilirsiniz."
+seo_title: "Samsung Galaxy Tab A Serisi İkinci El Fiyatları Kaça Satılır? | KaçaGider"
+seo_description: "Samsung Galaxy Tab A Serisi İkinci El Fiyatları Kaça Satılır? ne kadar eder? İkinci el fiyatı ve piyasa değerini cihaz özellikleri ve kondisyonuna göre KaçaGider ile öğren."
+seo_h1: "Samsung Galaxy Tab A Serisi İkinci El Fiyatları Kaça Satılır? 2026 İkinci El Fiyatı"
+seo_intro: "Samsung Galaxy Tab A Serisi İkinci El Fiyatları ikinci el fiyatı Türkiye 2026 ne kadar? Hafıza, ekran, batarya ve cihaz durumu birlikte değerlendirilir. Cihaz bilgilerini seçerek güncel ortalama satış değerini KaçaGider ile ücretsiz öğrenebilirsiniz."
+seo_context_heading: "Samsung Galaxy Tab A Serisi İkinci El Fiyatları ikinci el değeri nasıl hesaplanır?"
+seo_context: "Samsung Galaxy Tab A Serisi İkinci El Fiyatları ikinci el fiyatı belirlenirken hafıza, ekran, batarya ve cihaz durumu birlikte değerlendirilir. Cihazın kondisyonu ve çalışan özelliklerinin durumu ortalama satış değerini doğrudan etkiler. KaçaGider üzerinden bilgilerinizi seçerek 2026 için güncel ikinci el piyasa değerini görebilirsiniz."
 seo_breadcrumbs: [{"label":"Ana Sayfa","url":"/"},{"label":"Tablet","url":"/tablet/"},{"label":"Samsung","url":"/tablet/samsung/"},{"label":"Galaxy Tab A Serisi","url":"/tablet/samsung/galaxy-tab-a-serisi/"}]
 seo_links: [{"label":"Galaxy Tab A7","url":"/tablet/samsung/galaxy-tab-a7/"},{"label":"Galaxy Tab A7 Lite","url":"/tablet/samsung/galaxy-tab-a7-lite/"},{"label":"Galaxy Tab A8","url":"/tablet/samsung/galaxy-tab-a8/"},{"label":"Galaxy Tab A9","url":"/tablet/samsung/galaxy-tab-a9/"},{"label":"Galaxy Tab A9+","url":"/tablet/samsung/galaxy-tab-a9-plus/"},{"label":"Model karşılaştırma rehberi","url":"/model-karsilastirma/","kg_link_cluster":"comparison-intent-v1"},{"label":"KaçaGider piyasa verisi ve fiyat geçmişi","url":"/piyasa-verisi/","kg_link_cluster":"market-data-v1"},{"label":"Değerleme ve veri metodolojisi","url":"/veri-metodolojisi/","kg_link_cluster":"authority-v1"}]
 seo_links_heading: "Samsung Galaxy Tab A Serisi modelleri"

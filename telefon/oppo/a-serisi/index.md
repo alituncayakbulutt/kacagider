@@ -2,12 +2,12 @@
 layout: "seo"
 seo_page_type: "series_hub"
 seo_hub_version: "brand-series-v1"
-seo_title: "Oppo A Serisi İkinci El Fiyatları | KaçaGider"
-seo_description: "Oppo A Serisi İkinci El Fiyatları ve Piyasa Değeri Kaça Satılır? ne kadar eder? İkinci el fiyatı ve piyasa değerini cihaz özellikleri ve kondisyonuna göre KaçaGider ile öğren."
-seo_h1: "Oppo A Serisi İkinci El Fiyatları ve Piyasa Değeri Kaça Satılır? 2026 İkinci El Fiyatı"
-seo_intro: "Oppo A Serisi İkinci El Fiyatları ve Piyasa Değeri kaça satılır? 2026 ikinci el değeri; hafıza, ekran, batarya, kamera ve cihaz durumu gibi özelliklere göre değişir. KaçaGider ile cihazınızın ortalama satış değerini ücretsiz hesaplayabilirsiniz."
-seo_context_heading: "Oppo A Serisi İkinci El Fiyatları ve Piyasa Değeri ikinci el değeri nasıl hesaplanır?"
-seo_context: "Oppo A Serisi İkinci El Fiyatları ve Piyasa Değeri ikinci el fiyatı belirlenirken hafıza, ekran, batarya, kamera ve cihaz durumu birlikte değerlendirilir. Cihazın kondisyonu ve çalışan özelliklerinin durumu ortalama satış değerini doğrudan etkiler. KaçaGider üzerinden bilgilerinizi seçerek 2026 için güncel ikinci el piyasa değerini görebilirsiniz."
+seo_title: "Oppo A Serisi İkinci El Fiyatları Kaça Satılır? 2026 | KaçaGider"
+seo_description: "Oppo A Serisi İkinci El Fiyatları kaça satılır? Hafıza, ekran, batarya, kamera ve cihaz durumuna göre 2026 güncel ikinci el ortalama satış değerini KaçaGider ile ücretsiz hesapla."
+seo_h1: "Oppo A Serisi İkinci El Fiyatları Kaça Satılır? 2026 İkinci El Fiyatı"
+seo_intro: "Oppo A Serisi İkinci El Fiyatları kaça satılır? 2026 ikinci el değeri; hafıza, ekran, batarya, kamera ve cihaz durumu gibi özelliklere göre değişir. KaçaGider ile cihazınızın ortalama satış değerini ücretsiz hesaplayabilirsiniz."
+seo_context_heading: "Oppo A Serisi İkinci El Fiyatları ikinci el değeri nasıl hesaplanır?"
+seo_context: "Oppo A Serisi İkinci El Fiyatları ikinci el fiyatı belirlenirken hafıza, ekran, batarya, kamera ve cihaz durumu birlikte değerlendirilir. Cihazın kondisyonu ve çalışan özelliklerinin durumu ortalama satış değerini doğrudan etkiler. KaçaGider üzerinden bilgilerinizi seçerek 2026 için güncel ikinci el piyasa değerini görebilirsiniz."
 seo_breadcrumbs: [{"label":"Ana Sayfa","url":"/"},{"label":"Telefon","url":"/telefon/"},{"label":"Oppo","url":"/telefon/oppo/"},{"label":"A Serisi","url":"/telefon/oppo/a-serisi/"}]
 seo_links: [{"label":"A16","url":"/telefon/oppo/a16/"},{"label":"A17","url":"/telefon/oppo/a17/"},{"label":"A18","url":"/telefon/oppo/a18/"},{"label":"A38","url":"/telefon/oppo/a38/"},{"label":"A54","url":"/telefon/oppo/a54/"},{"label":"A55","url":"/telefon/oppo/a55/"},{"label":"A57","url":"/telefon/oppo/a57/"},{"label":"A58","url":"/telefon/oppo/a58/"},{"label":"A60","url":"/telefon/oppo/a60/"},{"label":"A74","url":"/telefon/oppo/a74/"},{"label":"A76","url":"/telefon/oppo/a76/"},{"label":"A77","url":"/telefon/oppo/a77/"},{"label":"A78","url":"/telefon/oppo/a78/"},{"label":"A79","url":"/telefon/oppo/a79/"},{"label":"A96","url":"/telefon/oppo/a96/"},{"label":"A98","url":"/telefon/oppo/a98/"},{"label":"Model karşılaştırma rehberi","url":"/model-karsilastirma/","kg_link_cluster":"comparison-intent-v1"},{"label":"KaçaGider piyasa verisi ve fiyat geçmişi","url":"/piyasa-verisi/","kg_link_cluster":"market-data-v1"},{"label":"Değerleme ve veri metodolojisi","url":"/veri-metodolojisi/","kg_link_cluster":"authority-v1"}]
 seo_links_heading: "Oppo A Serisi modelleri"

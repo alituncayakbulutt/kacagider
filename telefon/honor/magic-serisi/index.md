@@ -2,12 +2,12 @@
 layout: "seo"
 seo_page_type: "series_hub"
 seo_hub_version: "brand-series-v1"
-seo_title: "Honor Magic Serisi İkinci El Fiyatları | KaçaGider"
-seo_description: "Honor Magic Serisi İkinci El Fiyatları ve Piyasa Değeri Kaça Satılır? ne kadar eder? İkinci el fiyatı ve piyasa değerini cihaz özellikleri ve kondisyonuna göre KaçaGider ile öğren."
-seo_h1: "Honor Magic Serisi İkinci El Fiyatları ve Piyasa Değeri Kaça Satılır? 2026 İkinci El Fiyatı"
-seo_intro: "Honor Magic Serisi İkinci El Fiyatları ve Piyasa Değeri kaça satılır? 2026 ikinci el değeri; hafıza, ekran, batarya, kamera ve cihaz durumu gibi özelliklere göre değişir. KaçaGider ile cihazınızın ortalama satış değerini ücretsiz hesaplayabilirsiniz."
-seo_context_heading: "Honor Magic Serisi İkinci El Fiyatları ve Piyasa Değeri ikinci el değeri nasıl hesaplanır?"
-seo_context: "Honor Magic Serisi İkinci El Fiyatları ve Piyasa Değeri ikinci el fiyatı belirlenirken hafıza, ekran, batarya, kamera ve cihaz durumu birlikte değerlendirilir. Cihazın kondisyonu ve çalışan özelliklerinin durumu ortalama satış değerini doğrudan etkiler. KaçaGider üzerinden bilgilerinizi seçerek 2026 için güncel ikinci el piyasa değerini görebilirsiniz."
+seo_title: "Honor Magic Serisi İkinci El Fiyatları Kaça Satılır? | KaçaGider"
+seo_description: "Honor Magic Serisi İkinci El Fiyatları Kaça Satılır? ne kadar eder? İkinci el fiyatı ve piyasa değerini cihaz özellikleri ve kondisyonuna göre KaçaGider ile öğren."
+seo_h1: "Honor Magic Serisi İkinci El Fiyatları Kaça Satılır? 2026 İkinci El Fiyatı"
+seo_intro: "Honor Magic Serisi İkinci El Fiyatları kaça satılır? 2026 ikinci el değeri; hafıza, ekran, batarya, kamera ve cihaz durumu gibi özelliklere göre değişir. KaçaGider ile cihazınızın ortalama satış değerini ücretsiz hesaplayabilirsiniz."
+seo_context_heading: "Honor Magic Serisi İkinci El Fiyatları ikinci el değeri nasıl hesaplanır?"
+seo_context: "Honor Magic Serisi İkinci El Fiyatları ikinci el fiyatı belirlenirken hafıza, ekran, batarya, kamera ve cihaz durumu birlikte değerlendirilir. Cihazın kondisyonu ve çalışan özelliklerinin durumu ortalama satış değerini doğrudan etkiler. KaçaGider üzerinden bilgilerinizi seçerek 2026 için güncel ikinci el piyasa değerini görebilirsiniz."
 seo_breadcrumbs: [{"label":"Ana Sayfa","url":"/"},{"label":"Telefon","url":"/telefon/"},{"label":"Honor","url":"/telefon/honor/"},{"label":"Magic Serisi","url":"/telefon/honor/magic-serisi/"}]
 seo_links: [{"label":"Magic4 Pro","url":"/telefon/honor/magic4-pro/"},{"label":"Magic5 Pro","url":"/telefon/honor/magic5-pro/"},{"label":"Magic6 Pro","url":"/telefon/honor/magic6-pro/"},{"label":"Magic7 Pro","url":"/telefon/honor/magic7-pro/"},{"label":"Magic V2","url":"/telefon/honor/magic-v2/"},{"label":"Magic V3","url":"/telefon/honor/magic-v3/"},{"label":"Model karşılaştırma rehberi","url":"/model-karsilastirma/","kg_link_cluster":"comparison-intent-v1"},{"label":"KaçaGider piyasa verisi ve fiyat geçmişi","url":"/piyasa-verisi/","kg_link_cluster":"market-data-v1"},{"label":"Değerleme ve veri metodolojisi","url":"/veri-metodolojisi/","kg_link_cluster":"authority-v1"}]
 seo_links_heading: "Honor Magic Serisi modelleri"

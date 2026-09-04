@@ -2,12 +2,12 @@
 layout: "seo"
 seo_page_type: "series_hub"
 seo_hub_version: "brand-series-v1"
-seo_title: "PlayStation 5 Serisi İkinci El Fiyatları | KaçaGider"
-seo_description: "PlayStation 5 Serisi İkinci El Fiyatları ve Piyasa Değeri kaça satılır? Depolama, kozmetik durum, aksesuarlar ve çalışma durumuna göre 2026 güncel ikinci el ortalama satış değerini KaçaGider ile ücretsiz hesapla."
-seo_h1: "PlayStation 5 Serisi İkinci El Fiyatları ve Piyasa Değeri Kaça Satılır? 2026 İkinci El Fiyatı"
-seo_intro: "PlayStation 5 Serisi İkinci El Fiyatları ve Piyasa Değeri kaça satılır? 2026 ikinci el değeri; depolama, kozmetik durum, aksesuarlar ve çalışma durumu gibi özelliklere göre değişir. KaçaGider ile cihazınızın ortalama satış değerini ücretsiz hesaplayabilirsiniz."
-seo_context_heading: "PlayStation 5 Serisi İkinci El Fiyatları ve Piyasa Değeri ikinci el değeri nasıl hesaplanır?"
-seo_context: "PlayStation 5 Serisi İkinci El Fiyatları ve Piyasa Değeri ikinci el fiyatı belirlenirken depolama, kozmetik durum, aksesuarlar ve çalışma durumu birlikte değerlendirilir. Cihazın kondisyonu ve çalışan özelliklerinin durumu ortalama satış değerini doğrudan etkiler. KaçaGider üzerinden bilgilerinizi seçerek 2026 için güncel ikinci el piyasa değerini görebilirsiniz."
+seo_title: "PlayStation 5 Serisi İkinci El Fiyatları Kaça Satılır? | KaçaGider"
+seo_description: "PlayStation 5 Serisi İkinci El Fiyatları Kaça Satılır? ne kadar eder? İkinci el fiyatı ve piyasa değerini cihaz özellikleri ve kondisyonuna göre KaçaGider ile öğren."
+seo_h1: "PlayStation 5 Serisi İkinci El Fiyatları Kaça Satılır? 2026 İkinci El Fiyatı"
+seo_intro: "PlayStation 5 Serisi İkinci El Fiyatları kaça satılır? 2026 ikinci el değeri; depolama, kozmetik durum, aksesuarlar ve çalışma durumu gibi özelliklere göre değişir. KaçaGider ile cihazınızın ortalama satış değerini ücretsiz hesaplayabilirsiniz."
+seo_context_heading: "PlayStation 5 Serisi İkinci El Fiyatları ikinci el değeri nasıl hesaplanır?"
+seo_context: "PlayStation 5 Serisi İkinci El Fiyatları ikinci el fiyatı belirlenirken depolama, kozmetik durum, aksesuarlar ve çalışma durumu birlikte değerlendirilir. Cihazın kondisyonu ve çalışan özelliklerinin durumu ortalama satış değerini doğrudan etkiler. KaçaGider üzerinden bilgilerinizi seçerek 2026 için güncel ikinci el piyasa değerini görebilirsiniz."
 seo_breadcrumbs: [{"label":"Ana Sayfa","url":"/"},{"label":"Oyun Konsolu","url":"/oyun-konsolu/"},{"label":"PlayStation","url":"/oyun-konsolu/playstation/"},{"label":"PlayStation 5 Serisi","url":"/oyun-konsolu/playstation/playstation-5-serisi/"}]
 seo_links: [{"label":"PlayStation 5 Pro","url":"/oyun-konsolu/playstation/playstation-5-pro/"},{"label":"PlayStation 5 Slim Diskli","url":"/oyun-konsolu/playstation/playstation-5-slim-diskli/"},{"label":"PlayStation 5 Slim Digital","url":"/oyun-konsolu/playstation/playstation-5-slim-digital/"},{"label":"PlayStation 5 Diskli","url":"/oyun-konsolu/playstation/playstation-5-diskli/"},{"label":"PlayStation 5 Digital","url":"/oyun-konsolu/playstation/playstation-5-digital/"},{"label":"Model karşılaştırma rehberi","url":"/model-karsilastirma/","kg_link_cluster":"comparison-intent-v1"},{"label":"KaçaGider piyasa verisi ve fiyat geçmişi","url":"/piyasa-verisi/","kg_link_cluster":"market-data-v1"},{"label":"Değerleme ve veri metodolojisi","url":"/veri-metodolojisi/","kg_link_cluster":"authority-v1"}]
 seo_links_heading: "PlayStation 5 Serisi modelleri"
