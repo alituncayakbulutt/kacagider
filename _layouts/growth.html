@@ -1,0 +1,39 @@
+---
+---
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>{{ page.seo_title }}</title>
+  <meta name="description" content="{{ page.seo_description }}">
+  <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1">
+  <link rel="canonical" href="{{ page.seo_canonical }}">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://www.googletagmanager.com">
+  <link rel="dns-prefetch" href="//cfkrmzoghpoddkvzplyq.supabase.co">
+  <link rel="stylesheet" href="/assets/growth.css?v=20260904-1">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="tr_TR">
+  <meta property="og:site_name" content="KaçaGider">
+  <meta property="og:title" content="{{ page.seo_title }}">
+  <meta property="og:description" content="{{ page.seo_description }}">
+  <meta property="og:url" content="{{ page.seo_canonical }}">
+  <meta property="og:image" content="https://kacagider.com.tr/assets/categories/telefon.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="{{ page.seo_title }}">
+  <meta name="twitter:description" content="{{ page.seo_description }}">
+  <meta name="twitter:image" content="https://kacagider.com.tr/assets/categories/telefon.jpg">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-078JHH25LH"></script>
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','G-078JHH25LH');</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","name":{{ page.seo_h1 | jsonify }},"description":{{ page.seo_description | jsonify }},"url":{{ page.seo_canonical | jsonify }},"isPartOf":{"@type":"WebSite","name":"KaçaGider","url":"https://kacagider.com.tr/"},"inLanguage":"tr-TR"}</script>
+</head>
+<body>
+<header class="kg-growth-top"><div class="kg-growth-nav"><a class="kg-growth-brand" href="/">Kaça<span>Gider</span><small>İkinci elin gerçek fiyatı</small></a><nav><a href="/">Değerini Hesapla</a><a href="/ilanlar/">İlanlar</a><a href="/bilgi-merkezi/">Bilgi Merkezi</a></nav></div></header>
+<main class="kg-growth-main">
+{{ content }}
+</main>
+<script src="/assets/site-trust-footer.js?v=20260904-p10" defer></script>
+{% if page.growth_form == "true" %}<script src="/assets/growth-leads.js?v=20260904-1" defer></script>{% endif %}
+</body>
+</html>
