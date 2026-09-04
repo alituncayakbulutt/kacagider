@@ -54,16 +54,19 @@ for filename in [
             f'<script src="data/screen-repair-prices.js?v={PERF_VERSION}"></script>',
         )
 
-        # Remove the legacy full-page reload cache bypass exactly from its unique
-        # navigation timing block. Do not touch the unrelated fresh-start UI state.
-        cache_start = after.find('<script>\n(function () {\n  try{\n    var entries = performance.getEntriesByType')
-        if cache_start < 0:
-            cache_start = after.find('<script>\r\n(function () {\r\n  try{\r\n    var entries = performance.getEntriesByType')
-        if cache_start >= 0:
-            cache_end = after.find('</script>', cache_start)
-            if cache_end < 0:
-                raise SystemExit('index.html: legacy reload script closing tag bulunamadi')
-            after = after[:cache_start] + after[cache_end + len('</script>'):]
+        # Remove only the legacy navigation-timing reload block. Keep the unrelated
+        # fresh-start CSS/body class that controls the home UI initial state.
+        nav_marker = "var entries = performance.getEntriesByType"
+        nav_pos = after.find(nav_marker)
+        if nav_pos >= 0:
+            cache_start = after.rfind("<script>", 0, nav_pos)
+            cache_end = after.find("</script>", nav_pos)
+            if cache_start < 0 or cache_end < 0:
+                raise SystemExit("index.html: legacy reload script boundaries bulunamadi")
+            block = after[cache_start:cache_end + len("</script>")]
+            if "?fresh=" not in block:
+                raise SystemExit("index.html: navigation timing script found but cache-buster marker missing")
+            after = after[:cache_start] + after[cache_end + len("</script>"):]
 
         # The first category image is a cheap, above-the-fold candidate; prioritize it.
         after = after.replace(
