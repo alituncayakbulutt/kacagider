@@ -30,26 +30,6 @@ try{
 }catch(e){}
 </script>
 
-<script>
-(function () {
-  try {
-    var entries = performance.getEntriesByType ? performance.getEntriesByType("navigation") : [];
-    var reload = entries.length && entries[0].type === "reload";
-    if (!reload && performance.navigation) reload = performance.navigation.type === 1;
-
-    if (reload && window.location.pathname === "/") {
-      window.location.replace("/?fresh=" + Date.now());
-      return;
-    }
-
-    // Clean the temporary URL without another navigation.
-    if (window.location.pathname === "/" && new URL(window.location.href).searchParams.has("fresh")) {
-      history.replaceState(null, "", "/");
-    }
-  } catch (e) {}
-})();
-</script>
-
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>{{ page.seo_title }}</title>
