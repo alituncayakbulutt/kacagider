@@ -35,13 +35,13 @@ if text!=original:
 else:
     print('marketplace-nav-test.js already patched')
 
-# Bust every textual reference so browsers fetch the corrected header script immediately.
+# Bust every page/script reference, but never rewrite workflow files.
 version='20260904-account-only-fix3'
 changed=[]
 for path in Path('.').rglob('*'):
-    if not path.is_file() or path==TARGET or '.git' in path.parts:
+    if not path.is_file() or path==TARGET or '.git' in path.parts or '.github' in path.parts:
         continue
-    if path.suffix.lower() not in {'.html','.md','.js','.yml','.yaml'}:
+    if path.suffix.lower() not in {'.html','.md','.js'}:
         continue
     try:
         s=path.read_text(encoding='utf-8')
