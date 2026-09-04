@@ -3,6 +3,14 @@ import re
 import sys
 
 REQUIRED = ['seo_title', 'seo_description', 'seo_h1', 'seo_canonical']
+QUALITY_WARNING_CATEGORIES = {
+    'long_title',
+    'short_title',
+    'long_description',
+    'short_description',
+    'duplicate_title',
+    'duplicate_description',
+}
 errors = []
 warnings = []
 
@@ -176,6 +184,11 @@ for url in re.findall(r'<loc>(https://kacagider\.com\.tr/[^<]*)</loc>', sitemap)
         continue
     if not ((Path(route) / 'index.md').exists() or (Path(route) / 'index.html').exists() or Path(route).exists()):
         warnings.append(f'sitemap.xml: URL has no local source {url}')
+
+# Phase 6 quality gate: metadata regressions must fail CI instead of silently accumulating.
+quality_warnings = [item for item in warnings if warning_category(item) in QUALITY_WARNING_CATEGORIES]
+if quality_warnings:
+    errors.append(f'SEO metadata quality gate failed: {len(quality_warnings)} metadata warning(s)')
 
 print(f'SEO AUDIT: {len(set(pages))} canonical SEO pages checked')
 if warnings:
