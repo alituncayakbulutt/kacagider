@@ -151,6 +151,6 @@
     add("/assets/marketplace-home-header.js");
     add("/assets/marketplace-home-slider.js");
     add("/assets/marketplace-test.js");
-    add("/assets/marketplace-nav-test.js");
+    add("/assets/marketplace-nav-test.js?v=20260904-account-only-fix3");
   });
 })();

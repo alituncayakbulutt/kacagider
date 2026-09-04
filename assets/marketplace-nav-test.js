@@ -174,8 +174,9 @@ async function syncAccountAction(){
     var api=await ensureAuthBackend();
     await api.ready;
     var user=api.getSessionUser?await api.getSessionUser():await api.getUser();
-    button.dataset.authMode=user?"logout":"login";
-    button.textContent=user?"Çıkış Yap":"Giriş Yap";
+    button.dataset.authMode=user?"account":"login";
+    button.textContent=user?"Hesabım":"Giriş Yap";
+    button.setAttribute("aria-label",user?"KaçaGider hesabımı aç":"KaçaGider hesabına giriş yap veya üye ol");
     button.disabled=false;
     if(!accountAuthWatchInstalled){
       var client=await api.init();
@@ -183,7 +184,7 @@ async function syncAccountAction(){
         accountAuthWatchInstalled=true;
         client.auth.onAuthStateChange(function(_event,session){
           var b=document.getElementById("kgHeaderAccountAction");if(!b)return;
-          var logged=Boolean(session&&session.user);b.dataset.authMode=logged?"logout":"login";b.textContent=logged?"Çıkış Yap":"Giriş Yap";b.disabled=false;
+          var logged=Boolean(session&&session.user);b.dataset.authMode=logged?"account":"login";b.textContent=logged?"Hesabım":"Giriş Yap";b.setAttribute("aria-label",logged?"KaçaGider hesabımı aç":"KaçaGider hesabına giriş yap veya üye ol");b.disabled=false;
         });
       }
     }
@@ -203,13 +204,7 @@ async function handleAccountAction(){
     await api.ready;
     var user=api.getSessionUser?await api.getSessionUser():await api.getUser();
     if(user){
-      button.textContent="Çıkılıyor…";
-      var result=await api.signOut();
-      if(result&&result.error)throw result.error;
-      try{sessionStorage.removeItem("kg-pending-listing-auth-v1");}catch(_e){}
-      button.dataset.authMode="login";
-      button.textContent="Giriş Yap";
-      button.disabled=false;
+      window.location.href="/hesabim/";
       return;
     }
     button.disabled=false;
@@ -268,7 +263,7 @@ function buildHeader(){
   account.className="kg-v4-action account";
   account.dataset.authMode="login";
   account.textContent="Giriş Yap";
-  account.setAttribute("aria-label","KaçaGider hesabına giriş yap veya çıkış yap");
+  account.setAttribute("aria-label","KaçaGider hesabına giriş yap veya hesabımı aç");
   account.addEventListener("click",handleAccountAction);
   var sell=document.createElement("button");
   sell.type="button";
