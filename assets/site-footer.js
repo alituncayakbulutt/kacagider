@@ -1,8 +1,14 @@
 (function(){
   'use strict';
   var FAVORITES_KEY='kg_marketplace_favorites_v1';
+  function hasTrustFooter(){
+    if(document.getElementById('kgSiteTrustFooter')) return true;
+    return Array.from(document.scripts||[]).some(function(script){
+      return /\/assets\/site-trust-footer\.js(?:\?|$)/.test(script.src||'');
+    });
+  }
   function inject(){
-    if(document.getElementById('kgGlobalFooter')) return;
+    if(document.getElementById('kgGlobalFooter') || hasTrustFooter()) return;
     var style=document.createElement('style');
     style.id='kgGlobalFooterStyle';
     style.textContent='.kg-global-footer{margin-top:40px;background:#0b1628;color:#fff;border-top:1px solid rgba(255,255,255,.08)}.kg-global-footer *{box-sizing:border-box}.kg-footer-inner{max-width:1480px;margin:0 auto;padding:38px 30px 22px}.kg-footer-top{display:grid;grid-template-columns:1.35fr repeat(3,1fr);gap:38px}.kg-footer-brand{font-size:27px;font-weight:950;letter-spacing:-.8px}.kg-footer-brand span{color:#10b956}.kg-footer-copy{margin:10px 0 0;max-width:390px;color:#aeb9c9;font-size:13px;line-height:1.65}.kg-footer-title{font-size:13px;font-weight:900;color:#fff;margin:3px 0 13px}.kg-footer-links{display:grid;gap:9px}.kg-footer-links a{color:#b8c3d2;text-decoration:none;font-size:12.5px;line-height:1.4}.kg-footer-links a:hover{color:#34d77a}.kg-footer-contact{display:inline-flex!important;align-items:center;gap:7px}.kg-footer-bottom{margin-top:30px;padding-top:18px;border-top:1px solid rgba(255,255,255,.1);display:flex;justify-content:space-between;gap:20px;align-items:center;color:#8795a9;font-size:11.5px}.kg-footer-note{max-width:760px;line-height:1.55}.kg-footer-badge{display:flex;gap:8px;flex-wrap:wrap;justify-content:flex-end}.kg-footer-badge span{border:1px solid rgba(255,255,255,.14);border-radius:999px;padding:6px 9px;color:#aeb9c9;white-space:nowrap}@media(max-width:900px){.kg-footer-top{grid-template-columns:1fr 1fr}.kg-footer-bottom{align-items:flex-start;flex-direction:column}.kg-footer-badge{justify-content:flex-start}}@media(max-width:560px){.kg-global-footer{margin-top:28px}.kg-footer-inner{padding:30px 18px 18px}.kg-footer-top{grid-template-columns:1fr;gap:25px}.kg-footer-brand{font-size:24px}.kg-footer-copy{font-size:12.5px}.kg-footer-bottom{margin-top:25px}.kg-footer-badge span{font-size:10.5px}}';
