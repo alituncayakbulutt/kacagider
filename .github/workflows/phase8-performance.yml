@@ -1,0 +1,58 @@
+name: Phase 8 Performance
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'index.html'
+      - '_layouts/seo.html'
+      - 'ilanlar/index.html'
+      - 'ilan/index.html'
+      - 'hesabim/index.html'
+      - 'assets/marketplace-v2-list.js'
+      - 'assets/marketplace-v2-detail.js'
+      - 'assets/mobile-v3.css'
+      - 'data/phone-prices.js'
+      - 'data/screen-repair-prices.js'
+      - 'scripts/performance-wire.py'
+      - 'scripts/performance-audit.py'
+      - '.github/workflows/phase8-performance.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  optimize:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+
+      - name: Apply safe Phase 8 performance wiring
+        run: python scripts/performance-wire.py
+
+      - name: Validate Phase 8 performance budgets
+        run: python scripts/performance-audit.py
+
+      - name: Preserve Mobile V3 quality gate
+        run: python scripts/mobile-v3-audit.py
+
+      - name: Preserve SEO quality gate
+        run: python scripts/seo-site-audit.py
+
+      - name: Commit Phase 8 wiring
+        run: |
+          if git diff --quiet; then
+            echo "Phase 8 performance wiring already applied and validated."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -- index.html _layouts/seo.html ilanlar/index.html ilan/index.html hesabim/index.html assets/marketplace-v2-list.js assets/marketplace-v2-detail.js
+          git commit -m "Phase 8: optimize core loading path"
+          git push
