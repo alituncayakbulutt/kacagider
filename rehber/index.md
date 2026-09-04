@@ -1,7 +1,7 @@
 ---
 layout: "seo"
 seo_title: "Cihaz Rehberleri | KaçaGider"
-seo_description: "Telefon, tablet, bilgisayar, akıllı saat ve oyun konsolu için kısa cihaz rehberleri."
+seo_description: "Telefon, tablet, bilgisayar, akıllı saat ve oyun konsolu için kısa cihaz rehberleri. Adımları, önemli uyarıları ve ilgili cihaz kontrollerini KaçaGider'da inceleyin."
 seo_h1: "Cihaz Rehberleri"
 seo_intro: "Sık kullanılan cihaz işlemleri için platform bazlı kısa rehberler."
 seo_context_heading: "Platform rehberleri"

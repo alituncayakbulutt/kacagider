@@ -2,7 +2,7 @@
 layout: "seo"
 info_center_interactive: true
 seo_title: "Bilgi Merkezi: İkinci El Cihaz Sorunları ve Çözümleri | KaçaGider"
-seo_description: "Fiyat hesaplama, ilan verme, giriş ve doğrulama, telefon sorunları, cihaz kondisyonu, IMEI ve güvenli satışla ilgili sık yaşanan sorunların çözümlerini KaçaGider Bilgi Merkezi'nde bulun."
+seo_description: "Fiyat hesaplama, ilan verme, telefon sorunları, cihaz kondisyonu, IMEI, hesap doğrulama ve güvenli ikinci el satış çözümlerini KaçaGider Bilgi Merkezi'nde bulun."
 seo_h1: "KaçaGider Bilgi Merkezi"
 seo_intro: "İkinci el cihaz değerleme ve satış sürecinde takıldığınız noktayı arayın, sorununuzu seçin ve adım adım çözüme ulaşın. Telefon sorunları, iPhone, Android, tablet, bilgisayar, akıllı saat ve oyun konsolu rehberlerini aynı merkezden inceleyin."
 seo_canonical: "https://kacagider.com.tr/bilgi-merkezi/"
