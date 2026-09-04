@@ -1,0 +1,30 @@
+name: Package latest KaçaGider
+
+on:
+  push:
+    branches:
+      - feature/sell-options-phase1
+    paths:
+      - .github/workflows/package-latest.yml
+  workflow_dispatch:
+
+jobs:
+  package:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout latest feature branch
+        uses: actions/checkout@v4
+
+      - name: Create ZIP snapshot
+        run: |
+          mkdir -p dist
+          zip -r "dist/kacagider-latest-sell-options-phase1.zip" . \
+            -x ".git/*" "dist/*" ".DS_Store"
+
+      - name: Upload snapshot
+        uses: actions/upload-artifact@v4
+        with:
+          name: kacagider-latest-sell-options-phase1
+          path: dist/kacagider-latest-sell-options-phase1.zip
+          if-no-files-found: error
+          retention-days: 7
