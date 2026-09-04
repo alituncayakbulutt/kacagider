@@ -1,0 +1,49 @@
+name: Fix Header Account Action
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/fix-header-account-action.py'
+      - '.github/workflows/fix-header-account-action.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  fix-header-account:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+      - name: Apply header account behavior fix
+        run: python scripts/fix-header-account-action.py
+      - name: Validate JavaScript
+        run: node --check assets/marketplace-nav-test.js
+      - name: Preserve security quality gate
+        run: python scripts/security-audit.py
+      - name: Preserve performance quality gate
+        run: python scripts/performance-audit.py
+      - name: Preserve Mobile V3 quality gate
+        run: python scripts/mobile-v3-audit.py
+      - name: Preserve SEO quality gate
+        run: python scripts/seo-site-audit.py
+      - name: Commit header account fix
+        run: |
+          if git diff --quiet; then
+            echo "Header account behavior already correct."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -- assets/marketplace-nav-test.js '*.html' '*.md' assets data ilan ilanlar hesabim bilgi-merkezi _layouts 2>/dev/null || true
+          git add -u
+          git commit -m "Fix header Hesabım action"
+          git push
