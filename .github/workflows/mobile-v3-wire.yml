@@ -31,6 +31,6 @@ jobs:
           fi
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add -- index.html _layouts/seo.html ilanlar/index.html hesabim/index.html
+          git add -- index.html _layouts/seo.html ilanlar/index.html ilan/index.html hesabim/index.html
           git commit -m "Phase 7: enable mobile V3 across core flows"
           git push
