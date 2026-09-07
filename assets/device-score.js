@@ -241,8 +241,99 @@
     };
   }
 
+  /**
+   * Değişen Parça / İşlem Geçmişi Skoru
+   * Mevcut formdaki changedParts listesini kullanır.
+   * Aynı parçaların ekran/kasa alt skorlarında kalite tavanı uygulanabilir;
+   * burada ise cihazın genel onarım geçmişi ve parça orijinalliği değerlendirilir.
+   */
+  function scoreRepairHistory(input) {
+    input = input || {};
+    var changedParts = Array.isArray(input.changedParts) ? input.changedParts.filter(function (item) {
+      return item && item.part && item.part !== "none";
+    }) : [];
+
+    if (!changedParts.length) {
+      return {
+        score: 100,
+        label: "Değişen parça yok",
+        reason: "original",
+        breakdown: []
+      };
+    }
+
+    var score = 100;
+    var breakdown = [];
+
+    var penalties = {
+      battery: { original: 6, aftermarket: 14 },
+      screen: { original: 10, aftermarket: 24 },
+      camera: { original: 12, aftermarket: 22 },
+      backglass: { original: 7, aftermarket: 15 },
+      body: { original: 9, aftermarket: 18 },
+      motherboard: { quality_service: 28, private_service: 42 },
+      faceid: { quality_service: 16, private_service: 28 }
+    };
+
+    var labels = {
+      battery: "Batarya",
+      screen: "Ekran",
+      camera: "Kamera",
+      backglass: "Arka cam",
+      body: "Kasa",
+      motherboard: "Anakart",
+      faceid: "Face ID"
+    };
+
+    changedParts.forEach(function (item) {
+      var part = String(item.part || "");
+      var quality = String(item.quality || "");
+      var cfg = penalties[part];
+      var penalty = cfg && cfg[quality] ? cfg[quality] : 0;
+
+      if (!penalty) return;
+
+      score -= penalty;
+      breakdown.push({
+        key: "repair_" + part,
+        label: (labels[part] || part) + " işlem geçmişi",
+        impact: -penalty,
+        value: quality
+      });
+    });
+
+    // Birden fazla işlem görmüş cihazlarda toplam geçmiş riski için küçük ek kesinti.
+    if (changedParts.length >= 2) {
+      var multiPenalty = Math.min(12, (changedParts.length - 1) * 4);
+      score -= multiPenalty;
+      breakdown.push({
+        key: "multipleRepairs",
+        label: changedParts.length + " farklı parça / işlem kaydı",
+        impact: -multiPenalty,
+        value: changedParts.length
+      });
+    }
+
+    score = clampScore(score);
+
+    var label;
+    if (score >= 90) label = "Çok temiz işlem geçmişi";
+    else if (score >= 80) label = "İyi işlem geçmişi";
+    else if (score >= 65) label = "Orta işlem geçmişi";
+    else if (score >= 45) label = "Yoğun işlem geçmişi";
+    else label = "Ağır işlem geçmişi";
+
+    return {
+      score: score,
+      label: label,
+      reason: "calculated",
+      breakdown: breakdown,
+      repairCount: changedParts.length
+    };
+  }
+
   window.KGDeviceScore = {
-    version: "1.3.0-phase1",
+    version: "1.4.0-phase1",
     weights: {
       screen: 30,
       body: 25,
@@ -254,6 +345,7 @@
     scoreScreenCondition: scoreScreenCondition,
     scoreScreen: scoreScreen,
     scoreBody: scoreBody,
-    scoreHardware: scoreHardware
+    scoreHardware: scoreHardware,
+    scoreRepairHistory: scoreRepairHistory
   };
 })();
