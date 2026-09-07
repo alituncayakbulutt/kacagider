@@ -102,6 +102,7 @@ html[data-theme="dark"] .kg-device-score-card{background:#132233!important;borde
     saveSnapshot(result);
     injectScoreIntoOpenFlows();
     wrapMarketplacePublisher();
+    if(typeof window.KGRenderExpertiseSummary==="function")window.KGRenderExpertiseSummary();
   }
 
   function scorePillHtml(){
@@ -132,6 +133,8 @@ html[data-theme="dark"] .kg-device-score-card{background:#132233!important;borde
     if(!Array.isArray(data.details))data.details=[];
     data.details=data.details.filter(function(item){return !(item&&item.label==='KaçaGider Cihaz Skoru');});
     data.details.push({label:'KaçaGider Cihaz Skoru',value:Math.round(Number(s.score))+'/100 · '+String(s.label||'')});
+    data.deviceScore=Math.round(Number(s.score));
+    data.deviceScoreLabel=String(s.label||'');
     return data;
   }
   window.KGAttachDeviceScoreToListingData=addScoreToListingData;
@@ -148,11 +151,20 @@ html[data-theme="dark"] .kg-device-score-card{background:#132233!important;borde
     return true;
   }
 
+  function ensureExpertise(){
+    if(window.__KG_RESULT_EXPERTISE__||document.querySelector('script[data-kg-result-expertise]'))return;
+    var script=document.createElement('script');
+    script.src='/assets/result-expertise.js';
+    script.defer=true;
+    script.dataset.kgResultExpertise='1';
+    document.head.appendChild(script);
+  }
+
   window.addEventListener("kg:device-score",function(event){render(event.detail);});
 
   var observer=new MutationObserver(function(){injectScoreIntoOpenFlows();wrapMarketplacePublisher();});
   function ready(){
-    ensureStyle();ensureCard();
+    ensureStyle();ensureCard();ensureExpertise();
     if(valid(window.KG_LAST_DEVICE_SCORE))render(window.KG_LAST_DEVICE_SCORE);
     observer.observe(document.documentElement,{childList:true,subtree:true});
     var tries=0,timer=setInterval(function(){wrapMarketplacePublisher();injectScoreIntoOpenFlows();tries++;if(tries>40)clearInterval(timer);},250);
