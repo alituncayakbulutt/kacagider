@@ -5,9 +5,9 @@ if(window.KGDealerSellPhase1)return;
 var photoFiles={front:null,back:null,side:null,damage:null};
 var photoUrls={front:'',back:'',side:'',damage:''};
 var photoSpecs=[
-  {key:'front',title:'Ön yüz',hint:'Ekran tamamen görünsün',required:true},
-  {key:'back',title:'Arka yüz',hint:'Kamera ve arka kapak görünsün',required:true},
-  {key:'side',title:'Yan / kasa',hint:'Kasa ve kenarlar net görünsün',required:true},
+  {key:'front',title:'Ön yüz',hint:'Cihazın ön yüzü tamamen görünsün',required:true},
+  {key:'back',title:'Arka yüz',hint:'Cihazın arka yüzü tamamen görünsün',required:true},
+  {key:'side',title:'Yan / kasa',hint:'Cihazın yanları ve kasası net görünsün',required:true},
   {key:'damage',title:'Hasar detayı',hint:'Çizik, ezik veya çatlak varsa ekle',required:false}
 ];
 
@@ -25,11 +25,24 @@ function price(){
   var e=q('#mainPrice');
   return Number(String(e&&e.textContent||'').replace(/[^0-9]/g,''))||0;
 }
+function currentCategory(){
+  var a=q('.category-card.active[data-category],.kg-approved-card.active[data-category]');
+  if(a&&a.dataset&&a.dataset.category)return String(a.dataset.category).toLowerCase();
+  var n=String(val('selectedCategoryName')||'').trim().toLocaleLowerCase('tr-TR');
+  return {'telefon':'phone','tablet':'tablet','bilgisayar':'computer','akıllı saat':'watch','akilli saat':'watch','oyun konsolu':'console'}[n]||'phone';
+}
+function deviceFields(){
+  var category=currentCategory();
+  if(category==='phone')return {category:category,brand:val('phoneBrand'),model:val('model'),storage:val('storage')};
+  return {category:category,brand:val('genericBrand'),model:val('genericModel'),storage:val('genericStorage')};
+}
 function device(){
-  return [val('phoneBrand'),val('model'),val('storage')].filter(Boolean).join(' ');
+  var d=deviceFields();
+  return [d.brand,d.model,d.storage].filter(Boolean).join(' ');
 }
 function isIphone(){
-  return /apple|iphone/i.test([val('phoneBrand'),val('model')].join(' '));
+  var d=deviceFields();
+  return d.category==='phone'&&/apple|iphone/i.test([d.brand,d.model].join(' '));
 }
 function esc(v){
   return String(v||'').replace(/[&<>"']/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c];});
@@ -79,10 +92,10 @@ function shell(){
 function renderIntro(){
   var o=shell(),amount=price(),body=q('#kgDealerP1Body',o);
   body.innerHTML=''
-    +'<h2>Telefonculardan teklif al</h2>'
-    +'<p>Doğrulanmış telefoncular cihazın için kendi alış tekliflerini verecek.</p>'
+    +'<h2>Mağazalardan teklif al</h2>'
+    +'<p>Bulunduğun bölgedeki doğrulanmış mağazalar cihazın için kendi alış tekliflerini verecek.</p>'
     +'<div class="kg-dealer-device">'+esc(device())+' · KaçaGider piyasa değeri: '+amount.toLocaleString('tr-TR')+' TL</div>'
-    +'<div class="kg-dealer-info"><strong>KaçaGider alış fiyatı belirlemez.</strong><br>Teklifleri telefoncular verir. Teklif almak ücretsizdir ve hiçbir teklifi kabul etmek zorunda değilsin. İletişim bilgilerin yalnızca bir teklifi kabul ettiğinde açılır.</div>'
+    +'<div class="kg-dealer-info"><strong>KaçaGider alış fiyatı belirlemez.</strong><br>Teklifleri mağazalar verir. Teklif almak ücretsizdir ve hiçbir teklifi kabul etmek zorunda değilsin. İletişim bilgilerin yalnızca bir teklifi kabul ettiğinde açılır.</div>'
     +'<div class="kg-dealer-actions"><button type="button" class="kg-dealer-btn primary" id="kgDealerContinue">Devam Et →</button></div>';
   q('#kgDealerContinue',body).onclick=renderDetails;
 }
@@ -92,7 +105,7 @@ function renderDetails(){
   body.innerHTML=''
     +'<div class="kg-dealer-step">Adım 1 / Teklif talebi</div>'
     +'<h2>Cihaz bilgilerini tamamla</h2>'
-    +'<p>Değerlemede verdiğin cihaz bilgilerini tekrar sormuyoruz. Telefoncuların teklif verebilmesi için yalnızca eksik bilgileri tamamla.</p>'
+    +'<p>Değerlemede verdiğin cihaz bilgilerini tekrar sormuyoruz. Mağazaların teklif verebilmesi için yalnızca eksik bilgileri tamamla.</p>'
     +'<div class="kg-dealer-device">'+esc(device())+'</div>'
     +'<form class="kg-dealer-form" id="kgDealerDetailsForm">'
       +'<div class="kg-dealer-form-grid">'
@@ -101,7 +114,7 @@ function renderDetails(){
         +(iphone?'<div class="kg-dealer-field"><label for="kgDealerBattery">Pil sağlığı (%)</label><input id="kgDealerBattery" name="battery" type="number" inputmode="numeric" min="1" max="100" placeholder="Örn. 86" value="'+esc(saved.battery)+'"></div>':'')
         +'<div class="kg-dealer-field"><label for="kgDealerWarranty">Garanti durumu</label><select id="kgDealerWarranty" name="warranty"><option value="">Seçiniz</option><option value="var">Devam ediyor</option><option value="yok">Garanti yok</option><option value="bilmiyorum">Bilmiyorum</option></select></div>'
         +'<div class="kg-dealer-field"><label for="kgDealerBox">Kutu / fatura</label><select id="kgDealerBox" name="boxInvoice"><option value="">Seçiniz</option><option value="ikisi">Kutu ve fatura var</option><option value="kutu">Sadece kutu var</option><option value="fatura">Sadece fatura var</option><option value="yok">İkisi de yok</option></select></div>'
-        +'<div class="kg-dealer-field full"><label for="kgDealerNotes">Telefoncunun bilmesi gereken başka bir durum var mı?</label><textarea id="kgDealerNotes" name="notes" maxlength="500" placeholder="Örn. kasada küçük ezik var, kamera ve Face ID sorunsuz...">'+esc(saved.notes)+'</textarea></div>'
+        +'<div class="kg-dealer-field full"><label for="kgDealerNotes">Mağazanın bilmesi gereken başka bir durum var mı?</label><textarea id="kgDealerNotes" name="notes" maxlength="500" placeholder="Örn. kasada küçük ezik var, cihazın işlevleri sorunsuz...">'+esc(saved.notes)+'</textarea></div>'
       +'</div>'
       +'<div class="kg-dealer-error" id="kgDealerError">İl ve ilçe bilgilerini doldurmalısın.</div>'
       +'<div class="kg-dealer-hint">Sonraki adımda cihazın ön, arka ve yan/kasa fotoğraflarını ekleyeceğiz.</div>'
@@ -117,6 +130,7 @@ function renderDetails(){
     var err=q('#kgDealerError',body);
     if(!city||!district){err.classList.add('show');return;}
     err.classList.remove('show');
+    var current=deviceFields();
     var draft={
       city:city,
       district:district,
@@ -124,7 +138,7 @@ function renderDetails(){
       warranty:q('#kgDealerWarranty',body).value,
       boxInvoice:q('#kgDealerBox',body).value,
       notes:q('#kgDealerNotes',body).value.trim(),
-      brand:val('phoneBrand'),model:val('model'),storage:val('storage'),marketPrice:price()
+      category:current.category,brand:current.brand,model:current.model,storage:current.storage,marketPrice:price()
     };
     saveDraft(draft);
     renderPhotos();
@@ -168,7 +182,7 @@ function renderPhotos(){
   body.innerHTML=''
     +'<div class="kg-dealer-step">Adım 2 / Fotoğraflar</div>'
     +'<h2>Cihazın fotoğraflarını ekle</h2>'
-    +'<p>Telefoncuların cihazı daha doğru değerlendirebilmesi için net ve güncel fotoğraflar yükle. İlk 3 fotoğraf zorunludur.</p>'
+    +'<p>Mağazaların cihazı daha doğru değerlendirebilmesi için net ve güncel fotoğraflar yükle. İlk 3 fotoğraf zorunludur.</p>'
     +'<div class="kg-dealer-device">'+esc(device())+(draft.city?' · '+esc(draft.city)+' / '+esc(draft.district):'')+'</div>'
     +'<div class="kg-photo-head"><strong>Fotoğraflar</strong><span class="kg-photo-count">'+count+' / 3 zorunlu</span></div>'
     +'<div class="kg-photo-grid">'+photoSpecs.map(photoCard).join('')+'</div>'
@@ -204,7 +218,7 @@ function renderPhotoReady(draft){
     +'<h2>Fotoğraflar hazır</h2>'
     +'<p>'+esc(draft.city||'')+' / '+esc(draft.district||'')+' için teklif talebine '+total+' cihaz fotoğrafı eklendi.</p>'
     +'<div class="kg-dealer-device">'+esc(device())+'</div>'
-    +'<div class="kg-dealer-info"><strong>Talep henüz telefonculara gönderilmedi.</strong><br>Fotoğraflar şu anda yalnızca bu sayfadaki geçici taslakta tutuluyor. Sonraki adımda iletişim/teklif talebi onayı ve sunucuya güvenli yükleme bağlantısını ekleyeceğiz.</div>'
+    +'<div class="kg-dealer-info"><strong>Talep henüz mağazalara gönderilmedi.</strong><br>Fotoğraflar şu anda yalnızca bu sayfadaki geçici taslakta tutuluyor. Sonraki adımda iletişim/teklif talebi onayı ve sunucuya güvenli yükleme bağlantısını ekleyeceğiz.</div>'
     +'<div class="kg-dealer-actions"><button type="button" class="kg-dealer-btn secondary" id="kgPhotosEdit">← Fotoğrafları Düzenle</button><button type="button" class="kg-dealer-btn primary" id="kgPhotosNext">Devam Et →</button></div>';
   q('#kgPhotosEdit',body).onclick=renderPhotos;
   q('#kgPhotosNext',body).onclick=function(){alert('Sonraki adım: teklif talebi onayı ve fotoğrafların güvenli olarak sunucuya yüklenmesi.');};
