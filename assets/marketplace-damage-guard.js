@@ -72,7 +72,7 @@ function ensureCorners(body,grid){
 function ensureAttest(body){
  if(q('#kgDgAttest',body))return;
  var actions=q('.kg-dealer-actions',body);if(!actions)return;
- var label=document.createElement('label');label.id='kgDgAttest';label.className='kg-dg-attest';label.innerHTML='<input type="checkbox" '+(state.attested?'checked':'')+'><span>Verdiğim bilgilerin ve yüklediğim fotoğrafların güncel ve doğru olduğunu onaylıyorum. Eksik veya yanlış bilgi verilmesi halinde telefoncunun teklifini değiştirebileceğini kabul ediyorum.</span>';
+ var label=document.createElement('label');label.id='kgDgAttest';label.className='kg-dg-attest';label.innerHTML='<input type="checkbox" '+(state.attested?'checked':'')+'><span>Verdiğim bilgilerin ve yüklediğim fotoğrafların güncel ve doğru olduğunu onaylıyorum. Eksik veya yanlış bilgi verilmesi halinde mağazanın teklifini değiştirebileceğini kabul ediyorum.</span>';
  actions.parentNode.insertBefore(label,actions);
  q('input',label).onchange=function(){state.attested=this.checked;sync(body);};
 }

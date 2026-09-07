@@ -5,9 +5,9 @@ if(window.KGDealerSellPhase1)return;
 var photoFiles={front:null,back:null,side:null,damage:null};
 var photoUrls={front:'',back:'',side:'',damage:''};
 var photoSpecs=[
-  {key:'front',title:'Ön yüz',hint:'Ekran tamamen görünsün',required:true},
-  {key:'back',title:'Arka yüz',hint:'Kamera ve arka kapak görünsün',required:true},
-  {key:'side',title:'Yan / kasa',hint:'Kasa ve kenarlar net görünsün',required:true},
+  {key:'front',title:'Ön yüz',hint:'Cihazın ön yüzü tamamen görünsün',required:true},
+  {key:'back',title:'Arka yüz',hint:'Cihazın arka yüzü tamamen görünsün',required:true},
+  {key:'side',title:'Yan / kasa',hint:'Cihazın yanları ve kasası net görünsün',required:true},
   {key:'damage',title:'Hasar detayı',hint:'Çizik, ezik veya çatlak varsa ekle',required:false}
 ];
 
@@ -114,7 +114,7 @@ function renderDetails(){
         +(iphone?'<div class="kg-dealer-field"><label for="kgDealerBattery">Pil sağlığı (%)</label><input id="kgDealerBattery" name="battery" type="number" inputmode="numeric" min="1" max="100" placeholder="Örn. 86" value="'+esc(saved.battery)+'"></div>':'')
         +'<div class="kg-dealer-field"><label for="kgDealerWarranty">Garanti durumu</label><select id="kgDealerWarranty" name="warranty"><option value="">Seçiniz</option><option value="var">Devam ediyor</option><option value="yok">Garanti yok</option><option value="bilmiyorum">Bilmiyorum</option></select></div>'
         +'<div class="kg-dealer-field"><label for="kgDealerBox">Kutu / fatura</label><select id="kgDealerBox" name="boxInvoice"><option value="">Seçiniz</option><option value="ikisi">Kutu ve fatura var</option><option value="kutu">Sadece kutu var</option><option value="fatura">Sadece fatura var</option><option value="yok">İkisi de yok</option></select></div>'
-        +'<div class="kg-dealer-field full"><label for="kgDealerNotes">Mağazanın bilmesi gereken başka bir durum var mı?</label><textarea id="kgDealerNotes" name="notes" maxlength="500" placeholder="Örn. kasada küçük ezik var, kamera ve Face ID sorunsuz...">'+esc(saved.notes)+'</textarea></div>'
+        +'<div class="kg-dealer-field full"><label for="kgDealerNotes">Mağazanın bilmesi gereken başka bir durum var mı?</label><textarea id="kgDealerNotes" name="notes" maxlength="500" placeholder="Örn. kasada küçük ezik var, cihazın işlevleri sorunsuz...">'+esc(saved.notes)+'</textarea></div>'
       +'</div>'
       +'<div class="kg-dealer-error" id="kgDealerError">İl ve ilçe bilgilerini doldurmalısın.</div>'
       +'<div class="kg-dealer-hint">Sonraki adımda cihazın ön, arka ve yan/kasa fotoğraflarını ekleyeceğiz.</div>'
