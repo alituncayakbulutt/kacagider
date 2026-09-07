@@ -1,0 +1,161 @@
+(function(){
+  "use strict";
+  if(window.__KG_DEVICE_SCORE_UI__)return;
+  window.__KG_DEVICE_SCORE_UI__=true;
+
+  var COMPONENT_LABELS={
+    screen:"Ekran",
+    body:"Kasa + Arka Cam",
+    battery:"Pil",
+    hardware:"Donanım / Face ID",
+    repairHistory:"İşlem Geçmişi"
+  };
+
+  function esc(v){return String(v==null?"":v).replace(/[&<>\"']/g,function(c){return{"&":"&amp;","<":"&lt;",">":"&gt;","\"":"&quot;","'":"&#039;"}[c];});}
+  function valid(result){return result&&Number.isFinite(Number(result.score));}
+  function snapshot(result){
+    if(!valid(result))return null;
+    return {
+      score:Number(result.score),
+      label:String(result.label||""),
+      weightedScore:Number(result.weightedScore||result.score),
+      version:window.KGDeviceScore&&window.KGDeviceScore.version||"",
+      components:result.components||{},
+      createdAt:new Date().toISOString()
+    };
+  }
+
+  function saveSnapshot(result){
+    var snap=snapshot(result);
+    window.KG_DEVICE_SCORE_SNAPSHOT=snap;
+    if(!snap)return;
+    try{sessionStorage.setItem("kg-device-score-snapshot",JSON.stringify(snap));}catch(e){}
+  }
+
+  function getSnapshot(){
+    if(window.KG_DEVICE_SCORE_SNAPSHOT)return window.KG_DEVICE_SCORE_SNAPSHOT;
+    if(valid(window.KG_LAST_DEVICE_SCORE))return snapshot(window.KG_LAST_DEVICE_SCORE);
+    try{
+      var raw=sessionStorage.getItem("kg-device-score-snapshot");
+      var parsed=raw?JSON.parse(raw):null;
+      if(parsed&&Number.isFinite(Number(parsed.score)))return parsed;
+    }catch(e){}
+    return null;
+  }
+  window.KGGetDeviceScoreSnapshot=getSnapshot;
+
+  function ensureStyle(){
+    if(document.getElementById("kg-device-score-ui-style"))return;
+    var style=document.createElement("style");
+    style.id="kg-device-score-ui-style";
+    style.textContent='\
+.kg-device-score-card{padding:17px 18px;border:1px solid #cfe8d8;border-radius:16px;background:linear-gradient(145deg,#f4fff7,#fff);box-shadow:0 8px 24px rgba(15,23,42,.05)}\
+.kg-ds-head{display:flex;align-items:flex-start;justify-content:space-between;gap:12px}.kg-ds-head h3{margin:0;color:#172033;font-size:15px}.kg-ds-head p{margin:4px 0 0;color:#667085;font-size:11px;line-height:1.4}.kg-ds-main{text-align:right;white-space:nowrap}.kg-ds-main strong{display:block;color:#0b9a45;font-size:27px;line-height:1}.kg-ds-main span{display:block;margin-top:4px;color:#176b38;font-size:12px;font-weight:850}\
+.kg-ds-components{display:grid;gap:8px;margin-top:14px}.kg-ds-row{display:grid;grid-template-columns:1fr auto;gap:8px;align-items:center}.kg-ds-row label{font-size:12px;font-weight:750;color:#475467}.kg-ds-row b{font-size:12px;color:#172033}.kg-ds-bar{grid-column:1/-1;height:5px;border-radius:99px;background:#e8edf2;overflow:hidden}.kg-ds-bar i{display:block;height:100%;border-radius:99px;background:#16a34a}\
+.kg-ds-reasons{margin-top:13px;padding-top:11px;border-top:1px solid #e5eee8}.kg-ds-reasons strong{display:block;margin-bottom:6px;color:#344054;font-size:11px}.kg-ds-reasons ul{margin:0;padding-left:17px;color:#667085;font-size:11px;line-height:1.5}\
+.kg-ds-pill{display:inline-flex;align-items:center;gap:5px;margin-top:7px;padding:5px 8px;border-radius:999px;background:#eafbf0;color:#15703a;font-size:11px;font-weight:900}.kg-ds-pill b{font-size:13px}\
+html[data-theme="dark"] .kg-device-score-card{background:#132233!important;border-color:#315541!important}html[data-theme="dark"] .kg-ds-head h3,html[data-theme="dark"] .kg-ds-row b{color:#edf3fb!important}html[data-theme="dark"] .kg-ds-head p,html[data-theme="dark"] .kg-ds-row label,html[data-theme="dark"] .kg-ds-reasons ul{color:#b7c3d5!important}html[data-theme="dark"] .kg-ds-reasons{border-color:#2d3c52!important}';
+    document.head.appendChild(style);
+  }
+
+  function topReasons(result){
+    var reasons=[];
+    Object.keys(result.components||{}).forEach(function(key){
+      var comp=result.components[key]||{};
+      (comp.breakdown||[]).forEach(function(item){
+        if(Number(item.impact)<0)reasons.push({label:item.label||COMPONENT_LABELS[key],impact:Number(item.impact)});
+      });
+    });
+    reasons.sort(function(a,b){return a.impact-b.impact;});
+    return reasons.slice(0,3);
+  }
+
+  function ensureCard(){
+    var existing=document.getElementById("kgDeviceScoreCard");
+    if(existing)return existing;
+    var side=document.querySelector(".side");
+    if(!side)return null;
+    var card=document.createElement("section");
+    card.id="kgDeviceScoreCard";
+    card.className="kg-device-score-card";
+    card.style.display="none";
+    var trust=document.querySelector(".trust");
+    if(trust&&trust.parentNode===side)side.insertBefore(card,trust);
+    else side.appendChild(card);
+    return card;
+  }
+
+  function render(result){
+    ensureStyle();
+    var card=ensureCard();
+    if(!card)return;
+    if(!valid(result)){card.style.display="none";return;}
+    var rows=Object.keys(COMPONENT_LABELS).map(function(key){
+      var comp=result.components&&result.components[key];
+      var score=comp&&Number.isFinite(Number(comp.score))?Math.max(0,Math.min(100,Math.round(Number(comp.score)))):0;
+      return '<div class="kg-ds-row"><label>'+esc(COMPONENT_LABELS[key])+'</label><b>'+score+'/100</b><div class="kg-ds-bar"><i style="width:'+score+'%"></i></div></div>';
+    }).join("");
+    var reasons=topReasons(result);
+    var reasonHtml=reasons.length?'<div class="kg-ds-reasons"><strong>Skoru düşüren başlıca etkenler</strong><ul>'+reasons.map(function(r){return'<li>'+esc(r.label)+'</li>';}).join("")+'</ul></div>':'';
+    card.innerHTML='<div class="kg-ds-head"><div><h3>KaçaGider Cihaz Skoru</h3><p>Fiziksel ve teknik kondisyon puanı. Güven Skoru’ndan bağımsızdır.</p></div><div class="kg-ds-main"><strong>'+Math.round(Number(result.score))+' / 100</strong><span>'+esc(result.label)+'</span></div></div><div class="kg-ds-components">'+rows+'</div>'+reasonHtml;
+    card.style.display="block";
+    saveSnapshot(result);
+    injectScoreIntoOpenFlows();
+    wrapMarketplacePublisher();
+  }
+
+  function scorePillHtml(){
+    var s=getSnapshot();
+    if(!s)return"";
+    return '<span class="kg-ds-pill" data-kg-score-pill="1">KaçaGider Cihaz Skoru <b>'+Math.round(Number(s.score))+'/100</b> · '+esc(s.label)+'</span>';
+  }
+
+  function injectScoreIntoOpenFlows(){
+    var s=getSnapshot();
+    if(!s)return;
+    document.querySelectorAll('.kg-mp-device').forEach(function(host){
+      if(host.querySelector('[data-kg-score-pill]'))return;
+      host.insertAdjacentHTML('beforeend',scorePillHtml());
+    });
+    document.querySelectorAll('.kg-mp-modal,.modal,[role="dialog"]').forEach(function(modal){
+      if(modal.querySelector('[data-kg-score-pill]'))return;
+      var text=String(modal.textContent||"").toLocaleLowerCase('tr-TR');
+      if(text.indexOf('telefoncuya sat')===-1&&text.indexOf('telefoncu')===-1&&text.indexOf('teklif')===-1)return;
+      var target=modal.querySelector('.kg-mp-device,.modal-body,.content')||modal;
+      target.insertAdjacentHTML('afterbegin',scorePillHtml());
+    });
+  }
+
+  function addScoreToListingData(data){
+    var s=getSnapshot();
+    if(!s||!data||typeof data!=="object")return data;
+    if(!Array.isArray(data.details))data.details=[];
+    data.details=data.details.filter(function(item){return !(item&&item.label==='KaçaGider Cihaz Skoru');});
+    data.details.push({label:'KaçaGider Cihaz Skoru',value:Math.round(Number(s.score))+'/100 · '+String(s.label||'')});
+    return data;
+  }
+  window.KGAttachDeviceScoreToListingData=addScoreToListingData;
+
+  function wrapMarketplacePublisher(){
+    var api=window.KGMarketplaceSupabase;
+    if(!api||typeof api.publishListing!=="function"||api.__kgScoreWrapped)return false;
+    var original=api.publishListing;
+    api.publishListing=function(data){
+      addScoreToListingData(data);
+      return original.apply(this,arguments);
+    };
+    api.__kgScoreWrapped=true;
+    return true;
+  }
+
+  window.addEventListener("kg:device-score",function(event){render(event.detail);});
+
+  var observer=new MutationObserver(function(){injectScoreIntoOpenFlows();wrapMarketplacePublisher();});
+  function ready(){
+    ensureStyle();ensureCard();
+    if(valid(window.KG_LAST_DEVICE_SCORE))render(window.KG_LAST_DEVICE_SCORE);
+    observer.observe(document.documentElement,{childList:true,subtree:true});
+    var tries=0,timer=setInterval(function(){wrapMarketplacePublisher();injectScoreIntoOpenFlows();tries++;if(tries>40)clearInterval(timer);},250);
+  }
+  if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',ready,{once:true});else ready();
+})();
