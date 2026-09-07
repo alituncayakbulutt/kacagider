@@ -25,8 +25,9 @@
   function ensureDealerTrustOffers(){loadOnce('__KG_DEALER_TRUST_OFFERS__','script[data-kg-dealer-trust-offers]','/assets/dealer-trust-offers.js','kgDealerTrustOffers');}
   function ensurePriceHistory(){loadOnce('__KG_PRICE_HISTORY__','script[data-kg-price-history]','/assets/price-history.js','kgPriceHistory');}
   function ensureExpertisePdf(){loadOnce('__KG_EXPERTISE_PDF__','script[data-kg-expertise-pdf]','/assets/expertise-pdf.js','kgExpertisePdf');}
+  function ensurePhotoAi(){loadOnce('__KG_PHOTO_CONDITION_AI__','script[data-kg-photo-condition-ai]','/assets/photo-condition-ai.js','kgPhotoConditionAi');}
   window.addEventListener("kg:device-score",function(event){render(event.detail);});
   var observer=new MutationObserver(function(){injectScoreIntoOpenFlows();wrapMarketplacePublisher();});
-  function ready(){ensureStyle();ensureCard();ensureExpertise();ensureModelDemand();ensureDealerTrustOffers();ensurePriceHistory();ensureExpertisePdf();if(valid(window.KG_LAST_DEVICE_SCORE))render(window.KG_LAST_DEVICE_SCORE);observer.observe(document.documentElement,{childList:true,subtree:true});var tries=0,timer=setInterval(function(){wrapMarketplacePublisher();injectScoreIntoOpenFlows();tries++;if(tries>40)clearInterval(timer);},250);}
+  function ready(){ensureStyle();ensureCard();ensureExpertise();ensureModelDemand();ensureDealerTrustOffers();ensurePriceHistory();ensureExpertisePdf();ensurePhotoAi();if(valid(window.KG_LAST_DEVICE_SCORE))render(window.KG_LAST_DEVICE_SCORE);observer.observe(document.documentElement,{childList:true,subtree:true});var tries=0,timer=setInterval(function(){wrapMarketplacePublisher();injectScoreIntoOpenFlows();tries++;if(tries>40)clearInterval(timer);},250);}
   if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',ready,{once:true});else ready();
 })();
