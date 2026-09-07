@@ -1,7 +1,7 @@
 (function(){
   'use strict';
-  if(window.__KG_MARKETPLACE_LOADER_V5__) return;
-  window.__KG_MARKETPLACE_LOADER_V5__=true;
+  if(window.__KG_MARKETPLACE_LOADER_V6__) return;
+  window.__KG_MARKETPLACE_LOADER_V6__=true;
 
   function load(src,id){
     return new Promise(function(resolve,reject){
@@ -22,7 +22,7 @@
     });
   }
 
-  load('/assets/marketplace-core.js?v=20260905-sell-phase1','kgMarketplaceCore')
-    .then(function(){return load('/assets/marketplace-sell-options.js?v=20260907-store1','kgMarketplaceSellOptions');})
+  load('/assets/marketplace-core.js?v=20260907-store2','kgMarketplaceCore')
+    .then(function(){return load('/assets/marketplace-sell-options.js?v=20260907-store2','kgMarketplaceSellOptions');})
     .catch(function(error){console.warn('KaçaGider marketplace yüklenemedi:',error);});
 })();
