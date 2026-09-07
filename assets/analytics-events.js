@@ -21,10 +21,54 @@
   function storageUnit(){var key=activeCategoryKey();return key==="watch"||key==="akilli-saat"?"mm":"GB";}
   function withStorageUnit(ctx){if(!ctx.storage)return ctx;return Object.assign({},ctx,{storage_unit:storageUnit()});}
 
+  function ensureDeviceScoreEngine(){
+    if(window.KGDeviceScore)return Promise.resolve(window.KGDeviceScore);
+    return new Promise(function(resolve,reject){
+      var existing=document.querySelector('script[data-kg-device-score]');
+      function ready(){if(window.KGDeviceScore)resolve(window.KGDeviceScore);else reject(new Error("Cihaz skoru motoru yüklenemedi."));}
+      if(existing){existing.addEventListener("load",ready,{once:true});existing.addEventListener("error",function(){reject(new Error("Cihaz skoru motoru yüklenemedi."));},{once:true});return;}
+      var script=document.createElement("script");
+      script.src="/assets/device-score.js";
+      script.defer=true;
+      script.dataset.kgDeviceScore="1";
+      script.onload=ready;
+      script.onerror=function(){reject(new Error("Cihaz skoru motoru yüklenemedi."));};
+      document.head.appendChild(script);
+    });
+  }
+
+  function activeValue(group,fallback){var el=document.querySelector('[data-group="'+group+'"] .option.active');return el&&el.dataset?String(el.dataset.value||fallback||""):String(fallback||"");}
+  function changedPartsSelections(){return Array.from(document.querySelectorAll("#partsSelector .parts-row")).map(function(row){var part=row.querySelector(".part-select"),quality=row.querySelector(".part-quality");return{part:part?String(part.value||""):"",quality:quality?String(quality.value||""):""};}).filter(function(item){return item.part&&item.part!=="none";});}
+  function collectDeviceScoreInput(){
+    var battery=document.getElementById("battery"),screen=document.getElementById("screen"),faceid=document.getElementById("faceid");
+    return{
+      battery:battery?String(battery.value||""):"",
+      screen:screen?String(screen.value||""):"",
+      faceId:faceid?String(faceid.value||""):"",
+      scratchCount:activeValue("scratchCount","none"),
+      scratchDepth:activeValue("scratchDepth","none"),
+      pixelIssue:activeValue("protector","no"),
+      dent:activeValue("dent","none"),
+      surface:activeValue("surface","clean"),
+      corners:activeValue("corners","clean"),
+      backGlass:activeValue("backGlass","clean"),
+      changedParts:changedPartsSelections()
+    };
+  }
+  function calculateDeviceScoreFromForm(){
+    if(isGenericContext())return null;
+    if(!window.KGDeviceScore||typeof window.KGDeviceScore.calculateDeviceScore!=="function")return null;
+    var result=window.KGDeviceScore.calculateDeviceScore(collectDeviceScoreInput());
+    window.KG_LAST_DEVICE_SCORE=result;
+    try{window.dispatchEvent(new CustomEvent("kg:device-score",{detail:result}));}catch(e){}
+    return result;
+  }
+  window.KGCalculateDeviceScoreFromForm=calculateDeviceScoreFromForm;
+
   function onChange(target){if(!target||!target.id)return;var ctx=withStorageUnit(valuationContext());if(target.id==="phoneBrand"||target.id==="genericBrand"){window.setTimeout(renderResultProductName,0);kgGaEvent("brand_selected",ctx);return;}if(target.id==="model"||target.id==="genericModel"){renderResultProductName();kgGaEvent("model_selected",ctx);return;}if(target.id==="storage"||target.id==="genericStorage"){renderResultProductName();kgGaEvent("storage_selected",ctx);}}
 
   var completionArmed=false,lastCompletionSignature="",saleSubmissionArmed=false,lastSaleSignature="";
-  function onClick(event){var target=event.target;if(!target||!target.closest)return;var categoryCard=target.closest("[data-category]");if(categoryCard&&CATEGORY_LABELS[categoryCard.dataset.category]){clearResultProductName();window.setTimeout(renderResultProductName,80);kgGaEvent("category_selected",{category:CATEGORY_LABELS[categoryCard.dataset.category]});}var calc=target.closest(".calc-btn");if(calc&&calc.id!=="standaloneSaleBtn"){renderResultProductName();window.setTimeout(renderResultProductName,100);window.setTimeout(renderResultProductName,350);completionArmed=true;lastCompletionSignature="";kgGaEvent("valuation_started",withStorageUnit(valuationContext()));}var sellIntent=target.closest(".sell-btn,.price-sale-cta");if(sellIntent)kgGaEvent("sell_intent_clicked",withStorageUnit(valuationContext()));var saleSubmit=target.closest("#saleForm button,#standaloneSaleBtn");if(saleSubmit){saleSubmissionArmed=true;lastSaleSignature="";}var seoCta=target.closest(".kg-seo-cta");if(seoCta){var destination="";try{destination=new URL(seoCta.href,window.location.origin).pathname;}catch(e){}kgGaEvent("seo_cta_clicked",{source_path:window.location.pathname,destination_path:destination,link_text:String(seoCta.textContent||"").trim().slice(0,100)});}var guideLink=target.closest(".kg-dyk-guide-link,.kg-seo-guide-back,.kg-imei-official-link");if(guideLink){var guideDestination="";try{guideDestination=new URL(guideLink.href,window.location.origin).pathname;}catch(e){}kgGaEvent("guide_link_clicked",{destination_path:guideDestination,link_text:String(guideLink.textContent||"").trim().slice(0,100)});}}
+  function onClick(event){var target=event.target;if(!target||!target.closest)return;var categoryCard=target.closest("[data-category]");if(categoryCard&&CATEGORY_LABELS[categoryCard.dataset.category]){clearResultProductName();window.setTimeout(renderResultProductName,80);kgGaEvent("category_selected",{category:CATEGORY_LABELS[categoryCard.dataset.category]});}var calc=target.closest(".calc-btn");if(calc&&calc.id!=="standaloneSaleBtn"){renderResultProductName();window.setTimeout(renderResultProductName,100);window.setTimeout(renderResultProductName,350);completionArmed=true;lastCompletionSignature="";kgGaEvent("valuation_started",withStorageUnit(valuationContext()));ensureDeviceScoreEngine().then(function(){window.setTimeout(calculateDeviceScoreFromForm,0);}).catch(function(error){console.warn("KaçaGider Cihaz Skoru:",error);});}var sellIntent=target.closest(".sell-btn,.price-sale-cta");if(sellIntent)kgGaEvent("sell_intent_clicked",withStorageUnit(valuationContext()));var saleSubmit=target.closest("#saleForm button,#standaloneSaleBtn");if(saleSubmit){saleSubmissionArmed=true;lastSaleSignature="";}var seoCta=target.closest(".kg-seo-cta");if(seoCta){var destination="";try{destination=new URL(seoCta.href,window.location.origin).pathname;}catch(e){}kgGaEvent("seo_cta_clicked",{source_path:window.location.pathname,destination_path:destination,link_text:String(seoCta.textContent||"").trim().slice(0,100)});}var guideLink=target.closest(".kg-dyk-guide-link,.kg-seo-guide-back,.kg-imei-official-link");if(guideLink){var guideDestination="";try{guideDestination=new URL(guideLink.href,window.location.origin).pathname;}catch(e){}kgGaEvent("guide_link_clicked",{destination_path:guideDestination,link_text:String(guideLink.textContent||"").trim().slice(0,100)});}}
 
   function watchValuationCompletion(){var price=document.getElementById("mainPrice");if(!price||typeof MutationObserver==="undefined")return;new MutationObserver(function(){renderResultProductName();if(!completionArmed)return;var estimatedPrice=parseNumber(price.textContent);if(!estimatedPrice)return;var ctx=withStorageUnit(valuationContext());var signature=[ctx.category,ctx.brand,ctx.model,ctx.storage,estimatedPrice].join("|");if(signature===lastCompletionSignature)return;lastCompletionSignature=signature;completionArmed=false;var trustScore=parseNumber(document.getElementById("trustScore")&&document.getElementById("trustScore").textContent);kgGaEvent("valuation_completed",Object.assign({},ctx,{estimated_price:estimatedPrice,currency:"TRY",trust_score:trustScore||undefined}));}).observe(price,{childList:true,subtree:true,characterData:true});}
   function watchSaleSubmission(){var result=document.getElementById("saleCompareResult");if(!result||typeof MutationObserver==="undefined")return;new MutationObserver(function(){if(!saleSubmissionArmed||result.style.display!=="block")return;var salePrice=parseNumber(document.getElementById("salePriceInput")&&document.getElementById("salePriceInput").value);if(!salePrice)salePrice=parseNumber(document.getElementById("standaloneSalePrice")&&document.getElementById("standaloneSalePrice").value);if(!salePrice)return;var ctx=withStorageUnit(valuationContext());var signature=[ctx.category,ctx.brand,ctx.model,ctx.storage,salePrice].join("|");if(signature===lastSaleSignature)return;lastSaleSignature=signature;saleSubmissionArmed=false;kgGaEvent("sale_feedback_submitted",Object.assign({},ctx,{sale_price:salePrice,currency:"TRY"}));}).observe(result,{attributes:true,attributeFilter:["style","class"],childList:true,subtree:true});}
@@ -33,6 +77,6 @@
 
   function setupImeiOfficialLink(){var input=document.getElementById("didYouKnowImeiInput"),button=document.getElementById("didYouKnowImeiButton");if(!button||button.dataset.kgImeiOfficial==="1")return;button.dataset.kgImeiOfficial="1";var label=input?document.querySelector('label[for="didYouKnowImeiInput"]'):null;if(label)label.remove();if(input)input.remove();var oldNote=document.getElementById("didYouKnowImeiTransferNote");if(oldNote)oldNote.remove();button.textContent="BTK / e-Devlet’te IMEI Sorgula";button.href="https://www.turkiye.gov.tr/imei-sorgulama";button.target="_blank";button.rel="noopener noreferrer";button.classList.remove("is-disabled");button.removeAttribute("aria-disabled");button.tabIndex=0;var helper=document.getElementById("didYouKnowImeiHint");if(helper)helper.textContent="IMEI numaranızı öğrenmek için telefonunuzun arama ekranına *#06# yazabilirsiniz. Butona bastığınızda resmi BTK / e-Devlet IMEI Sorgulama sayfası açılır; IMEI numaranızı orada girerek sorgulayabilirsiniz.";button.addEventListener("click",function(){kgGaEvent("imei_official_query_clicked",{destination_path:"/imei-sorgulama"});});}
 
-  function ready(){ensureResultProductName();renderResultProductName();document.addEventListener("change",function(event){onChange(event.target);},true);document.addEventListener("click",onClick,true);watchValuationCompletion();watchSaleSubmission();setupContactForm();setupImeiOfficialLink();var attempts=0;var timer=window.setInterval(function(){renderResultProductName();attempts++;if(attempts>=30)window.clearInterval(timer);},500);}
+  function ready(){ensureResultProductName();renderResultProductName();ensureDeviceScoreEngine().catch(function(error){console.warn("KaçaGider Cihaz Skoru:",error);});document.addEventListener("change",function(event){onChange(event.target);},true);document.addEventListener("click",onClick,true);watchValuationCompletion();watchSaleSubmission();setupContactForm();setupImeiOfficialLink();var attempts=0;var timer=window.setInterval(function(){renderResultProductName();attempts++;if(attempts>=30)window.clearInterval(timer);},500);}
   if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",ready,{once:true});else ready();
 })();
