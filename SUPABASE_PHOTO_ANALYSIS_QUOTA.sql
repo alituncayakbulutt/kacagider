@@ -19,17 +19,21 @@ language plpgsql
 security definer
 set search_path=public
 as $$
-declare v_used integer;
+declare v_used integer; v_allowed boolean;
 begin
   if length(coalesce(p_visitor_hash,''))<32 then raise exception 'invalid_visitor'; end if;
   p_limit:=greatest(1,least(coalesce(p_limit,2),10));
+  select u.used into v_used from public.ai_photo_usage u where u.visitor_hash=p_visitor_hash and u.usage_day=p_usage_day for update;
+  if coalesce(v_used,0)>=p_limit then
+    return query select false,coalesce(v_used,0),0;
+    return;
+  end if;
   insert into public.ai_photo_usage(visitor_hash,usage_day,used,updated_at)
   values(p_visitor_hash,p_usage_day,1,now())
-  on conflict(visitor_hash,usage_day) do update
-    set used=case when public.ai_photo_usage.used<p_limit then public.ai_photo_usage.used+1 else public.ai_photo_usage.used end,
-        updated_at=now()
+  on conflict(visitor_hash,usage_day) do update set used=public.ai_photo_usage.used+1,updated_at=now()
   returning ai_photo_usage.used into v_used;
-  return query select (v_used<=p_limit),v_used,greatest(0,p_limit-v_used);
+  v_allowed:=v_used<=p_limit;
+  return query select v_allowed,v_used,greatest(0,p_limit-v_used);
 end;
 $$;
 revoke all on function public.kg_consume_photo_analysis_quota(text,date,integer) from public;
