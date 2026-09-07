@@ -106,7 +106,7 @@ text=text.replace('Tüm telefonları göster','Telefon tercihlerini temizle')
 text=text.replace('tüm uygun telefon taleplerini görmek istiyor musun?','telefon tercihlerini kaldırmak istiyor musun? Diğer cihaz kategorileri zaten bu filtreden bağımsızdır.')
 save(path,text)
 
-# 7) Cache bust changed marketplace files, plus the loader reference in index.html if present.
+# 7) Cache bust changed marketplace files and the marketplace loader.
 path='assets/marketplace-sell-options.js'
 text=load(path)
 text=re.sub(r'marketplace-sell-options-modal\.js\?v=[^\'\"]+', 'marketplace-sell-options-modal.js?v=20260907-store1', text)
@@ -115,14 +115,11 @@ text=re.sub(r'marketplace-dealer-submit\.js\?v=[^\'\"]+', 'marketplace-dealer-su
 text=re.sub(r'marketplace-sell-options-ui\.js\?v=[^\'\"]+', 'marketplace-sell-options-ui.js?v=20260907-store1', text)
 save(path,text)
 
-path='index.html'
+path='assets/marketplace-test.js'
 text=load(path)
-text,new_count=re.subn(r'marketplace-sell-options\.js\?v=[^\'\"<> ]+', 'marketplace-sell-options.js?v=20260907-store1', text)
+text,new_count=re.subn(r'marketplace-sell-options\.js\?v=[^\'\"]+', 'marketplace-sell-options.js?v=20260907-store1', text)
 if new_count==0:
-    # A bare loader URL is also acceptable; add a version only to the first occurrence.
-    text,new_count=re.subn(r'marketplace-sell-options\.js', 'marketplace-sell-options.js?v=20260907-store1', text, count=1)
-if new_count==0:
-    raise SystemExit('Marketplace sell options loader reference not found in index.html')
+    raise SystemExit('Marketplace sell options loader reference not found in marketplace-test.js')
 save(path,text)
 
 print('Store offer generalization applied successfully.')
