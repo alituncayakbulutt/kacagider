@@ -5,12 +5,18 @@
 
   /**
    * KaçaGider Cihaz Skoru — FAZ 1.1
-   * İlk adım: Pil Sağlığı puanı.
    *
-   * Pil bölümünün toplam cihaz skorundaki ağırlığı: 15/100.
-   * Bu fonksiyon önce pili kendi içinde 0–100 arası puanlar.
-   * Ağırlıklı cihaz skoru hesabı sonraki adımlarda eklenecek.
+   * Ağırlıklar:
+   * - Ekran: 30/100
+   * - Kasa + arka cam: 25/100
+   * - Pil: 15/100
+   * - Donanım / Face ID: 15/100
+   * - Değişen parça / işlem geçmişi: 15/100
+   *
+   * Her alt fonksiyon önce ilgili alanı 0–100 arasında puanlar.
+   * Toplam ağırlıklı cihaz skoru daha sonraki adımlarda eklenecek.
    */
+
   function scoreBattery(rawValue) {
     if (rawValue === null || rawValue === undefined || rawValue === "") {
       return { score: null, label: "Pil bilgisi seçilmedi", reason: "missing" };
@@ -65,8 +71,48 @@
     };
   }
 
+  function scoreScreenCondition(rawValue) {
+    if (rawValue === null || rawValue === undefined || rawValue === "") {
+      return { score: null, label: "Ekran durumu seçilmedi", reason: "missing" };
+    }
+
+    var config = {
+      original: {
+        score: 100,
+        label: "Orijinal ve temiz ekran",
+        reason: "original_clean"
+      },
+      scratch: {
+        score: 82,
+        label: "Orijinal fakat çizikli ekran",
+        reason: "original_scratched"
+      },
+      aftermarket: {
+        score: 55,
+        label: "Yan sanayi ekran",
+        reason: "aftermarket"
+      },
+      broken: {
+        score: 15,
+        label: "Kırık ekran",
+        reason: "broken"
+      }
+    };
+
+    var result = config[String(rawValue)];
+    if (!result) {
+      return { score: null, label: "Geçersiz ekran durumu", reason: "invalid" };
+    }
+
+    return {
+      score: result.score,
+      label: result.label,
+      reason: result.reason
+    };
+  }
+
   window.KGDeviceScore = {
-    version: "1.0.0-phase1",
+    version: "1.0.1-phase1",
     weights: {
       screen: 30,
       body: 25,
@@ -74,6 +120,7 @@
       hardware: 15,
       repairHistory: 15
     },
-    scoreBattery: scoreBattery
+    scoreBattery: scoreBattery,
+    scoreScreenCondition: scoreScreenCondition
   };
 })();
