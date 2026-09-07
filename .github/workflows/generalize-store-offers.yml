@@ -30,11 +30,12 @@ jobs:
           node --check assets/dealer-panel.js
           node --check assets/dealer-device-preferences.js
           node --check assets/marketplace-sell-options.js
+          node --check assets/marketplace-test.js
       - name: Commit patched files and remove one-off tooling
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git rm scripts/apply-store-offers-generalization.py .github/workflows/generalize-store-offers.yml
-          git add assets/marketplace-sell-options-ui.js assets/marketplace-sell-options-modal.js assets/marketplace-dealer-backend.js assets/marketplace-dealer-submit.js assets/dealer-panel.js assets/dealer-device-preferences.js assets/marketplace-sell-options.js index.html
+          git add assets/marketplace-sell-options-ui.js assets/marketplace-sell-options-modal.js assets/marketplace-dealer-backend.js assets/marketplace-dealer-submit.js assets/dealer-panel.js assets/dealer-device-preferences.js assets/marketplace-sell-options.js assets/marketplace-test.js
           git commit -m "Generalize device offers to verified stores"
           git push origin HEAD:generalize-store-offers
