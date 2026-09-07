@@ -1,6 +1,6 @@
 # Search Console Fırsat Motoru
 
-Tarih: 2026-09-04
+Tarih: 2026-09-07
 
 Henüz işlenecek Search Console CSV dışa aktarımı bulunamadı.
 
