@@ -76,7 +76,7 @@ function cleanText(v,max){
 async function submitRequest(input){
   input=input||{};
   var user=await getUser();
-  if(!user){var authError=new Error('Telefonculardan teklif almak için giriş yapmalısın.');authError.code='AUTH_REQUIRED';throw authError;}
+  if(!user){var authError=new Error('Mağazalardan teklif almak için giriş yapmalısın.');authError.code='AUTH_REQUIRED';throw authError;}
 
   var draft=input.draft||{};
   var hasDamage=input.hasDamage===true;
@@ -108,11 +108,12 @@ async function submitRequest(input){
     market_value:marketValue,
     details:Array.isArray(input.details)?input.details:[],
     captured_at:new Date().toISOString(),
-    source:'kacagider_valuation'
+    source:'kacagider_valuation',
+    category:cleanText(draft.category,40)||'phone'
   };
   var payload={
     user_id:user.id,
-    category:'phone',
+    category:cleanText(draft.category,40)||'phone',
     brand:cleanText(draft.brand,120),
     model:cleanText(draft.model,160),
     storage:cleanText(draft.storage,80)||null,
@@ -165,7 +166,7 @@ async function listMyRequests(){
   var user=await getUser();
   if(!user)return[];
   var c=await client();
-  var res=await c.from(TABLE).select('id,request_code,brand,model,storage,market_value,city,district,has_damage,status,created_at').eq('user_id',user.id).order('created_at',{ascending:false});
+  var res=await c.from(TABLE).select('id,request_code,category,brand,model,storage,market_value,city,district,has_damage,status,created_at').eq('user_id',user.id).order('created_at',{ascending:false});
   if(res.error)throw res.error;
   return res.data||[];
 }

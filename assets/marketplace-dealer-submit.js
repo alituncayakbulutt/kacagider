@@ -73,7 +73,7 @@ function triggerLogin(){
       b=all('button,a').find(function(el){return /giriş yap/i.test(String(el.textContent||''))&&!el.closest('#kgDealerP1');});
     }
     if(b&&typeof b.click==='function')b.click();
-    else alert('Telefonculardan teklif almak için önce KaçaGider hesabına giriş yapmalısın.');
+    else alert('Mağazalardan teklif almak için önce KaçaGider hesabına giriş yapmalısın.');
   },120);
 }
 
@@ -87,8 +87,8 @@ function renderSuccess(result){
     +'<h2>Teklif talebin kaydedildi ✓</h2>'
     +'<p>Cihaz bilgilerin ve fotoğrafların güvenli şekilde kaydedildi.</p>'
     +'<div class="kg-dealer-device">Talep No: <strong>'+esc(request.request_code||'')+'</strong></div>'
-    +'<div class="kg-dealer-info"><strong>'+count+' fotoğraf özel alanda saklanıyor.</strong><br>Fotoğrafların herkese açık değildir. Telefoncu paneli bağlandığında yalnızca yetkili ve doğrulanmış telefoncular teklif sürecinde erişebilecek.</div>'
-    +'<div class="kg-photo-status ready">✓ Talep durumu: Teklif almaya hazır.<br>KaçaGider alış fiyatı belirlemez; alış tekliflerini telefoncular verecek.</div>'
+    +'<div class="kg-dealer-info"><strong>'+count+' fotoğraf özel alanda saklanıyor.</strong><br>Fotoğrafların herkese açık değildir. Telefoncu paneli bağlandığında yalnızca yetkili ve doğrulanmış mağazalar teklif sürecinde erişebilecek.</div>'
+    +'<div class="kg-photo-status ready">✓ Talep durumu: Teklif almaya hazır.<br>KaçaGider alış fiyatı belirlemez; alış tekliflerini mağazalar verecek.</div>'
     +'<div class="kg-dealer-actions"><button type="button" class="kg-dealer-btn primary" id="kgDealerDone">Tamam</button></div>';
   var done=q('#kgDealerDone',body);if(done)done.onclick=function(){if(window.KGDealerSellPhase1)window.KGDealerSellPhase1.close();};
   try{sessionStorage.removeItem('kgDealerRequestDraft');}catch(e){}
