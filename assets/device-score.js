@@ -208,7 +208,7 @@
   }
 
   window.KGDeviceScore = {
-    version: "1.5.0-phase1",
+    version: "1.6.0-phase1",
     weights: WEIGHTS,
     scoreBattery: scoreBattery,
     scoreScreenCondition: scoreScreenCondition,
@@ -219,4 +219,12 @@
     getDeviceScoreLabel: getDeviceScoreLabel,
     calculateDeviceScore: calculateDeviceScore
   };
+
+  if(typeof document!=="undefined"&&!document.querySelector('script[data-kg-device-score-ui]')){
+    var ui=document.createElement("script");
+    ui.src="/assets/device-score-ui.js";
+    ui.defer=true;
+    ui.dataset.kgDeviceScoreUi="1";
+    document.head.appendChild(ui);
+  }
 })();
