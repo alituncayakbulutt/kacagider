@@ -28,6 +28,9 @@ begin
 end;
 $$;
 
+-- Trigger yardımcı fonksiyonu API üzerinden doğrudan çağrılmamalı.
+revoke all on function public.sync_dealer_trust_profile() from public, anon, authenticated;
+
 drop trigger if exists dealer_profile_trust_sync on public.dealer_profiles;
 create trigger dealer_profile_trust_sync
 after insert or update of store_name,active,verified_at on public.dealer_profiles
@@ -87,7 +90,7 @@ begin
 end;
 $$;
 
-revoke all on function public.get_dealer_offer_trust(uuid) from public;
+revoke all on function public.get_dealer_offer_trust(uuid) from public, anon;
 grant execute on function public.get_dealer_offer_trust(uuid) to authenticated;
 
 -- Mevcut teklif liste RPC'sine güven alanlarını ekle.
@@ -151,4 +154,5 @@ begin
 end;
 $$;
 
+revoke all on function public.seller_list_request_offers(uuid) from public, anon;
 grant execute on function public.seller_list_request_offers(uuid) to authenticated;
