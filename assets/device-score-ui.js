@@ -27,8 +27,10 @@
   function ensurePhotoAi(){loadOnce('__KG_PHOTO_CONDITION_AI__','script[data-kg-photo-condition-ai]','/assets/photo-condition-ai.js','kgPhotoConditionAi');}
   function ensureImei(){loadOnce('__KG_IMEI_VERIFICATION__','script[data-kg-imei-verification]','/assets/imei-verification.js','kgImeiVerification');}
   function ensureHardwareTests(){loadOnce('__KG_HARDWARE_TESTS__','script[data-kg-hardware-tests]','/assets/hardware-tests.js','kgHardwareTests');}
+  function ensureMarketAi(){loadOnce('__KG_MARKET_AI__','script[data-kg-market-ai]','/assets/market-ai.js','kgMarketAi');}
+  function ensureMobilePwa(){loadOnce('__KG_MOBILE_PWA__','script[data-kg-mobile-pwa]','/assets/mobile-pwa.js','kgMobilePwa');}
   window.addEventListener("kg:device-score",function(event){render(event.detail);});
   var observer=new MutationObserver(function(){injectScoreIntoOpenFlows();wrapMarketplacePublisher();});
-  function ready(){ensureStyle();ensureCard();ensureExpertise();ensureModelDemand();ensureDealerTrustOffers();ensurePriceHistory();ensureExpertisePdf();ensurePhotoAi();ensureImei();ensureHardwareTests();if(valid(window.KG_LAST_DEVICE_SCORE))render(window.KG_LAST_DEVICE_SCORE);observer.observe(document.documentElement,{childList:true,subtree:true});var tries=0,timer=setInterval(function(){wrapMarketplacePublisher();injectScoreIntoOpenFlows();tries++;if(tries>40)clearInterval(timer);},250);}
+  function ready(){ensureStyle();ensureCard();ensureExpertise();ensureModelDemand();ensureDealerTrustOffers();ensurePriceHistory();ensureExpertisePdf();ensurePhotoAi();ensureImei();ensureHardwareTests();ensureMarketAi();ensureMobilePwa();if(valid(window.KG_LAST_DEVICE_SCORE))render(window.KG_LAST_DEVICE_SCORE);observer.observe(document.documentElement,{childList:true,subtree:true});var tries=0,timer=setInterval(function(){wrapMarketplacePublisher();injectScoreIntoOpenFlows();tries++;if(tries>40)clearInterval(timer);},250);}
   if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',ready,{once:true});else ready();
 })();
