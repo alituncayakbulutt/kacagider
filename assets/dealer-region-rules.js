@@ -1,0 +1,16 @@
+(function(){
+'use strict';
+if(window.__KG_DEALER_REGION_RULES__)return;window.__KG_DEALER_REGION_RULES__=true;
+var api=null,client=null,rows=[],busy=false,timer=null;
+function q(s,r){return (r||document).querySelector(s)}
+function qa(s,r){return Array.prototype.slice.call((r||document).querySelectorAll(s))}
+function esc(v){return String(v==null?'':v).replace(/[&<>"']/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]})}
+function style(){if(q('#kgDealerRegionStyle'))return;var s=document.createElement('style');s.id='kgDealerRegionStyle';s.textContent='.kg-region-meta{display:flex;gap:6px;flex-wrap:wrap;margin-top:7px}.kg-region-pill{display:inline-flex;align-items:center;min-height:22px;padding:0 8px;border-radius:999px;font-size:9.5px;font-weight:850;background:#eff6ff;color:#2457a6}.kg-region-pill.priority{background:#ecfdf3;color:#087a37}.kg-region-pill.slots{background:#f8fafc;color:#475467;border:1px solid #e2e8f0}.kg-region-rule-note{font-weight:700}.kg-region-rule-note strong{color:#087a37}';document.head.appendChild(s)}
+async function waitApi(n){n=n||0;if(window.KGMarketplaceSupabase)return window.KGMarketplaceSupabase;if(n>120)throw new Error('Supabase hazır değil');await new Promise(function(r){setTimeout(r,50)});return waitApi(n+1)}
+async function fetchRows(){if(busy)return;busy=true;try{var r=await client.rpc('dealer_list_available_requests');if(r.error)throw r.error;rows=r.data||[];decorate()}catch(e){}finally{busy=false}}
+function decorate(){style();var info=q('#kgDpList')&&q('#kgDpList').parentElement?q('.kg-dp-info',q('#kgDpList').parentElement):null;if(info&&!info.dataset.regionRule){info.dataset.regionRule='1';info.innerHTML='<span class="kg-region-rule-note"><strong>Dağıtım kuralı:</strong> Aynı ilçedeki talepler önce gösterilir; ardından aynı ildeki talepler gelir. Her talep en fazla 8 aktif teklif alır. İletişim bilgileri teklif kabul edilene kadar gizli kalır.</span>'}
+ qa('[data-open-request]').forEach(function(btn){var row=btn.closest('.kg-dp-row');if(!row||row.dataset.regionDecorated)return;var x=rows.find(function(r){return r.id===btn.dataset.openRequest});if(!x)return;row.dataset.regionDecorated='1';var main=q('.kg-dp-main',row);if(!main)return;var meta=document.createElement('div');meta.className='kg-region-meta';var scope=x.match_scope==='district'?'Aynı ilçe · Öncelikli':x.match_scope==='city'?'Aynı il':'Bölge eşleşmesi';var count=Number(x.active_offer_count||0),limit=Number(x.offer_limit||8);meta.innerHTML='<span class="kg-region-pill '+(x.match_scope==='district'?'priority':'')+'">'+esc(scope)+'</span><span class="kg-region-pill slots">Aktif teklif '+esc(count)+' / '+esc(limit)+'</span>';main.appendChild(meta)})}
+function schedule(){clearTimeout(timer);timer=setTimeout(fetchRows,180)}
+async function boot(){try{api=await waitApi(0);await api.ready;var user=await api.getUser();if(!user)return;client=await api.init();await fetchRows();new MutationObserver(schedule).observe(document.getElementById('kgDealerPanelApp')||document.body,{childList:true,subtree:true})}catch(e){}}
+if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',boot,{once:true});else boot();
+})();

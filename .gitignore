@@ -1,0 +1,17 @@
+# OS / editor artifacts
+.DS_Store
+Thumbs.db
+
+# Python cache / build artifacts
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# Local environment files
+.env
+.env.*
+!.env.example
+
+# Local-only runtime artifacts
+*.log
