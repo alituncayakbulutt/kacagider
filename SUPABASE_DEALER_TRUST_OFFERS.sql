@@ -91,7 +91,9 @@ revoke all on function public.get_dealer_offer_trust(uuid) from public;
 grant execute on function public.get_dealer_offer_trust(uuid) to authenticated;
 
 -- Mevcut teklif liste RPC'sine güven alanlarını ekle.
-create or replace function public.seller_list_request_offers(p_request_id uuid)
+-- Dönüş tipi genişlediği için fonksiyon önce kaldırılıp aynı isimle yeniden kurulur.
+drop function if exists public.seller_list_request_offers(uuid);
+create function public.seller_list_request_offers(p_request_id uuid)
 returns table(
   offer_id uuid,
   dealer_user_id uuid,
