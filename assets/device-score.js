@@ -85,32 +85,15 @@
     }
 
     var score = condition.score;
-    var breakdown = [{
-      key: "screenCondition",
-      label: condition.label,
-      impact: 0,
-      value: input.screen
-    }];
+    var breakdown = [{ key: "screenCondition", label: condition.label, impact: 0, value: input.screen }];
 
-    var countPenalty = {
-      none: 0,
-      "1-5": 4,
-      "6-15": 10,
-      "16+": 18
-    }[String(input.scratchCount || "none")] || 0;
-
+    var countPenalty = { none: 0, "1-5": 4, "6-15": 10, "16+": 18 }[String(input.scratchCount || "none")] || 0;
     if (countPenalty) {
       score -= countPenalty;
       breakdown.push({ key: "scratchCount", label: "Ekran çizik sayısı: " + String(input.scratchCount), impact: -countPenalty, value: input.scratchCount });
     }
 
-    var depthPenalty = {
-      none: 0,
-      hairline: 3,
-      medium: 9,
-      deep: 18
-    }[String(input.scratchDepth || "none")] || 0;
-
+    var depthPenalty = { none: 0, hairline: 3, medium: 9, deep: 18 }[String(input.scratchDepth || "none")] || 0;
     if (depthPenalty) {
       score -= depthPenalty;
       breakdown.push({
@@ -127,9 +110,7 @@
     }
 
     var changedParts = Array.isArray(input.changedParts) ? input.changedParts : [];
-    var changedScreen = changedParts.find(function (item) {
-      return item && item.part === "screen";
-    });
+    var changedScreen = changedParts.find(function (item) { return item && item.part === "screen"; });
 
     if (changedScreen) {
       var quality = String(changedScreen.quality || "");
@@ -138,19 +119,9 @@
       if (qualityCap !== null && score > qualityCap) {
         var capImpact = qualityCap - score;
         score = qualityCap;
-        breakdown.push({
-          key: "changedScreen",
-          label: quality === "aftermarket" ? "Değişmiş ekran: yan sanayi" : "Değişmiş ekran: orijinal",
-          impact: capImpact,
-          value: quality
-        });
+        breakdown.push({ key: "changedScreen", label: quality === "aftermarket" ? "Değişmiş ekran: yan sanayi" : "Değişmiş ekran: orijinal", impact: capImpact, value: quality });
       } else if (qualityCap !== null) {
-        breakdown.push({
-          key: "changedScreen",
-          label: quality === "aftermarket" ? "Değişmiş ekran: yan sanayi" : "Değişmiş ekran: orijinal",
-          impact: 0,
-          value: quality
-        });
+        breakdown.push({ key: "changedScreen", label: quality === "aftermarket" ? "Değişmiş ekran: yan sanayi" : "Değişmiş ekran: orijinal", impact: 0, value: quality });
       }
     }
 
@@ -167,97 +138,39 @@
     return { score: score, label: label, reason: "calculated", breakdown: breakdown };
   }
 
-  /**
-   * Mevcut kasa alanlarını tek Kasa + Arka Cam skorunda birleştirir.
-   * input:
-   * {
-   *   dent: "none|light|medium|serious",
-   *   surface: "clean|caseMark|lightScratch|manyScratch",
-   *   corners: "clean|light|clear",
-   *   backGlass: "clean|hairline|crack|broken",
-   *   changedParts: [{part:"body|backglass", quality:"original|aftermarket"}, ...]
-   * }
-   */
   function scoreBody(input) {
     input = input || {};
 
     var score = 100;
     var breakdown = [];
 
-    var dentPenalty = {
-      none: 0,
-      light: 8,
-      medium: 20,
-      serious: 38
-    }[String(input.dent || "none")] || 0;
-
+    var dentPenalty = { none: 0, light: 8, medium: 20, serious: 38 }[String(input.dent || "none")] || 0;
     if (dentPenalty) {
       score -= dentPenalty;
-      breakdown.push({
-        key: "dent",
-        label: "Kasa ezik / darbe: " + ({light:"hafif",medium:"orta",serious:"ciddi"}[input.dent] || input.dent),
-        impact: -dentPenalty,
-        value: input.dent
-      });
+      breakdown.push({ key: "dent", label: "Kasa ezik / darbe: " + ({light:"hafif",medium:"orta",serious:"ciddi"}[input.dent] || input.dent), impact: -dentPenalty, value: input.dent });
     }
 
-    var surfacePenalty = {
-      clean: 0,
-      caseMark: 3,
-      lightScratch: 8,
-      manyScratch: 18
-    }[String(input.surface || "clean")] || 0;
-
+    var surfacePenalty = { clean: 0, caseMark: 3, lightScratch: 8, manyScratch: 18 }[String(input.surface || "clean")] || 0;
     if (surfacePenalty) {
       score -= surfacePenalty;
-      breakdown.push({
-        key: "surface",
-        label: "Kasa yüzeyi: " + ({caseMark:"kılıf izi",lightScratch:"hafif çizik",manyScratch:"çok çizik"}[input.surface] || input.surface),
-        impact: -surfacePenalty,
-        value: input.surface
-      });
+      breakdown.push({ key: "surface", label: "Kasa yüzeyi: " + ({caseMark:"kılıf izi",lightScratch:"hafif çizik",manyScratch:"çok çizik"}[input.surface] || input.surface), impact: -surfacePenalty, value: input.surface });
     }
 
-    var cornerPenalty = {
-      clean: 0,
-      light: 7,
-      clear: 18
-    }[String(input.corners || "clean")] || 0;
-
+    var cornerPenalty = { clean: 0, light: 7, clear: 18 }[String(input.corners || "clean")] || 0;
     if (cornerPenalty) {
       score -= cornerPenalty;
-      breakdown.push({
-        key: "corners",
-        label: "Köşeler: " + ({light:"hafif ezik",clear:"belirgin ezik"}[input.corners] || input.corners),
-        impact: -cornerPenalty,
-        value: input.corners
-      });
+      breakdown.push({ key: "corners", label: "Köşeler: " + ({light:"hafif ezik",clear:"belirgin ezik"}[input.corners] || input.corners), impact: -cornerPenalty, value: input.corners });
     }
 
-    var backGlassPenalty = {
-      clean: 0,
-      hairline: 5,
-      crack: 28,
-      broken: 45
-    }[String(input.backGlass || "clean")] || 0;
-
+    var backGlassPenalty = { clean: 0, hairline: 5, crack: 28, broken: 45 }[String(input.backGlass || "clean")] || 0;
     if (backGlassPenalty) {
       score -= backGlassPenalty;
-      breakdown.push({
-        key: "backGlass",
-        label: "Arka cam: " + ({hairline:"kılcal çizik",crack:"çatlak",broken:"kırık"}[input.backGlass] || input.backGlass),
-        impact: -backGlassPenalty,
-        value: input.backGlass
-      });
+      breakdown.push({ key: "backGlass", label: "Arka cam: " + ({hairline:"kılcal çizik",crack:"çatlak",broken:"kırık"}[input.backGlass] || input.backGlass), impact: -backGlassPenalty, value: input.backGlass });
     }
 
     var changedParts = Array.isArray(input.changedParts) ? input.changedParts : [];
-    var changedBody = changedParts.find(function (item) {
-      return item && item.part === "body";
-    });
-    var changedBackGlass = changedParts.find(function (item) {
-      return item && item.part === "backglass";
-    });
+    var changedBody = changedParts.find(function (item) { return item && item.part === "body"; });
+    var changedBackGlass = changedParts.find(function (item) { return item && item.part === "backglass"; });
 
     if (changedBody) {
       var bodyQuality = String(changedBody.quality || "");
@@ -265,12 +178,7 @@
       if (bodyCap !== null && score > bodyCap) {
         var bodyImpact = bodyCap - score;
         score = bodyCap;
-        breakdown.push({
-          key: "changedBody",
-          label: bodyQuality === "aftermarket" ? "Değişmiş kasa: yan sanayi" : "Değişmiş kasa: orijinal",
-          impact: bodyImpact,
-          value: bodyQuality
-        });
+        breakdown.push({ key: "changedBody", label: bodyQuality === "aftermarket" ? "Değişmiş kasa: yan sanayi" : "Değişmiş kasa: orijinal", impact: bodyImpact, value: bodyQuality });
       }
     }
 
@@ -280,12 +188,7 @@
       if (backCap !== null && score > backCap) {
         var backImpact = backCap - score;
         score = backCap;
-        breakdown.push({
-          key: "changedBackGlass",
-          label: backQuality === "aftermarket" ? "Değişmiş arka cam: yan sanayi" : "Değişmiş arka cam: orijinal",
-          impact: backImpact,
-          value: backQuality
-        });
+        breakdown.push({ key: "changedBackGlass", label: backQuality === "aftermarket" ? "Değişmiş arka cam: yan sanayi" : "Değişmiş arka cam: orijinal", impact: backImpact, value: backQuality });
       }
     }
 
@@ -302,8 +205,44 @@
     return { score: score, label: label, reason: "calculated", breakdown: breakdown };
   }
 
+  /**
+   * Donanım Skoru — FAZ 1'de mevcut formdaki Face ID bilgisini kullanır.
+   * İleride otomatik ekran/dokunmatik/kamera/mikrofon/hoparlör/Wi-Fi/
+   * Bluetooth/sensör testleri aynı fonksiyona eklenebilir.
+   *
+   * input: { faceId: "working|notworking" }
+   */
+  function scoreHardware(input) {
+    input = input || {};
+    var faceId = String(input.faceId || "");
+
+    if (!faceId) {
+      return { score: null, label: "Donanım bilgisi seçilmedi", reason: "missing", breakdown: [] };
+    }
+
+    if (faceId !== "working" && faceId !== "notworking") {
+      return { score: null, label: "Geçersiz Face ID bilgisi", reason: "invalid", breakdown: [] };
+    }
+
+    var score = faceId === "working" ? 100 : 25;
+    var breakdown = [{
+      key: "faceId",
+      label: faceId === "working" ? "Face ID çalışıyor" : "Face ID çalışmıyor",
+      impact: faceId === "working" ? 0 : -75,
+      value: faceId
+    }];
+
+    return {
+      score: score,
+      label: faceId === "working" ? "Donanım sorunsuz" : "Donanım sorunu var",
+      reason: "calculated",
+      breakdown: breakdown,
+      provisional: true
+    };
+  }
+
   window.KGDeviceScore = {
-    version: "1.2.0-phase1",
+    version: "1.3.0-phase1",
     weights: {
       screen: 30,
       body: 25,
@@ -314,6 +253,7 @@
     scoreBattery: scoreBattery,
     scoreScreenCondition: scoreScreenCondition,
     scoreScreen: scoreScreen,
-    scoreBody: scoreBody
+    scoreBody: scoreBody,
+    scoreHardware: scoreHardware
   };
 })();
