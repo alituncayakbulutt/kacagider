@@ -51,8 +51,7 @@ repls={
 "Telefoncuların teklif verebilmesi":"Mağazaların teklif verebilmesi",
 "Telefoncunun bilmesi gereken başka bir durum var mı?":"Mağazanın bilmesi gereken başka bir durum var mı?",
 "Telefoncuların cihazı daha doğru değerlendirebilmesi":"Mağazaların cihazı daha doğru değerlendirebilmesi",
-"Talep henüz telefonculara gönderilmedi.":"Talep henüz mağazalara gönderilmedi.",
-"yetkili ve doğrulanmış telefoncular":"yetkili ve doğrulanmış mağazalar"
+"Talep henüz telefonculara gönderilmedi.":"Talep henüz mağazalara gönderilmedi."
 }
 for old,new in repls.items():
     if old not in text:
