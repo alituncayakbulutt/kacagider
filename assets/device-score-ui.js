@@ -178,11 +178,20 @@ html[data-theme="dark"] .kg-device-score-card{background:#132233!important;borde
     document.head.appendChild(script);
   }
 
+  function ensurePriceHistory(){
+    if(window.__KG_PRICE_HISTORY__||document.querySelector('script[data-kg-price-history]'))return;
+    var script=document.createElement('script');
+    script.src='/assets/price-history.js';
+    script.defer=true;
+    script.dataset.kgPriceHistory='1';
+    document.head.appendChild(script);
+  }
+
   window.addEventListener("kg:device-score",function(event){render(event.detail);});
 
   var observer=new MutationObserver(function(){injectScoreIntoOpenFlows();wrapMarketplacePublisher();});
   function ready(){
-    ensureStyle();ensureCard();ensureExpertise();ensureModelDemand();ensureDealerTrustOffers();
+    ensureStyle();ensureCard();ensureExpertise();ensureModelDemand();ensureDealerTrustOffers();ensurePriceHistory();
     if(valid(window.KG_LAST_DEVICE_SCORE))render(window.KG_LAST_DEVICE_SCORE);
     observer.observe(document.documentElement,{childList:true,subtree:true});
     var tries=0,timer=setInterval(function(){wrapMarketplacePublisher();injectScoreIntoOpenFlows();tries++;if(tries>40)clearInterval(timer);},250);
