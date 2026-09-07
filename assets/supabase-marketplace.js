@@ -71,6 +71,12 @@
     return error;
   }
 
+  function isMissingRpcError(error){
+    const code=String(error&&error.code||"");
+    const message=String(error&&error.message||"").toLowerCase();
+    return code==="42883"||code==="PGRST202"||message.includes("could not find the function")||message.includes("does not exist");
+  }
+
   function dataUrlToFile(dataUrl,index){
     const parts=String(dataUrl||"").split(",");
     if(parts.length<2) throw new Error("Fotoğraf verisi okunamadı.");
@@ -108,8 +114,6 @@
       }
     });
 
-    // Güvenlik: Dashboard'da Confirm email yanlışlıkla kapalı olsa bile
-    // yeni kayıt oturumunu ilan akışına taşımıyoruz. Production'da Confirm email açık olmalı.
     if(!result.error && result.data && result.data.session){
       await client.auth.signOut();
       result.data.session=null;
@@ -133,6 +137,37 @@
   async function signOut(){
     const client=await init();
     return client.auth.signOut();
+  }
+
+  async function getPublicTrustProfile(userId){
+    if(!userId) return null;
+    const client=await init();
+    const {data,error}=await client.rpc("get_public_trust_profile",{p_user_id:userId});
+    if(error){
+      if(isMissingRpcError(error)) return null;
+      throw error;
+    }
+    return Array.isArray(data)?(data[0]||null):(data||null);
+  }
+
+  async function getMyTrustProfile(){
+    const user=await getUser();
+    return user?getPublicTrustProfile(user.id):null;
+  }
+
+  async function upsertMyTrustProfile({displayName,accountType="seller"}={}){
+    const client=await init();
+    const user=await getUser({requireVerified:true});
+    if(!user) throw new Error("Güven profili oluşturmak için giriş yapmalısın.");
+    const {error}=await client.rpc("upsert_my_trust_profile",{
+      p_display_name:String(displayName||"").trim()||null,
+      p_account_type:accountType==="dealer"?"dealer":"seller"
+    });
+    if(error){
+      if(isMissingRpcError(error)) throw new Error("Güven sistemi veritabanı kurulumu henüz uygulanmadı.");
+      throw error;
+    }
+    return getPublicTrustProfile(user.id);
   }
 
   async function publishListing(input){
@@ -238,6 +273,7 @@
       marketValue:Number(row.market_value||0),
       estimatedPrice:Number(row.market_value||0),
       details:Array.isArray(row.details)?row.details:[],
+      sellerUserId:row.user_id||null,
       sellerName:row.seller_name||"Bireysel satıcı",
       contactPhone:row.contact_phone||"",
       status:row.status,
@@ -279,6 +315,9 @@
     signUp,
     signIn,
     signOut,
+    getPublicTrustProfile,
+    getMyTrustProfile,
+    upsertMyTrustProfile,
     publishListing,
     listPublished,
     getListing,
