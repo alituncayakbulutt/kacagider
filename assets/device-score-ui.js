@@ -29,8 +29,9 @@
   function ensureHardwareTests(){loadOnce('__KG_HARDWARE_TESTS__','script[data-kg-hardware-tests]','/assets/hardware-tests.js','kgHardwareTests');}
   function ensureMarketAi(){loadOnce('__KG_MARKET_AI__','script[data-kg-market-ai]','/assets/market-ai.js','kgMarketAi');}
   function ensureMobilePwa(){loadOnce('__KG_MOBILE_PWA__','script[data-kg-mobile-pwa]','/assets/mobile-pwa.js','kgMobilePwa');}
+  function ensureDevicePassport(){loadOnce('__KG_DEVICE_PASSPORT__','script[data-kg-device-passport]','/assets/device-passport.js','kgDevicePassport');}
   window.addEventListener("kg:device-score",function(event){render(event.detail);});
   var observer=new MutationObserver(function(){injectScoreIntoOpenFlows();wrapMarketplacePublisher();});
-  function ready(){ensureStyle();ensureCard();ensureExpertise();ensureModelDemand();ensureDealerTrustOffers();ensurePriceHistory();ensureExpertisePdf();ensurePhotoAi();ensureImei();ensureHardwareTests();ensureMarketAi();ensureMobilePwa();if(valid(window.KG_LAST_DEVICE_SCORE))render(window.KG_LAST_DEVICE_SCORE);observer.observe(document.documentElement,{childList:true,subtree:true});var tries=0,timer=setInterval(function(){wrapMarketplacePublisher();injectScoreIntoOpenFlows();tries++;if(tries>40)clearInterval(timer);},250);}
+  function ready(){ensureStyle();ensureCard();ensureExpertise();ensureModelDemand();ensureDealerTrustOffers();ensurePriceHistory();ensureExpertisePdf();ensurePhotoAi();ensureImei();ensureHardwareTests();ensureMarketAi();ensureMobilePwa();ensureDevicePassport();if(valid(window.KG_LAST_DEVICE_SCORE))render(window.KG_LAST_DEVICE_SCORE);observer.observe(document.documentElement,{childList:true,subtree:true});var tries=0,timer=setInterval(function(){wrapMarketplacePublisher();injectScoreIntoOpenFlows();tries++;if(tries>40)clearInterval(timer);},250);}
   if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',ready,{once:true});else ready();
 })();
