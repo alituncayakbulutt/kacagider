@@ -74,3 +74,15 @@
   if(document.readyState==='loading') document.addEventListener('DOMContentLoaded',addFooter);
   else addFooter();
 })();
+
+(function(){
+  function loadKgPhase(){
+    if(document.querySelector('script[data-kg-phase-loader]'))return;
+    var s=document.createElement('script');
+    s.src='/assets/kg-phase-loader.js?v=20260908';
+    s.defer=true;
+    s.setAttribute('data-kg-phase-loader','1');
+    document.head.appendChild(s);
+  }
+  if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',loadKgPhase,{once:true});else loadKgPhase();
+})();
