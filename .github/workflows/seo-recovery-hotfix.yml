@@ -1,0 +1,72 @@
+name: SEO Recovery Hotfix
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - "scripts/seo-recovery-hotfix.py"
+      - ".github/workflows/seo-recovery-hotfix.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: seo-recovery-hotfix
+  cancel-in-progress: false
+
+jobs:
+  recover-and-publish:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout main
+        uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Validate recovery script
+        run: python3 -m py_compile scripts/seo-recovery-hotfix.py
+
+      - name: Normalize SEO metadata and remove synthetic intent blocks
+        run: python3 scripts/seo-recovery-hotfix.py
+
+      - name: Validate recovery output
+        shell: bash
+        run: |
+          set -e
+          if grep -R -n -E '^seo_h1: ".*(Ne Kadar Eder\?.*Kaça Satılır\?|Kaça Satılır\?.*2026 İkinci El Fiyatı)' telefon tablet bilgisayar akilli-saat oyun-konsolu --include='index.md'; then
+            echo "Aggressive mixed-intent H1 pattern still exists."
+            exit 1
+          fi
+          grep -q 'seo_canonical: "https://kacagider.com.tr/telefonum-ne-kadar-eder/"' telefonum-kac-para/index.md
+          grep -q 'seo_canonical: "https://kacagider.com.tr/telefonum-ne-kadar-eder/"' telefonum-kaca-gider/index.md
+          if grep -q 'https://kacagider.com.tr/telefonum-kac-para/' sitemap.xml; then
+            echo "Duplicate phone landing remains in sitemap."
+            exit 1
+          fi
+          if grep -q 'https://kacagider.com.tr/telefonum-kaca-gider/' sitemap.xml; then
+            echo "Duplicate phone landing remains in sitemap."
+            exit 1
+          fi
+          git diff --check
+
+      - name: Commit recovered SEO pages
+        shell: bash
+        run: |
+          if git diff --quiet && [ -z "$(git status --porcelain)" ]; then
+            echo "SEO recovery is already applied."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add telefon tablet bilgisayar akilli-saat oyun-konsolu telefonum-kac-para telefonum-kaca-gider sitemap.xml
+          git commit -m "SEO recovery: normalize device pages and consolidate duplicate landings"
+          git pull --rebase origin main
+          git push origin HEAD:main
