@@ -1,109 +1,37 @@
-name: SEO CTR Bulk Update
+name: SEO CTR Audit
 
 on:
   push:
+    branches:
+      - main
     paths:
-      - 'scripts/update-seo-ctr.py'
-      - 'scripts/apply-seo-priority-overrides.py'
-      - 'scripts/apply-organic-growth-wave1.py'
-      - 'scripts/apply-organic-growth-variants.py'
-      - 'scripts/apply-organic-growth-wave2.py'
-      - 'scripts/apply-organic-growth-wave3.py'
-      - 'scripts/apply-search-console-wave1.py'
-      - 'scripts/apply-search-console-wave2.py'
-      - 'scripts/apply-search-console-wave3.py'
-      - 'scripts/apply-seo-checkup-fixes.py'
-      - 'scripts/add-favicon-links.py'
-      - 'scripts/add-breadcrumb-schema.py'
-      - 'scripts/add-social-image-meta.py'
-      - 'scripts/update-sitemap-lastmod.py'
-      - 'scripts/apply-seo-2026-strategy.py'
-      - 'scripts/apply-marketplace-seo-final.py'
-      - 'scripts/normalize-seo-meta.py'
-      - 'scripts/ensure-marketplace-live.py'
-      - 'favicon.svg'
-      - 'rehber/**'
-      - 'bilgi-merkezi/**'
       - '.github/workflows/seo-ctr-bulk.yml'
+      - 'scripts/seo-site-audit.py'
+      - 'scripts/seo-model-intent-audit.py'
+      - 'scripts/seo-model-listing-intent-audit.py'
   workflow_dispatch:
 
 permissions:
-  contents: write
+  contents: read
 
 jobs:
-  update-seo:
-    if: github.actor != 'github-actions[bot]'
+  audit-only:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
       - uses: actions/setup-python@v5
         with:
-          python-version: '3.x'
-      - name: Update device SEO and visible CTR signals
-        run: python scripts/update-seo-ctr.py
-      - name: Apply Search Console priority page overrides
-        run: python scripts/apply-seo-priority-overrides.py
-      - name: Apply organic growth wave 1
-        run: python scripts/apply-organic-growth-wave1.py
-      - name: Apply organic growth variant expansion
-        run: python scripts/apply-organic-growth-variants.py
-      - name: Apply organic growth wave 2
-        run: python scripts/apply-organic-growth-wave2.py
-      - name: Apply organic growth wave 3
-        run: python scripts/apply-organic-growth-wave3.py
-      - name: Apply Search Console wave 1
-        run: python scripts/apply-search-console-wave1.py
-      - name: Apply Search Console wave 2
-        run: python scripts/apply-search-console-wave2.py
-      - name: Apply Search Console wave 3
-        run: python scripts/apply-search-console-wave3.py
-      - name: Apply SEO checkup consistency fixes
-        run: python scripts/apply-seo-checkup-fixes.py
-      - name: Add favicon links
-        run: python scripts/add-favicon-links.py
-      - name: Add breadcrumb structured data
-        run: python scripts/add-breadcrumb-schema.py
-      - name: Add category share image metadata
-        run: python scripts/add-social-image-meta.py
-      - name: Sync sitemap lastmod and canonical coverage
-        run: python scripts/update-sitemap-lastmod.py
-      - name: Apply 2026 entity and market-value strategy last
-        run: python scripts/apply-seo-2026-strategy.py
-      - name: Apply marketplace positioning and final language
-        run: python scripts/apply-marketplace-seo-final.py
-      - name: Normalize long device SEO metadata
-        run: python scripts/normalize-seo-meta.py
-      - name: Ensure marketplace production scripts stay connected
-        run: python scripts/ensure-marketplace-live.py
-      - name: Protect marketplace, pricing and Analytics
-        run: |
-          forbidden="$(git diff --name-only | grep -E '^(ilan/|ilanlar/|assets/marketplace|assets/supabase|supabase/|data/)' || true)"
-          if [ -n "$forbidden" ]; then
-            echo "SEO workflow attempted to change protected marketplace/pricing files:"
-            echo "$forbidden"
-            exit 1
-          fi
-          if grep -R -n 'G-6L6B0DE3L6' index.html _layouts assets/analytics-events.js 2>/dev/null; then
-            echo 'Stale GA4 measurement ID detected.'
-            exit 1
-          fi
-          grep -q 'G-078JHH25LH' index.html
-          test "$(grep -c 'src="/assets/marketplace-details.js"' index.html)" -eq 1
-          test "$(grep -c 'src="/assets/marketplace-nav-test.js"' index.html)" -eq 1
-          test "$(grep -c 'src="/assets/marketplace-test.js"' index.html)" -eq 1
-          git diff --check
+          python-version: '3.12'
       - name: Run SEO site audit
-        run: python scripts/seo-site-audit.py
-      - name: Commit changes
+        run: python3 scripts/seo-site-audit.py
+      - name: Run model intent audit
+        run: python3 scripts/seo-model-intent-audit.py
+      - name: Run listing intent audit
+        run: python3 scripts/seo-model-listing-intent-audit.py
+      - name: Confirm workflow is read only
         run: |
-          if git diff --quiet; then
-            echo "No SEO/marketplace bridge changes needed."
-            exit 0
+          if ! git diff --quiet || [ -n "$(git status --porcelain)" ]; then
+            echo "SEO audit modified repository files; refusing mutation."
+            git status --short
+            exit 1
           fi
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add index.html telefon tablet bilgisayar akilli-saat oyun-konsolu telefonum-ne-kadar-eder telefonum-kac-para telefonum-kaca-gider bilgi-merkezi rehber _layouts/seo.html sitemap.xml scripts/generate-seo-static-pages.mjs
-          git commit -m "SEO: Değerini öğren, doğru fiyata sat stratejisini uygula"
-          git push
