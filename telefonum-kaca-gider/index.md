@@ -9,5 +9,6 @@ seo_context: "Telefonun ikinci el satış değeri; model, hafıza, pil sağlığ
 seo_breadcrumbs: [{"label":"Ana Sayfa","url":"/"},{"label":"Telefon","url":"/telefon/"},{"label":"Telefonum Kaça Gider?","url":"/telefonum-kaca-gider/"}]
 seo_links: [{"label":"Telefon fiyatını hesapla","url":"/telefon/"},{"label":"Telefonum ne kadar eder?","url":"/telefonum-ne-kadar-eder/"},{"label":"Telefonum kaç para?","url":"/telefonum-kac-para/"}]
 seo_links_heading: "Telefonunun değerini öğren"
-seo_canonical: "https://kacagider.com.tr/telefonum-kaca-gider/"
+seo_canonical: "https://kacagider.com.tr/telefonum-ne-kadar-eder/"
+kg_seo_stage: "recovery-2026-09-canonical"
 ---

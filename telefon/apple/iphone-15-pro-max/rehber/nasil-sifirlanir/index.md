@@ -1,11 +1,11 @@
 ---
 layout: "seo"
-seo_title: "iPhone 15 Pro Max Nasıl Sıfırlanır? Kaça Satılır? 2026 | KaçaGider"
-seo_description: "iPhone 15 Pro Max Nasıl Sıfırlanır? Kaça Satılır? ne kadar eder? İkinci el fiyatı ve piyasa değerini cihaz özellikleri ve kondisyonuna göre KaçaGider ile öğren."
-seo_h1: "iPhone 15 Pro Max Nasıl Sıfırlanır? Kaça Satılır? 2026 İkinci El Fiyatı"
-seo_intro: "iPhone 15 Pro Max Nasıl Sıfırlanır? ikinci el fiyatı Türkiye 2026 ne kadar? Pil sağlığı, ekran ve cihaz durumu birlikte değerlendirilir. Cihaz bilgilerini seçerek güncel ortalama satış değerini KaçaGider ile ücretsiz öğrenebilirsiniz."
-seo_context_heading: "iPhone 15 Pro Max Nasıl Sıfırlanır? ikinci el değeri nasıl hesaplanır?"
-seo_context: "iPhone 15 Pro Max Nasıl Sıfırlanır? ikinci el fiyatı belirlenirken hafıza, pil sağlığı, ekran ve genel cihaz durumu birlikte değerlendirilir. Cihazın kondisyonu ve çalışan özelliklerinin durumu ortalama satış değerini doğrudan etkiler. KaçaGider üzerinden bilgilerinizi seçerek 2026 için güncel ikinci el piyasa değerini görebilirsiniz."
+seo_title: "iPhone 15 Pro Max Nasıl Sıfırlanır? | KaçaGider"
+seo_description: "iPhone 15 Pro Max Nasıl Sıfırlanır? Güvenli ve adım adım uygulama için KaçaGider rehberini inceleyin."
+seo_h1: "iPhone 15 Pro Max Nasıl Sıfırlanır?"
+seo_intro: "Ayarlar > Genel > Aktar veya iPhone'u Sıfırla > Tüm İçerikleri ve Ayarları Sil yolunu izleyin. Gerekirse cihaz parolanızı ve Apple Hesabı parolanızı girerek işlemi onaylayın."
+seo_context_heading: "iPhone 15 Pro Max için uygulama notları"
+seo_context: "Uyarı: Bu işlem geri alınamaz. Fotoğraflar, uygulamalar, mesajlar ve cihazdaki diğer veriler silinir; önce iCloud'a veya bilgisayarınıza yedek alın."
 seo_breadcrumbs: [{"label":"Ana Sayfa","url":"/"},{"label":"Telefon","url":"/telefon/"},{"label":"Apple","url":"/telefon/apple/"},{"label":"iPhone 15 Pro Max","url":"/telefon/apple/iphone-15-pro-max/"},{"label":"Nasıl Sıfırlanır?","url":"/telefon/apple/iphone-15-pro-max/rehber/nasil-sifirlanir/"}]
 seo_links: [{"label":"iPhone 15 Pro Max ikinci el fiyatı","url":"/telefon/apple/iphone-15-pro-max/"}]
 seo_links_heading: "iPhone 15 Pro Max sayfası"
@@ -16,4 +16,5 @@ seo_guide_steps: ["Ayarlar uygulamasını açın ve Genel bölümüne girin.","A
 seo_guide_note: "Uyarı: Bu işlem geri alınamaz. Fotoğraflar, uygulamalar, mesajlar ve cihazdaki diğer veriler silinir; önce iCloud'a veya bilgisayarınıza yedek alın."
 seo_guide_return_url: "/telefon/apple/iphone-15-pro-max/"
 seo_guide_return_label: "iPhone 15 Pro Max ikinci el fiyat sayfasına dön"
+kg_seo_stage: "recovery-2026-09-guide"
 ---

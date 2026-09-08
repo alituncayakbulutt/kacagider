@@ -9,5 +9,6 @@ seo_context: "İkinci el telefon değeri; model, hafıza, pil sağlığı, ekran
 seo_breadcrumbs: [{"label":"Ana Sayfa","url":"/"},{"label":"Telefon","url":"/telefon/"},{"label":"Telefonum Kaç Para?","url":"/telefonum-kac-para/"}]
 seo_links: [{"label":"Telefon fiyatını hesapla","url":"/telefon/"},{"label":"Telefonum ne kadar eder?","url":"/telefonum-ne-kadar-eder/"},{"label":"iPhone fiyatları","url":"/telefon/apple/"},{"label":"Samsung fiyatları","url":"/telefon/samsung/"}]
 seo_links_heading: "Hemen değerini kontrol et"
-seo_canonical: "https://kacagider.com.tr/telefonum-kac-para/"
+seo_canonical: "https://kacagider.com.tr/telefonum-ne-kadar-eder/"
+kg_seo_stage: "recovery-2026-09-canonical"
 ---
