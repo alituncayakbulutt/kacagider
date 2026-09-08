@@ -87,11 +87,6 @@ def set_value(doc, key: str, value):
     doc["raw"][key] = rendered
 
 
-def save(path: Path, doc):
-    text = "---\n" + "\n".join(doc["lines"]) + "\n---\n" + doc["body"]
-    path.write_text(text, encoding="utf-8")
-
-
 def clean_text(value: str) -> str:
     value = re.sub(r"\s+", " ", str(value or "")).strip()
     value = re.sub(r"\s+ve\s*$", "", value, flags=re.I)
@@ -142,7 +137,41 @@ def clean_sections(doc):
     return removed
 
 
-def recover_series(path: Path, doc, category: str):
+def recover_guide(doc):
+    meta = {k: decode(v) for k, v in doc["raw"].items()}
+    crumbs = meta.get("seo_breadcrumbs")
+    if not isinstance(crumbs, list) or len(crumbs) < 2:
+        return False
+
+    guide_label = str(crumbs[-1].get("label", "")).strip() if isinstance(crumbs[-1], dict) else ""
+    model_label = ""
+    if len(crumbs) >= 2 and isinstance(crumbs[-2], dict):
+        model_label = str(crumbs[-2].get("label", "")).strip()
+    if not guide_label:
+        return False
+
+    subject = clean_text(f"{model_label} {guide_label}") if model_label else clean_text(guide_label)
+    if guide_label.endswith("?") and not subject.endswith("?"):
+        subject += "?"
+
+    answer = str(meta.get("seo_guide_answer", "")).strip()
+    note = str(meta.get("seo_guide_note", "")).strip()
+    description = f"{subject} Güvenli ve adım adım uygulama için KaçaGider rehberini inceleyin."
+    if len(description) > 160:
+        description = description[:157].rstrip(" ,;:-") + "..."
+
+    set_value(doc, "seo_title", f"{subject} | KaçaGider")
+    set_value(doc, "seo_description", description)
+    set_value(doc, "seo_h1", subject)
+    set_value(doc, "seo_intro", answer or f"{subject} için gerekli adımları bu rehberde takip edebilirsiniz.")
+    set_value(doc, "seo_context_heading", f"{model_label or 'Cihaz'} için uygulama notları")
+    set_value(doc, "seo_context", note or answer or "İşleme başlamadan önce önemli verilerinizi yedekleyin ve ekrandaki uyarıları dikkatle takip edin.")
+    clean_sections(doc)
+    set_value(doc, "kg_seo_stage", "recovery-2026-09-guide")
+    return True
+
+
+def recover_series(doc, category: str):
     meta = {k: decode(v) for k, v in doc["raw"].items()}
     crumbs = meta.get("seo_breadcrumbs")
     if not isinstance(crumbs, list) or not crumbs:
@@ -162,7 +191,7 @@ def recover_series(path: Path, doc, category: str):
     return True
 
 
-def recover_model(path: Path, doc, category: str, variant: bool):
+def recover_model(doc, category: str, variant: bool):
     meta = {k: decode(v) for k, v in doc["raw"].items()}
     subject = breadcrumb_subject(meta, variant=variant)
     if not subject:
@@ -190,6 +219,7 @@ def recover_model(path: Path, doc, category: str, variant: bool):
 def recover_device_pages():
     changed = 0
     removed_clusters = 0
+    guide_changes = 0
     for category in sorted(DEVICE_ROOTS):
         base = ROOT / category
         if not base.exists():
@@ -197,8 +227,6 @@ def recover_device_pages():
         for path in sorted(base.rglob("index.md")):
             rel = path.relative_to(ROOT)
             parts = rel.parts
-            if len(parts) not in (4, 5):
-                continue
             original = path.read_text(encoding="utf-8")
             doc = split_doc(original)
             if not doc:
@@ -207,14 +235,19 @@ def recover_device_pages():
             before_sections = decode(doc["raw"].get("seo_sections"), [])
             before_count = len(before_sections) if isinstance(before_sections, list) else 0
 
-            is_series = meta.get("seo_page_type") == "series_hub"
-            if is_series:
-                touched = recover_series(path, doc, category)
+            if meta.get("seo_guide") is True:
+                touched = recover_guide(doc)
+                if touched:
+                    guide_changes += 1
+            elif len(parts) not in (4, 5):
+                continue
+            elif meta.get("seo_page_type") == "series_hub":
+                touched = recover_series(doc, category)
             else:
                 crumbs = meta.get("seo_breadcrumbs")
                 if not isinstance(crumbs, list) or len(crumbs) < 4:
                     continue
-                touched = recover_model(path, doc, category, variant=(len(parts) == 5))
+                touched = recover_model(doc, category, variant=(len(parts) == 5))
 
             if not touched:
                 continue
@@ -225,7 +258,7 @@ def recover_device_pages():
             if rebuilt != original:
                 path.write_text(rebuilt, encoding="utf-8")
                 changed += 1
-    return changed, removed_clusters
+    return changed, removed_clusters, guide_changes
 
 
 def consolidate_phone_landings():
@@ -265,11 +298,11 @@ def consolidate_phone_landings():
 
 
 def main():
-    device_changes, removed_clusters = recover_device_pages()
+    device_changes, removed_clusters, guide_changes = recover_device_pages()
     canonical_changes = consolidate_phone_landings()
     print(
         "SEO recovery complete: "
-        f"{device_changes} device SEO page(s) normalized; "
+        f"{device_changes} SEO page(s) normalized ({guide_changes} guide page(s) inspected); "
         f"{removed_clusters} synthetic intent section(s) removed; "
         f"{canonical_changes} canonical/sitemap file(s) consolidated."
     )
