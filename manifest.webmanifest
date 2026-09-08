@@ -1,0 +1,15 @@
+{
+  "name": "KaçaGider — İkinci El Teknoloji Fiyat Referansı",
+  "short_name": "KaçaGider",
+  "description": "Telefon, tablet, bilgisayar, akıllı saat ve oyun konsolları için ikinci el piyasa değeri, ekspertiz ve satış araçları.",
+  "lang": "tr-TR",
+  "start_url": "/?source=pwa",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#f4f7fb",
+  "theme_color": "#0b1628",
+  "icons": [
+    {"src":"/favicon.svg","sizes":"any","type":"image/svg+xml","purpose":"any maskable"}
+  ],
+  "categories": ["shopping","utilities"]
+}
