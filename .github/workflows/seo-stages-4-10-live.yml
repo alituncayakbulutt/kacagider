@@ -1,67 +1,37 @@
-name: SEO Stages 4-10 Live
+name: SEO Stages 4-10 Audit
 
 on:
   push:
     branches:
       - main
     paths:
-      - "scripts/apply-seo-stages-4-10.py"
-      - "scripts/seo-stages-4-10-cleanup.py"
-      - "scripts/search-console-opportunity-engine.py"
-      - "scripts/update-sitemap-lastmod.py"
-      - "data/phone-prices.js"
-      - "data/search-console/**"
-      - "bilgi-merkezi/**"
-      - "guven-merkezi/**"
-      - "hakkimizda/**"
-      - "iletisim/**"
-      - "gizlilik-politikasi/**"
-      - "kvkk/**"
-      - "kullanim-kosullari/**"
-      - "cerez-politikasi/**"
-      - "ilan-guvenligi/**"
-      - "veri-metodolojisi/**"
+      - "scripts/seo-site-audit.py"
+      - "scripts/seo-model-intent-audit.py"
+      - "scripts/seo-model-listing-intent-audit.py"
       - ".github/workflows/seo-stages-4-10-live.yml"
-  schedule:
-    - cron: "17 4 * * 1"
   workflow_dispatch:
 
 permissions:
-  contents: write
+  contents: read
 
 concurrency:
-  group: seo-stages-4-10-live
-  cancel-in-progress: false
+  group: seo-stages-4-10-audit
+  cancel-in-progress: true
 
 jobs:
-  apply-and-publish:
+  audit-only:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout main
+      - name: Checkout current revision
         uses: actions/checkout@v4
-        with:
-          ref: main
-          fetch-depth: 0
 
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
           python-version: "3.12"
 
-      - name: Apply SEO stages 4-10
-        run: python3 scripts/apply-seo-stages-4-10.py
-
-      - name: Separate real storage from other variants
-        run: python3 scripts/seo-stages-4-10-cleanup.py
-
-      - name: Sync sitemap canonical pages and lastmod
-        run: python3 scripts/update-sitemap-lastmod.py
-
-      - name: Build Search Console opportunity report
-        run: python3 scripts/search-console-opportunity-engine.py
-
-      - name: Validate Python engines
-        run: python3 -m py_compile scripts/apply-seo-stages-4-10.py scripts/seo-stages-4-10-cleanup.py scripts/search-console-opportunity-engine.py scripts/update-sitemap-lastmod.py
+      - name: Validate SEO audit engines
+        run: python3 -m py_compile scripts/seo-site-audit.py scripts/seo-model-intent-audit.py scripts/seo-model-listing-intent-audit.py
 
       - name: Full SEO audit
         run: python3 scripts/seo-site-audit.py
@@ -72,16 +42,10 @@ jobs:
       - name: Listing intent audit
         run: python3 scripts/seo-model-listing-intent-audit.py
 
-      - name: Commit generated production SEO changes
-        shell: bash
+      - name: Confirm workflow is read only
         run: |
-          if git diff --quiet && [ -z "$(git status --porcelain)" ]; then
-            echo "No generated SEO changes."
-            exit 0
+          if ! git diff --quiet || [ -n "$(git status --porcelain)" ]; then
+            echo "SEO audit modified repository files; refusing mutation."
+            git status --short
+            exit 1
           fi
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add -A
-          git commit -m "SEO: publish stages 4-10 generated assets"
-          git pull --rebase origin main
-          git push origin HEAD:main
