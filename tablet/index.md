@@ -1,11 +1,11 @@
 ---
 layout: "seo"
-seo_title: "Tablet İkinci El Fiyatları 2026 | KaçaGider"
-seo_description: "Tablet ne kadar eder? İkinci el fiyatı ve piyasa değerini cihaz özellikleri ve kondisyonuna göre KaçaGider ile öğren."
-seo_h1: "Tablet İkinci El Fiyatları"
-seo_intro: "Tabletinin marka, model, kapasite ve kondisyon bilgilerini seçerek güncel ikinci el piyasa değerini öğren. Doğru fiyatı belirledikten sonra KaçaGider'da ücretsiz ilan verip alıcını bul."
-seo_context_heading: "Tablet için ikinci el değerleme"
-seo_context: "Tablet ikinci el piyasa değeri; marka, model, kapasite, kozmetik durum, çalışma durumu ve aksesuar bütünlüğüne göre değişir. Değerini öğrendikten sonra doğru fiyatı belirleyip KaçaGider'da ücretsiz ilan verebilirsin."
+seo_title: "İkinci El Tablet Fiyatları ve Piyasası | KaçaGider"
+seo_description: "İkinci el tablet fiyatlarını, marka ve modellere göre piyasa değerlerini incele. Kendi tabletinin değerini hesaplamak için KaçaGider değerleme aracını kullan."
+seo_h1: "İkinci El Tablet Fiyatları"
+seo_intro: "İkinci el tablet piyasasını marka ve model bazında incele. Apple, Samsung, Xiaomi, Huawei, Lenovo ve Honor tabletlerin model sayfalarına ulaş; kendi tabletinin durumuna göre değerini hesaplamak için değerleme aracına geç."
+seo_context_heading: "İkinci el tablet piyasası nasıl değişir?"
+seo_context: "Tabletlerin ikinci el fiyatları model, depolama kapasitesi, ekran ve kasa durumu, bağlantı özellikleri, aksesuar durumu ve güncel piyasa koşullarına göre değişir. Bu sayfa tablet piyasasını keşfetmek içindir; kendi cihazının yaklaşık satış değerini öğrenmek için Tabletim Ne Kadar Eder sayfasını kullanabilirsin."
 seo_breadcrumbs: [{"label":"Ana Sayfa","url":"/"},{"label":"Tablet","url":"/tablet/"}]
 seo_links: [{"label":"Tabletim Ne Kadar Eder?","url":"/tabletim-ne-kadar-eder/"},{"label":"İkinci el fiyat nasıl hesaplanır?","url":"/ikinci-el-fiyat-nasil-hesaplanir/"},{"label":"Apple","url":"/tablet/apple/"},{"label":"Samsung","url":"/tablet/samsung/"},{"label":"Xiaomi","url":"/tablet/xiaomi/"},{"label":"Huawei","url":"/tablet/huawei/"},{"label":"Lenovo","url":"/tablet/lenovo/"},{"label":"Honor","url":"/tablet/honor/"}]
 seo_links_heading: "Tablet markaları"
