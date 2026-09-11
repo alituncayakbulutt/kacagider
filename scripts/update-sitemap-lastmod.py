@@ -1,14 +1,46 @@
 from pathlib import Path
+from urllib.parse import urlparse
 import re
 import subprocess
 
 SITEMAP = Path('sitemap.xml')
 BASE = 'https://kacagider.com.tr'
+DEVICE_CATEGORIES = {'telefon', 'tablet', 'bilgisayar', 'akilli-saat', 'oyun-konsolu'}
+VARIANT_SLUG_RE = re.compile(r'^\d+(?:gb|tb|mm)$', re.IGNORECASE)
 
 URL_RE = re.compile(r'(<url>\s*<loc>([^<]+)</loc>.*?<lastmod>)([^<]+)(</lastmod>.*?</url>)')
 ENTRY_RE = re.compile(r'\s*<url>\s*<loc>([^<]+)</loc>.*?</url>', re.DOTALL)
 CANONICAL_RE = re.compile(r'^seo_canonical:\s*"(https://kacagider\.com\.tr/[^"]*)"\s*$', re.MULTILINE)
 LOC_RE = re.compile(r'<loc>([^<]+)</loc>')
+
+
+def route_parts(url: str):
+    if not url.startswith(BASE):
+        return []
+    path = urlparse(url).path.strip('/')
+    return [part for part in path.split('/') if part]
+
+
+def is_device_variant_url(url: str) -> bool:
+    """Return True only for exact device storage/size variant URLs.
+
+    Examples suppressed from the primary sitemap:
+    /telefon/apple/iphone-15-pro-max/256gb/
+    /akilli-saat/apple/apple-watch-series-10/42mm/
+
+    The route remains live and indexable. This only prevents thin variants from
+    competing with the model URL for crawl priority in the primary sitemap.
+    """
+    parts = route_parts(url)
+    return (
+        len(parts) == 4
+        and parts[0] in DEVICE_CATEGORIES
+        and bool(VARIANT_SLUG_RE.fullmatch(parts[-1]))
+    )
+
+
+def is_sitemap_eligible(url: str) -> bool:
+    return not is_device_variant_url(url)
 
 
 def url_to_source(url: str):
@@ -49,6 +81,9 @@ def git_lastmod(path: Path):
 
 def replace_entry(match):
     prefix, url, old_date, suffix = match.groups()
+    if not is_sitemap_eligible(url):
+        return match.group(0)
+
     source = url_to_source(url)
     if not source:
         return match.group(0)
@@ -92,30 +127,41 @@ def discover_canonical_pages():
         if not match:
             continue
         url = match.group(1)
+        if not is_sitemap_eligible(url):
+            continue
         if url_to_source(url) == path:
             found.append((url, path))
     return sorted(found, key=lambda item: item[0])
 
 
-def prune_stale_entry(match):
+def prune_entry(match):
     url = match.group(1)
     if not url.startswith(BASE):
         return match.group(0)
-    if url_to_source(url):
-        return match.group(0)
-    prune_stale_entry.changed += 1
-    return ''
+
+    if is_device_variant_url(url):
+        prune_entry.variant_removed += 1
+        return ''
+
+    if not url_to_source(url):
+        prune_entry.stale_removed += 1
+        return ''
+
+    return match.group(0)
 
 
 replace_entry.changed = 0
-prune_stale_entry.changed = 0
+prune_entry.variant_removed = 0
+prune_entry.stale_removed = 0
 text = SITEMAP.read_text(encoding='utf-8')
 updated = URL_RE.sub(replace_entry, text)
 
-# Remove URLs that no longer have any source page in the repository.
-updated = ENTRY_RE.sub(prune_stale_entry, updated)
+# Primary sitemap policy: keep category, brand and model pages; storage/mm
+# variants remain live but are not promoted as independent crawl targets.
+updated = ENTRY_RE.sub(prune_entry, updated)
 
-# Add canonical SEO pages that were created after the sitemap entry list was built.
+# Add canonical SEO pages created after the sitemap was built, except thin
+# storage/size variants suppressed by the policy above.
 existing = set(LOC_RE.findall(updated))
 missing_entries = []
 for url, source in discover_canonical_pages():
@@ -142,8 +188,9 @@ if updated != text:
     SITEMAP.write_text(updated, encoding='utf-8')
     print(
         f'Sitemap synced: {replace_entry.changed} lastmod update(s), '
-        f'{prune_stale_entry.changed} stale URL(s) removed, '
+        f'{prune_entry.variant_removed} device variant URL(s) suppressed, '
+        f'{prune_entry.stale_removed} stale URL(s) removed, '
         f'{len(missing_entries)} missing canonical page(s) added.'
     )
 else:
-    print('Sitemap lastmod and canonical coverage are already aligned with Git content.')
+    print('Sitemap lastmod and primary canonical coverage are already aligned with Git content.')
