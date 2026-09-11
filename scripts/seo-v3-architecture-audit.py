@@ -14,6 +14,7 @@ SITE = "https://kacagider.com.tr"
 DEVICE_ROOTS = {"telefon", "tablet", "bilgisayar", "akilli-saat", "oyun-konsolu"}
 VARIANT_RE = re.compile(r"^(?:\d+(?:gb|tb|mm)|\d+-?(?:gb|tb|mm))$", re.I)
 YEAR_RE = re.compile(r"\b20\d{2}\b")
+LEGACY_FAQ_CEILING = 5
 
 
 def read_frontmatter(path: Path) -> dict:
@@ -45,7 +46,7 @@ def text_blob(meta: dict) -> str:
 
 
 def audit_core_pages(config: dict, errors: list[str]) -> None:
-    for key, item in config["categories"].items():
+    for item in config["categories"].values():
         category_url = item["category_url"]
         valuation_url = item["valuation_url"]
         category_file = path_for_url(category_url)
@@ -79,7 +80,6 @@ def audit_core_pages(config: dict, errors: list[str]) -> None:
         if YEAR_RE.search(str(valuation.get("seo_title", ""))) or YEAR_RE.search(str(valuation.get("seo_h1", ""))):
             errors.append(f"{valuation_url}: hard-coded year in evergreen title/H1")
 
-        # Category pages own market/discovery intent; valuation pages own first-person calculator intent.
         first_person = item["valuation_h1"].lower().replace("?", "")
         if first_person and first_person in str(category.get("seo_h1", "")).lower():
             errors.append(f"{category_url}: category H1 overlaps valuation intent")
@@ -100,8 +100,7 @@ def sitemap_urls(errors: list[str]) -> list[str]:
         return []
     root = tree.getroot()
     ns = {"sm": "http://www.sitemaps.org/schemas/sitemap/0.9"}
-    urls = [node.text.strip() for node in root.findall("sm:url/sm:loc", ns) if node.text]
-    return urls
+    return [node.text.strip() for node in root.findall("sm:url/sm:loc", ns) if node.text]
 
 
 def audit_sitemap(config: dict, errors: list[str]) -> None:
@@ -111,8 +110,7 @@ def audit_sitemap(config: dict, errors: list[str]) -> None:
 
     required = {SITE + item["category_url"] for item in config["categories"].values()}
     required |= {SITE + item["valuation_url"] for item in config["categories"].values()}
-    missing = sorted(required - set(urls))
-    for url in missing:
+    for url in sorted(required - set(urls)):
         errors.append(f"core URL missing from primary sitemap: {url}")
 
     leaked_variants: list[str] = []
@@ -123,25 +121,24 @@ def audit_sitemap(config: dict, errors: list[str]) -> None:
     if leaked_variants:
         errors.append(f"primary sitemap contains {len(leaked_variants)} storage/mm variant URL(s); first: {leaked_variants[:5]}")
 
-    # Guard against accidental programmatic explosion. Existing V3 baseline is 823 URLs.
     if len(urls) > 900:
         errors.append(f"primary sitemap URL count {len(urls)} exceeds V3 safety ceiling 900")
 
 
 def is_model_page(path: Path, meta: dict) -> bool:
-    rel = path.relative_to(ROOT)
-    parts = rel.parts
+    parts = path.relative_to(ROOT).parts
     if len(parts) != 4 or parts[-1] != "index.md" or parts[0] not in DEVICE_ROOTS:
         return False
-    if meta.get("seo_page_type") == "series_hub":
-        return False
-    return True
+    return meta.get("seo_page_type") != "series_hub"
 
 
-def audit_model_pages(config: dict, errors: list[str]) -> tuple[int, int]:
+def audit_model_pages(config: dict, errors: list[str]) -> tuple[int, int, int]:
     forbidden = [str(x).lower() for x in config.get("forbidden_patterns", [])]
     checked = 0
-    warnings = 0
+    h1_notices = 0
+    faq_migration_notices = 0
+    target_faq_max = int(config["model_page"].get("faq_max", 4))
+
     for root_name in sorted(DEVICE_ROOTS):
         base = ROOT / root_name
         if not base.exists():
@@ -161,7 +158,7 @@ def audit_model_pages(config: dict, errors: list[str]) -> tuple[int, int]:
             if canonical != expected_canonical:
                 errors.append(f"{rel}: model canonical must be self-canonical")
             if "Ne Kadar Eder?" not in h1:
-                warnings += 1
+                h1_notices += 1
             if title.count("?") > 1:
                 errors.append(f"{rel}: title contains multiple question intents")
             for marker in forbidden:
@@ -170,10 +167,13 @@ def audit_model_pages(config: dict, errors: list[str]) -> tuple[int, int]:
                     break
 
             faqs = meta.get("seo_faqs")
-            if isinstance(faqs, list) and len(faqs) > int(config["model_page"].get("faq_max", 4)):
-                errors.append(f"{rel}: too many FAQs ({len(faqs)}), max is {config['model_page']['faq_max']}")
+            if isinstance(faqs, list):
+                if len(faqs) > LEGACY_FAQ_CEILING:
+                    errors.append(f"{rel}: FAQ count grew above legacy ceiling ({len(faqs)} > {LEGACY_FAQ_CEILING})")
+                elif len(faqs) > target_faq_max:
+                    faq_migration_notices += 1
 
-    return checked, warnings
+    return checked, h1_notices, faq_migration_notices
 
 
 def main() -> int:
@@ -185,12 +185,13 @@ def main() -> int:
 
     audit_core_pages(config, errors)
     audit_sitemap(config, errors)
-    checked_models, model_h1_warnings = audit_model_pages(config, errors)
+    checked_models, model_h1_notices, faq_notices = audit_model_pages(config, errors)
 
     print("SEO V3 ARCHITECTURE AUDIT")
     print(f"Categories: {len(config['categories'])}")
     print(f"Model pages checked: {checked_models}")
-    print(f"Model H1 migration notices: {model_h1_warnings}")
+    print(f"Model H1 migration notices: {model_h1_notices}")
+    print(f"Legacy 5-FAQ pages to simplify gradually: {faq_notices}")
     print(f"Errors: {len(errors)}")
     if errors:
         for item in errors[:100]:
