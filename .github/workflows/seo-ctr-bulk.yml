@@ -6,9 +6,39 @@ on:
       - main
     paths:
       - '.github/workflows/seo-ctr-bulk.yml'
+      - 'data/seo-v3-intents.json'
       - 'scripts/seo-site-audit.py'
-      - 'scripts/seo-model-intent-audit.py'
-      - 'scripts/seo-model-listing-intent-audit.py'
+      - 'scripts/seo-v3-architecture-audit.py'
+      - 'sitemap.xml'
+      - 'telefon/**'
+      - 'tablet/**'
+      - 'bilgisayar/**'
+      - 'akilli-saat/**'
+      - 'oyun-konsolu/**'
+      - 'telefonum-ne-kadar-eder/**'
+      - 'tabletim-ne-kadar-eder/**'
+      - 'bilgisayarim-ne-kadar-eder/**'
+      - 'akilli-saatim-ne-kadar-eder/**'
+      - 'oyun-konsolum-ne-kadar-eder/**'
+  pull_request:
+    branches:
+      - main
+    paths:
+      - '.github/workflows/seo-ctr-bulk.yml'
+      - 'data/seo-v3-intents.json'
+      - 'scripts/seo-site-audit.py'
+      - 'scripts/seo-v3-architecture-audit.py'
+      - 'sitemap.xml'
+      - 'telefon/**'
+      - 'tablet/**'
+      - 'bilgisayar/**'
+      - 'akilli-saat/**'
+      - 'oyun-konsolu/**'
+      - 'telefonum-ne-kadar-eder/**'
+      - 'tabletim-ne-kadar-eder/**'
+      - 'bilgisayarim-ne-kadar-eder/**'
+      - 'akilli-saatim-ne-kadar-eder/**'
+      - 'oyun-konsolum-ne-kadar-eder/**'
   workflow_dispatch:
 
 permissions:
@@ -22,12 +52,13 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
-      - name: Run SEO site audit
+
+      - name: Run SEO V3 architecture audit
+        run: python3 scripts/seo-v3-architecture-audit.py
+
+      - name: Run SEO technical site audit
         run: python3 scripts/seo-site-audit.py
-      - name: Run model intent audit
-        run: python3 scripts/seo-model-intent-audit.py
-      - name: Run listing intent audit
-        run: python3 scripts/seo-model-listing-intent-audit.py
+
       - name: Confirm workflow is read only
         run: |
           if ! git diff --quiet || [ -n "$(git status --porcelain)" ]; then
