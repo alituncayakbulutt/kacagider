@@ -1,0 +1,79 @@
+{
+  "version": "3.0",
+  "principles": {
+    "one_intent_cluster_one_landing": true,
+    "one_model_one_primary_url": true,
+    "variant_urls_default": "consolidate_to_model",
+    "series_urls_default": "evidence_only",
+    "informational_silo": "/rehber/",
+    "evergreen_metadata": true,
+    "mass_auto_rewrites": false
+  },
+  "categories": {
+    "telefon": {
+      "category_url": "/telefon/",
+      "category_h1": "İkinci El Telefon Fiyatları",
+      "category_intents": ["ikinci el telefon fiyatları", "ikinci el telefon piyasası", "telefon piyasası", "güncel telefon fiyatları"],
+      "valuation_url": "/telefonum-ne-kadar-eder/",
+      "valuation_h1": "Telefonum Ne Kadar Eder?",
+      "valuation_intents": ["telefonum ne kadar eder", "telefonumu kaça satarım", "telefon değer hesaplama", "telefon fiyat sorgulama"],
+      "model_route": "/telefon/{marka}/{model}/"
+    },
+    "tablet": {
+      "category_url": "/tablet/",
+      "category_h1": "İkinci El Tablet Fiyatları",
+      "category_intents": ["ikinci el tablet fiyatları", "ikinci el tablet piyasası", "tablet piyasası", "güncel tablet fiyatları"],
+      "valuation_url": "/tabletim-ne-kadar-eder/",
+      "valuation_h1": "Tabletim Ne Kadar Eder?",
+      "valuation_intents": ["tabletim ne kadar eder", "tabletimi kaça satarım", "tablet değer hesaplama", "tablet fiyat sorgulama"],
+      "model_route": "/tablet/{marka}/{model}/"
+    },
+    "bilgisayar": {
+      "category_url": "/bilgisayar/",
+      "category_h1": "İkinci El Bilgisayar Fiyatları",
+      "category_intents": ["ikinci el bilgisayar fiyatları", "ikinci el laptop fiyatları", "bilgisayar piyasası", "laptop piyasası"],
+      "valuation_url": "/bilgisayarim-ne-kadar-eder/",
+      "valuation_h1": "Bilgisayarım Ne Kadar Eder?",
+      "valuation_intents": ["bilgisayarım ne kadar eder", "laptopum ne kadar eder", "bilgisayarımı kaça satarım", "bilgisayar değer hesaplama"],
+      "model_route": "/bilgisayar/{marka}/{model}/"
+    },
+    "akilli-saat": {
+      "category_url": "/akilli-saat/",
+      "category_h1": "İkinci El Akıllı Saat Fiyatları",
+      "category_intents": ["ikinci el akıllı saat fiyatları", "akıllı saat piyasası", "ikinci el saat piyasası", "güncel akıllı saat fiyatları"],
+      "valuation_url": "/akilli-saatim-ne-kadar-eder/",
+      "valuation_h1": "Akıllı Saatim Ne Kadar Eder?",
+      "valuation_intents": ["akıllı saatim ne kadar eder", "akıllı saatimi kaça satarım", "akıllı saat değer hesaplama", "akıllı saat fiyat sorgulama"],
+      "model_route": "/akilli-saat/{marka}/{model}/"
+    },
+    "oyun-konsolu": {
+      "category_url": "/oyun-konsolu/",
+      "category_h1": "İkinci El Oyun Konsolu Fiyatları",
+      "category_intents": ["ikinci el oyun konsolu fiyatları", "oyun konsolu piyasası", "ikinci el konsol fiyatları", "playstation xbox ikinci el fiyatları"],
+      "valuation_url": "/oyun-konsolum-ne-kadar-eder/",
+      "valuation_h1": "Oyun Konsolum Ne Kadar Eder?",
+      "valuation_intents": ["oyun konsolum ne kadar eder", "konsolumu kaça satarım", "oyun konsolu değer hesaplama", "konsol fiyat sorgulama"],
+      "model_route": "/oyun-konsolu/{marka}/{model}/"
+    }
+  },
+  "model_page": {
+    "owns": ["{model} ne kadar eder", "{model} kaça satılır", "{model} ikinci el fiyatı", "{model} piyasa değeri"],
+    "title_pattern": "{model} Ne Kadar Eder? İkinci El Fiyatı | KaçaGider",
+    "h1_pattern": "{model} Ne Kadar Eder?",
+    "capacity_policy": "Kapsite/kasa boyutu aynı model URL'sinde seçenek veya bölüm olarak gösterilir; bağımsız URL yalnızca GSC ve özgün veri kanıtıyla istisna olabilir.",
+    "faq_max": 4
+  },
+  "forbidden_patterns": [
+    "ne kadar eder? güncel kaça satılır?",
+    "2026 ikinci el fiyatı | kaça gider | piyasa değeri",
+    "listing-intent-v1",
+    "listing-intent-v2",
+    "comparison-intent-v1",
+    "capacity-intent-v2"
+  ],
+  "migration": {
+    "variant_keep_rule": "Geçmişte anlamlı GSC gösterimi/tıklaması veya gerçekten özgün kapasite verisi olan varyant otomatik yönlendirilmez; REVIEW olur.",
+    "variant_default_rule": "Kanıtı olmayan storage/mm varyantı model URL'sine 301 adayıdır.",
+    "duplicate_content_rule": "Aynı bilgi niyetindeki /bilgi-merkezi/ ve /rehber/ URL'leri konu bazlı eşleştirilir; kör toplu yönlendirme yapılmaz."
+  }
+}
