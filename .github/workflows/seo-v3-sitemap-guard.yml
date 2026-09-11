@@ -1,0 +1,80 @@
+name: SEO V3 Sitemap Guard
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - "sitemap.xml"
+      - "scripts/update-sitemap-lastmod.py"
+      - "scripts/generate-seo-static-pages.mjs"
+      - "telefon/**/index.md"
+      - "tablet/**/index.md"
+      - "bilgisayar/**/index.md"
+      - "akilli-saat/**/index.md"
+      - "oyun-konsolu/**/index.md"
+      - ".github/workflows/seo-v3-sitemap-guard.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: seo-v3-sitemap-guard
+  cancel-in-progress: false
+
+jobs:
+  guard-primary-sitemap:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout main
+        uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Apply primary sitemap policy
+        run: python3 scripts/update-sitemap-lastmod.py
+
+      - name: Validate sitemap XML and variant policy
+        shell: bash
+        run: |
+          python3 - <<'PY'
+          import re
+          import xml.etree.ElementTree as ET
+          from urllib.parse import urlparse
+
+          tree = ET.parse('sitemap.xml')
+          root = tree.getroot()
+          ns = {'sm': 'http://www.sitemaps.org/schemas/sitemap/0.9'}
+          urls = [node.text.strip() for node in root.findall('sm:url/sm:loc', ns) if node.text]
+          categories = {'telefon', 'tablet', 'bilgisayar', 'akilli-saat', 'oyun-konsolu'}
+          variant = re.compile(r'^\d+(?:gb|tb|mm)$', re.I)
+          leaked = []
+          for url in urls:
+              parts = [p for p in urlparse(url).path.split('/') if p]
+              if len(parts) == 4 and parts[0] in categories and variant.fullmatch(parts[-1]):
+                  leaked.append(url)
+          if leaked:
+              raise SystemExit(f'Primary sitemap still contains {len(leaked)} device variant URL(s): {leaked[:10]}')
+          print(f'Validated {len(urls)} primary sitemap URL(s); 0 storage/mm variants.')
+          PY
+
+      - name: Commit guarded sitemap
+        shell: bash
+        run: |
+          if git diff --quiet -- sitemap.xml; then
+            echo "Primary sitemap already satisfies V3 policy."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add sitemap.xml
+          git commit -m "SEO V3: reduce sitemap variant crawl noise"
+          git pull --rebase origin main
+          git push origin HEAD:main
