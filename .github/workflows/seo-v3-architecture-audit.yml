@@ -1,0 +1,74 @@
+name: SEO V3 Architecture Audit
+
+on:
+  push:
+    branches:
+      - main
+      - seo-v3-rebuild-2026-09-11
+    paths:
+      - "data/seo-v3-intents.json"
+      - "scripts/seo-v3-architecture-audit.py"
+      - "sitemap.xml"
+      - "telefon/**"
+      - "tablet/**"
+      - "bilgisayar/**"
+      - "akilli-saat/**"
+      - "oyun-konsolu/**"
+      - "telefonum-ne-kadar-eder/**"
+      - "tabletim-ne-kadar-eder/**"
+      - "bilgisayarim-ne-kadar-eder/**"
+      - "akilli-saatim-ne-kadar-eder/**"
+      - "oyun-konsolum-ne-kadar-eder/**"
+      - ".github/workflows/seo-v3-architecture-audit.yml"
+  pull_request:
+    branches:
+      - main
+    paths:
+      - "data/seo-v3-intents.json"
+      - "scripts/seo-v3-architecture-audit.py"
+      - "sitemap.xml"
+      - "telefon/**"
+      - "tablet/**"
+      - "bilgisayar/**"
+      - "akilli-saat/**"
+      - "oyun-konsolu/**"
+      - "telefonum-ne-kadar-eder/**"
+      - "tabletim-ne-kadar-eder/**"
+      - "bilgisayarim-ne-kadar-eder/**"
+      - "akilli-saatim-ne-kadar-eder/**"
+      - "oyun-konsolum-ne-kadar-eder/**"
+      - ".github/workflows/seo-v3-architecture-audit.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: seo-v3-architecture-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  architecture-audit:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout current revision
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Compile V3 audit
+        run: python3 -m py_compile scripts/seo-v3-architecture-audit.py
+
+      - name: Enforce intent ownership and URL policy
+        run: python3 scripts/seo-v3-architecture-audit.py
+
+      - name: Confirm audit is read only
+        run: |
+          if ! git diff --quiet || [ -n "$(git status --porcelain)" ]; then
+            echo "V3 audit modified repository files; refusing mutation."
+            git status --short
+            exit 1
+          fi

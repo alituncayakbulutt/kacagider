@@ -1,21 +1,13 @@
-name: SEO Stages 4-10 Audit
+name: SEO Legacy Stages Audit
 
 on:
-  push:
-    branches:
-      - main
-    paths:
-      - "scripts/seo-site-audit.py"
-      - "scripts/seo-model-intent-audit.py"
-      - "scripts/seo-model-listing-intent-audit.py"
-      - ".github/workflows/seo-stages-4-10-live.yml"
   workflow_dispatch:
 
 permissions:
   contents: read
 
 concurrency:
-  group: seo-stages-4-10-audit
+  group: seo-legacy-stages-audit
   cancel-in-progress: true
 
 jobs:
@@ -30,17 +22,14 @@ jobs:
         with:
           python-version: "3.12"
 
-      - name: Validate SEO audit engines
-        run: python3 -m py_compile scripts/seo-site-audit.py scripts/seo-model-intent-audit.py scripts/seo-model-listing-intent-audit.py
+      - name: Explain V3 policy
+        run: |
+          echo "Legacy model/listing intent expansion audits are retired."
+          echo "They previously required repeated query variants on every model page."
+          echo "SEO V3 uses one intent cluster per landing and one primary URL per model."
 
-      - name: Full SEO audit
-        run: python3 scripts/seo-site-audit.py
-
-      - name: Model intent audit
-        run: python3 scripts/seo-model-intent-audit.py
-
-      - name: Listing intent audit
-        run: python3 scripts/seo-model-listing-intent-audit.py
+      - name: Run V3 architecture audit
+        run: python3 scripts/seo-v3-architecture-audit.py
 
       - name: Confirm workflow is read only
         run: |

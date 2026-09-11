@@ -1,16 +1,16 @@
 ---
 layout: "seo"
-seo_title: "Oyun Konsolum Ne Kadar Eder? İkinci El Değerini Hesapla | KaçaGider"
-seo_description: "Oyun Konsolu ikinci el değerini ve güncel piyasa fiyatını KaçaGider ile öğren. Oyun Konsolu özelliklerini seçerek ücretsiz değerleme yap."
+seo_title: "Oyun Konsolum Ne Kadar Eder? Değerini Hesapla | KaçaGider"
+seo_description: "Oyun konsolum ne kadar eder veya konsolumu kaça satarım diyorsan model, sürüm, depolama ve cihaz durumunu seç; yaklaşık ikinci el değerini ücretsiz hesapla."
 seo_h1: "Oyun Konsolum Ne Kadar Eder?"
-seo_intro: "Oyun Konsolu cihazınızın güncel ikinci el değerini, gerçek ürün bilgileri ve kondisyonunu seçerek KaçaGider ile inceleyin."
-seo_context_heading: "Oyun Konsolu değerleme rehberi"
-seo_context: "Oyun Konsolu piyasa değeri; model, depolama ve kondisyon ve güncel piyasa koşullarına göre değerlendirilir."
+seo_intro: "Kendi oyun konsolunun yaklaşık ikinci el değerini öğrenmek için model, sürüm, depolama ve cihaz durumunu seç. KaçaGider değerleme aracı, cihaz bilgilerine göre piyasa referansı oluşturur."
+seo_context_heading: "Oyun konsolumu kaça satabilirim?"
+seo_context: "Konsolunun satış değeri model, sürüm, depolama, fiziksel durum, çalışma durumu, kontrolcü ve aksesuarlar ile güncel piyasa koşullarına göre değişir. Sonuç bir satış garantisi değil, doğru fiyatı belirlemene yardımcı olan bir değerleme referansıdır."
 seo_breadcrumbs: [{"label":"Ana Sayfa","url":"/"},{"label":"Oyun Konsolu","url":"/oyun-konsolu/"},{"label":"Oyun Konsolum Ne Kadar Eder?","url":"/oyun-konsolum-ne-kadar-eder/"}]
-seo_links: [{"label":"Oyun Konsolu değerleme aracını aç","url":"/oyun-konsolu/"},{"label":"İkinci el fiyat nasıl hesaplanır?","url":"/ikinci-el-fiyat-nasil-hesaplanir/"}]
+seo_links: [{"label":"İkinci el oyun konsolu fiyatlarını incele","url":"/oyun-konsolu/"},{"label":"İkinci el fiyat nasıl hesaplanır?","url":"/ikinci-el-fiyat-nasil-hesaplanir/"}]
 seo_links_heading: "İlgili sayfalar"
 seo_canonical: "https://kacagider.com.tr/oyun-konsolum-ne-kadar-eder/"
-seo_cta: {"url":"/oyun-konsolu/","label":"Oyun Konsolu değerini hesapla"}
-seo_sections: [{"title":"Oyun Konsolu ikinci el fiyatı nasıl belirlenir?","text":"Model, depolama ve kondisyon ve güncel piyasa koşulları birlikte değerlendirilir. KaçaGider sonucu satış garantisi değil, karar vermeye yardımcı bir piyasa referansıdır."},{"title":"Oyun Konsolu değerini hesaplarken nelere dikkat edilmeli?","text":"Ürünün gerçek modelini ve kapasite/özellik bilgilerini doğru seçin; kondisyon ve çalışmayan özellikleri olduğu gibi belirtin."},{"title":"Oyun Konsolu satmadan önce","text":"Kişisel verileri yedekleyin, hesaplarınızdan çıkış yapın ve cihazı teslim etmeden önce gerekli sıfırlama adımlarını kontrol edin."}]
-seo_faqs: [{"question":"Oyun Konsolu kaç para eder?","answer":"Model ve kondisyon bilgilerini KaçaGider değerleme aracında seçerek güncel piyasa referansını inceleyebilirsiniz."},{"question":"Oyun Konsolu değeri neye göre değişir?","answer":"Model, kapasite veya ürün özelliği, kondisyon ve piyasa koşulları birlikte etkili olur."}]
+seo_cta: {"url":"/oyun-konsolu/","label":"Oyun konsolu değerini hesapla"}
+seo_sections: [{"title":"Oyun konsolu değeri hangi bilgilere göre hesaplanır?","text":"Model, sürüm, depolama, fiziksel durum, çalışma durumu, kontrolcü ve aksesuar bilgileri birlikte değerlendirilir."},{"title":"Doğru sonuç için ne seçmeliyim?","text":"Konsolunun gerçek modelini, sürümünü ve depolamasını doğru seç. Arıza, kozmetik kusur veya eksik aksesuarları doğru belirtmek daha gerçekçi bir piyasa referansı sağlar."}]
+seo_faqs: [{"question":"Oyun konsolumu kaça satabilirim?","answer":"Model, sürüm, depolama ve kondisyon bilgilerini seçerek KaçaGider değerleme aracında yaklaşık ikinci el piyasa değerini görebilirsin."},{"question":"Oyun konsolunun ikinci el değerini en çok ne etkiler?","answer":"Model, sürüm, depolama, fiziksel durum, çalışma durumu, aksesuarlar ve güncel piyasa koşulları başlıca etkenlerdir."}]
 ---

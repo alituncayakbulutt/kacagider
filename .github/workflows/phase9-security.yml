@@ -31,5 +31,8 @@ jobs:
       - name: Preserve Mobile V3 quality gate
         run: python scripts/mobile-v3-audit.py
 
-      - name: Preserve SEO quality gate
+      - name: Preserve SEO V3 architecture gate
+        run: python scripts/seo-v3-architecture-audit.py
+
+      - name: Preserve SEO technical quality gate
         run: python scripts/seo-site-audit.py
