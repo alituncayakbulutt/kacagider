@@ -22,7 +22,7 @@
     });
   }
 
-  load('/assets/marketplace-core.js?v=20260907-store2','kgMarketplaceCore')
-    .then(function(){return load('/assets/marketplace-sell-options.js?v=20260907-store2','kgMarketplaceSellOptions');})
+  load('/assets/marketplace-core.js?v=20260913-card1','kgMarketplaceCore')
+    .then(function(){return load('/assets/marketplace-sell-options.js?v=20260913-card1','kgMarketplaceSellOptions');})
     .catch(function(error){console.warn('KaçaGider marketplace yüklenemedi:',error);});
 })();

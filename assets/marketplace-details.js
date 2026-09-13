@@ -43,6 +43,91 @@ function collectDetails(){
 }
 window.KGMarketplaceCollectDetails=collectDetails;
 
+function price(){
+  var el=document.getElementById("mainPrice");
+  return Number(String(el&&el.textContent||"").replace(/[^0-9]/g,""))||0;
+}
+function deviceFields(){
+  var category=selectedCategory(),generic=category!=="phone";
+  return {
+    category:category,
+    brand:selectText(generic?"genericBrand":"phoneBrand"),
+    model:selectText(generic?"genericModel":"model"),
+    storage:selectText(generic?"genericStorage":"storage")
+  };
+}
+function scoreSnapshot(){
+  try{
+    if(typeof window.KGGetDeviceScoreSnapshot==="function")return window.KGGetDeviceScoreSnapshot();
+  }catch(_e){}
+  return window.KG_DEVICE_SCORE_SNAPSHOT||null;
+}
+function captureValuation(){
+  var d=deviceFields(),score=scoreSnapshot();
+  return {
+    category:d.category,
+    brand:d.brand,
+    model:d.model,
+    storage:d.storage,
+    marketValue:price(),
+    details:collectDetails(),
+    score:score&&Number.isFinite(Number(score.score))?Math.round(Number(score.score)):null,
+    scoreLabel:score?clean(score.label):"",
+    scoreComponents:score&&score.components?score.components:{},
+    capturedAt:new Date().toISOString(),
+    source:"kacagider_valuation"
+  };
+}
+function normalizedSnapshot(value){
+  value=value&&typeof value==="object"?value:{};
+  return {
+    category:clean(value.category),
+    brand:clean(value.brand),
+    model:clean(value.model),
+    storage:clean(value.storage),
+    marketValue:Number(value.marketValue||value.market_value||0)||0,
+    details:Array.isArray(value.details)?value.details:[],
+    score:Number.isFinite(Number(value.score==null?value.device_score:value.score))?Math.round(Number(value.score==null?value.device_score:value.score)):null,
+    scoreLabel:clean(value.scoreLabel||value.score_label||value.device_score_label),
+    scoreComponents:value.scoreComponents||value.score_components||{},
+    capturedAt:value.capturedAt||value.captured_at||null,
+    source:value.source||"kacagider_valuation"
+  };
+}
+function ensureValuationCardStyle(){
+  if(document.getElementById("kgValuationCardStyle"))return;
+  var style=document.createElement("style");
+  style.id="kgValuationCardStyle";
+  style.textContent='.kg-valuation-card{margin:14px 0;border:1px solid #bfe5cc;border-radius:15px;background:linear-gradient(145deg,#f3fff7,#fff);overflow:hidden}.kg-vc-head{display:flex;align-items:flex-start;justify-content:space-between;gap:12px;padding:14px 15px;border-bottom:1px solid #dcefe3}.kg-vc-head span{display:block;color:#148044;font-size:10px;font-weight:900;text-transform:uppercase;letter-spacing:.04em}.kg-vc-head strong{display:block;margin-top:4px;color:#172033;font-size:15px}.kg-vc-price{text-align:right;white-space:nowrap}.kg-vc-price b{display:block;color:#0b9343;font-size:18px}.kg-vc-price small{color:#667085;font-size:9px}.kg-vc-score{display:flex;align-items:center;justify-content:space-between;gap:10px;margin:12px 15px 0;padding:10px 12px;border-radius:11px;background:#eafaf0;color:#176b3a;font-size:11px;font-weight:850}.kg-vc-score b{font-size:17px}.kg-vc-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;padding:12px 15px 15px}.kg-vc-item{padding:9px 10px;border:1px solid #e1e8e4;border-radius:10px;background:#fff}.kg-vc-item span{display:block;color:#7b8798;font-size:9px;font-weight:800;text-transform:uppercase}.kg-vc-item strong{display:block;margin-top:3px;color:#27334a;font-size:11px;line-height:1.35}.kg-vc-lock{padding:0 15px 13px;color:#667085;font-size:10px;line-height:1.45}@media(max-width:520px){.kg-vc-head{flex-direction:column}.kg-vc-price{text-align:left}.kg-vc-grid{grid-template-columns:1fr}}';
+  document.head.appendChild(style);
+}
+function valuationCardHtml(value){
+  ensureValuationCardStyle();
+  var x=normalizedSnapshot(value),name=[x.brand,x.model,x.storage].filter(Boolean).join(" ");
+  var details=x.details.filter(function(item){return item&&clean(item.value);}).map(function(item){
+    return '<div class="kg-vc-item"><span>'+esc(item.label||"Özellik")+'</span><strong>'+esc(item.value||"—")+'</strong></div>';
+  }).join("");
+  var score=x.score!==null?'<div class="kg-vc-score"><span>KaçaGider Cihaz Skoru</span><b>'+esc(x.score+'/100'+(x.scoreLabel?' · '+x.scoreLabel:''))+'</b></div>':"";
+  return '<section class="kg-valuation-card"><div class="kg-vc-head"><div><span>Değerlendirme kartı</span><strong>'+esc(name||"Cihaz")+'</strong></div><div class="kg-vc-price"><b>'+esc(x.marketValue?x.marketValue.toLocaleString("tr-TR")+' TL':'—')+'</b><small>KaçaGider piyasa değeri</small></div></div>'+score+'<div class="kg-vc-grid">'+(details||'<div class="kg-vc-item"><span>Durum</span><strong>Detay bulunamadı</strong></div>')+'</div><div class="kg-vc-lock">🔒 Bu özellikler değerleme sonucundan alınmıştır ve satış süreci boyunca değiştirilmeden taşınır.</div></section>';
+}
+function valuationHasDamage(value){
+  var x=normalizedSnapshot(value),damaged=false;
+  var cleanValues={
+    "Ekran Durumu":["Orijinal – Temiz"],"Çizik Sayısı":["Yok"],"Çizik Derinliği":["Seçiniz","Yok"],"Piksel Atması":["Yok"],
+    "Kasa Ezik / Darbe":["Yok"],"Kasa Yüzeyi":["Temiz"],"Köşeler":["Temiz"],"Arka Cam Durumu":["Temiz"],
+    "Kondisyon":["Çok temiz","Temiz"],"Çalışma Durumu":["Tüm özellikler çalışıyor"]
+  };
+  x.details.forEach(function(item){
+    var label=clean(item&&item.label),valueText=clean(item&&item.value),allowed=cleanValues[label];
+    if(allowed&&valueText&&allowed.indexOf(valueText)<0)damaged=true;
+  });
+  return damaged;
+}
+window.KGMarketplaceCaptureValuationSnapshot=captureValuation;
+window.KGMarketplaceNormalizeValuationSnapshot=normalizedSnapshot;
+window.KGMarketplaceValuationCardHtml=valuationCardHtml;
+window.KGMarketplaceValuationHasDamage=valuationHasDamage;
+
 function installStyle(){
   if(document.getElementById("kgStableCategoryStyle"))return;
   var s=document.createElement("style");
