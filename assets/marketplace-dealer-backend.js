@@ -73,6 +73,13 @@ function cleanText(v,max){
   return max?s.slice(0,max):s;
 }
 
+function cleanPhone(v){
+  var raw=cleanText(v,24);
+  var digits=raw.replace(/\D/g,'');
+  if(digits.length<10||digits.length>15)return'';
+  return raw.charAt(0)==='+'?('+'+digits):digits;
+}
+
 async function submitRequest(input){
   input=input||{};
   var user=await getUser();
@@ -84,6 +91,8 @@ async function submitRequest(input){
   if(!attested)throw new Error('Bilgi ve fotoğraf doğruluğu onayını işaretlemelisin.');
   if(!cleanText(draft.brand)||!cleanText(draft.model))throw new Error('Cihaz bilgileri eksik.');
   if(!cleanText(draft.city)||!cleanText(draft.district))throw new Error('İl ve ilçe bilgileri eksik.');
+  var contactPhone=cleanPhone(draft.phone);
+  if(!contactPhone)throw new Error('Geçerli bir iletişim telefonu girmelisin.');
 
   var photos=input.photos||{};
   var required=requiredTypes(hasDamage);
@@ -101,6 +110,9 @@ async function submitRequest(input){
   }
 
   var c=await client();
+  var profileUpdate=await c.from('profiles').update({phone:contactPhone,updated_at:new Date().toISOString()}).eq('id',user.id).select('id').maybeSingle();
+  if(profileUpdate.error)throw profileUpdate.error;
+  if(!profileUpdate.data)throw new Error('Profil iletişim bilgisi güncellenemedi. Lütfen tekrar giriş yap.');
   var battery=parseInt(draft.battery,10);
   if(!Number.isFinite(battery)||battery<1||battery>100)battery=null;
   var marketValue=Number(draft.marketPrice||0)||null;
