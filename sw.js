@@ -1,4 +1,4 @@
-const CACHE='kg-pwa-v1';
+const CACHE='kg-pwa-v2';
 const STATIC=['/','/favicon.svg','/manifest.webmanifest'];
 self.addEventListener('install',e=>{e.waitUntil(caches.open(CACHE).then(c=>c.addAll(STATIC)).then(()=>self.skipWaiting()));});
 self.addEventListener('activate',e=>{e.waitUntil(caches.keys().then(keys=>Promise.all(keys.filter(k=>k!==CACHE&&k.startsWith('kg-pwa-')).map(k=>caches.delete(k)))).then(()=>self.clients.claim()));});
