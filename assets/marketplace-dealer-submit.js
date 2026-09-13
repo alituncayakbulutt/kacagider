@@ -13,7 +13,7 @@ function esc(v){return String(v||'').replace(/[&<>"']/g,function(c){return {'&':
 function getDraft(){
   try{return JSON.parse(sessionStorage.getItem('kgDealerRequestDraft')||'{}')||{};}catch(e){return{};}
 }
-function selectedDamage(){var r=q('input[name="kgDgHasDamage"]:checked');return r?r.value:'';}
+function selectedDamage(){var r=q('input[name="kgDgHasDamage"]:checked')||q('input[name="kgDgHasDamage"]');return r?r.value:'';}
 function attested(){var c=q('#kgDgAttest input[type="checkbox"]');return !!(c&&c.checked);}
 function previewSrc(selector){var img=q(selector);return img&&img.src?img.src:'';}
 function photoSrc(slot){return previewSrc('.kg-photo-card[data-slot="'+slot+'"].has-photo img');}
@@ -112,9 +112,9 @@ async function submitFromPhotoStep(button){
     if(!user){submitting=false;button.disabled=false;button.textContent=oldText;triggerLogin();return;}
     var hasDamage=damageValue==='yes';
     var photos=await collectPhotos(hasDamage);
-    var details=[];
-    try{if(typeof window.KGMarketplaceCollectDetails==='function'){var d=window.KGMarketplaceCollectDetails();if(Array.isArray(d))details=d;}}catch(e){}
-    var result=await backend.submitRequest({draft:getDraft(),hasDamage:hasDamage,attested:true,photos:photos,details:details});
+    var snapshot=window.KGDealerSellPhase1&&typeof window.KGDealerSellPhase1.getValuationSnapshot==='function'?window.KGDealerSellPhase1.getValuationSnapshot():null;
+    var details=snapshot&&Array.isArray(snapshot.details)?snapshot.details:[];
+    var result=await backend.submitRequest({draft:getDraft(),hasDamage:hasDamage,attested:true,photos:photos,details:details,valuationSnapshot:snapshot});
     renderSuccess(result);
   }catch(error){
     var msg=error&&error.message?error.message:'Talep oluşturulamadı. Lütfen tekrar dene.';

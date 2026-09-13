@@ -8,7 +8,9 @@ function q(s,r){return (r||document).querySelector(s);}
 function all(s,r){return Array.prototype.slice.call((r||document).querySelectorAll(s));}
 function esc(v){return String(v||'').replace(/[&<>"']/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c];});}
 function revoke(){if(state.cornersUrl){try{URL.revokeObjectURL(state.cornersUrl);}catch(e){}state.cornersUrl='';}}
-function resetForDevice(key){if(state.deviceKey===key)return;revoke();state={deviceKey:key,hasDamage:'',cornersFile:null,cornersUrl:'',attested:false};}
+function valuation(){return window.KGDealerSellPhase1&&typeof window.KGDealerSellPhase1.getValuationSnapshot==='function'?window.KGDealerSellPhase1.getValuationSnapshot():null;}
+function damageValue(){var value=valuation();return typeof window.KGMarketplaceValuationHasDamage==='function'&&window.KGMarketplaceValuationHasDamage(value)?'yes':'no';}
+function resetForDevice(key){if(state.deviceKey===key)return;revoke();state={deviceKey:key,hasDamage:damageValue(),cornersFile:null,cornersUrl:'',attested:false};}
 function validImage(file){return /^image\/(jpeg|png|webp|heic|heif)$/i.test(file.type||'')||/\.(jpe?g|png|webp|heic|heif)$/i.test(file.name||'');}
 function fmt(bytes){if(!bytes)return'';return bytes<1048576?Math.max(1,Math.round(bytes/1024))+' KB':(bytes/1048576).toFixed(1)+' MB';}
 
@@ -47,7 +49,7 @@ function sync(body){
  var counterText=done+' / '+total+' zorunlu';if(counter&&counter.textContent!==counterText)counter.textContent=counterText;
  if(status){
    status.classList.toggle('ready',done===total&&!!state.hasDamage);
-   var msg=!state.hasDamage?'Önce hasar durumunu seçmelisin.<br>JPG, PNG, WEBP, HEIC · fotoğraf başına en fazla 10 MB.':done===total?'✓ Gerekli fotoğraflar tamamlandı. Devam etmek için doğruluk onayını işaretle.<br>Teklif fiziksel kontrolden sonra kesinleşir.':'Tüm zorunlu fotoğrafları eklemelisin.<br>JPG, PNG, WEBP, HEIC · fotoğraf başına en fazla 10 MB.';
+   var msg=done===total?'✓ Gerekli fotoğraflar tamamlandı. Devam etmek için doğruluk onayını işaretle.<br>Teklif fiziksel kontrolden sonra kesinleşir.':'Tüm zorunlu fotoğrafları eklemelisin.<br>JPG, PNG, WEBP, HEIC · fotoğraf başına en fazla 10 MB.';
    if(status.innerHTML!==msg)status.innerHTML=msg;
  }
  if(damageCard){
@@ -61,9 +63,9 @@ function sync(body){
 function ensureQuestion(body,grid){
  if(q('#kgDgQuestion',body))return;
  var box=document.createElement('div');box.id='kgDgQuestion';box.className='kg-dg-question';
- box.innerHTML='<strong>Cihazda çizik, çatlak, ezik veya kırık var mı? <span style="color:#d92d20">*</span></strong><p>Hasar varsa ilgili bölgenin yakın fotoğrafı zorunlu olur. “Hasar yok” seçsen de köşe/kasa yakın çekimi zorunludur.</p><div class="kg-dg-options"><label class="kg-dg-option"><input type="radio" name="kgDgHasDamage" value="yes" '+(state.hasDamage==='yes'?'checked':'')+'> Evet, hasar var</label><label class="kg-dg-option"><input type="radio" name="kgDgHasDamage" value="no" '+(state.hasDamage==='no'?'checked':'')+'> Hayır, görünür hasar yok</label></div>';
+ var damaged=state.hasDamage==='yes';
+ box.innerHTML='<strong>Değerleme kartına göre: '+(damaged?'Hasar / kondisyon kusuru var':'Görünür hasar yok')+'</strong><p>'+(damaged?'Seçtiğin kondisyon bilgileri nedeniyle hasarlı bölge fotoğrafı otomatik olarak zorunlu tutuldu.':'Hasar durumu değerleme kartından otomatik alındı; yeniden seçim yapmana gerek yok.')+'</p><input type="hidden" name="kgDgHasDamage" value="'+state.hasDamage+'">';
  grid.parentNode.insertBefore(box,grid);
- all('input[name="kgDgHasDamage"]',box).forEach(function(r){r.onchange=function(){state.hasDamage=r.value;state.attested=false;sync(body);};});
 }
 function ensureCorners(body,grid){
  if(q('#kgDgCornersWrap',body))return;
@@ -79,7 +81,7 @@ function ensureAttest(body){
 
 function enhance(body){
  var step=q('.kg-dealer-step',body);if(!step||String(step.textContent||'').indexOf('Adım 2 / Fotoğraflar')<0)return;
- var device=q('.kg-dealer-device',body),key=String(device&&device.textContent||'').trim();resetForDevice(key);ensureStyle();
+ var snap=valuation()||{},key=String(snap.capturedAt||snap.captured_at||'')+'|'+String(snap.brand||'')+'|'+String(snap.model||'')+'|'+JSON.stringify(snap.details||[]);resetForDevice(key);ensureStyle();
  var grid=q('.kg-photo-grid',body);if(!grid)return;
  ensureQuestion(body,grid);ensureCorners(body,grid);ensureAttest(body);sync(body);
 }

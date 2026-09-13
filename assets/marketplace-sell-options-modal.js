@@ -4,6 +4,7 @@ if(window.KGDealerSellPhase1)return;
 
 var photoFiles={front:null,back:null,side:null,damage:null};
 var photoUrls={front:'',back:'',side:'',damage:''};
+var valuationSnapshot=null;
 var photoSpecs=[
   {key:'front',title:'Ön yüz',hint:'Cihazın ön yüzü tamamen görünsün',required:true},
   {key:'back',title:'Arka yüz',hint:'Cihazın arka yüzü tamamen görünsün',required:true},
@@ -22,6 +23,7 @@ function val(id){
   return String(e.value||e.textContent||'').trim();
 }
 function price(){
+  if(valuationSnapshot&&Number(valuationSnapshot.marketValue||valuationSnapshot.market_value))return Number(valuationSnapshot.marketValue||valuationSnapshot.market_value);
   var e=q('#mainPrice');
   return Number(String(e&&e.textContent||'').replace(/[^0-9]/g,''))||0;
 }
@@ -32,6 +34,7 @@ function currentCategory(){
   return {'telefon':'phone','tablet':'tablet','bilgisayar':'computer','akıllı saat':'watch','akilli saat':'watch','oyun konsolu':'console'}[n]||'phone';
 }
 function deviceFields(){
+  if(valuationSnapshot)return {category:valuationSnapshot.category||'phone',brand:valuationSnapshot.brand||'',model:valuationSnapshot.model||'',storage:valuationSnapshot.storage||''};
   var category=currentCategory();
   if(category==='phone')return {category:category,brand:val('phoneBrand'),model:val('model'),storage:val('storage')};
   return {category:category,brand:val('genericBrand'),model:val('genericModel'),storage:val('genericStorage')};
@@ -39,10 +42,6 @@ function deviceFields(){
 function device(){
   var d=deviceFields();
   return [d.brand,d.model,d.storage].filter(Boolean).join(' ');
-}
-function isIphone(){
-  var d=deviceFields();
-  return d.category==='phone'&&/apple|iphone/i.test([d.brand,d.model].join(' '));
 }
 function esc(v){
   return String(v||'').replace(/[&<>"']/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c];});
@@ -59,6 +58,22 @@ function getDraft(){
 }
 function saveDraft(draft){
   try{sessionStorage.setItem('kgDealerRequestDraft',JSON.stringify(draft));}catch(e){}
+}
+function normalizeSnapshot(value){
+  if(typeof window.KGMarketplaceNormalizeValuationSnapshot==='function')return window.KGMarketplaceNormalizeValuationSnapshot(value);
+  return value&&typeof value==='object'?value:null;
+}
+function captureSnapshot(){
+  if(typeof window.KGMarketplaceCaptureValuationSnapshot==='function')return window.KGMarketplaceCaptureValuationSnapshot();
+  var d=deviceFields();return {category:d.category,brand:d.brand,model:d.model,storage:d.storage,marketValue:price(),details:[]};
+}
+function setSnapshot(value){
+  var saved=getDraft(),next=normalizeSnapshot(value)||normalizeSnapshot(saved.valuationSnapshot)||normalizeSnapshot(captureSnapshot());
+  if(next&&next.brand&&next.model&&Number(next.marketValue||next.market_value))valuationSnapshot=next;
+}
+function valuationCard(){
+  if(typeof window.KGMarketplaceValuationCardHtml==='function')return window.KGMarketplaceValuationCardHtml(valuationSnapshot);
+  return '<div class="kg-dealer-device">'+esc(device())+' · KaçaGider piyasa değeri: '+price().toLocaleString('tr-TR')+' TL</div>';
 }
 function ensureStyle(){
   if(q('#kgDealerP1Style'))return;
@@ -94,35 +109,30 @@ function renderIntro(){
   body.innerHTML=''
     +'<h2>Mağazalardan teklif al</h2>'
     +'<p>Bulunduğun bölgedeki doğrulanmış mağazalar cihazın için kendi alış tekliflerini verecek.</p>'
-    +'<div class="kg-dealer-device">'+esc(device())+' · KaçaGider piyasa değeri: '+amount.toLocaleString('tr-TR')+' TL</div>'
+    +valuationCard()
     +'<div class="kg-dealer-info"><strong>KaçaGider alış fiyatı belirlemez.</strong><br>Teklifleri mağazalar verir. Teklif almak ücretsizdir ve hiçbir teklifi kabul etmek zorunda değilsin. İletişim bilgilerin yalnızca bir teklifi kabul ettiğinde açılır.</div>'
     +'<div class="kg-dealer-actions"><button type="button" class="kg-dealer-btn primary" id="kgDealerContinue">Devam Et →</button></div>';
   q('#kgDealerContinue',body).onclick=renderDetails;
 }
 function renderDetails(){
-  var o=shell(),body=q('#kgDealerP1Body',o),iphone=isIphone();
+  var o=shell(),body=q('#kgDealerP1Body',o);
   var saved=getDraft();
   body.innerHTML=''
     +'<div class="kg-dealer-step">Adım 1 / Teklif talebi</div>'
-    +'<h2>Cihaz bilgilerini tamamla</h2>'
-    +'<p>Değerlemede verdiğin cihaz bilgilerini tekrar sormuyoruz. Mağazaların teklif verebilmesi için yalnızca eksik bilgileri tamamla.</p>'
-    +'<div class="kg-dealer-device">'+esc(device())+'</div>'
+    +'<h2>Satış bilgilerini tamamla</h2>'
+    +'<p>Cihaz özelliklerin değerleme kartından otomatik taşındı. Yalnızca iletişim ve konum bilgilerini tamamla.</p>'
+    +valuationCard()
     +'<form class="kg-dealer-form" id="kgDealerDetailsForm">'
       +'<div class="kg-dealer-form-grid">'
         +'<div class="kg-dealer-field"><label for="kgDealerCity">İl <span class="kg-dealer-required">*</span></label><input id="kgDealerCity" name="city" autocomplete="address-level1" placeholder="Örn. İstanbul" value="'+esc(saved.city)+'" required></div>'
         +'<div class="kg-dealer-field"><label for="kgDealerDistrict">İlçe <span class="kg-dealer-required">*</span></label><input id="kgDealerDistrict" name="district" autocomplete="address-level2" placeholder="Örn. Bayrampaşa" value="'+esc(saved.district)+'" required></div>'
         +'<div class="kg-dealer-field full"><label for="kgDealerPhone">İletişim telefonu <span class="kg-dealer-required">*</span></label><input id="kgDealerPhone" name="phone" type="tel" inputmode="tel" autocomplete="tel" maxlength="24" placeholder="Örn. 05xx xxx xx xx" value="'+esc(saved.phone)+'" required><span class="kg-dealer-hint">Numaran teklif kabul edilene kadar telefonculara gösterilmez.</span></div>'
-        +(iphone?'<div class="kg-dealer-field"><label for="kgDealerBattery">Pil sağlığı (%)</label><input id="kgDealerBattery" name="battery" type="number" inputmode="numeric" min="1" max="100" placeholder="Örn. 86" value="'+esc(saved.battery)+'"></div>':'')
-        +'<div class="kg-dealer-field"><label for="kgDealerWarranty">Garanti durumu</label><select id="kgDealerWarranty" name="warranty"><option value="">Seçiniz</option><option value="var">Devam ediyor</option><option value="yok">Garanti yok</option><option value="bilmiyorum">Bilmiyorum</option></select></div>'
-        +'<div class="kg-dealer-field"><label for="kgDealerBox">Kutu / fatura</label><select id="kgDealerBox" name="boxInvoice"><option value="">Seçiniz</option><option value="ikisi">Kutu ve fatura var</option><option value="kutu">Sadece kutu var</option><option value="fatura">Sadece fatura var</option><option value="yok">İkisi de yok</option></select></div>'
-        +'<div class="kg-dealer-field full"><label for="kgDealerNotes">Mağazanın bilmesi gereken başka bir durum var mı?</label><textarea id="kgDealerNotes" name="notes" maxlength="500" placeholder="Örn. kasada küçük ezik var, cihazın işlevleri sorunsuz...">'+esc(saved.notes)+'</textarea></div>'
+        +'<div class="kg-dealer-field full"><label for="kgDealerNotes">Mağazanın bilmesi gereken ek bir durum var mı?</label><textarea id="kgDealerNotes" name="notes" maxlength="500" placeholder="Değerleme kartında bulunmayan ek bir bilgi varsa yazabilirsin...">'+esc(saved.notes)+'</textarea></div>'
       +'</div>'
       +'<div class="kg-dealer-error" id="kgDealerError">İl ve ilçe bilgilerini doldurmalısın.</div>'
       +'<div class="kg-dealer-hint">Sonraki adımda cihazın ön, arka ve yan/kasa fotoğraflarını ekleyeceğiz.</div>'
       +'<div class="kg-dealer-actions"><button type="button" class="kg-dealer-btn secondary" id="kgDealerBack">← Geri</button><button type="submit" class="kg-dealer-btn primary">Fotoğraflara Geç →</button></div>'
     +'</form>';
-  if(saved.warranty)q('#kgDealerWarranty',body).value=saved.warranty;
-  if(saved.boxInvoice)q('#kgDealerBox',body).value=saved.boxInvoice;
   q('#kgDealerBack',body).onclick=renderIntro;
   q('#kgDealerDetailsForm',body).onsubmit=function(e){
     e.preventDefault();
@@ -139,11 +149,9 @@ function renderDetails(){
       city:city,
       district:district,
       phone:phone,
-      battery:iphone&&q('#kgDealerBattery',body)?q('#kgDealerBattery',body).value.trim():'',
-      warranty:q('#kgDealerWarranty',body).value,
-      boxInvoice:q('#kgDealerBox',body).value,
       notes:q('#kgDealerNotes',body).value.trim(),
-      category:current.category,brand:current.brand,model:current.model,storage:current.storage,marketPrice:price()
+      category:current.category,brand:current.brand,model:current.model,storage:current.storage,marketPrice:price(),
+      valuationSnapshot:valuationSnapshot
     };
     saveDraft(draft);
     renderPhotos();
@@ -188,7 +196,7 @@ function renderPhotos(){
     +'<div class="kg-dealer-step">Adım 2 / Fotoğraflar</div>'
     +'<h2>Cihazın fotoğraflarını ekle</h2>'
     +'<p>Mağazaların cihazı daha doğru değerlendirebilmesi için net ve güncel fotoğraflar yükle. İlk 3 fotoğraf zorunludur.</p>'
-    +'<div class="kg-dealer-device">'+esc(device())+(draft.city?' · '+esc(draft.city)+' / '+esc(draft.district):'')+'</div>'
+    +valuationCard()
     +'<div class="kg-photo-head"><strong>Fotoğraflar</strong><span class="kg-photo-count">'+count+' / 3 zorunlu</span></div>'
     +'<div class="kg-photo-grid">'+photoSpecs.map(photoCard).join('')+'</div>'
     +'<div class="kg-dealer-error" id="kgPhotoError">Ön, arka ve yan/kasa fotoğraflarının üçünü de eklemelisin.</div>'
@@ -222,13 +230,14 @@ function renderPhotoReady(draft){
     +'<div class="kg-dealer-step">Adım 2 tamamlandı</div>'
     +'<h2>Fotoğraflar hazır</h2>'
     +'<p>'+esc(draft.city||'')+' / '+esc(draft.district||'')+' için teklif talebine '+total+' cihaz fotoğrafı eklendi.</p>'
-    +'<div class="kg-dealer-device">'+esc(device())+'</div>'
+    +valuationCard()
     +'<div class="kg-dealer-info"><strong>Talep henüz mağazalara gönderilmedi.</strong><br>Fotoğraflar şu anda yalnızca bu sayfadaki geçici taslakta tutuluyor. Sonraki adımda iletişim/teklif talebi onayı ve sunucuya güvenli yükleme bağlantısını ekleyeceğiz.</div>'
     +'<div class="kg-dealer-actions"><button type="button" class="kg-dealer-btn secondary" id="kgPhotosEdit">← Fotoğrafları Düzenle</button><button type="button" class="kg-dealer-btn primary" id="kgPhotosNext">Devam Et →</button></div>';
   q('#kgPhotosEdit',body).onclick=renderPhotos;
   q('#kgPhotosNext',body).onclick=function(){alert('Sonraki adım: teklif talebi onayı ve fotoğrafların güvenli olarak sunucuya yüklenmesi.');};
 }
-function open(){
+function open(snapshot){
+  setSnapshot(snapshot);
   var amount=price();
   if(!amount){alert('Önce cihazının piyasa değerini hesapla.');return;}
   ensureStyle();
@@ -238,5 +247,5 @@ function open(){
   o.classList.add('open');
   document.body.style.overflow='hidden';
 }
-window.KGDealerSellPhase1={open:open,close:close};
+window.KGDealerSellPhase1={open:open,close:close,getValuationSnapshot:function(){return valuationSnapshot;}};
 })();

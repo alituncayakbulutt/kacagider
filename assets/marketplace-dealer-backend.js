@@ -73,6 +73,17 @@ function cleanText(v,max){
   return max?s.slice(0,max):s;
 }
 
+function detailValue(items,label){
+  items=Array.isArray(items)?items:[];
+  for(var i=0;i<items.length;i++)if(cleanText(items[i]&&items[i].label)===label)return cleanText(items[i].value);
+  return'';
+}
+
+function batteryFromDetails(items){
+  var value=detailValue(items,'Pil Sağlığı'),number=parseInt(String(value).replace(/[^0-9]/g,''),10);
+  return Number.isFinite(number)&&number>=1&&number<=100?number:null;
+}
+
 function cleanPhone(v){
   var raw=cleanText(v,24);
   var digits=raw.replace(/\D/g,'');
@@ -89,7 +100,14 @@ async function submitRequest(input){
   var hasDamage=input.hasDamage===true;
   var attested=input.attested===true;
   if(!attested)throw new Error('Bilgi ve fotoğraf doğruluğu onayını işaretlemelisin.');
-  if(!cleanText(draft.brand)||!cleanText(draft.model))throw new Error('Cihaz bilgileri eksik.');
+  var captured=input.valuationSnapshot||draft.valuationSnapshot||{};
+  var details=Array.isArray(captured.details)?captured.details:(Array.isArray(input.details)?input.details:[]);
+  var category=cleanText(captured.category||draft.category,40)||'phone';
+  var brand=cleanText(captured.brand||draft.brand,120);
+  var model=cleanText(captured.model||draft.model,160);
+  var storage=cleanText(captured.storage||draft.storage,80)||null;
+  var marketValue=Number(captured.marketValue||captured.market_value||draft.marketPrice||0)||null;
+  if(!brand||!model)throw new Error('Cihaz bilgileri eksik.');
   if(!cleanText(draft.city)||!cleanText(draft.district))throw new Error('İl ve ilçe bilgileri eksik.');
   var contactPhone=cleanPhone(draft.phone);
   if(!contactPhone)throw new Error('Geçerli bir iletişim telefonu girmelisin.');
@@ -113,28 +131,34 @@ async function submitRequest(input){
   var profileUpdate=await c.from('profiles').update({phone:contactPhone,updated_at:new Date().toISOString()}).eq('id',user.id).select('id').maybeSingle();
   if(profileUpdate.error)throw profileUpdate.error;
   if(!profileUpdate.data)throw new Error('Profil iletişim bilgisi güncellenemedi. Lütfen tekrar giriş yap.');
-  var battery=parseInt(draft.battery,10);
-  if(!Number.isFinite(battery)||battery<1||battery>100)battery=null;
-  var marketValue=Number(draft.marketPrice||0)||null;
+  var battery=batteryFromDetails(details);
+  var score=Number(captured.score==null?captured.device_score:captured.score);
+  if(!Number.isFinite(score))score=null;
   var snapshot={
     market_value:marketValue,
-    details:Array.isArray(input.details)?input.details:[],
-    captured_at:new Date().toISOString(),
+    brand:brand,
+    model:model,
+    storage:storage,
+    details:details,
+    device_score:score,
+    device_score_label:cleanText(captured.scoreLabel||captured.score_label||captured.device_score_label,80)||null,
+    score_components:captured.scoreComponents||captured.score_components||{},
+    captured_at:captured.capturedAt||captured.captured_at||new Date().toISOString(),
     source:'kacagider_valuation',
-    category:cleanText(draft.category,40)||'phone'
+    category:category
   };
   var payload={
     user_id:user.id,
-    category:cleanText(draft.category,40)||'phone',
-    brand:cleanText(draft.brand,120),
-    model:cleanText(draft.model,160),
-    storage:cleanText(draft.storage,80)||null,
+    category:category,
+    brand:brand,
+    model:model,
+    storage:storage,
     market_value:marketValue,
     city:cleanText(draft.city,100),
     district:cleanText(draft.district,100),
     battery:battery,
-    warranty:cleanText(draft.warranty,40)||null,
-    box_invoice:cleanText(draft.boxInvoice,40)||null,
+    warranty:null,
+    box_invoice:null,
     notes:cleanText(draft.notes,1000)||null,
     has_damage:hasDamage,
     seller_declaration:true,
