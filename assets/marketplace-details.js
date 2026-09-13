@@ -7,6 +7,7 @@ var CATEGORY_IMAGES={phone:"/assets/categories/telefon.jpg",telefon:"/assets/cat
 var CATEGORY_ALT={phone:"İkinci el telefon",telefon:"İkinci el telefon",tablet:"İkinci el tablet",computer:"İkinci el bilgisayar",bilgisayar:"İkinci el bilgisayar",watch:"İkinci el akıllı saat","akilli-saat":"İkinci el akıllı saat",console:"İkinci el oyun konsolu","oyun-konsolu":"İkinci el oyun konsolu"};
 
 function clean(v){return String(v||"").replace(/\s+/g," ").trim();}
+function esc(v){return String(v==null?"":v).replace(/[&<>"']/g,function(c){return{"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#039;"}[c];});}
 function selectedCategory(){
   var active=document.querySelector('.category-card.active[data-category],.kg-approved-card.active[data-category]');
   var k=active&&active.dataset?active.dataset.category:"";
