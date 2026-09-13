@@ -111,6 +111,7 @@ function renderDetails(){
       +'<div class="kg-dealer-form-grid">'
         +'<div class="kg-dealer-field"><label for="kgDealerCity">İl <span class="kg-dealer-required">*</span></label><input id="kgDealerCity" name="city" autocomplete="address-level1" placeholder="Örn. İstanbul" value="'+esc(saved.city)+'" required></div>'
         +'<div class="kg-dealer-field"><label for="kgDealerDistrict">İlçe <span class="kg-dealer-required">*</span></label><input id="kgDealerDistrict" name="district" autocomplete="address-level2" placeholder="Örn. Bayrampaşa" value="'+esc(saved.district)+'" required></div>'
+        +'<div class="kg-dealer-field full"><label for="kgDealerPhone">İletişim telefonu <span class="kg-dealer-required">*</span></label><input id="kgDealerPhone" name="phone" type="tel" inputmode="tel" autocomplete="tel" maxlength="24" placeholder="Örn. 05xx xxx xx xx" value="'+esc(saved.phone)+'" required><span class="kg-dealer-hint">Numaran teklif kabul edilene kadar telefonculara gösterilmez.</span></div>'
         +(iphone?'<div class="kg-dealer-field"><label for="kgDealerBattery">Pil sağlığı (%)</label><input id="kgDealerBattery" name="battery" type="number" inputmode="numeric" min="1" max="100" placeholder="Örn. 86" value="'+esc(saved.battery)+'"></div>':'')
         +'<div class="kg-dealer-field"><label for="kgDealerWarranty">Garanti durumu</label><select id="kgDealerWarranty" name="warranty"><option value="">Seçiniz</option><option value="var">Devam ediyor</option><option value="yok">Garanti yok</option><option value="bilmiyorum">Bilmiyorum</option></select></div>'
         +'<div class="kg-dealer-field"><label for="kgDealerBox">Kutu / fatura</label><select id="kgDealerBox" name="boxInvoice"><option value="">Seçiniz</option><option value="ikisi">Kutu ve fatura var</option><option value="kutu">Sadece kutu var</option><option value="fatura">Sadece fatura var</option><option value="yok">İkisi de yok</option></select></div>'
@@ -127,13 +128,17 @@ function renderDetails(){
     e.preventDefault();
     var city=q('#kgDealerCity',body).value.trim();
     var district=q('#kgDealerDistrict',body).value.trim();
+    var phone=q('#kgDealerPhone',body).value.trim();
+    var phoneDigits=phone.replace(/\D/g,'');
     var err=q('#kgDealerError',body);
-    if(!city||!district){err.classList.add('show');return;}
+    if(!city||!district){err.textContent='İl ve ilçe bilgilerini doldurmalısın.';err.classList.add('show');return;}
+    if(phoneDigits.length<10||phoneDigits.length>15){err.textContent='Geçerli bir iletişim telefonu girmelisin.';err.classList.add('show');return;}
     err.classList.remove('show');
     var current=deviceFields();
     var draft={
       city:city,
       district:district,
+      phone:phone,
       battery:iphone&&q('#kgDealerBattery',body)?q('#kgDealerBattery',body).value.trim():'',
       warranty:q('#kgDealerWarranty',body).value,
       boxInvoice:q('#kgDealerBox',body).value,
