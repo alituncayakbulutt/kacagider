@@ -59,7 +59,7 @@
   function escapeHtml(v){return String(v==null?"":v).replace(/[&<>"']/g,function(c){return{"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#039;"}[c]})}
   document.getElementById("backBtn").onclick=function(){if(history.length>1)history.back();else location.href="/"};
   if(!raw||!raw.brand||!raw.model||!raw.marketValue){content.style.display="none";empty.style.display="block";return}
-  var quick=Number(raw.quickPrice)||Math.round(raw.marketValue*.91),listing=Number(raw.listingPrice)||Math.round(raw.marketValue*1.09),score=Number(raw.score);
+  var quick=Number(raw.quickPrice)||Math.round(raw.marketValue*.91),listing=Number(raw.listingPrice)||Math.round(raw.marketValue*1.09),hasScore=raw.score!==null&&raw.score!==undefined&&raw.score!=="";score=hasScore?Number(raw.score):NaN;
   document.getElementById("deviceTitle").textContent=[raw.brand,raw.model,raw.storage].filter(Boolean).join(" ");
   document.getElementById("range").textContent=money(quick)+" – "+money(listing);
   document.getElementById("quick").textContent=money(quick);document.getElementById("market").textContent=money(raw.normalPrice||raw.marketValue);document.getElementById("listing").textContent=money(listing);
