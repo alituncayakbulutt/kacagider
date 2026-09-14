@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="robots" content="noindex,nofollow">
+  <title>Değerleme Sonucun | KaçaGider</title>
+  <style>
+    :root{--ink:#101828;--muted:#667085;--line:#e4e9e7;--green:#0baa50;--green-dark:#087b3c;--soft:#effbf4;--navy:#07182d}
+    *{box-sizing:border-box}body{margin:0;background:#f5f7f8;color:var(--ink);font-family:Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+    header{background:var(--navy);color:#fff}.top{max-width:1120px;margin:auto;padding:18px 22px;display:flex;align-items:center;justify-content:space-between}
+    .logo{font-size:25px;font-weight:900;color:#fff;text-decoration:none}.logo span{color:#16ba60}.back{border:1px solid #506076;border-radius:10px;padding:10px 14px;color:#fff;background:transparent;font-weight:750;cursor:pointer}
+    main{max-width:960px;margin:30px auto 70px;padding:0 20px}.eyebrow{color:var(--green-dark);font-size:12px;font-weight:900;letter-spacing:.06em}.title{margin:7px 0 4px;font-size:28px}.sub{margin:0;color:var(--muted)}
+    .hero,.card{background:#fff;border:1px solid var(--line);border-radius:18px;box-shadow:0 8px 24px rgba(16,24,40,.05)}
+    .hero{margin-top:22px;padding:25px}.range-label{font-size:13px;color:var(--muted);font-weight:750}.range{margin:5px 0 18px;color:var(--green-dark);font-size:34px;font-weight:900}
+    .prices{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}.price{padding:14px;border-radius:12px;background:#f7f9fa}.price span{display:block;color:var(--muted);font-size:12px;font-weight:700}.price b{display:block;margin-top:5px;font-size:18px}
+    .grid{display:grid;grid-template-columns:1.08fr .92fr;gap:18px;margin-top:18px}.card{padding:21px}.card h2{margin:0 0 14px;font-size:19px}
+    .score-row{display:flex;align-items:center;justify-content:space-between;gap:20px}.score{font-size:35px;font-weight:900;color:var(--green-dark)}.verdict{margin:14px 0 0;padding:12px;border-radius:11px;background:var(--soft);color:#17643a;font-weight:700;line-height:1.45}
+    .actions{display:grid;gap:11px}.action{width:100%;border:0;border-radius:12px;padding:15px 18px;text-align:left;font:inherit;font-weight:850;cursor:pointer}.action small{display:block;margin-top:4px;font-size:12px;font-weight:550;opacity:.78}.primary{background:var(--green);color:#fff}.secondary{background:#eef2f5;color:var(--ink);border:1px solid #dce3e7}
+    details{margin-top:18px}.detail-list{display:grid;grid-template-columns:repeat(2,1fr);gap:8px;margin-top:13px}.detail{padding:10px 11px;border:1px solid var(--line);border-radius:10px}.detail span{display:block;color:var(--muted);font-size:11px}.detail b{font-size:13px}
+    .empty{display:none;text-align:center;margin-top:60px}.empty a{color:var(--green-dark);font-weight:800}
+    @media(max-width:720px){main{margin-top:20px}.grid{grid-template-columns:1fr}.prices{grid-template-columns:1fr}.range{font-size:27px}.title{font-size:23px}.hero,.card{padding:18px}.detail-list{grid-template-columns:1fr}}
+  </style>
+</head>
+<body>
+<header><div class="top"><a class="logo" href="/">kaça<span>gider</span>.com.tr</a><button class="back" id="backBtn">← Değerlendirmeye dön</button></div></header>
+<main>
+  <section id="content">
+    <div class="eyebrow">DEĞERLEME SONUCU</div>
+    <h1 class="title" id="deviceTitle"></h1>
+    <p class="sub">Seçtiğin özelliklere göre güncel ikinci el piyasa özeti.</p>
+    <section class="hero">
+      <div class="range-label">Tahmini satış aralığı</div><div class="range" id="range"></div>
+      <div class="prices">
+        <div class="price"><span>Hızlı satış</span><b id="quick"></b></div>
+        <div class="price"><span>Ortalama piyasa</span><b id="market"></b></div>
+        <div class="price"><span>İlan fiyatı</span><b id="listing"></b></div>
+      </div>
+    </section>
+    <div class="grid">
+      <section class="card"><h2>Cihaz skoru</h2><div class="score-row"><div><div class="score" id="score"></div><div id="scoreLabel"></div></div><div id="trust"></div></div><p class="verdict" id="verdict"></p></section>
+      <section class="card"><h2>Nasıl satmak istersin?</h2><div class="actions">
+        <button class="action primary" id="dealerBtn">Mağazalardan Teklif Al<small>Doğrulanmış telefonculardan alış teklifi topla.</small></button>
+        <button class="action secondary" id="listingBtn">Kendin Sat<small>İlanını oluştur ve satış fiyatını kendin belirle.</small></button>
+      </div></section>
+    </div>
+    <section class="card" style="margin-top:18px"><details><summary><strong>Değerlendirmede seçtiğin özellikler</strong></summary><div class="detail-list" id="details"></div></details></section>
+  </section>
+  <section class="empty" id="empty"><h1>Gösterilecek sonuç bulunamadı</h1><p>Önce cihazını değerlendirerek fiyat sonucu oluşturmalısın.</p><a href="/">Değerlendirmeye başla</a></section>
+</main>
+<script src="/assets/supabase-marketplace.js?v=20260914-step1"></script>
+<script src="/assets/marketplace-details.js?v=20260914-step1"></script>
+<script src="/assets/marketplace-test.js?v=20260914-card2"></script>
+<script>
+(function(){
+  var raw=null;try{raw=JSON.parse(sessionStorage.getItem("kg-result-snapshot-v1")||"null");}catch(_e){}
+  var content=document.getElementById("content"),empty=document.getElementById("empty");
+  function money(n){return new Intl.NumberFormat("tr-TR").format(Number(n)||0)+" TL"}
+  function escapeHtml(v){return String(v==null?"":v).replace(/[&<>"']/g,function(c){return{"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#039;"}[c]})}
+  document.getElementById("backBtn").onclick=function(){if(history.length>1)history.back();else location.href="/"};
+  if(!raw||!raw.brand||!raw.model||!raw.marketValue){content.style.display="none";empty.style.display="block";return}
+  var quick=Number(raw.quickPrice)||Math.round(raw.marketValue*.91),listing=Number(raw.listingPrice)||Math.round(raw.marketValue*1.09),score=Number(raw.score);
+  document.getElementById("deviceTitle").textContent=[raw.brand,raw.model,raw.storage].filter(Boolean).join(" ");
+  document.getElementById("range").textContent=money(quick)+" – "+money(listing);
+  document.getElementById("quick").textContent=money(quick);document.getElementById("market").textContent=money(raw.normalPrice||raw.marketValue);document.getElementById("listing").textContent=money(listing);
+  document.getElementById("score").textContent=isFinite(score)?Math.round(score)+"/100":"—";
+  document.getElementById("scoreLabel").textContent=raw.scoreLabel||"Cihaz kondisyonu";
+  document.getElementById("trust").textContent=raw.trustScore?"Veri güveni "+raw.trustScore+"/100":"";
+  document.getElementById("verdict").textContent=!isFinite(score)?"Seçtiğin özellikler satış akışında aynen korunacak.":score>=90?"Cihazın kondisyonu çok güçlü. Temiz kullanım ve düşük kusur seviyesi öne çıkıyor.":score>=75?"Cihazın genel kondisyonu iyi. Belirttiğin küçük kusurlar fiyat aralığına yansıtıldı.":"Cihazın kondisyon detayları fiyat aralığına yansıtıldı; alıcıya tüm bilgiler açıkça gösterilecek.";
+  document.getElementById("details").innerHTML=(raw.details||[]).map(function(x){return '<div class="detail"><span>'+escapeHtml(x.label)+'</span><b>'+escapeHtml(x.value)+'</b></div>'}).join("");
+  function run(name){var tries=0;(function wait(){tries++;var api=name==="dealer"?window.KGDealerSellPhase1:window.KGMarketplaceUI;if(api){if(name==="dealer"&&typeof api.open==="function")api.open(raw);else if(name==="listing"&&typeof api.beginListing==="function")api.beginListing(raw);return}if(tries<30)setTimeout(wait,100);else alert("Satış sistemi yüklenemedi. Sayfayı yenileyip tekrar dene.");})()}
+  document.getElementById("dealerBtn").onclick=function(){run("dealer")};document.getElementById("listingBtn").onclick=function(){run("listing")};
+})();
+</script>
+</body>
+</html>
