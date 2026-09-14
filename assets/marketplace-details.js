@@ -160,7 +160,52 @@ function applyImages(){
   });
 }
 
+
+var RESULT_STORAGE_KEY="kg-result-snapshot-v1";
+function resultPrice(id){
+  var el=document.getElementById(id);
+  return Number(String(el&&el.textContent||"").replace(/[^0-9]/g,""))||0;
+}
+function saveAndOpenResult(button){
+  var attempts=0;
+  function check(){
+    attempts+=1;
+    var snapshot=captureValuation();
+    if(snapshot.brand&&snapshot.model&&snapshot.marketValue&&(!button.disabled||attempts>30)){
+      snapshot.quickPrice=resultPrice("quickPrice");
+      snapshot.listingPrice=resultPrice("listingPrice");
+      snapshot.normalPrice=resultPrice("normalPrice")||snapshot.marketValue;
+      snapshot.trustScore=resultPrice("trustScore");
+      snapshot.resultCreatedAt=new Date().toISOString();
+      try{sessionStorage.setItem(RESULT_STORAGE_KEY,JSON.stringify(snapshot));}catch(_e){}
+      window.location.assign("/sonuc/");
+      return;
+    }
+    if(attempts<50)setTimeout(check,100);
+  }
+  setTimeout(check,250);
+}
+function installResultStep(){
+  if(window.__KG_RESULT_STEP__)return;
+  window.__KG_RESULT_STEP__=true;
+  document.addEventListener("click",function(event){
+    var button=event.target&&event.target.closest?event.target.closest(".calc-btn"):null;
+    var priceEl=document.getElementById("mainPrice");
+    if(!button||!priceEl)return;
+    var completed=false;
+    var observer=new MutationObserver(function(){
+      if(completed||!resultPrice("mainPrice"))return;
+      completed=true;
+      observer.disconnect();
+      saveAndOpenResult(button);
+    });
+    observer.observe(priceEl,{childList:true,characterData:true,subtree:true});
+    setTimeout(function(){observer.disconnect();},10000);
+  },true);
+}
+
 function boot(){
+  installResultStep();
   applyImages();
   requestAnimationFrame(applyImages);
   setTimeout(applyImages,350);
