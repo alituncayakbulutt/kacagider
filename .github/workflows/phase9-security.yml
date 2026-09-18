@@ -36,3 +36,6 @@ jobs:
 
       - name: Preserve SEO technical quality gate
         run: python scripts/seo-site-audit.py
+
+      - name: Enforce SEO V4 runtime architecture
+        run: python scripts/seo-v4-runtime-audit.py

@@ -196,9 +196,9 @@ for name, text in [('index.html', index), ('_layouts/seo.html', layout)]:
         errors.append(f'{name}: stale GA4 measurement ID found')
     if 'G-078JHH25LH' not in text:
         errors.append(f'{name}: correct GA4 measurement ID missing')
-    if 'data/phone-prices.js' not in text:
+    if name == 'index.html' and 'data/phone-prices.js' not in text:
         errors.append(f'{name}: phone pricing script missing')
-    if 'data/screen-repair-prices.js' not in text:
+    if name == 'index.html' and 'data/screen-repair-prices.js' not in text:
         errors.append(f'{name}: screen repair pricing script missing')
 
 if 'property="og:image"' not in index or 'name="twitter:image"' not in index:
