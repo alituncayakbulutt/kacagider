@@ -1,0 +1,24 @@
+{
+  "version": "4.0",
+  "goal": "Az sayıda, güçlü, kullanıcıya gerçek değer sağlayan canonical sayfa",
+  "indexable": {
+    "core": ["category", "valuation", "methodology", "trust", "information_hub"],
+    "catalog": ["brand_with_models", "model_with_real_catalog_data"],
+    "conditional": ["series_with_distinct_user_value", "guide_with_original_steps"]
+  },
+  "non_indexable": {
+    "default": ["storage_variant", "watch_size_variant", "thin_comparison", "duplicate_intent", "internal_result"],
+    "handling": "noindex,follow; canonical to the closest useful parent; exclude from sitemap and internal links"
+  },
+  "quality": {
+    "one_primary_intent_per_url": true,
+    "self_canonical_for_indexable_pages": true,
+    "visible_content_matches_schema": true,
+    "sitewide_app_copy_on_seo_pages": false,
+    "keyword_stuffing": false,
+    "fake_reviews_or_ratings": false,
+    "evergreen_titles": true,
+    "content_owner": "KaçaGider veri ve içerik ekibi"
+  },
+  "protected": ["valuation_engine", "marketplace", "analytics", "search_console_verification", "price_data"]
+}
