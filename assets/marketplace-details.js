@@ -137,8 +137,54 @@ function installStyle(){
   #viewHome .kg-product-art,#viewHome .category-image,#viewHome .category-media{overflow:hidden!important;display:flex!important;align-items:center!important;justify-content:center!important;background:#fff!important}
   #viewHome .kg-product-art img,#viewHome .category-image img,#viewHome .category-media img{display:block!important;width:86%!important;height:86%!important;max-width:86%!important;max-height:86%!important;object-fit:contain!important;object-position:center!important;transform:none!important;background:transparent!important}
   #viewHome [data-category="computer"] .kg-product-art img,#viewHome [data-category="bilgisayar"] .kg-product-art img{width:92%!important;max-width:92%!important;height:78%!important;max-height:78%!important}
+  #viewHome.category-selected .valuation-layout.kg-query-layout{display:block!important;max-width:1040px!important;margin-left:auto!important;margin-right:auto!important}
+  #viewHome.category-selected .valuation-layout.kg-query-layout>.side{display:none!important}
+  #viewHome.category-selected .valuation-layout.kg-query-layout>.valuation-main{width:100%!important;max-width:none!important}
+  #phonePanel[data-kg-wizard="1"]{overflow:hidden}
+  .kg-query-progress{padding:18px 32px 0;color:#07833d;font-size:12px;font-weight:900;letter-spacing:.05em}
+  .kg-query-progress div{height:6px;margin-top:9px;overflow:hidden;border-radius:99px;background:#e8edf0}
+  .kg-query-progress i{display:block;height:100%;border-radius:99px;background:#10b85a;transition:width .2s ease}
+  .kg-query-nav{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:18px 32px}
+  .kg-query-nav button{min-width:135px;padding:13px 18px;border-radius:11px;font:inherit;font-weight:850;cursor:pointer}
+  .kg-query-back{border:1px solid #d7dfe3;background:#f4f6f7;color:#172033}
+  .kg-query-next{border:0;background:#0caf51;color:#fff}
+  @media(max-width:720px){.kg-query-progress{padding:15px 18px 0}.kg-query-nav{padding:15px 18px}.kg-query-nav button{min-width:118px}}
   `;
   document.head.appendChild(s);
+}
+
+
+function installQueryWizard(){
+  var layout=document.querySelector("#viewHome.category-selected .valuation-layout")||document.querySelector("#viewHome .valuation-layout");
+  var panel=document.getElementById("phonePanel");
+  if(!layout||!panel||panel.getAttribute("data-kg-wizard")==="1")return;
+  panel.setAttribute("data-kg-wizard","1");
+  layout.classList.add("kg-query-layout");
+  var sections=Array.prototype.slice.call(panel.querySelectorAll(":scope > section.section"));
+  var calc=panel.querySelector(":scope > .calc-wrap");
+  if(sections.length<2||!calc)return;
+  var current=0,progress=document.createElement("div"),nav=document.createElement("div");
+  progress.className="kg-query-progress";
+  nav.className="kg-query-nav";
+  panel.insertBefore(progress,sections[0]);
+  panel.insertBefore(nav,calc);
+  function firstStepReady(){
+    var brand=selectText("phoneBrand"),model=selectText("model"),storage=selectText("storage");
+    if(!brand||/seçiniz/i.test(brand)){alert("Devam etmek için marka seç.");return false}
+    if(!model||/önce|seçiniz/i.test(model)){alert("Devam etmek için model seç.");return false}
+    if(!storage||/önce|seçiniz/i.test(storage)){alert("Devam etmek için hafıza seç.");return false}
+    return true;
+  }
+  function render(){
+    sections.forEach(function(section,index){section.style.display=index===current?"block":"none"});
+    progress.innerHTML='<span>ADIM '+(current+1)+' / '+sections.length+'</span><div><i style="width:'+(((current+1)/sections.length)*100)+'%"></i></div>';
+    nav.innerHTML=(current?'<button type="button" class="kg-query-back">← Geri</button>':'<span></span>')+(current<sections.length-1?'<button type="button" class="kg-query-next">Devam Et →</button>':'');
+    calc.style.display=current===sections.length-1?"block":"none";
+    var back=nav.querySelector(".kg-query-back"),next=nav.querySelector(".kg-query-next");
+    if(back)back.onclick=function(){current-=1;render();panel.scrollIntoView({behavior:"smooth",block:"start"})};
+    if(next)next.onclick=function(){if(current===0&&!firstStepReady())return;current+=1;render();panel.scrollIntoView({behavior:"smooth",block:"start"})};
+  }
+  render();
 }
 
 function applyImages(){
@@ -206,6 +252,7 @@ function installResultStep(){
 
 function boot(){
   installResultStep();
+  installQueryWizard();
   applyImages();
   requestAnimationFrame(applyImages);
   setTimeout(applyImages,350);
