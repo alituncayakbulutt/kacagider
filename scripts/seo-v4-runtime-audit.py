@@ -12,7 +12,8 @@ VARIANT_URL = re.compile(r"/(?:telefon|tablet|bilgisayar|akilli-saat|oyun-konsol
 def main() -> int:
     errors = []
     text = LAYOUT.read_text(encoding="utf-8")
-    required = ["kg_is_variant", "noindex,follow", "kg_render_canonical", "FAQPage", "BreadcrumbList", "Bu içerik nasıl hazırlanıyor?"]
+    required = ["kg_is_variant", "kg_render_canonical", "FAQPage", "BreadcrumbList", "Bu içerik nasıl hazırlanıyor?"]
+    forbidden_variant_markers = ["{% assign kg_render_robots = 'noindex,follow' %}"]
     forbidden = ["id=\"valuationArea\"", "id=\"mainPrice\"", "data/phone-prices.js", "data/screen-repair-prices.js"]
     for marker in required:
         if marker not in text:
@@ -20,6 +21,9 @@ def main() -> int:
     for marker in forbidden:
         if marker in text:
             errors.append(f"SEO V4 layout still embeds application marker: {marker}")
+    for marker in forbidden_variant_markers:
+        if marker in text:
+            errors.append("SEO V4 variant canonicalization must not force noindex,follow")
 
     root = ET.parse(SITEMAP).getroot()
     ns = {"s": "http://www.sitemaps.org/schemas/sitemap/0.9"}
