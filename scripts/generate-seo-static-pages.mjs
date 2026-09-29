@@ -51,15 +51,6 @@ function storageLabel(value,kind){
   return `${numeric} GB`;
 }
 
-function variantUrlPart(value,kind){
-  const numeric=Number(value);
-  if(kind==="watch") return `${numeric}mm`;
-  if(numeric===1000 || numeric===1024) return "1tb";
-  if(numeric===2000 || numeric===2048) return "2tb";
-  if(numeric===4000) return "4tb";
-  return `${numeric}gb`;
-}
-
 function yaml(value){return JSON.stringify(value);}
 function pagePath(...parts){return "/"+parts.filter(Boolean).map(slug).join("/")+"/";}
 function absolute(url){return siteUrl+url;}
@@ -250,15 +241,10 @@ for(const [kind,config] of Object.entries(categoryConfig)){
         : kind==="computer" ? runtime.COMPUTER_STORAGE_OPTIONS?.[brand]?.[model]
         : kind==="watch" ? runtime.WATCH_VARIANT_OPTIONS?.[brand]?.[model]
         : runtime.CONSOLE_STORAGE_OPTIONS?.[model]) || [];
-      const variantLinks=[...new Set(variants.map(Number))].filter(Number.isFinite).map(value=>({label:storageLabel(value,kind),url:`/${config.path}/${slug(brand)}/${slug(model)}/${variantUrlPart(value,kind)}/`}));
+      const optionLinks=[...new Set(variants.map(Number))].filter(Number.isFinite).map(value=>({label:`${storageLabel(value,kind)} seçeneği`,url:modelUrl}));
       const relatedModels=models.filter(candidate=>candidate!==model).slice(0,3).map(candidate=>({label:`${candidate} ikinci el fiyatı`,url:pagePath(config.path,brand,candidate)}));
-      addPage(modelUrl,modelSeoMeta({kind,brand,model,url:modelUrl,variants,breadcrumbs:[{label:"Ana Sayfa",url:"/"},{label:config.name,url:categoryUrl},{label:brand,url:brandUrl},{label:model,url:modelUrl}],links:[...relatedModels,...variantLinks]}));
+      addPage(modelUrl,modelSeoMeta({kind,brand,model,url:modelUrl,variants,breadcrumbs:[{label:"Ana Sayfa",url:"/"},{label:config.name,url:categoryUrl},{label:brand,url:brandUrl},{label:model,url:modelUrl}],links:[...relatedModels,...optionLinks]}));
 
-      for(const value of [...new Set(variants.map(Number))].filter(Number.isFinite)){
-        const variant=storageLabel(value,kind);
-        const variantUrl=`/${config.path}/${slug(brand)}/${slug(model)}/${variantUrlPart(value,kind)}/`;
-        addPage(variantUrl,modelSeoMeta({kind,brand,model,variant,url:variantUrl,variants,breadcrumbs:[{label:"Ana Sayfa",url:"/"},{label:config.name,url:categoryUrl},{label:brand,url:brandUrl},{label:model,url:modelUrl},{label:variant,url:variantUrl}],links:[{label:`${model} ana sayfası`,url:modelUrl},...variantLinks.filter(link=>link.url!==variantUrl)]}));
-      }
     }
   }
 }
@@ -288,8 +274,9 @@ const inboundUrls=new Set(pages.flatMap(page=>[
   ...page.meta.seo_breadcrumbs.slice(0,-1).map(crumb=>crumb.url)
 ]));
 const orphanPages=pages.filter(page=>!inboundUrls.has(page.url)).length;
-const audit={generated_at:generatedAt,total_indexable_urls:pages.length+1,duplicate_title:duplicateCount("seo_title"),duplicate_description:duplicateCount("seo_description"),duplicate_h1:duplicateCount("seo_h1",phaseOnePilotUrls),intentional_shared_pilot_h1:phaseOnePilotPages.length-1,broken_canonical:brokenCanonical,broken_breadcrumb:brokenBreadcrumb,orphan_url:orphanPages,sitemap_url_count:pages.length+1};
-if(audit.duplicate_title||audit.duplicate_description||audit.duplicate_h1||audit.broken_canonical||audit.broken_breadcrumb||audit.orphan_url) throw Error(`SEO audit failed: ${JSON.stringify(audit)}`);
+const variantPageCount=pages.filter(page=>/\/(?:\d+(?:gb|tb|mm))\/$/i.test(page.url)).length;
+const audit={generated_at:generatedAt,total_indexable_urls:pages.length+1,duplicate_title:duplicateCount("seo_title"),duplicate_description:duplicateCount("seo_description"),duplicate_h1:duplicateCount("seo_h1",phaseOnePilotUrls),intentional_shared_pilot_h1:phaseOnePilotPages.length-1,broken_canonical:brokenCanonical,broken_breadcrumb:brokenBreadcrumb,orphan_url:orphanPages,variant_page_count:variantPageCount,sitemap_url_count:pages.length+1};
+if(audit.duplicate_title||audit.duplicate_description||audit.duplicate_h1||audit.broken_canonical||audit.broken_breadcrumb||audit.orphan_url||audit.variant_page_count) throw Error(`SEO audit failed: ${JSON.stringify(audit)}`);
 
 // The existing SEO layout already renders the V2 front matter; preserve it so
 // marketplace-specific changes in index.html cannot be copied into the layout.
