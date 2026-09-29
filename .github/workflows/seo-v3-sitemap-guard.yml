@@ -1,4 +1,4 @@
-name: SEO V3 Sitemap Guard
+name: SEO V4 Sitemap Guard
 
 on:
   push:
@@ -20,7 +20,7 @@ permissions:
   contents: write
 
 concurrency:
-  group: seo-v3-sitemap-guard
+  group: seo-v4-sitemap-guard
   cancel-in-progress: false
 
 jobs:
@@ -32,49 +32,44 @@ jobs:
         with:
           ref: main
           fetch-depth: 0
-
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-
       - name: Apply primary sitemap policy
         run: python3 scripts/update-sitemap-lastmod.py
-
-      - name: Validate sitemap XML and variant policy
+      - name: Validate sitemap XML and canonical-only variant policy
         shell: bash
         run: |
           python3 - <<'PY'
           import re
           import xml.etree.ElementTree as ET
           from urllib.parse import urlparse
-
           tree = ET.parse('sitemap.xml')
           root = tree.getroot()
           ns = {'sm': 'http://www.sitemaps.org/schemas/sitemap/0.9'}
           urls = [node.text.strip() for node in root.findall('sm:url/sm:loc', ns) if node.text]
+          if len(urls) != len(set(urls)):
+              raise SystemExit('Primary sitemap contains duplicate URLs.')
           categories = {'telefon', 'tablet', 'bilgisayar', 'akilli-saat', 'oyun-konsolu'}
-          variant = re.compile(r'^\d+(?:gb|tb|mm)$', re.I)
-          leaked = []
+          variant = re.compile(r'^\\d+(?:gb|tb|mm)$', re.I)
+          leaked=[]
           for url in urls:
-              parts = [p for p in urlparse(url).path.split('/') if p]
-              if len(parts) == 4 and parts[0] in categories and variant.fullmatch(parts[-1]):
-                  leaked.append(url)
-          if leaked:
-              raise SystemExit(f'Primary sitemap still contains {len(leaked)} device variant URL(s): {leaked[:10]}')
-          print(f'Validated {len(urls)} primary sitemap URL(s); 0 storage/mm variants.')
+              parts=[p for p in urlparse(url).path.split('/') if p]
+              if len(parts)==4 and parts[0] in categories and variant.fullmatch(parts[-1]): leaked.append(url)
+          if leaked: raise SystemExit(f'Primary sitemap contains {len(leaked)} storage/mm variant URL(s): {leaked[:10]}')
+          print(f'Validated {len(urls)} unique primary sitemap URL(s); 0 storage/mm variants.')
           PY
-
       - name: Commit guarded sitemap
         shell: bash
         run: |
           if git diff --quiet -- sitemap.xml; then
-            echo "Primary sitemap already satisfies V3 policy."
+            echo "Primary sitemap already satisfies V4 policy."
             exit 0
           fi
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add sitemap.xml
-          git commit -m "SEO V3: reduce sitemap variant crawl noise"
+          git commit -m "SEO V4: sync primary canonical sitemap"
           git pull --rebase origin main
           git push origin HEAD:main
