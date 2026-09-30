@@ -1,75 +1,50 @@
-name: SEO V4 Sitemap Guard
+name: SEO Reset Sitemap Audit
 
 on:
   push:
-    branches:
-      - main
+    branches: [main]
     paths:
       - "sitemap.xml"
+      - "robots.txt"
+      - "telefon/**"
+      - "tablet/**"
+      - "bilgisayar/**"
+      - "akilli-saat/**"
+      - "oyun-konsolu/**"
       - "scripts/update-sitemap-lastmod.py"
-      - "scripts/generate-seo-static-pages.mjs"
-      - "telefon/**/index.md"
-      - "tablet/**/index.md"
-      - "bilgisayar/**/index.md"
-      - "akilli-saat/**/index.md"
-      - "oyun-konsolu/**/index.md"
       - ".github/workflows/seo-v3-sitemap-guard.yml"
+  pull_request:
+    branches: [main]
   workflow_dispatch:
 
 permissions:
-  contents: write
-
-concurrency:
-  group: seo-v4-sitemap-guard
-  cancel-in-progress: false
+  contents: read
 
 jobs:
-  guard-primary-sitemap:
+  sitemap-audit:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout main
-        uses: actions/checkout@v4
-        with:
-          ref: main
-          fetch-depth: 0
-      - name: Set up Python
-        uses: actions/setup-python@v5
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-      - name: Apply primary sitemap policy
-        run: python3 scripts/update-sitemap-lastmod.py
-      - name: Validate sitemap XML and canonical-only variant policy
-        shell: bash
+      - name: Validate sitemap without mutating repository
         run: |
+          python3 scripts/update-sitemap-lastmod.py
+          git diff --exit-code -- sitemap.xml
           python3 - <<'PY'
           import re
           import xml.etree.ElementTree as ET
           from urllib.parse import urlparse
-          tree = ET.parse('sitemap.xml')
-          root = tree.getroot()
-          ns = {'sm': 'http://www.sitemaps.org/schemas/sitemap/0.9'}
-          urls = [node.text.strip() for node in root.findall('sm:url/sm:loc', ns) if node.text]
-          if len(urls) != len(set(urls)):
-              raise SystemExit('Primary sitemap contains duplicate URLs.')
-          categories = {'telefon', 'tablet', 'bilgisayar', 'akilli-saat', 'oyun-konsolu'}
-          variant = re.compile(r'^\\d+(?:gb|tb|mm)$', re.I)
+          root=ET.parse("sitemap.xml").getroot()
+          ns={"s":"http://www.sitemaps.org/schemas/sitemap/0.9"}
+          urls=[n.text.strip() for n in root.findall("s:url/s:loc",ns) if n.text]
+          if len(urls)!=len(set(urls)): raise SystemExit("Duplicate sitemap URL")
+          variant=re.compile(r"^\\d+(?:gb|tb|mm)$",re.I)
           leaked=[]
           for url in urls:
-              parts=[p for p in urlparse(url).path.split('/') if p]
-              if len(parts)==4 and parts[0] in categories and variant.fullmatch(parts[-1]): leaked.append(url)
-          if leaked: raise SystemExit(f'Primary sitemap contains {len(leaked)} storage/mm variant URL(s): {leaked[:10]}')
-          print(f'Validated {len(urls)} unique primary sitemap URL(s); 0 storage/mm variants.')
+            parts=[p for p in urlparse(url).path.split("/") if p]
+            if len(parts)==4 and parts[0] in {"telefon","tablet","bilgisayar","akilli-saat","oyun-konsolu"} and variant.fullmatch(parts[-1]): leaked.append(url)
+          if leaked: raise SystemExit(f"Variant URLs in sitemap: {leaked[:10]}")
+          print(f"SEO RESET SITEMAP PASS: {len(urls)} unique canonical URLs")
           PY
-      - name: Commit guarded sitemap
-        shell: bash
-        run: |
-          if git diff --quiet -- sitemap.xml; then
-            echo "Primary sitemap already satisfies V4 policy."
-            exit 0
-          fi
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add sitemap.xml
-          git commit -m "SEO V4: sync primary canonical sitemap"
-          git pull --rebase origin main
-          git push origin HEAD:main
