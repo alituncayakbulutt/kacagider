@@ -141,7 +141,7 @@ function pageMeta({kind,brand,model,variant,url,breadcrumbs,links,linksHeading})
 
   if(brand&&!model&&!variant){
     h1=`${brand} İkinci El ${config.name} Fiyatları`;
-    title=`${h1} ve Piyasa Değeri | KaçaGider`;
+    title=`${brand} İkinci El ${config.name} Fiyatları | KaçaGider`;
     description=`${brand} ${config.name} ikinci el fiyatlarını ve piyasa değerini model bazında incele. Gerçek modelini seçerek cihaz durumuna göre güncel değerleme sayfasına geç.`;
     intro=`${brand} ${config.name} modellerinin ikinci el fiyatlarını tek marka merkezinde incele. Modelini seçerek ${config.context} bilgilerine göre güncel piyasa değerine ulaş.`;
     contextHeading=`${brand} ikinci el ${config.name} piyasası`;
