@@ -732,7 +732,6 @@
   <url><loc>https://kacagider.com.tr/rehber/playstation/playstation-kol-eslestirme/</loc><lastmod>2026-10-01</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url>
   <url><loc>https://kacagider.com.tr/rehber/playstation/playstation-nasil-sifirlanir/</loc><lastmod>2026-10-01</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url>
   <url><loc>https://kacagider.com.tr/rehber/playstation/ps5-fabrika-ayarlarina-donme/</loc><lastmod>2026-10-01</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url>
-  <url><loc>https://kacagider.com.tr/rehber/telefon/imei-sorgulama/</loc><lastmod>2026-10-01</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url>
   <url><loc>https://kacagider.com.tr/rehber/telefon/telefonum-acilmiyor/</loc><lastmod>2026-10-01</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url>
   <url><loc>https://kacagider.com.tr/rehber/telefon/telefonum-dinleniyor-mu/</loc><lastmod>2026-10-01</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url>
   <url><loc>https://kacagider.com.tr/rehber/telefon/telefonum-kapandi-acilmiyor/</loc><lastmod>2026-10-01</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url>
@@ -826,4 +825,6 @@
   <url><loc>https://kacagider.com.tr/fiyat-alarmi/</loc><lastmod>2026-10-01</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://kacagider.com.tr/is-ortakligi/</loc><lastmod>2026-10-01</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
   <url><loc>https://kacagider.com.tr/kurumsal-api/</loc><lastmod>2026-10-01</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://kacagider.com.tr/bilgi-merkezi/satis-oncesi/ikinci-el-telefon-satarken/</loc><lastmod>2026-10-01</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://kacagider.com.tr/bilgi-merkezi/ikinci-el/ikinci-el-telefon-alirken/</loc><lastmod>2026-10-01</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
 </urlset>
