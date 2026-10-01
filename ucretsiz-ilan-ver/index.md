@@ -8,7 +8,7 @@ seo_intro: "İkinci el telefonunu veya desteklenen cihazını satmak istiyorsan 
 seo_context_heading: "Telefon satmak için ücretsiz ilan nasıl verilir?"
 seo_context: "KaçaGider'de satış süreci değerleme ile başlar. Marka, model, kapasite ve kondisyon bilgilerini seçerek piyasa referansını görür; ardından satış fiyatını belirleyip ücretsiz ilan oluşturma adımına geçersin."
 seo_breadcrumbs: [{"label":"Ana Sayfa","url":"/"},{"label":"Ücretsiz İlan Ver","url":"/ucretsiz-ilan-ver/"}]
-seo_links: [{"label":"Telefonum ne kadar eder?","url":"/telefonum-ne-kadar-eder/"},{"label":"İkinci el telefon fiyatları","url":"/ikinci-el-telefon/"},{"label":"Telefon satmadan önce yapılması gerekenler","url":"/bilgi-merkezi/satis-oncesi/telefon-satmadan-once/"},{"label":"Yayındaki ilanları gör","url":"/ilanlar/"}]
+seo_links: [{"label":"Telefonum ne kadar eder?","url":"/telefonum-ne-kadar-eder/"},{"label":"İkinci el telefon fiyatları","url":"/ikinci-el-telefon/"},{"label":"Telefon satmadan önce yapılması gerekenler","url":"/bilgi-merkezi/satis-oncesi/telefon-satmadan-once/"},{"label":"İkinci el telefon satarken dikkat edilmesi gerekenler","url":"/bilgi-merkezi/satis-oncesi/ikinci-el-telefon-satarken/"},{"label":"Yayındaki ilanları gör","url":"/ilanlar/"}]
 seo_links_heading: "Satışa hazırlan"
 seo_canonical: "https://kacagider.com.tr/ucretsiz-ilan-ver/"
 seo_cta: {"url":"/telefonum-ne-kadar-eder/","label":"Telefon Değerini Öğren ve Satışa Başla"}
