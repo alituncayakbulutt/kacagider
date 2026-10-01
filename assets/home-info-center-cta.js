@@ -35,7 +35,11 @@
   }
 
   function ensureInfoCta(home){
-    if(document.getElementById('kgHomeInfoCenterCta')) return;
+    var existing=document.getElementById('kgHomeInfoCenterCta');
+    if(existing){
+      existing.addEventListener('click',function(){track('home_info_center_clicked','Bilgi Merkezi');},{once:true});
+      return;
+    }
     var link=document.createElement('a');
     link.id='kgHomeInfoCenterCta';
     link.className='kg-home-info-cta';
@@ -49,7 +53,18 @@
   }
 
   function ensureTrustCenter(home){
-    if(document.getElementById('kgHomeTrustCenter')) return;
+    var existing=document.getElementById('kgHomeTrustCenter');
+    if(existing){
+      if(existing.dataset.kgTrackingBound!=='1'){
+        existing.dataset.kgTrackingBound='1';
+        existing.addEventListener('click',function(e){
+          var a=e.target.closest('a');
+          if(!a) return;
+          track('home_trust_link_clicked',(a.textContent||'').trim().slice(0,80));
+        });
+      }
+      return;
+    }
     var box=document.createElement('section');
     box.id='kgHomeTrustCenter';
     box.className='kg-home-trust';

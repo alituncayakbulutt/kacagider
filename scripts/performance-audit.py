@@ -37,7 +37,8 @@ if f'data/screen-repair-prices.js?v={PERF_VERSION}' not in index:
     errors.append("index.html: screen repair data is not versioned")
 if '<link rel="preload" as="image" href="/assets/categories/telefon.jpg" fetchpriority="high">' not in index:
     errors.append("index.html: primary category image preload missing")
-if '<img src="assets/categories/telefon.jpg" alt="Telefon" decoding="async" fetchpriority="high">' not in index:
+phone_img = re.search(r'<img\s+[^>]*src="assets/categories/telefon\.jpg"[^>]*>', index, flags=re.I)
+if not phone_img or 'decoding="async"' not in phone_img.group(0) or 'fetchpriority="high"' not in phone_img.group(0):
     errors.append("index.html: primary category image priority attributes missing")
 for src in ["tablet.jpg", "bilgisayar.jpg", "akilli-saat.jpg", "oyun-konsolu.jpg"]:
     if f'<img src="assets/categories/{src}"' not in index or "decoding=\"async\"" not in index[index.find(f'<img src="assets/categories/{src}"'):index.find(f'<img src="assets/categories/{src}"')+180]:
