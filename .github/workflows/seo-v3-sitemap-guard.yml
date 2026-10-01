@@ -54,6 +54,32 @@ jobs:
           if leaked: raise SystemExit(f"Variant URLs in sitemap: {leaked[:10]}")
           print(f"SEO RESET SITEMAP PASS: {len(urls)} unique canonical URLs")
           PY
+      - name: Validate Internal Linking SEO V10
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          import re
+          model=Path("telefon/apple/iphone-13/index.md").read_text()
+          required=[
+            "/telefon/apple/",
+            "/telefonum-ne-kadar-eder/",
+            "/bilgi-merkezi/degerleme/telefon-degeri-nasil-hesaplanir/",
+            "/bilgi-merkezi/satis-oncesi/telefon-satmadan-once/",
+            "/ucretsiz-ilan-ver/"
+          ]
+          missing=[url for url in required if url not in model]
+          if missing: raise SystemExit(f"Internal linking V10 sample missing: {missing}")
+          generator=Path("scripts/generate-seo-static-pages.mjs").read_text()
+          for url in required[1:]:
+            if url not in generator: raise SystemExit(f"Internal linking V10 generator missing: {url}")
+          variant=re.compile(r'/\\d+(?:gb|tb|mm)/',re.I)
+          generated_block=generator[generator.index("function modelSeoMeta"):generator.index("function landingMeta")]
+          # Generator may filter legacy input links, but must never define a variant URL as a required link.
+          for line in generated_block.splitlines():
+            if "label:" in line and "url:" in line and variant.search(line):
+              raise SystemExit(f"Variant target hardcoded in model linking: {line.strip()}")
+          print("INTERNAL LINKING SEO V10 PASS: owner flow and variant exclusion present")
+          PY
       - name: Validate Information Center SEO V9 ownership
         run: |
           python3 - <<'PY'

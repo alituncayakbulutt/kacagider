@@ -97,7 +97,11 @@ function modelSeoMeta({kind,brand,model,variant,url,breadcrumbs,variants,links=[
     {label:`${brand} ikinci el ${config.name.toLocaleLowerCase("tr-TR")} fiyatları`,url:brandUrl},
     {label:`${config.name} ikinci el fiyatları`,url:categoryUrl},
     {label:categoryLandingConfig[kind].h1,url:categoryLandingConfig[kind].url},
-    ...(kind==="phone"?[{label:"Ücretsiz telefon ilanı ver",url:"/ucretsiz-ilan-ver/"}]:[]),
+    ...(kind==="phone"?[
+      {label:"Ücretsiz telefon ilanı ver",url:"/ucretsiz-ilan-ver/"},
+      {label:"Telefon değerini etkileyen faktörler",url:"/bilgi-merkezi/degerleme/telefon-degeri-nasil-hesaplanir/"},
+      {label:"Telefon satmadan önce yapılması gerekenler",url:"/bilgi-merkezi/satis-oncesi/telefon-satmadan-once/"}
+    ]:[]),
     {label:"İkinci el fiyat nasıl hesaplanır?",url:"/ikinci-el-fiyat-nasil-hesaplanir/"},
     ...cleanLinks
   ];
