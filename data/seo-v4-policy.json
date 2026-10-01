@@ -1,5 +1,5 @@
 {
-  "version": "7.0",
+  "version": "8.0",
   "goal": "Her arama niyeti için tek güçlü canonical sahip; değerleme, piyasa, satış ve bilgi içeriklerini birbirleriyle yarıştırmadan bağlamak",
   "page_ownership": {
     "phone_valuation": {
@@ -54,8 +54,20 @@
       "primary_intent": "ücretsiz ilan verme",
       "supporting_intents": [
         "ücretsiz ilan",
-        "ikinci el telefon sat"
-      ]
+        "telefon sat",
+        "ikinci el telefon sat",
+        "telefon satmak istiyorum",
+        "telefon sat fiyat al"
+      ],
+      "boundaries": {
+        "valuation_owner": "/telefonum-ne-kadar-eder/",
+        "market_owner": "/ikinci-el-telefon/",
+        "listing_page_does_not_own": [
+          "telefonum ne kadar eder",
+          "ikinci el telefon fiyatları"
+        ]
+      },
+      "role": "değerleme sonrasında kullanıcıyı ücretsiz ilan ve mevcut satış seçeneklerine bağlayan satış landing sayfası"
     },
     "methodology": {
       "url": "/ikinci-el-fiyat-nasil-hesaplanir/",
@@ -116,7 +128,9 @@
     "brand_links_to_model": true,
     "brand_links_to_category_and_valuation": true,
     "model_links_to_brand_category_valuation": true,
-    "model_variant_links_are_forbidden": true
+    "model_variant_links_are_forbidden": true,
+    "model_links_to_free_listing": true,
+    "free_listing_links_back_to_valuation": true
   },
   "quality": {
     "keyword_stuffing": false,
@@ -124,7 +138,8 @@
     "invented_models_or_storage": false,
     "content_owner": "KaçaGider veri ve içerik ekibi",
     "fixed_year_in_evergreen_title": false,
-    "model_content_uses_catalog_variants_only": true
+    "model_content_uses_catalog_variants_only": true,
+    "sale_copy_does_not_claim_kacagider_purchase_offer": true
   },
   "protected": [
     "valuation_engine",
