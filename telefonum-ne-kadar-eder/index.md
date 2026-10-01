@@ -7,7 +7,7 @@ seo_intro: "Telefonunun tahmini ikinci el değerini öğrenmek için marka, mode
 seo_context_heading: "Telefonumu kaça satabilirim?"
 seo_context: "Telefonunun satış değeri model, hafıza, pil sağlığı, ekran ve kasa durumu, değişen parçalar ve güncel piyasa koşullarına göre değişir. Sonuç bir satış garantisi değil, satış fiyatını belirlemene yardımcı olan değerleme referansıdır."
 seo_breadcrumbs: [{"label":"Ana Sayfa","url":"/"},{"label":"Telefon","url":"/telefon/"},{"label":"Telefonum Ne Kadar Eder?","url":"/telefonum-ne-kadar-eder/"}]
-seo_links: [{"label":"İkinci el telefon fiyatlarını incele","url":"/ikinci-el-telefon/"},{"label":"Telefon değerini etkileyen faktörler","url":"/bilgi-merkezi/degerleme/telefon-degeri-nasil-hesaplanir/"},{"label":"Telefon satmadan önce yapılması gerekenler","url":"/bilgi-merkezi/satis-oncesi/telefon-satmadan-once/"}]
+seo_links: [{"label":"İkinci el telefon fiyatlarını incele","url":"/ikinci-el-telefon/"},{"label":"Telefon değerini etkileyen faktörler","url":"/bilgi-merkezi/degerleme/telefon-degeri-nasil-hesaplanir/"},{"label":"Telefon satmadan önce yapılması gerekenler","url":"/bilgi-merkezi/satis-oncesi/telefon-satmadan-once/"},{"label":"İkinci el telefon satarken dikkat edilmesi gerekenler","url":"/bilgi-merkezi/satis-oncesi/ikinci-el-telefon-satarken/"},{"label":"Ücretsiz ilan ver","url":"/ucretsiz-ilan-ver/"}]
 seo_links_heading: "İlgili rehberler"
 seo_canonical: "https://kacagider.com.tr/telefonum-ne-kadar-eder/"
 seo_cta: {"url":"/telefon/","label":"Telefon Değerini Hesapla"}
