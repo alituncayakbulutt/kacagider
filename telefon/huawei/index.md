@@ -1,11 +1,11 @@
 ---
 layout: "seo"
-seo_title: "Huawei Telefon İkinci El Fiyatları 2026 | KaçaGider"
-seo_description: "Huawei Telefon modellerinin ikinci el değerini Türkiye ikinci el piyasası ve cihaz kondisyonuna göre KaçaGider ile inceleyin."
-seo_h1: "Huawei Telefon İkinci El Fiyatları"
-seo_intro: "Huawei Telefon modellerinin ikinci el değerini Türkiye ikinci el piyasası ve cihaz kondisyonuna göre KaçaGider ile inceleyin."
-seo_context_heading: "Huawei Telefon için ikinci el değerleme"
-seo_context: "Huawei Telefon modellerinin ikinci el değerini Türkiye ikinci el piyasası ve cihaz kondisyonuna göre KaçaGider ile inceleyin."
+seo_title: "Huawei İkinci El Fiyatları | KaçaGider"
+seo_description: "Huawei ikinci el telefon fiyatlarını ve piyasa değerini model bazında incele. Modelini seçerek cihaz durumuna göre güncel değerleme sayfasına geç."
+seo_h1: "Huawei İkinci El Telefon Fiyatları"
+seo_intro: "Huawei modellerinin ikinci el fiyatlarını tek marka merkezinde incele. Gerçek modelini seçerek hafıza ve cihaz durumuna göre güncel piyasa değerine ulaş."
+seo_context_heading: "Huawei ikinci el telefon piyasası"
+seo_context: "Huawei telefonlarda ikinci el değer; model, hafıza, kondisyon ve güncel piyasa koşullarına göre değişir. Marka ortalaması yerine gerçek model sayfasını kullanmak daha doğru bir değerleme referansı sağlar."
 seo_breadcrumbs: [{"label":"Ana Sayfa","url":"/"},{"label":"Telefon","url":"/telefon/"},{"label":"Huawei","url":"/telefon/huawei/"}]
 seo_links: [{"label":"P30","url":"/telefon/huawei/p30/"},{"label":"P30 Pro","url":"/telefon/huawei/p30-pro/"},{"label":"P40","url":"/telefon/huawei/p40/"},{"label":"P40 Pro","url":"/telefon/huawei/p40-pro/"},{"label":"P50 Pro","url":"/telefon/huawei/p50-pro/"},{"label":"P60 Pro","url":"/telefon/huawei/p60-pro/"},{"label":"Pura 70","url":"/telefon/huawei/pura-70/"},{"label":"Pura 70 Pro","url":"/telefon/huawei/pura-70-pro/"},{"label":"Pura 70 Ultra","url":"/telefon/huawei/pura-70-ultra/"},{"label":"Pura 80","url":"/telefon/huawei/pura-80/"},{"label":"Pura 80 Pro","url":"/telefon/huawei/pura-80-pro/"},{"label":"Pura 80 Ultra","url":"/telefon/huawei/pura-80-ultra/"},{"label":"Mate 40 Pro","url":"/telefon/huawei/mate-40-pro/"},{"label":"Mate 50 Pro","url":"/telefon/huawei/mate-50-pro/"},{"label":"Mate 60 Pro","url":"/telefon/huawei/mate-60-pro/"},{"label":"Mate 70 Pro","url":"/telefon/huawei/mate-70-pro/"},{"label":"Nova 9","url":"/telefon/huawei/nova-9/"},{"label":"Nova 10","url":"/telefon/huawei/nova-10/"},{"label":"Nova 10 Pro","url":"/telefon/huawei/nova-10-pro/"},{"label":"Nova 11","url":"/telefon/huawei/nova-11/"},{"label":"Nova 11 Pro","url":"/telefon/huawei/nova-11-pro/"},{"label":"Nova 12","url":"/telefon/huawei/nova-12/"},{"label":"Nova 12 SE","url":"/telefon/huawei/nova-12-se/"},{"label":"Nova 13","url":"/telefon/huawei/nova-13/"},{"label":"Nova 13 Pro","url":"/telefon/huawei/nova-13-pro/"},{"label":"Nova Y70","url":"/telefon/huawei/nova-y70/"},{"label":"Nova Y90","url":"/telefon/huawei/nova-y90/"},{"label":"Nova Y91","url":"/telefon/huawei/nova-y91/"}]
 seo_links_heading: "Huawei modelleri"
