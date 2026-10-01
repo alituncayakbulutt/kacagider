@@ -1,6 +1,6 @@
 ---
 layout: "seo"
-seo_title: "Realme İkinci El Telefon Fiyatları ve Piyasa Değeri | KaçaGider"
+seo_title: "Realme İkinci El Fiyatları | KaçaGider"
 seo_description: "Realme ikinci el telefon fiyatlarını ve piyasa değerini model bazında incele. Modelini seçerek cihaz durumuna göre güncel değerleme sayfasına geç."
 seo_h1: "Realme İkinci El Telefon Fiyatları"
 seo_intro: "Realme modellerinin ikinci el fiyatlarını tek marka merkezinde incele. Gerçek modelini seçerek hafıza ve cihaz durumuna göre güncel piyasa değerine ulaş."
