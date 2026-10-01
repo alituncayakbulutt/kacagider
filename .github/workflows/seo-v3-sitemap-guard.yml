@@ -6,6 +6,7 @@ on:
     paths:
       - "sitemap.xml"
       - "robots.txt"
+      - "_redirects"
       - "telefon/**"
       - "tablet/**"
       - "bilgisayar/**"
@@ -47,4 +48,24 @@ jobs:
             if len(parts)==4 and parts[0] in {"telefon","tablet","bilgisayar","akilli-saat","oyun-konsolu"} and variant.fullmatch(parts[-1]): leaked.append(url)
           if leaked: raise SystemExit(f"Variant URLs in sitemap: {leaked[:10]}")
           print(f"SEO RESET SITEMAP PASS: {len(urls)} unique canonical URLs")
+          PY
+      - name: Validate legacy variant redirects
+        run: |
+          python3 - <<'PY'
+          import re
+          from pathlib import Path
+          variant=re.compile(r"/(?:\\d+(?:gb|tb|mm))/$",re.I)
+          lines=[line.strip() for line in Path("_redirects").read_text().splitlines() if line.strip() and not line.lstrip().startswith("#")]
+          if len(lines)>2000: raise SystemExit(f"Too many static redirects for Pages: {len(lines)}")
+          sources=set()
+          for line in lines:
+            parts=line.split()
+            if len(parts)!=3 or parts[2]!="301": raise SystemExit(f"Invalid redirect rule: {line}")
+            source,target,_=parts
+            if source in sources: raise SystemExit(f"Duplicate redirect source: {source}")
+            sources.add(source)
+            if source==target: raise SystemExit(f"Self redirect: {source}")
+            if not variant.search(source): raise SystemExit(f"Unexpected non-variant source: {source}")
+            if variant.search(target): raise SystemExit(f"Redirect chain risk: {line}")
+          print(f"SEO REDIRECT PASS: {len(lines)} unique permanent variant redirects")
           PY
