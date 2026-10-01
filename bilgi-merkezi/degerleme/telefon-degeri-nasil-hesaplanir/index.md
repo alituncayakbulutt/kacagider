@@ -1,16 +1,16 @@
 ---
 layout: "seo"
-seo_title: "Telefonun Değeri Nasıl Hesaplanır? İkinci El Piyasa Değeri | KaçaGider"
+seo_title: "Telefon Değerini Etkileyen Faktörler | KaçaGider"
 seo_description: "İkinci el telefon piyasa değeri; marka, model, depolama, ekran, pil, kondisyon, değişen parçalar ve güncel satış sinyallerine göre nasıl belirlenir öğrenin."
-seo_h1: "Telefonun İkinci El Değeri Nasıl Belirlenir?"
+seo_h1: "Telefon Değerini Etkileyen Faktörler"
 seo_intro: "Telefonun ikinci el piyasa değeri; marka, model ve depolamanın yanında ekran, pil, kasa, cihaz kaydı, onarım geçmişi ve güncel piyasa hareketlerinden etkilenir."
 seo_canonical: "https://kacagider.com.tr/bilgi-merkezi/degerleme/telefon-degeri-nasil-hesaplanir/"
 seo_breadcrumbs: [{"label":"Ana Sayfa","url":"/"},{"label":"Bilgi Merkezi","url":"/bilgi-merkezi/"},{"label":"İkinci El Cihaz Değerleme","url":"/bilgi-merkezi/degerleme/"},{"label":"Telefon Değeri Nasıl Belirlenir?","url":"/bilgi-merkezi/degerleme/telefon-degeri-nasil-hesaplanir/"}]
-seo_cta: {"url":"/telefon/","label":"Telefonunun Güncel Piyasa Değerini Öğren"}
+seo_cta: {"url":"/telefonum-ne-kadar-eder/","label":"Telefonunun Güncel Piyasa Değerini Öğren"}
 seo_context_heading: "İlan fiyatı ile gerçekleşen satış fiyatını ayırmak gerekir"
 seo_context: "Bir telefona ait ilanlarda görülen rakamlar satıcıların talep ettiği fiyatlardır ve her zaman gerçekleşen satış değerini temsil etmez. KaçaGider, piyasa kayıtlarını ve gerçekleşen satış sinyallerini cihaz kondisyonuyla birlikte değerlendirerek ortalama satış değerine yakın bir piyasa referansı sunmayı amaçlar."
 seo_links_heading: "İlgili bağlantılar"
-seo_links: [{"label":"İkinci El Cihaz Değerleme","url":"/bilgi-merkezi/degerleme/"},{"label":"Telefon Satmadan Önce Yapılması Gerekenler","url":"/bilgi-merkezi/satis-oncesi/telefon-satmadan-once/"},{"label":"Telefonum Ne Kadar Eder?","url":"/telefon/"}]
+seo_links: [{"label":"İkinci El Cihaz Değerleme","url":"/bilgi-merkezi/degerleme/"},{"label":"Telefon Satmadan Önce Yapılması Gerekenler","url":"/bilgi-merkezi/satis-oncesi/telefon-satmadan-once/"},{"label":"Telefonum Ne Kadar Eder?","url":"/telefonum-ne-kadar-eder/"}]
 seo_sections: [{"title":"Marka, model ve depolama","text":"Marka, model ve depolama kapasitesi ikinci el piyasa değerinin temelini oluşturur. Aynı serideki farklı kapasite seçenekleri ve bölgesel cihaz varyantları farklı fiyat aralıklarında işlem görebilir."},{"title":"Ekran, kasa ve pil kondisyonu","text":"Çizik, darbe, ekran hasarı, kasa deformasyonu ve pil performansı alıcının ödemeye razı olduğu rakamı etkiler. Kondisyon ne kadar net belirtilirse benzer cihazlarla karşılaştırma o kadar sağlıklı olur."},{"title":"Cihaz kaydı ve onarım geçmişi","text":"Türkiye cihazı veya kayıt durumu ile değişen ekran, batarya, kasa ya da diğer parçalar ikinci el piyasa algısını etkileyebilir. Onarım geçmişi mümkün olduğunca açık değerlendirilmelidir."},{"title":"Piyasa kayıtları ve gerçekleşen satışlar","text":"Tek bir yüksek veya düşük ilan fiyatı piyasanın tamamını temsil etmez. Güncel ilan aralıkları, gerçekleşen satış bildirimleri ve kondisyon farkları birlikte değerlendirildiğinde daha dengeli bir piyasa referansı oluşur."},{"title":"Doğru satış fiyatına yaklaşmak","text":"Amaç cihazı olduğundan pahalı veya ucuz göstermek değil; benzer cihazların güncel piyasa karşılığını anlamaktır. Böylece satıcı ilan fiyatını piyasanın gerçekçi aralığına daha yakın konumlandırabilir."}]
 seo_faqs: [{"question":"Telefonun ekran durumu fiyatı etkiler mi?","answer":"Evet. Ekranın fiziksel ve işlevsel durumu ikinci el piyasa değerini doğrudan etkileyebilir."},{"question":"Pil sağlığı ikinci el fiyatını etkiler mi?","answer":"Evet. Özellikle yoğun kullanılan telefonlarda pil performansı alıcının fiyat algısını ve satış değerini etkileyebilir."},{"question":"İlanlardaki en yüksek fiyat piyasa değeri midir?","answer":"Hayır. İlan fiyatı satıcının talep ettiği rakamdır. Piyasa değerini değerlendirirken farklı ilanlar, gerçekleşen satış sinyalleri ve cihaz kondisyonu birlikte ele alınmalıdır."}]
 ---
