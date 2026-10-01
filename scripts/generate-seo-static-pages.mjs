@@ -93,7 +93,7 @@ function modelSeoMeta({kind,brand,model,variant,url,breadcrumbs,variants,links=[
   const uniqueLinks=[...new Map(related.map(link=>[link.url,link])).values()];
   return {layout:"seo",seo_title:`${displaySubject} Ne Kadar Eder? ${brandInModel?"Güncel İkinci El Fiyatı":"İkinci El Fiyatı"} | KaçaGider`,seo_description:description,seo_h1:variant?`${displaySubject} İkinci El Fiyatı`:`${subject} Ne Kadar Eder?`,seo_intro:`${displaySubject} için güncel ikinci el değerini, gerçek cihaz bilgileri ve kondisyon ayrıntılarıyla KaçaGider üzerinden inceleyin.`,seo_context_heading:`${displaySubject} için güncel değerleme`,seo_context:`${displaySubject} değeri; ${config.context} ile birlikte güncel piyasa koşullarına göre değişebilir.`,seo_breadcrumbs:breadcrumbs,seo_links:uniqueLinks,seo_links_heading:`${displaySubject} ilgili sayfalar`,seo_canonical:absolute(url),seo_cta:{url:`/${config.path}/`,label:`${config.name} değerini hesapla`},seo_sections:[
     {title:`${displaySubject} Kaça Satılır?`,text:`${displaySubject} için tek bir sabit satış fiyatı yoktur. Cihazın kondisyonu, özellikleri ve güncel piyasa koşulları gerçek satış değerini etkiler.`},
-    {title:`${displaySubject} İkinci El Fiyatı`,text:`${displaySubject} ikinci el fiyatı, mevcut seçenekler ve cihazın kullanım durumuna göre değerlendirilir.${optionText?` Bu sayfada bulunan seçenekler: ${optionText}.`:""}`},
+    {title:`${displaySubject} İkinci El Fiyatı`,text:`${displaySubject} ikinci el fiyatı ve ikinci el piyasası, mevcut seçenekler ve cihazın kullanım durumuna göre değerlendirilir.${optionText?` Bu sayfada bulunan seçenekler: ${optionText}. Depolama seçenekleri ayrı SEO sayfası oluşturmaz; aynı model sayfasında değerlendirilir.`:""}`},
     {title:`${displaySubject} Piyasa Değeri`,text:`KaçaGider piyasa değeri, seçilen ürün bilgilerini ve ${config.context} ayrıntılarını birlikte değerlendirerek bir başlangıç referansı sunar.`},
     {title:`${displaySubject} Değeri Nasıl Hesaplanır?`,text:`Marka, model, ${config.variantTerm} ve kondisyon bilgilerini değerleme ekranında seçin. Sonuç, cihazın gerçek durumu ile piyasa koşullarına göre değişebilir.`}
   ],seo_faqs:[
@@ -115,7 +115,7 @@ function landingMeta({kind}){
 function infoMeta(){
   const url="/ikinci-el-fiyat-nasil-hesaplanir/";
   const links=Object.values(categoryLandingConfig).map(landing=>({label:landing.h1,url:landing.url}));
-  return {layout:"seo",seo_title:"İkinci El Fiyat Nasıl Hesaplanır? | KaçaGider",seo_description:"İkinci el telefon, tablet, bilgisayar, akıllı saat ve oyun konsolu fiyatlarının hangi bilgilerle hesaplandığını öğrenin.",seo_h1:"İkinci El Fiyat Nasıl Hesaplanır?",seo_intro:"İkinci el piyasa değeri; ürünün modeli, kapasitesi ve gerçek kondisyonu birlikte değerlendirilerek anlaşılır.",seo_context_heading:"KaçaGider değerleme yaklaşımı",seo_context:"KaçaGider, kullanıcı tarafından seçilen ürün bilgilerini ve kondisyon ayrıntılarını güncel piyasa referansı olarak değerlendirir.",seo_breadcrumbs:[{label:"Ana Sayfa",url:"/"},{label:"İkinci El Fiyat Nasıl Hesaplanır?",url}],seo_links:links,seo_links_heading:"Kategori değerleme sayfaları",seo_canonical:absolute(url),seo_sections:[{title:"Model ve kapasite",text:"Aynı ürün ailesindeki model ve kapasite farkları ikinci el değerini değiştirebilir. Bu nedenle değerleme sırasında doğru seçenekleri seçmek önemlidir."},{title:"Kondisyon bilgileri",text:"Ekran, kasa, pil, çalışmayan özellikler ve kullanım durumu gibi gerçek bilgiler sonucu etkileyebilir."},{title:"Piyasa koşulları",text:"Gösterilen değer güncel piyasa koşullarına göre bir referanstır; gerçek satış fiyatı ürünün durumuna ve satış şartlarına göre değişebilir."}],seo_faqs:[{question:"İkinci el fiyat hangi bilgilere göre hesaplanır?",answer:"Model, kapasite veya ilgili ürün özelliği, kondisyon ve güncel piyasa koşulları birlikte değerlendirilir."},{question:"KaçaGider sonucu kesin satış fiyatı mı?",answer:"Hayır. Sonuç, gerçek satış kararına yardımcı olan güncel bir piyasa referansıdır."}]};
+  return {layout:"seo",seo_title:"İkinci El Cihaz Fiyatı Nasıl Hesaplanır? | KaçaGider",seo_description:"Telefon, tablet, bilgisayar, akıllı saat ve oyun konsolu gibi ikinci el cihazların fiyatını belirleyen model, kapasite, kondisyon ve piyasa faktörlerini öğren.",seo_h1:"İkinci El Cihaz Fiyatı Nasıl Hesaplanır?",seo_intro:"Bu rehber, farklı ikinci el cihaz kategorilerinde piyasa değerinin hangi temel bilgilerle değerlendirildiğini açıklar.",seo_context_heading:"İkinci el cihaz değerlemesinin temel unsurları",seo_context:"Ürün türü, marka, model, kapasite veya ilgili varyant, gerçek kondisyon ve güncel piyasa koşulları birlikte değerlendirilir.",seo_breadcrumbs:[{label:"Ana Sayfa",url:"/"},{label:"İkinci El Fiyat Nasıl Hesaplanır?",url}],seo_links:links,seo_links_heading:"Kategori değerleme sayfaları",seo_canonical:absolute(url),seo_sections:[{title:"Model ve kapasite",text:"Aynı ürün ailesindeki model ve kapasite farkları ikinci el değerini değiştirebilir. Bu nedenle değerleme sırasında doğru seçenekleri seçmek önemlidir."},{title:"Kondisyon bilgileri",text:"Ekran, kasa, pil, çalışmayan özellikler ve kullanım durumu gibi gerçek bilgiler sonucu etkileyebilir."},{title:"Piyasa koşulları",text:"Gösterilen değer güncel piyasa koşullarına göre bir referanstır; gerçek satış fiyatı ürünün durumuna ve satış şartlarına göre değişebilir."}],seo_faqs:[{question:"İkinci el fiyat hangi bilgilere göre hesaplanır?",answer:"Model, kapasite veya ilgili ürün özelliği, kondisyon ve güncel piyasa koşulları birlikte değerlendirilir."},{question:"KaçaGider sonucu kesin satış fiyatı mı?",answer:"Hayır. Sonuç, gerçek satış kararına yardımcı olan güncel bir piyasa referansıdır."}]};
 }
 
 function seoCopy({kind,model,variant,brand}){
@@ -138,6 +138,15 @@ function pageMeta({kind,brand,model,variant,url,breadcrumbs,links,linksHeading})
   let intro=description;
   let contextHeading=`${subject} için ikinci el değerleme`;
   let context=seoCopy({kind,brand,model,variant});
+
+  if(brand&&!model&&!variant){
+    h1=`${brand} İkinci El ${config.name} Fiyatları`;
+    title=`${h1} | KaçaGider`;
+    description=`${brand} ${config.name} modellerinin ikinci el fiyatlarını ve piyasa değerlerini incele. Modele göre güncel değerleme sayfalarına ulaş.`;
+    intro=`${brand} ${config.name} modellerinin ikinci el fiyatları model, ${config.context} ve güncel piyasa koşullarına göre değişir.`;
+    contextHeading=`${brand} ikinci el ${config.name} piyasası`;
+    context=`Bu sayfa ${brand} ${config.name} modellerinin fiyat ve piyasa görünümünün ana marka sayfasıdır. Kendi cihazının değerini öğrenmek için ilgili model sayfasına geç.`;
+  }
 
   if(!brand&&!model&&!variant){
     const roots={
