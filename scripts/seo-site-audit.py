@@ -98,7 +98,13 @@ def is_device_variant(path: Path):
     return bool(VARIANT_RE.fullmatch(parts[-2]))
 
 
+def is_information_center(path: Path):
+    return bool(path.parts and path.parts[0] == 'bilgi-merkezi')
+
+
 def requires_primary_sitemap(path: Path, canonical: str):
+    if is_information_center(path):
+        return False
     if is_device_variant(path):
         return False
     if is_consolidated_alias(path, canonical):
@@ -186,7 +192,9 @@ for desc, paths in descriptions.items():
 
 robots = Path('robots.txt').read_text(encoding='utf-8') if Path('robots.txt').exists() else ''
 if f'Sitemap: {SITE}/sitemap.xml' not in robots:
-    errors.append('robots.txt: sitemap declaration missing or wrong')
+    errors.append('robots.txt: primary sitemap declaration missing or wrong')
+if f'Sitemap: {SITE}/sitemap-bilgi.xml' not in robots:
+    errors.append('robots.txt: information sitemap declaration missing or wrong')
 
 index = Path('index.html').read_text(encoding='utf-8')
 layout = Path('_layouts/seo.html').read_text(encoding='utf-8')
@@ -228,8 +236,8 @@ sitemap = Path('sitemap.xml').read_text(encoding='utf-8') if Path('sitemap.xml')
 if any(host in sitemap for host in ('localhost', 'github.dev', 'app.github.dev')):
     errors.append('sitemap.xml: preview/local URL found')
 
-# V3 primary sitemap deliberately excludes storage/mm variants and consolidated
-# aliases. Category/brand/model/core self-canonicals are still required.
+# V11 primary sitemap deliberately excludes Bilgi Merkezi pages, storage/mm variants and consolidated
+# aliases. Bilgi Merkezi canonicals are owned by sitemap-bilgi.xml; category/brand/model/core self-canonicals remain required.
 for canonical in sorted(set(primary_sitemap_canonicals)):
     if canonical not in sitemap:
         errors.append(f'sitemap.xml: missing primary URL {canonical}')
