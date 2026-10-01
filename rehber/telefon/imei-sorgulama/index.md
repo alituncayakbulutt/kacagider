@@ -5,7 +5,7 @@ seo_description: "IMEI numarasını öğrenme, BTK/e-Devlet üzerinden telefon k
 seo_h1: "IMEI Sorgulama"
 seo_intro: "Telefonunuzun IMEI numarasını kontrol ederek resmi BTK/e-Devlet hizmetinde kayıt ve kayıp/çalıntı durumunu sorgulayabilirsiniz."
 seo_breadcrumbs: [{"label":"Ana Sayfa","url":"/"},{"label":"Bilgi Merkezi","url":"/#viewDidYouKnow"},{"label":"Telefon","url":"/telefon/"},{"label":"IMEI Sorgulama","url":"/rehber/telefon/imei-sorgulama/"}]
-seo_canonical: "https://kacagider.com.tr/rehber/telefon/imei-sorgulama/"
+seo_canonical: "https://kacagider.com.tr/bilgi-merkezi/satis-oncesi/imei-sorgulama/"
 seo_guide: true
 seo_guide_heading: "IMEI numarası nasıl öğrenilir?"
 seo_guide_answer: "Telefonunuzun arama ekranına *#06# yazarak IMEI numarasını görüntüleyebilirsiniz. Bazı cihazlarda Ayarlar, cihaz kutusu veya fatura üzerinde de bulunur."
