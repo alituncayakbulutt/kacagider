@@ -1,6 +1,6 @@
 ---
 layout: "seo"
-seo_title: "OnePlus İkinci El Telefon Fiyatları ve Piyasa Değeri | KaçaGider"
+seo_title: "OnePlus İkinci El Fiyatları | KaçaGider"
 seo_description: "OnePlus ikinci el telefon fiyatlarını ve piyasa değerini model bazında incele. Modelini seçerek cihaz durumuna göre güncel değerleme sayfasına geç."
 seo_h1: "OnePlus İkinci El Telefon Fiyatları"
 seo_intro: "OnePlus modellerinin ikinci el fiyatlarını tek marka merkezinde incele. Gerçek modelini seçerek hafıza ve cihaz durumuna göre güncel piyasa değerine ulaş."
