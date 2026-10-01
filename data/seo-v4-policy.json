@@ -1,5 +1,5 @@
 {
-  "version": "6.0",
+  "version": "7.0",
   "goal": "Her arama niyeti için tek güçlü canonical sahip; değerleme, piyasa, satış ve bilgi içeriklerini birbirleriyle yarıştırmadan bağlamak",
   "page_ownership": {
     "phone_valuation": {
@@ -29,17 +29,25 @@
       "role": "gerçek modelleri model sayfalarına dağıtan marka merkezi"
     },
     "model": {
-      "url_pattern": "/telefon/[marka]/[model]/",
+      "url_pattern": "/[kategori]/[marka]/[model]/",
       "primary_intent_pattern": "[model] ne kadar eder",
       "supporting_intent_patterns": [
         "[model] ikinci el fiyatı",
         "[model] kaça satılır",
         "[model] satsam ne kadar eder",
+        "[model] piyasa değeri",
         "[model] ikinci el piyasası",
         "[model] [hafıza] ikinci el fiyatı"
       ],
       "one_canonical_per_model": true,
-      "storage_urls": false
+      "storage_urls": false,
+      "required_sections": [
+        "kaça satılır",
+        "ikinci el fiyatı",
+        "piyasa değeri",
+        "değeri nasıl hesaplanır",
+        "gerçek varyant seçenekleri varsa aynı sayfada"
+      ]
     },
     "free_listing": {
       "url": "/ucretsiz-ilan-ver/",
@@ -106,14 +114,17 @@
     "faq_schema_requires_visible_faq": true,
     "breadcrumb_matches_url_hierarchy": true,
     "brand_links_to_model": true,
-    "brand_links_to_category_and_valuation": true
+    "brand_links_to_category_and_valuation": true,
+    "model_links_to_brand_category_valuation": true,
+    "model_variant_links_are_forbidden": true
   },
   "quality": {
     "keyword_stuffing": false,
     "fake_reviews_ratings_or_offers": false,
     "invented_models_or_storage": false,
     "content_owner": "KaçaGider veri ve içerik ekibi",
-    "fixed_year_in_evergreen_title": false
+    "fixed_year_in_evergreen_title": false,
+    "model_content_uses_catalog_variants_only": true
   },
   "protected": [
     "valuation_engine",
