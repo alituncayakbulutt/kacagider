@@ -141,16 +141,21 @@ function pageMeta({kind,brand,model,variant,url,breadcrumbs,links,linksHeading})
 
   if(brand&&!model&&!variant){
     h1=`${brand} İkinci El ${config.name} Fiyatları`;
-    title=`${h1} | KaçaGider`;
-    description=`${brand} ${config.name} modellerinin ikinci el fiyatlarını ve piyasa değerlerini incele. Modele göre güncel değerleme sayfalarına ulaş.`;
-    intro=`${brand} ${config.name} modellerinin ikinci el fiyatları model, ${config.context} ve güncel piyasa koşullarına göre değişir.`;
+    title=`${h1} ve Piyasa Değeri | KaçaGider`;
+    description=`${brand} ${config.name} ikinci el fiyatlarını ve piyasa değerini model bazında incele. Gerçek modelini seçerek cihaz durumuna göre güncel değerleme sayfasına geç.`;
+    intro=`${brand} ${config.name} modellerinin ikinci el fiyatlarını tek marka merkezinde incele. Modelini seçerek ${config.context} bilgilerine göre güncel piyasa değerine ulaş.`;
     contextHeading=`${brand} ikinci el ${config.name} piyasası`;
-    context=`Bu sayfa ${brand} ${config.name} modellerinin fiyat ve piyasa görünümünün ana marka sayfasıdır. Kendi cihazının değerini öğrenmek için ilgili model sayfasına geç.`;
+    context=`${brand} modellerinde ikinci el değer; model, ${config.context} ve güncel piyasa koşullarına göre değişir. Marka ortalaması yerine gerçek model sayfasını kullanmak daha doğru bir değerleme referansı sağlar.`;
+    links=[...links,
+      {label:`${config.name} ikinci el fiyatları`,url:`/${config.path}/`},
+      {label:categoryLandingConfig[kind].h1,url:categoryLandingConfig[kind].url},
+      ...(kind==="phone"?[{label:"Ücretsiz telefon ilanı ver",url:"/ucretsiz-ilan-ver/"}]:[])
+    ];
   }
 
   if(!brand&&!model&&!variant){
     const roots={
-      phone:{title:"Telefonum Ne Kadar Eder? 2026 İkinci El Fiyatları | KaçaGider",h1:"Telefonum Ne Kadar Eder? 2026 İkinci El Telefon Fiyatları",description:"Telefonum ne kadar eder, kaç para eder veya kaça satılır? Marka, model, hafıza ve kondisyonu seç; 2026 güncel ikinci el piyasa değerini ücretsiz öğren."},
+      phone:{title:"İkinci El Telefon Fiyatları ve Piyasa Değeri | KaçaGider",h1:"İkinci El Telefon Fiyatları",description:"İkinci el telefon fiyatlarını marka ve model bazında incele. Apple, Samsung, Xiaomi, OPPO ve diğer telefonların piyasa değerine ulaş; kendi cihazın için değerleme yap."},
       tablet:{title:"Tabletim Ne Kadar Eder? İkinci El Tablet Fiyatları | KaçaGider",h1:"Tabletim Ne Kadar Eder? İkinci El Tablet Fiyatları",description:"Tabletim ne kadar eder, tabletimi kaça satarım? iPad, Samsung, Xiaomi, Huawei, Lenovo ve Honor modellerinde güncel ikinci el piyasa değerini öğren."},
       computer:{title:"Bilgisayarım Ne Kadar Eder? İkinci El Laptop Fiyatları | KaçaGider",h1:"Bilgisayarım Ne Kadar Eder? İkinci El Laptop Fiyatları",description:"Bilgisayarım ne kadar eder, laptopumu kaça satarım? MacBook, Asus, Lenovo, HP, Dell, MSI ve diğer modellerde güncel ikinci el piyasa değerini öğren."},
       watch:{title:"Akıllı Saatim Ne Kadar Eder? İkinci El Saat Fiyatları | KaçaGider",h1:"Akıllı Saatim Ne Kadar Eder? İkinci El Saat Fiyatları",description:"Akıllı saatim ne kadar eder, saatimi kaça satarım? Apple Watch, Samsung Galaxy Watch ve Huawei modellerinde güncel ikinci el piyasa değerini öğren."},
