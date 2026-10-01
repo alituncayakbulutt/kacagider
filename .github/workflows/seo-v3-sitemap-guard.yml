@@ -9,6 +9,7 @@ on:
       - "_redirects"
       - "scripts/generate-seo-static-pages.mjs"
       - "data/seo-v4-policy.json"
+      - "ucretsiz-ilan-ver/index.md"
       - "telefon/**"
       - "tablet/**"
       - "bilgisayar/**"
@@ -50,6 +51,25 @@ jobs:
             if len(parts)==4 and parts[0] in {"telefon","tablet","bilgisayar","akilli-saat","oyun-konsolu"} and variant.fullmatch(parts[-1]): leaked.append(url)
           if leaked: raise SystemExit(f"Variant URLs in sitemap: {leaked[:10]}")
           print(f"SEO RESET SITEMAP PASS: {len(urls)} unique canonical URLs")
+          PY
+      - name: Validate free listing SEO V8 ownership
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          page=Path("ucretsiz-ilan-ver/index.md").read_text()
+          required=[
+            'seo_page_type: "free_listing"',
+            'seo_h1: "Ücretsiz İlan Ver"',
+            'İkinci El Telefon Sat',
+            'Telefon Sat Fiyat Al',
+            'https://kacagider.com.tr/ucretsiz-ilan-ver/',
+            '/telefonum-ne-kadar-eder/'
+          ]
+          missing=[item for item in required if item not in page]
+          if missing: raise SystemExit(f"Free listing SEO V8 ownership missing: {missing}")
+          if 'satın alma teklifi veya satış garantisi değildir' not in page:
+            raise SystemExit("Free listing page must distinguish valuation from a purchase offer")
+          print("FREE LISTING SEO V8 PASS: listing/sale intent owner and valuation boundary present")
           PY
       - name: Validate model SEO V7 generator rules
         run: |
