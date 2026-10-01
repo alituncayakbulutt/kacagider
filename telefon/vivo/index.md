@@ -1,6 +1,6 @@
 ---
 layout: "seo"
-seo_title: "Vivo İkinci El Telefon Fiyatları ve Piyasa Değeri | KaçaGider"
+seo_title: "Vivo İkinci El Fiyatları | KaçaGider"
 seo_description: "Vivo ikinci el telefon fiyatlarını ve piyasa değerini model bazında incele. Modelini seçerek cihaz durumuna göre güncel değerleme sayfasına geç."
 seo_h1: "Vivo İkinci El Telefon Fiyatları"
 seo_intro: "Vivo modellerinin ikinci el fiyatlarını tek marka merkezinde incele. Gerçek modelini seçerek hafıza ve cihaz durumuna göre güncel piyasa değerine ulaş."
