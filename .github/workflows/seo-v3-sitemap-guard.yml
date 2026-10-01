@@ -7,6 +7,8 @@ on:
       - "sitemap.xml"
       - "robots.txt"
       - "_redirects"
+      - "scripts/generate-seo-static-pages.mjs"
+      - "data/seo-v4-policy.json"
       - "telefon/**"
       - "tablet/**"
       - "bilgisayar/**"
@@ -48,6 +50,24 @@ jobs:
             if len(parts)==4 and parts[0] in {"telefon","tablet","bilgisayar","akilli-saat","oyun-konsolu"} and variant.fullmatch(parts[-1]): leaked.append(url)
           if leaked: raise SystemExit(f"Variant URLs in sitemap: {leaked[:10]}")
           print(f"SEO RESET SITEMAP PASS: {len(urls)} unique canonical URLs")
+          PY
+      - name: Validate model SEO V7 generator rules
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          source=Path("scripts/generate-seo-static-pages.mjs").read_text()
+          required=[
+            'seo_page_type:"model"',
+            'Ne Kadar Eder? İkinci El Fiyatı | KaçaGider',
+            'İkinci El Fiyatı',
+            'Piyasa Değeri',
+            'Değeri Nasıl Hesaplanır?',
+            'cleanLinks=(links||[]).filter',
+            'categoryLandingConfig[kind].url'
+          ]
+          missing=[item for item in required if item not in source]
+          if missing: raise SystemExit(f"Model SEO V7 generator rule missing: {missing}")
+          print("MODEL SEO V7 PASS: single-canonical intent template and variant-link filtering present")
           PY
       - name: Validate legacy variant redirects
         run: |
