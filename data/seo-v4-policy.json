@@ -1,5 +1,5 @@
 {
-  "version": "10.0",
+  "version": "11.0",
   "goal": "Her arama niyeti için tek güçlü canonical sahip; değerleme, piyasa, satış ve bilgi içeriklerini birbirleriyle yarıştırmadan bağlamak",
   "page_ownership": {
     "phone_valuation": {
@@ -161,7 +161,9 @@
     "information_guides_link_to_commercial_owner": true,
     "duplicate_information_intents_must_consolidate": true,
     "internal_links_follow_page_ownership": true,
-    "internal_links_do_not_target_variant_urls": true
+    "internal_links_do_not_target_variant_urls": true,
+    "sitemaps_have_exclusive_url_ownership": true,
+    "redirect_sources_are_excluded_from_sitemaps": true
   },
   "quality": {
     "keyword_stuffing": false,
@@ -199,6 +201,29 @@
       "storage_variant",
       "watch_size_variant",
       "duplicate_intent"
+    ]
+  },
+  "indexing": {
+    "primary_sitemap": "/sitemap.xml",
+    "information_sitemap": "/sitemap-bilgi.xml",
+    "primary_owns": [
+      "core_commercial",
+      "category",
+      "brand_with_models",
+      "model_with_real_catalog_data",
+      "methodology",
+      "trust"
+    ],
+    "information_owns": [
+      "information_hub",
+      "information_guide_with_distinct_intent"
+    ],
+    "rules": [
+      "no_url_in_multiple_sitemaps",
+      "no_redirect_source_in_sitemap",
+      "no_storage_or_size_variant_in_sitemap",
+      "robots_declares_both_sitemaps",
+      "indexable_pages_use_self_canonical"
     ]
   }
 }

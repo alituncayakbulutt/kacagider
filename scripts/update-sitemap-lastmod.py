@@ -28,8 +28,8 @@ def is_device_variant_url(url: str) -> bool:
     /telefon/apple/iphone-15-pro-max/256gb/
     /akilli-saat/apple/apple-watch-series-10/42mm/
 
-    The route remains live and indexable. This only prevents thin variants from
-    competing with the model URL for crawl priority in the primary sitemap.
+    Legacy variant routes are consolidated to their model owners with permanent
+    redirects. They must never be promoted as independent sitemap targets.
     """
     parts = route_parts(url)
     return (
@@ -39,8 +39,15 @@ def is_device_variant_url(url: str) -> bool:
     )
 
 
+def is_information_center_url(url: str) -> bool:
+    parts = route_parts(url)
+    return bool(parts and parts[0] == 'bilgi-merkezi')
+
+
 def is_sitemap_eligible(url: str) -> bool:
-    return not is_device_variant_url(url)
+    # Primary sitemap owns commercial/catalog/core pages. Bilgi Merkezi has its
+    # own sitemap so the same canonical URL is never submitted in both files.
+    return not is_device_variant_url(url) and not is_information_center_url(url)
 
 
 def url_to_source(url: str):
@@ -143,6 +150,10 @@ def prune_entry(match):
         prune_entry.variant_removed += 1
         return ''
 
+    if is_information_center_url(url):
+        prune_entry.information_removed += 1
+        return ''
+
     if not url_to_source(url):
         prune_entry.stale_removed += 1
         return ''
@@ -153,6 +164,7 @@ def prune_entry(match):
 replace_entry.changed = 0
 prune_entry.variant_removed = 0
 prune_entry.stale_removed = 0
+prune_entry.information_removed = 0
 text = SITEMAP.read_text(encoding='utf-8')
 updated = URL_RE.sub(replace_entry, text)
 
@@ -189,6 +201,7 @@ if updated != text:
     print(
         f'Sitemap synced: {replace_entry.changed} lastmod update(s), '
         f'{prune_entry.variant_removed} device variant URL(s) suppressed, '
+        f'{prune_entry.information_removed} Information Center URL(s) moved to sitemap-bilgi, '
         f'{prune_entry.stale_removed} stale URL(s) removed, '
         f'{len(missing_entries)} missing canonical page(s) added.'
     )
