@@ -10,6 +10,8 @@ on:
       - "scripts/generate-seo-static-pages.mjs"
       - "data/seo-v4-policy.json"
       - "ucretsiz-ilan-ver/index.md"
+      - "bilgi-merkezi/**"
+      - "sitemap-bilgi.xml"
       - "telefon/**"
       - "tablet/**"
       - "bilgisayar/**"
@@ -51,6 +53,29 @@ jobs:
             if len(parts)==4 and parts[0] in {"telefon","tablet","bilgisayar","akilli-saat","oyun-konsolu"} and variant.fullmatch(parts[-1]): leaked.append(url)
           if leaked: raise SystemExit(f"Variant URLs in sitemap: {leaked[:10]}")
           print(f"SEO RESET SITEMAP PASS: {len(urls)} unique canonical URLs")
+          PY
+      - name: Validate Information Center SEO V9 ownership
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          required={
+            "bilgi-merkezi/satis-oncesi/telefon-satmadan-once/index.md":"Telefon Satmadan Önce Yapılması Gerekenler",
+            "bilgi-merkezi/satis-oncesi/ikinci-el-telefon-satarken/index.md":"İkinci El Telefon Satarken Dikkat Edilmesi Gerekenler",
+            "bilgi-merkezi/satis-oncesi/imei-sorgulama/index.md":"IMEI Sorgulama Nasıl Yapılır?",
+            "bilgi-merkezi/ikinci-el/ikinci-el-telefon-alirken/index.md":"İkinci El Telefon Alırken Nelere Dikkat Edilmeli?",
+            "bilgi-merkezi/degerleme/telefon-degeri-nasil-hesaplanir/index.md":"Telefon Değerini Etkileyen Faktörler"
+          }
+          for path,needle in required.items():
+            text=Path(path).read_text()
+            if needle not in text: raise SystemExit(f"Information Center V9 owner missing: {path} -> {needle}")
+          redirects=Path("_redirects").read_text()
+          imei="/rehber/telefon/imei-sorgulama/ /bilgi-merkezi/satis-oncesi/imei-sorgulama/ 301"
+          if imei not in redirects: raise SystemExit("Legacy IMEI duplicate is not consolidated")
+          sitemap=Path("sitemap-bilgi.xml").read_text()
+          for path in required:
+            url="https://kacagider.com.tr/"+path.removesuffix("index.md")
+            if f"<loc>{url}</loc>" not in sitemap: raise SystemExit(f"Information guide missing from sitemap-bilgi: {url}")
+          print("INFORMATION CENTER SEO V9 PASS: priority intents, consolidation and sitemap present")
           PY
       - name: Validate free listing SEO V8 ownership
         run: |
