@@ -1,6 +1,6 @@
 ---
 layout: "seo"
-seo_title: "Samsung İkinci El Telefon Fiyatları ve Piyasa Değeri | KaçaGider"
+seo_title: "Samsung İkinci El Fiyatları | KaçaGider"
 seo_description: "Samsung ikinci el telefon fiyatlarını ve piyasa değerini model bazında incele. Modelini seçerek cihaz durumuna göre güncel değerleme sayfasına geç."
 seo_h1: "Samsung İkinci El Telefon Fiyatları"
 seo_intro: "Samsung modellerinin ikinci el fiyatlarını tek marka merkezinde incele. Gerçek modelini seçerek hafıza ve cihaz durumuna göre güncel piyasa değerine ulaş."
