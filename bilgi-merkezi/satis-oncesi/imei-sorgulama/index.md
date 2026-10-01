@@ -6,7 +6,7 @@ seo_h1: "IMEI Sorgulama Nasıl Yapılır?"
 seo_intro: "IMEI nedir, telefonda IMEI nereden bulunur ve resmi BTK/e-Devlet hizmetinden IMEI sorgulama nasıl yapılır öğrenin."
 seo_canonical: "https://kacagider.com.tr/bilgi-merkezi/satis-oncesi/imei-sorgulama/"
 seo_breadcrumbs: [{"label":"Ana Sayfa","url":"/"},{"label":"Bilgi Merkezi","url":"/bilgi-merkezi/"},{"label":"Satış Öncesi","url":"/bilgi-merkezi/satis-oncesi/"},{"label":"IMEI Sorgulama Nasıl Yapılır?","url":"/bilgi-merkezi/satis-oncesi/imei-sorgulama/"}]
-seo_cta: {"url":"/telefon/","label":"Telefonunun Değerini Hesapla"}
+seo_cta: {"url":"/telefonum-ne-kadar-eder/","label":"Telefonunun Değerini Hesapla"}
 seo_context_heading: "Bilmeniz gerekenler"
 seo_context: "KaçaGider IMEI numaranızı kaydetmez veya BTK ile doğrudan entegrasyon kurmaz; resmi e-Devlet hizmetini kullanın."
 seo_links_heading: "İlgili bağlantılar"
