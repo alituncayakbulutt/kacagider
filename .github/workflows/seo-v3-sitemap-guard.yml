@@ -71,7 +71,7 @@ jobs:
               raise SystemExit("Bilgi Merkezi URL leaked into primary sitemap")
           if any("/bilgi-merkezi/" not in url for url in info):
               raise SystemExit("Non-Bilgi Merkezi URL leaked into sitemap-bilgi")
-          redirects={}
+          redirects=set()
           for line in Path("_redirects").read_text().splitlines():
               line=line.strip()
               if not line or line.startswith("#"): continue
