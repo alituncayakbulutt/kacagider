@@ -13,6 +13,8 @@ on:
       - "akilli-saat/**"
       - "oyun-konsolu/**"
       - "scripts/seo-site-audit.py"
+      - "data/seo-v4-policy.json"
+      - "docs/SEO_V12_MEASUREMENT.md"
       - ".github/workflows/seo-site-audit.yml"
   pull_request:
     branches: [main]
@@ -31,6 +33,21 @@ jobs:
           python-version: "3.12"
       - name: Run technical SEO audit
         run: python3 scripts/seo-site-audit.py
+      - name: Validate SEO V12 measurement contract
+        run: |
+          python3 - <<'PY'
+          import json
+          from pathlib import Path
+          policy=json.loads(Path("data/seo-v4-policy.json").read_text())
+          if policy.get("version")!="12.0": raise SystemExit("SEO policy is not V12")
+          m=policy.get("measurement",{})
+          for metric in ("clicks","impressions","ctr","average_position"):
+              if metric not in m.get("metrics",[]): raise SystemExit(f"V12 metric missing: {metric}")
+          doc=Path("docs/SEO_V12_MEASUREMENT.md").read_text()
+          for phrase in ("Son 7 gün", "Son 28 gün", "tıklama", "gösterim", "CTR", "ortalama konum", "1 Ekim 2026"):
+              if phrase not in doc: raise SystemExit(f"V12 measurement standard missing: {phrase}")
+          print("SEO V12 MEASUREMENT PASS: GSC metrics, windows and decision rules present")
+          PY
       - name: Confirm audit is read only
         run: |
           git diff --exit-code
