@@ -1,6 +1,6 @@
 ---
 layout: "seo"
-seo_title: "Huawei İkinci El Telefon Fiyatları ve Piyasa Değeri | KaçaGider"
+seo_title: "Huawei İkinci El Fiyatları | KaçaGider"
 seo_description: "Huawei ikinci el telefon fiyatlarını ve piyasa değerini model bazında incele. Modelini seçerek cihaz durumuna göre güncel değerleme sayfasına geç."
 seo_h1: "Huawei İkinci El Telefon Fiyatları"
 seo_intro: "Huawei modellerinin ikinci el fiyatlarını tek marka merkezinde incele. Gerçek modelini seçerek hafıza ve cihaz durumuna göre güncel piyasa değerine ulaş."
