@@ -54,6 +54,37 @@ jobs:
           if leaked: raise SystemExit(f"Variant URLs in sitemap: {leaked[:10]}")
           print(f"SEO RESET SITEMAP PASS: {len(urls)} unique canonical URLs")
           PY
+      - name: Validate Sitemap and Indexing SEO V11
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          import re, xml.etree.ElementTree as ET
+          ns={"s":"http://www.sitemaps.org/schemas/sitemap/0.9"}
+          def urls(path):
+              root=ET.parse(path).getroot()
+              return [n.text.strip() for n in root.findall("s:url/s:loc",ns) if n.text]
+          primary=urls("sitemap.xml")
+          info=urls("sitemap-bilgi.xml")
+          overlap=sorted(set(primary)&set(info))
+          if overlap: raise SystemExit(f"URLs submitted in both sitemaps: {overlap[:10]}")
+          if any("/bilgi-merkezi/" in url for url in primary):
+              raise SystemExit("Bilgi Merkezi URL leaked into primary sitemap")
+          if any("/bilgi-merkezi/" not in url for url in info):
+              raise SystemExit("Non-Bilgi Merkezi URL leaked into sitemap-bilgi")
+          redirects={}
+          for line in Path("_redirects").read_text().splitlines():
+              line=line.strip()
+              if not line or line.startswith("#"): continue
+              parts=line.split()
+              if len(parts)==3 and parts[2]=="301": redirects.add("https://kacagider.com.tr"+parts[0])
+          leaked=sorted((set(primary)|set(info))&redirects)
+          if leaked: raise SystemExit(f"Redirect source submitted in sitemap: {leaked[:10]}")
+          robots=Path("robots.txt").read_text()
+          for name in ("sitemap.xml","sitemap-bilgi.xml"):
+              if f"Sitemap: https://kacagider.com.tr/{name}" not in robots:
+                  raise SystemExit(f"robots.txt missing {name}")
+          print(f"SITEMAP SEO V11 PASS: primary={len(primary)}, information={len(info)}, overlap=0, redirect_sources=0")
+          PY
       - name: Validate Internal Linking SEO V10
         run: |
           python3 - <<'PY'
