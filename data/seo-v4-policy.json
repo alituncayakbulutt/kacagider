@@ -1,32 +1,53 @@
 {
-  "version": "5.0",
+  "version": "6.0",
   "goal": "Her arama niyeti için tek güçlü canonical sahip; değerleme, piyasa, satış ve bilgi içeriklerini birbirleriyle yarıştırmadan bağlamak",
   "page_ownership": {
     "phone_valuation": {
       "url": "/telefonum-ne-kadar-eder/",
       "primary_intent": "telefonum ne kadar eder",
-      "supporting_intents": ["telefonumu kaça satarım", "telefonum kaç para eder", "telefon değeri sorgulama"]
+      "supporting_intents": [
+        "telefonumu kaça satarım",
+        "telefonum kaç para eder",
+        "telefon değeri sorgulama"
+      ]
     },
     "phone_market": {
       "url": "/ikinci-el-telefon/",
       "primary_intent": "ikinci el telefon fiyatları",
-      "supporting_intents": ["ikinci el telefon piyasası", "ikinci el telefon fiyat öğrenme"]
+      "supporting_intents": [
+        "ikinci el telefon piyasası",
+        "ikinci el telefon fiyat öğrenme"
+      ]
     },
     "brand": {
-      "url_pattern": "/telefon/[marka]/",
-      "primary_intent_pattern": "[marka] ikinci el telefon fiyatları"
+      "url_pattern": "/[kategori]/[marka]/",
+      "primary_intent_pattern": "[marka] ikinci el [kategori] fiyatları",
+      "supporting_intent_patterns": [
+        "[marka] ikinci el piyasası",
+        "[marka] piyasa değeri"
+      ],
+      "role": "gerçek modelleri model sayfalarına dağıtan marka merkezi"
     },
     "model": {
       "url_pattern": "/telefon/[marka]/[model]/",
       "primary_intent_pattern": "[model] ne kadar eder",
-      "supporting_intent_patterns": ["[model] ikinci el fiyatı", "[model] kaça satılır", "[model] satsam ne kadar eder", "[model] ikinci el piyasası", "[model] [hafıza] ikinci el fiyatı"],
+      "supporting_intent_patterns": [
+        "[model] ikinci el fiyatı",
+        "[model] kaça satılır",
+        "[model] satsam ne kadar eder",
+        "[model] ikinci el piyasası",
+        "[model] [hafıza] ikinci el fiyatı"
+      ],
       "one_canonical_per_model": true,
       "storage_urls": false
     },
     "free_listing": {
       "url": "/ucretsiz-ilan-ver/",
       "primary_intent": "ücretsiz ilan verme",
-      "supporting_intents": ["ücretsiz ilan", "ikinci el telefon sat"]
+      "supporting_intents": [
+        "ücretsiz ilan",
+        "ikinci el telefon sat"
+      ]
     },
     "methodology": {
       "url": "/ikinci-el-fiyat-nasil-hesaplanir/",
@@ -35,15 +56,44 @@
     "information_center": {
       "url": "/bilgi-merkezi/",
       "role": "bilgilendirici sorguları değerleme, model ve satış akışlarına bağlayan rehber merkezi"
+    },
+    "category": {
+      "url_patterns": [
+        "/telefon/",
+        "/tablet/",
+        "/bilgisayar/",
+        "/akilli-saat/",
+        "/oyun-konsolu/"
+      ],
+      "role": "kategori ikinci el fiyatları ve piyasa keşif merkezi; kişisel değerleme landing sayfasıyla yarışmaz"
     }
   },
   "indexable": {
-    "core": ["category", "valuation", "market_landing", "methodology", "trust", "information_hub"],
-    "catalog": ["brand_with_models", "model_with_real_catalog_data"],
-    "conditional": ["series_with_distinct_search_demand", "guide_with_distinct_information_intent"]
+    "core": [
+      "category",
+      "valuation",
+      "market_landing",
+      "methodology",
+      "trust",
+      "information_hub"
+    ],
+    "catalog": [
+      "brand_with_models",
+      "model_with_real_catalog_data"
+    ],
+    "conditional": [
+      "series_with_distinct_search_demand",
+      "guide_with_distinct_information_intent"
+    ]
   },
   "non_indexable": {
-    "default": ["storage_variant", "watch_size_variant", "thin_comparison", "duplicate_intent", "internal_result"],
+    "default": [
+      "storage_variant",
+      "watch_size_variant",
+      "thin_comparison",
+      "duplicate_intent",
+      "internal_result"
+    ],
     "handling": "canonical consolidation and sitemap/internal-link exclusion; redirect strategy is applied only after hosting support is verified"
   },
   "technical": {
@@ -54,13 +104,22 @@
     "sitemap_contains_only_canonical_indexable_urls": true,
     "visible_content_matches_schema": true,
     "faq_schema_requires_visible_faq": true,
-    "breadcrumb_matches_url_hierarchy": true
+    "breadcrumb_matches_url_hierarchy": true,
+    "brand_links_to_model": true,
+    "brand_links_to_category_and_valuation": true
   },
   "quality": {
     "keyword_stuffing": false,
     "fake_reviews_ratings_or_offers": false,
     "invented_models_or_storage": false,
-    "content_owner": "KaçaGider veri ve içerik ekibi"
+    "content_owner": "KaçaGider veri ve içerik ekibi",
+    "fixed_year_in_evergreen_title": false
   },
-  "protected": ["valuation_engine", "marketplace", "analytics", "search_console_verification", "price_data"]
+  "protected": [
+    "valuation_engine",
+    "marketplace",
+    "analytics",
+    "search_console_verification",
+    "price_data"
+  ]
 }
