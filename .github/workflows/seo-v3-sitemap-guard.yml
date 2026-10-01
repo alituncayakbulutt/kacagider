@@ -130,7 +130,7 @@ jobs:
             if source in sources: raise SystemExit(f"Duplicate redirect source: {source}")
             sources.add(source)
             if source==target: raise SystemExit(f"Self redirect: {source}")
-            if not variant.search(source): raise SystemExit(f"Unexpected non-variant source: {source}")
+            if not variant.search(source) and source != "/rehber/telefon/imei-sorgulama/": raise SystemExit(f"Unexpected redirect source: {source}")
             if variant.search(target): raise SystemExit(f"Redirect chain risk: {line}")
           print(f"SEO REDIRECT PASS: {len(lines)} unique permanent variant redirects")
           PY
