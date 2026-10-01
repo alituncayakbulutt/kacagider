@@ -1,5 +1,5 @@
 {
-  "version": "8.0",
+  "version": "9.0",
   "goal": "Her arama niyeti için tek güçlü canonical sahip; değerleme, piyasa, satış ve bilgi içeriklerini birbirleriyle yarıştırmadan bağlamak",
   "page_ownership": {
     "phone_valuation": {
@@ -75,7 +75,34 @@
     },
     "information_center": {
       "url": "/bilgi-merkezi/",
-      "role": "bilgilendirici sorguları değerleme, model ve satış akışlarına bağlayan rehber merkezi"
+      "role": "gerçek bilgilendirici aramaları cevaplar; değerleme/model/ilan sahipleriyle yarışmadan onları doğal iç linklerle destekler",
+      "priority_guides": [
+        {
+          "url": "/bilgi-merkezi/satis-oncesi/telefon-satmadan-once/",
+          "intent": "telefon satmadan önce yapılması gerekenler"
+        },
+        {
+          "url": "/bilgi-merkezi/satis-oncesi/ikinci-el-telefon-satarken/",
+          "intent": "ikinci el telefon satarken dikkat edilmesi gerekenler"
+        },
+        {
+          "url": "/bilgi-merkezi/satis-oncesi/imei-sorgulama/",
+          "intent": "imei sorgulama nasıl yapılır"
+        },
+        {
+          "url": "/bilgi-merkezi/ikinci-el/ikinci-el-telefon-alirken/",
+          "intent": "ikinci el telefon alırken dikkat edilmesi gerekenler"
+        },
+        {
+          "url": "/rehber/ios/iphone-satmadan-once-ne-yapilmali/",
+          "intent": "iphone satmadan önce"
+        }
+      ],
+      "weak_standalone_intents": [
+        "pil sağlığı ikinci el",
+        "ekran değişimi telefon değeri"
+      ],
+      "weak_intent_owner": "/bilgi-merkezi/degerleme/telefon-degeri-nasil-hesaplanir/"
     },
     "category": {
       "url_patterns": [
@@ -130,7 +157,9 @@
     "model_links_to_brand_category_valuation": true,
     "model_variant_links_are_forbidden": true,
     "model_links_to_free_listing": true,
-    "free_listing_links_back_to_valuation": true
+    "free_listing_links_back_to_valuation": true,
+    "information_guides_link_to_commercial_owner": true,
+    "duplicate_information_intents_must_consolidate": true
   },
   "quality": {
     "keyword_stuffing": false,
