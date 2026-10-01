@@ -87,22 +87,53 @@ function modelSeoMeta({kind,brand,model,variant,url,breadcrumbs,variants,links=[
   const brandInModel=Boolean(brand&&model&&normalizedModel.includes(normalizedBrand));
   const subject=brandInModel?model:`${brand} ${model}`;
   const displaySubject=variant?`${subject} ${variant}`:subject;
-  const optionText=[...new Set((variants||[]).map(Number))].filter(Number.isFinite).map(value=>storageLabel(value,kind)).join(", ");
-  const description=`${displaySubject} ne kadar eder? ${optionText?`${optionText} seçeneklerinde `:""}${displaySubject} ikinci el fiyatı ve piyasa değeri, ${config.context} dikkate alınarak KaçaGider ile ücretsiz hesaplanır.`;
-  const related=[{label:`${config.name} değerleme`,url:`/${config.path}/`},{label:"İkinci el fiyat nasıl hesaplanır?",url:"/ikinci-el-fiyat-nasil-hesaplanir/"},...links];
+  const optionLabels=[...new Set((variants||[]).map(Number))].filter(Number.isFinite).map(value=>storageLabel(value,kind));
+  const optionText=optionLabels.join(", ");
+  const categoryUrl=`/${config.path}/`;
+  const brandUrl=pagePath(config.path,brand);
+  const description=`${displaySubject} ne kadar eder? İkinci el fiyatı, piyasa değeri ve ${optionText?`${optionText} seçenekleri; `:""}${config.context} dikkate alınarak KaçaGider ile hesaplanır.`;
+  const cleanLinks=(links||[]).filter(link=>!/\/(?:\\d+(?:gb|tb|mm))\/$/i.test(String(link.url||"")));
+  const related=[
+    {label:`${brand} ikinci el ${config.name.toLocaleLowerCase("tr-TR")} fiyatları`,url:brandUrl},
+    {label:`${config.name} ikinci el fiyatları`,url:categoryUrl},
+    {label:categoryLandingConfig[kind].h1,url:categoryLandingConfig[kind].url},
+    ...(kind==="phone"?[{label:"Ücretsiz telefon ilanı ver",url:"/ucretsiz-ilan-ver/"}]:[]),
+    {label:"İkinci el fiyat nasıl hesaplanır?",url:"/ikinci-el-fiyat-nasil-hesaplanir/"},
+    ...cleanLinks
+  ];
   const uniqueLinks=[...new Map(related.map(link=>[link.url,link])).values()];
-  return {layout:"seo",seo_title:`${displaySubject} Ne Kadar Eder? ${brandInModel?"Güncel İkinci El Fiyatı":"İkinci El Fiyatı"} | KaçaGider`,seo_description:description,seo_h1:variant?`${displaySubject} İkinci El Fiyatı`:`${subject} Ne Kadar Eder?`,seo_intro:`${displaySubject} için güncel ikinci el değerini, gerçek cihaz bilgileri ve kondisyon ayrıntılarıyla KaçaGider üzerinden inceleyin.`,seo_context_heading:`${displaySubject} için güncel değerleme`,seo_context:`${displaySubject} değeri; ${config.context} ile birlikte güncel piyasa koşullarına göre değişebilir.`,seo_breadcrumbs:breadcrumbs,seo_links:uniqueLinks,seo_links_heading:`${displaySubject} ilgili sayfalar`,seo_canonical:absolute(url),seo_cta:{url:`/${config.path}/`,label:`${config.name} değerini hesapla`},seo_sections:[
-    {title:`${displaySubject} Kaça Satılır?`,text:`${displaySubject} için tek bir sabit satış fiyatı yoktur. Cihazın kondisyonu, özellikleri ve güncel piyasa koşulları gerçek satış değerini etkiler.`},
-    {title:`${displaySubject} İkinci El Fiyatı`,text:`${displaySubject} ikinci el fiyatı ve ikinci el piyasası, mevcut seçenekler ve cihazın kullanım durumuna göre değerlendirilir.${optionText?` Bu sayfada bulunan seçenekler: ${optionText}. Depolama seçenekleri ayrı SEO sayfası oluşturmaz; aynı model sayfasında değerlendirilir.`:""}`},
-    {title:`${displaySubject} Piyasa Değeri`,text:`KaçaGider piyasa değeri, seçilen ürün bilgilerini ve ${config.context} ayrıntılarını birlikte değerlendirerek bir başlangıç referansı sunar.`},
-    {title:`${displaySubject} Değeri Nasıl Hesaplanır?`,text:`Marka, model, ${config.variantTerm} ve kondisyon bilgilerini değerleme ekranında seçin. Sonuç, cihazın gerçek durumu ile piyasa koşullarına göre değişebilir.`}
-  ],seo_faqs:[
-    {question:`${displaySubject} ne kadar eder?`,answer:`Güncel değeri öğrenmek için ${config.name} değerleme ekranında model ve cihaz bilgilerini seçin.`},
-    {question:`${displaySubject} kaça satılır?`,answer:`Satış değeri; kondisyon, özellikler ve güncel piyasa koşullarına göre değişir.`},
-    {question:`${displaySubject} ikinci el fiyatı nasıl hesaplanır?`,answer:`${config.context} bilgileri ve seçilen ürün özellikleri birlikte değerlendirilir.`},
-    {question:`${displaySubject} piyasa değeri neden değişir?`,answer:`Piyasa hareketleri, cihaz kondisyonu ve özelliklerdeki farklılıklar değeri etkileyebilir.`},
-    ...(optionText?[{question:`${displaySubject} hangi seçeneklerle değerlendirilir?`,answer:`Bu sayfada kullanılabilen seçenekler: ${optionText}.`}]:[])
-  ]};
+  const sections=[
+    {title:`${displaySubject} Kaça Satılır?`,text:`${displaySubject} için tek bir sabit satış fiyatı yoktur. ${config.context}, cihazın gerçek durumu ve güncel piyasa koşulları satış değerini etkiler. KaçaGider sonucu satış kararına yardımcı bir piyasa referansıdır.`},
+    {title:`${displaySubject} İkinci El Fiyatı`,text:`${displaySubject} ikinci el fiyatı modelin gerçek özellikleri ve kondisyonuna göre değerlendirilir.${optionText?` Bu model için katalogda bulunan seçenekler: ${optionText}. Bu seçeneklerin tamamı aynı model URL'sinde değerlendirilir.`:""}`},
+    {title:`${displaySubject} Piyasa Değeri`,text:`${displaySubject} piyasa değeri; ${config.context} ve güncel ikinci el piyasa koşullarına göre değişebilir. İlan fiyatı ile gerçekleşebilecek satış değeri aynı olmak zorunda değildir.`},
+    {title:`${displaySubject} Değeri Nasıl Hesaplanır?`,text:`Gerçek model, ${config.variantTerm} ve kondisyon bilgilerini değerleme ekranında seç. Ekran, kasa, pil veya çalışmayan özellikler gibi mevcut durum bilgilerini doğru girmek daha anlamlı bir değerleme referansı sağlar.`}
+  ];
+  if(optionLabels.length){
+    sections.push({title:`${displaySubject} ${config.variantTerm[0].toLocaleUpperCase("tr-TR")+config.variantTerm.slice(1)} Seçenekleri`,text:`KaçaGider kataloğunda bu model için ${optionText} seçenekleri bulunur. Her seçenek ayrı bir SEO URL'si yerine bu ana model sayfasında ele alınır.`});
+  }
+  return {
+    layout:"seo",
+    seo_page_type:"model",
+    seo_title:`${displaySubject} Ne Kadar Eder? İkinci El Fiyatı | KaçaGider`,
+    seo_description:description,
+    seo_h1:`${displaySubject} Ne Kadar Eder?`,
+    seo_intro:`${displaySubject} ikinci el fiyatını ve piyasa değerini öğrenmek için gerçek cihaz bilgilerini seç. ${optionText?`${optionText} seçenekleri ve `:""}kondisyon bilgileri aynı model sayfasında değerlendirilir.`,
+    seo_context_heading:`${displaySubject} ikinci el değeri`,
+    seo_context:`${displaySubject} için değerleme; ${config.context} ve güncel piyasa koşullarını birlikte ele alır. Sonuç kesin satış garantisi değil, cihazını kaça satabileceğini değerlendirirken kullanabileceğin bir piyasa referansıdır.`,
+    seo_breadcrumbs:breadcrumbs,
+    seo_links:uniqueLinks,
+    seo_links_heading:`${displaySubject} için ilgili sayfalar`,
+    seo_canonical:absolute(url),
+    seo_cta:{url:categoryLandingConfig[kind].url,label:`${displaySubject} değerini hesapla`},
+    seo_sections:sections,
+    seo_faqs:[
+      {question:`${displaySubject} ne kadar eder?`,answer:`Değer; ${config.context} ve güncel piyasa koşullarına göre değişir. Gerçek cihaz bilgilerini seçerek KaçaGider'de tahmini piyasa değerini hesaplayabilirsin.`},
+      {question:`${displaySubject} kaça satılır?`,answer:`Tek bir sabit satış fiyatı yoktur. Cihazın gerçek kondisyonu, özellikleri ve piyasa koşulları satış değerini etkiler.`},
+      {question:`${displaySubject} ikinci el fiyatı ne kadar?`,answer:`İkinci el fiyatı cihazın ${config.variantTerm}, kondisyon ve güncel piyasa koşullarına göre değişir. KaçaGider model sayfasındaki değerleme akışını kullanabilirsin.`},
+      {question:`${displaySubject} piyasa değeri nasıl hesaplanır?`,answer:`Model, ${config.variantTerm}, kondisyon ve güncel piyasa koşulları birlikte değerlendirilir.`},
+      ...(optionText?[{question:`${displaySubject} ${optionText} seçenekleri nasıl değerlendirilir?`,answer:`${optionText} seçenekleri bu ana model sayfasında ayrı cihaz seçenekleri olarak değerlendirilir; ayrı SEO sayfası kullanılmaz.`}]:[])
+    ]
+  };
 }
 
 function landingMeta({kind}){
