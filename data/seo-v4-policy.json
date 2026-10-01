@@ -1,5 +1,5 @@
 {
-  "version": "11.0",
+  "version": "12.0",
   "goal": "Her arama niyeti için tek güçlü canonical sahip; değerleme, piyasa, satış ve bilgi içeriklerini birbirleriyle yarıştırmadan bağlamak",
   "page_ownership": {
     "phone_valuation": {
@@ -224,6 +224,62 @@
       "no_storage_or_size_variant_in_sitemap",
       "robots_declares_both_sitemaps",
       "indexable_pages_use_self_canonical"
+    ]
+  },
+  "measurement": {
+    "source_of_truth": "Google Search Console",
+    "comparison_windows": [
+      "last_7_days_vs_previous_7_days",
+      "last_28_days_vs_previous_28_days"
+    ],
+    "dimensions": [
+      "query",
+      "page",
+      "country",
+      "device"
+    ],
+    "metrics": [
+      "clicks",
+      "impressions",
+      "ctr",
+      "average_position"
+    ],
+    "indexing_checks": [
+      "submitted_sitemap_urls",
+      "indexed_pages",
+      "crawled_currently_not_indexed",
+      "discovered_currently_not_indexed"
+    ],
+    "page_groups": {
+      "valuation": [
+        "/telefonum-ne-kadar-eder/",
+        "/tabletim-ne-kadar-eder/",
+        "/bilgisayarim-ne-kadar-eder/",
+        "/akilli-saatim-ne-kadar-eder/",
+        "/oyun-konsolum-ne-kadar-eder/"
+      ],
+      "phone_market": [
+        "/ikinci-el-telefon/"
+      ],
+      "free_listing": [
+        "/ucretsiz-ilan-ver/"
+      ],
+      "information_center": [
+        "/bilgi-merkezi/"
+      ],
+      "catalog_patterns": [
+        "/[kategori]/[marka]/",
+        "/[kategori]/[marka]/[model]/"
+      ]
+    },
+    "decision_rules": [
+      "Do not judge SEO from impressions alone.",
+      "Compare query and page together before changing ownership.",
+      "Do not create a new URL for a query already served by the same intent owner.",
+      "Use 28-day trends for structural decisions; 7-day data is an early signal.",
+      "Investigate high-impression low-CTR pages before rewriting content.",
+      "Investigate position loss separately from CTR loss.",
+      "Do not change canonical ownership from a single short-term fluctuation."
     ]
   }
 }
