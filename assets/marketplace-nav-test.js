@@ -377,8 +377,15 @@ function boot(){
   installStyle();
   buildHeader();
   buildSlider();
-  setTimeout(syncAccountAction,400);
-  setTimeout(syncAccountAction,1200);
+  // Supabase/auth is intentionally lazy-loaded only when the user opens
+  // the account action. Do not fetch the SDK during the home-page render.
+  var button=document.getElementById("kgHeaderAccountAction");
+  if(button){
+    button.dataset.authMode="login";
+    button.textContent="Giriş Yap";
+    button.setAttribute("aria-label","KaçaGider hesabına giriş yap veya üye ol");
+    button.disabled=false;
+  }
 }
 if(document.readyState==="loading") document.addEventListener("DOMContentLoaded",boot,{once:true});
 else boot();
