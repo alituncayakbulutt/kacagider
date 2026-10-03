@@ -414,6 +414,13 @@ select:focus,input:focus{border-color:#5ccf8c;box-shadow:0 0 0 3px rgba(16,185,8
 }
 
 
+/* Marketplace kart CTA alanını ilk boyamada ayır: JS sonradan padding ekleyip CLS üretmesin. */
+.kg-approved-category-grid [data-category],
+.category-grid [data-category]{
+  position:relative!important;
+  padding-top:62px!important;
+}
+
 /* KaçaGider kesin yenileme sıfırlaması */
 body.fresh-start #valuationArea,
 body.fresh-start #selectedCategoryBar{
