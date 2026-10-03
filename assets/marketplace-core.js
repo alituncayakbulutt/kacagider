@@ -104,7 +104,7 @@ function preview(c){var d=listingData(c);if(!d.salePrice||!d.city||!d.district||
 function installCards(){var home=q("#viewHome")||document;qa(".kg-approved-category-grid [data-category],.category-grid [data-category]",home).forEach(function(card){if(q(".kg-mp-card-action",card))return;card.classList.add("kg-mp-card-ready");var a=document.createElement("span");a.className="kg-mp-card-action";a.textContent="Ücretsiz İlan Ver";a.tabIndex=0;a.setAttribute("role","button");function go(e){e.preventDefault();e.stopPropagation();selectCategory(card.dataset.category);}a.onclick=go;a.onkeydown=function(e){if(e.key==="Enter"||e.key===" ")go(e);};card.insertBefore(a,card.firstChild);});}
 function updateResult(){var b=q("#kgMpResultAction");if(b)b.classList.toggle("ready",price()>0);}
 function installResult(){var card=q(".price-card");if(!card)return;var b=q("#kgMpResultAction");if(!b){b=document.createElement("button");b.id="kgMpResultAction";b.type="button";b.className="kg-mp-result-action";b.textContent="Ücretsiz İlan Oluştur →";b.onclick=function(){beginListing(context());};card.appendChild(b);}updateResult();var p=q("#mainPrice");if(p){priceObserver=new MutationObserver(updateResult);priceObserver.observe(p,{childList:true,characterData:true,subtree:true});}}
-function boot(){style();installCards();installResult();ensureBackend().catch(function(e){console.warn("KaçaGider marketplace:",e);});}
+function boot(){style();installCards();installResult();}
 window.KGMarketplaceUI={choose:choose,beginListing:beginListing,selectCategory:selectCategory,refresh:updateResult};
 if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",boot,{once:true});else boot();
 })();
