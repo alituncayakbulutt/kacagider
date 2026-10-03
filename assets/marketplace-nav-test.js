@@ -86,23 +86,8 @@ function installStyle(){
 
 function ensureAuthBackend(){
   if(window.KGMarketplaceSupabase) return Promise.resolve(window.KGMarketplaceSupabase);
-  return new Promise(function(resolve,reject){
-    var script=document.querySelector('script[data-kg-marketplace-backend]');
-    if(!script){
-      script=document.createElement("script");
-      script.src="/assets/supabase-marketplace.js";
-      script.async=true;
-      script.dataset.kgMarketplaceBackend="1";
-      document.head.appendChild(script);
-    }
-    var tries=0;
-    var timer=setInterval(function(){
-      tries++;
-      if(window.KGMarketplaceSupabase){clearInterval(timer);resolve(window.KGMarketplaceSupabase);}
-      else if(tries>=160){clearInterval(timer);reject(new Error("Giriş sistemi yüklenemedi."));}
-    },50);
-    script.addEventListener("error",function(){clearInterval(timer);reject(new Error("Giriş sistemi yüklenemedi."));},{once:true});
-  });
+  if(window.KGEnsureMarketplaceBackend) return window.KGEnsureMarketplaceBackend();
+  return Promise.reject(new Error("Giriş sistemi yüklenemedi."));
 }
 
 function showAccountNote(message,isError){
