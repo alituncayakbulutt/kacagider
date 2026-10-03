@@ -66,13 +66,17 @@ function modal(title,sub,body){open();q("#kgMpTitle").textContent=title;q("#kgMp
 
 function ensureBackend(){
   if(window.KGMarketplaceSupabase)return Promise.resolve(window.KGMarketplaceSupabase);
-  return new Promise(function(resolve,reject){
+  if(window.KGEnsureMarketplaceBackend)return window.KGEnsureMarketplaceBackend();
+  if(window.KGMarketplaceBackendPromise)return window.KGMarketplaceBackendPromise;
+  window.KGMarketplaceBackendPromise=new Promise(function(resolve,reject){
     var existing=q('script[data-kg-marketplace-backend]');
     if(!existing){existing=document.createElement("script");existing.src="/assets/supabase-marketplace.js";existing.async=true;existing.dataset.kgMarketplaceBackend="1";document.head.appendChild(existing);}
-    var tries=0,t=setInterval(function(){tries++;if(window.KGMarketplaceSupabase){clearInterval(t);resolve(window.KGMarketplaceSupabase);}else if(tries>=100){clearInterval(t);reject(new Error("Marketplace veri katmanı yüklenemedi."));}},50);
-    existing.addEventListener("error",function(){clearInterval(t);reject(new Error("Marketplace veri katmanı yüklenemedi."));},{once:true});
+    var tries=0,t=setInterval(function(){tries++;if(window.KGMarketplaceSupabase){clearInterval(t);resolve(window.KGMarketplaceSupabase);}else if(tries>=160){clearInterval(t);window.KGMarketplaceBackendPromise=null;reject(new Error("Marketplace veri katmanı yüklenemedi."));}},50);
+    existing.addEventListener("error",function(){clearInterval(t);window.KGMarketplaceBackendPromise=null;reject(new Error("Marketplace veri katmanı yüklenemedi."));},{once:true});
   });
+  return window.KGMarketplaceBackendPromise;
 }
+window.KGEnsureMarketplaceBackend=ensureBackend;
 function selectCategory(key){
   var card=q('[data-category="'+key+'"]'),view=q("#viewHome"),valuation=q("#valuationArea"),selected=q("#selectedCategoryName");
   var labels={phone:"Telefon",tablet:"Tablet",computer:"Bilgisayar",watch:"Akıllı Saat",console:"Oyun Konsolu"};
