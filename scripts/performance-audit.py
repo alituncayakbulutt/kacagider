@@ -22,7 +22,8 @@ for path in CORE:
     text = path.read_text(encoding="utf-8")
     if text.count(HINT_MARKER) != 1:
         errors.append(f"{path}: performance hint marker count = {text.count(HINT_MARKER)}")
-    if "googletagmanager.com" in text and "rel=\"preconnect\" href=\"https://www.googletagmanager.com\"" not in text:
+    # Home deliberately defers GA until after first render to protect mobile LCP.
+    if path != Path("index.html") and "googletagmanager.com" in text and "rel=\"preconnect\" href=\"https://www.googletagmanager.com\"" not in text:
         errors.append(f"{path}: Google Tag preconnect missing")
     for match in re.finditer(r'<script[^>]+src="https://www\.googletagmanager\.com/[^\"]+"[^>]*>', text, flags=re.I):
         if " async" not in match.group(0).lower():
@@ -35,6 +36,12 @@ if f'data/phone-prices.js?v={PERF_VERSION}' not in index:
     errors.append("index.html: phone price data is not versioned")
 if f'data/screen-repair-prices.js?v={PERF_VERSION}' not in index:
     errors.append("index.html: screen repair data is not versioned")
+for src in ["data/phone-prices.js", "data/screen-repair-prices.js"]:
+    tag = re.search(rf'<script[^>]+src="{re.escape(src)}[^"]*"[^>]*>', index, flags=re.I)
+    if not tag or " defer" not in tag.group(0).lower():
+        errors.append(f"index.html: {src} must be deferred to protect first render")
+if 'requestIdleCallback(startGa' not in index:
+    errors.append("index.html: analytics is not deferred until after first render")
 if '<link rel="preload" as="image" href="/assets/categories/telefon.jpg" fetchpriority="high">' not in index:
     errors.append("index.html: primary category image preload missing")
 phone_img = re.search(r'<img\s+[^>]*src="assets/categories/telefon\.jpg"[^>]*>', index, flags=re.I)

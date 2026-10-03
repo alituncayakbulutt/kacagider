@@ -2,25 +2,37 @@
 <html lang="tr">
 <head>
 <!-- KaçaGider FAZ 8: Performance resource hints -->
-<link rel="preconnect" href="https://www.googletagmanager.com">
 <link rel="dns-prefetch" href="//www.googletagmanager.com">
 <link rel="dns-prefetch" href="//cdn.jsdelivr.net">
 <link rel="dns-prefetch" href="//cfkrmzoghpoddkvzplyq.supabase.co">
 <link rel="preload" as="image" href="/assets/categories/telefon.jpg" fetchpriority="high">
 
 
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-078JHH25LH"></script>
+<!-- Google Analytics is started after the first render so it does not compete with mobile LCP. -->
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
-  gtag("js", new Date());
-  gtag("config", "G-078JHH25LH");
+  window.addEventListener("load", function(){
+    var startGa=function(){
+      if(document.querySelector('script[data-kg-ga]')) return;
+      var s=document.createElement("script");
+      s.async=true;
+      s.src="https://www.googletagmanager.com/gtag/js?id=G-078JHH25LH";
+      s.dataset.kgGa="1";
+      s.onload=function(){
+        gtag("js",new Date());
+        gtag("config","G-078JHH25LH");
+      };
+      document.head.appendChild(s);
+    };
+    if("requestIdleCallback" in window) requestIdleCallback(startGa,{timeout:2000});
+    else setTimeout(startGa,1200);
+  },{once:true});
 </script>
 
 <base href="/">
-<script src="data/phone-prices.js?v=20260904-p8"></script>
-<script src="data/screen-repair-prices.js?v=20260904-p8"></script>
+<script src="data/phone-prices.js?v=20260904-p8" defer></script>
+<script src="data/screen-repair-prices.js?v=20260904-p8" defer></script>
 <script src="/assets/analytics-events.js?v=20260904-ga1" defer></script>
 <script src="/assets/home-info-center-cta.js?v=20260904-2" defer></script>
 <script src="/assets/result-v2.js?v=20260904-p10" defer></script>
