@@ -3585,10 +3585,6 @@ function goHomeAndReset(){
   }
 }
 
-populatePhoneBrands();
-resetValuationState();
-
-let freshHomeStateApplied=false;
 function kgSeoSlug(value){
   return String(value)
     .toLocaleLowerCase("tr-TR")
@@ -3670,8 +3666,6 @@ async function kgOpenSeoRoute(route){
 }
 
 function forceFreshHomeState(){
-  if(freshHomeStateApplied) return;
-  freshHomeStateApplied=true;
   const seoRoute=kgResolveSeoPath(window.location.pathname);
   if(seoRoute){
     kgUpdateSeoCanonical();
@@ -3691,7 +3685,7 @@ function forceFreshHomeState(){
   }catch(e){}
 }
 
-window.addEventListener("DOMContentLoaded",forceFreshHomeState);
+forceFreshHomeState();
 
 // Ana sayfa kategori seçimiyle başlar; otomatik hesap yapılmaz.
 </script>
