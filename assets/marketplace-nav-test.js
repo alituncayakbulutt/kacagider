@@ -284,7 +284,7 @@ var slides=[
     text:"Telefon, tablet, bilgisayar, akıllı saat ve oyun konsolu için ortalama satış değerini öğren.",
     primary:"Piyasa Değerini Hesapla",primaryAction:"value",
     secondary:"Ücretsiz İlan Ver",secondaryAction:"sell",
-    image:"/assets/categories/telefon.jpg",badge:"Üyeliksiz sorgulama",stat:"Ortalama satış değeri"
+    image:"/assets/categories/iphone-18-pro-max.jpg?v=20261114",badge:"Üyeliksiz sorgulama",stat:"Ortalama satış değeri"
   },
   {
     eyebrow:"KAÇAGİDER PAZARYERİ",
