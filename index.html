@@ -3062,9 +3062,9 @@ function setActiveNav(target){
   if(activeLink) activeLink.classList.add("active");
 }
 function setActiveView(viewId){
-  document.querySelectorAll(".app-view").forEach(view=>view.classList.remove("active"));
   const target=document.getElementById(viewId);
-  if(target) target.classList.add("active");
+  if(!target) return;
+  document.querySelectorAll(".app-view").forEach(view=>view.classList.toggle("active",view===target));
 }
 function activateHomeView(){
   setActiveView("viewHome");
@@ -3095,6 +3095,7 @@ function showView(name, btn){
   // Ana Sayfa gerçek başlangıç ekranına dönsün.
   if(name==="home"){
     setActiveNav("home");
+    document.getElementById("viewHome").classList.remove("category-selected");
     document.body.classList.add("fresh-start");
     selectedCategory=null;
 
