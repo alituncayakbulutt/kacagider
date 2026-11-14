@@ -3275,12 +3275,9 @@ async function selectCategory(category, btn){
 
   const selectedBar=document.getElementById("selectedCategoryBar");
   const header=document.querySelector(".kg-approved-topbar");
-  const targetTop=Math.max(0, selectedBar.offsetTop-(header ? header.offsetHeight : 0));
-  const html=document.documentElement;
-  const previousScrollBehavior=html.style.scrollBehavior;
-  html.style.scrollBehavior="auto";
-  window.scrollTo(0,targetTop);
-  html.style.scrollBehavior=previousScrollBehavior;
+  const headerHeight=header ? header.getBoundingClientRect().height : 0;
+  const targetTop=Math.max(0, window.scrollY + selectedBar.getBoundingClientRect().top - headerHeight);
+  window.scrollTo({top:targetTop, behavior:"instant"});
 
   if(phone){
     document.getElementById("selectedCategoryName").textContent="Telefon";
@@ -3304,19 +3301,22 @@ function clearRightPanel(){
 
 
 async function loadGenericProducts(category){
-  genericProducts=[];
+  const products=[];
+  genericProducts=products;
   const cats=CATEGORY_META[category].dbCategories;
 
   try{
     for(const cat of cats){
       const rows=await dbGet("products?select=id,brand,model,storage_gb,category,active&category=eq."+encodeURIComponent(cat)+"&active=eq.true&order=brand,model,storage_gb");
-      genericProducts.push(...rows);
+      if(genericProducts!==products || selectedCategory!==category) return;
+      products.push(...rows);
     }
   }catch(e){
     console.warn("Supabase ürünleri alınamadı:",e);
   }
 
-  const uniqueById=new Map(genericProducts.map(x=>[x.id,x]));
+  if(genericProducts!==products || selectedCategory!==category) return;
+  const uniqueById=new Map(products.map(x=>[x.id,x]));
   genericProducts=[...uniqueById.values()];
 
   populateGenericBrands();
@@ -3685,31 +3685,10 @@ function forceFreshHomeState(){
   }catch(e){}
 }
 
-window.addEventListener("pageshow",forceFreshHomeState);
 window.addEventListener("DOMContentLoaded",forceFreshHomeState);
-window.addEventListener("load",forceFreshHomeState);
-window.addEventListener("load",function(){ window.scrollTo(0,0); });
 
 // Ana sayfa kategori seçimiyle başlar; otomatik hesap yapılmaz.
-
-
 </script>
-
-
-<script>
-window.addEventListener("pageshow", function () {
-  try {
-    if (window.location.pathname === "/") {
-      document.body.classList.add("fresh-start");
-      window.scrollTo(0, 0);
-    }
-  } catch (e) {}
-});
-</script>
-
-
-
-
 
 <script>
 document.addEventListener("DOMContentLoaded",function(){
@@ -3817,7 +3796,7 @@ document.addEventListener("DOMContentLoaded", function(){
       mobileNavToggle.setAttribute("aria-expanded",String(open));
       mobileNavToggle.setAttribute("aria-label",open ? "Menüyü kapat" : "Menüyü aç");
     });
-    document.querySelectorAll(".kg-main-nav a").forEach(link=>link.addEventListener("click",closeMobileNav));
+    document.querySelectorAll(".kg-main-nav a").forEach(link=>link.addEventListener("click",closeMobileNav,{capture:true}));
   }
 
   document.querySelectorAll(".kg-faq-question").forEach(function(button){
