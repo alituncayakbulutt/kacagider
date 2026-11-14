@@ -148,7 +148,7 @@ function applyImages(){
     root.querySelectorAll('[data-category="'+key+'"]').forEach(function(card){
       var img=card.querySelector(".kg-product-art img,.category-image img,.category-media img");
       if(!img)return;
-      var src=CATEGORY_IMAGES[key];
+      var src=img.getAttribute("src")||CATEGORY_IMAGES[key];
       if(img.getAttribute("data-kg-stable-src")===src)return;
       img.src=src;
       img.setAttribute("data-kg-stable-src",src);
