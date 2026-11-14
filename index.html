@@ -31,7 +31,6 @@
 </script>
 
 <base href="/">
-<script src="data/phone-prices.js?v=20260904-p8" defer></script>
 <script src="data/screen-repair-prices.js?v=20260904-p8" defer></script>
 <script src="/assets/analytics-events.js?v=20260904-ga1" defer></script>
 <script src="/assets/home-info-center-cta.js?v=20260904-2" defer></script>
@@ -2380,6 +2379,7 @@ html[data-theme="dark"] .kg-main-nav a:not(.active):hover{color:#d9fbe6!importan
 </section>
 
 
+<script src="/data/phone-prices.js?v=20260904-p8"></script>
 <script>
 const SUPABASE_URL='https://mjtruagocsmdtnjajxlb.supabase.co';
 const SUPABASE_KEY='sb_publishable_TFx135cYy6EmGb4WBAc7vA_1EaDXBSo';
@@ -2397,10 +2397,10 @@ VIVO_TURKEY_ADDITIONAL_MODELS.forEach(model=>{
 });
 const APPLE_STORAGE_OPTIONS={"iPhone 11": [64, 128, 256], "iPhone 11 Pro": [64, 256, 512], "iPhone 11 Pro Max": [64, 256, 512], "iPhone SE (2. nesil)": [64, 128, 256], "iPhone 12 mini": [64, 128, 256], "iPhone 12": [64, 128, 256], "iPhone 12 Pro": [128, 256, 512], "iPhone 12 Pro Max": [128, 256, 512], "iPhone 13 mini": [128, 256, 512], "iPhone 13": [128, 256, 512], "iPhone 13 Pro": [128, 256, 512, 1024], "iPhone 13 Pro Max": [128, 256, 512, 1024], "iPhone SE (3. nesil)": [64, 128, 256], "iPhone 14": [128, 256, 512], "iPhone 14 Plus": [128, 256, 512], "iPhone 14 Pro": [128, 256, 512, 1024], "iPhone 14 Pro Max": [128, 256, 512, 1024], "iPhone 15": [128, 256, 512], "iPhone 15 Plus": [128, 256, 512], "iPhone 15 Pro": [128, 256, 512, 1024], "iPhone 15 Pro Max": [256, 512, 1024], "iPhone 16": [128, 256, 512], "iPhone 16 Plus": [128, 256, 512], "iPhone 16 Pro": [128, 256, 512, 1024], "iPhone 16 Pro Max": [256, 512, 1024], "iPhone 16e": [128, 256, 512], "iPhone 17": [256, 512], "iPhone 17 Pro": [256, 512, 1024], "iPhone 17 Pro Max": [256, 512, 1024, 2048], "iPhone Air": [256, 512, 1024], "iPhone 17e": [256, 512]};
 const SAMSUNG_STORAGE_OPTIONS=Object.fromEntries(
-  Object.entries(PHONE_PRICE_DATA.Samsung).map(([model, prices]) => [model, Object.keys(prices).map(Number)])
+  Object.entries(typeof PHONE_PRICE_DATA === "undefined" ? {} : PHONE_PRICE_DATA.Samsung).map(([model, prices]) => [model, Object.keys(prices).map(Number)])
 );
 const XIAOMI_STORAGE_OPTIONS=Object.fromEntries(
-  Object.entries(PHONE_PRICE_DATA.Xiaomi).map(([model, prices]) => [model, Object.keys(prices).map(Number)])
+  Object.entries(typeof PHONE_PRICE_DATA === "undefined" ? {} : PHONE_PRICE_DATA.Xiaomi).map(([model, prices]) => [model, Object.keys(prices).map(Number)])
 );
 const HUAWEI_STORAGE_OPTIONS={"P30":[128],"P30 Pro":[128,256],"P40":[128],"P40 Pro":[256],"P50 Pro":[256],"P60 Pro":[256,512],"Pura 70":[256],"Pura 70 Pro":[512],"Pura 70 Ultra":[512],"Pura 80":[256],"Pura 80 Pro":[512],"Pura 80 Ultra":[512],"Mate 40 Pro":[256],"Mate 50 Pro":[256,512],"Mate 60 Pro":[256,512,1024],"Mate 70 Pro":[256,512,1024],"Nova 9":[128],"Nova 10":[256],"Nova 10 Pro":[256],"Nova 11":[256],"Nova 11 Pro":[256],"Nova 12":[256],"Nova 12 SE":[256],"Nova 13":[256],"Nova 13 Pro":[512],"Nova Y70":[128],"Nova Y90":[128],"Nova Y91":[256]};
 const HONOR_STORAGE_OPTIONS={"Magic4 Pro":[256],"Magic5 Pro":[512],"Magic6 Pro":[512],"Magic7 Pro":[512],"Magic V2":[512],"Magic V3":[512],"X7":[128],"X7a":[128],"X7b":[256],"X8":[128],"X8a":[128],"X8b":[256],"X9":[128],"X9a":[128,256],"X9b":[256],"X9c":[256,512],"Honor 50":[128,256],"Honor 70":[128,256],"Honor 90":[256,512],"Honor 90 Lite":[256],"Honor 200":[256,512],"Honor 200 Lite":[256],"Honor 200 Pro":[512],"Honor 400":[256,512],"Honor 400 Lite":[256],"Honor 400 Pro":[512]};
@@ -2639,7 +2639,7 @@ function formatStorageLabel(value){
 }
 
 function getLocalPhonePrice(brand, model, storage){
-  return PHONE_PRICE_DATA?.[brand]?.[model]?.[storage] || null;
+  return typeof PHONE_PRICE_DATA === "undefined" ? null : PHONE_PRICE_DATA[brand]?.[model]?.[storage] || null;
 }
 
 document.querySelectorAll(".option-row").forEach(row=>{
