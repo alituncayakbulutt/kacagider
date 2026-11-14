@@ -56,14 +56,17 @@ jobs:
 
       - name: Fetch sanitized Supabase observations
         continue-on-error: true
+        timeout-minutes: 2
         run: python scripts/fetch-supabase-market-observations.py
 
       - name: Fetch Phase 3 external market sources
         continue-on-error: true
+        timeout-minutes: 2
         run: python scripts/fetch-external-market-sources.py
 
       - name: Fetch Phase 3B DonanimHaber peer source
         continue-on-error: true
+        timeout-minutes: 2
         run: python scripts/fetch-donanimhaber-market-source-v3.py
 
       - name: Run Phase 3 market observation engine
